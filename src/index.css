@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Roboto", sans-serif;
+
+  --text-light: rgb(212, 212, 212);
+  --accent: rgb(0, 122, 204);
+  --accent-2: hsl(358, 79%, 66%);
+  --text-dark: rgb(77, 77, 77);
+  --bkg: rgb(30, 30, 30);
+}
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--bkg);
+  /* display: grid;
+  justify-content: center; */
+  min-height: 100vh;
+  text-align: center;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.nav-clamp {
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+.grad-hr {
+  background: linear-gradient(
+    to right,
+    var(--bkg),
+    var(--text-light),
+    var(--bkg)
+  );
+  height: 1px;
+}
+
+.banner-grad {
+  background-image: linear-gradient(
+    to right,
+    var(--bkg),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    var(--bkg)
+  );
+}
+
+.banner-img {
+  /* animation: banner-zoom 10s infinite linear; */
+}
+
+@keyframes banner-zoom {
+  0% {
+    bottom: 13rem;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 0;
+    opacity: 0;
+  }
+}

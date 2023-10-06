@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "publisher": "GPM",
+    "name": "Zamek w Będzinie",
+    "card": "./cards/bedzin-card.jpg",
+    "photos": {
+      "day": {
+        "full": "./models/bedzin/day/full-res",
+        "thumb": "./models/bedzin/day/thumb"
+      },
+      "night": {
+        "full": "./models/bedzin/night/full-res",
+        "thumb": "./models/bedzin/night/thumb"
+      },
+      "real": "./models/bedzin/bedzin-photo-1.jpg"
+    },
+    "description": "Zamek Będziński – średniowieczna warownia obronna wzniesiona w połowie XIV wieku przez Kazimierza Wielkiego w systemie tzw. Orlich Gniazd w Małopolsce, 4,5 km od granicy ze Śląskiem, na wzgórzu nad Czarną Przemszą; wielokrotnie niszczona, odbudowana w 1956. Zamek królewski położony był w drugiej połowie XVI wieku w powiecie proszowskim województwa krakowskiego[2]. Udostępniony do zwiedzania. Historia. Historia fortyfikacji w Będzinie sięga IX wieku. Już wtedy na Górze Zamkowej wzniesiono gród, prawdopodobnie należący do plemienia Wiślan lub jego zachodniego odłamu. Gród był kilkakrotnie rozbudowywany: m.in. w miejsce pierwotnej palisady wzniesiono istniejący do dziś zewnętrzny wał podgrodzia, a wewnętrzny wał podgrodzia zniwelowano celem założenia cmentarza wczesnochrześcijańskiego (XII wiek). Osadnictwo podgrodowe rozwijało się na południowym stoku wzgórza (obecne podejście pod zamek i teren parafii Św. Trójcy). Wbrew rozpowszechnionym opiniom Tatarzy nie zdobyli grodu – ślady spalenizny odkryte w wale grodu w świetle najnowszych badań archeologicznych (m.in. metodą dendrochronologii) pochodzą z lat wcześniejszych. W 2 połowie XIII wieku, prawdopodobnie za panowania Bolesława Wstydliwego, w obrębie grodu wzniesiono kamienny stołp – wieżę, istniejącą do dziś. W 1349 Kazimierz Wielki dobudował do niej zamek, który składał się początkowo z zamku górnego (ta część – po przebudowach – istnieje do dziś) otoczonego dwoma pierścieniami murów, oraz dolnego, z bramą wjazdową od strony północnej (do dziś zachowane dolne partie murów). W 1349 wymieniony jest pierwszy burgrabia będziński Wiernko (Vernco), co wskazuje jednoznacznie, że w tym czasie zamek musiał już stać. Także przywilej lokacyjny (1358) zawiera słowa, że miasto lokowane jest „pod zamkiem naszym”. Budowa zamku związana była ściśle z utratą Śląska i jego przejściem pod panowanie czeskie (1348) – granica między Koroną Polską, a Czeską przebiegała wówczas po linii Czarnej Przemszy, a więc u samego podnóża zamku[3][4]. W 1458 tenutariuszem zamku był Stanisław z Pogórzyc, w latach 1462-70 Szczepan Pogórski z Pogórzyc, a w latach 1492-9 Benedykt alias Bieniasz Pogórski. W 1502 król polski Aleksander Jagiellończyk zezwolił Stanisławowi Jarockiemu z Jaroszyna staroście sławkowskiemu wykupić zamek oraz miasto królewskie Będzin wraz z wsiami z rąk Bieniasza Pogórskiego. Według lustracji z 1564 zamek był częściowo opustoszały i popadał w ruinę[3][4]. W sierpniu 1588 zamek stał się miejscem pertraktacji, prowadzonych przez pełnomocników cesarza Rudolfa II z Polską, o zwolnienie uwięzionego po bitwie pod Byczyną (24 I 1588) Maksymiliana Habsburga, pretendenta do korony polskiej. W będzińskiej warowni stanęli więc – pełnomocnicy Polski: Jan Zamoyski – wielki kanclerz z 400 husarzami i 100 strzelcami, Andrzej Opaliński – marszałek wielki koronny, Hieronim Rozdrażewski – biskup kujawski, książę ostrógski, Jan Gostomski – wojewoda rawski oraz Krzysztof Zienowicz – wojewoda ruski; stronę przeciwną reprezentowali: książę Sobioneta Ursini Wilhelm von Rosenberg – delegat cesarski, Mikołaj Istvanfi – biskup Raab i Jetwansi von Kissenfalva, delegaci węgierscy: Krzyszot Lobkowitz i Jan Kurzbach, delegaci czescy: baron Ryszard Strein von Schwarzenau i Jan Kobentzel, delegaci austriaccy: baron Zygfryd Promnitz z Pszczyny, delegat śląski oraz przedstawiciel Stanisława Pawłowskiego – biskupa ołomunieckiego – Kasper Rogoyski. Pełnomocnikiem papieskim był kardynał Hipolit Aldobrandini (1536–1605), od 1592 papież Klemens VIII. Po dość długich pisemnych pertraktacjach wstępnych, delegacja cesarska przeniosła się do Bytomia, a delegat papieski zamieszkał w Olkuszu."
+  },
+  {
+    "id": 2,
+    "publisher": "GPM",
+    "name": "Zamek w Oporowie",
+    "card": "./cards/oporow-card.jpg",
+    "photos": {
+      "day": {
+        "full": "./models/oporow/day/full-res",
+        "thumb": "./models/oporow/day/thumb"
+      },
+      "night": {
+        "full": "./models/oporow/night/full-res",
+        "thumb": "./models/oporow/night/thumb"
+      }
+    },
+    "description": "Muzeum Zamek w Oporowie, zamek Oporowskich – ceglany zamek wzniesiony w stylu gotyckim w latach 1434–1449 we wsi Oporów pod Kutnem przez biskupa kujawskiego Władysława Oporowskiego. nDawniej stanowił centrum rozległych dóbr ziemskich rodu Oporowskich herbu Sulima. W 2007 wpisany do Państwowego Rejestru Muzeów."
+  },
+  {
+    "id": 3,
+    "publisher": "GPM",
+    "name": "Stilo",
+    "card": "./cards/stilo-card.jpg",
+    "photos": {
+      "full": "./models/stilo/full-res",
+      "thumb": "./models/stilo/thumb"
+    },
+    "description": "Latarnia Morska Stilo – latarnia morska na polskim wybrzeżu Bałtyku, położona w miejscowości Osetnik (dawniej Stilo), niedaleko Sasina (gmina Choczewo, powiat wejherowski, województwo pomorskie)[1]. Wybudowano ją w tej okolicy z powodu wejścia na mielizny i wyrzucenia na brzeg wielu statków na przełomie XIX i XX w.[2] Znajduje się pomiędzy Latarnią Morską Czołpino a Latarnią Morską Rozewie."
+  },
+  {
+    "id": 4,
+    "publisher": "FREE",
+    "name": "Curiosity",
+    "card": "./cards/curiosity-card.jpg",
+    "photos": {
+      "full": "./models/curiosity/full-res",
+      "thumb": "./models/curiosity/thumb"
+    },
+    "description": "Curiosity Rover – zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL) w celu oceny możliwości występowania potencjalnych warunków do życia w przeszłości, zbadania możliwości utrzymania się życia organicznego na Marsie, wykonania pomiarów meteorologicznych, poszukiwania pierwiastków biogennych, badania stopnia wilgotności gleby oraz poszukiwania wody i związków mineralnych z nią związanych, przeprowadzenia pomiarów widma wysokoenergetycznego promieniowania naturalnego, zbadania składu skał i gleby oraz określenia charakterystyki możliwych cyklów hydrologicznych na badanej planecie."
+  },
+  {
+    "id": 5,
+    "publisher": "GPM",
+    "name": "Ratusz w Sandomierzu",
+    "card": "./cards/sandomierz-card.jpg",
+    "photos": {
+      "day": {
+        "full": "./models/sandomierz/day/full-res",
+        "thumb": "./models/sandomierz/day/thumb"
+      },
+      "night": {
+        "full": "./models/sandomierz/night/full-res",
+        "thumb": "./models/sandomierz/night/thumb"
+      }
+    },
+    "description": "Ratusz w Sandomierzu – budynek wzniesiony w 1349 r. - wkrótce po najeździe Litwinów. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą. Część południowa, najstarsza (na niej zegar słoneczny) pochodzi z tego okresu. W XVI w. został rozbudowany w formę wydłużonego prostokąta, a następnie zwieńczony attyką trójstrefową, której autorstwo przypisywane jest Janowi Marii Padovano. Naroża attyki zdobią głowy przedstawiające cztery stany. Wieża została dobudowana w XVII wieku."
+  }
+]
