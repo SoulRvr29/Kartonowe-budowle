@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "component": "Bedzin",
     "publisher": "GPM",
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
@@ -19,6 +20,7 @@
   },
   {
     "id": 2,
+    "component": "Oporow",
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
@@ -30,7 +32,8 @@
       "night": {
         "full": "./models/oporow/night/full-res",
         "thumb": "./models/oporow/night/thumb"
-      }
+      },
+      "real": "./models/oporow/oporow-photo-1.jpg"
     },
     "description": "Muzeum Zamek w Oporowie, zamek Oporowskich – ceglany zamek wzniesiony w stylu gotyckim w latach 1434–1449 we wsi Oporów pod Kutnem przez biskupa kujawskiego Władysława Oporowskiego. nDawniej stanowił centrum rozległych dóbr ziemskich rodu Oporowskich herbu Sulima. W 2007 wpisany do Państwowego Rejestru Muzeów."
   },

@@ -1,9 +1,9 @@
-import modelsData from "./models-data.json";
+import modelsData from "../data/models-data.json";
 
 const Article = () => {
   const model = modelsData[0];
   return (
-    <article className="mb-8 text-text-light">
+    <article className=" mb-8 text-text-light">
       {/* horizontal rule */}
       <div className="grad-hr relative bottom-[1px] z-0" />
       <h2 className="text-2xl py-1 px-4 text-accent-2 bg-text-dark bg-opacity-30 ">

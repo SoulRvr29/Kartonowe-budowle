@@ -1,0 +1,10 @@
+[
+  { "name": "Zamek w Będzinie", "source": "./banner/bedzin-banner.jpg" },
+  { "name": "Łazik Curiosity", "source": "./banner/curiosity-banner.jpg" },
+  { "name": "Zamek w Oporowie", "source": "./banner/oporow-banner.jpg" },
+  {
+    "name": "Ratusz w Sandomierzu",
+    "source": "./banner/sandomierz-banner.jpg"
+  },
+  { "name": "Wieżowce", "source": "./banner/wiezowce-banner.jpg" }
+]
