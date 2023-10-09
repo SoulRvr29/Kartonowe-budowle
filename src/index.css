@@ -46,6 +46,12 @@ body {
   height: 2px;
 }
 
+.active img,
+.active .nazwa-modelu {
+  border-color: var(--accent-2);
+  background-color: var(--accent-2);
+}
+
 /************************/
 /******** BANNER ********/
 /************************/

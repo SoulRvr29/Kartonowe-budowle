@@ -1,10 +1,27 @@
 [
-  { "name": "Zamek w Będzinie", "source": "./banner/bedzin-banner.jpg" },
-  { "name": "Łazik Curiosity", "source": "./banner/curiosity-banner.jpg" },
-  { "name": "Zamek w Oporowie", "source": "./banner/oporow-banner.jpg" },
+  {
+    "name": "Zamek w Będzinie",
+    "source": "./banner/bedzin-banner.jpg",
+    "link": "/Kartonowe-budowle/Bedzin"
+  },
+  {
+    "name": "Łazik Curiosity",
+    "source": "./banner/curiosity-banner.jpg",
+    "link": "/Kartonowe-budowle/Curiosity"
+  },
+  {
+    "name": "Zamek w Oporowie",
+    "source": "./banner/oporow-banner.jpg",
+    "link": "/Kartonowe-budowle/Oporow"
+  },
   {
     "name": "Ratusz w Sandomierzu",
-    "source": "./banner/sandomierz-banner.jpg"
+    "source": "./banner/sandomierz-banner.jpg",
+    "link": "/Kartonowe-budowle/Sandomierz"
   },
-  { "name": "Wieżowce", "source": "./banner/wiezowce-banner.jpg" }
+  {
+    "name": "Wieżowce",
+    "source": "./banner/wiezowce-banner.jpg",
+    "link": "/Kartonowe-budowle/Wieżowce"
+  }
 ]

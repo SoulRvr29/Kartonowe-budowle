@@ -2,6 +2,7 @@
   {
     "id": 1,
     "component": "Bedzin",
+    "link": "/Kartonowe-budowle/Bedzin",
     "publisher": "GPM",
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
@@ -21,6 +22,7 @@
   {
     "id": 2,
     "component": "Oporow",
+    "link": "/Kartonowe-budowle/Oporow",
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
@@ -39,8 +41,10 @@
   },
   {
     "id": 3,
+    "component": "Stilo",
+    "link": "/Kartonowe-budowle/Stilo",
     "publisher": "GPM",
-    "name": "Stilo",
+    "name": "Latarnia morska Stilo",
     "card": "./cards/stilo-card.jpg",
     "photos": {
       "full": "./models/stilo/full-res",
@@ -50,8 +54,10 @@
   },
   {
     "id": 4,
+    "component": "Curiosity",
+    "link": "/Kartonowe-budowle/Curiosity",
     "publisher": "FREE",
-    "name": "Curiosity",
+    "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
     "photos": {
       "full": "./models/curiosity/full-res",
@@ -61,6 +67,8 @@
   },
   {
     "id": 5,
+    "component": "Sandomierz",
+    "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
     "name": "Ratusz w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
