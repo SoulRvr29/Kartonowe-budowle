@@ -9,6 +9,7 @@ import Oporow from "./articles/Oporow";
 import Curiosity from "./articles/Curiosity";
 import Sandomierz from "./articles/Sandomierz";
 import Stilo from "./articles/Stilo";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Kartonowe-budowle/Stilo" element={<Stilo />} />
       </Routes>
       <Footer />
+      <BackToTop />
     </main>
   );
 }

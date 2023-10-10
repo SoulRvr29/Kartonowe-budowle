@@ -2,7 +2,10 @@ import { NavLink } from "react-router-dom";
 const Card = ({ model }) => {
   return (
     <div className="first:-ml-0 aspect-square h-[180px] max-sm:-ml-32 -ml-20 relative  hover:-translate-x-14 hover:-translate-y-1 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 ">
-      <NavLink to={model.link}>
+      <NavLink
+        onClick={() => document.querySelector("article").scrollIntoView()}
+        to={model.link}
+      >
         {/* gradient */}
         <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute"></div>
         {/* zdjęcie */}

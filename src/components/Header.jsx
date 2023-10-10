@@ -21,22 +21,54 @@ function App() {
       {/* center */}
       <div className="flex gap-2 justify-center align-middle place-items-center">
         <h1 className="text-accent text-4xl font-bold uppercase p-1">
-          <span className="hover:text-accent-2 ">k</span>
-          <span className="hover:text-accent-2 ">a</span>
-          <span className="hover:text-accent-2 ">r</span>
-          <span className="hover:text-accent-2 ">t</span>
-          <span className="hover:text-accent-2 ">o</span>
-          <span className="hover:text-accent-2 ">n</span>
-          <span className="hover:text-accent-2 ">o</span>
-          <span className="hover:text-accent-2 ">w</span>
-          <span className="hover:text-accent-2  mr-6">e</span>
-          <span className="hover:text-accent-2 ">b</span>
-          <span className="hover:text-accent-2 ">u</span>
-          <span className="hover:text-accent-2 ">d</span>
-          <span className="hover:text-accent-2 ">o</span>
-          <span className="hover:text-accent-2 ">w</span>
-          <span className="hover:text-accent-2 ">l</span>
-          <span className="hover:text-accent-2 ">e</span>
+          <span className="anim-swing hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            k
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            a
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            r
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            t
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            o
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            n
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            o
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            w
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block mr-6">
+            e
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            b
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            u
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            d
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            o
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            w
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            l
+          </span>
+          <span className="hover:text-accent-3 cursor-default hover:scale-125 transition-all inline-block">
+            e
+          </span>
           {/* Kartonowe &nbsp;budowle */}
         </h1>
       </div>

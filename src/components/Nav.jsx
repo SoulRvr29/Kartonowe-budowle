@@ -7,7 +7,7 @@ const Nav = () => {
       {/* horizontal rule */}
       <div className="grad-hr-2" />
       {/* categories */}
-      <div className="relative z-10 ">
+      {/* <div className="relative z-10 ">
         <ul className="flex w-full text-center justify-center nav-clamp tracking-wide bg-text-dark bg-opacity-30 ">
           <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 hover:cursor-pointer  hover:border-b-accent-2 text">
             Budowle
@@ -22,7 +22,7 @@ const Nav = () => {
             Inne
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* horizontal rule */}
       <div className="grad-hr-2 relative bottom-[2px] z-0" />
       {/* cards */}
