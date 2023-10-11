@@ -13,7 +13,8 @@ import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
-    <main className="relative bg-bkg min-h-screen  flex flex-col  max-w-6xl mx-auto border-accent-2 border">
+    <main className="relative bg-bkg min-h-screen  flex flex-col max-w-6xl mx-auto border-accent border-x-2 border-opacity-30 ">
+      <div className="bg-accent w-full  mx-auto h-full top-0 left-0 absolute blur-3xl opacity-25 self-center -z-10"></div>
       <Header />
       <Banner />
       <Nav />

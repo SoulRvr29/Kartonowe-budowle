@@ -1,11 +1,13 @@
 import modelsData from "../data/models-data.json";
 import ArticleHeader from "../components/ArticleHeader";
+import Gallery from "../components/Gallery";
 
 const Article = () => {
   const model = modelsData[1];
   return (
     <article className=" mb-8 text-text-light">
       <ArticleHeader id={1} />
+      <Gallery id={1} />
       <div className="p-8">
         <img
           className="pb-8 pr-8 float-left "

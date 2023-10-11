@@ -7,14 +7,15 @@
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
     "photos": {
-      "quantity": 10,
       "day": {
+        "quantity": 10,
         "full": "./models/bedzin/day/full-res",
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb"
       },
       "night": {
+        "quantity": 10,
         "full": "./models/bedzin/night/full-res",
-        "thumb": "./models/bedzin/night/thumb/bedzin-thumb"
+        "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
       "real": "./models/bedzin/bedzin-photo-1.jpg"
     },
@@ -28,9 +29,10 @@
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
     "photos": {
+      "quantity": 10,
       "day": {
         "full": "./models/oporow/day/full-res",
-        "thumb": "./models/oporow/day/thumb"
+        "thumb": "./models/oporow/day/thumb/oporow-thumb-d"
       },
       "night": {
         "full": "./models/oporow/night/full-res",

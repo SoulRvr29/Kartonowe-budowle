@@ -24,6 +24,7 @@ body {
   color: var(--text-light);
   background-color: var(--bkg);
   text-align: justify;
+  /* animation: fade-in 1s; */
 }
 .pointer {
   cursor: pointer;
@@ -78,6 +79,19 @@ p {
 }
 h3 {
   font-size: 1.5rem;
+}
+
+.gallery button {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* .anim-swing {
@@ -143,10 +157,10 @@ h3 {
   0% {
     opacity: 0;
   }
-  25% {
+  10% {
     opacity: 1;
   }
-  75% {
+  90% {
     opacity: 1;
   }
   100% {

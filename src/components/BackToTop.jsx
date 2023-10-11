@@ -1,8 +1,8 @@
 const BackToTop = () => {
   return (
-    <button className="max-w-6xl fixed bottom-0 w-full grid">
+    <button className="max-w-6xl fixed bottom-0 w-full grid z-20">
       <a
-        className="absolute right-3 bottom-3 mr-2 hover:text-accent uppercase "
+        className="absolute right-5 bottom-5 mr-2 hover:text-accent hover:scale-125 transition-all uppercase "
         href="#"
       >
         <svg

@@ -3,7 +3,9 @@ const Card = ({ model }) => {
   return (
     <div className="first:-ml-0 aspect-square h-[180px] max-sm:-ml-32 -ml-20 relative  hover:-translate-x-14 hover:-translate-y-1 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 ">
       <NavLink
-        onClick={() => document.querySelector("article").scrollIntoView()}
+        onClick={() =>
+          document.querySelector(".article-header").scrollIntoView()
+        }
         to={model.link}
       >
         {/* gradient */}
