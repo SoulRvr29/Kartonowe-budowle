@@ -63,7 +63,7 @@ const Gallery = (id) => {
           {dayPhotos.map((loc) => {
             return (
               <button
-                value={dayPhotos.indexOf(loc) + 1}
+                key={dayPhotos.indexOf(loc) + 1}
                 onClick={() => {
                   setFullPhotoState(true);
                 }}
@@ -83,7 +83,10 @@ const Gallery = (id) => {
         <div className="gallery h20 flex gap-5 p-4 flex-wrap justify-center">
           {nightPhotos.map((loc) => {
             return (
-              <button onClick={() => setFullPhotoState(true)}>
+              <button
+                key={dayPhotos.indexOf(loc) + 1}
+                onClick={() => setFullPhotoState(true)}
+              >
                 <img
                   className="h-[10rem] border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all"
                   src={loc}
