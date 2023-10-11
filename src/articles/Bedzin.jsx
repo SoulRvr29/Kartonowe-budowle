@@ -8,10 +8,10 @@ const Article = () => {
   const [historyState, setHistoryState] = useState(false);
 
   return (
-    <div className="mb-14">
+    <div className="mb-14 ">
       <ArticleHeader id={0} />
       <Gallery id={0} />
-      <header className="font-bold mx-8">
+      <header className="font-bold mx-8 ">
         <button
           onClick={() => setHistoryState(!historyState)}
           className="hover:underline "

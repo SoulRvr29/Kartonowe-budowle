@@ -10,6 +10,10 @@ const Gallery = (id) => {
   let dayPhotos = [];
   let nightPhotos = [];
 
+  const [photoSize, setPhotoSize] = useState(false);
+  const [fullPhotoState, setFullPhotoState] = useState(false);
+  // const [photoId, setPhotoId] = useState(0);
+
   const [galleryState, setGalleryState] = useState("day");
 
   for (let i = 1; i <= dayMax; i++) {
@@ -58,7 +62,13 @@ const Gallery = (id) => {
         <div className="gallery relative flex gap-5 py-4 flex-wrap justify-center ">
           {dayPhotos.map((loc) => {
             return (
-              <button className="z-10">
+              <button
+                value={dayPhotos.indexOf(loc) + 1}
+                onClick={() => {
+                  setFullPhotoState(true);
+                }}
+                className="z-10"
+              >
                 <img
                   className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all"
                   src={loc}
@@ -73,7 +83,7 @@ const Gallery = (id) => {
         <div className="gallery h20 flex gap-5 p-4 flex-wrap justify-center">
           {nightPhotos.map((loc) => {
             return (
-              <button>
+              <button onClick={() => setFullPhotoState(true)}>
                 <img
                   className="h-[10rem] border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all"
                   src={loc}
@@ -82,6 +92,34 @@ const Gallery = (id) => {
               </button>
             );
           })}
+        </div>
+      )}
+      {/* full size */}
+      {fullPhotoState === true && (
+        <div
+          onClick={() => setFullPhotoState(false)}
+          className="fixed w-full h-full overflow-auto  bg-black top-0 left-0 z-30 bg-opacity-40 grid place-content-center"
+        >
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setPhotoSize(!photoSize);
+            }}
+          >
+            {photoSize === false ? (
+              <img
+                className="w-full max-w-4xl "
+                src={model.photos.day.full + "3.jpg"}
+                alt="photo"
+              />
+            ) : (
+              <img
+                className="w-full "
+                src={model.photos.day.full + "3.jpg"}
+                alt="photo"
+              />
+            )}
+          </button>
         </div>
       )}
     </section>

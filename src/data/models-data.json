@@ -9,12 +9,12 @@
     "photos": {
       "day": {
         "quantity": 10,
-        "full": "./models/bedzin/day/full-res",
+        "full": "./models/bedzin/day/full-res/bedzin-d",
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb"
       },
       "night": {
         "quantity": 10,
-        "full": "./models/bedzin/night/full-res",
+        "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
       "real": "./models/bedzin/bedzin-photo-1.jpg"
