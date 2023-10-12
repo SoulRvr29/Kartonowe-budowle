@@ -26,6 +26,9 @@ body {
   text-align: justify;
   animation: fade-in 1s;
 }
+.site-overflow {
+  overflow: hidden;
+}
 .pointer {
   cursor: pointer;
 }
@@ -85,7 +88,7 @@ h3 {
   animation: fade-in 1s;
 }
 .full-size {
-  /* animation: fade-in 1s; */
+  animation: fade-in 1s;
 }
 
 @keyframes fade-in {

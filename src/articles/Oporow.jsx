@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Article = () => {
   const model = modelsData[1];
-  const [historyState, setHistoryState] = useState(false);
+  const [historyState, setHistoryState] = useState(true);
   return (
     <article className=" mb-8 text-text-light">
       <ArticleHeader id={1} />

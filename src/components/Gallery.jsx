@@ -63,29 +63,35 @@ const Gallery = (id) => {
       <hr />
       {/* thumbials */}
 
-      <div className="gallery relative flex gap-5 py-4 flex-wrap justify-center ">
-        {galleryState === "day" &&
-          dayPhotos.map((loc) => {
-            return (
-              <button
-                key={loc}
-                onClick={(e) => {
-                  setFullPhotoState(true);
-                  setPhotoId(e.target.attributes.value.value);
-                }}
-                className="z-10"
-              >
-                <img
-                  value={loc.slice(-6, -4)}
-                  className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all"
-                  src={loc}
-                  alt={model.name + " photo"}
-                />
-              </button>
-            );
-          })}
+      <div className="gallery relative flex gap-5  flex-wrap justify-center ">
+        {galleryState === "day" && (
+          <div className="p-4 gallery relative flex gap-5  flex-wrap justify-center ">
+            {dayPhotos.map((loc) => {
+              return (
+                <button
+                  key={loc}
+                  onClick={(e) => {
+                    setFullPhotoState(true);
+                    document
+                      .querySelector("body")
+                      .classList.add("site-overflow");
+                    setPhotoId(e.target.attributes.value.value);
+                  }}
+                  className="z-10"
+                >
+                  <img
+                    value={loc.slice(-6, -4)}
+                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all"
+                    src={loc}
+                    alt={model.name + " photo"}
+                  />
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
-      <div className="gallery h20 flex gap-5 p-4 flex-wrap justify-center">
+      <div className="gallery h20 flex gap-5  flex-wrap justify-center">
         {galleryState === "night" &&
           nightPhotos.map((loc) => {
             return (
@@ -93,6 +99,7 @@ const Gallery = (id) => {
                 key={loc}
                 onClick={(e) => {
                   setFullPhotoState(true);
+                  document.querySelector("body").classList.add("site-overflow");
                   setPhotoId(e.target.attributes.value.value);
                 }}
               >
@@ -110,12 +117,15 @@ const Gallery = (id) => {
       {/* FULL SIZE PHOTO GALLERY */}
       {fullPhotoState === true && (
         <div
-          onClick={() => setFullPhotoState(false)}
-          className="full-size fixed w-full h-full overflow-auto  bg-black top-0 left-0 z-30 bg-opacity-40 grid place-content-center"
+          onClick={() => {
+            setFullPhotoState(false);
+            document.querySelector("body").classList.remove("site-overflow");
+          }}
+          className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center  grid-rows-1"
         >
           {/* ICON CONTAINER */}
           <div className="w-full grid max-w-6xl place-self-center mx-auto h-full absolute">
-            {/* close icon medium*/}
+            {/* close icon medium */}
             {photoSize == false ? (
               <>
                 <svg
@@ -123,21 +133,24 @@ const Gallery = (id) => {
                   height="2em"
                   viewBox="0 0 384 512"
                   fill="white"
-                  className="hover:cursor-pointer fixed justify-self-end hover:bg-accent-2 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2  m-8"
+                  className=" z-40 hover:cursor-pointer fixed justify-self-end  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2  m-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     setFullPhotoState(false);
+                    document
+                      .querySelector("body")
+                      .classList.remove("site-overflow");
                   }}
                 >
                   <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                 </svg>
-                {/* left icon */}
+                {/* left icon medium */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="2em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="hover:cursor-pointer fixed hover:bg-accent-2 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 ml-8"
+                  className="z-40 hover:cursor-pointer fixed  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 ml-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -148,13 +161,13 @@ const Gallery = (id) => {
                 >
                   <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
                 </svg>
-                {/* right icon */}
+                {/* right icon medium */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="2em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="hover:cursor-pointer fixed justify-self-end hover:bg-accent-2 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 mr-8"
+                  className="z-40 hover:cursor-pointer fixed justify-self-end  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 mr-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -172,24 +185,27 @@ const Gallery = (id) => {
               <>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
+                  height="3em"
                   viewBox="0 0 384 512"
                   fill="white"
-                  className="hover:cursor-pointer fixed  hover:bg-accent-2 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 z-40 top-8 right-12"
+                  className="hover:cursor-pointer fixed   opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 z-40 top-8 right-12"
                   onClick={(e) => {
                     e.stopPropagation();
                     setFullPhotoState(false);
+                    document
+                      .querySelector("body")
+                      .classList.remove("site-overflow");
                   }}
                 >
                   <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                 </svg>
-                {/* left icon */}
+                {/* left icon full */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
+                  height="3em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="hover:cursor-pointer z-40 fixed hover:bg-accent-2 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 left-8"
+                  className="hover:cursor-pointer z-40 fixed  rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 left-8 opacity-50 hover:opacity-100"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -200,13 +216,13 @@ const Gallery = (id) => {
                 >
                   <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
                 </svg>
-                {/* right icon */}
+                {/* right icon full*/}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
+                  height="3em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="hover:cursor-pointer z-40 fixed justify-self-end hover:bg-accent-2 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 right-12"
+                  className="hover:cursor-pointer z-40 fixed justify-self-end  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 right-12"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -230,9 +246,9 @@ const Gallery = (id) => {
           >
             {/* MEDIUM WIDTH */}
             {photoSize === false ? (
-              <div className="grid z-30">
+              <div className="grid z-30 mx-auto place-self-center">
                 <img
-                  className="w-full max-w-4xl max-h-screen "
+                  className="w-full max-w-4xl max-h-screen border-4 border-accent-2"
                   src={
                     galleryState === "day"
                       ? model.photos.day.full + photoId + ".jpg"
@@ -243,9 +259,9 @@ const Gallery = (id) => {
               </div>
             ) : (
               // FULL WIDTH
-              <div className="grid z-30">
+              <div className="grid  z-30 ">
                 <img
-                  className="w-full "
+                  className="w-full"
                   src={
                     galleryState === "day"
                       ? model.photos.day.full + photoId + ".jpg"

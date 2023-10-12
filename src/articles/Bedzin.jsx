@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Article = () => {
   const model = modelsData[0];
-  const [historyState, setHistoryState] = useState(false);
+  const [historyState, setHistoryState] = useState(true);
 
   return (
     <div className="mb-14 ">

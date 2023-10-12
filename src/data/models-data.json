@@ -13,7 +13,7 @@
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb-d"
       },
       "night": {
-        "quantity": 5,
+        "quantity": 10,
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
