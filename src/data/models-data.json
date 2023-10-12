@@ -10,10 +10,10 @@
       "day": {
         "quantity": 10,
         "full": "./models/bedzin/day/full-res/bedzin-d",
-        "thumb": "./models/bedzin/day/thumb/bedzin-thumb"
+        "thumb": "./models/bedzin/day/thumb/bedzin-thumb-d"
       },
       "night": {
-        "quantity": 10,
+        "quantity": 5,
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
@@ -29,14 +29,15 @@
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
     "photos": {
-      "quantity": 10,
       "day": {
-        "full": "./models/oporow/day/full-res",
+        "quantity": 10,
+        "full": "./models/oporow/day/full-res/oporow-d",
         "thumb": "./models/oporow/day/thumb/oporow-thumb-d"
       },
       "night": {
-        "full": "./models/oporow/night/full-res",
-        "thumb": "./models/oporow/night/thumb"
+        "quantity": 10,
+        "full": "./models/oporow/night/full-res/oporow-n",
+        "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
       },
       "real": "./models/oporow/oporow-photo-1.jpg"
     },

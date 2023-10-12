@@ -84,6 +84,9 @@ h3 {
 .gallery button {
   animation: fade-in 1s;
 }
+.full-size {
+  /* animation: fade-in 1s; */
+}
 
 @keyframes fade-in {
   from {
@@ -141,7 +144,6 @@ h3 {
 .banner-img {
   /* animation: banner-scroll 10s infinite linear; */
 }
-
 /****************************/
 /******** ANIMATIONS ********/
 /****************************/
