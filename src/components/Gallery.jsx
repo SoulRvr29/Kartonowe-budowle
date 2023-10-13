@@ -126,117 +126,74 @@ const Gallery = (id) => {
         >
           {/* ICON CONTAINER */}
           <div className="w-full grid max-w-6xl place-self-center mx-auto h-full absolute">
-            {/* close icon medium */}
-            {photoSize == false ? (
-              <>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="3em"
-                  viewBox="0 0 384 512"
-                  fill="white"
-                  className="fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end m-8"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setFullPhotoState(false);
-                    document
-                      .querySelector("body")
-                      .classList.remove("site-overflow");
-                  }}
-                >
-                  <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-                </svg>
-                {/* left icon medium */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="3em"
-                  viewBox="0 0 320 512"
-                  fill="white"
-                  className="gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 ml-8 "
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    let nr = Number.parseInt(photoId);
-                    if (nr > 1) nr--;
-                    if (nr < 10) nr = "0" + nr;
-                    setPhotoId(nr);
-                  }}
-                >
-                  <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-                </svg>
-                {/* right icon medium */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="3em"
-                  viewBox="0 0 320 512"
-                  fill="white"
-                  className="fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end top-1/2 mr-8"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    let nr = Number.parseInt(photoId);
-                    let max = galleryState === "day" ? dayMax : nightMax;
-                    if (nr < max) nr++;
-                    if (nr < 10) nr = "0" + nr;
-                    setPhotoId(nr);
-                  }}
-                >
-                  <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </>
-            ) : (
-              // close icon full
-              <>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="3em"
-                  viewBox="0 0 384 512"
-                  fill="white"
-                  className="fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-14 right-20"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setFullPhotoState(false);
-                    document
-                      .querySelector("body")
-                      .classList.remove("site-overflow");
-                  }}
-                >
-                  <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-                </svg>
-                {/* left icon full */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="3em"
-                  viewBox="0 0 320 512"
-                  fill="white"
-                  className="fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 left-16"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    let nr = Number.parseInt(photoId);
-                    if (nr > 1) nr--;
-                    if (nr < 10) nr = "0" + nr;
-                    setPhotoId(nr);
-                  }}
-                >
-                  <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-                </svg>
-                {/* right icon full*/}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="3em"
-                  viewBox="0 0 320 512"
-                  fill="white"
-                  className="fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 right-20"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    let nr = Number.parseInt(photoId);
-                    let max = galleryState === "day" ? dayMax : nightMax;
-                    if (nr < max) nr++;
-                    if (nr < 10) nr = "0" + nr;
-                    setPhotoId(nr);
-                  }}
-                >
-                  <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </>
-            )}
+            {/* close icon */}
+            <>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="3em"
+                viewBox="0 0 384 512"
+                fill="white"
+                className={
+                  photoSize == false
+                    ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end m-8"
+                    : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-14 right-20"
+                }
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setPhotoSize(false);
+                  setFullPhotoState(false);
+                  document
+                    .querySelector("body")
+                    .classList.remove("site-overflow");
+                }}
+              >
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+              </svg>
+              {/* left icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="3em"
+                viewBox="0 0 320 512"
+                fill="white"
+                className={
+                  photoSize == false
+                    ? "gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 ml-8 "
+                    : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 left-16"
+                }
+                onClick={(e) => {
+                  e.stopPropagation();
+                  let nr = Number.parseInt(photoId);
+                  if (nr > 1) nr--;
+                  if (nr < 10) nr = "0" + nr;
+                  setPhotoId(nr);
+                }}
+              >
+                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+              </svg>
+
+              {/* right icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="3em"
+                viewBox="0 0 320 512"
+                fill="white"
+                className={
+                  photoSize == false
+                    ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end top-1/2 mr-8"
+                    : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 right-20"
+                }
+                onClick={(e) => {
+                  e.stopPropagation();
+                  let nr = Number.parseInt(photoId);
+                  let max = galleryState === "day" ? dayMax : nightMax;
+                  if (nr < max) nr++;
+                  if (nr < 10) nr = "0" + nr;
+                  setPhotoId(nr);
+                }}
+              >
+                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg>
+            </>
           </div>
           <button
             className="grid"
@@ -245,33 +202,22 @@ const Gallery = (id) => {
               setPhotoSize(!photoSize);
             }}
           >
-            {/* MEDIUM WIDTH */}
-            {photoSize === false ? (
-              <div className="medium-width grid z-30 mx-auto place-self-center">
-                <img
-                  className="w-full max-w-4xl max-h-screen border-4 border-accent-2"
-                  src={
-                    galleryState === "day"
-                      ? model.photos.day.full + photoId + ".jpg"
-                      : model.photos.night.full + photoId + ".jpg"
-                  }
-                  alt={"photo" + photoId}
-                />
-              </div>
-            ) : (
-              // FULL WIDTH
-              <div className="grid  z-30 ">
-                <img
-                  className="w-full"
-                  src={
-                    galleryState === "day"
-                      ? model.photos.day.full + photoId + ".jpg"
-                      : model.photos.night.full + photoId + ".jpg"
-                  }
-                  alt={"photo" + photoId}
-                />
-              </div>
-            )}
+            {/* medium width - false / full width - true*/}
+            <div className="medium-width grid z-30 mx-auto place-self-center">
+              <img
+                className={
+                  photoSize === false
+                    ? "w-full max-w-4xl max-h-screen border-4 border-accent-2"
+                    : "w-full"
+                }
+                src={
+                  galleryState === "day"
+                    ? model.photos.day.full + photoId + ".jpg"
+                    : model.photos.night.full + photoId + ".jpg"
+                }
+                alt={"photo" + photoId}
+              />
+            </div>
           </button>
         </div>
       )}

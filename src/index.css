@@ -159,10 +159,10 @@ hr {
 .full-size {
   animation: fade-in 1.5s;
 }
-/* .medium-width {
+.medium-width {
   width: 0;
   animation: width-in 1s forwards;
-} */
+}
 
 @keyframes fade-in {
   from {
@@ -173,7 +173,7 @@ hr {
   }
 }
 
-/* @keyframes width-in {
+@keyframes width-in {
   from {
     width: 0%;
   }
@@ -181,4 +181,4 @@ hr {
     width: 100%;
     border-width: 0px;
   }
-} */
+}
