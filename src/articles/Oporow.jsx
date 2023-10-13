@@ -1,6 +1,7 @@
 import modelsData from "../data/models-data.json";
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
+import HistoryHeader from "../components/HistoryHeader";
 import { useState } from "react";
 
 const Article = () => {
@@ -10,16 +11,11 @@ const Article = () => {
     <article className=" mb-8 text-text-light">
       <ArticleHeader id={1} />
       <Gallery id={1} />
-      <header className="font-bold mx-8 ">
-        <button
-          onClick={() => setHistoryState(!historyState)}
-          className="hover:underline "
-        >
-          <h3> Historia</h3>
-        </button>
-
-        <hr />
-      </header>
+      <HistoryHeader
+        sectionName="Historia"
+        sectionState={historyState}
+        setSectionState={setHistoryState}
+      />
       {historyState === true && (
         <div className="p-8">
           <img

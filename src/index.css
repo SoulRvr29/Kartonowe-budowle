@@ -153,7 +153,8 @@ hr {
 }
 
 /***** GALLERY *****/
-.gallery button {
+.gallery button,
+.history {
   animation: fade-in 1s;
 }
 .full-size {
