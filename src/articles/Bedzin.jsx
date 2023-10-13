@@ -25,19 +25,19 @@ const Article = () => {
         <article id="test" className=" mb-8 text-text-light ">
           <div className="px-8 ">
             <p>
-              <span className="first-letter">H</span>istoria fortyfikacji w
-              Będzinie sięga IX wieku. Już wtedy na Górze Zamkowej wzniesiono
-              gród, prawdopodobnie należący do plemienia Wiślan lub jego
-              zachodniego odłamu. Gród był kilkakrotnie rozbudowywany: m.in. w
-              miejsce pierwotnej palisady wzniesiono istniejący do dziś
-              zewnętrzny wał podgrodzia, a wewnętrzny wał podgrodzia zniwelowano
-              celem założenia cmentarza wczesnochrześcijańskiego (XII wiek).
-              Osadnictwo podgrodowe rozwijało się na południowym stoku wzgórza
-              (obecne podejście pod zamek i teren parafii Św. Trójcy). Wbrew
-              rozpowszechnionym opiniom Tatarzy nie zdobyli grodu – ślady
-              spalenizny odkryte w wale grodu w świetle najnowszych badań
-              archeologicznych (m.in. metodą dendrochronologii) pochodzą z lat
-              wcześniejszych.
+              <span className="first-letter font-playfair">H</span>istoria
+              fortyfikacji w Będzinie sięga IX wieku. Już wtedy na Górze
+              Zamkowej wzniesiono gród, prawdopodobnie należący do plemienia
+              Wiślan lub jego zachodniego odłamu. Gród był kilkakrotnie
+              rozbudowywany: m.in. w miejsce pierwotnej palisady wzniesiono
+              istniejący do dziś zewnętrzny wał podgrodzia, a wewnętrzny wał
+              podgrodzia zniwelowano celem założenia cmentarza
+              wczesnochrześcijańskiego (XII wiek). Osadnictwo podgrodowe
+              rozwijało się na południowym stoku wzgórza (obecne podejście pod
+              zamek i teren parafii Św. Trójcy). Wbrew rozpowszechnionym opiniom
+              Tatarzy nie zdobyli grodu – ślady spalenizny odkryte w wale grodu
+              w świetle najnowszych badań archeologicznych (m.in. metodą
+              dendrochronologii) pochodzą z lat wcześniejszych.
             </p>
             <img
               className="py-4 pr-8 float-left "

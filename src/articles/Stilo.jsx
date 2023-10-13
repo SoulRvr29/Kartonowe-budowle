@@ -1,9 +1,15 @@
 import modelsData from "../data/models-data.json";
-// import ArticleHeader from "../components/ArticleHeader";
+import ArticleHeader from "../components/ArticleHeader";
+import Gallery from "../components/Gallery";
+import { useState } from "react";
+
 const Article = () => {
   const model = modelsData[2];
+  const [historyState, setHistoryState] = useState(true);
   return (
     <article className=" mb-8 text-text-light">
+      <ArticleHeader id={2} />
+      <Gallery id={2} />
       {/* <ArticleHeader id={2} /> */}
       <div className="p-8">
         {/* <img

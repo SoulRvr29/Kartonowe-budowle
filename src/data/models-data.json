@@ -51,8 +51,14 @@
     "name": "Latarnia morska Stilo",
     "card": "./cards/stilo-card.jpg",
     "photos": {
-      "full": "./models/stilo/full-res",
-      "thumb": "./models/stilo/thumb"
+      "day": {
+        "quantity": 10,
+        "full": "./models/stilo/full-res/stilo-",
+        "thumb": "./models/stilo/thumb/stilo-thumb-"
+      },
+      "night": {
+        "quantity": 0
+      }
     },
     "description": "Latarnia morska na polskim wybrzeżu Bałtyku, położona w miejscowości Osetnik (dawniej Stilo), niedaleko Sasina (gmina Choczewo, powiat wejherowski, województwo pomorskie)."
   },
@@ -64,8 +70,14 @@
     "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
     "photos": {
-      "full": "./models/curiosity/full-res",
-      "thumb": "./models/curiosity/thumb"
+      "day": {
+        "quantity": 10,
+        "full": "./models/curiosity/full-res/curiosity-",
+        "thumb": "./models/curiosity/thumb/curiosity-thumb-"
+      },
+      "night": {
+        "quantity": 0
+      }
     },
     "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
   },
@@ -78,12 +90,14 @@
     "card": "./cards/sandomierz-card.jpg",
     "photos": {
       "day": {
-        "full": "./models/sandomierz/day/full-res",
-        "thumb": "./models/sandomierz/day/thumb"
+        "quantity": 10,
+        "full": "./models/sandomierz/day/full-res/sandomierz-d",
+        "thumb": "./models/sandomierz/day/thumb/sandomierz-thumb-d"
       },
       "night": {
-        "full": "./models/sandomierz/night/full-res",
-        "thumb": "./models/sandomierz/night/thumb"
+        "quantity": 10,
+        "full": "./models/sandomierz/night/full-res/sandomierz-n",
+        "thumb": "./models/sandomierz/night/thumb/sandomierz-thumb-n"
       }
     },
     "description": "Budynek wzniesiony w 1349 r. - wkrótce po najeździe Litwinów. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą. "

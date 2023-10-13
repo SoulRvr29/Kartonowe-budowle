@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/*****************************/
+/***** DEFAULT SETTINGS  *****/
+/*****************************/
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,6 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Playfair Display", serif; */
 
   --text-light: rgb(212, 212, 212);
   --accent: rgb(0, 122, 204);
@@ -17,15 +21,33 @@
   --text-dark: rgb(77, 77, 77);
   --bkg: rgb(30, 30, 30);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   color: var(--text-light);
   background-color: var(--bkg);
   text-align: justify;
   animation: fade-in 1s;
 }
+
+br {
+  height: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/************************************/
+/**********  CUSTOM CLASS  **********/
+/************************************/
 .site-overflow {
   overflow: hidden;
 }
@@ -35,6 +57,18 @@ body {
 .nav-clamp {
   font-size: clamp(0.5rem, 2.5vw, 1rem);
 }
+.first-letter {
+  font-size: 3rem;
+  line-height: 44px;
+  margin-right: 4px;
+  float: left;
+}
+.btn-up {
+  animation: fade-in 2s;
+}
+/*********************************/
+/**********  CUSTOM HR  **********/
+/*********************************/
 .grad-hr {
   background: linear-gradient(
     to right,
@@ -60,72 +94,15 @@ hr {
   margin: 0.5rem 0;
 }
 
+/********************************/
+/**********  CARD NAV  **********/
+/********************************/
 .active img,
 .active .nazwa-modelu {
   border-color: var(--accent-2);
   background-color: var(--accent-2);
 }
 
-.first-letter {
-  font-size: 3rem;
-  line-height: 44px;
-  margin-right: 4px;
-  float: left;
-}
-
-br {
-  height: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-
-.gallery button {
-  animation: fade-in 1s;
-}
-.full-size {
-  animation: fade-in 1s;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* .anim-swing {
-  animation: swing 2s ease-in-out;
-  transform-origin: top;
-  animation-play-state: paused;
-}
-.anim-swing:hover {
-  animation-play-state: running;
-}
-
-@keyframes swing {
-  0% {
-    rotate: 0deg;
-  }
-  20% {
-    rotate: 15deg;
-  }
-  50% {
-    rotate: -10deg;
-  }
-  80% {
-    rotate: 7deg;
-  }
-  100% {
-    rotate: 0deg;
-  }
-} */
 /************************/
 /******** BANNER ********/
 /************************/
@@ -141,15 +118,17 @@ h3 {
   );
 }
 
-.banner-container {
-  /* animation: banner-fade 10s infinite linear; */
-}
-.banner-img {
-  /* animation: banner-scroll 10s infinite linear; */
-}
 /****************************/
 /******** ANIMATIONS ********/
 /****************************/
+
+/***** BANNER *****/
+/* .banner-fade {
+  animation: banner-fade 5s infinite linear;
+}
+.banner-scroll {
+  animation: banner-scroll 5s infinite linear;
+} */
 @keyframes banner-scroll {
   0% {
     bottom: 13rem;
@@ -172,3 +151,34 @@ h3 {
     opacity: 0;
   }
 }
+
+/***** GALLERY *****/
+.gallery button {
+  animation: fade-in 1s;
+}
+.full-size {
+  animation: fade-in 1.5s;
+}
+/* .medium-width {
+  width: 0;
+  animation: width-in 1s forwards;
+} */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* @keyframes width-in {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+    border-width: 0px;
+  }
+} */

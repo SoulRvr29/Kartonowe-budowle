@@ -16,14 +16,14 @@ const Banner = () => {
   //     setImage(() => bannerData[index].source);
   //     setName(() => bannerData[index].name);
   //     setLink(() => bannerData[index].link);
-  //   }, 10000);
+  //   }, 5000);
   //   return () => clearInterval(interval);
-  // }, [image]);
+  // });
 
   return (
     <>
       <Link to={link}>
-        <section className="banner-container pointer  h-[200px] w-full overflow-hidden relative flex flex-col">
+        <section className="banner-fade pointer  h-[200px] w-full overflow-hidden relative flex flex-col">
           <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade">
             {name}
           </h2>
@@ -32,7 +32,7 @@ const Banner = () => {
             {/* gradient */}
             <div className="w-full h-full absolute banner-grad z-10"></div>
             <img
-              className="banner-img relative bottom-[11rem] place-self-center  w-screen min-w-max "
+              className="banner-scroll relative bottom-[11rem] place-self-center  w-screen min-w-max "
               src={image}
               alt="banner photo"
             />

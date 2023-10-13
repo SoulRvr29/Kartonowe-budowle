@@ -27,7 +27,7 @@ const Gallery = (id) => {
     if (i < 10) nr = "0" + i;
     nightPhotos.push(nightSrc + nr + ".jpg");
   }
-
+  // addEventListener("mousemove") (() => console.log("move"));
   return (
     <section className="px-8  select-none">
       <h3 className="font-bold">
@@ -42,7 +42,8 @@ const Gallery = (id) => {
         </button>
         <button
           onClick={() => {
-            setGalleryState(galleryState === "day" ? "night" : "day");
+            nightMax != 0 &&
+              setGalleryState(galleryState === "day" ? "night" : "day");
           }}
         >
           {galleryState === "day" && (
@@ -51,7 +52,7 @@ const Gallery = (id) => {
               <span className="text-accent-3 hover:underline">dzień</span>
             </>
           )}{" "}
-          {galleryState === "night" && (
+          {galleryState === "night" && nightMax !== 0 && (
             <>
               <span>&nbsp;/ </span>
               <span className="text-accent hover:underline">noc</span>
@@ -130,10 +131,10 @@ const Gallery = (id) => {
               <>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
+                  height="3em"
                   viewBox="0 0 384 512"
                   fill="white"
-                  className=" z-40 hover:cursor-pointer fixed justify-self-end  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2  m-8"
+                  className="fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end m-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     setFullPhotoState(false);
@@ -147,10 +148,10 @@ const Gallery = (id) => {
                 {/* left icon medium */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
+                  height="3em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="z-40 hover:cursor-pointer fixed  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 ml-8"
+                  className="gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 ml-8 "
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -164,10 +165,10 @@ const Gallery = (id) => {
                 {/* right icon medium */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
+                  height="3em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="z-40 hover:cursor-pointer fixed justify-self-end  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 mr-8"
+                  className="fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end top-1/2 mr-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -188,7 +189,7 @@ const Gallery = (id) => {
                   height="3em"
                   viewBox="0 0 384 512"
                   fill="white"
-                  className="hover:cursor-pointer fixed   opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 z-40 top-8 right-12"
+                  className="fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-14 right-20"
                   onClick={(e) => {
                     e.stopPropagation();
                     setFullPhotoState(false);
@@ -205,7 +206,7 @@ const Gallery = (id) => {
                   height="3em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="hover:cursor-pointer z-40 fixed  rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 left-8 opacity-50 hover:opacity-100"
+                  className="fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 left-16"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -222,7 +223,7 @@ const Gallery = (id) => {
                   height="3em"
                   viewBox="0 0 320 512"
                   fill="white"
-                  className="hover:cursor-pointer z-40 fixed justify-self-end  opacity-50 hover:opacity-100 rounded-full  aspect-square p-[2px] bg-accent drop-shadow-lg border-2 top-1/2 right-12"
+                  className="fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 right-20"
                   onClick={(e) => {
                     e.stopPropagation();
                     let nr = Number.parseInt(photoId);
@@ -246,7 +247,7 @@ const Gallery = (id) => {
           >
             {/* MEDIUM WIDTH */}
             {photoSize === false ? (
-              <div className="grid z-30 mx-auto place-self-center">
+              <div className="medium-width grid z-30 mx-auto place-self-center">
                 <img
                   className="w-full max-w-4xl max-h-screen border-4 border-accent-2"
                   src={

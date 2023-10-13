@@ -3,9 +3,9 @@ const Card = ({ model }) => {
   return (
     <div className="first:-ml-0 aspect-square h-[180px] max-sm:-ml-32 -ml-20 relative  hover:-translate-x-14 hover:-translate-y-1 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 ">
       <NavLink
-        onClick={() =>
-          document.querySelector(".article-header").scrollIntoView()
-        }
+        // onClick={() =>
+        //   document.querySelector(".article-header").scrollIntoView()
+        // }
         to={model.link}
       >
         {/* gradient */}
@@ -24,7 +24,7 @@ const Card = ({ model }) => {
           {model.publisher}
         </div> */}
           {/* nazwa modelu */}
-          <div className="nazwa-modelu absolute bottom-0 w-full text-base  bg-accent px-4 py-2 text-left rounded-b-lg leading-5 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)]">
+          <div className="nazwa-modelu absolute bottom-0 w-full text-base  bg-accent px-4 py-2 text-left rounded-b-lg leading-5 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6">
             {model.name}
           </div>
         </div>
