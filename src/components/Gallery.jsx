@@ -46,8 +46,8 @@ const Gallery = (id) => {
             fill="var(--accent-2)"
             className={
               galleryState === "off"
-                ? "mr-2 mt-1 hover:scale-125 transition-all duration-500"
-                : "mr-2 mt-1 hover:scale-125 transition-all duration-500 rotate-180"
+                ? "mr-2 mt-1 hover:scale-125 rotate-180"
+                : "mr-2 mt-1 hover:scale-125"
             }
           >
             <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
@@ -96,7 +96,7 @@ const Gallery = (id) => {
                 >
                   <img
                     value={loc.slice(-6, -4)}
-                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all"
+                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[200px] max-sm:h-auto"
                     src={loc}
                     alt={model.name + " photo"}
                   />
@@ -141,10 +141,10 @@ const Gallery = (id) => {
             setFullPhotoState(false);
             document.querySelector("body").classList.remove("site-overflow");
           }}
-          className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center  grid-rows-1"
+          className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center  grid-rows-1 max-sm:place-content-start"
         >
           {/* ICON CONTAINER */}
-          <div className="w-full grid max-w-6xl place-self-center mx-auto h-full absolute">
+          <div className="w-full grid max-w-6xl place-self-center mx-auto h-full absolute ">
             {/* close icon */}
 
             <svg
@@ -154,8 +154,8 @@ const Gallery = (id) => {
               fill="white"
               className={
                 photoSize == false
-                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end m-8"
-                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-14 right-20"
+                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end m-8 max-sm:justify-self-center"
+                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-14 right-20 max-sm:top-2 max-sm:right-3"
               }
               onClick={(e) => {
                 e.stopPropagation();
@@ -176,8 +176,8 @@ const Gallery = (id) => {
               fill="white"
               className={
                 photoSize == false
-                  ? "gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 ml-8 "
-                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 left-16"
+                  ? "gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 ml-8 max-sm:top-auto max-sm:bottom-8"
+                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 left-16 max-sm:left-4"
               }
               onClick={(e) => {
                 e.stopPropagation();
@@ -198,8 +198,8 @@ const Gallery = (id) => {
               fill="white"
               className={
                 photoSize == false
-                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end top-1/2 mr-8"
-                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 right-20"
+                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end top-1/2 mr-8 max-sm:top-auto max-sm:bottom-8"
+                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 right-20 max-sm:right-4"
               }
               onClick={(e) => {
                 e.stopPropagation();
@@ -214,19 +214,19 @@ const Gallery = (id) => {
             </svg>
           </div>
           <button
-            className="grid"
+            className="grid max-sm:w-max"
             onClick={(e) => {
               e.stopPropagation();
               setPhotoSize(!photoSize);
             }}
           >
             {/* IMG CONTAINER medium-w-false / full-w-true */}
-            <div className="medium-width grid z-30 mx-auto place-self-center">
+            <div className="medium-width grid z-30 mx-auto place-self-center ">
               <img
                 className={
                   photoSize === false
-                    ? "w-full max-w-4xl max-h-[90vh] border-4 border-accent-2"
-                    : "w-full"
+                    ? "w-full max-w-4xl max-h-[85vh] border-4 border-accent-2 max-sm:w-screen"
+                    : "w-full max-sm:h-screen max-sm:w-auto"
                 }
                 src={
                   galleryState === "day"
@@ -239,8 +239,8 @@ const Gallery = (id) => {
               <span
                 className={
                   photoSize === false
-                    ? "fixed bottom-4 text-2xl drop-shadow-[0_0_3px_black]  left-[calc(50%-10px)] z-40"
-                    : "fixed bottom-4 text-3xl drop-shadow-[0_0_3px_black]  left-[calc(50%-10px)] z-40"
+                    ? "fixed bottom-4 text-2xl drop-shadow-[0_0_3px_black]  left-[calc(50%-40px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 max-sm:top-auto max-sm:bottom-9"
+                    : "fixed bottom-4 text-3xl drop-shadow-[0_0_3px_black]  left-[calc(50%-48px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-60 max-sm:top-auto max-sm:bottom-4"
                 }
               >
                 {(photoId < 10 ? photoId[1] : photoId) +

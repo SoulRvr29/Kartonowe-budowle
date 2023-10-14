@@ -10,7 +10,7 @@ const ArticleHeader = (id) => {
         {model.name} <br />
       </h2>
       <hr className="max-w-3xl mx-auto" />
-      <p className="max-w-3xl font-bold  mx-auto text-center ">
+      <p className="max-w-3xl font-bold  mx-auto text-center">
         {model.description}
       </p>
       {/* horizontal rule */}

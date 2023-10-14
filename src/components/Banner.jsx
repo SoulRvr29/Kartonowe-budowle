@@ -24,7 +24,7 @@ const Banner = () => {
     <>
       <Link to={link}>
         <section className="banner-fade pointer  h-[200px] w-full overflow-hidden relative flex flex-col">
-          <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade">
+          <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2">
             {name}
           </h2>
           {/* <div className="absolute bg-white z-10 w-full h-full"></div> */}

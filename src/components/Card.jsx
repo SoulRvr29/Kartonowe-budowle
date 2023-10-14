@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Card = ({ model }) => {
   return (
-    <div className="first:-ml-0 aspect-square h-[180px] max-sm:-ml-32 -ml-20 relative  hover:-translate-x-14 hover:-translate-y-1 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 ">
+    <div className="first:-ml-0 aspect-square h-[180px]  -ml-20 relative  hover:-translate-x-14 hover:-translate-y-1 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0">
       <NavLink
         // onClick={() =>
         //   document.querySelector(".article-header").scrollIntoView()

@@ -8,7 +8,7 @@ function App() {
         <button>
           <Link to="/Kartonowe-budowle/" reloadDocument>
             <svg
-              className="h-5 hover:fill-accent-2 transition-all "
+              className="h-5 hover:fill-accent-2 transition-all max-sm:h-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
               fill="var(--text-light)"
@@ -20,7 +20,7 @@ function App() {
       </div>
       {/* center */}
       <div className="flex gap-2 justify-center align-middle place-items-center">
-        <h1 className="text-accent text-4xl font-bold uppercase p-1">
+        <h1 className="text-accent text-header font-bold uppercase p-1 max-md:p-0">
           Kartonowe &nbsp;budowle
         </h1>
       </div>

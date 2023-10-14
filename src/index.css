@@ -44,7 +44,18 @@ p {
 h3 {
   font-size: 1.5rem;
 }
-
+@media screen and (max-width: 600px) {
+  article img {
+    width: 100%;
+    height: auto;
+    padding: 1rem 4rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  article img {
+    padding: 1rem 0 !important;
+  }
+}
 /************************************/
 /**********  CUSTOM CLASS  **********/
 /************************************/
@@ -65,6 +76,10 @@ h3 {
 }
 .btn-up {
   animation: fade-in 2s;
+}
+.text-header {
+  font-size: clamp(1.15rem, 4vw, 2.25rem);
+  /* font-size: 2.25rem; */
 }
 /*********************************/
 /**********  CUSTOM HR  **********/
@@ -154,7 +169,8 @@ hr {
 
 /***** GALLERY *****/
 .gallery button,
-.history {
+.history,
+.article-header {
   animation: fade-in 1s;
 }
 .full-size {

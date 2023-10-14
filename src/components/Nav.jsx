@@ -26,8 +26,8 @@ const Nav = () => {
       {/* horizontal rule */}
       <div className="grad-hr-2 relative bottom-[2px] z-0" />
       {/* cards */}
-      <section className="w-full  grid justify-center overflow-x-auto px-10">
-        <div className="flex  relative  py-4  z-10 ">
+      <section className="w-full  grid justify-center overflow-x-auto px-10 max-md:justify-start  max-md:px-4">
+        <div className="flex  relative  py-4  z-10 max-md:gap-4">
           {modelsData.map((model) => (
             <Card model={model} key={model.id} />
           ))}
