@@ -1,84 +1,77 @@
 import modelsData from "../data/models-data.json";
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
-import HistoryHeader from "../components/HistoryHeader";
+import SectionHeader from "../components/SectionHeader";
 import { useState } from "react";
 
 const Article = () => {
   const model = modelsData[1];
   const [historyState, setHistoryState] = useState(true);
   return (
-    <article className=" mb-8 text-text-light">
+    <div className=" mb-8 text-text-light">
       <ArticleHeader id={1} />
       <Gallery id={1} />
-      <HistoryHeader
+      <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
       {historyState === true && (
-        <div className="p-8">
+        <article className="px-8">
           <img
             className="pb-8 pr-8 float-left "
-            src={model.photos.real}
+            src={model.photos[0]}
             alt="Oporów"
           />
-          <p className=" text-justify">{model.description}</p>
+
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            optio amet temporibus tenetur id nisi voluptatum dolor, eveniet
-            suscipit quae in corrupti ipsam enim, asperiores deserunt
-            dignissimos nemo sunt minima?
+            <span className="first-letter font-playfair">O</span>porów k/Kutna
+            wieś w powiecie kutnowskim, województwie łódzkim, historycznie
+            związany z ziemią łęczycką, wzmiankowany w źródłach historycznych od
+            XIV w., był siedzibą rodu Oporowskich, herbu Sulima. Przed 1424 r.
+            uzyskał prawa miejskie, które utracił w końcu XVIII w. Rezydencję
+            rodową – zamek zbudował arcybiskup Władysław Oporowski, syn Mikołaja
+            wojewody łęczyckiego, właściciel dóbr oporowskich w latach
+            1428-1453. Na początku XVII w. dziedzictwo przejęła rodzina
+            Tarnowskich herbu Rola, w XVIII w. dobra wraz z zamkiem należały do
+            Sołłohubów. W XIX w. Oporów kilkakrotnie sprzedawany był kolejno
+            własnością Korzeniowskich, Pociejów, Oborskich, Orsettich, a od 1932
+            r. Karskich.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            dolore doloribus fugiat ratione eaque saepe porro sed aspernatur
-            soluta tempora commodi beatae vel repellendus, consectetur a? Ex
-            harum esse cupiditate!
+            Zamek, mała późnogotycka rezydencja obronna wzniesiona około 1440 r.
+            usytuowana na wyspie otoczonej fosą, jest jednym z niewielu tego
+            typu zabytków zachowanych w Polsce. Zabudowa skupiona wokół
+            czworobocznego dziedzińca składa się z domu mieszkalnego, wieży,
+            baszty z kaplicą, połączonych murem obronnym. Remonty wykonane w
+            XVII, XVIII i XIX wieku spowodowały tylko niewielkie przeróbki.
+            Pozostały po nich barokowe otwory okienne na piętrze, klasycystyczne
+            sztukaterie, parkiety i przebudowana w XVIII i XIX w. część bramna.
+            Z około 1840 r. pochodzi przybudówka na dziedzińcu, tzw. „Kredens”
+            oraz neogotycki portal bramy wjazdowej i taras przed mostem. Zamek
+            otacza krajobrazowy park założony w 1. poł. XIX w., w którym
+            czytelne jest wcześniejsze założenie XVII-wiecznego ogrodu.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
-            similique illo nulla omnis, eaque odit nemo reiciendis reprehenderit
-            eveniet hic totam fugiat voluptatibus tenetur minus nesciunt
-            expedita iste quos ad?
+            Gruntowne prace konserwatorskie wykonane w latach 1962-1965 usunęły
+            część przebudowy z XIX w., przywróciły pierwotną sylwetkę dachów i
+            ganek komunikacyjny domu mieszkalnego. Spod tynków odsłonięto
+            gotyckie portale i okna oraz drewniane, polichromowane stropy.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
-            numquam nihil doloremque, doloribus voluptas eius, itaque impedit
-            magni porro quam a corrupti dolor illo veritatis cupiditate
-            laboriosam? Asperiores, odit temporibus. Atque dolor suscipit, modi
-            distinctio provident cupiditate a repellat doloribus voluptate
-            perspiciatis aperiam consequuntur. Asperiores minima voluptas libero
-            quibusdam, ipsam error repellendus earum! Quas, distinctio saepe.
-            Cumque magnam quam qui. Maiores, tempore doloremque! Vero quaerat
-            mollitia harum nostrum culpa doloremque, accusantium impedit eveniet
-            explicabo excepturi asperiores similique, porro repellendus
-            assumenda animi. Ad dolorem libero rem asperiores voluptatem in non
-            cupiditate.
+            Zamek od 1949 r. mieści muzeum z ekspozycją wnętrz dworskich. Tworzą
+            ją dzieła sztuki i wyroby rzemiosła artystycznego prezentujące
+            kulturę szlachecką. Zbiory zawierają dzieła sztuki z różnych epok,
+            od XVI do pocz. XX. – obrazy, rzeźby, wyroby rzemiosła
+            artystycznego. Pochodzą one z przekazów, darów i zakupów. Nieliczne
+            tylko eksponaty związane są z historią zamku. Należą do nich
+            portrety rodziny Sołłohubów z XVIII w., lustra z żardinierami z
+            pocz. XIX w., pistolety pojedynkowe z XVIII i XIX w. oraz naczynia
+            fajansowe angielskie z Shelton XIX w.
           </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-            placeat voluptas aperiam voluptate cum doloremque pariatur porro,
-            minima consectetur similique est expedita autem repellat esse dicta
-            quis repellendus nostrum laboriosam. Reiciendis laudantium nemo
-            laborum vero corrupti quibusdam nostrum aliquid repellat similique
-            ullam et tempora optio, commodi molestias deleniti soluta. Aperiam
-            quam in eos iste quasi, delectus doloremque nobis corrupti quidem.
-            Fugiat quasi facere nihil officia velit minus exercitationem,
-            praesentium libero optio perferendis at eius ab voluptatem harum
-            commodi ipsa in itaque, atque eum reiciendis laboriosam aliquam
-            consectetur autem! Tempore, dolorum? Molestias, vero dicta. Saepe
-            placeat nam sed, ratione hic autem ipsam aut, libero reprehenderit
-            modi ad vitae molestias! Dolore cupiditate libero quibusdam nemo
-            quidem voluptates odio autem dolor officiis quasi. Ullam deserunt
-            voluptas minus quidem corporis expedita ipsum atque et debitis
-            inventore vitae asperiores non distinctio nam, cum, cupiditate,
-            delectus tempora. Suscipit sunt iure accusamus quae ipsa assumenda
-            eum maxime.
-          </p>
-        </div>
+        </article>
       )}
-    </article>
+    </div>
   );
 };
 

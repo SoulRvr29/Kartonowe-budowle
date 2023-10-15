@@ -6,7 +6,7 @@
     "publisher": "GPM",
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
-    "photos": {
+    "gallery": {
       "day": {
         "quantity": 10,
         "full": "./models/bedzin/day/full-res/bedzin-d",
@@ -16,9 +16,9 @@
         "quantity": 10,
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
-      },
-      "real": "./models/bedzin/bedzin-photo-1.jpg"
+      }
     },
+    "photos": ["./models/bedzin/bedzin-photo-1.jpg"],
     "description": "Średniowieczna warownia obronna wzniesiona w połowie XIV wieku przez Kazimierza Wielkiego w systemie tzw. Orlich Gniazd w Małopolsce, 4,5 km od granicy ze Śląskiem, na wzgórzu nad Czarną Przemszą; wielokrotnie niszczona, odbudowana w 1956."
   },
   {
@@ -28,7 +28,7 @@
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
-    "photos": {
+    "gallery": {
       "day": {
         "quantity": 10,
         "full": "./models/oporow/day/full-res/oporow-d",
@@ -38,9 +38,9 @@
         "quantity": 10,
         "full": "./models/oporow/night/full-res/oporow-n",
         "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
-      },
-      "real": "./models/oporow/oporow-photo-1.jpg"
+      }
     },
+    "photos": ["./models/oporow/oporow-photo-1.jpg"],
     "description": "Muzeum Zamek w Oporowie, zamek Oporowskich – ceglany zamek wzniesiony w stylu gotyckim w latach 1434–1449 we wsi Oporów pod Kutnem przez biskupa kujawskiego Władysława Oporowskiego."
   },
   {
@@ -50,7 +50,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Stilo",
     "card": "./cards/stilo-card.jpg",
-    "photos": {
+    "gallery": {
       "day": {
         "quantity": 10,
         "full": "./models/stilo/full-res/stilo-",
@@ -60,6 +60,7 @@
         "quantity": 0
       }
     },
+    "photos": ["./models/stilo/stilo-photo-1.jpg"],
     "description": "Latarnia morska na polskim wybrzeżu Bałtyku, położona w miejscowości Osetnik (dawniej Stilo), niedaleko Sasina (gmina Choczewo, powiat wejherowski, województwo pomorskie)."
   },
   {
@@ -69,7 +70,7 @@
     "publisher": "FREE",
     "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
-    "photos": {
+    "gallery": {
       "day": {
         "quantity": 10,
         "full": "./models/curiosity/full-res/curiosity-",
@@ -88,7 +89,7 @@
     "publisher": "GPM",
     "name": "Ratusz w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
-    "photos": {
+    "gallery": {
       "day": {
         "quantity": 10,
         "full": "./models/sandomierz/day/full-res/sandomierz-d",

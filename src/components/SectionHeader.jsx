@@ -1,6 +1,6 @@
-const HistoryHeader = ({ sectionState, setSectionState, sectionName }) => {
+const SectionHeader = ({ sectionState, setSectionState, sectionName }) => {
   return (
-    <div className="mb-14">
+    <div className="mb-6">
       <header className="history-cont font-bold mx-8">
         <h3 className="flex">
           <button
@@ -33,4 +33,4 @@ const HistoryHeader = ({ sectionState, setSectionState, sectionName }) => {
   );
 };
 
-export default HistoryHeader;
+export default SectionHeader;

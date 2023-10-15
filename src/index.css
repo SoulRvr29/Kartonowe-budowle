@@ -169,7 +169,7 @@ hr {
 
 /***** GALLERY *****/
 .gallery button,
-.history,
+article,
 .article-header {
   animation: fade-in 1s;
 }

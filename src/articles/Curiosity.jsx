@@ -7,7 +7,7 @@ const Article = () => {
   const model = modelsData[3];
   const [historyState, setHistoryState] = useState(true);
   return (
-    <article className=" mb-8 text-text-light">
+    <div className=" mb-8 text-text-light">
       <ArticleHeader id={3} />
       <Gallery id={3} />
       <div className="p-8">
@@ -18,7 +18,7 @@ const Article = () => {
         /> */}
         <p className=" text-justify">{model.description}</p>
       </div>
-    </article>
+    </div>
   );
 };
 

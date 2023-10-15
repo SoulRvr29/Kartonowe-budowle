@@ -3,10 +3,10 @@ import { useState } from "react";
 
 const Gallery = (id) => {
   const model = modelsData[id.id];
-  const dayMax = model.photos.day.quantity;
-  const nightMax = model.photos.night.quantity;
-  const daySrc = model.photos.day.thumb;
-  const nightSrc = model.photos.night.thumb;
+  const dayMax = model.gallery.day.quantity;
+  const nightMax = model.gallery.night.quantity;
+  const daySrc = model.gallery.day.thumb;
+  const nightSrc = model.gallery.night.thumb;
   let dayPhotos = [];
   let nightPhotos = [];
 
@@ -27,7 +27,12 @@ const Gallery = (id) => {
     if (i < 10) nr = "0" + i;
     nightPhotos.push(nightSrc + nr + ".jpg");
   }
-  // addEventListener("mousemove") (() => console.log("move"));
+
+  let arr = Object.keys(model.gallery);
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i + ": " + model.gallery[arr.at(i)].full);
+  }
+
   return (
     <section className="gallery-cont px-8 select-none">
       <h3 className="font-bold flex">
@@ -35,8 +40,8 @@ const Gallery = (id) => {
         <button
           onClick={() => {
             setGalleryState(galleryState === "off" ? "day" : "off");
-            galleryState === "off" &&
-              document.querySelector(".gallery-cont").scrollIntoView();
+            // galleryState === "off" &&
+            //   document.querySelector(".gallery-cont").scrollIntoView();
           }}
         >
           <svg
