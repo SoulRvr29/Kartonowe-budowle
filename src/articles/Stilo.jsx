@@ -17,7 +17,7 @@ const Article = () => {
         setSectionState={setSectionState}
       />
       {sectionState === true && (
-        <article className="px-8">
+        <article className="px-8 max-sm:px-4">
           <p>
             Latarnia została zbudowana w latach 1904–1906 na wniosek
             Niemieckiego Związku Nawigacyjnego według projektu niemieckiego

@@ -17,7 +17,8 @@ const Gallery = (id) => {
 
   useEffect(() => {
     getPhotosSrc(gallerySections[0]);
-    document.querySelector(".section").classList.add("active-section");
+    gallerySections.length > 1 &&
+      document.querySelector(".section").classList.add("active-section");
   }, []);
 
   const getPhotosSrc = (section) => {
@@ -33,7 +34,7 @@ const Gallery = (id) => {
   };
 
   return (
-    <section className="gallery-cont px-8 select-none">
+    <section className="gallery-cont px-8 select-none max-sm:px-4">
       <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base">
         {/* //////////// gallery on/of button //////////// */}
         <button
@@ -59,27 +60,28 @@ const Gallery = (id) => {
         </button>
         Galeria
         {/* //////////// gallery-type button //////////// */}
-        {gallerySections.map((section) => {
-          return (
-            <div key={section}>
-              <button
-                onClick={(e) => {
-                  getPhotosSrc(section);
-                  setActualSection(section);
-                  document.querySelectorAll(".section").forEach((item) => {
-                    item.classList.remove("active-section");
-                  });
-                  e.target.classList.add("active-section");
-                }}
-              >
-                <span>&nbsp;/</span>
-                <span className="section text-accent-2  opacity-40 transition-all">
-                  {" " + section}
-                </span>
-              </button>
-            </div>
-          );
-        })}
+        {gallerySections.length > 1 &&
+          gallerySections.map((section) => {
+            return (
+              <div key={section}>
+                <button
+                  onClick={(e) => {
+                    getPhotosSrc(section);
+                    setActualSection(section);
+                    document.querySelectorAll(".section").forEach((item) => {
+                      item.classList.remove("active-section");
+                    });
+                    e.target.classList.add("active-section");
+                  }}
+                >
+                  <span className="opacity-50">&nbsp;/</span>
+                  <span className="section text-accent-2  opacity-40 transition-all">
+                    {" " + section}
+                  </span>
+                </button>
+              </div>
+            );
+          })}
       </h3>
       <hr />
       {/* ////////////  thumbials  //////////// */}
@@ -101,7 +103,7 @@ const Gallery = (id) => {
                 >
                   <img
                     value={loc.slice(-6, -4)}
-                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[200px] max-sm:h-auto"
+                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto"
                     src={loc}
                     alt={model.name + " photo"}
                   />
@@ -131,8 +133,8 @@ const Gallery = (id) => {
               fill="white"
               className={
                 photoMaxWidth == false
-                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end m-8 max-sm:justify-self-center"
-                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-14 right-20 max-sm:top-2 max-sm:right-3"
+                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end m-8 max-sm:justify-self-center"
+                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:right-3"
               }
               onClick={(e) => {
                 e.stopPropagation();
@@ -153,8 +155,8 @@ const Gallery = (id) => {
               fill="white"
               className={
                 photoMaxWidth == false
-                  ? "gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 ml-8 max-sm:top-auto max-sm:bottom-8"
-                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 left-16 max-sm:left-4 "
+                  ? "gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:top-auto max-sm:bottom-8"
+                  : "fixed hover:cursor-pointer opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-4 "
               }
               onClick={(e) => {
                 e.stopPropagation();
@@ -175,8 +177,8 @@ const Gallery = (id) => {
               fill="white"
               className={
                 photoMaxWidth == false
-                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 justify-self-end top-1/2 mr-8 max-sm:top-auto max-sm:bottom-8"
-                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125 transition-all drop-shadow-[0_0_5px_black] z-40 top-1/2 right-20 max-sm:right-4"
+                  ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2 mr-8 max-sm:top-auto max-sm:bottom-8"
+                  : "fixed hover:cursor-pointer opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20 max-sm:right-4"
               }
               onClick={(e) => {
                 e.stopPropagation();
@@ -203,7 +205,7 @@ const Gallery = (id) => {
                 className={
                   photoMaxWidth === false
                     ? "w-full max-w-4xl max-h-[85vh] border-4 border-accent-2 max-sm:w-screen"
-                    : "w-full max-sm:h-screen max-sm:w-auto"
+                    : "w-full max-sm:h-screen max-sm:w-auto "
                 }
                 src={model.gallery[actualSection].full + photoId + ".jpg"}
                 alt={"photo" + photoId}
@@ -212,8 +214,8 @@ const Gallery = (id) => {
               <span
                 className={
                   photoMaxWidth === false
-                    ? "fixed bottom-4 text-2xl drop-shadow-[0_0_3px_black]  left-[calc(50%-40px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 max-sm:top-auto max-sm:bottom-9"
-                    : "fixed bottom-4 text-3xl drop-shadow-[0_0_3px_black]  left-[calc(50%-48px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-60 max-sm:top-auto max-sm:bottom-4"
+                    ? "fixed bottom-4 text-2xl drop-shadow-[0_0_2px_black] left-[calc(50%-40px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 max-sm:top-auto max-sm:bottom-9"
+                    : "fixed bottom-4 text-3xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-60 max-sm:top-auto max-sm:bottom-4"
                 }
               >
                 {(photoId < 10 ? photoId[1] : photoId) + " / " + galleryLength}

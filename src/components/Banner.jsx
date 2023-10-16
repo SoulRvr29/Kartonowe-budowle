@@ -12,6 +12,7 @@ const Banner = () => {
     const section = document.querySelector(".banner-section");
     const img = document.querySelector(".banner-img");
     let interval1;
+    img.classList.remove("banner-scroll");
     img.classList.add("banner-scroll");
     setTimeout(() => {
       section.classList.add("banner-fade-out");
