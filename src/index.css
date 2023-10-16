@@ -147,12 +147,21 @@ hr {
 /****************************/
 
 /***** BANNER *****/
-/* .banner-fade {
-  animation: banner-fade 5s infinite linear;
+.banner-section {
+  opacity: 0;
+}
+.banner-on {
+  opacity: 1;
+}
+.banner-fade-in {
+  animation: banner-fade-in 1s forwards linear;
+}
+.banner-fade-out {
+  animation: banner-fade-out 1s forwards linear;
 }
 .banner-scroll {
-  animation: banner-scroll 5s infinite linear;
-} */
+  animation: banner-scroll 10s infinite linear;
+}
 @keyframes banner-scroll {
   0% {
     bottom: 13rem;
@@ -161,14 +170,16 @@ hr {
     bottom: 0;
   }
 }
-@keyframes banner-fade {
+@keyframes banner-fade-in {
   0% {
     opacity: 0;
   }
-  10% {
+  100% {
     opacity: 1;
   }
-  90% {
+}
+@keyframes banner-fade-out {
+  0% {
     opacity: 1;
   }
   100% {
