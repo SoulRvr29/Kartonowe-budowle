@@ -7,13 +7,13 @@
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
     "gallery": {
-      "day": {
+      "dzień": {
         "quantity": 10,
         "full": "./models/bedzin/day/full-res/bedzin-d",
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb-d"
       },
-      "night": {
-        "quantity": 10,
+      "noc": {
+        "quantity": 7,
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       }
@@ -29,15 +29,20 @@
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
     "gallery": {
-      "day": {
+      "dzień": {
         "quantity": 10,
         "full": "./models/oporow/day/full-res/oporow-d",
         "thumb": "./models/oporow/day/thumb/oporow-thumb-d"
       },
-      "night": {
+      "noc": {
         "quantity": 10,
         "full": "./models/oporow/night/full-res/oporow-n",
         "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
+      },
+      "budowa": {
+        "quantity": 7,
+        "full": "./models/oporow/budowa/full-res/oporow-b",
+        "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
       }
     },
     "photos": ["./models/oporow/oporow-photo-1.jpg"],
@@ -51,13 +56,10 @@
     "name": "Latarnia morska Stilo",
     "card": "./cards/stilo-card.jpg",
     "gallery": {
-      "day": {
+      "dzień": {
         "quantity": 10,
         "full": "./models/stilo/full-res/stilo-",
         "thumb": "./models/stilo/thumb/stilo-thumb-"
-      },
-      "night": {
-        "quantity": 0
       }
     },
     "photos": ["./models/stilo/stilo-photo-1.jpg"],
@@ -71,13 +73,10 @@
     "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
     "gallery": {
-      "day": {
+      "dzień": {
         "quantity": 10,
         "full": "./models/curiosity/full-res/curiosity-",
         "thumb": "./models/curiosity/thumb/curiosity-thumb-"
-      },
-      "night": {
-        "quantity": 0
       }
     },
     "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
@@ -90,12 +89,12 @@
     "name": "Ratusz w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
     "gallery": {
-      "day": {
+      "dzień": {
         "quantity": 10,
         "full": "./models/sandomierz/day/full-res/sandomierz-d",
         "thumb": "./models/sandomierz/day/thumb/sandomierz-thumb-d"
       },
-      "night": {
+      "noc": {
         "quantity": 10,
         "full": "./models/sandomierz/night/full-res/sandomierz-n",
         "thumb": "./models/sandomierz/night/thumb/sandomierz-thumb-n"

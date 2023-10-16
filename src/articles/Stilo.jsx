@@ -31,7 +31,7 @@ const Article = () => {
           </p>
           <img
             className="pb-8 pr-8 float-left "
-            src={model.photos.real}
+            src={model.photos}
             alt="Stilo"
           />
           <p>

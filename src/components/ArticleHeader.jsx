@@ -3,7 +3,7 @@ import modelsData from "../data/models-data.json";
 const ArticleHeader = (id) => {
   const model = modelsData[id.id];
   return (
-    <header className="article-header bg-text-dark bg-opacity-30 px-8 mb-2">
+    <header className="article-header bg-text-dark bg-opacity-30  mb-2">
       {/* horizontal rule */}
       <div className=" grad-hr " />
       <h2 className="font-playfair  tracking-widest text-center text-2xl font-semibold pt-1  text-accent-2 drop-shadow-lg">
