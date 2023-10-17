@@ -48,7 +48,9 @@ function App() {
         </button> */}
       </div>
       {/* horizontal rule */}
-      <div className="grad-hr" />
+      <div className="grad-hr relative">
+        {/* <div className="flash absolute left-0 -top-[1px] h-[3px] aspect-square rounded-full blur-[1px] shadow-[0_0_5px_1px_white] bg-white z-50"></div> */}
+      </div>
     </header>
   );
 }

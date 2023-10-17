@@ -1,0 +1,42 @@
+import modelsData from "../data/models-data.json";
+import SectionHeader from "../components/SectionHeader";
+import { useState } from "react";
+
+const BedzinModel = () => {
+  const data = modelsData[0];
+  const info = Object.keys(data.info);
+  const [sectionState, setSectionState] = useState(true);
+  console.log(data, info);
+  return (
+    <>
+      <SectionHeader
+        sectionName="Model"
+        sectionState={sectionState}
+        setSectionState={setSectionState}
+      />
+      {sectionState === true && (
+        <article className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4">
+          <img
+            className="h-[300px] w-auto max-sm:border-none border-2 border-accent"
+            src={data.cover}
+            alt="okładka"
+          />
+          <div className="w-max h-min p-4 border-l-2 max-sm:border-l-0 max-sm:border-t-2 border-accent-2">
+            <ul className="text-lg max-sm:text-base text-accent-3 tracking-wide font-bold">
+              {info.map((key) => {
+                return (
+                  <li>
+                    <span className="text-text-light font-bold ">{key}: </span>
+                    {data.info[key]}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </article>
+      )}
+    </>
+  );
+};
+
+export default BedzinModel;

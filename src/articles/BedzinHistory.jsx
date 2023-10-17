@@ -1,17 +1,13 @@
 import modelsData from "../data/models-data.json";
-import ArticleHeader from "../components/ArticleHeader";
-import Gallery from "../components/Gallery";
 import SectionHeader from "../components/SectionHeader";
 import { useState } from "react";
 
-const Article = () => {
+const BedzinHistory = () => {
   const model = modelsData[0];
   const [historyState, setHistoryState] = useState(true);
 
   return (
-    <div className="mb-14">
-      <ArticleHeader id={0} />
-      <Gallery id={0} />
+    <>
       <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
@@ -171,8 +167,8 @@ const Article = () => {
           </p>
         </article>
       )}
-    </div>
+    </>
   );
 };
 
-export default Article;
+export default BedzinHistory;

@@ -1,16 +1,13 @@
 import modelsData from "../data/models-data.json";
-import ArticleHeader from "../components/ArticleHeader";
-import Gallery from "../components/Gallery";
-import { useState } from "react";
 import SectionHeader from "../components/SectionHeader";
+import { useState } from "react";
 
-const Article = () => {
+const StiloHistory = () => {
   const model = modelsData[2];
   const [sectionState, setSectionState] = useState(true);
   return (
-    <div className=" mb-8 text-text-light">
-      <ArticleHeader id={2} />
-      <Gallery id={2} />
+    <>
+      {" "}
       <SectionHeader
         sectionName="Historia"
         sectionState={sectionState}
@@ -91,8 +88,8 @@ const Article = () => {
           </p>
         </article>
       )}
-    </div>
+    </>
   );
 };
 
-export default Article;
+export default StiloHistory;

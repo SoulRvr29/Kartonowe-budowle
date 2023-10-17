@@ -1,16 +1,12 @@
 import modelsData from "../data/models-data.json";
-import ArticleHeader from "../components/ArticleHeader";
-import Gallery from "../components/Gallery";
 import SectionHeader from "../components/SectionHeader";
 import { useState } from "react";
 
-const Article = () => {
+const OporowHistory = () => {
   const model = modelsData[1];
   const [historyState, setHistoryState] = useState(true);
   return (
-    <div className=" mb-8 text-text-light">
-      <ArticleHeader id={1} />
-      <Gallery id={1} />
+    <>
       <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
@@ -71,8 +67,8 @@ const Article = () => {
           </p>
         </article>
       )}
-    </div>
+    </>
   );
 };
 
-export default Article;
+export default OporowHistory;

@@ -214,8 +214,8 @@ const Gallery = (id) => {
               <span
                 className={
                   photoMaxWidth === false
-                    ? "fixed bottom-4 text-2xl drop-shadow-[0_0_2px_black] left-[calc(50%-40px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 max-sm:top-auto max-sm:bottom-9"
-                    : "fixed bottom-4 text-3xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-60 max-sm:top-auto max-sm:bottom-4"
+                    ? "fixed bottom-4 text-2xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 max-sm:top-auto max-sm:bottom-9"
+                    : "fixed bottom-4 text-3xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] max-sm:left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-50 max-sm:top-auto max-sm:bottom-4"
                 }
               >
                 {(photoId < 10 ? photoId[1] : photoId) + " / " + galleryLength}

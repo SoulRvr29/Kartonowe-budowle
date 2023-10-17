@@ -44,6 +44,9 @@ p {
 h3 {
   font-size: 1.5rem;
 }
+article {
+  padding: 1rem 2rem;
+}
 @media screen and (max-width: 600px) {
   article img {
     width: 100%;
@@ -141,7 +144,31 @@ hr {
     var(--bkg)
   );
 }
+/* .flash {
+  animation: flash-move 4s infinite forwards ease-in-out;
+}
 
+@keyframes flash-move {
+  0% {
+    left: 0;
+    box-shadow: 0 0 5px 1px white;
+    scale: 0;
+    opacity: 0;
+  }
+
+  50% {
+    box-shadow: 0 0 15px 1px white;
+    scale: 3;
+    opacity: 1;
+  }
+
+  100% {
+    left: 100%;
+    box-shadow: 0 0 5px 1px white;
+    scale: 0;
+    opacity: 0;
+  }
+} */
 /****************************/
 /******** ANIMATIONS ********/
 /****************************/

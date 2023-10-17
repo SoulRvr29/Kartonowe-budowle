@@ -3,7 +3,17 @@
     "id": 1,
     "component": "Bedzin",
     "link": "/Kartonowe-budowle/Bedzin",
-    "publisher": "GPM",
+    "cover": "./models/bedzin/bedzin-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Rok wydania": 2012,
+      "Skala": "1:160",
+      "Stopień trudności": 2,
+      "Ilość stron": 20,
+      "Długość": "30cm",
+      "Szerokość": "30cm",
+      "Wysokość": "22cm"
+    },
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
     "gallery": {

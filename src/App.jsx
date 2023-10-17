@@ -3,12 +3,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
-import Home from "./articles/Home";
-import Bedzin from "./articles/Bedzin";
-import Oporow from "./articles/Oporow";
-import Curiosity from "./articles/Curiosity";
-import Sandomierz from "./articles/Sandomierz";
-import Stilo from "./articles/Stilo";
+import Home from "./sections/Home";
+import Bedzin from "./sections/Bedzin";
+import Oporow from "./sections/Oporow";
+import Curiosity from "./sections/Curiosity";
+import Sandomierz from "./sections/Sandomierz";
+import Stilo from "./sections/Stilo";
 import BackToTop from "./components/BackToTop";
 
 function App() {
