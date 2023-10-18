@@ -48,7 +48,7 @@ const FullScreen = ({ prop, setFullScreen }) => {
                   ? "w-full max-w-[600px] max-h-[85vh] border-4 border-accent-2 max-sm:w-screen"
                   : "w-full border-4 border-accent-2 max-sm:h-screen max-sm:w-auto "
               }
-              src={"/models/bedzin/bedzin-photo" + id + ".jpg"}
+              src={"models/bedzin/bedzin-photo" + id + ".jpg"}
               alt={"photo" + id}
             />
           </div>
