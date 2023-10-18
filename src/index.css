@@ -191,7 +191,7 @@ hr {
 }
 @keyframes banner-scroll {
   0% {
-    bottom: 13rem;
+    bottom: 50%;
   }
   100% {
     bottom: 0;

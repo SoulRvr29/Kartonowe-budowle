@@ -25,6 +25,7 @@ const Banner = () => {
       setName(() => bannerData[index].name);
       setLink(() => bannerData[index].link);
       img.classList.remove("banner-scroll");
+      void img.offsetWidth;
       img.classList.add("banner-scroll");
       section.classList.remove("banner-fade-out");
       section.classList.add("banner-fade-in");
@@ -43,8 +44,8 @@ const Banner = () => {
   return (
     <>
       <Link to={link}>
-        <section className="banner-section banner-on pointer  h-[200px] w-full overflow-hidden relative flex flex-col">
-          <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2">
+        <section className="banner-section banner-on pointer  h-[200px] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col">
+          <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs">
             {name}
           </h2>
           {/* <div className="absolute bg-white z-10 w-full h-full"></div> */}
@@ -52,7 +53,7 @@ const Banner = () => {
             {/* gradient */}
             <div className="w-full h-full absolute banner-grad z-10"></div>
             <img
-              className="banner-img relative bottom-[11rem] place-self-center  w-screen min-w-max "
+              className="banner-img relative bottom-[11rem] place-self-center w-screen min-w-max max-[400px]:min-w-[600px] max-[400px]:mb-[3rem] max-[400px]:ml-[-4rem]"
               src={image}
               alt="banner photo"
             />

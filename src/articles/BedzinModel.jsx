@@ -6,7 +6,6 @@ const BedzinModel = () => {
   const data = modelsData[0];
   const info = Object.keys(data.info);
   const [sectionState, setSectionState] = useState(true);
-  console.log(data, info);
   return (
     <>
       <SectionHeader
@@ -25,7 +24,7 @@ const BedzinModel = () => {
             <ul className="text-lg max-sm:text-base text-accent-3 tracking-wide font-bold">
               {info.map((key) => {
                 return (
-                  <li>
+                  <li key={key}>
                     <span className="text-text-light font-bold ">{key}: </span>
                     {data.info[key]}
                   </li>

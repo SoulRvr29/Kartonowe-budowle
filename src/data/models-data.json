@@ -18,14 +18,19 @@
     "card": "./cards/bedzin-card.jpg",
     "gallery": {
       "dzień": {
-        "quantity": 10,
+        "quantity": 58,
         "full": "./models/bedzin/day/full-res/bedzin-d",
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb-d"
       },
       "noc": {
-        "quantity": 7,
+        "quantity": 39,
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
+      },
+      "budowa": {
+        "quantity": 83,
+        "full": "./models/bedzin/build/full-res/bedzin-b",
+        "thumb": "./models/bedzin/build/thumb/bedzin-thumb-b"
       }
     },
     "photos": ["./models/bedzin/bedzin-photo-1.jpg"],

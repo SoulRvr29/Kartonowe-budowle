@@ -33,6 +33,25 @@ const Gallery = (id) => {
     setActualSrc(src);
   };
 
+  onkeydown = (e) => {
+    console.log(e.key);
+    e.key === "ArrowLeft" && imgSwitchHandler("left");
+    e.key === "ArrowRight" && imgSwitchHandler("right");
+  };
+
+  const imgSwitchHandler = (direction) => {
+    let nr = Number.parseInt(photoId);
+    if (direction === "left") {
+      if (nr > 1) nr--;
+      if (nr < 10) nr = "0" + nr;
+    }
+    if (direction === "right") {
+      if (nr < galleryLength) nr++;
+      if (nr < 10) nr = "0" + nr;
+    }
+    setPhotoId(nr);
+  };
+
   return (
     <section className="gallery-cont px-8 select-none max-sm:px-4">
       <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base">
@@ -85,7 +104,7 @@ const Gallery = (id) => {
       </h3>
       <hr />
       {/* ////////////  thumbials  //////////// */}
-      <div className="gallery relative flex gap-5  flex-wrap justify-center ">
+      <div className="gallery relative flex gap-5  flex-wrap justify-center">
         {galleryState === true && (
           <div className="p-4 gallery relative flex gap-5  flex-wrap justify-center">
             {actualSrc.map((loc) => {
@@ -160,10 +179,7 @@ const Gallery = (id) => {
               }
               onClick={(e) => {
                 e.stopPropagation();
-                let nr = Number.parseInt(photoId);
-                if (nr > 1) nr--;
-                if (nr < 10) nr = "0" + nr;
-                setPhotoId(nr);
+                imgSwitchHandler("left");
               }}
             >
               <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
@@ -182,11 +198,7 @@ const Gallery = (id) => {
               }
               onClick={(e) => {
                 e.stopPropagation();
-                let nr = Number.parseInt(photoId);
-
-                if (nr < galleryLength) nr++;
-                if (nr < 10) nr = "0" + nr;
-                setPhotoId(nr);
+                imgSwitchHandler("right");
               }}
             >
               <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
