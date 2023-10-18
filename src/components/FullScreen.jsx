@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-const FullScreen = ({ id, setFullScreen }) => {
+const FullScreen = ({ prop, setFullScreen }) => {
   const [photoMaxWidth, setPhotoMaxWidth] = useState(false);
+  let id = prop.target.src.slice(-10).match(/\d/g).join("");
 
   return (
     <div className="gallery relative flex gap-5 flex-wrap justify-center">

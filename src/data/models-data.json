@@ -3,7 +3,7 @@
     "id": 1,
     "component": "Bedzin",
     "link": "/Kartonowe-budowle/Bedzin",
-    "cover": "./models/bedzin/bedzin-cover.jpg",
+    "cover": "models/bedzin/bedzin-cover.jpg",
     "info": {
       "Wydawca": "GPM",
       "Rok wydania": 2012,

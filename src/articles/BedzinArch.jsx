@@ -4,13 +4,10 @@ import { useState } from "react";
 
 const BedzinArch = () => {
   const [architectureState, setArchitectureState] = useState(true);
-  const [id, setId] = useState(0);
+  const [prop, setProp] = useState(0);
   const [fullScreen, setFullScreen] = useState(false);
   const src = (nr) => {
-    return "/models/bedzin/bedzin-photo" + nr + ".jpg";
-  };
-  const setNr = (e) => {
-    setId(e.target.src.slice(-10).match(/\d/g).join(""));
+    return "models/bedzin/bedzin-photo" + nr + ".jpg";
   };
 
   return (
@@ -21,7 +18,7 @@ const BedzinArch = () => {
         setSectionState={setArchitectureState}
       />
       {fullScreen === true && (
-        <FullScreen id={id} setFullScreen={setFullScreen} />
+        <FullScreen prop={prop} setFullScreen={setFullScreen} />
       )}
       {architectureState === true && (
         <article className="px-8">
@@ -31,7 +28,7 @@ const BedzinArch = () => {
             alt="będzin"
             title="Ekipa odbudowująca zamek w Będzinie w 1953; drugi od prawej w szeregu stojących Roman Romański – wojewódzki konserwator zabytków w Katowicach w latach 1954–1961"
             onClick={(e) => {
-              setNr(e);
+              setProp(e);
               setFullScreen(true);
             }}
           />

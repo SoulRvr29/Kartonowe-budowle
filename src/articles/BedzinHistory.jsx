@@ -4,15 +4,11 @@ import FullScreen from "../components/FullScreen";
 
 const BedzinHistory = () => {
   const [historyState, setHistoryState] = useState(true);
-  const [id, setId] = useState(0);
+  const [prop, setProp] = useState(0);
   const [fullScreen, setFullScreen] = useState(false);
 
   const src = (nr) => {
     return "models/bedzin/bedzin-photo" + nr + ".jpg";
-  };
-
-  const setNr = (e) => {
-    setId(e.target.src.slice(-10).match(/\d/g).join(""));
   };
 
   return (
@@ -23,7 +19,7 @@ const BedzinHistory = () => {
         setSectionState={setHistoryState}
       />
       {fullScreen === true && (
-        <FullScreen id={id} setFullScreen={setFullScreen} />
+        <FullScreen prop={prop} setFullScreen={setFullScreen} />
       )}
       {historyState === true && (
         <article className="px-8">
@@ -47,7 +43,7 @@ const BedzinHistory = () => {
             src={src(5)}
             alt="będzin"
             onClick={(e) => {
-              setNr(e);
+              setProp(e);
               setFullScreen(true);
             }}
           />
@@ -117,7 +113,7 @@ const BedzinHistory = () => {
             alt="będzin"
             title="Obecny wygląd zamku."
             onClick={(e) => {
-              setNr(e);
+              setProp(e);
               setFullScreen(true);
             }}
           />
@@ -169,7 +165,7 @@ const BedzinHistory = () => {
             alt="będzin"
             title="Zamek na litografii Napoleona Ordy"
             onClick={(e) => {
-              setNr(e);
+              setProp(e);
               setFullScreen(true);
             }}
           />
@@ -243,7 +239,7 @@ const BedzinHistory = () => {
             alt="będzin"
             title="Porównanie dawnej fotografi ze stanem obecnym."
             onClick={(e) => {
-              setNr(e);
+              setProp(e);
               setFullScreen(true);
             }}
           />
