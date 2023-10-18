@@ -8,7 +8,7 @@ const BedzinHistory = () => {
   const [fullScreen, setFullScreen] = useState(false);
 
   const src = (nr) => {
-    return "/models/bedzin/bedzin-photo" + nr + ".jpg";
+    return "models/bedzin/bedzin-photo" + nr + ".jpg";
   };
 
   const setNr = (e) => {
