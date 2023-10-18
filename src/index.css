@@ -44,21 +44,41 @@ p {
 h3 {
   font-size: 1.5rem;
 }
+h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 1px solid var(--accent);
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
 article {
   padding: 1rem 2rem;
 }
-@media screen and (max-width: 600px) {
+article img {
+  max-width: 600px;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 900px) {
   article img {
-    width: 100%;
-    height: auto;
-    padding: 1rem 4rem !important;
+    /* max-width: none !important; */
+    padding: 1rem 0 !important;
+    width: fit-content !important;
+    float: none !important;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  article img {
+    width: 100% !important;
+    /* padding: 1rem 0 !important; */
   }
 }
 @media screen and (max-width: 500px) {
-  article img {
-    padding: 1rem 0 !important;
+  article {
+    padding: 1rem !important;
   }
 }
+
 /************************************/
 /**********  CUSTOM CLASS  **********/
 /************************************/

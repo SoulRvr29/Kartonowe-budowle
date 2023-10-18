@@ -14,7 +14,7 @@ const BedzinModel = () => {
         setSectionState={setSectionState}
       />
       {sectionState === true && (
-        <article className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4">
+        <section className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4">
           <img
             className="h-[300px] w-auto max-sm:border-none border-2 border-accent"
             src={data.cover}
@@ -32,7 +32,7 @@ const BedzinModel = () => {
               })}
             </ul>
           </div>
-        </article>
+        </section>
       )}
     </>
   );
