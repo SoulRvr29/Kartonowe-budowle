@@ -57,6 +57,7 @@ article {
 article img {
   max-width: 600px;
   padding: 1rem 0;
+  cursor: pointer;
 }
 @media screen and (max-width: 900px) {
   article img {

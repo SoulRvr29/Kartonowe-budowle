@@ -1,12 +1,18 @@
 import SectionHeader from "../components/SectionHeader";
 import { useState } from "react";
-// import photo1 from "../../public/models/bedzin/bedzin-photo0.jpg";
+import FullScreen from "../components/FullScreen";
 
 const BedzinHistory = () => {
   const [historyState, setHistoryState] = useState(true);
+  const [id, setId] = useState(0);
+  const [fullScreen, setFullScreen] = useState(false);
 
   const src = (nr) => {
     return "/models/bedzin/bedzin-photo" + nr + ".jpg";
+  };
+
+  const setNr = (e) => {
+    setId(e.target.src.slice(-10).match(/\d/g).join(""));
   };
 
   return (
@@ -16,6 +22,9 @@ const BedzinHistory = () => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
+      {fullScreen === true && (
+        <FullScreen id={id} setFullScreen={setFullScreen} />
+      )}
       {historyState === true && (
         <article className="px-8">
           <p>
@@ -33,7 +42,15 @@ const BedzinHistory = () => {
             archeologicznych (m.in. metodą dendrochronologii) pochodzą z lat
             wcześniejszych.
           </p>
-          <img className="pr-8 float-left" src={src(5)} alt="będzin" />
+          <img
+            className="pr-8 float-left hover:cursor-pointer"
+            src={src(5)}
+            alt="będzin"
+            onClick={(e) => {
+              setNr(e);
+              setFullScreen(true);
+            }}
+          />
           <p>
             W 2 połowie XIII wieku, prawdopodobnie za panowania Bolesława
             Wstydliwego, w obrębie grodu wzniesiono kamienny stołp – wieżę,
@@ -99,6 +116,10 @@ const BedzinHistory = () => {
             src={src(1)}
             alt="będzin"
             title="Obecny wygląd zamku."
+            onClick={(e) => {
+              setNr(e);
+              setFullScreen(true);
+            }}
           />
           <p>
             19 lub 20 sierpnia 1683 według tradycji zamek gościł Jana III
@@ -147,6 +168,10 @@ const BedzinHistory = () => {
             src={src(6)}
             alt="będzin"
             title="Zamek na litografii Napoleona Ordy"
+            onClick={(e) => {
+              setNr(e);
+              setFullScreen(true);
+            }}
           />
           <p>
             Przy kopaniu dołów pod drzewa natrafiano na groby, z których kilka
@@ -217,6 +242,10 @@ const BedzinHistory = () => {
             src={src(4)}
             alt="będzin"
             title="Porównanie dawnej fotografi ze stanem obecnym."
+            onClick={(e) => {
+              setNr(e);
+              setFullScreen(true);
+            }}
           />
           <p>
             Obecny wygląd zamek zawdzięcza przebudowie neogotyckiej z 1834

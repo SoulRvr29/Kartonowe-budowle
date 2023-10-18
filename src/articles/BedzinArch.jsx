@@ -1,12 +1,16 @@
-import modelsData from "../data/models-data.json";
 import SectionHeader from "../components/SectionHeader";
+import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 
 const BedzinArch = () => {
-  const model = modelsData[0];
   const [architectureState, setArchitectureState] = useState(true);
+  const [id, setId] = useState(0);
+  const [fullScreen, setFullScreen] = useState(false);
   const src = (nr) => {
     return "/models/bedzin/bedzin-photo" + nr + ".jpg";
+  };
+  const setNr = (e) => {
+    setId(e.target.src.slice(-10).match(/\d/g).join(""));
   };
 
   return (
@@ -16,6 +20,9 @@ const BedzinArch = () => {
         sectionState={architectureState}
         setSectionState={setArchitectureState}
       />
+      {fullScreen === true && (
+        <FullScreen id={id} setFullScreen={setFullScreen} />
+      )}
       {architectureState === true && (
         <article className="px-8">
           <img
@@ -23,6 +30,10 @@ const BedzinArch = () => {
             src={src(3)}
             alt="będzin"
             title="Ekipa odbudowująca zamek w Będzinie w 1953; drugi od prawej w szeregu stojących Roman Romański – wojewódzki konserwator zabytków w Katowicach w latach 1954–1961"
+            onClick={(e) => {
+              setNr(e);
+              setFullScreen(true);
+            }}
           />
           <p>
             Zamek założono na pozostałościach wczesnośredniowiecznego grodu
