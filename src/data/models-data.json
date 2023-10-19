@@ -56,17 +56,17 @@
     },
     "gallery": {
       "dzień": {
-        "quantity": 10,
+        "quantity": 26,
         "full": "./models/oporow/day/full-res/oporow-d",
         "thumb": "./models/oporow/day/thumb/oporow-thumb-d"
       },
       "noc": {
-        "quantity": 10,
+        "quantity": 20,
         "full": "./models/oporow/night/full-res/oporow-n",
         "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
       },
       "budowa": {
-        "quantity": 7,
+        "quantity": 69,
         "full": "./models/oporow/budowa/full-res/oporow-b",
         "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
       }
@@ -92,9 +92,19 @@
     },
     "gallery": {
       "dzień": {
-        "quantity": 10,
-        "full": "./models/stilo/full-res/stilo-",
-        "thumb": "./models/stilo/thumb/stilo-thumb-"
+        "quantity": 17,
+        "full": "./models/stilo/day/full-res/stilo-d",
+        "thumb": "./models/stilo/day/thumb/stilo-thumb-d"
+      },
+      "noc": {
+        "quantity": 5,
+        "full": "./models/stilo/night/full-res/stilo-n",
+        "thumb": "./models/stilo/night/thumb/stilo-thumb-n"
+      },
+      "budowa": {
+        "quantity": 6,
+        "full": "./models/stilo/budowa/full-res/stilo-b",
+        "thumb": "./models/stilo/budowa/thumb/stilo-thumb-b"
       }
     },
     "photos": ["./models/stilo/stilo-photo-1.jpg"],
@@ -117,10 +127,15 @@
       "Wysokość": "11cm"
     },
     "gallery": {
-      "dzień": {
-        "quantity": 10,
-        "full": "./models/curiosity/full-res/curiosity-",
-        "thumb": "./models/curiosity/thumb/curiosity-thumb-"
+      "model": {
+        "quantity": 22,
+        "full": "./models/curiosity/model/full-res/curiosity-m",
+        "thumb": "./models/curiosity/model/thumb/curiosity-thumb-m"
+      },
+      "podstawka": {
+        "quantity": 9,
+        "full": "./models/curiosity/podstawka/full-res/curiosity-p",
+        "thumb": "./models/curiosity/podstawka/thumb/curiosity-thumb-p"
       }
     },
     "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
@@ -130,7 +145,7 @@
     "component": "Sandomierz",
     "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
-    "name": "Ratusz w Sandomierzu",
+    "name": "Ratusz i Brama Opatowska w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "info": {
@@ -142,17 +157,33 @@
       "Wysokość modeli": "22cm i 19cm"
     },
     "gallery": {
-      "dzień": {
-        "quantity": 10,
-        "full": "./models/sandomierz/day/full-res/sandomierz-d",
-        "thumb": "./models/sandomierz/day/thumb/sandomierz-thumb-d"
+      "Ratusz - dzień": {
+        "quantity": 12,
+        "full": "./models/sandomierz/ratusz/dzień/full-res/ratusz-d",
+        "thumb": "./models/sandomierz/ratusz/dzień/thumb/ratusz-thumb-d"
       },
-      "noc": {
-        "quantity": 10,
-        "full": "./models/sandomierz/night/full-res/sandomierz-n",
-        "thumb": "./models/sandomierz/night/thumb/sandomierz-thumb-n"
+      "Ratusz - noc": {
+        "quantity": 17,
+        "full": "./models/sandomierz/ratusz/noc/full-res/ratusz-n",
+        "thumb": "./models/sandomierz/ratusz/noc/thumb/ratusz-thumb-n"
+      },
+      "Ratusz - budowa": {
+        "quantity": 24,
+        "full": "./models/sandomierz/ratusz/budowa/full-res/ratusz-b",
+        "thumb": "./models/sandomierz/ratusz/budowa/thumb/ratusz-thumb-b"
+      },
+      "Wieża - dzień": {
+        "quantity": 6,
+        "full": "./models/sandomierz/wieża/dzień/full-res/wieża-d",
+        "thumb": "./models/sandomierz/wieża/dzień/thumb/wieża-thumb-d"
+      },
+      "Wieża - budowa": {
+        "quantity": 17,
+        "full": "./models/sandomierz/wieża/budowa/full-res/wieża-b",
+        "thumb": "./models/sandomierz/wieża/budowa/thumb/wieża-thumb-b"
       }
     },
-    "description": "Budynek wzniesiony w 1349 r. - wkrótce po najeździe Litwinów. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą. "
+    "description": "Ratusz - budynek wzniesiony w 1349 r. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą.",
+    "description2": "Brama - gotycka brama wjazdowa z 2 poł. XIV w. Zbudowana z fundacji Kazimierza Wielkiego jako część murów obronnych miasta."
   }
 ]

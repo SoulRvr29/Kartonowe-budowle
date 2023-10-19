@@ -1,8 +1,8 @@
 import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 
-const Gallery = (id) => {
-  const model = modelsData[id.id];
+const Gallery = ({ id }) => {
+  const model = modelsData[id];
   const gallerySections = Object.keys(model.gallery);
 
   const [photoMaxWidth, setPhotoMaxWidth] = useState(false);
