@@ -2,8 +2,9 @@ import { useState } from "react";
 
 const FullScreen = ({ prop, setFullScreen }) => {
   const [photoMaxWidth, setPhotoMaxWidth] = useState(false);
-  let id = prop.target.src.slice(-10).match(/\d/g).join("");
-
+  const src = prop.target.currentSrc.match(/\bmodels.*\b/g);
+  const title = prop.target.title;
+  console.log(prop);
   return (
     <div className="gallery relative flex gap-5 flex-wrap justify-center">
       <div
@@ -11,7 +12,7 @@ const FullScreen = ({ prop, setFullScreen }) => {
           setFullScreen(false);
           document.querySelector("body").classList.remove("site-overflow");
         }}
-        className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center  gr-rows-1 max-sm:place-content-start"
+        className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center  gr-rows-1 max-sm:place-content-center"
       >
         {/* ////////////  ICON CONTAINER  //////////// */}
         <div className="w-full grid max-w-6xl place-self-center mx-auto h-full absolute ">
@@ -34,7 +35,7 @@ const FullScreen = ({ prop, setFullScreen }) => {
           </svg>
         </div>
         <button
-          className="grid max-sm:w-max"
+          className="grid "
           onClick={(e) => {
             e.stopPropagation();
             setPhotoMaxWidth(!photoMaxWidth);
@@ -45,12 +46,21 @@ const FullScreen = ({ prop, setFullScreen }) => {
             <img
               className={
                 photoMaxWidth === false
-                  ? "w-full max-w-[600px] max-h-[85vh] border-4 border-accent-2 max-sm:w-screen"
+                  ? "w-full max-w-[500px] max-h-[85vh] border-4 border-accent-2 max-sm:w-screen "
                   : "w-full border-4 border-accent-2 max-sm:h-screen max-sm:w-auto "
               }
-              src={"models/bedzin/bedzin-photo" + id + ".jpg"}
-              alt={"photo" + id}
+              src={src}
+              alt="photo"
             />
+            <span
+              className={
+                photoMaxWidth === false
+                  ? "text-lg max-w-[500px] bg-black px-3 border border-t-0 border-accent-2  w-fit max-sm:w-screen mx-auto "
+                  : "max-sm:fixed max-sm:bottom-0  text-lg  max-sm:w-screen bg-black px-3 border border-accent-2 border-t-0 mx-auto"
+              }
+            >
+              {title}
+            </span>
           </div>
         </button>
       </div>

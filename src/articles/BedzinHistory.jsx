@@ -1,6 +1,6 @@
 import SectionHeader from "../components/SectionHeader";
-import { useState } from "react";
 import FullScreen from "../components/FullScreen";
+import { useState } from "react";
 
 const BedzinHistory = () => {
   const [historyState, setHistoryState] = useState(true);

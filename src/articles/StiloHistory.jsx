@@ -1,20 +1,105 @@
-import modelsData from "../data/models-data.json";
 import SectionHeader from "../components/SectionHeader";
+import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 
 const StiloHistory = () => {
-  const model = modelsData[2];
   const [sectionState, setSectionState] = useState(true);
+  const [prop, setProp] = useState(0);
+  const [fullScreen, setFullScreen] = useState(false);
+
+  const src = (nr) => {
+    return "models/stilo/stilo-photo-" + nr + ".jpg";
+  };
   return (
     <>
       {" "}
       <SectionHeader
-        sectionName="Historia"
+        sectionName="Informacje"
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
+      {fullScreen === true && (
+        <FullScreen prop={prop} setFullScreen={setFullScreen} />
+      )}
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
+          <h4>Informacje ogólne</h4>
+          <p>
+            Latarnia jest administrowana przez Urząd Morski w Gdyni i jest
+            udostępniona do zwiedzania.
+          </p>
+          <p>
+            Wieża latarni położona jest na wierzchołku wydmy 41 m n.p.m.,
+            odległej około 1000 m od morza. Latarnia zbudowana została przez
+            Niemców na fundamencie z granitu i betonu. Wieża latarni,
+            szesnastokątna, u podstawy o średnicy 7,3 m, natomiast u nasady
+            laterny zwęża się do 3,9 m średnicy. Korpus jest wykonany z
+            żeliwnych płyt, w kształcie trapezu, większe u dołu, lecz o tej
+            samej wysokości, 95 cm, każda łączonych śrubami i uszczelnianych
+            ołowiem. Pomiędzy parterem i górną galerią znajduje się 10
+            kondygnacji, przez które przechodzą prawoskrętne schody.
+          </p>
+          <h4>Dane techniczne</h4>
+          <div className="flex justify-center gap-8 max-md:flex-col">
+            <img
+              className="pr-8 float-left"
+              src={src(1)}
+              alt="Stilo"
+              onClick={(e) => {
+                setProp(e);
+                setFullScreen(true);
+              }}
+              title="Obecny wygląd."
+            />
+            <ul className="list-disc pl-6 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left">
+              <li>
+                Położenie:{" "}
+                <span className="li-span">54°47'12" N 17°44'02" E</span>
+              </li>
+              <li>
+                Wysokość wydmy: <span className="li-span">41 m n.p.m.</span>
+              </li>
+              <li>
+                Wysokość wieży:<span className="li-span"> 33,40 m</span>
+              </li>
+              <li>
+                Wysokość światła:{" "}
+                <span className="li-span">75,00 m n.p.m.</span>
+              </li>
+              <li>
+                Zasięg nominalny światła:{" "}
+                <span className="li-span">23,50 Mm (43,522 km)</span>
+              </li>
+              <li>
+                Charakterystyka światła:{" "}
+                <span className="li-span">Błyskowe grupowe</span>
+                <ul className="list-disc pl-8">
+                  <li>
+                    Błysk: <span className="li-span">0,3 s</span>
+                  </li>
+                  <li>
+                    Przerwa: <span className="li-span">2,2 s</span>
+                  </li>
+                  <li>
+                    Błysk: <span className="li-span">0,3 s</span>
+                  </li>
+                  <li>
+                    Przerwa: <span className="li-span">2,2 s</span>
+                  </li>
+                  <li>
+                    Błysk: <span className="li-span">0,3 s</span>
+                  </li>
+                  <li>
+                    Przerwa: <span className="li-span">6,7 s</span>
+                  </li>
+                  <li>
+                    Okres (pełny cykl): <span className="li-span">12,0 s</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <h4>Historia</h4>
           <p>
             Latarnia została zbudowana w latach 1904–1906 na wniosek
             Niemieckiego Związku Nawigacyjnego według projektu niemieckiego
@@ -26,11 +111,6 @@ const StiloHistory = () => {
             modernizację, wprowadzając oświetlenie żarówką o mocy 2000 W i
             instalując rezerwowe oświetlenie gazowe.
           </p>
-          <img
-            className="pb-8 pr-8 float-left "
-            src={model.photos}
-            alt="Stilo"
-          />
           <p>
             Od 1975 roku latarnia posiada oświetlenie halogenowe o mocy snopu
             światła 1 200 W/12V szwedzkiej firmy AGA PRB-21 (Aktiebolaget
