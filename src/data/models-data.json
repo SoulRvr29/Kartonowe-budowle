@@ -6,8 +6,8 @@
     "cover": "models/bedzin/bedzin-cover.jpg",
     "info": {
       "Wydawca": "GPM",
-      "Rok wydania": 2012,
       "Skala": "1:160",
+      "Rok wydania": 2012,
       "Stopień trudności": 2,
       "Ilość stron": 20,
       "Długość": "30cm",
@@ -43,6 +43,17 @@
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
+    "cover": "models/oporow/oporow-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 1999,
+      "Stopień trudności": 2,
+      "Ilość stron": 6,
+      "Długość": "40cm",
+      "Szerokość": "30cm",
+      "Wysokość": "15cm"
+    },
     "gallery": {
       "dzień": {
         "quantity": 10,
@@ -70,6 +81,15 @@
     "publisher": "GPM",
     "name": "Latarnia morska Stilo",
     "card": "./cards/stilo-card.jpg",
+    "cover": "models/stilo/stilo-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2012,
+      "Stopień trudności": 1,
+      "Ilość stron": 2,
+      "Wysokość": "20cm"
+    },
     "gallery": {
       "dzień": {
         "quantity": 10,
@@ -87,6 +107,15 @@
     "publisher": "FREE",
     "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
+    "cover": "models/curiosity/curiosity-cover2.jpg",
+    "info": {
+      "Wydawca": "FREE",
+      "Skala": "1:20",
+      "Ilość stron": 3,
+      "Długość": "16cm",
+      "Szerokość": "14cm",
+      "Wysokość": "11cm"
+    },
     "gallery": {
       "dzień": {
         "quantity": 10,
@@ -103,6 +132,15 @@
     "publisher": "GPM",
     "name": "Ratusz w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
+    "cover": "models/sandomierz/sandomierz-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2001,
+      "Stopień trudności": 2,
+      "Ilość stron": 6,
+      "Wysokość modeli": "22cm i 19cm"
+    },
     "gallery": {
       "dzień": {
         "quantity": 10,

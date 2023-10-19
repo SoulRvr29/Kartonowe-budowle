@@ -1,12 +1,15 @@
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
 import CuriosityHistory from "../articles/CurisityHistory";
+import ModelInfo from "../components/ModelInfo";
 
 const Article = () => {
+  const id = 3;
   return (
     <div className=" mb-8 text-text-light">
-      <ArticleHeader id={3} />
-      <Gallery id={3} />
+      <ArticleHeader id={id} />
+      <ModelInfo id={id} />
+      <Gallery id={id} />
       <CuriosityHistory />
     </div>
   );

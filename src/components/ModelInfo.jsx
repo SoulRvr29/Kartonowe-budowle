@@ -1,9 +1,9 @@
 import modelsData from "../data/models-data.json";
-import SectionHeader from "../components/SectionHeader";
+import SectionHeader from "./SectionHeader";
 import { useState } from "react";
 
-const BedzinModel = () => {
-  const data = modelsData[0];
+const ModelInfo = ({ id }) => {
+  const data = modelsData[id];
   const info = Object.keys(data.info);
   const [sectionState, setSectionState] = useState(true);
   return (
@@ -16,7 +16,7 @@ const BedzinModel = () => {
       {sectionState === true && (
         <section className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4">
           <img
-            className="h-[300px] w-auto max-sm:border-none border-2 border-accent"
+            className="max-h-[300px] max-w-[220px] w-auto max-sm:border-none border-2 border-accent"
             src={data.cover}
             alt="okładka"
           />
@@ -38,4 +38,4 @@ const BedzinModel = () => {
   );
 };
 
-export default BedzinModel;
+export default ModelInfo;
