@@ -6,11 +6,11 @@ const ArticleHeader = ({ id }) => {
     <header className="article-header bg-text-dark bg-opacity-30  mb-2">
       {/* horizontal rule */}
       <div className=" grad-hr " />
-      <h2 className="font-playfair  tracking-widest text-center text-2xl font-semibold pt-1  text-accent-2 drop-shadow-lg">
+      <h2 className="font-playfair tracking-widest text-center text-2xl font-semibold pt-1 text-accent-2 drop-shadow-[2px_2px_1px_black]">
         {model.name} <br />
       </h2>
       <hr className="max-w-3xl mx-auto" />
-      <p className="max-w-3xl font-bold  mx-auto text-center max-sm:text-sm px-4">
+      <p className="max-w-3xl font-bold  mx-auto text-center max-sm:text-sm px-4 drop-shadow-sm">
         {model.description}
         <br />
         {model.description2}

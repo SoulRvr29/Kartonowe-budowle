@@ -44,12 +44,12 @@ const Banner = () => {
 
   return (
     <>
-      <Link to={link} className="relative">
+      <Link to={animState === true && link} className="relative">
         <section
           className={
             animState == true
               ? "banner-section banner-on pointer  h-[200px] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col"
-              : "banner-section banner-on pointer  h-[0] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col"
+              : "banner-section banner-on pointer  h-6  w-full overflow-hidden relative flex flex-col max-sm:h-3 invisible"
           }
         >
           <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs">
@@ -66,9 +66,10 @@ const Banner = () => {
             />
           </div>
         </section>
-
+        {/* banner hide icon */}
         <svg
-          onClick={() => {
+          onClick={(e) => {
+            // e.stopPropagation();
             setAnimState(!animState);
           }}
           xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +78,8 @@ const Banner = () => {
           fill="var(--text-light)"
           className={
             animState == true
-              ? "absolute top-2 max-md:top-1 max-md:right-2 right-4 opacity-50 hover:opacity-100 z-20 max-md:h-4"
-              : "absolute top-2 max-md:top-1 max-md:right-2 right-4 opacity-50 hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180"
+              ? "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-20 hover:opacity-100 z-20 max-md:h-4"
+              : "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-20 hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180 max-sm:-top-[2px]"
           }
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />

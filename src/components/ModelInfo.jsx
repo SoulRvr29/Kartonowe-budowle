@@ -16,7 +16,7 @@ const ModelInfo = ({ id }) => {
       {sectionState === true && (
         <section className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4">
           <img
-            className="max-h-[300px] max-w-[220px] w-auto max-sm:border-none border-2 border-accent"
+            className="max-h-[300px] max-w-[220px] w-auto max-sm:border-none border-2 border-accent "
             src={data.cover}
             alt="okładka"
           />

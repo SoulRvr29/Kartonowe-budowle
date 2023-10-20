@@ -122,7 +122,7 @@ const Gallery = ({ id }) => {
                 >
                   <img
                     value={loc.slice(-6, -4)}
-                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto"
+                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] "
                     src={loc}
                     alt={model.name + " photo"}
                   />
@@ -139,7 +139,7 @@ const Gallery = ({ id }) => {
             setFullScreen(false);
             document.querySelector("body").classList.remove("site-overflow");
           }}
-          className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center  grid-rows-1 max-sm:place-content-start"
+          className="full-size fixed  w-full h-full overflow-auto bg-black top-0 left-0 z-30 bg-opacity-70 grid place-content-center backdrop-blur-sm grid-rows-1 max-sm:place-content-start"
         >
           {/* ////////////  ICON CONTAINER  //////////// */}
           <div className="w-full grid max-w-6xl place-self-center mx-auto h-full absolute ">

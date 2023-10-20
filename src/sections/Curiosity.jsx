@@ -1,6 +1,6 @@
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
-import CuriosityHistory from "../articles/CurisityHistory";
+import CuriosityHistory from "../articles/CuriosityHistory";
 import ModelInfo from "../components/ModelInfo";
 
 const Article = () => {

@@ -23,21 +23,17 @@ const StiloHistory = () => {
       )}
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
-          <h4>Informacje ogólne</h4>
           <p>
-            Latarnia jest administrowana przez Urząd Morski w Gdyni i jest
-            udostępniona do zwiedzania.
-          </p>
-          <p>
-            Wieża latarni położona jest na wierzchołku wydmy 41 m n.p.m.,
-            odległej około 1000 m od morza. Latarnia zbudowana została przez
-            Niemców na fundamencie z granitu i betonu. Wieża latarni,
-            szesnastokątna, u podstawy o średnicy 7,3 m, natomiast u nasady
-            laterny zwęża się do 3,9 m średnicy. Korpus jest wykonany z
-            żeliwnych płyt, w kształcie trapezu, większe u dołu, lecz o tej
-            samej wysokości, 95 cm, każda łączonych śrubami i uszczelnianych
-            ołowiem. Pomiędzy parterem i górną galerią znajduje się 10
-            kondygnacji, przez które przechodzą prawoskrętne schody.
+            <span className="first-letter font-playfair">W</span>ieża latarni
+            położona jest na wierzchołku wydmy 41 m n.p.m., odległej około 1000
+            m od morza. Latarnia zbudowana została przez Niemców na fundamencie
+            z granitu i betonu. Wieża latarni, szesnastokątna, u podstawy o
+            średnicy 7,3 m, natomiast u nasady laterny zwęża się do 3,9 m
+            średnicy. Korpus jest wykonany z żeliwnych płyt, w kształcie
+            trapezu, większe u dołu, lecz o tej samej wysokości, 95 cm, każda
+            łączonych śrubami i uszczelnianych ołowiem. Pomiędzy parterem i
+            górną galerią znajduje się 10 kondygnacji, przez które przechodzą
+            prawoskrętne schody.
           </p>
           <h4>Dane techniczne</h4>
           <div className="flex justify-center gap-8 max-md:flex-col">
@@ -51,7 +47,7 @@ const StiloHistory = () => {
               }}
               title="Obecny wygląd."
             />
-            <ul className="list-disc pl-6 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left">
+            <ul className="list-disc pl-6 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left font-bold">
               <li>
                 Położenie:{" "}
                 <span className="li-span">54°47'12" N 17°44'02" E</span>
@@ -73,7 +69,7 @@ const StiloHistory = () => {
               <li>
                 Charakterystyka światła:{" "}
                 <span className="li-span">Błyskowe grupowe</span>
-                <ul className="list-disc pl-8">
+                <ul className="list-disc pl-6 pt-2">
                   <li>
                     Błysk: <span className="li-span">0,3 s</span>
                   </li>
@@ -111,6 +107,15 @@ const StiloHistory = () => {
             modernizację, wprowadzając oświetlenie żarówką o mocy 2000 W i
             instalując rezerwowe oświetlenie gazowe.
           </p>
+          <img
+            className="pr-8 float-left"
+            src={src(3)}
+            alt="Stilo"
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+          />
           <p>
             Od 1975 roku latarnia posiada oświetlenie halogenowe o mocy snopu
             światła 1 200 W/12V szwedzkiej firmy AGA PRB-21 (Aktiebolaget
@@ -166,6 +171,15 @@ const StiloHistory = () => {
             Łozicki wraz z małżonką Weroniką (jedna z trzech kobiet –
             latarników), a następnie wnuk – Damian Łozicki.
           </p>
+          <img
+            className="pr-8 mx-auto"
+            src={src(2)}
+            alt="Stilo"
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+          />
         </article>
       )}
     </>
