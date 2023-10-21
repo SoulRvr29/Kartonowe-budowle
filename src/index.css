@@ -252,7 +252,6 @@ article,
   animation: fade-in 1.5s;
 }
 .medium-width {
-  width: 0;
   animation: width-in 1s forwards;
 }
 
@@ -267,10 +266,9 @@ article,
 
 @keyframes width-in {
   from {
-    width: 0%;
+    scale: 0%;
   }
   to {
-    width: 100%;
-    border-width: 0px;
+    scale: 100%;
   }
 }
