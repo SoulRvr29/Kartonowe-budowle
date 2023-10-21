@@ -146,8 +146,8 @@ const Gallery = ({ id }) => {
             <div
               className={
                 photoMaxWidth == false
-                  ? "mx-auto relative w-full h-full left-0 top-0 grid place-content-center max-w-6xl"
-                  : "w-full h-full left-0 top-0 grid place-content-center "
+                  ? "mx-auto relative grid max-w-6xl"
+                  : "grid"
               }
             >
               {/* close icon */}
@@ -158,8 +158,8 @@ const Gallery = ({ id }) => {
                 fill="white"
                 className={
                   photoMaxWidth == false
-                    ? "absolute hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 right-0 top-0 m-8 max-sm:justify-self-center"
-                    : "fixed hover:cursor-pointer opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:right-3"
+                    ? "absolute hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 right-0 top-0 m-8 max-sm:justify-self-center max-sm:right-auto"
+                    : "fixed opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -180,8 +180,8 @@ const Gallery = ({ id }) => {
                 fill="white"
                 className={
                   photoMaxWidth == false
-                    ? "gallery-icon icon-hidden fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:top-auto max-sm:bottom-8"
-                    : "fixed hover:cursor-pointer opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-4 "
+                    ? "gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:top-auto max-sm:bottom-8"
+                    : "fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:top-auto  max-sm:bottom-3 max-sm:left-4 "
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -198,8 +198,8 @@ const Gallery = ({ id }) => {
                 fill="white"
                 className={
                   photoMaxWidth == false
-                    ? "fixed hover:cursor-pointer hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:top-auto max-sm:bottom-8"
-                    : "fixed hover:cursor-pointer opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20 max-sm:right-4"
+                    ? "fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:top-auto max-sm:bottom-8"
+                    : "fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20 max-sm:top-auto  max-sm:bottom-3 max-sm:right-4"
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -209,7 +209,7 @@ const Gallery = ({ id }) => {
                 <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
               </svg>
             </div>
-            {/* IMG CONTAINER medium-w-false / full-w-true */}
+            {/* IMAGE CONTAINER medium-w-false / full-w-true */}
             <div className="fixed w-screen h-screen left-0 top-0 z-30 grid place-content-center overflow-auto">
               <img
                 onClick={(e) => {
@@ -231,7 +231,7 @@ const Gallery = ({ id }) => {
             className={
               photoMaxWidth === false
                 ? "fixed bottom-4 text-2xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 max-sm:top-auto max-sm:bottom-9"
-                : "fixed bottom-4 text-3xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] max-sm:left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-50 max-sm:top-auto max-sm:bottom-4"
+                : "fixed bottom-4 text-3xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] max-sm:left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-accent-3 text-accent-3 opacity-50 max-sm:top-auto max-sm:bottom-[18px]"
             }
           >
             {(photoId < 10 ? photoId[1] : photoId) + " / " + galleryLength}
