@@ -58,7 +58,7 @@ const Banner = () => {
           {/* <div className="absolute bg-white z-10 w-full h-full"></div> */}
           <div className="grid  transition-all duration-1000 ">
             {/* gradient */}
-            <div className="w-full h-full absolute banner-grad z-10"></div>
+            <div className="w-full h-full absolute grad banner-grad z-10"></div>
             <img
               className="banner-img relative bottom-[11rem] place-self-center w-screen min-w-max max-[400px]:min-w-[600px] max-[400px]:mb-[3rem] max-[400px]:ml-[-4rem] "
               src={image}
@@ -78,8 +78,8 @@ const Banner = () => {
           fill="var(--text-light)"
           className={
             animState == true
-              ? "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-20 hover:opacity-100 z-20 max-md:h-4"
-              : "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-20 hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180 max-sm:-top-[2px]"
+              ? "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-20 max-md:h-4"
+              : "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180 max-sm:-top-[2px]"
           }
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />

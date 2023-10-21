@@ -1,6 +1,6 @@
 const Article = () => {
   return (
-    <article className=" mb-8 text-text-light">
+    <article className=" mb-8">
       {/* horizontal rule */}
       <div className="grad-hr relative bottom-[1px] z-0" />
 

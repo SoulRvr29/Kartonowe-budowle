@@ -67,11 +67,11 @@ const Gallery = ({ id }) => {
             xmlns="http://www.w3.org/2000/svg"
             height="1.3rem"
             viewBox="0 0 512 512"
-            fill="var(--accent-2)"
+            fill="var(--accent-4)"
             className={
               galleryState === false
-                ? "mr-2 mt-1 hover:scale-125 max-sm:h-3 rotate-180"
-                : "mr-2 mt-1 hover:scale-125 max-sm:h-3"
+                ? "dark:fill-accent-2 mr-2 mt-1 hover:scale-125 max-sm:h-3 rotate-180"
+                : "dark:fill-accent-2 mr-2 mt-1 hover:scale-125 max-sm:h-3"
             }
           >
             <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
@@ -94,7 +94,7 @@ const Gallery = ({ id }) => {
                   }}
                 >
                   <span className="opacity-50">&nbsp;/</span>
-                  <span className="section text-accent-2  opacity-40 transition-all">
+                  <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all">
                     {" " + section}
                   </span>
                 </button>
@@ -102,11 +102,11 @@ const Gallery = ({ id }) => {
             );
           })}
       </h3>
-      <hr />
+      <hr className="dark:bg-accent-2 bg-accent-4" />
       {/* ////////////  thumbials  //////////// */}
       <div className="gallery relative flex gap-5  flex-wrap justify-center">
         {galleryState === true && (
-          <div className="p-4 gallery relative flex gap-5  flex-wrap justify-center">
+          <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
             {actualSrc.map((loc) => {
               return (
                 <button
@@ -122,7 +122,7 @@ const Gallery = ({ id }) => {
                 >
                   <img
                     value={loc.slice(-6, -4)}
-                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] "
+                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)] "
                     src={loc}
                     alt={model.name + " photo"}
                   />
@@ -181,7 +181,7 @@ const Gallery = ({ id }) => {
                 className={
                   photoMaxWidth == false
                     ? "gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:top-auto max-sm:bottom-8"
-                    : "fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:top-auto  max-sm:bottom-3 max-sm:left-4 "
+                    : "fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-4 "
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -199,7 +199,7 @@ const Gallery = ({ id }) => {
                 className={
                   photoMaxWidth == false
                     ? "fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:top-auto max-sm:bottom-8"
-                    : "fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20 max-sm:top-auto  max-sm:bottom-3 max-sm:right-4"
+                    : "fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-4"
                 }
                 onClick={(e) => {
                   e.stopPropagation();

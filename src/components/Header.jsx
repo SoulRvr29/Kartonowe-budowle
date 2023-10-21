@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
   let actualFontSize = 1;
 
   const fontSizeChange = () => {
@@ -11,15 +13,28 @@ function App() {
       ? (document.querySelector("body").style = "font-size: 1.1rem")
       : (document.querySelector("body").style = "font-size: 1.2rem");
   };
+
+  const modeChange = () => {
+    setDarkMode(!darkMode);
+    if (darkMode) {
+      document.querySelector("html").classList.remove("dark");
+      document.querySelector("body").classList.add("bkg-sides");
+      document.querySelector(".grad").classList.remove("banner-grad");
+    } else {
+      document.querySelector("html").classList.add("dark");
+      document.querySelector("body").classList.remove("bkg-sides");
+      document.querySelector(".grad").classList.add("banner-grad");
+    }
+  };
   return (
     <>
-      <header className="relative mx-4 flex justify-between items-center">
+      <header className="relative px-4 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-10 ">
         {/* left side */}
         <div className="mt-1">
           <button>
             <Link to="/Kartonowe-budowle/" reloadDocument>
               <svg
-                className="hover:fill-accent-2 transition-all max-sm:h-4"
+                className="hover:brightness-150 opacity-50 dark:opacity-100 transition-all max-sm:h-4"
                 height="1.25em"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
@@ -30,16 +45,32 @@ function App() {
             </Link>
           </button>
         </div>
-        {/* center */}
+        {/* main header */}
         <div className="flex gap-2 justify-center align-middle place-items-center">
-          <h1 className="text-accent text-header font-bold uppercase p-1 max-md:p-0">
+          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_0px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0">
             Kartonowe &nbsp;budowle
           </h1>
         </div>
         {/* right side */}
         <div className="flex gap-2 mt-1">
           <svg
-            className="hover:fill-accent-2 transition-all  max-sm:h-[14px] mt-[1px]"
+            className={
+              darkMode
+                ? "hover:brightness-150 drop-shadow-[0_-2px_7px_white]transition-color opacity-50 dark:opacity-100 max-sm:h-[14px] mt-[1px]"
+                : "hover:brightness-150 drop-shadow-[0_-2px_6px_white] fill-white transition-color opacity-100 dark:opacity-100 max-sm:h-[14px] mt-[1px]"
+            }
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.1em"
+            viewBox="0 0 384 512"
+            fill="var(--text-dark)"
+            onClick={() => {
+              modeChange();
+            }}
+          >
+            <path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z" />
+          </svg>
+          <svg
+            className="hover:brightness-150 transition-all opacity-50 dark:opacity-100 max-sm:h-[14px] mt-[1px]"
             xmlns="http://www.w3.org/2000/svg"
             height="1.1em"
             viewBox="0 0 448 512"
@@ -48,9 +79,9 @@ function App() {
           >
             <path d="M254 52.8C249.3 40.3 237.3 32 224 32s-25.3 8.3-30 20.8L57.8 416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32h-1.8l18-48H303.8l18 48H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H390.2L254 52.8zM279.8 304H168.2L224 155.1 279.8 304z" />
           </svg>
-          <a href="mailto:pawelc29@interia.pl">
+          <a title="mail" href="mailto:pawelc29@interia.pl">
             <svg
-              className="hover:fill-accent-2 transition-all  max-sm:h-4"
+              className="hover:brightness-150 transition-all opacity-50 dark:opacity-100 max-sm:h-4"
               xmlns="http://www.w3.org/2000/svg"
               height="1.25em"
               viewBox="0 0 512 512"
@@ -62,7 +93,7 @@ function App() {
         </div>
         {/* horizontal rule */}
       </header>
-      <div className="grad-hr relative"></div>
+      <div className="grad-hr relative mb-[1px] drop-shadow-[0_1px_0_#666]"></div>
     </>
   );
 }

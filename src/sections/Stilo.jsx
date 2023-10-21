@@ -6,7 +6,7 @@ import ModelInfo from "../components/ModelInfo";
 const Article = () => {
   const id = 2;
   return (
-    <div className=" mb-8 text-text-light">
+    <div className=" mb-8 ">
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />

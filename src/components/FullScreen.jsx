@@ -17,7 +17,7 @@ const FullScreen = ({ prop, setFullScreen }) => {
       <div
         className={
           photoMaxWidth == false
-            ? "mx-auto relative grid max-w-6xl border w-full"
+            ? "mx-auto relative grid max-w-6xl w-full"
             : "grid"
         }
       >

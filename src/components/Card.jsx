@@ -12,7 +12,7 @@ const Card = ({ model }) => {
         <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute"></div>
         {/* zdjęcie */}
         <img
-          className="h-[180px] shadow-[0_0_20px_black] rounded-xl left-0 border-8 border-accent pointer"
+          className="h-[180px] dark:shadow-[0_0_20px_black] shadow-[0_0_14px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 border-accent pointer"
           src={model.card}
           alt={model.name}
         />

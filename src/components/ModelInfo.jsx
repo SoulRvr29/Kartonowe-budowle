@@ -20,12 +20,14 @@ const ModelInfo = ({ id }) => {
             src={data.cover}
             alt="okładka"
           />
-          <div className="w-max h-min p-4 border-l-2 max-sm:border-l-0 max-sm:border-t-2 border-accent-2">
+          <div className="w-max h-min p-4 border-l-2 max-sm:border-l-0 max-sm:border-t-2 dark:border-accent-2 border-accent-4">
             <ul className="text-lg max-sm:text-base text-accent-3 tracking-wide font-bold">
               {info.map((key) => {
                 return (
-                  <li key={key}>
-                    <span className="text-text-light font-bold ">{key}: </span>
+                  <li className="dark:text-accent-3 text-text-light" key={key}>
+                    <span className="dark:text-text-light text-text-dark font-bold ">
+                      {key}:{" "}
+                    </span>
                     {data.info[key]}
                   </li>
                 );

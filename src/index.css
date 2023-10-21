@@ -14,12 +14,14 @@
   /* font-family: "Roboto", sans-serif; */
   /* font-family: "Playfair Display", serif; */
 
+  --bkg: rgb(30, 30, 30);
+  --bkg-light: rgb(186, 186, 186);
   --text-light: rgb(212, 212, 212);
+  --text-dark: rgb(57, 57, 57);
   --accent: rgb(0, 122, 204);
   --accent-2: hsl(358, 79%, 66%);
   --accent-3: hsl(41, 79%, 66%);
-  --text-dark: rgb(77, 77, 77);
-  --bkg: rgb(30, 30, 30);
+  --accent-4: hsl(0, 67%, 38%);
 }
 
 html {
@@ -27,13 +29,15 @@ html {
 }
 
 body {
-  color: var(--text-light);
   background-color: var(--bkg);
   text-align: justify;
-  animation: fade-in 1s;
-  /* font-size: 1.2rem; */
+  animation: fade-in 2s;
+  text-shadow: 1px 1px 0px #00000027;
+  /* color: var(--text-dark); */
 }
-
+.bkg-sides {
+  background-color: #888;
+}
 br {
   height: 1rem;
 }
@@ -44,6 +48,7 @@ p {
 
 h3 {
   font-size: 1.5rem;
+  color: var(--text-light);
 }
 h4 {
   font-size: 1.4rem;
@@ -88,6 +93,9 @@ svg:hover {
 /************************************/
 /**********  CUSTOM CLASS  **********/
 /************************************/
+.bkg {
+  background-color: var(--bkg);
+}
 .site-overflow {
   overflow: hidden;
 }
@@ -112,10 +120,13 @@ svg:hover {
 }
 .li-span {
   color: var(--accent-3);
-  font-weight: normal;
+  font-weight: 500;
 }
 .photo-title {
   animation: fade-in 2s forwards 1s;
+}
+article img {
+  filter: drop-shadow(8px 8px 2px rgba(0, 0, 0, 0.1));
 }
 /*********************************/
 /**********  CUSTOM HR  **********/
@@ -123,18 +134,19 @@ svg:hover {
 .grad-hr {
   background: linear-gradient(
     to right,
-    var(--bkg),
+    transparent,
     var(--text-light),
-    var(--bkg)
+    transparent
   );
   height: 1px;
 }
+
 .grad-hr-2 {
   background: linear-gradient(
     to right,
-    var(--bkg),
+    transparent,
     var(--text-light),
-    var(--bkg)
+    transparent
   );
   height: 2px;
 }
@@ -143,6 +155,7 @@ hr {
   border: none;
   height: 1px;
   margin: 0.5rem 0;
+  box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 /********************************/
