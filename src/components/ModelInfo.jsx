@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 import { useState } from "react";
 
 const ModelInfo = ({ id }) => {
-  const data = modelsData[id];
+  const data = modelsData.filter((item) => item.id == id)[0];
   const info = Object.keys(data.info);
   const [sectionState, setSectionState] = useState(true);
   return (

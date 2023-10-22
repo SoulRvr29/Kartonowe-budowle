@@ -4,15 +4,14 @@ import BedzinHistory from "../articles/BedzinHistory";
 import ModelInfo from "../components/ModelInfo";
 import BedzinArch from "../articles/BedzinArch";
 
-const Article = () => {
-  const id = 0;
+const Article = ({ id }) => {
   return (
     <div className="mb-14">
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
-      <BedzinHistory />
-      <BedzinArch />
+      <BedzinHistory id={id} />
+      <BedzinArch id={id} />
     </div>
   );
 };

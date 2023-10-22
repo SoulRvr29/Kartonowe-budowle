@@ -1,14 +1,16 @@
 import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
+import data from "../data/models-data.json";
 
-const DarłowoHistory = () => {
+const DarłowoHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
   const [prop, setProp] = useState(0);
   const [fullScreen, setFullScreen] = useState(false);
 
+  const photo = data.filter((item) => item.id == id)[0].photo;
   const src = (nr) => {
-    return "models/darlowo/darłowo-photo-" + nr + ".jpg";
+    return photo + nr + ".jpg";
   };
   return (
     <>

@@ -3,8 +3,7 @@ import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
 import DarłowoHistory from "../articles/DarłowoHistory";
 
-const Article = () => {
-  const id = 5;
+const Article = ({ id }) => {
   return (
     <div className="mb-14">
       <ArticleHeader id={id} />

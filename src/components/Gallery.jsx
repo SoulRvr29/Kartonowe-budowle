@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const Gallery = ({ id, name }) => {
   if (name === undefined) name = "gallery";
-  const model = modelsData[id];
+  const model = modelsData.filter((item) => item.id == id)[0];
   const gallerySections = Object.keys(model[name]);
 
   const [photoMaxWidth, setPhotoMaxWidth] = useState(false);

@@ -3,14 +3,13 @@ import Gallery from "../components/Gallery";
 import CuriosityHistory from "../articles/CuriosityHistory";
 import ModelInfo from "../components/ModelInfo";
 
-const Article = () => {
-  const id = 3;
+const Article = ({ id }) => {
   return (
     <div className=" mb-8">
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
-      <CuriosityHistory />
+      <CuriosityHistory id={id} />
     </div>
   );
 };

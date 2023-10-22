@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "component": "Bedzin",
     "link": "/Kartonowe-budowle/Bedzin",
     "cover": "models/bedzin/bedzin-cover.jpg",
@@ -37,7 +37,7 @@
     "description": "Średniowieczna warownia obronna wzniesiona w połowie XIV wieku przez Kazimierza Wielkiego w systemie tzw. Orlich Gniazd w Małopolsce, 4,5 km od granicy ze Śląskiem, na wzgórzu nad Czarną Przemszą; wielokrotnie niszczona, odbudowana w 1956."
   },
   {
-    "id": 2,
+    "id": 1,
     "component": "Oporow",
     "link": "/Kartonowe-budowle/Oporow",
     "publisher": "GPM",
@@ -75,73 +75,7 @@
     "description": "Muzeum Zamek w Oporowie, zamek Oporowskich – ceglany zamek wzniesiony w stylu gotyckim w latach 1434–1449 we wsi Oporów pod Kutnem przez biskupa kujawskiego Władysława Oporowskiego."
   },
   {
-    "id": 3,
-    "component": "Stilo",
-    "link": "/Kartonowe-budowle/Stilo",
-    "publisher": "GPM",
-    "name": "Latarnia morska Stilo",
-    "card": "./cards/stilo-card.jpg",
-    "cover": "models/stilo/stilo-cover.jpg",
-    "info": {
-      "Wydawca": "GPM",
-      "Skala": "1:150",
-      "Rok wydania": 2012,
-      "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
-    },
-    "gallery": {
-      "dzień": {
-        "quantity": 17,
-        "full": "./models/stilo/day/full-res/stilo-d",
-        "thumb": "./models/stilo/day/thumb/stilo-thumb-d"
-      },
-      "noc": {
-        "quantity": 5,
-        "full": "./models/stilo/night/full-res/stilo-n",
-        "thumb": "./models/stilo/night/thumb/stilo-thumb-n"
-      },
-      "budowa": {
-        "quantity": 6,
-        "full": "./models/stilo/budowa/full-res/stilo-b",
-        "thumb": "./models/stilo/budowa/thumb/stilo-thumb-b"
-      }
-    },
-    "photos": ["./models/stilo/stilo-photo-1.jpg"],
-    "description": "Latarnia morska na polskim wybrzeżu Bałtyku, położona w miejscowości Osetnik (dawniej Stilo), niedaleko Sasina (gmina Choczewo, powiat wejherowski, województwo pomorskie)."
-  },
-  {
     "id": 4,
-    "component": "Curiosity",
-    "link": "/Kartonowe-budowle/Curiosity",
-    "publisher": "FREE",
-    "name": "Łazik marsjański Curiosity",
-    "card": "./cards/curiosity-card.jpg",
-    "cover": "models/curiosity/curiosity-cover2.jpg",
-    "info": {
-      "Wydawca": "FREE",
-      "Skala": "1:20",
-      "Ilość stron": 3,
-      "Długość": "16cm",
-      "Szerokość": "14cm",
-      "Wysokość": "11cm"
-    },
-    "gallery": {
-      "model": {
-        "quantity": 22,
-        "full": "./models/curiosity/model/full-res/curiosity-m",
-        "thumb": "./models/curiosity/model/thumb/curiosity-thumb-m"
-      },
-      "podstawka": {
-        "quantity": 9,
-        "full": "./models/curiosity/podstawka/full-res/curiosity-p",
-        "thumb": "./models/curiosity/podstawka/thumb/curiosity-thumb-p"
-      }
-    },
-    "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
-  },
-  {
-    "id": 5,
     "component": "Sandomierz",
     "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
@@ -189,13 +123,49 @@
     "description2": "Brama - gotycka brama wjazdowa z 2 poł. XIV w. Zbudowana z fundacji Kazimierza Wielkiego jako część murów obronnych miasta."
   },
   {
-    "id": 6,
+    "id": 2,
+    "component": "Stilo",
+    "link": "/Kartonowe-budowle/Stilo",
+    "publisher": "GPM",
+    "name": "Latarnia morska Stilo",
+    "card": "./cards/stilo-card.jpg",
+    "cover": "models/latarnie morskie/stilo/stilo-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2012,
+      "Stopień trudności": 1,
+      "Ilość stron": 2,
+      "Wysokość": "20cm"
+    },
+    "gallery": {
+      "dzień": {
+        "quantity": 17,
+        "full": "./models/latarnie morskie/stilo/day/full-res/stilo-d",
+        "thumb": "./models/latarnie morskie/stilo/day/thumb/stilo-thumb-d"
+      },
+      "noc": {
+        "quantity": 5,
+        "full": "./models/latarnie morskie/stilo/night/full-res/stilo-n",
+        "thumb": "./models/latarnie morskie/stilo/night/thumb/stilo-thumb-n"
+      },
+      "budowa": {
+        "quantity": 6,
+        "full": "./models/latarnie morskie/stilo/budowa/full-res/stilo-b",
+        "thumb": "./models/latarnie morskie/stilo/budowa/thumb/stilo-thumb-b"
+      }
+    },
+    "photo": "models/latarnie morskie/stilo/stilo-photo-",
+    "description": "Latarnia morska na polskim wybrzeżu Bałtyku, położona w miejscowości Osetnik (dawniej Stilo), niedaleko Sasina (gmina Choczewo, powiat wejherowski, województwo pomorskie)."
+  },
+  {
+    "id": 5,
     "component": "Darlowo",
     "link": "/Kartonowe-budowle/Darlowo",
     "publisher": "GPM",
     "name": "Latarnia morska Darłowo",
     "card": "./cards/darłowo-card.jpg",
-    "cover": "models/darlowo/darłowo-cover.jpg",
+    "cover": "models/latarnie morskie/darlowo/darłowo-cover.jpg",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -207,16 +177,46 @@
     "gallery": {
       "dzień": {
         "quantity": 19,
-        "full": "./models/darlowo/dzień/full-res/darłowo-d",
-        "thumb": "./models/darlowo/dzień/thumb/darłowo-thumb-d"
+        "full": "./models/latarnie morskie/darlowo/dzień/full-res/darłowo-d",
+        "thumb": "./models/latarnie morskie/darlowo/dzień/thumb/darłowo-thumb-d"
       },
       "noc": {
         "quantity": 3,
-        "full": "./models/darlowo/noc/full-res/darłowo-n",
-        "thumb": "./models/darlowo/noc/thumb/darłowo-thumb-n"
+        "full": "./models/latarnie morskie/darlowo/noc/full-res/darłowo-n",
+        "thumb": "./models/latarnie morskie/darlowo/noc/thumb/darłowo-thumb-n"
       }
     },
-    "photos": ["./models/darlowo/darłowo-photo-1.jpg"],
+    "photo": "models/latarnie morskie/darlowo/darłowo-photo-",
     "description": "Latarnia Morska na polskim wybrzeżu Bałtyku, położona w mieście Darłowo (powiat sławieński, województwo zachodniopomorskie) w dzielnicy Darłówko."
+  },
+  {
+    "id": 3,
+    "component": "Curiosity",
+    "link": "/Kartonowe-budowle/Curiosity",
+    "publisher": "FREE",
+    "name": "Łazik marsjański Curiosity",
+    "card": "./cards/curiosity-card.jpg",
+    "cover": "models/curiosity/curiosity-cover2.jpg",
+    "info": {
+      "Wydawca": "FREE",
+      "Skala": "1:20",
+      "Ilość stron": 3,
+      "Długość": "16cm",
+      "Szerokość": "14cm",
+      "Wysokość": "11cm"
+    },
+    "gallery": {
+      "model": {
+        "quantity": 22,
+        "full": "./models/curiosity/model/full-res/curiosity-m",
+        "thumb": "./models/curiosity/model/thumb/curiosity-thumb-m"
+      },
+      "podstawka": {
+        "quantity": 9,
+        "full": "./models/curiosity/podstawka/full-res/curiosity-p",
+        "thumb": "./models/curiosity/podstawka/thumb/curiosity-thumb-p"
+      }
+    },
+    "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
   }
 ]

@@ -1,7 +1,7 @@
 import modelsData from "../data/models-data.json";
 
 const ArticleHeader = ({ id }) => {
-  const model = modelsData[id];
+  const model = modelsData.filter((item) => item.id == id)[0];
   return (
     <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  mb-2">
       {/* horizontal rule */}

@@ -22,12 +22,18 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/Kartonowe-budowle/" element={<Home />} />
-        <Route path="/Kartonowe-budowle/Bedzin" element={<Bedzin />} />
-        <Route path="/Kartonowe-budowle/Oporow" element={<Oporow />} />
-        <Route path="/Kartonowe-budowle/Curiosity" element={<Curiosity />} />
-        <Route path="/Kartonowe-budowle/Sandomierz" element={<Sandomierz />} />
-        <Route path="/Kartonowe-budowle/Stilo" element={<Stilo />} />
-        <Route path="/Kartonowe-budowle/Darlowo" element={<Darlowo />} />
+        <Route path="/Kartonowe-budowle/Bedzin" element={<Bedzin id={0} />} />
+        <Route path="/Kartonowe-budowle/Oporow" element={<Oporow id={1} />} />
+        <Route
+          path="/Kartonowe-budowle/Sandomierz"
+          element={<Sandomierz id={4} />}
+        />
+        <Route path="/Kartonowe-budowle/Stilo" element={<Stilo id={2} />} />
+        <Route path="/Kartonowe-budowle/Darlowo" element={<Darlowo id={5} />} />
+        <Route
+          path="/Kartonowe-budowle/Curiosity"
+          element={<Curiosity id={3} />}
+        />
       </Routes>
       <Footer />
       <BackToTop />

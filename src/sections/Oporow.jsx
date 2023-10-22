@@ -3,14 +3,13 @@ import Gallery from "../components/Gallery";
 import OporowHistory from "../articles/OporowHistory";
 import ModelInfo from "../components/ModelInfo";
 
-const Article = () => {
-  const id = 1;
+const Article = ({ id }) => {
   return (
     <div className=" mb-8">
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
-      <OporowHistory />
+      <OporowHistory id={id} />
     </div>
   );
 };
