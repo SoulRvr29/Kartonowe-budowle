@@ -1,17 +1,16 @@
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
-import SandomierzHistory from "../articles/SandomierzHistory";
 import ModelInfo from "../components/ModelInfo";
+import DarłowoHistory from "../articles/DarłowoHistory";
 
 const Article = () => {
-  const id = 4;
+  const id = 5;
   return (
-    <div className=" mb-8">
+    <div className="mb-14">
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
-      <Gallery id={id} name={"Galeria - Ratusz"} />
-      <Gallery id={id} name={"Galeria - Brama"} />
-      <SandomierzHistory />
+      <Gallery id={id} />
+      <DarłowoHistory id={id} />
     </div>
   );
 };

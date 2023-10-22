@@ -3,13 +3,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
+import BackToTop from "./components/BackToTop";
+
 import Home from "./sections/Home";
 import Bedzin from "./sections/Bedzin";
 import Oporow from "./sections/Oporow";
 import Curiosity from "./sections/Curiosity";
 import Sandomierz from "./sections/Sandomierz";
 import Stilo from "./sections/Stilo";
-import BackToTop from "./components/BackToTop";
+import Darlowo from "./sections/Darlowo";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path="/Kartonowe-budowle/Curiosity" element={<Curiosity />} />
         <Route path="/Kartonowe-budowle/Sandomierz" element={<Sandomierz />} />
         <Route path="/Kartonowe-budowle/Stilo" element={<Stilo />} />
+        <Route path="/Kartonowe-budowle/Darlowo" element={<Darlowo />} />
       </Routes>
       <Footer />
       <BackToTop />

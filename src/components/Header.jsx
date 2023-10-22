@@ -28,7 +28,7 @@ function App() {
   };
   return (
     <>
-      <header className="relative px-4 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-10 ">
+      <header className="relative px-4 max-sm:px-1 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-10 ">
         {/* left side */}
         <div className="mt-1">
           <button>
@@ -52,7 +52,7 @@ function App() {
           </h1>
         </div>
         {/* right side */}
-        <div className="flex gap-2 mt-1">
+        <div className="flex gap-2 max-sm:ga mt-1">
           <svg
             className={
               darkMode

@@ -156,28 +156,30 @@
       "Ilość stron": 6,
       "Wysokość modeli": "22cm i 19cm"
     },
-    "gallery": {
-      "Ratusz - dzień": {
+    "Galeria - Ratusz": {
+      "dzień": {
         "quantity": 12,
         "full": "./models/sandomierz/ratusz/dzień/full-res/ratusz-d",
         "thumb": "./models/sandomierz/ratusz/dzień/thumb/ratusz-thumb-d"
       },
-      "Ratusz - noc": {
+      "noc": {
         "quantity": 17,
         "full": "./models/sandomierz/ratusz/noc/full-res/ratusz-n",
         "thumb": "./models/sandomierz/ratusz/noc/thumb/ratusz-thumb-n"
       },
-      "Ratusz - budowa": {
+      "budowa": {
         "quantity": 24,
         "full": "./models/sandomierz/ratusz/budowa/full-res/ratusz-b",
         "thumb": "./models/sandomierz/ratusz/budowa/thumb/ratusz-thumb-b"
-      },
-      "Wieża - dzień": {
+      }
+    },
+    "Galeria - Brama": {
+      "dzień": {
         "quantity": 6,
         "full": "./models/sandomierz/wieża/dzień/full-res/wieża-d",
         "thumb": "./models/sandomierz/wieża/dzień/thumb/wieża-thumb-d"
       },
-      "Wieża - budowa": {
+      "budowa": {
         "quantity": 17,
         "full": "./models/sandomierz/wieża/budowa/full-res/wieża-b",
         "thumb": "./models/sandomierz/wieża/budowa/thumb/wieża-thumb-b"
@@ -185,5 +187,36 @@
     },
     "description": "Ratusz - budynek wzniesiony w 1349 r. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą.",
     "description2": "Brama - gotycka brama wjazdowa z 2 poł. XIV w. Zbudowana z fundacji Kazimierza Wielkiego jako część murów obronnych miasta."
+  },
+  {
+    "id": 6,
+    "component": "Darlowo",
+    "link": "/Kartonowe-budowle/Darlowo",
+    "publisher": "GPM",
+    "name": "Latarnia morska Darłowo",
+    "card": "./cards/darłowo-card.jpg",
+    "cover": "models/darlowo/darłowo-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2004,
+      "Stopień trudności": 1,
+      "Ilość stron": 2,
+      "Wysokość": "16cm"
+    },
+    "gallery": {
+      "dzień": {
+        "quantity": 19,
+        "full": "./models/darlowo/dzień/full-res/darłowo-d",
+        "thumb": "./models/darlowo/dzień/thumb/darłowo-thumb-d"
+      },
+      "noc": {
+        "quantity": 3,
+        "full": "./models/darlowo/noc/full-res/darłowo-n",
+        "thumb": "./models/darlowo/noc/thumb/darłowo-thumb-n"
+      }
+    },
+    "photos": ["./models/darlowo/darłowo-photo-1.jpg"],
+    "description": "Latarnia Morska na polskim wybrzeżu Bałtyku, położona w mieście Darłowo (powiat sławieński, województwo zachodniopomorskie) w dzielnicy Darłówko."
   }
 ]

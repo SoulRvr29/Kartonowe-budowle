@@ -1,9 +1,10 @@
 import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 
-const Gallery = ({ id }) => {
+const Gallery = ({ id, name }) => {
+  if (name === undefined) name = "gallery";
   const model = modelsData[id];
-  const gallerySections = Object.keys(model.gallery);
+  const gallerySections = Object.keys(model[name]);
 
   const [photoMaxWidth, setPhotoMaxWidth] = useState(false);
   const [fullScreen, setFullScreen] = useState(false);
@@ -11,7 +12,7 @@ const Gallery = ({ id }) => {
   const [galleryState, setGalleryState] = useState(true);
   const [actualSection, setActualSection] = useState(gallerySections[0]);
   const [galleryLength, setGalleryLength] = useState(
-    model.gallery[actualSection].quantity
+    model[name][actualSection].quantity
   );
   const [actualSrc, setActualSrc] = useState([]);
 
@@ -23,12 +24,12 @@ const Gallery = ({ id }) => {
 
   const getPhotosSrc = (section) => {
     let src = [];
-    let max = model.gallery[section].quantity;
+    let max = model[name][section].quantity;
     setGalleryLength(max);
     for (let i = 1; i <= max; i++) {
       let nr = i;
       if (i < 10) nr = "0" + i;
-      src.push(model.gallery[section].thumb + nr + ".jpg");
+      src.push(model[name][section].thumb + nr + ".jpg");
     }
     setActualSrc(src);
   };
@@ -77,7 +78,7 @@ const Gallery = ({ id }) => {
             <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
           </svg>
         </button>
-        Galeria
+        {name === undefined ? "Galeria" : name}
         {/* //////////// gallery-type button //////////// */}
         {gallerySections.length > 1 &&
           gallerySections.map((section) => {
@@ -221,7 +222,7 @@ const Gallery = ({ id }) => {
                     ? "z-30 cursor-pointer medium-width border-4 border-accent-2 max-w-4xl max-md:w-screen max-h-[85vh] max-sm:w-screen "
                     : "z-30 cursor-pointer medium-width w-screen overflow-auto max-sm:h-screen max-sm:min-w-max"
                 }
-                src={model.gallery[actualSection].full + photoId + ".jpg"}
+                src={model[name][actualSection].full + photoId + ".jpg"}
                 alt={"photo" + photoId}
               />
             </div>

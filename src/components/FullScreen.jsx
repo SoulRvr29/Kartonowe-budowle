@@ -61,8 +61,8 @@ const FullScreen = ({ prop, setFullScreen }) => {
         <span
           className={
             photoMaxWidth === false
-              ? "photo-title opacity-0 text-lg max-w-[500px] bg-black px-3 border border-t-0 border-accent-2  w-fit max-sm:w-screen mx-auto text-center"
-              : "photo-title opacity-0  text-lg bg-black px-3 border border-accent-2 border-t-0 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50"
+              ? "photo-title opacity-0 text-text-light text-lg max-w-[500px] bg-black px-3 border border-t-0 border-accent-2  w-fit max-sm:w-screen mx-auto text-center"
+              : "photo-title opacity-0 text-text-light  text-lg bg-black px-3 border border-accent-2 border-t-0 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50"
           }
         >
           {title}
