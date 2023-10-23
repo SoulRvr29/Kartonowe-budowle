@@ -5,13 +5,13 @@ import ModelInfo from "../components/ModelInfo";
 
 const Article = ({ id }) => {
   return (
-    <div className=" mb-8">
+    <>
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} name={"Galeria - Ratusz"} />
       <Gallery id={id} name={"Galeria - Brama"} />
       <SandomierzHistory id={id} />
-    </div>
+    </>
   );
 };
 

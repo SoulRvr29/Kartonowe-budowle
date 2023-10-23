@@ -151,8 +151,8 @@
       },
       "noc": {
         "quantity": 5,
-        "full": "./models/latarnie morskie/stilo/night/full-res/stilo-n",
-        "thumb": "./models/latarnie morskie/stilo/night/thumb/stilo-thumb-n"
+        "full": "./models/latarnie morskie/stilo/noc/full-res/stilo-n",
+        "thumb": "./models/latarnie morskie/stilo/noc/thumb/stilo-thumb-n"
       },
       "budowa": {
         "quantity": 6,
@@ -207,16 +207,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 1997,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "17cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 16,
-        "full": "./models/latarnie morskie/czołpino/day/full-res/czołpino-d",
-        "thumb": "./models/latarnie morskie/czołpino/day/thumb/czołpino-thumb-d"
+        "full": "./models/latarnie morskie/czołpino/dzień/full-res/czołpino-d",
+        "thumb": "./models/latarnie morskie/czołpino/dzień/thumb/czołpino-thumb-d"
       },
       "budowa": {
         "quantity": 6,
@@ -226,38 +226,6 @@
     },
     "photo": "models/latarnie morskie/czołpino/czołpino-photo-",
     "description": "Latarnia morska na polskim wybrzeżu Bałtyku, położona na północ od osady Czołpino (gmina Smołdzino, powiat słupski, województwo pomorskie)."
-  },
-  {
-    "id": 7,
-    "component": "Darłowo",
-    "rok ukończenia": 2011,
-    "link": "/Kartonowe-budowle/Darłowo",
-    "publisher": "GPM",
-    "name": "Latarnia morska Darłowo",
-    "card": "./cards/darłowo-card.jpg",
-    "cover": "models/latarnie morskie/darłowo/darłowo-cover.jpg",
-    "info": {
-      "Wydawca": "GPM",
-      "Skala": "1:150",
-      "Rok wydania": 2012,
-      "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
-    },
-    "Galeria": {
-      "dzień": {
-        "quantity": 19,
-        "full": "./models/latarnie morskie/darłowo/day/full-res/darłowo-d",
-        "thumb": "./models/latarnie morskie/darłowo/day/thumb/darłowo-thumb-d"
-      },
-      "noc": {
-        "quantity": 3,
-        "full": "./models/latarnie morskie/darłowo/night/full-res/darłowo-n",
-        "thumb": "./models/latarnie morskie/darłowo/night/thumb/darłowo-thumb-n"
-      }
-    },
-    "photo": "models/latarnie morskie/darłowo/darłowo-photo-",
-    "description": "Latarnia morska na polskim wybrzeżu Bałtyku, położona w mieście Darłowo (powiat sławieński, województwo zachodniopomorskie) w dzielnicy Darłówko."
   },
   {
     "id": 8,
@@ -271,21 +239,21 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 1997,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "30cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 8,
-        "full": "./models/latarnie morskie/gąski/day/full-res/gąski-d",
-        "thumb": "./models/latarnie morskie/gąski/day/thumb/gąski-thumb-d"
+        "full": "./models/latarnie morskie/gąski/dzień/full-res/gąski-d",
+        "thumb": "./models/latarnie morskie/gąski/dzień/thumb/gąski-thumb-d"
       },
       "noc": {
         "quantity": 4,
-        "full": "./models/latarnie morskie/gąski/night/full-res/gąski-n",
-        "thumb": "./models/latarnie morskie/gąski/night/thumb/gąski-thumb-n"
+        "full": "./models/latarnie morskie/gąski/noc/full-res/gąski-n",
+        "thumb": "./models/latarnie morskie/gąski/noc/thumb/gąski-thumb-n"
       }
     },
     "photo": "models/latarnie morskie/gąski/gąski-photo-",
@@ -303,21 +271,21 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2007,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "28cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 14,
-        "full": "./models/latarnie morskie/hel/day/full-res/hel-d",
-        "thumb": "./models/latarnie morskie/hel/day/thumb/hel-thumb-d"
+        "full": "./models/latarnie morskie/hel/dzień/full-res/hel-d",
+        "thumb": "./models/latarnie morskie/hel/dzień/thumb/hel-thumb-d"
       },
       "noc": {
         "quantity": 3,
-        "full": "./models/latarnie morskie/hel/night/full-res/hel-n",
-        "thumb": "./models/latarnie morskie/hel/night/thumb/hel-thumb-n"
+        "full": "./models/latarnie morskie/hel/noc/full-res/hel-n",
+        "thumb": "./models/latarnie morskie/hel/noc/thumb/hel-thumb-n"
       }
     },
     "photo": "models/latarnie morskie/hel/hel-photo-",
@@ -335,16 +303,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 1997,
       "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Ilość stron": 4,
+      "Wysokość": "22cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 11,
-        "full": "./models/latarnie morskie/jarosławiec/day/full-res/jarosławiec-d",
-        "thumb": "./models/latarnie morskie/jarosławiec/day/thumb/jarosławiec-thumb-d"
+        "full": "./models/latarnie morskie/jarosławiec/full-res/jarosławiec-d",
+        "thumb": "./models/latarnie morskie/jarosławiec/thumb/jarosławiec-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/jarosławiec/jarosławiec-photo-",
@@ -362,21 +330,21 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2007,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "9cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 14,
-        "full": "./models/latarnie morskie/jastarnia/day/full-res/jastarnia-d",
-        "thumb": "./models/latarnie morskie/jastarnia/day/thumb/jastarnia-thumb-d"
+        "full": "./models/latarnie morskie/jastarnia/dzień/full-res/jastarnia-d",
+        "thumb": "./models/latarnie morskie/jastarnia/dzień/thumb/jastarnia-thumb-d"
       },
       "zima": {
         "quantity": 5,
-        "full": "./models/latarnie morskie/jastarnia/night/full-res/jastarnia-n",
-        "thumb": "./models/latarnie morskie/jastarnia/night/thumb/jastarnia-thumb-n"
+        "full": "./models/latarnie morskie/jastarnia/zima/full-res/jastarnia-z",
+        "thumb": "./models/latarnie morskie/jastarnia/zima/thumb/jastarnia-thumb-z"
       }
     },
     "photo": "models/latarnie morskie/jastarnia/jastarnia-photo-",
@@ -394,16 +362,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 1997,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "11cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 11,
-        "full": "./models/latarnie morskie/kikut/day/full-res/kikut-d",
-        "thumb": "./models/latarnie morskie/kikut/day/thumb/kikut-thumb-d"
+        "full": "./models/latarnie morskie/kikut/full-res/kikut-d",
+        "thumb": "./models/latarnie morskie/kikut/thumb/kikut-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/kikut/kikut-photo-",
@@ -421,16 +389,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2003,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "18cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 14,
-        "full": "./models/latarnie morskie/kołobrzeg/day/full-res/kołobrzeg-d",
-        "thumb": "./models/latarnie morskie/kołobrzeg/day/thumb/kołobrzeg-thumb-d"
+        "full": "./models/latarnie morskie/kołobrzeg/full-res/kołobrzeg-d",
+        "thumb": "./models/latarnie morskie/kołobrzeg/thumb/kołobrzeg-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/kołobrzeg/kołobrzeg-photo-",
@@ -438,7 +406,7 @@
   },
   {
     "id": 14,
-    "component": "Krynica Morska",
+    "component": "KrynicaMorska",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Krynica Morska",
     "publisher": "GPM",
@@ -448,16 +416,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 1997,
       "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Ilość stron": 4,
+      "Wysokość": "17cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 4,
-        "full": "./models/latarnie morskie/krynica morska/day/full-res/krynica morska-d",
-        "thumb": "./models/latarnie morskie/krynica morska/day/thumb/krynica morska-thumb-d"
+        "full": "./models/latarnie morskie/krynica morska/full-res/krynica morska-d",
+        "thumb": "./models/latarnie morskie/krynica morska/thumb/krynica morska-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/krynica morska/krynica morska-photo-",
@@ -475,16 +443,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2001,
       "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Ilość stron": 4,
+      "Wysokość": "30cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 8,
-        "full": "./models/latarnie morskie/niechorze/day/full-res/niechorze-d",
-        "thumb": "./models/latarnie morskie/niechorze/day/thumb/niechorze-thumb-d"
+        "full": "./models/latarnie morskie/niechorze/full-res/niechorze-d",
+        "thumb": "./models/latarnie morskie/niechorze/thumb/niechorze-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/niechorze/niechorze-photo-",
@@ -492,7 +460,7 @@
   },
   {
     "id": 16,
-    "component": "Nowy Port",
+    "component": "NowyPort",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Nowy Port",
     "publisher": "GPM",
@@ -510,13 +478,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 17,
-        "full": "./models/latarnie morskie/nowy port/day/full-res/nowy port-d",
-        "thumb": "./models/latarnie morskie/nowy port/day/thumb/nowy port-thumb-d"
+        "full": "./models/latarnie morskie/nowy port/dzień/full-res/nowy port-d",
+        "thumb": "./models/latarnie morskie/nowy port/dzień/thumb/nowy port-thumb-d"
       },
       "noc": {
         "quantity": 3,
-        "full": "./models/latarnie morskie/nowy port/night/full-res/nowy port-n",
-        "thumb": "./models/latarnie morskie/nowy port/night/thumb/nowy port-thumb-n"
+        "full": "./models/latarnie morskie/nowy port/noc/full-res/nowy port-n",
+        "thumb": "./models/latarnie morskie/nowy port/noc/thumb/nowy port-thumb-n"
       },
       "budowa": {
         "quantity": 16,
@@ -529,7 +497,7 @@
   },
   {
     "id": 17,
-    "component": "Port Północny",
+    "component": "PortPółnocny",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Port Północny",
     "publisher": "GPM",
@@ -539,16 +507,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2011,
       "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Ilość stron": 4,
+      "Wysokość": "45cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 13,
-        "full": "./models/latarnie morskie/port północny/day/full-res/port północny-d",
-        "thumb": "./models/latarnie morskie/port północny/day/thumb/port północny-thumb-d"
+        "full": "./models/latarnie morskie/port północny/full-res/port północny-d",
+        "thumb": "./models/latarnie morskie/port północny/thumb/port północny-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/port północny/port północny-photo-",
@@ -566,16 +534,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2003,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "23cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 10,
-        "full": "./models/latarnie morskie/rozewie/day/full-res/rozewie-d",
-        "thumb": "./models/latarnie morskie/rozewie/day/thumb/rozewie-thumb-d"
+        "full": "./models/latarnie morskie/rozewie/full-res/rozewie-d",
+        "thumb": "./models/latarnie morskie/rozewie/thumb/rozewie-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/rozewie/rozewie-photo-",
@@ -596,18 +564,18 @@
       "Rok wydania": 2012,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "22cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 15,
-        "full": "./models/latarnie morskie/sopot/day/full-res/sopot-d",
-        "thumb": "./models/latarnie morskie/sopot/day/thumb/sopot-thumb-d"
+        "full": "./models/latarnie morskie/sopot/dzień/full-res/sopot-d",
+        "thumb": "./models/latarnie morskie/sopot/dzień/thumb/sopot-thumb-d"
       },
       "noc": {
         "quantity": 2,
-        "full": "./models/latarnie morskie/sopot/night/full-res/sopot-n",
-        "thumb": "./models/latarnie morskie/sopot/night/thumb/sopot-thumb-n"
+        "full": "./models/latarnie morskie/sopot/noc/full-res/sopot-n",
+        "thumb": "./models/latarnie morskie/sopot/noc/thumb/sopot-thumb-n"
       },
       "budowa": {
         "quantity": 4,
@@ -630,23 +598,23 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 1997,
       "Stopień trudności": 1,
-      "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Ilość stron": 4,
+      "Wysokość": "45cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 13,
-        "full": "./models/latarnie morskie/świnoujście/day/full-res/świnoujście-d",
-        "thumb": "./models/latarnie morskie/świnoujście/day/thumb/świnoujście-thumb-d"
+        "full": "./models/latarnie morskie/świnoujście/full-res/świnoujście-d",
+        "thumb": "./models/latarnie morskie/świnoujście/thumb/świnoujście-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/świnoujście/świnoujście-photo-",
     "description": "Najwyższa na polskim wybrzeżu Morza Bałtyckiego i jedna z najwyższych latarń morskich na świecie. Położona jest w dzielnicy Warszów miasta Świnoujście (województwo zachodniopomorskie)."
   },
   {
-    "id": 21,
+    "id": 7,
     "component": "Ustka",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Ustka",
@@ -657,16 +625,16 @@
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
-      "Rok wydania": 2012,
+      "Rok wydania": 2006,
       "Stopień trudności": 1,
       "Ilość stron": 2,
-      "Wysokość": "20cm"
+      "Wysokość": "13cm"
     },
     "Galeria": {
       "dzień": {
         "quantity": 15,
-        "full": "./models/latarnie morskie/ustka/day/full-res/ustka-d",
-        "thumb": "./models/latarnie morskie/ustka/day/thumb/ustka-thumb-d"
+        "full": "./models/latarnie morskie/ustka/full-res/ustka-d",
+        "thumb": "./models/latarnie morskie/ustka/thumb/ustka-thumb-d"
       }
     },
     "photo": "models/latarnie morskie/ustka/ustka-photo-",

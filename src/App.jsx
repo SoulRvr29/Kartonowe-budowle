@@ -12,6 +12,21 @@ import Curiosity from "./sections/Curiosity";
 import Sandomierz from "./sections/Sandomierz";
 import Stilo from "./sections/Stilo";
 import Darlowo from "./sections/Darlowo";
+import Czołpino from "./sections/Czołpino";
+import Gąski from "./sections/Gąski";
+import Hel from "./sections/Hel";
+import Jarosławiec from "./sections/Jarosławiec";
+import Jastarnia from "./sections/Jastarnia";
+import Kikut from "./sections/Kikut";
+import Kołobrzeg from "./sections/Kołobrzeg";
+import KrynicaMorska from "./sections/KrynicaMorska";
+import Niechorze from "./sections/Niechorze";
+import NowyPort from "./sections/NowyPort";
+import PortPółnocny from "./sections/PortPółnocny";
+import Rozewie from "./sections/Rozewie";
+import Sopot from "./sections/Sopot";
+import Świnoujście from "./sections/Świnoujście";
+import Ustka from "./sections/Ustka";
 
 function App() {
   return (
@@ -31,10 +46,56 @@ function App() {
         <Route path="/Kartonowe-budowle/Stilo" element={<Stilo id={2} />} />
         <Route path="/Kartonowe-budowle/Darlowo" element={<Darlowo id={5} />} />
         <Route
+          path="/Kartonowe-budowle/Czołpino"
+          element={<Czołpino id={6} />}
+        />
+        <Route path="/Kartonowe-budowle/Gąski" element={<Gąski id={8} />} />
+        <Route path="/Kartonowe-budowle/Hel" element={<Hel id={9} />} />
+        <Route
+          path="/Kartonowe-budowle/Jarosławiec"
+          element={<Jarosławiec id={10} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Jastarnia"
+          element={<Jastarnia id={11} />}
+        />
+        <Route path="/Kartonowe-budowle/Kikut" element={<Kikut id={12} />} />
+        <Route
+          path="/Kartonowe-budowle/Kołobrzeg"
+          element={<Kołobrzeg id={13} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Krynica Morska"
+          element={<KrynicaMorska id={14} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Niechorze"
+          element={<Niechorze id={15} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Nowy Port"
+          element={<NowyPort id={16} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Port Północny"
+          element={<PortPółnocny id={17} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Rozewie"
+          element={<Rozewie id={18} />}
+        />
+        <Route path="/Kartonowe-budowle/Sopot" element={<Sopot id={19} />} />
+        <Route
+          path="/Kartonowe-budowle/Świnoujście"
+          element={<Świnoujście id={20} />}
+        />
+        <Route path="/Kartonowe-budowle/Ustka" element={<Ustka id={7} />} />
+        <Route
           path="/Kartonowe-budowle/Curiosity"
           element={<Curiosity id={3} />}
         />
       </Routes>
+      <br />
       <Footer />
       <BackToTop />
     </main>

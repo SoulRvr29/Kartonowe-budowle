@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function App() {
+  if (localStorage.getItem("darkMode") == null)
+    localStorage.setItem("darkMode", "true");
   const [darkMode, setDarkMode] = useState(
     JSON.parse(localStorage.getItem("darkMode"))
   );
