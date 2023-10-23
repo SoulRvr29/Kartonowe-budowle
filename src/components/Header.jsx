@@ -28,7 +28,7 @@ function App() {
   };
   return (
     <>
-      <header className="relative px-4 max-sm:px-1 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-10 ">
+      <header className="relative px-4 max-sm:px-1 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-30 ">
         {/* left side */}
         <div className="mt-1">
           <button>
@@ -45,9 +45,9 @@ function App() {
             </Link>
           </button>
         </div>
-        {/* main header */}
+        {/* main title */}
         <div className="flex gap-2 justify-center align-middle place-items-center">
-          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_0px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0">
+          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1">
             Kartonowe &nbsp;budowle
           </h1>
         </div>
@@ -91,9 +91,7 @@ function App() {
             </svg>
           </a>
         </div>
-        {/* horizontal rule */}
       </header>
-      <div className="grad-hr relative mb-[1px] drop-shadow-[0_1px_0_#666]"></div>
     </>
   );
 }

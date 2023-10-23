@@ -2,6 +2,7 @@
   {
     "id": 0,
     "component": "Bedzin",
+    "rok ukończenia": 2019,
     "link": "/Kartonowe-budowle/Bedzin",
     "cover": "models/bedzin/bedzin-cover.jpg",
     "info": {
@@ -16,7 +17,7 @@
     },
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
-    "gallery": {
+    "Galeria": {
       "dzień": {
         "quantity": 58,
         "full": "./models/bedzin/day/full-res/bedzin-d",
@@ -33,12 +34,13 @@
         "thumb": "./models/bedzin/build/thumb/bedzin-thumb-b"
       }
     },
-    "photos": ["./models/bedzin/bedzin-photo-1.jpg"],
+    "photo": "models/bedzin/bedzin-photo",
     "description": "Średniowieczna warownia obronna wzniesiona w połowie XIV wieku przez Kazimierza Wielkiego w systemie tzw. Orlich Gniazd w Małopolsce, 4,5 km od granicy ze Śląskiem, na wzgórzu nad Czarną Przemszą; wielokrotnie niszczona, odbudowana w 1956."
   },
   {
     "id": 1,
     "component": "Oporow",
+    "rok ukończenia": 2016,
     "link": "/Kartonowe-budowle/Oporow",
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
@@ -54,7 +56,7 @@
       "Szerokość": "30cm",
       "Wysokość": "15cm"
     },
-    "gallery": {
+    "Galeria": {
       "dzień": {
         "quantity": 26,
         "full": "./models/oporow/day/full-res/oporow-d",
@@ -71,12 +73,13 @@
         "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
       }
     },
-    "photos": ["./models/oporow/oporow-photo-1.jpg"],
+    "photo": "models/oporow/oporow-photo-",
     "description": "Muzeum Zamek w Oporowie, zamek Oporowskich – ceglany zamek wzniesiony w stylu gotyckim w latach 1434–1449 we wsi Oporów pod Kutnem przez biskupa kujawskiego Władysława Oporowskiego."
   },
   {
     "id": 4,
     "component": "Sandomierz",
+    "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
     "name": "Ratusz i Brama Opatowska w Sandomierzu",
@@ -119,12 +122,14 @@
         "thumb": "./models/sandomierz/wieża/budowa/thumb/wieża-thumb-b"
       }
     },
+    "photo": "models/sandomierz/sandomierz-photo-",
     "description": "Ratusz - budynek wzniesiony w 1349 r. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą.",
     "description2": "Brama - gotycka brama wjazdowa z 2 poł. XIV w. Zbudowana z fundacji Kazimierza Wielkiego jako część murów obronnych miasta."
   },
   {
     "id": 2,
     "component": "Stilo",
+    "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Stilo",
     "publisher": "GPM",
     "name": "Latarnia morska Stilo",
@@ -138,7 +143,7 @@
       "Ilość stron": 2,
       "Wysokość": "20cm"
     },
-    "gallery": {
+    "Galeria": {
       "dzień": {
         "quantity": 17,
         "full": "./models/latarnie morskie/stilo/day/full-res/stilo-d",
@@ -161,6 +166,7 @@
   {
     "id": 5,
     "component": "Darlowo",
+    "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Darlowo",
     "publisher": "GPM",
     "name": "Latarnia morska Darłowo",
@@ -174,7 +180,7 @@
       "Ilość stron": 2,
       "Wysokość": "16cm"
     },
-    "gallery": {
+    "Galeria": {
       "dzień": {
         "quantity": 19,
         "full": "./models/latarnie morskie/darlowo/dzień/full-res/darłowo-d",
@@ -192,6 +198,7 @@
   {
     "id": 3,
     "component": "Curiosity",
+    "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Curiosity",
     "publisher": "FREE",
     "name": "Łazik marsjański Curiosity",
@@ -205,7 +212,7 @@
       "Szerokość": "14cm",
       "Wysokość": "11cm"
     },
-    "gallery": {
+    "Galeria": {
       "model": {
         "quantity": 22,
         "full": "./models/curiosity/model/full-res/curiosity-m",
@@ -217,6 +224,7 @@
         "thumb": "./models/curiosity/podstawka/thumb/curiosity-thumb-p"
       }
     },
+    "photo": "models/curiosity/curiosity-photo-",
     "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
   }
 ]

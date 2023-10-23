@@ -1,14 +1,16 @@
 import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
+import data from "../data/models-data.json";
 
-const SandomierzHistory = () => {
+const SandomierzHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
   const [prop, setProp] = useState(0);
   const [fullScreen, setFullScreen] = useState(false);
 
+  const photo = data.filter((item) => item.id == id)[0].photo;
   const src = (nr) => {
-    return "models/sandomierz/sandomierz-photo-" + nr + ".jpg";
+    return photo + nr + ".jpg";
   };
   return (
     <>
@@ -68,7 +70,7 @@ const SandomierzHistory = () => {
               setFullScreen(true);
             }}
           />
-          <hr className="block w-full" />
+          <hr className="dark:bg-accent-2 bg-accent-4 " />
           <h4 className="">Brama Opatowska</h4>
           <img
             className="pr-8 float-left max-w-md"

@@ -5,27 +5,24 @@ const Nav = () => {
   const [navState, setNavState] = useState(true);
   return (
     <nav className={navState === true ? "relative" : "relative h-6"}>
-      {/* horizontal rule */}
-      <div className="grad-hr-2 drop-shadow-[0_1px_0_#666]" />
       {/* categories */}
       {/* <div className="relative z-10 ">
-        <ul className="flex w-full text-center justify-center nav-clamp tracking-wide bg-text-dark bg-opacity-30 ">
-        <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 hover:cursor-pointer  hover:border-b-accent-2 text">
-        Budowle
-        </li>
-        <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-2">
-        Latarnie morskie
-        </li>
-        <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-2">
-        Wieżowce
-        </li>
-        <li className="border-r-text-light  py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-2">
-        Inne
-        </li>
+        <ul className="flex w-full text-center justify-center nav-clamp tracking-wide bg-text-dark text-text-light bg-opacity-30 font-semibold">
+          <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 hover:cursor-pointer  hover:border-b-accent-2 text">
+            Budowle
+          </li>
+          <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-2">
+            Latarnie morskie
+          </li>
+          <li className="border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-2">
+            Wieżowce
+          </li>
+          <li className="border-r-text-light  py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-2">
+            Inne
+          </li>
         </ul>
       </div> */}
-      {/* horizontal rule */}
-      {/* <div className="grad-hr-2 relative bottom-[2px] z-0" /> */}
+      <hr className="grad-hr relative bottom-[2px]" />
       {/* cards */}
       <section className="w-full relative grid justify-center overflow-x-auto px-10 max-md:justify-start  max-md:px-4">
         <div

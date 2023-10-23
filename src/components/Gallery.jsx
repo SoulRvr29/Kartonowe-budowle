@@ -2,7 +2,7 @@ import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 
 const Gallery = ({ id, name }) => {
-  if (name === undefined) name = "gallery";
+  if (name === undefined) name = "Galeria";
   const model = modelsData.filter((item) => item.id == id)[0];
   const gallerySections = Object.keys(model[name]);
 
@@ -103,7 +103,7 @@ const Gallery = ({ id, name }) => {
             );
           })}
       </h3>
-      <hr className="dark:bg-accent-2 bg-accent-4" />
+      <hr className=" dark:bg-accent-2 bg-accent-4 w-full" />
       {/* ////////////  thumbials  //////////// */}
       <div className="gallery relative flex gap-5  flex-wrap justify-center">
         {galleryState === true && (

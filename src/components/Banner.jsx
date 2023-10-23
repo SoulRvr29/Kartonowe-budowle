@@ -45,6 +45,7 @@ const Banner = () => {
   return (
     <>
       <Link to={animState === true && link} className="relative">
+        <hr className="grad-hr" />
         <section
           className={
             animState == true
@@ -55,7 +56,6 @@ const Banner = () => {
           <h2 className=" absolute z-20 bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs">
             {name}
           </h2>
-          {/* <div className="absolute bg-white z-10 w-full h-full"></div> */}
           <div className="grid  transition-all duration-1000 ">
             {/* gradient */}
             <div className="w-full h-full absolute grad banner-grad z-10"></div>
@@ -66,10 +66,9 @@ const Banner = () => {
             />
           </div>
         </section>
-        {/* banner hide icon */}
+        {/* banner arrow icon */}
         <svg
           onClick={(e) => {
-            // e.stopPropagation();
             setAnimState(!animState);
           }}
           xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +83,7 @@ const Banner = () => {
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
         </svg>
+        <hr className="grad-hr" />
       </Link>
     </>
   );

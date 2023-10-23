@@ -20,9 +20,9 @@ const Card = ({ model }) => {
         {/* nazwa modelu container */}
         <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-0 hover:opacity-100 transition-all duration-300">
           {/* wydawca */}
-          {/* <div className="text-accent absolute px-1 top-2 left-2 text-base   text-left rounded-tl-[4px] leading-5 font-bold bg-white">
-          {model.publisher}
-        </div> */}
+          <div className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white">
+            {model["rok ukończenia"]}
+          </div>
           {/* nazwa modelu */}
           <div className="nazwa-modelu absolute bottom-0 w-full text-base  bg-accent px-4 py-2 text-left rounded-b-lg leading-5 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6">
             {model.name}
