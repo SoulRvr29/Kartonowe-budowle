@@ -1,26 +1,41 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode"))
+  );
+
   let actualFontSize = 1;
+
+  useEffect(() => {
+    modeChange();
+    let localFontSize = localStorage.getItem("fontSize");
+    document.querySelector("body").style = "font-size: " + localFontSize;
+  }, []);
 
   const fontSizeChange = () => {
     actualFontSize < 3 ? actualFontSize++ : (actualFontSize = 1);
     actualFontSize === 1
-      ? (document.querySelector("body").style = "font-size: 1rem")
+      ? ((document.querySelector("body").style = "font-size: 1rem"),
+        localStorage.setItem("fontSize", "1rem"))
       : actualFontSize === 2
-      ? (document.querySelector("body").style = "font-size: 1.1rem")
-      : (document.querySelector("body").style = "font-size: 1.2rem");
+      ? ((document.querySelector("body").style = "font-size: 1.1rem"),
+        localStorage.setItem("fontSize", "1.1rem"))
+      : ((document.querySelector("body").style = "font-size: 1.2rem"),
+        localStorage.setItem("fontSize", "1.2rem"));
+    console.log(actualFontSize);
   };
 
   const modeChange = () => {
     setDarkMode(!darkMode);
     if (darkMode) {
+      localStorage.setItem("darkMode", darkMode);
       document.querySelector("html").classList.remove("dark");
       document.querySelector("body").classList.add("bkg-sides");
       document.querySelector(".grad").classList.remove("banner-grad");
     } else {
+      localStorage.setItem("darkMode", darkMode);
       document.querySelector("html").classList.add("dark");
       document.querySelector("body").classList.remove("bkg-sides");
       document.querySelector(".grad").classList.add("banner-grad");

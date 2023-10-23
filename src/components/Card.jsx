@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Card = ({ model }) => {
   return (
-    <div className="first:-ml-0 aspect-square h-[180px] -left-12 max-md:left-0 -ml-20 relative  hover:-translate-x-14 hover:translate-y-0 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0">
+    <div className="first:-ml-0 aspect-square h-[180px] -left-12 max-md:left-0 -ml-16 relative  hover:-translate-x-14 hover:translate-y-0 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0">
       <NavLink
         // onClick={() =>
         //   document.querySelector(".article-header").scrollIntoView()
@@ -19,8 +19,11 @@ const Card = ({ model }) => {
 
         {/* nazwa modelu container */}
         <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-0 hover:opacity-100 transition-all duration-300">
-          {/* wydawca */}
-          <div className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white">
+          {/* rok ukończenia */}
+          <div
+            title="rok ukończenia"
+            className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white"
+          >
             {model["rok ukończenia"]}
           </div>
           {/* nazwa modelu */}

@@ -4,7 +4,13 @@ import { useState } from "react";
 const Nav = () => {
   const [navState, setNavState] = useState(true);
   return (
-    <nav className={navState === true ? "relative" : "relative h-6"}>
+    <nav
+      className={
+        navState === true
+          ? "relative overflow-x-auto overflow-y-hidden max-md:px-0 px-8 pl-20 h-[14.4rem] "
+          : "relative h-6"
+      }
+    >
       {/* categories */}
       {/* <div className="relative z-10 ">
         <ul className="flex w-full text-center justify-center nav-clamp tracking-wide bg-text-dark text-text-light bg-opacity-30 font-semibold">
@@ -24,7 +30,7 @@ const Nav = () => {
       </div> */}
       <hr className="grad-hr relative bottom-[2px]" />
       {/* cards */}
-      <section className="w-full relative grid justify-center overflow-x-auto px-10 max-md:justify-start  max-md:px-4">
+      <section className="w-max relative grid justify-center  px-10 max-md:justify-start  max-md:px-4">
         <div
           className={
             navState === true
