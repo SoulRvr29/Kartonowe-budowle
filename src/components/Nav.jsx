@@ -8,14 +8,7 @@ const Nav = () => {
   });
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
-  // const [activeList, setActiveList] = useState("wszystko");
-
-  const changeActive = (e) => {
-    document.querySelectorAll(".nav-li li").forEach((item) => {
-      item.classList.remove("active-li");
-    });
-    e.target.classList.add("active-li");
-  };
+  const [activeList, setActiveList] = useState("Wszystko");
 
   return (
     <div className="relative grid select-none">
@@ -23,21 +16,27 @@ const Nav = () => {
       <div className={navState ? "relative z-10 mx-8 max-sm:mx-0" : "hidden"}>
         <ul className="flex w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-text-dark bg-opacity-30 font-semibold">
           <button
-            className="nav-li dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light border- py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-"
+            className={
+              "nav-li dark:hover:text-accent hover:text-white max-sm:text-sm text-lg py-1 " +
+              (activeList == "Wszystko" && "text-accent-4 dark:text-accent-2 ")
+            }
             onClick={(e) => {
-              changeActive(e);
+              setActiveList(e.target.outerText);
               setData(completeData);
             }}
           >
             <li className="active-li">Wszystko</li>
           </button>
-          <span className="hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+          <span className="mx-2 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
             -
           </span>
           <button
-            className="nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light border- py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-"
+            className={
+              "nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light py-1  " +
+              (activeList == "Zamki" && "text-accent-4 dark:text-accent-2")
+            }
             onClick={(e) => {
-              changeActive(e);
+              setActiveList(e.target.outerText);
               setData(
                 completeData.filter((item) => {
                   return item.typ == "zamek";
@@ -47,13 +46,17 @@ const Nav = () => {
           >
             <li className="">Zamki</li>
           </button>
-          <span className="hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+          <span className="mx-2 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
             -
           </span>
           <button
-            className="nav-li active:text-white  dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light border- py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-"
+            className={
+              "nav-li active:text-white  dark:hover:text-accent hover:text-white max-sm:text-sm text-lg py-1  " +
+              (activeList == "Latarnie morskie" &&
+                "text-accent-4 dark:text-accent-2")
+            }
             onClick={(e) => {
-              changeActive(e);
+              setActiveList(e.target.outerText);
               setData(
                 completeData.filter((item) => {
                   return item.typ == "latarnia morska";
@@ -63,16 +66,19 @@ const Nav = () => {
           >
             <li className="">Latarnie morskie</li>
           </button>
-          <span className="hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+          <span className="mx-2 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
             -
           </span>
           <button
-            className="nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light  py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-"
+            className={
+              "nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg py-1  " +
+              (activeList == "Kosmos" && "text-accent-4 dark:text-accent-2")
+            }
             onClick={(e) => {
-              changeActive(e);
+              setActiveList(e.target.outerText);
               setData(
                 completeData.filter((item) => {
-                  return item.typ == "kosmos";
+                  return item.typ == "Kosmos";
                 })
               );
             }}
