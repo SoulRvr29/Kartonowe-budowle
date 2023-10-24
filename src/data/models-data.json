@@ -2,6 +2,7 @@
   {
     "id": 0,
     "component": "Bedzin",
+    "typ": "zamek",
     "rok ukończenia": 2019,
     "link": "/Kartonowe-budowle/Bedzin",
     "cover": "models/bedzin/bedzin-cover.jpg",
@@ -40,6 +41,7 @@
   {
     "id": 1,
     "component": "Oporow",
+    "typ": "zamek",
     "rok ukończenia": 2016,
     "link": "/Kartonowe-budowle/Oporow",
     "publisher": "GPM",
@@ -79,6 +81,7 @@
   {
     "id": 4,
     "component": "Sandomierz",
+    "typ": "ratusz",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
@@ -129,6 +132,7 @@
   {
     "id": 2,
     "component": "Stilo",
+    "typ": "latarnia morska",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Stilo",
     "publisher": "GPM",
@@ -166,6 +170,7 @@
   {
     "id": 5,
     "component": "Darlowo",
+    "typ": "latarnia morska",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Darlowo",
     "publisher": "GPM",
@@ -198,6 +203,7 @@
   {
     "id": 6,
     "component": "Czołpino",
+    "typ": "latarnia morska",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Czołpino",
     "publisher": "GPM",
@@ -230,6 +236,7 @@
   {
     "id": 8,
     "component": "Gąski",
+    "typ": "latarnia morska",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Gąski",
     "publisher": "GPM",
@@ -262,6 +269,7 @@
   {
     "id": 9,
     "component": "Hel",
+    "typ": "latarnia morska",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Hel",
     "publisher": "GPM",
@@ -294,6 +302,7 @@
   {
     "id": 10,
     "component": "Jarosławiec",
+    "typ": "latarnia morska",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Jarosławiec",
     "publisher": "GPM",
@@ -321,6 +330,7 @@
   {
     "id": 11,
     "component": "Jastarnia",
+    "typ": "latarnia morska",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Jastarnia",
     "publisher": "GPM",
@@ -353,6 +363,7 @@
   {
     "id": 12,
     "component": "Kikut",
+    "typ": "latarnia morska",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Kikut",
     "publisher": "GPM",
@@ -380,6 +391,7 @@
   {
     "id": 13,
     "component": "Kołobrzeg",
+    "typ": "latarnia morska",
     "rok ukończenia": 2008,
     "link": "/Kartonowe-budowle/Kołobrzeg",
     "publisher": "GPM",
@@ -407,6 +419,7 @@
   {
     "id": 14,
     "component": "KrynicaMorska",
+    "typ": "latarnia morska",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Krynica Morska",
     "publisher": "GPM",
@@ -434,6 +447,7 @@
   {
     "id": 15,
     "component": "Niechorze",
+    "typ": "latarnia morska",
     "rok ukończenia": 2001,
     "link": "/Kartonowe-budowle/Niechorze",
     "publisher": "GPM",
@@ -461,6 +475,7 @@
   {
     "id": 16,
     "component": "NowyPort",
+    "typ": "latarnia morska",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Nowy Port",
     "publisher": "GPM",
@@ -498,6 +513,7 @@
   {
     "id": 17,
     "component": "PortPółnocny",
+    "typ": "latarnia morska",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Port Północny",
     "publisher": "GPM",
@@ -525,6 +541,7 @@
   {
     "id": 18,
     "component": "Rozewie",
+    "typ": "latarnia morska",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Rozewie",
     "publisher": "GPM",
@@ -552,6 +569,7 @@
   {
     "id": 19,
     "component": "Sopot",
+    "typ": "latarnia morska",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Sopot",
     "publisher": "GPM",
@@ -589,6 +607,7 @@
   {
     "id": 20,
     "component": "Świnoujście",
+    "typ": "latarnia morska",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Świnoujście",
     "publisher": "GPM",
@@ -616,6 +635,7 @@
   {
     "id": 7,
     "component": "Ustka",
+    "typ": "latarnia morska",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Ustka",
     "publisher": "GPM",
@@ -643,6 +663,7 @@
   {
     "id": 3,
     "component": "Curiosity",
+    "typ": "kosmos",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Curiosity",
     "publisher": "FREE",
