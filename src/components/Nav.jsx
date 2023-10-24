@@ -8,23 +8,36 @@ const Nav = () => {
   });
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
+  // const [activeList, setActiveList] = useState("wszystko");
+
+  const changeActive = (e) => {
+    document.querySelectorAll(".nav-li li").forEach((item) => {
+      item.classList.remove("active-li");
+    });
+    e.target.classList.add("active-li");
+  };
 
   return (
-    <div className="relative grid ">
+    <div className="relative grid select-none">
       {/* CATEGORIES */}
       <div className={navState ? "relative z-10 mx-8 max-sm:mx-0" : "hidden"}>
         <ul className="flex w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-text-dark bg-opacity-30 font-semibold">
           <button
-            onClick={() => {
+            className="nav-li dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light border- py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-"
+            onClick={(e) => {
+              changeActive(e);
               setData(completeData);
             }}
           >
-            <li className="max-sm:text-sm text-lg border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-2">
-              Wszystko
-            </li>
+            <li className="active-li">Wszystko</li>
           </button>
+          <span className="hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+            -
+          </span>
           <button
-            onClick={() => {
+            className="nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light border- py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-"
+            onClick={(e) => {
+              changeActive(e);
               setData(
                 completeData.filter((item) => {
                   return item.typ == "zamek";
@@ -32,13 +45,15 @@ const Nav = () => {
               );
             }}
           >
-            <li className="max-sm:text-sm text-lg border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-2">
-              Zamki
-            </li>
+            <li className="">Zamki</li>
           </button>
-
+          <span className="hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+            -
+          </span>
           <button
-            onClick={() => {
+            className="nav-li active:text-white  dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light border- py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-"
+            onClick={(e) => {
+              changeActive(e);
               setData(
                 completeData.filter((item) => {
                   return item.typ == "latarnia morska";
@@ -46,12 +61,15 @@ const Nav = () => {
               );
             }}
           >
-            <li className="max-sm:text-sm text-lg border-r-text-light border-r py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer hover:border-b-accent-2">
-              Latarnie morskie
-            </li>
+            <li className="">Latarnie morskie</li>
           </button>
+          <span className="hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+            -
+          </span>
           <button
-            onClick={() => {
+            className="nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light  py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-"
+            onClick={(e) => {
+              changeActive(e);
               setData(
                 completeData.filter((item) => {
                   return item.typ == "kosmos";
@@ -59,17 +77,15 @@ const Nav = () => {
               );
             }}
           >
-            <li className="max-sm:text-sm text-lg border-r-text-light  py-1 px-2 border-b-2 border-b-transparent hover:border-b-2 pointer  hover:border-b-accent-2">
-              Kosmos
-            </li>
+            <li className="">Kosmos</li>
           </button>
         </ul>
       </div>
-      <hr className="grad-hr relative bottom-[2px] justify-self-center w-[90%]" />
+      {/* <hr className="grad-hr relative bottom-[2px] justify-self-center w-[90%]" /> */}
       <nav
         className={
           navState === true
-            ? "max-sm:mx-0 mx-8 relative  grid overflow-y-hidden max-md:px-0 px-8 pl-20 h-[14.4rem] "
+            ? "max-sm:mx-0 mx-8 relative  grid overflow-y-hidden max-md:px-0 px-8 pl-20 h-[13.5rem] "
             : "relative h-6"
         }
       >
@@ -79,7 +95,7 @@ const Nav = () => {
           <div
             className={
               navState === true
-                ? "nav flex relative py-4 z-10 max-md:gap-4"
+                ? "nav flex relative py-1 z-10 max-md:gap-4"
                 : "nav hidden"
             }
           >
@@ -154,7 +170,7 @@ const Nav = () => {
         ></div>
       </div>
       {/* nav hide icon */}
-      <button className="absolute top-[-2px] max-sm:top-[30px] max-sm:right-2 right-1 z-30">
+      <button className="absolute top-[1px] max-sm:top-[5px] max-sm:right-2 right-1 z-30">
         <svg
           onClick={(e) => {
             // e.stopPropagation();
