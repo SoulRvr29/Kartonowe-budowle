@@ -66,7 +66,7 @@ const Banner = () => {
             />
           </div>
         </section>
-        {/* banner arrow icon */}
+        {/* banner hide icon */}
         <svg
           onClick={(e) => {
             setAnimState(!animState);
@@ -77,8 +77,8 @@ const Banner = () => {
           fill="var(--text-light)"
           className={
             animState == true
-              ? "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-20 max-md:h-4"
-              : "absolute top-0 max-md:top-1 max-md:right-2 right-4 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180 max-sm:-top-[2px]"
+              ? "absolute top-0 max-md:top-1 max-md:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-20 max-md:h-4"
+              : "absolute top-0 max-md:top-1 max-md:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180 max-sm:-top-[2px]"
           }
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />

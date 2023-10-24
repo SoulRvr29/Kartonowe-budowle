@@ -49,7 +49,7 @@ const StiloHistory = ({ id }) => {
               }}
               title="Obecny wygląd."
             />
-            <ul className="list-disc pl-6 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left font-bold">
+            <ul className="list-disc pl-8 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left font-bold border-2 h-full border-text-dark rounded-xl p-4 ">
               <li>
                 Położenie:{" "}
                 <span className="li-span">54°47'12" N 17°44'02" E</span>

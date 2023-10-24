@@ -24,7 +24,8 @@
   --accent-4: hsl(0, 67%, 38%);
 }
 
-html {
+html,
+nav {
   scroll-behavior: smooth;
 }
 

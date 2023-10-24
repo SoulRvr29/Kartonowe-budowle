@@ -21,7 +21,7 @@ const Card = ({ model }) => {
         <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-0 hover:opacity-100 transition-all duration-300">
           {/* rok ukończenia */}
           <div
-            title="rok ukończenia"
+            title="rok budowy modelu"
             className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white"
           >
             {model["rok ukończenia"]}

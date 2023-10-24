@@ -139,6 +139,7 @@ const Gallery = ({ id, name }) => {
           <div
             onClick={() => {
               setFullScreen(false);
+              setPhotoMaxWidth(false);
               document.querySelector("body").classList.remove("site-overflow");
             }}
             className="full-size bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 z-30 w-screen h-screen"
@@ -211,7 +212,7 @@ const Gallery = ({ id, name }) => {
               </svg>
             </div>
             {/* IMAGE CONTAINER medium-w-false / full-w-true */}
-            <div className="fixed w-screen h-screen left-0 top-0 z-30 grid place-content-center overflow-auto">
+            <div className="fixed w-screen h-screen left-0 top-0 z-30 grid place-content-center overflow-auto ">
               <img
                 onClick={(e) => {
                   e.stopPropagation();
@@ -220,7 +221,7 @@ const Gallery = ({ id, name }) => {
                 className={
                   photoMaxWidth === false
                     ? "z-30 cursor-pointer medium-width border-4 border-accent-2 max-w-4xl max-md:w-screen max-h-[85vh] max-sm:w-screen "
-                    : "z-30 cursor-pointer medium-width w-screen overflow-auto max-sm:h-screen max-sm:min-w-max"
+                    : "z-30 cursor-pointer medium-width w-full max-sm:w-screen overflow-auto max-sm:h-screen max-sm:min-w-max"
                 }
                 src={model[name][actualSection].full + photoId + ".jpg"}
                 alt={"photo" + photoId}
