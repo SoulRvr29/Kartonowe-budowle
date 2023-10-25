@@ -27,6 +27,13 @@ import Rozewie from "./sections/Rozewie";
 import Sopot from "./sections/Sopot";
 import Świnoujście from "./sections/Świnoujście";
 import Ustka from "./sections/Ustka";
+import Baranów from "./sections/Baranów";
+import Gryfino from "./sections/Gryfino";
+import Mauler from "./sections/Mauler";
+import Predator from "./sections/Predator";
+import PhantomF4 from "./sections/PhantomF4";
+import StarshipSN15 from "./sections/StarshipSN15";
+import Falcon9 from "./sections/Falcon9";
 
 function App() {
   return (
@@ -94,7 +101,33 @@ function App() {
           path="/Kartonowe-budowle/Curiosity"
           element={<Curiosity id={3} />}
         />
+        <Route
+          path="/Kartonowe-budowle/Baranów"
+          element={<Baranów id={21} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Gryfino"
+          element={<Gryfino id={22} />}
+        />
+        <Route path="/Kartonowe-budowle/Mauler" element={<Mauler id={23} />} />
+        <Route
+          path="/Kartonowe-budowle/Predator"
+          element={<Predator id={24} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/PhantomF4"
+          element={<PhantomF4 id={25} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/StarshipSN15"
+          element={<StarshipSN15 id={26} />}
+        />
+        <Route
+          path="/Kartonowe-budowle/Falcon9"
+          element={<Falcon9 id={27} />}
+        />
       </Routes>
+      <br />
       <br />
       <Footer />
       <BackToTop />

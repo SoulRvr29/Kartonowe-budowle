@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Card = ({ model }) => {
   return (
-    <div className="first:-ml-0 aspect-square h-[180px] -left-12 max-md:left-0 -ml-16 relative  hover:-translate-x-14 hover:translate-y-0 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0">
+    <div className="first:-ml-0 aspect-square h-[180px] -left-12 max-md:left-0 -ml-[4.2rem] relative  hover:-translate-x-14 hover:translate-y-0 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0">
       <NavLink
         // onClick={() =>
         //   document.querySelector(".article-header").scrollIntoView()
@@ -27,7 +27,7 @@ const Card = ({ model }) => {
             {model["rok ukończenia"]}
           </div>
           {/* nazwa modelu */}
-          <div className="nazwa-modelu absolute bottom-0 w-full text-base  bg-accent px-4 py-2 text-left rounded-b-lg leading-5 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6">
+          <div className="nazwa-modelu absolute bottom-0 w-full text-sm  bg-accent px-3 py-2 pt-[5px] text-left rounded-b-lg leading-4 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6 ">
             {model.name}
           </div>
         </div>

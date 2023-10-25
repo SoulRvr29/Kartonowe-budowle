@@ -14,11 +14,11 @@ const Nav = () => {
     <div className="relative grid select-none">
       {/* CATEGORIES */}
       <div className={navState ? "relative z-10 mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-text-dark bg-opacity-30 font-semibold">
+        <ul className="flex flex-wrap w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-2  ">
           <button
             className={
-              "nav-li dark:hover:text-accent hover:text-white max-sm:text-sm text-lg py-1 " +
-              (activeList == "Wszystko" && "text-accent-4 dark:text-accent-2 ")
+              "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg  " +
+              (activeList == "Wszystko" && " text-accent-4 dark:text-accent-2 ")
             }
             onClick={(e) => {
               setActiveList(e.target.outerText);
@@ -27,33 +27,14 @@ const Nav = () => {
           >
             <li className="active-li">Wszystko</li>
           </button>
-          <span className="mx-2 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
             -
           </span>
           <button
             className={
-              "nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg border-r-text-light py-1  " +
-              (activeList == "Zamki" && "text-accent-4 dark:text-accent-2")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(
-                completeData.filter((item) => {
-                  return item.typ == "zamek";
-                })
-              );
-            }}
-          >
-            <li className="">Zamki</li>
-          </button>
-          <span className="mx-2 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
-            -
-          </span>
-          <button
-            className={
-              "nav-li active:text-white  dark:hover:text-accent hover:text-white max-sm:text-sm text-lg py-1  " +
+              "nav-li active:text-white  hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg   " +
               (activeList == "Latarnie morskie" &&
-                "text-accent-4 dark:text-accent-2")
+                " text-accent-4 dark:text-accent-2")
             }
             onClick={(e) => {
               setActiveList(e.target.outerText);
@@ -66,24 +47,83 @@ const Nav = () => {
           >
             <li className="">Latarnie morskie</li>
           </button>
-          <span className="mx-2 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
             -
           </span>
           <button
             className={
-              "nav-li active:text-white dark:hover:text-accent hover:text-white max-sm:text-sm text-lg py-1  " +
-              (activeList == "Kosmos" && "text-accent-4 dark:text-accent-2")
+              "nav-li active:text-white hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg border-r-text-light   " +
+              (activeList == "Zamki" && " text-accent-4 dark:text-accent-2")
             }
             onClick={(e) => {
               setActiveList(e.target.outerText);
               setData(
                 completeData.filter((item) => {
-                  return item.typ == "Kosmos";
+                  return item.typ == "zamek";
+                })
+              );
+            }}
+          >
+            <li className="">Zamki</li>
+          </button>
+          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+            -
+          </span>
+
+          <button
+            className={
+              "nav-li active:text-white hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg border-r-text-light   " +
+              (activeList == "Ratusze i kościoły" &&
+                " text-accent-4 dark:text-accent-2")
+            }
+            onClick={(e) => {
+              setActiveList(e.target.outerText);
+              setData(
+                completeData.filter((item) => {
+                  return item.typ == "ratusz" || item.typ == "kościół";
+                })
+              );
+            }}
+          >
+            <li className="">Ratusze i kościoły</li>
+          </button>
+          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+            -
+          </span>
+          <button
+            className={
+              "nav-li active:text-white hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg   " +
+              (activeList == "Kosmos" && " text-accent-4 dark:text-accent-2")
+            }
+            onClick={(e) => {
+              setActiveList(e.target.outerText);
+              setData(
+                completeData.filter((item) => {
+                  return item.typ == "kosmos";
                 })
               );
             }}
           >
             <li className="">Kosmos</li>
+          </button>
+          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
+            -
+          </span>
+          <button
+            className={
+              "nav-li active:text-white  hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg   " +
+              (activeList == "Figurki" && " text-accent-4 dark:text-accent-2")
+            }
+            onClick={(e) => {
+              setActiveList(e.target.outerText);
+              setData(
+                completeData.filter((item) => {
+                  return item.typ == "figurka";
+                })
+              );
+            }}
+          >
+            <li className="">Figurki</li>
           </button>
         </ul>
       </div>

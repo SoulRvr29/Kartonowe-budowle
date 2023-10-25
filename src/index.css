@@ -169,12 +169,6 @@ hr {
   border-color: var(--accent-2);
   background-color: var(--accent-2);
 }
-/* .active-li {
-  color: var(--accent-4);
-}
-.dark .active-li {
-  color: var(--accent-2);
-} */
 .active-section {
   opacity: 1;
 }

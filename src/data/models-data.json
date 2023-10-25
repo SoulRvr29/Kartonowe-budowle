@@ -692,5 +692,201 @@
     },
     "photo": "models/curiosity/curiosity-photo-",
     "description": "Zautomatyzowane i autonomiczne laboratorium naukowo-badawcze wysłane na Marsa, w ramach programu badawczego Mars Science Laboratory (MSL)."
+  },
+  {
+    "id": 21,
+    "component": "Baranów",
+    "typ": "zamek",
+    "rok ukończenia": 2014,
+    "link": "/Kartonowe-budowle/Baranów",
+    "cover": "models/baranów/baranów-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2001,
+      "Stopień trudności": 2,
+      "Ilość stron": 14,
+      "Długość": "45cm",
+      "Szerokość": "26cm",
+      "Wysokość": "17cm"
+    },
+    "name": "Zamek w Baranowie Sandomierskim",
+    "card": "./cards/baranów-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 17,
+        "full": "./models/baranów/full-res/baranów-d",
+        "thumb": "./models/baranów/thumb/baranów-thumb-d"
+      }
+    },
+    "photo": "models/baranów/baranów-photo",
+    "description": "Późnorenesansowy zamek w Baranowie Sandomierskim. Siedziba rodu Leszczyńskich. Został zbudowany według projektu Santi Gucciego w latach 1591–1606."
+  },
+  {
+    "id": 22,
+    "component": "Gryfino",
+    "typ": "kościół",
+    "rok ukończenia": 2011,
+    "link": "/Kartonowe-budowle/Gryfino",
+    "cover": "models/gryfino/gryfino-cover.jpg",
+    "info": {
+      "Wydawca": "MODELIK",
+      "Skala": "1:150",
+      "Rok wydania": 2011,
+      "Stopień trudności": 2,
+      "Ilość stron": 16,
+      "Wysokość": "38cm"
+    },
+    "name": "Zamek w Będzinie",
+    "card": "./cards/gryfino-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 22,
+        "full": "./models/gryfino/dzień/full-res/gryfino-d",
+        "thumb": "./models/gryfino/dzień/thumb/gryfino-thumb-d"
+      },
+      "budowa": {
+        "quantity": 18,
+        "full": "./models/gryfino/budowa/full-res/gryfino-b",
+        "thumb": "./models/gryfino/budowa/thumb/gryfino-thumb-b"
+      }
+    },
+    "photo": "models/gryfino/gryfino-photo",
+    "description": "Rzymskokatolicki kościół parafialny w mieście Gryfino, w województwie zachodniopomorskim."
+  },
+  {
+    "id": 23,
+    "component": "Mauler",
+    "typ": "figurka",
+    "rok ukończenia": 2012,
+    "link": "/Kartonowe-budowle/Mauler",
+    "cover": "models/mauler/mauler-cover.jpg",
+    "info": {
+      "Wydawca": "FREE",
+      "Skala": "1:7",
+      "Wysokość": "33cm"
+    },
+    "name": "Mauler - Gears of War",
+    "card": "./cards/mauler-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 10,
+        "full": "./models/mauler/dzień/full-res/mauler-d",
+        "thumb": "./models/mauler/dzień/thumb/mauler-thumb-d"
+      },
+      "budowa": {
+        "quantity": 24,
+        "full": "./models/mauler/budowa/full-res/mauler-b",
+        "thumb": "./models/mauler/budowa/thumb/mauler-thumb-b"
+      }
+    },
+    "photo": "models/mauler/mauler-photo",
+    "description": "Wariant Boomera, wyposażony w Boomshield i rogaty hełm, które razem zapewniają mu znaczną osłonę przed ogniem wroga."
+  },
+  {
+    "id": 24,
+    "component": "Predator",
+    "typ": "figurka",
+    "rok ukończenia": 2017,
+    "link": "/Kartonowe-budowle/Predator",
+    "cover": "models/predator/predator-cover.jpg",
+    "info": {
+      "Wydawca": "FREE",
+      "Skala": "1:7",
+      "Wysokość": "33cm"
+    },
+    "name": "Predator",
+    "card": "./cards/predator-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 26,
+        "full": "./models/predator/dzień/full-res/predator-d",
+        "thumb": "./models/predator/dzień/thumb/predator-thumb-d"
+      },
+      "budowa": {
+        "quantity": 11,
+        "full": "./models/predator/budowa/full-res/predator-b",
+        "thumb": "./models/predator/budowa/thumb/predator-thumb-b"
+      }
+    },
+    "photo": "models/predator/predator-photo",
+    "description": "Fikcyjny przedstawiciel inteligentnej pozaziemskiej cywilizacji znany z serii filmów Predator oraz Obcy kontra Predator."
+  },
+  {
+    "id": 25,
+    "component": "PhantomF4",
+    "typ": "militaria",
+    "rok ukończenia": 2009,
+    "link": "/Kartonowe-budowle/PhantomF4",
+    "cover": "models/phantom f4/phantom f4-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:33",
+      "Rok wydania": 2005,
+      "Stopień trudności": 3,
+      "Ilość stron": 14,
+      "Długość": "54cm",
+      "Szerokość": "34cm",
+      "Wysokość": "15cm"
+    },
+    "name": "Phantom f-4B",
+    "card": "./cards/phantom f4-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 26,
+        "full": "./models/phantom f4/full-res/phantom f4-d",
+        "thumb": "./models/phantom f4/thumb/phantom f4-thumb-d"
+      }
+    },
+    "photo": "models/phantom f4/phantom f4-photo",
+    "description": "Dwumiejscowy, naddźwiękowy samolot myśliwsko-bombowy dalekiego zasięgu zdolny do działania w każdych warunkach pogodowych."
+  },
+  {
+    "id": 26,
+    "component": "StarshipSN15",
+    "typ": "kosmos",
+    "rok ukończenia": 2021,
+    "link": "/Kartonowe-budowle/StarshipSN15",
+    "cover": "models/starship sn15/starship sn15-cover.jpg",
+    "info": {
+      "Wydawca": "FREE",
+      "Skala": "1:100",
+      "Wysokość": "52cm"
+    },
+    "name": "Rakieta Starship SN15",
+    "card": "./cards/starship sn15-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 15,
+        "full": "./models/starship sn15/full-res/starship sn15-d",
+        "thumb": "./models/starship sn15/thumb/starship sn15-thumb-d"
+      }
+    },
+    "photo": "models/starship sn15/starship sn15-photo",
+    "description": "Prototypowy statek kosmiczny opracowany przez amerykańską firmę lotniczą SpaceX."
+  },
+  {
+    "id": 27,
+    "component": "Falcon9",
+    "typ": "kosmos",
+    "rok ukończenia": 2021,
+    "link": "/Kartonowe-budowle/Falcon9",
+    "cover": "models/falcon 9/falcon 9-cover.jpg",
+    "info": {
+      "Wydawca": "FREE",
+      "Skala": "1:100",
+      "Wysokość": "66cm"
+    },
+    "name": "Rakieta Falcon 9",
+    "card": "./cards/falcon 9-card.jpg",
+    "Galeria": {
+      "dzień": {
+        "quantity": 13,
+        "full": "./models/falcon 9/full-res/falcon 9-d",
+        "thumb": "./models/falcon 9/thumb/falcon 9-thumb-d"
+      }
+    },
+    "photo": "models/falcon 9/falcon 9-photo",
+    "description": "Dwustopniowa rakieta nośna, zaprojektowana i wyprodukowana przez amerykańską firmę SpaceX, przeznaczona do wynoszenia ładunków na orbitę, misji bezzałogowych i załogowych do Międzynarodowej Stacji Kosmicznej."
   }
 ]
