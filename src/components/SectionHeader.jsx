@@ -1,6 +1,6 @@
 const SectionHeader = ({ sectionState, setSectionState, sectionName }) => {
   return (
-    <div className="">
+    <div className="z-10">
       <header className="history-cont font-bold mx-8 max-sm:mx-4">
         <h3 className="flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base ">
           <button

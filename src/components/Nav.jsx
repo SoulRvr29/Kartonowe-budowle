@@ -11,10 +11,10 @@ const Nav = () => {
   const [activeList, setActiveList] = useState("Wszystko");
 
   return (
-    <div className="relative grid select-none">
+    <div className="relative grid select-none z-10">
       {/* CATEGORIES */}
-      <div className={navState ? "relative z-10 mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex flex-wrap w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-2  ">
+      <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
+        <ul className="flex flex-wrap w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 ">
           <button
             className={
               "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg  " +
@@ -131,8 +131,8 @@ const Nav = () => {
       <nav
         className={
           navState === true
-            ? "max-sm:mx-0 mx-8 relative  grid overflow-y-hidden max-md:px-0 px-8 pl-20 h-[13.5rem] "
-            : "relative h-6"
+            ? "max-sm:mx-0 mx-8 relative  grid overflow-y-hidden max-md:px-0 px-8 pl-20 h-[14rem] pt-2"
+            : "relative h-5"
         }
       >
         {/* CARDS CONTAINER */}
@@ -141,7 +141,7 @@ const Nav = () => {
           <div
             className={
               navState === true
-                ? "nav flex relative py-1 z-10 max-md:gap-4"
+                ? "nav flex relative py-1  max-md:gap-4"
                 : "nav hidden"
             }
           >
@@ -155,14 +155,14 @@ const Nav = () => {
       <div
         className={
           navState
-            ? "bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent nav-left max-sm:hidden h-full w-8 absolute top-0 left-0 z-40 "
+            ? "bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent nav-left max-sm:hidden h-full w-8 absolute top-0 left-0 "
             : "hidden"
         }
       >
         <svg
           className={
             navState
-              ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 z-30 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
+              ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
               : "hidden"
           }
           onClick={() => {
@@ -187,14 +187,14 @@ const Nav = () => {
       <div
         className={
           navState
-            ? "bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent max-sm:hidden h-full w-8 absolute top-0 right-0 z-30 "
+            ? "bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent max-sm:hidden h-full w-8 absolute top-0 right-0  "
             : "hidden"
         }
       >
         <svg
           className={
             navState
-              ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 z-30 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
+              ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
               : "hidden"
           }
           onClick={() => {
@@ -215,8 +215,20 @@ const Nav = () => {
           }
         ></div>
       </div>
+      <button
+        onClick={(e) => {
+          setNavState(!navState);
+        }}
+        className={
+          !navState
+            ? "dark:text-text-light text-text-dark text-opacity-50 dark:text-opacity-30 h-full uppercase text-sm justify-self-center z-20 absolute top-0 font-semibold hover:text-opacity-90 dark:hover:text-opacity-50 transition-all"
+            : "hidden"
+        }
+      >
+        nawigacja
+      </button>
       {/* nav hide icon */}
-      <button className="absolute top-[1px] max-sm:top-[5px] max-sm:right-2 right-1 z-30">
+      <button className="absolute -top-[2px] max-sm:top-[2px] max-sm:right-2 right-1 ">
         <svg
           onClick={(e) => {
             // e.stopPropagation();
@@ -228,8 +240,8 @@ const Nav = () => {
           fill="var(--text-light)"
           className={
             navState == true
-              ? "  opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black]  hover:opacity-100 z-20 max-sm:h-4"
-              : "opacity-40 dark:opacity-20 hover:opacity-100 z-20 max-md:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
+              ? "  opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black]  hover:opacity-100  max-sm:h-4"
+              : "opacity-40 dark:opacity-20 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
           }
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />

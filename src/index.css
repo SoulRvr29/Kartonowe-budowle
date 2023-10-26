@@ -34,7 +34,10 @@ body {
   text-align: justify;
   animation: fade-in 2s;
   text-shadow: 1px 1px 0px #00000027;
-  /* color: var(--text-dark); */
+  background-image: url(..\src\assets\binding_light.png);
+}
+.dark body {
+  background-image: url(..\src\assets\binding_dark.png);
 }
 .bkg-sides {
   background-color: #888;
@@ -60,6 +63,7 @@ h4 {
 }
 article {
   padding: 1rem 2rem;
+  z-index: 10;
 }
 article img {
   max-width: 600px;
