@@ -2,6 +2,30 @@ import Card from "./Card.jsx";
 import modelsData from "../data/models-data.json";
 import { useState } from "react";
 
+const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
+  return (
+    <button
+      className={
+        "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg  " +
+        (activeList == name && " text-accent-4 dark:text-accent-2 ")
+      }
+      onClick={(e) => {
+        setActiveList(e.target.outerText);
+        if (name == "Wszystko") setData(completeData);
+        else {
+          setData(
+            completeData.filter((item) => {
+              return item.typ == name;
+            })
+          );
+        }
+      }}
+    >
+      <li className="active-li">{name}</li>
+    </button>
+  );
+};
+
 const Nav = () => {
   const completeData = modelsData.sort((a, b) => {
     return b["rok ukończenia"] - a["rok ukończenia"];
@@ -12,122 +36,59 @@ const Nav = () => {
 
   return (
     <div className="relative grid select-none z-10">
-      {/* CATEGORIES */}
+      {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex flex-wrap w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 ">
-          <button
-            className={
-              "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg  " +
-              (activeList == "Wszystko" && " text-accent-4 dark:text-accent-2 ")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(completeData);
-            }}
-          >
-            <li className="active-li">Wszystko</li>
-          </button>
-          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
-            -
-          </span>
-          <button
-            className={
-              "nav-li active:text-white  hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg   " +
-              (activeList == "Latarnie morskie" &&
-                " text-accent-4 dark:text-accent-2")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(
-                completeData.filter((item) => {
-                  return item.typ == "latarnia morska";
-                })
-              );
-            }}
-          >
-            <li className="">Latarnie morskie</li>
-          </button>
-          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
-            -
-          </span>
-          <button
-            className={
-              "nav-li active:text-white hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg border-r-text-light   " +
-              (activeList == "Zamki" && " text-accent-4 dark:text-accent-2")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(
-                completeData.filter((item) => {
-                  return item.typ == "zamek";
-                })
-              );
-            }}
-          >
-            <li className="">Zamki</li>
-          </button>
-          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
-            -
-          </span>
-
-          <button
-            className={
-              "nav-li active:text-white hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg border-r-text-light   " +
-              (activeList == "Ratusze i kościoły" &&
-                " text-accent-4 dark:text-accent-2")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(
-                completeData.filter((item) => {
-                  return item.typ == "ratusz" || item.typ == "kościół";
-                })
-              );
-            }}
-          >
-            <li className="">Ratusze i kościoły</li>
-          </button>
-          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
-            -
-          </span>
-          <button
-            className={
-              "nav-li active:text-white hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg   " +
-              (activeList == "Kosmos" && " text-accent-4 dark:text-accent-2")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(
-                completeData.filter((item) => {
-                  return item.typ == "kosmos";
-                })
-              );
-            }}
-          >
-            <li className="">Kosmos</li>
-          </button>
-          <span className="mx-2 max-md:mx-1 hover:cursor-default max-sm:text-sm max text-lg py-1 max-sm:py-[0.20rem]">
-            -
-          </span>
-          <button
-            className={
-              "nav-li active:text-white  hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg   " +
-              (activeList == "Figurki" && " text-accent-4 dark:text-accent-2")
-            }
-            onClick={(e) => {
-              setActiveList(e.target.outerText);
-              setData(
-                completeData.filter((item) => {
-                  return item.typ == "figurka";
-                })
-              );
-            }}
-          >
-            <li className="">Figurki</li>
-          </button>
+        <ul className="flex flex-wrap gap-[0.4rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
+          <Nav_li
+            name="Wszystko"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />{" "}
+          -
+          <Nav_li
+            name="Zamki"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
+          -
+          <Nav_li
+            name="Latarnie morskie"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />{" "}
+          -
+          <Nav_li
+            name="Ratusze i kościoły"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />{" "}
+          -
+          <Nav_li
+            name="Kosmos"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />{" "}
+          -
+          <Nav_li
+            name="Figurki"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
         </ul>
       </div>
-      {/* <hr className="grad-hr relative bottom-[2px] justify-self-center w-[90%]" /> */}
+      {/* NAVIGATION */}
       <nav
         className={
           navState === true
@@ -136,7 +97,6 @@ const Nav = () => {
         }
       >
         {/* CARDS CONTAINER */}
-
         <section className="w-max relative grid justify-self-center px-10 max-md:justify-start  max-md:px-4">
           <div
             className={
@@ -215,18 +175,6 @@ const Nav = () => {
           }
         ></div>
       </div>
-      <button
-        onClick={(e) => {
-          setNavState(!navState);
-        }}
-        className={
-          !navState
-            ? "dark:text-text-light text-text-dark text-opacity-50 dark:text-opacity-30 h-full uppercase text-sm justify-self-center z-20 absolute top-0 font-semibold hover:text-opacity-90 dark:hover:text-opacity-50 transition-all"
-            : "hidden"
-        }
-      >
-        nawigacja
-      </button>
       {/* nav hide icon */}
       <button className="absolute -top-[2px] max-sm:top-[2px] max-sm:right-2 right-1 ">
         <svg
@@ -246,6 +194,18 @@ const Nav = () => {
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
         </svg>
+      </button>
+      <button
+        onClick={(e) => {
+          setNavState(!navState);
+        }}
+        className={
+          !navState
+            ? "dark:text-text-light text-text-dark text-opacity-50 dark:text-opacity-30 h-full uppercase text-sm justify-self-center z-20 absolute top-0 font-semibold hover:text-opacity-90 dark:hover:text-opacity-50 transition-all"
+            : "hidden"
+        }
+      >
+        nawigacja
       </button>
     </div>
   );

@@ -2,7 +2,7 @@
   {
     "id": 0,
     "component": "Bedzin",
-    "typ": "zamek",
+    "typ": "Zamki",
     "rok ukończenia": 2019,
     "link": "/Kartonowe-budowle/Bedzin",
     "cover": "models/bedzin/bedzin-cover.jpg",
@@ -41,7 +41,7 @@
   {
     "id": 1,
     "component": "Oporow",
-    "typ": "zamek",
+    "typ": "Zamki",
     "rok ukończenia": 2016,
     "link": "/Kartonowe-budowle/Oporow",
     "publisher": "GPM",
@@ -81,7 +81,7 @@
   {
     "id": 4,
     "component": "Sandomierz",
-    "typ": "ratusz",
+    "typ": "Ratusze i kościoły",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
@@ -132,7 +132,7 @@
   {
     "id": 2,
     "component": "Stilo",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Stilo",
     "publisher": "GPM",
@@ -170,7 +170,7 @@
   {
     "id": 5,
     "component": "Darlowo",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Darlowo",
     "publisher": "GPM",
@@ -203,7 +203,7 @@
   {
     "id": 6,
     "component": "Czołpino",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Czołpino",
     "publisher": "GPM",
@@ -236,7 +236,7 @@
   {
     "id": 8,
     "component": "Gąski",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Gąski",
     "publisher": "GPM",
@@ -269,7 +269,7 @@
   {
     "id": 9,
     "component": "Hel",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Hel",
     "publisher": "GPM",
@@ -302,7 +302,7 @@
   {
     "id": 10,
     "component": "Jarosławiec",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Jarosławiec",
     "publisher": "GPM",
@@ -330,7 +330,7 @@
   {
     "id": 11,
     "component": "Jastarnia",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Jastarnia",
     "publisher": "GPM",
@@ -363,7 +363,7 @@
   {
     "id": 12,
     "component": "Kikut",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Kikut",
     "publisher": "GPM",
@@ -391,7 +391,7 @@
   {
     "id": 13,
     "component": "Kołobrzeg",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2008,
     "link": "/Kartonowe-budowle/Kołobrzeg",
     "publisher": "GPM",
@@ -419,7 +419,7 @@
   {
     "id": 14,
     "component": "KrynicaMorska",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Krynica Morska",
     "publisher": "GPM",
@@ -447,7 +447,7 @@
   {
     "id": 15,
     "component": "Niechorze",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2001,
     "link": "/Kartonowe-budowle/Niechorze",
     "publisher": "GPM",
@@ -475,7 +475,7 @@
   {
     "id": 16,
     "component": "NowyPort",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Nowy Port",
     "publisher": "GPM",
@@ -513,7 +513,7 @@
   {
     "id": 17,
     "component": "PortPółnocny",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Port Północny",
     "publisher": "GPM",
@@ -541,7 +541,7 @@
   {
     "id": 18,
     "component": "Rozewie",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Rozewie",
     "publisher": "GPM",
@@ -569,7 +569,7 @@
   {
     "id": 19,
     "component": "Sopot",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Sopot",
     "publisher": "GPM",
@@ -607,7 +607,7 @@
   {
     "id": 20,
     "component": "Świnoujście",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2004,
     "link": "/Kartonowe-budowle/Świnoujście",
     "publisher": "GPM",
@@ -635,7 +635,7 @@
   {
     "id": 7,
     "component": "Ustka",
-    "typ": "latarnia morska",
+    "typ": "Latarnie morskie",
     "rok ukończenia": 2008,
     "link": "/Kartonowe-budowle/Ustka",
     "publisher": "GPM",
@@ -663,7 +663,7 @@
   {
     "id": 3,
     "component": "Curiosity",
-    "typ": "kosmos",
+    "typ": "Kosmos",
     "rok ukończenia": 2013,
     "link": "/Kartonowe-budowle/Curiosity",
     "publisher": "FREE",
@@ -696,7 +696,7 @@
   {
     "id": 21,
     "component": "Baranów",
-    "typ": "zamek",
+    "typ": "Zamki",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Baranów",
     "cover": "models/baranów/baranów-cover.jpg",
@@ -725,7 +725,7 @@
   {
     "id": 22,
     "component": "Gryfino",
-    "typ": "kościół",
+    "typ": "Ratusze i kościoły",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Gryfino",
     "cover": "models/gryfino/gryfino-cover.jpg",
@@ -757,7 +757,7 @@
   {
     "id": 23,
     "component": "Mauler",
-    "typ": "figurka",
+    "typ": "Figurki",
     "rok ukończenia": 2012,
     "link": "/Kartonowe-budowle/Mauler",
     "cover": "models/mauler/mauler-cover.jpg",
@@ -786,7 +786,7 @@
   {
     "id": 24,
     "component": "Predator",
-    "typ": "figurka",
+    "typ": "Figurki",
     "rok ukończenia": 2017,
     "link": "/Kartonowe-budowle/Predator",
     "cover": "models/predator/predator-cover.jpg",
@@ -815,7 +815,7 @@
   {
     "id": 25,
     "component": "PhantomF4",
-    "typ": "militaria",
+    "typ": "Militaria",
     "rok ukończenia": 2009,
     "link": "/Kartonowe-budowle/PhantomF4",
     "cover": "models/phantom f4/phantom f4-cover.jpg",
@@ -844,7 +844,7 @@
   {
     "id": 26,
     "component": "StarshipSN15",
-    "typ": "kosmos",
+    "typ": "Kosmos",
     "rok ukończenia": 2021,
     "link": "/Kartonowe-budowle/StarshipSN15",
     "cover": "models/starship sn15/starship sn15-cover.jpg",
@@ -868,7 +868,7 @@
   {
     "id": 27,
     "component": "Falcon9",
-    "typ": "kosmos",
+    "typ": "Kosmos",
     "rok ukończenia": 2021,
     "link": "/Kartonowe-budowle/Falcon9",
     "cover": "models/falcon 9/falcon 9-cover.jpg",
