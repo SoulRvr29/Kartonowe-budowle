@@ -54,7 +54,7 @@ const Gallery = ({ id, name }) => {
   };
 
   return (
-    <section className="gallery-cont px-8 select-none max-sm:px-4 grid z-[15]">
+    <section className="gallery-cont px-8 select-none max-sm:px-4 grid z-20">
       <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base">
         {/* //////////// gallery on/of button //////////// */}
         <button
@@ -141,7 +141,7 @@ const Gallery = ({ id, name }) => {
               setPhotoMaxWidth(false);
               document.querySelector("body").classList.remove("site-overflow");
             }}
-            className="full-size bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 z-20 w-screen h-screen"
+            className="full-size bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 w-screen h-screen"
           >
             {/* ////////////  ICON CONTAINER  //////////// */}
             <div
@@ -159,8 +159,8 @@ const Gallery = ({ id, name }) => {
                 fill="white"
                 className={
                   photoMaxWidth == false
-                    ? "absolute hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-30 right-0 top-0 m-8 max-sm:justify-self-center max-sm:right-auto max-sm:m-2"
-                    : "fixed opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-30 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
+                    ? "absolute hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 right-0 top-0 m-8 max-sm:justify-self-center max-sm:right-auto max-sm:m-2"
+                    : "fixed opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -181,8 +181,8 @@ const Gallery = ({ id, name }) => {
                 fill="white"
                 className={
                   photoMaxWidth == false
-                    ? "gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-30 top-1/2 ml-8 max-sm:ml-2 "
-                    : "fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-30 top-1/2 left-16 max-sm:left-2 "
+                    ? "gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:ml-2 "
+                    : "fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-2 "
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -199,8 +199,8 @@ const Gallery = ({ id, name }) => {
                 fill="white"
                 className={
                   photoMaxWidth == false
-                    ? "fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-30 justify-self-end top-1/2  mr-8 max-sm:mr-2"
-                    : "fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-30 top-1/2 right-20  max-sm:right-2"
+                    ? "fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:mr-2"
+                    : "fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-2"
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -211,7 +211,7 @@ const Gallery = ({ id, name }) => {
               </svg>
             </div>
             {/* IMAGE CONTAINER medium-w-false / full-w-true */}
-            <div className="fixed w-screen left-0 top-0 z-20  h-full grid place-content-center overflow-auto ">
+            <div className="fixed w-screen left-0 top-0 h-full grid place-content-center overflow-auto ">
               <img
                 onClick={(e) => {
                   e.stopPropagation();
@@ -231,8 +231,8 @@ const Gallery = ({ id, name }) => {
           <span
             className={
               photoMaxWidth === false
-                ? "fixed bottom-4 text-2xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-38px)] z-30 border-2 px-2 pb-1 rounded-xl border-texttext-text-light text-text-light max-sm:top-auto max-sm:bottom-[18px]"
-                : "fixed bottom-4 text-3xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] max-sm:left-[calc(50%-38px)] z-30 border-2 px-2 pb-1 rounded-xl border-texttext-text-light text-text-light opacity-50 max-sm:top-auto max-sm:bottom-[18px]"
+                ? "fixed bottom-4 text-2xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-texttext-text-light text-text-light max-sm:top-auto max-sm:bottom-[18px]"
+                : "fixed bottom-4 text-3xl max-sm:text-xl drop-shadow-[0_0_2px_black] left-[calc(50%-48px)] max-sm:left-[calc(50%-38px)] z-40 border-2 px-2 pb-1 rounded-xl border-texttext-text-light text-text-light opacity-50 max-sm:top-auto max-sm:bottom-[18px]"
             }
           >
             {(photoId < 10 ? photoId[1] : photoId) + " / " + galleryLength}

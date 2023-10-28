@@ -43,6 +43,7 @@ function App() {
       <Header />
       <Banner />
       <Nav />
+      <BackToTop />
       <Routes>
         <Route path="/Kartonowe-budowle/" element={<Home />} />
         <Route path="/Kartonowe-budowle/Bedzin" element={<Bedzin id={0} />} />
@@ -131,7 +132,6 @@ function App() {
       <br />
       <br />
       <Footer />
-      <BackToTop />
     </main>
   );
 }

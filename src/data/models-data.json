@@ -2,7 +2,7 @@
   {
     "id": 0,
     "component": "Bedzin",
-    "typ": "Zamki",
+    "typ": "Zamki i ratusze",
     "rok ukończenia": 2019,
     "link": "/Kartonowe-budowle/Bedzin",
     "cover": "models/bedzin/bedzin-cover.jpg",
@@ -41,7 +41,7 @@
   {
     "id": 1,
     "component": "Oporow",
-    "typ": "Zamki",
+    "typ": "Zamki i ratusze",
     "rok ukończenia": 2016,
     "link": "/Kartonowe-budowle/Oporow",
     "publisher": "GPM",
@@ -81,7 +81,7 @@
   {
     "id": 4,
     "component": "Sandomierz",
-    "typ": "Ratusze i kościoły",
+    "typ": "Zamki i ratusze",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Sandomierz",
     "publisher": "GPM",
@@ -696,7 +696,7 @@
   {
     "id": 21,
     "component": "Baranów",
-    "typ": "Zamki",
+    "typ": "Zamki i ratusze",
     "rok ukończenia": 2014,
     "link": "/Kartonowe-budowle/Baranów",
     "cover": "models/baranów/baranów-cover.jpg",
@@ -725,7 +725,7 @@
   {
     "id": 22,
     "component": "Gryfino",
-    "typ": "Ratusze i kościoły",
+    "typ": "Kościoły",
     "rok ukończenia": 2011,
     "link": "/Kartonowe-budowle/Gryfino",
     "cover": "models/gryfino/gryfino-cover.jpg",
@@ -737,7 +737,7 @@
       "Ilość stron": 16,
       "Wysokość": "38cm"
     },
-    "name": "Zamek w Będzinie",
+    "name": "Kościół w Gryfinie",
     "card": "./cards/gryfino-card.jpg",
     "Galeria": {
       "dzień": {
@@ -815,7 +815,7 @@
   {
     "id": 25,
     "component": "PhantomF4",
-    "typ": "Militaria",
+    "typ": "Samoloty",
     "rok ukończenia": 2009,
     "link": "/Kartonowe-budowle/PhantomF4",
     "cover": "models/phantom f4/phantom f4-cover.jpg",

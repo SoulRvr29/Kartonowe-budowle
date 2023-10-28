@@ -5,19 +5,24 @@
     "link": "/Kartonowe-budowle/Bedzin"
   },
   {
-    "name": "Łazik Curiosity",
-    "source": "./banner/curiosity-banner.jpg",
-    "link": "/Kartonowe-budowle/Curiosity"
-  },
-  {
     "name": "Zamek w Oporowie",
     "source": "./banner/oporow-banner.jpg",
     "link": "/Kartonowe-budowle/Oporow"
   },
   {
+    "name": "Łazik Curiosity",
+    "source": "./banner/curiosity-banner.jpg",
+    "link": "/Kartonowe-budowle/Curiosity"
+  },
+  {
     "name": "Ratusz w Sandomierzu",
     "source": "./banner/sandomierz-banner.jpg",
     "link": "/Kartonowe-budowle/Sandomierz"
+  },
+  {
+    "name": "Kościół w Gryfinie",
+    "source": "./banner/gryfin-banner.jpg",
+    "link": "/Kartonowe-budowle/Gryfino"
   },
   {
     "name": "Wieżowce",

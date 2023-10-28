@@ -7,7 +7,7 @@ const BackToTop = () => {
   };
   window.addEventListener("scroll", scrollHandler);
   return (
-    <button className="btn-up max-w-6xl fixed bottom-0 w-full hidden z-[12]">
+    <button className="btn-up max-w-6xl fixed bottom-0 w-full hidden z-20">
       <a
         className="absolute right-5 bottom-5 mr-2 hover:text-accent hover:scale-125 transition-all uppercase "
         href="#"

@@ -38,7 +38,7 @@ const Nav = () => {
     <div className="relative grid select-none z-10">
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex flex-wrap gap-[0.4rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
+        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-[0.4rem]  max-sm:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
           <Nav_li
             name="Wszystko"
             activeList={activeList}
@@ -46,14 +46,6 @@ const Nav = () => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          -
-          <Nav_li
-            name="Zamki"
-            activeList={activeList}
-            setActiveList={setActiveList}
-            completeData={completeData}
-            setData={setData}
-          />
           -
           <Nav_li
             name="Latarnie morskie"
@@ -64,7 +56,15 @@ const Nav = () => {
           />{" "}
           -
           <Nav_li
-            name="Ratusze i kościoły"
+            name="Zamki i ratusze"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
+          -
+          <Nav_li
+            name="Kościoły"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
@@ -81,6 +81,14 @@ const Nav = () => {
           -
           <Nav_li
             name="Figurki"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
+          -
+          <Nav_li
+            name="Samoloty"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}

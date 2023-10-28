@@ -45,7 +45,7 @@ function App() {
   };
   return (
     <>
-      <header className="relative px-4 max-[400px]:px-1 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-10 ">
+      <header className="relative px-4 max-[400px]:px-1 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 ">
         {/* left side */}
         <div className="mt-1">
           <button>

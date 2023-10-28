@@ -240,14 +240,14 @@ hr {
   animation: banner-fade-out 1s forwards linear;
 }
 .banner-scroll {
-  animation: banner-scroll 10s infinite linear;
+  animation: banner-scroll 15s infinite linear;
 }
 @keyframes banner-scroll {
   0% {
-    bottom: 50%;
+    bottom: 67%;
   }
   100% {
-    bottom: 0;
+    bottom: 2%;
   }
 }
 @keyframes banner-fade-in {
