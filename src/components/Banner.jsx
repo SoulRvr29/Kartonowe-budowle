@@ -17,7 +17,7 @@ const Banner = () => {
     img.classList.add("banner-scroll");
     setTimeout(() => {
       section.classList.add("banner-fade-out");
-    }, 14000);
+    }, 19000);
 
     interval1 = setInterval(() => {
       setIndex(index + 1);
@@ -35,8 +35,8 @@ const Banner = () => {
       }, 1000);
       setTimeout(() => {
         section.classList.add("banner-fade-out");
-      }, 14000);
-    }, 15000);
+      }, 19000);
+    }, 20000);
     return () => {
       clearInterval(interval1);
     };

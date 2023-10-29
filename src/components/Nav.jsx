@@ -33,6 +33,7 @@ const Nav = () => {
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
   const [activeList, setActiveList] = useState("Wszystko");
+  const [overlap, setOverlap] = useState(false);
 
   return (
     <div className="relative grid select-none z-10">
@@ -100,21 +101,30 @@ const Nav = () => {
       <nav
         className={
           navState === true
-            ? "max-sm:mx-0 mx-8 relative  grid overflow-y-hidden max-md:px-0 px-8 pl-20 h-[14rem] pt-2"
+            ? "max-sm:mx-0 mx-8 relative grid overflow-y-hidden max-md:px-0 px-8  h-[14rem] pt-2 " +
+              (!overlap && "pl-20")
             : "relative h-5"
         }
       >
         {/* CARDS CONTAINER */}
-        <section className="w-max relative grid justify-self-center px-10 max-md:justify-start  max-md:px-4">
+        <section
+          className={
+            overlap
+              ? "w-max relative grid justify-self-center max-md:justify-start  max-md:px-4"
+              : "w-max relative grid justify-self-center px-10 max-md:justify-start  max-md:px-4"
+          }
+        >
           <div
             className={
               navState === true
-                ? "nav flex relative py-1  max-md:gap-4"
-                : "nav hidden"
+                ? "nav flex relative py-1 transition-all max-md:gap-4 "
+                : //  +
+                  //   (overlap ? "gap-x-20" : "gap-x-0")
+                  "nav hidden"
             }
           >
             {data.map((model) => (
-              <Card model={model} key={model.id} />
+              <Card model={model} key={model.id} overlap={overlap} />
             ))}
           </div>
         </section>
@@ -191,30 +201,50 @@ const Nav = () => {
             setNavState(!navState);
           }}
           xmlns="http://www.w3.org/2000/svg"
-          height="1.5em"
           viewBox="0 0 448 512"
+          height="1.5em"
           fill="var(--text-light)"
           className={
             navState == true
-              ? "  opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black]  hover:opacity-100  max-sm:h-4"
+              ? "opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black] hover:dark:opacity-100 hover:opacity-100  max-sm:h-4"
               : "opacity-40 dark:opacity-20 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
           }
         >
           <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
         </svg>
       </button>
+      {/* nav show button */}
       <button
         onClick={(e) => {
           setNavState(!navState);
         }}
         className={
           !navState
-            ? "dark:text-text-light text-text-dark text-opacity-50 dark:text-opacity-30 h-full uppercase text-sm justify-self-center z-20 absolute top-0 font-semibold hover:text-opacity-90 dark:hover:text-opacity-50 transition-all"
+            ? "dark:text-text-light text-text-dark text-opacity-50  dark:text-opacity-30 h-full uppercase text-sm justify-self-center z-20 absolute top-0 font-semibold hover:text-opacity-90 dark:hover:text-opacity-50 transition-all"
             : "hidden"
         }
       >
         nawigacja
       </button>
+      {/* overlap button */}
+      {navState && (
+        <button className="absolute right-[5px] bottom-1 max-sm:hidden ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.2em"
+            fill="var(--text-light)"
+            viewBox="0 0 512 512"
+            onClick={() => setOverlap(!overlap)}
+            className={
+              overlap == false
+                ? "opacity-60 dark:opacity-50 drop-shadow-[0_0_0_black] hover:opacity-100 hover:dark:opacity-100 max-sm:h-4"
+                : "opacity-60 dark:opacity-50 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
+            }
+          >
+            <path d="M406.6 374.6l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224l-293.5 0 41.4-41.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288l293.5 0-41.4 41.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 };

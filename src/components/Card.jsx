@@ -1,7 +1,13 @@
 import { NavLink } from "react-router-dom";
-const Card = ({ model }) => {
+const Card = ({ model, overlap }) => {
   return (
-    <div className="first:-ml-0 aspect-square h-[180px] -left-12 max-md:left-0 -ml-[4.2rem] relative  hover:-translate-x-14 hover:translate-y-0 transition-all duration-300 hover:rotate-3 pointer last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0">
+    <div
+      className={
+        overlap
+          ? "first:-ml-0 aspect-square h-[180px] max-md:left-0 ml-[1rem] relative transition-all duration-300 hover:rotate-3 max-md:ml-0 max-md:last:mr-0 "
+          : "first:-ml-0 aspect-square h-[180px] -left-12 max-md:left-0 -ml-[4.2rem] relative  hover:-translate-x-14 hover:translate-y-0 transition-all duration-300 hover:rotate-3 last:-mr-24 hover:last:-translate-x-2 max-md:ml-0 max-md:last:mr-0 max-md:hover:translate-x-0 max-md:hover:last:translate-x-0"
+      }
+    >
       <NavLink
         // onClick={() =>
         //   document.querySelector(".article-header").scrollIntoView()
