@@ -54,7 +54,7 @@ const Gallery = ({ id, name }) => {
   };
 
   return (
-    <section className="gallery-cont px-8 select-none max-sm:px-4 grid z-20">
+    <section className="gallery-cont px-8 select-none max-sm:px-4 grid ">
       <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base">
         {/* //////////// gallery on/of button //////////// */}
         <button
@@ -141,7 +141,7 @@ const Gallery = ({ id, name }) => {
               setPhotoMaxWidth(false);
               document.querySelector("body").classList.remove("site-overflow");
             }}
-            className="full-size bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 w-screen h-screen"
+            className="full-size bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 w-screen h-screen z-30"
           >
             {/* ////////////  ICON CONTAINER  //////////// */}
             <div
