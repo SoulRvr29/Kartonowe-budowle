@@ -281,7 +281,7 @@ article,
   animation: width-in 1s forwards;
 }
 .confirm {
-  animation: fade-in-out 2s;
+  animation: fade-in-out 1s;
 }
 
 @keyframes fade-in {

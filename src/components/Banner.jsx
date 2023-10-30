@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";
 
-const Banner = ({ animState, setAnimState }) => {
+const Banner = ({ bannerState, setBannerState }) => {
   const [image, setImage] = useState(bannerData[0].source);
   const [name, setName] = useState(bannerData[0].name);
   const [link, setLink] = useState(bannerData[0].link);
@@ -43,11 +43,11 @@ const Banner = ({ animState, setAnimState }) => {
 
   return (
     <>
-      <Link to={animState === true && link} className="relative z-10 grid">
+      <Link to={bannerState === true && link} className="relative z-10 grid">
         <hr className="grad-hr" />
         <section
           className={
-            animState == true
+            bannerState == true
               ? "banner-section banner-on pointer  h-[200px] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col"
               : "banner-section banner-on pointer  h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
           }
@@ -68,10 +68,10 @@ const Banner = ({ animState, setAnimState }) => {
         {/* show banner button */}
         <button
           onClick={(e) => {
-            setAnimState(!animState);
+            setBannerState(!bannerState);
           }}
           className={
-            !animState
+            !bannerState
               ? "dark:text-text-light text-text-dark text-opacity-50 dark:text-opacity-30 h-full uppercase text-sm justify-self-center z-20 absolute top-0 font-semibold hover:text-opacity-90 dark:hover:text-opacity-50 transition-all"
               : "hidden"
           }
@@ -81,14 +81,14 @@ const Banner = ({ animState, setAnimState }) => {
         {/* banner hide icon */}
         <svg
           onClick={(e) => {
-            setAnimState(!animState);
+            setBannerState(!bannerState);
           }}
           xmlns="http://www.w3.org/2000/svg"
           height="1.5em"
           viewBox="0 0 448 512"
           fill="var(--text-light)"
           className={
-            animState == true
+            bannerState == true
               ? "absolute top-0 max-sm:top-1 max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
               : "absolute top-0  max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
           }

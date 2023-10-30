@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Settings from "./Settings";
 
-function App({ animState, setAnimState, overlap, setOverlap }) {
+function App({ bannerState, setBannerState, overlap, setOverlap }) {
   if (localStorage.getItem("darkMode") == null)
     localStorage.setItem("darkMode", "true");
   const [darkMode, setDarkMode] = useState(
@@ -15,7 +15,15 @@ function App({ animState, setAnimState, overlap, setOverlap }) {
   );
 
   useEffect(() => {
-    modeChange();
+    if (!darkMode) {
+      document.querySelector("html").classList.remove("dark");
+      document.querySelector("body").classList.add("bkg-sides");
+      document.querySelector(".grad").classList.remove("banner-grad");
+    } else {
+      document.querySelector("html").classList.add("dark");
+      document.querySelector("body").classList.remove("bkg-sides");
+      document.querySelector(".grad").classList.add("banner-grad");
+    }
     fontSize();
   }, []);
 
@@ -24,28 +32,33 @@ function App({ animState, setAnimState, overlap, setOverlap }) {
       ? setActualFontSize(actualFontSize + 1)
       : setActualFontSize(1);
     actualFontSize === 1
-      ? ((document.querySelector("body").style = "font-size: 1rem"),
-        localStorage.setItem("fontSize", 1))
+      ? (document.querySelector("body").style = "font-size: 1rem")
       : actualFontSize === 2
-      ? ((document.querySelector("body").style = "font-size: 1.1rem"),
-        localStorage.setItem("fontSize", 2))
-      : ((document.querySelector("body").style = "font-size: 1.2rem"),
-        localStorage.setItem("fontSize", 3));
+      ? (document.querySelector("body").style = "font-size: 1.1rem")
+      : (document.querySelector("body").style = "font-size: 1.2rem");
   };
 
   const modeChange = () => {
     setDarkMode(!darkMode);
     if (darkMode) {
-      localStorage.setItem("darkMode", darkMode);
       document.querySelector("html").classList.remove("dark");
       document.querySelector("body").classList.add("bkg-sides");
       document.querySelector(".grad").classList.remove("banner-grad");
     } else {
-      localStorage.setItem("darkMode", darkMode);
       document.querySelector("html").classList.add("dark");
       document.querySelector("body").classList.remove("bkg-sides");
       document.querySelector(".grad").classList.add("banner-grad");
     }
+  };
+
+  const saveSettings = () => {
+    localStorage.setItem(
+      "fontSize",
+      actualFontSize === 1 ? 3 : actualFontSize === 2 ? 1 : 2
+    );
+    localStorage.setItem("darkMode", darkMode);
+    localStorage.setItem("banner", bannerState);
+    localStorage.setItem("overlap", overlap);
   };
 
   const [settingsState, setSettingsState] = useState(false);
@@ -109,7 +122,7 @@ function App({ animState, setAnimState, overlap, setOverlap }) {
             </svg>
           </button>
           {/* font size icon */}
-          <button title="font size" onClick={() => fontSize()}>
+          {/* <button title="font size" onClick={() => fontSize()}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -119,7 +132,7 @@ function App({ animState, setAnimState, overlap, setOverlap }) {
             >
               <path d="M254 52.8C249.3 40.3 237.3 32 224 32s-25.3 8.3-30 20.8L57.8 416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32h-1.8l18-48H303.8l18 48H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H390.2L254 52.8zM279.8 304H168.2L224 155.1 279.8 304z" />
             </svg>
-          </button>
+          </button> */}
           {/* mail icon */}
           <a title="send mail" href="mailto:pawelc29@interia.pl">
             <svg
@@ -140,11 +153,12 @@ function App({ animState, setAnimState, overlap, setOverlap }) {
           darkMode={darkMode}
           fontSize={fontSize}
           actualFontSize={actualFontSize}
-          animState={animState}
-          setAnimState={setAnimState}
+          bannerState={bannerState}
+          setBannerState={setBannerState}
           overlap={overlap}
           setOverlap={setOverlap}
           setSettingsState={setSettingsState}
+          saveSettings={saveSettings}
         />
       )}
     </div>

@@ -5,21 +5,23 @@ const Settings = ({
   darkMode,
   actualFontSize,
   fontSize,
-  animState,
-  setAnimState,
+  bannerState,
+  setBannerState,
   overlap,
   setOverlap,
   setSettingsState,
+  saveSettings,
 }) => {
   const [confirm, setconfirm] = useState(false);
   return (
     <>
-      <div className="max-sm:grid hidden w-screen h-screen fixed top-0 left-0 bg-black bg-opacity-70 z-20 backdrop-blur-sm"></div>
-      <div className="settings grid w-80 max-sm:right-auto max-sm:mx-4 max-sm:w-[calc(100%-2rem)] max-sm:top-7 select-none  absolute top-[62px] right-8 dark:bg-text-dark bg-text-light rounded-xl drop-shadow-lg border-2 z-20 px-4 pt-1 pb-4 dark:text-text-light text-text-dark">
+      <div className="max-sm:grid hidden w-screen h-screen fixed top-0 left-0 bg-black bg-opacity-30 z-20 backdrop-blur-sm"></div>
+      <div className="settings grid w-80 max-sm:right-auto max-sm:mx-4 max-sm:w-[calc(100%-2rem)] max-sm:top-7 select-none  absolute top-[62px] right-8 dark:bg-text-dark bg-text-light rounded-xl drop-shadow-[5px_5px_10px_rgba(0,0,0,0.5)] border-2 z-20 px-4 pt-1 pb-4 dark:text-text-light text-text-dark">
         <div className={!confirm ? " visible" : " invisible"}>
           <h5 className="text-center text-xl">Ustawienia</h5>
           <hr className="bg-white h-[2px]" />
           <ul className=" font-medium grid gap-y-1 mt-2">
+            {/* KOLORYSTYKA */}
             <li className=" flex justify-between bg-text-dark bg-opacity-20 p-1 px-2 dark:bg-text-light dark:bg-opacity-20">
               Kolorystyka:{" "}
               <button
@@ -29,6 +31,7 @@ const Settings = ({
                 {darkMode ? "ciemna" : "jasna"}
               </button>
             </li>
+            {/* WIELKOŚĆ CZCIONKI */}
             <li className=" flex justify-between bg-text-dark bg-opacity-20 p-1 px-2 dark:bg-text-light dark:bg-opacity-20">
               Wielkość czcionki:{" "}
               <button
@@ -42,16 +45,18 @@ const Settings = ({
                   : "średnia"}
               </button>
             </li>
+            {/* RUCHOMY BANNER */}
             <li className=" flex justify-between bg-text-dark bg-opacity-20 p-1 px-2 dark:bg-text-light dark:bg-opacity-20">
               Ruchomy banner:{" "}
               <button
                 className="dark:hover:text-accent-2 hover:text-accent-4 transition-colors"
-                onClick={() => setAnimState(!animState)}
+                onClick={() => setBannerState(!bannerState)}
               >
-                {animState ? "widoczny" : "ukryty"}
+                {bannerState ? "widoczny" : "ukryty"}
               </button>
             </li>
-            <li className=" flex justify-between bg-text-dark bg-opacity-20 p-1 px-2 dark:bg-text-light dark:bg-opacity-20">
+            {/* KARTY NAWIGACJI */}
+            <li className="max-sm:hidden flex justify-between bg-text-dark bg-opacity-20 p-1 px-2 dark:bg-text-light dark:bg-opacity-20">
               Karty nawigacji:{" "}
               <button
                 className="dark:hover:text-accent-2 hover:text-accent-4 transition-colors"
@@ -60,14 +65,16 @@ const Settings = ({
                 {overlap ? "rozsunięte" : "zsunięte"}
               </button>
             </li>
+            {/* PRZYCISKI ZAPISZ / ZAMKNIJ */}
             <div className="flex justify-center gap-6 px-8 max-sm:px-0 pt-3 text-white">
               <button
                 onClick={() => {
+                  saveSettings();
                   setconfirm(true);
                   setTimeout(() => {
                     setconfirm(false);
                     //   setSettingsState(false);
-                  }, 2000);
+                  }, 1000);
                 }}
                 className=" drop-shadow-md bg-green-700 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg"
               >
@@ -82,7 +89,7 @@ const Settings = ({
             </div>
           </ul>
         </div>
-
+        {/* POTWIERDZENIE */}
         <div
           className={
             "confirm flex gap-3 absolute place-self-center text-4xl drop-shadow-sm font-bold " +
