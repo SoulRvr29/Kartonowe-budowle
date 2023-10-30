@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
@@ -36,13 +37,20 @@ import StarshipSN15 from "./sections/StarshipSN15";
 import Falcon9 from "./sections/Falcon9";
 
 function App() {
+  const [animState, setAnimState] = useState(true);
+  const [overlap, setOverlap] = useState(false);
   return (
     <main className=" relative bg-bkg-light dark:bg-bkg min-h-screen  flex flex-col max-w-6xl mx-auto border-text-light dark:border-opacity-70 dark:border-accent max-[1150px]:border-none border-x-2 border-opacity-30  text-text-dark dark:text-text-light  font-medium dark:font-normal ">
       {/* <div className="w-full mx-auto h-full max-w-6xl top-0 left-0 absolute self-center z-[2]"></div> */}
       <div className="dark:bg-accent bg-text-dark  w-full  mx-auto h-full top-0 left-0 absolute blur-3xl opacity-40 self-center -z-10"></div>
-      <Header />
-      <Banner />
-      <Nav />
+      <Header
+        animState={animState}
+        setAnimState={setAnimState}
+        overlap={overlap}
+        setOverlap={setOverlap}
+      />
+      <Banner animState={animState} setAnimState={setAnimState} />
+      <Nav overlap={overlap} setOverlap={setOverlap} />
       <BackToTop />
       <Routes>
         <Route path="/Kartonowe-budowle/" element={<Home />} />

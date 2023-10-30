@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
+        Calistoga: "Calistoga",
       },
       colors: {
         bkg: "rgb(30, 30, 30)",

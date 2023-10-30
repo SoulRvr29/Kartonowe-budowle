@@ -2,12 +2,11 @@ import { useState, useEffect } from "react";
 import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";
 
-const Banner = () => {
+const Banner = ({ animState, setAnimState }) => {
   const [image, setImage] = useState(bannerData[0].source);
   const [name, setName] = useState(bannerData[0].name);
   const [link, setLink] = useState(bannerData[0].link);
   const [index, setIndex] = useState(1);
-  const [animState, setAnimState] = useState(true);
 
   useEffect(() => {
     const section = document.querySelector(".banner-section");

@@ -26,14 +26,13 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   );
 };
 
-const Nav = () => {
+const Nav = ({ overlap, setOverlap }) => {
   const completeData = modelsData.sort((a, b) => {
     return b["rok ukończenia"] - a["rok ukończenia"];
   });
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
   const [activeList, setActiveList] = useState("Wszystko");
-  const [overlap, setOverlap] = useState(false);
 
   return (
     <div className="relative grid select-none z-10">
@@ -118,9 +117,7 @@ const Nav = () => {
             className={
               navState === true
                 ? "nav flex relative py-1 transition-all max-md:gap-4 "
-                : //  +
-                  //   (overlap ? "gap-x-20" : "gap-x-0")
-                  "nav hidden"
+                : "nav hidden"
             }
           >
             {data.map((model) => (
