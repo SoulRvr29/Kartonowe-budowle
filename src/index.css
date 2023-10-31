@@ -244,7 +244,7 @@ hr {
 }
 @keyframes banner-scroll {
   0% {
-    bottom: 67%;
+    bottom: 65%;
   }
   100% {
     bottom: 2%;

@@ -79,22 +79,24 @@ const Banner = ({ bannerState, setBannerState }) => {
           banner
         </button>
         {/* banner hide icon */}
-        <svg
-          onClick={(e) => {
-            setBannerState(!bannerState);
-          }}
-          xmlns="http://www.w3.org/2000/svg"
-          height="1.5em"
-          viewBox="0 0 448 512"
-          fill="var(--text-light)"
-          className={
-            bannerState == true
-              ? "absolute top-0 max-sm:top-1 max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
-              : "absolute top-0  max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
-          }
-        >
-          <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
-        </svg>
+        <button title={bannerState ? "ukryj banner" : "pokaż banner"}>
+          <svg
+            onClick={(e) => {
+              setBannerState(!bannerState);
+            }}
+            xmlns="http://www.w3.org/2000/svg"
+            height="1.5em"
+            viewBox="0 0 448 512"
+            fill="var(--text-light)"
+            className={
+              bannerState == true
+                ? "absolute top-0 max-sm:top-1 max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
+                : "absolute top-0  max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
+            }
+          >
+            <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+          </svg>
+        </button>
         <hr className="grad-hr" />
       </Link>
     </>

@@ -6,7 +6,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
       className={
-        "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-md:text-sm text-lg  " +
+        "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-[830px]:text-sm text-lg  " +
         (activeList == name && " text-accent-4 dark:text-accent-2 ")
       }
       onClick={(e) => {
@@ -38,7 +38,7 @@ const Nav = ({ overlap, setOverlap }) => {
     <div className="relative grid select-none z-10">
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-[0.4rem]  max-sm:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
+        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-[0.4rem]  max-[700px]:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
           <Nav_li
             name="Wszystko"
             activeList={activeList}
@@ -134,26 +134,28 @@ const Nav = ({ overlap, setOverlap }) => {
             : "hidden"
         }
       >
-        <svg
-          className={
-            navState
-              ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
-              : "hidden"
-          }
-          onClick={() => {
-            document.querySelector("nav").scrollLeft -= 300;
-          }}
-          xmlns="http://www.w3.org/2000/svg"
-          height="2.2em"
-          viewBox="0 0 256 512"
-          fill="var(--text-light)"
-        >
-          <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
-        </svg>
+        <button>
+          <svg
+            className={
+              navState
+                ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
+                : "hidden"
+            }
+            onClick={() => {
+              document.querySelector("nav").scrollLeft -= 400;
+            }}
+            xmlns="http://www.w3.org/2000/svg"
+            height="2.2em"
+            viewBox="0 0 256 512"
+            fill="var(--text-light)"
+          >
+            <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
+          </svg>
+        </button>
         <div
           className={
             navState
-              ? "h-full w-[2px] absolute right-0 bg-gradient-to-b from-transparent via-text-light to-transparent"
+              ? "h-full w-[2px] absolute right-0 top-0 bg-gradient-to-b from-transparent via-text-light to-transparent"
               : "hidden"
           }
         ></div>
@@ -166,32 +168,37 @@ const Nav = ({ overlap, setOverlap }) => {
             : "hidden"
         }
       >
-        <svg
-          className={
-            navState
-              ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
-              : "hidden"
-          }
-          onClick={() => {
-            document.querySelector("nav").scrollLeft += 300;
-          }}
-          xmlns="http://www.w3.org/2000/svg"
-          height="2.2em"
-          viewBox="0 0 256 512"
-          fill="var(--text-light)"
-        >
-          <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
-        </svg>
+        <button>
+          <svg
+            className={
+              navState
+                ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
+                : "hidden"
+            }
+            onClick={() => {
+              document.querySelector("nav").scrollLeft += 400;
+            }}
+            xmlns="http://www.w3.org/2000/svg"
+            height="2.2em"
+            viewBox="0 0 256 512"
+            fill="var(--text-light)"
+          >
+            <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+          </svg>
+        </button>
         <div
           className={
             navState
-              ? "h-full w-[2px] absolute left-0 bg-gradient-to-b from-transparent via-text-light to-transparent"
+              ? "h-full w-[2px] absolute left-0 top-0 bg-gradient-to-b from-transparent via-text-light to-transparent"
               : "hidden"
           }
         ></div>
       </div>
       {/* nav hide icon */}
-      <button className="absolute -top-[2px] max-sm:top-[2px] max-sm:right-2 right-1 ">
+      <button
+        title={navState ? "ukryj nawigację" : "pokaż nawigację"}
+        className="absolute -top-[2px] max-sm:top-[2px] max-sm:right-2 right-1 "
+      >
         <svg
           onClick={(e) => {
             // e.stopPropagation();
@@ -225,7 +232,10 @@ const Nav = ({ overlap, setOverlap }) => {
       </button>
       {/* overlap button */}
       {navState && (
-        <button className="absolute right-[5px] bottom-1 max-sm:hidden ">
+        <button
+          title={!overlap ? "szeroko" : "wąsko"}
+          className="absolute right-[5px] bottom-1 max-sm:hidden "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1.2em"
