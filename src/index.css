@@ -33,7 +33,7 @@ body {
   background-color: var(--bkg);
   text-align: justify;
   animation: fade-in 2s;
-  text-shadow: 1px 1px 0px #00000027;
+  text-shadow: 1px 1px 0px #00000020;
   background-image: url(..\src\assets\binding_light.png);
 }
 .dark body {
@@ -69,14 +69,15 @@ article img {
   max-width: 600px;
   padding: 1rem 0;
   cursor: pointer;
+  filter: drop-shadow(8px 8px 2px rgba(0, 0, 0, 0.1));
 }
 
 svg:hover {
   cursor: pointer;
 }
+
 @media screen and (max-width: 900px) {
   article img {
-    /* max-width: none !important; */
     padding: 1rem 0 !important;
     width: fit-content !important;
     float: none !important;
@@ -86,7 +87,6 @@ svg:hover {
 @media screen and (max-width: 700px) {
   article img {
     width: 100% !important;
-    /* padding: 1rem 0 !important; */
   }
 }
 @media screen and (max-width: 500px) {
@@ -129,9 +129,6 @@ svg:hover {
 }
 .photo-title {
   animation: fade-in 2s forwards 1s;
-}
-article img {
-  filter: drop-shadow(8px 8px 2px rgba(0, 0, 0, 0.1));
 }
 /*********************************/
 /**********  CUSTOM HR  **********/
@@ -197,31 +194,7 @@ hr {
     var(--bkg)
   );
 }
-/* .flash {
-  animation: flash-move 4s infinite forwards ease-in-out;
-}
 
-@keyframes flash-move {
-  0% {
-    left: 0;
-    box-shadow: 0 0 5px 1px white;
-    scale: 0;
-    opacity: 0;
-  }
-
-  50% {
-    box-shadow: 0 0 15px 1px white;
-    scale: 3;
-    opacity: 1;
-  }
-
-  100% {
-    left: 100%;
-    box-shadow: 0 0 5px 1px white;
-    scale: 0;
-    opacity: 0;
-  }
-} */
 /****************************/
 /******** ANIMATIONS ********/
 /****************************/
@@ -315,6 +288,10 @@ article,
     scale: 100%;
   }
 }
+
+/***************************/
+/******** SCROLLBAR ********/
+/***************************/
 
 ::-webkit-scrollbar {
   width: 14px;
