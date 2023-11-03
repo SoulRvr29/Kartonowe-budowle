@@ -41,68 +41,17 @@ const StiloHistory = ({ id }) => {
             zewnętrznymi i mogą być instalowane na zewnątrz bez dodatkowego
             zabezpieczenia) dające światłość 1500000 kandeli na odległość 25 Mm.
           </p>
-          <h4>Dane techniczne</h4>
-          <div className="flex justify-center gap-8 max-md:flex-col">
-            <img
-              className="pr-8 float-left max-h-[500px]"
-              src={src(1)}
-              alt="Stilo"
-              onClick={(e) => {
-                setProp(e);
-                setFullScreen(true);
-              }}
-              title="Obecny wygląd latarni."
-            />
-            <ul className="list-disc pl-8 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left font-bold border-2 h-full border-text-dark rounded-xl p-4 ">
-              <li>
-                Położenie:{" "}
-                <span className="li-span">54°23,988' N 18°41,784' E</span>
-              </li>
 
-              <li>
-                Wysokość wieży:<span className="li-span"> 56,00 m</span>
-              </li>
-              <li>
-                Wysokość światła:{" "}
-                <span className="li-span">61,00 m n.p.m.</span>
-              </li>
-              <li>
-                Zasięg nominalny światła:{" "}
-                <span className="li-span">25,00 Mm (46,30 km)</span>
-              </li>
-              <li>
-                Sektor widzialności światła:
-                <span className="li-span"> 140&deg;-320&deg;</span>
-              </li>
-              <li>
-                Charakterystyka światła:{" "}
-                <span className="li-span">Błyskowe grupowe</span>
-                <ul className="list-disc pl-6 pt-2">
-                  <li>
-                    Błysk: <span className="li-span">0,5 s</span>
-                  </li>
-                  <li>
-                    Przerwa: <span className="li-span">1,5 s</span>
-                  </li>
-                  <li>
-                    Błysk: <span className="li-span">0,5 s</span>
-                  </li>
-                  <li>
-                    Przerwa: <span className="li-span">1,5 s</span>
-                  </li>
-                  <li>
-                    Błysk: <span className="li-span">0,5 s</span>
-                  </li>
-                  <li>
-                    Przerwa: <span className="li-span">4,5 s</span>
-                  </li>
-                  <li>
-                    Okres (pełny cykl): <span className="li-span">9,0 s</span>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <img
+            className="pr-8 float-left max-h-[500px]"
+            src={src(1)}
+            alt="Stilo"
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+            title="Obecny wygląd latarni."
+          />
         </article>
       )}
     </>

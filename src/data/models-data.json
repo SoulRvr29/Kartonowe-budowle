@@ -528,6 +528,23 @@
       "Ilość stron": 4,
       "Wysokość": "45cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°23,988' N 18°41,784' E",
+      "Wysokość wieży": "56,00 m",
+      "Wysokość światła": "61,00 m n.p.m.",
+      "Zasięg nominalny światła": "25,00 Mm (46,30 km)",
+      "Sektor widzialności światła": "140°-320°",
+      "Charakterystyka światła": "Błyskowe grupowe"
+    },
+    "Fazy światła": {
+      "1": "Błysk 0,5 s",
+      "2": "Przerwa 1,5 s",
+      "3": "Błysk 0,5 s",
+      "4": "Przerwa 1,5 s",
+      "5": "Błysk 0,5 s",
+      "6": "Przerwa 4,5 s",
+      "Okres": "9,0 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 13,

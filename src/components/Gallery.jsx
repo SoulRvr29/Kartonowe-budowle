@@ -35,7 +35,6 @@ const Gallery = ({ id, name }) => {
   };
 
   onkeydown = (e) => {
-    console.log(e.key);
     e.key === "ArrowLeft" && imgSwitchHandler("left");
     e.key === "ArrowRight" && imgSwitchHandler("right");
   };
