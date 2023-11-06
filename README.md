@@ -1,5 +1,5 @@
 # Kartonowe-budowle
 
-Strona ze sklejonymi przeze mnie modelami kartonowymi.
+### Strona ze sklejonymi przeze mnie modelami kartonowymi.
 
-Link: https://soulrvr29.github.io/Kartonowe-budowle/
+Link do strony: https://soulrvr29.github.io/Kartonowe-budowle/
