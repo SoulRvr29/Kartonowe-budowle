@@ -130,6 +130,11 @@ svg:hover {
 .photo-title {
   animation: fade-in 2s forwards 1s;
 }
+.timer {
+  opacity: 0;
+  animation: fade-in 1s 1s forwards;
+}
+
 /*********************************/
 /**********  CUSTOM HR  **********/
 /*********************************/
@@ -160,6 +165,7 @@ hr {
   border: none;
   height: 1px;
   margin: 0.5rem 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 /********************************/
