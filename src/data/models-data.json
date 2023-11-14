@@ -251,6 +251,21 @@
       "Ilość stron": 2,
       "Wysokość": "30cm"
     },
+    "Dane techniczne": {
+      "Wysokość wieży": "49,80 m",
+      "Wysokość światła": "51,10 m n.p.m.",
+      "Zasięg nominalny światła": "23,50 Mm (43,522 km)",
+      "Charakterystyka światła": " Przerywane grupowe"
+    },
+    "Fazy światła": {
+      "Okres": "15,0 s",
+      "1": "Przerwa 1,2 s",
+      "2": "Światło 2,5 s",
+      "3": "Przerwa 1,2 s",
+      "4": "Światło 2,5 s",
+      "5": "Przerwa 1,2 s",
+      "6": "Światło 6,4 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 8,
