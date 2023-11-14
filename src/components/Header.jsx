@@ -70,7 +70,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         {/* left side */}
         <div className="flex gap-2 mt-1">
           <button>
-            <Link to="/Kartonowe-budowle/" title="strona główna" reloadDocument>
+            <Link to="/" title="strona główna" reloadDocument>
               <svg
                 className="hover:brightness-150 opacity-50 dark:opacity-100 transition-all max-sm:h-[0.9rem]"
                 height="1.25em"
