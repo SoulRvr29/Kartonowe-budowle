@@ -32,12 +32,14 @@ nav {
 body {
   background-color: var(--bkg);
   text-align: justify;
-  animation: fade-in 2s;
+  animation: fade-in 3s;
   text-shadow: 1px 1px 0px #00000020;
-  background-image: url(..\src\assets\binding_light.png);
 }
-.dark body {
+.dark .bkg-texture {
   background-image: url(..\src\assets\binding_dark.png);
+}
+.bkg-texture {
+  background-image: url(..\src\assets\binding_light.png);
 }
 .bkg-sides {
   background-color: #888;
