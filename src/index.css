@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: digit;
-  src: url(../public/fonts/DS-DIGIT.TTF);
-  src: url(../public/fonts/alarm\ clock.ttf);
+  /*src: url(../public/fonts/DS-DIGIT.TTF);*/
+  src: url(/fonts/alarm\ clock.ttf);
 }
 
 /*****************************/
