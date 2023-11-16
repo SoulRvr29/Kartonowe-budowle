@@ -7,6 +7,8 @@ export default {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         Calistoga: "Calistoga",
+        Orbitron: "Orbitron",
+        digit: "digit",
       },
       colors: {
         bkg: "rgb(30, 30, 30)",

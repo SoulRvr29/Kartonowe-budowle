@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Settings from "./Settings";
+import Timer from "../components/Timer";
 
 function App({ bannerState, setBannerState, overlap, setOverlap }) {
   if (localStorage.getItem("darkMode") == null)
@@ -63,15 +64,15 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
 
   const [settingsState, setSettingsState] = useState(false);
   return (
-    <div className="relative">
-      <header className="relative px-4 max-[400px]:px-2 flex justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 ">
+    <div className="relative ">
+      <header className="relative px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[420px]:flex-wrap max-[420px]:justify-center ">
         {/* left side */}
-        <div className="mt-1">
-          <button>
+        <div className="flex gap-2 mt-1">
+          <button className="mb-1">
             <Link to="/Kartonowe-budowle/" title="strona główna" reloadDocument>
               <svg
                 className="hover:brightness-150 opacity-50 dark:opacity-100 transition-all max-sm:h-[0.9rem]"
-                height="1.25em"
+                height="1.1em"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
                 fill="var(--text-dark)"
@@ -80,10 +81,11 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
               </svg>
             </Link>
           </button>
+          <Timer />
         </div>
         {/* main title */}
-        <div className="flex gap-2 justify-center align-middle place-items-center">
-          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1">
+        <div className="flex gap-2 justify-center align-middle place-items-center  max-[420px]:order-first max-[420px]:w-full max-[420px]:-mb-2">
+          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[420px]:text-[7vw]">
             Kartonowe &nbsp;budowle
           </h1>
         </div>

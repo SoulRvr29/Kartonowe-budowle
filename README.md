@@ -4,4 +4,4 @@
 
 Link do strony: https://soulrvr29.github.io/Kartonowe-budowle/
 
-![](screenshot.jpeg)
+![screenshot](screenshot.jpeg)
