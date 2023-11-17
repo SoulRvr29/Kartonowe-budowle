@@ -65,9 +65,9 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const [settingsState, setSettingsState] = useState(false);
   return (
     <div className="relative ">
-      <header className="relative px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[420px]:flex-wrap max-[420px]:justify-center ">
+      <header className="relative px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[460px]:flex-wrap max-[460px]:justify-center py-2 max-[460px]:py-0 mb-1">
         {/* left side */}
-        <div className="flex gap-2 mt-1">
+        <div className="flex gap-2 z-10 -mb-2 max-[460px]:mb-0">
           <button className="mb-1">
             <Link to="/Kartonowe-budowle/" title="strona główna" reloadDocument>
               <svg
@@ -84,13 +84,13 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           <Timer />
         </div>
         {/* main title */}
-        <div className="flex gap-2 justify-center align-middle place-items-center  max-[420px]:order-first max-[420px]:w-full max-[420px]:-mb-2">
-          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[420px]:text-[7vw]">
+        <div className="absolute w-full flex gap-2 justify-center max-[460px]:static max-[460px]:-order-1">
+          <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
             Kartonowe &nbsp;budowle
           </h1>
         </div>
         {/* right side */}
-        <div className="flex gap-2 mt-1">
+        <div className="flex gap-2 z-10 -mb-2 max-[460px]:mb-0">
           {/* gear icon */}
           <button title="ustawienia">
             <svg
