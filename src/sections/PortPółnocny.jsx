@@ -10,8 +10,8 @@ const Article = ({ id }) => {
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
-      <LightInfo id={id} />
       <PortPółnocny id={id} />
+      <LightInfo id={id} />
     </>
   );
 };

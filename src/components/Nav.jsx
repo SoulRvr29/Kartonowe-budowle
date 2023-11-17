@@ -11,7 +11,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);
-        if (name == "Wszystko") setData(completeData);
+        if (name == "Wszystkie modele") setData(completeData);
         else {
           setData(
             completeData.filter((item) => {
@@ -32,7 +32,7 @@ const Nav = ({ overlap, setOverlap }) => {
   });
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
-  const [activeList, setActiveList] = useState("Wszystko");
+  const [activeList, setActiveList] = useState("Wszystkie modele");
 
   return (
     <div className="relative grid select-none z-10">
@@ -40,7 +40,7 @@ const Nav = ({ overlap, setOverlap }) => {
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
         <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-[0.4rem]  max-[700px]:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
           <Nav_li
-            name="Wszystko"
+            name="Wszystkie modele"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
