@@ -72,7 +72,7 @@ article {
   padding: 1rem 2rem;
   z-index: 10;
 }
-article img {
+article > img {
   max-width: 500px;
   padding: 1rem 0;
   cursor: pointer;
@@ -84,7 +84,7 @@ svg:hover {
 }
 
 @media screen and (max-width: 900px) {
-  article img {
+  article > img {
     padding: 1rem 0 !important;
     width: fit-content !important;
     float: none !important;
@@ -92,7 +92,7 @@ svg:hover {
   }
 }
 @media screen and (max-width: 700px) {
-  article img {
+  article > img {
     width: 100% !important;
   }
 }
@@ -137,6 +137,12 @@ svg:hover {
 .photo-title {
   animation: fade-in 2s forwards 1s;
 }
+
+.photo-container:hover .photo-div {
+  visibility: visible;
+  animation: fade-in 1s forwards;
+}
+
 /*********************************/
 /**********  CUSTOM HR  **********/
 /*********************************/
@@ -324,4 +330,8 @@ article,
 
 .dark ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-2);
+}
+
+.img-grid div:last-child {
+  flex-grow: 0;
 }
