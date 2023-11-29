@@ -333,5 +333,9 @@ article,
 }
 
 .img-grid div:last-child {
+  /* flex-grow: 0; */
+}
+.img-grid > div:last-child,
+.img-grid > div:nth-last-child(2) {
   flex-grow: 0;
 }
