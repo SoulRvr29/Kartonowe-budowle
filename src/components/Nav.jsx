@@ -6,8 +6,9 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
       className={
-        "nav-li hover:underline hover:decoration-2 hover:underline-offset-2 max-[830px]:text-sm text-lg  " +
-        (activeList == name && " text-accent-4 dark:text-accent-2 ")
+        "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg  " +
+        (activeList == name &&
+          " text-accent-4 dark:text-accent-2 hover:cursor-default")
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);
@@ -22,6 +23,9 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       }}
     >
       <li className="active-li">{name}</li>
+      {activeList != name && (
+        <div className="custom-underline dark:bg-accent-2 bg-accent-4 h-[2px] w-0 justify-self-center transition-all duration-300"></div>
+      )}
     </button>
   );
 };

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import data from "../data/home-photos-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ImagesGrid = () => {
   const randomArr = (length) => {
@@ -28,7 +29,10 @@ const ImagesGrid = () => {
   return (
     <div className="img-grid flex flex-wrap gap-2">
       {photoSrc.map((src, index) => (
-        <div className="relative h-[25vh] grow max-md:h-[40vh] max-[540px]:h-auto border-2 border-bkg hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] ">
+        <div
+          key={index}
+          className="relative h-[25vh] grow max max-[440px]:h-auto border-2 border-bkg hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] "
+        >
           <NavLink
             to={data[order[index] - 1].link}
             onClick={() =>
@@ -36,8 +40,10 @@ const ImagesGrid = () => {
             }
           >
             <div className="photo-container h-full w-full">
-              <img
-                className=" hover:cursor-pointer max-h-full min-w-full  object-cover align-bottom max-[540px]:object-contain max-[540px]:w-full max-[540px]:h-auto"
+              <LazyLoadImage
+                className=" hover:cursor-pointer max-h-full min-w-full  object-cover align-bottom max-[440px]:object-contain max-[440px]:w-[full] max-[440px]:px-10 max-[440px]:py-1 max-[440px]:h-auto"
+                width={300}
+                height={300}
                 src={src}
                 alt={data[order[index] - 1].name}
               />

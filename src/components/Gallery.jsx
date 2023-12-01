@@ -1,5 +1,6 @@
 import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Gallery = ({ id, name }) => {
   if (name === undefined) name = "Galeria";
@@ -119,9 +120,11 @@ const Gallery = ({ id, name }) => {
                     setPhotoId(e.target.attributes.value.value);
                   }}
                 >
-                  <img
+                  <LazyLoadImage
+                    width={160}
+                    height={160}
                     value={loc.slice(-6, -4)}
-                    className="h-[10rem] border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
+                    className="h-[10rem] w-auto border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
                     src={loc}
                     alt={model.name + " photo"}
                   />

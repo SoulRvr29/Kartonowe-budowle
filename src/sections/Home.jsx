@@ -14,7 +14,7 @@ const Article = () => {
         <hr className="grad-hr" />
       </header>
       <article className=" mb-8">
-        <h4>Poniżej przykładowe zdjęcia</h4>
+        {/* <h4 className="max-sm:text-base">Poniżej przykładowe zdjęcia</h4> */}
         <ImagesGrid />
       </article>
     </>

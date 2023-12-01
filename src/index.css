@@ -143,6 +143,9 @@ svg:hover {
   animation: fade-in 1s forwards;
 }
 
+.nav-li:hover .custom-underline {
+  width: 100%;
+}
 /*********************************/
 /**********  CUSTOM HR  **********/
 /*********************************/
@@ -332,9 +335,6 @@ article,
   background: var(--accent-2);
 }
 
-.img-grid div:last-child {
-  /* flex-grow: 0; */
-}
 .img-grid > div:last-child,
 .img-grid > div:nth-last-child(2) {
   flex-grow: 0;
