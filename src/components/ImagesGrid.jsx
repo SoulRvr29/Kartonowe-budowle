@@ -31,7 +31,7 @@ const ImagesGrid = () => {
       {photoSrc.map((src, index) => (
         <div
           key={index}
-          className="relative h-[25vh] grow max max-[440px]:h-auto border-2 border-bkg hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] "
+          className="relative h-[25vh] grow max max-[440px]:h-auto border-2 border-bkg border-opacity-50 hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] "
         >
           <NavLink
             to={data[order[index] - 1].link}

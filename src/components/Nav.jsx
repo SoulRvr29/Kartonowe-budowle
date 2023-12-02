@@ -142,7 +142,7 @@ const Nav = ({ overlap, setOverlap }) => {
           <svg
             className={
               navState
-                ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
+                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
                 : "hidden"
             }
             onClick={() => {
@@ -176,7 +176,7 @@ const Nav = ({ overlap, setOverlap }) => {
           <svg
             className={
               navState
-                ? "fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)] hover:scale-125 transition-all hover:fill-accent-2"
+                ? "arrow-r fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
                 : "hidden"
             }
             onClick={() => {
