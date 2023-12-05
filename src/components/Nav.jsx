@@ -13,6 +13,12 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       onClick={(e) => {
         setActiveList(e.target.outerText);
         if (name == "Wszystkie modele") setData(completeData);
+        else if (name == "Z oświetleniem")
+          setData(
+            completeData.filter((item) => {
+              return item.oświetlenie == true;
+            })
+          );
         else {
           setData(
             completeData.filter((item) => {
@@ -93,6 +99,14 @@ const Nav = ({ overlap, setOverlap }) => {
           -
           <Nav_li
             name="Samoloty"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
+          -
+          <Nav_li
+            name="Z oświetleniem"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}

@@ -169,7 +169,7 @@
       var(--text-light),
       transparent
     );
-    opacity: 0.5;
+    opacity: 0.3;
     margin: 0;
     height: 2px;
   }
@@ -361,11 +361,11 @@
     }
   }
   .arrow-up-down:hover .arrow-up {
-    animation: up-anim 1s infinite linear;
+    animation: up-anim 1s 0.3s infinite linear;
     scale: 125%;
   }
   .arrow-up-down:hover .arrow-down {
-    animation: down-anim 1s infinite linear;
+    animation: down-anim 1s 0.3s infinite linear;
     scale: 125%;
   }
 
