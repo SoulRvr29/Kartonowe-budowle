@@ -255,42 +255,48 @@
   /****************************/
 
   /***** BANNER *****/
-  .banner-section {
-    opacity: 0;
+
+  .banner-anim {
+    animation: 15s linear scrolling-anim;
   }
-  .banner-on {
-    opacity: 1;
+  .banner-text-anim {
+    animation: 15s linear banner-text-anim;
   }
-  .banner-fade-in {
-    animation: banner-fade-in 1s forwards linear;
-  }
-  .banner-fade-out {
-    animation: banner-fade-out 1s forwards linear;
-  }
-  .banner-scroll {
-    animation: banner-scroll 20s infinite linear;
-  }
-  @keyframes banner-scroll {
-    0% {
-      bottom: 65%;
-    }
-    100% {
-      bottom: 2%;
-    }
-  }
-  @keyframes banner-fade-in {
+
+  @keyframes banner-text-anim {
     0% {
       opacity: 0;
     }
-    100% {
+    10% {
+      opacity: 0;
+    }
+    20% {
       opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
     }
   }
-  @keyframes banner-fade-out {
+
+  @keyframes scrolling-anim {
     0% {
+      bottom: 65%;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
       opacity: 1;
     }
     100% {
+      bottom: 2%;
       opacity: 0;
     }
   }

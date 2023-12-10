@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";
 
@@ -8,38 +8,21 @@ const Banner = ({ bannerState, setBannerState }) => {
   const [link, setLink] = useState(bannerData[0].link);
   const [index, setIndex] = useState(1);
 
-  useEffect(() => {
-    const section = document.querySelector(".banner-section");
-    const img = document.querySelector(".banner-img");
-    let interval1;
-    img.classList.remove("banner-scroll");
-    img.classList.add("banner-scroll");
-    setTimeout(() => {
-      section.classList.add("banner-fade-out");
-    }, 19000);
+  const animEndHandler = () => {
+    setIndex(index + 1);
+    if (index >= bannerData.length - 1) setIndex(0);
 
-    interval1 = setInterval(() => {
-      setIndex(index + 1);
-      if (index >= bannerData.length - 1) setIndex(0);
-      setImage(() => bannerData[index].source);
-      setName(() => bannerData[index].name);
-      setLink(() => bannerData[index].link);
-      img.classList.remove("banner-scroll");
-      void img.offsetWidth;
-      img.classList.add("banner-scroll");
-      section.classList.remove("banner-fade-out");
-      section.classList.add("banner-fade-in");
-      setTimeout(() => {
-        section.classList.remove("banner-fade-in");
-      }, 1000);
-      setTimeout(() => {
-        section.classList.add("banner-fade-out");
-      }, 19000);
-    }, 20000);
-    return () => {
-      clearInterval(interval1);
-    };
-  });
+    setImage(() => bannerData[index].source);
+    setName(() => bannerData[index].name);
+    setLink(() => bannerData[index].link);
+    document.querySelector(".banner-img").classList.remove("banner-anim");
+    document.querySelector(".banner-text").classList.remove("banner-text-anim");
+  };
+
+  const imgLoadHandler = () => {
+    document.querySelector(".banner-img").classList.add("banner-anim");
+    document.querySelector(".banner-text").classList.add("banner-text-anim");
+  };
 
   return (
     <>
@@ -48,26 +31,32 @@ const Banner = ({ bannerState, setBannerState }) => {
         <section
           className={
             bannerState == true
-              ? "banner-section banner-on pointer  h-[200px] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col"
-              : "banner-section banner-on pointer  h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
+              ? "banner-section pointer h-[200px] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col"
+              : "banner-section pointer h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
           }
         >
-          <h2 className=" absolute z-[15] bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs">
-            {name}
-          </h2>
-          <div className="grid  transition-all duration-1000 ">
+          {bannerState && (
+            <h2 className="banner-text opacity-0 absolute z-[15] bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs">
+              {name}
+            </h2>
+          )}
+          <div className="grid ">
             {/* gradient */}
             <div className="w-full h-full absolute grad banner-grad z-10"></div>
-            <img
-              className="banner-img relative bottom-[11rem] place-self-center w-screen min-w-max max-[400px]:min-w-[600px] max-[400px]:mb-[3rem] max-[400px]:ml-[-4rem] "
-              src={image}
-              alt="banner photo"
-            />
+            {bannerState && (
+              <img
+                onAnimationEnd={() => animEndHandler()}
+                onLoad={() => imgLoadHandler()}
+                className="banner-img opacity-0 relative bottom-[11rem] place-self-center w-screen min-w-max max-[400px]:min-w-[600px] max-[400px]:mb-[3rem] max-[400px]:ml-[-4rem] "
+                src={image}
+                alt="banner photo"
+              />
+            )}
           </div>
         </section>
         {/* show banner button */}
         <button
-          onClick={(e) => {
+          onClick={() => {
             setBannerState(!bannerState);
           }}
           className={
@@ -83,6 +72,8 @@ const Banner = ({ bannerState, setBannerState }) => {
           <svg
             onClick={(e) => {
               setBannerState(!bannerState);
+              e.stopPropagation();
+              e.preventDefault();
             }}
             xmlns="http://www.w3.org/2000/svg"
             height="1.5em"
