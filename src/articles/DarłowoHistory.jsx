@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const DarłowoHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
@@ -25,7 +26,7 @@ const DarłowoHistory = ({ id }) => {
       )}
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
-          <img
+          <LazyLoadImage
             className="pr-8 pt-0 float-left w-[400px]"
             src={src(1)}
             alt="Latarina Darłowo"

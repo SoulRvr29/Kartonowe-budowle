@@ -155,10 +155,21 @@
   }
 
   .model-info {
+    overflow: hidden;
     animation: rotateX 1.5s;
   }
   .info-text {
-    animation: rotateY 1.5s 0.5s;
+    transform: translateX(-110%);
+    animation: text-slide 1.5s 1s forwards;
+  }
+
+  @keyframes text-slide {
+    0% {
+      transform: translateX(-110%);
+    }
+    100% {
+      transform: translateX(0rem);
+    }
   }
   @keyframes rotateY {
     0%,
@@ -183,6 +194,31 @@
     }
   }
 
+  .loading-icon {
+    animation:
+      rotation 1s linear infinite,
+      fade-delay 1s linear forwards;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fade-delay {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   /*********************************/
   /**********  CUSTOM HR  **********/
   /*********************************/
@@ -234,6 +270,31 @@
   .active-section:hover {
     text-decoration: none;
     cursor: default;
+  }
+
+  .dark .cards-container div {
+    animation: cards-reload-dark 1s forwards;
+  }
+  .cards-container div {
+    animation: cards-reload-light 1s forwards;
+  }
+
+  @keyframes cards-reload-light {
+    0% {
+      filter: brightness(1.5);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+
+  @keyframes cards-reload-dark {
+    0% {
+      filter: brightness(0.25);
+    }
+    100% {
+      filter: brightness(1);
+    }
   }
   /************************/
   /******** BANNER ********/
@@ -449,5 +510,26 @@
     50% {
       filter: brightness(170%) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
     }
+  }
+}
+h1 {
+  display: flex;
+}
+h1 div {
+  /* animation: letter-rotate 3s forwards; */
+  display: block;
+  transform: rotateY(90deg);
+}
+
+@keyframes letter-rotate {
+  10% {
+    transform: rotateY(90deg);
+  }
+  20% {
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
   }
 }

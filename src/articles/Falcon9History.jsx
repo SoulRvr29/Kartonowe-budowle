@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Falcon9History = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
@@ -37,7 +38,7 @@ const Falcon9History = ({ id }) => {
             Początkowo były to silniki w wersji 1C, które później zastąpiono
             nowszymi wersjami silnika.
           </p>
-          <img
+          <LazyLoadImage
             className="mx-auto  max-w-4xl hover:cursor-pointer"
             src={src(2)}
             alt="Rodzina rakiet Falcon."
@@ -57,7 +58,7 @@ const Falcon9History = ({ id }) => {
             pierwszym załogowym lotem kosmicznym z terytorium USA od czasu
             ostatniej misji programu wahadłowców, STS-135.
           </p>
-          <img
+          <LazyLoadImage
             className="mx-auto hover:cursor-pointer"
             src={src(1)}
             alt="Start rakiety Falcon 9."

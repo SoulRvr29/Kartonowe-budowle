@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CuriosityHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
@@ -25,7 +26,7 @@ const CuriosityHistory = ({ id }) => {
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
           <p>
-            <img
+            <LazyLoadImage
               className="pl-8 float-right hover:cursor-pointer"
               src={src(2)}
               alt="będzin"
@@ -80,7 +81,7 @@ const CuriosityHistory = ({ id }) => {
             ponieważ łączą się tam trzy różne typy terenu charakterystyczne dla
             marsjańskiego krajobrazu.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 float-left max-w-[300px]"
             src={src(1)}
             alt="będzin"

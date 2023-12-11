@@ -1,6 +1,7 @@
 import modelsData from "../data/models-data.json";
 import SectionHeader from "../components/SectionHeader";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CuriosityModel = ({ id }) => {
   const data = modelsData[id];
@@ -15,7 +16,7 @@ const CuriosityModel = ({ id }) => {
       />
       {sectionState === true && (
         <section className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4">
-          <img
+          <LazyLoadImage
             className="h-[200px] w-auto max-sm:border-none border-2 border-accent"
             src={data.cover}
             alt="okładka"

@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SandomierzHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
@@ -25,7 +26,7 @@ const SandomierzHistory = ({ id }) => {
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
           <h4>Ratusz w Sandomierzu</h4>
-          <img
+          <LazyLoadImage
             className="pr-8 float-left max-w-[400px]"
             src={src(1)}
             alt="ratusz"
@@ -60,7 +61,7 @@ const SandomierzHistory = ({ id }) => {
           <p>
             O godzinie 12.00 z wieży ratuszowej grany jest hejnał sandomierski.
           </p>
-          <img
+          <LazyLoadImage
             className="pl-8 mx-auto"
             src={src(2)}
             alt="ratusz"
@@ -72,7 +73,7 @@ const SandomierzHistory = ({ id }) => {
           />
           <hr className="dark:bg-accent-2 bg-accent-4 " />
           <h4 className="">Brama Opatowska</h4>
-          <img
+          <LazyLoadImage
             className="pr-8 float-left max-w-md"
             src={src(3)}
             alt="brama"

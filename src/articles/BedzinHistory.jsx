@@ -1,6 +1,7 @@
 import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import data from "../data/models-data.json";
 
 const BedzinHistory = ({ id }) => {
@@ -39,7 +40,7 @@ const BedzinHistory = ({ id }) => {
             archeologicznych (m.in. metodą dendrochronologii) pochodzą z lat
             wcześniejszych.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 float-left hover:cursor-pointer"
             src={src(5)}
             alt="będzin"
@@ -108,7 +109,7 @@ const BedzinHistory = ({ id }) => {
             Montecuculliego i Sporka. Gdy w 1660 lustratorzy królewscy zjechali
             do Będzina, rozkazali zamek odbudować co nastąpiło w 1665.
           </p>
-          <img
+          <LazyLoadImage
             className="pl-8 float-right "
             src={src(1)}
             alt="będzin"
@@ -160,7 +161,7 @@ const BedzinHistory = ({ id }) => {
             odbudowy zamku i murów. Własnym kosztem obsadził wzgórze drzewami,
             dając początek dzisiejszemu parkowi.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 float-left"
             src={src(6)}
             alt="będzin"
@@ -234,7 +235,7 @@ const BedzinHistory = ({ id }) => {
             podpisanie paktu będzińskiego. Kamień umieszczono w ogrodzie J.
             Gęborskiego.
           </p>
-          <img
+          <LazyLoadImage
             className="mx-auto"
             src={src(4)}
             alt="będzin"

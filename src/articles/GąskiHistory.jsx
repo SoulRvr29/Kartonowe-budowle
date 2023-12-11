@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const GąskiHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
@@ -44,7 +45,7 @@ const GąskiHistory = ({ id }) => {
             żarówką.
           </p>
           <div className="flex justify-center gap-8">
-            <img
+            <LazyLoadImage
               className=" max-h-[500px]"
               src={src(1)}
               alt="Gąski"
@@ -54,7 +55,7 @@ const GąskiHistory = ({ id }) => {
               }}
               title="Obecny wygląd latarni."
             />
-            <img
+            <LazyLoadImage
               className=" max-h-[500px]"
               src={src(2)}
               alt="Gąski"

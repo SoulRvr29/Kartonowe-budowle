@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StiloHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
@@ -42,7 +43,7 @@ const StiloHistory = ({ id }) => {
             zabezpieczenia) dające światłość 1500000 kandeli na odległość 25 Mm.
           </p>
 
-          <img
+          <LazyLoadImage
             className="pr-8 float-left max-h-[500px]"
             src={src(1)}
             alt="Stilo"

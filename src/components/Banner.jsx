@@ -26,7 +26,13 @@ const Banner = ({ bannerState, setBannerState }) => {
 
   return (
     <>
-      <Link to={bannerState === true && link} className="relative z-10 grid">
+      <Link
+        onClick={() =>
+          document.querySelector(".article-header").scrollIntoView()
+        }
+        to={bannerState === true && link}
+        className="relative z-10 grid"
+      >
         <hr className="grad-hr" />
         <section
           className={
@@ -56,8 +62,10 @@ const Banner = ({ bannerState, setBannerState }) => {
         </section>
         {/* show banner button */}
         <button
-          onClick={() => {
+          onClick={(e) => {
             setBannerState(!bannerState);
+            e.stopPropagation();
+            e.preventDefault();
           }}
           className={
             !bannerState

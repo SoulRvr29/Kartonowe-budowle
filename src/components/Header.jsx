@@ -15,6 +15,17 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     JSON.parse(localStorage.getItem("fontSize"))
   );
 
+  const titleAnimation = () => {
+    const title = document.querySelectorAll("h1 div");
+    let timeout = 100;
+    title.forEach((letter) => {
+      setTimeout(() => {
+        letter.style.animation = "letter-rotate 1s forwards";
+      }, timeout);
+      timeout += 100;
+    });
+  };
+
   useEffect(() => {
     if (!darkMode) {
       document.querySelector("html").classList.remove("dark");
@@ -26,6 +37,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
       document.querySelector(".grad").classList.add("banner-grad");
     }
     fontSize();
+    titleAnimation();
   }, []);
 
   const fontSize = () => {
@@ -86,8 +98,26 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         {/* main title */}
         <div className="absolute w-full flex gap-2 justify-center max-[460px]:static max-[460px]:-order-1">
           <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
-            Kartonowe &nbsp;budowle
+            <div>k</div>
+            <div>a</div>
+            <div>r</div>
+            <div>t</div>
+            <div>o</div>
+            <div>n</div>
+            <div>o</div>
+            <div>w</div>
+            <div>e</div>&nbsp;&nbsp;
+            <div>b</div>
+            <div>u</div>
+            <div>d</div>
+            <div>o</div>
+            <div>w</div>
+            <div>l</div>
+            <div>e</div>
           </h1>
+          {/* <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
+            Kartonowe &nbsp;budowle
+          </h1> */}
         </div>
         {/* right side */}
         <div className="flex gap-2 z-10 -mb-1 max-[460px]:mb-1 max-[460px]:gap-4">

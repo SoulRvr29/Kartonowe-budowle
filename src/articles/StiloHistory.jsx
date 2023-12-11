@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StiloHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
@@ -39,7 +40,7 @@ const StiloHistory = ({ id }) => {
           </p>
           <h4>Dane techniczne</h4>
           <div className="flex justify-center gap-8 max-md:flex-col">
-            <img
+            <LazyLoadImage
               className="pr-8 float-left"
               src={src(1)}
               alt="Stilo"
@@ -109,7 +110,7 @@ const StiloHistory = ({ id }) => {
             modernizację, wprowadzając oświetlenie żarówką o mocy 2000 W i
             instalując rezerwowe oświetlenie gazowe.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 float-left"
             src={src(3)}
             alt="Stilo"
@@ -173,7 +174,7 @@ const StiloHistory = ({ id }) => {
             Łozicki wraz z małżonką Weroniką (jedna z trzech kobiet –
             latarników), a następnie wnuk – Damian Łozicki.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 mx-auto"
             src={src(2)}
             alt="Stilo"

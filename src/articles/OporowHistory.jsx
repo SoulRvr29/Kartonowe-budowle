@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const OporowHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
@@ -36,7 +37,7 @@ const OporowHistory = ({ id }) => {
             Oporowa, co może świadczyć o tym, iż miejscowość była już w tym
             czasie siedzibą rodu.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 mx-auto"
             src={src(2)}
             alt="Oporów"
@@ -161,7 +162,7 @@ const OporowHistory = ({ id }) => {
             około 1790 roku. W 1792 roku dobra oporowskie przeszły w posiadanie
             Kajetana Korzeniowskiego herbu Lis, pisarza litewskiego.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 mx-auto"
             src={src(3)}
             alt="Oporów"
@@ -224,7 +225,7 @@ const OporowHistory = ({ id }) => {
             (to głównie obrazy i inne cenne przedmioty). Większość ze zbiorów
             także udostępniona dla zwiedzających.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 mx-auto"
             src={src(1)}
             alt="Oporów"

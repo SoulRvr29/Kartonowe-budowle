@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const GryfinoHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
@@ -24,7 +25,7 @@ const GryfinoHistory = ({ id }) => {
       )}
       {historyState === true && (
         <article className="px-8">
-          <img
+          <LazyLoadImage
             className="pr-8 pt-2 float-left hover:cursor-pointer"
             src={src(1)}
             alt="Kościół w gryfinie"
@@ -70,7 +71,7 @@ const GryfinoHistory = ({ id }) => {
             stożek na wieży na kolidujący architekturą gotyku hełm neobarokowy.
             Od 1945 jest to ponownie świątynia katolicka.
           </p>
-          <img
+          <LazyLoadImage
             className="pr-8 pt-2 max-w-[700px] mx-auto hover:cursor-pointer"
             src={src(2)}
             alt="Kościół w gryfinie"

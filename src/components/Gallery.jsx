@@ -16,6 +16,7 @@ const Gallery = ({ id, name }) => {
     model[name][actualSection].quantity
   );
   const [actualSrc, setActualSrc] = useState([]);
+  const [loadingIcon, setLoadingIcon] = useState(false);
 
   useEffect(() => {
     getPhotosSrc(gallerySections[0]);
@@ -43,11 +44,17 @@ const Gallery = ({ id, name }) => {
   const imgSwitchHandler = (direction) => {
     let nr = Number.parseInt(photoId);
     if (direction === "left") {
-      if (nr > 1) nr--;
+      if (nr > 1) {
+        nr--;
+        setLoadingIcon(true);
+      }
       if (nr < 10) nr = "0" + nr;
     }
     if (direction === "right") {
-      if (nr < galleryLength) nr++;
+      if (nr < galleryLength) {
+        nr++;
+        setLoadingIcon(true);
+      }
       if (nr < 10) nr = "0" + nr;
     }
     setPhotoId(nr);
@@ -115,6 +122,7 @@ const Gallery = ({ id, name }) => {
                   key={loc}
                   onClick={(e) => {
                     setFullScreen(true);
+                    setLoadingIcon(true);
                     document
                       .querySelector("body")
                       .classList.add("site-overflow");
@@ -155,15 +163,11 @@ const Gallery = ({ id, name }) => {
               }
             >
               {/* close icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="3em"
-                viewBox="0 0 384 512"
-                fill="white"
+              <button
                 className={
                   photoMaxWidth == false
-                    ? "absolute hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 right-0 top-0 m-8 max-sm:justify-self-center max-sm:right-auto max-sm:m-2"
-                    : "fixed opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
+                    ? "p-1 px-2 absolute hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 right-0 top-0 m-8 max-sm:justify-self-center max-sm:right-auto max-sm:m-2"
+                    : "p-1 px-2 fixed opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
                 }
                 onClick={(e) => {
                   e.stopPropagation();
@@ -174,44 +178,65 @@ const Gallery = ({ id, name }) => {
                     .classList.remove("site-overflow");
                 }}
               >
-                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="3em"
+                  viewBox="0 0 384 512"
+                  fill="white"
+                >
+                  <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+              </button>
               {/* left icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="3em"
-                viewBox="0 0 320 512"
-                fill="white"
-                className={
-                  photoMaxWidth == false
-                    ? "gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:ml-2 "
-                    : "fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-2 "
-                }
-                onClick={(e) => {
-                  e.stopPropagation();
-                  imgSwitchHandler("left");
-                }}
-              >
-                <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-              </svg>
+              {photoId != 1 && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    imgSwitchHandler("left");
+                  }}
+                  className={
+                    photoMaxWidth == false
+                      ? "p-1 px-2  gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:ml-2 "
+                      : "p-1 px-2  fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-2 "
+                  }
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3em"
+                    viewBox="0 0 320 512"
+                    fill="white"
+                  >
+                    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                  </svg>
+                </button>
+              )}
               {/* right icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="3em"
-                viewBox="0 0 320 512"
-                fill="white"
-                className={
-                  photoMaxWidth == false
-                    ? "fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:mr-2"
-                    : "fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-2"
-                }
-                onClick={(e) => {
-                  e.stopPropagation();
-                  imgSwitchHandler("right");
-                }}
-              >
-                <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-              </svg>
+              {photoId != galleryLength && (
+                <button
+                  className={
+                    photoMaxWidth == false
+                      ? "p-1 px-2 fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:mr-2"
+                      : "p-1 px-2 fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-2"
+                  }
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    imgSwitchHandler("right");
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="3em"
+                    viewBox="0 0 320 512"
+                    fill="white"
+                  >
+                    <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </button>
+              )}
+              {/* loading icon */}
+              {loadingIcon && (
+                <div className="loading-icon fixed top-1/2 justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)]"></div>
+              )}
             </div>
             {/* IMAGE CONTAINER medium-w-false / full-w-true */}
             <div className="fixed w-screen left-0 top-0 h-full grid place-content-center overflow-auto ">
@@ -220,6 +245,7 @@ const Gallery = ({ id, name }) => {
                   e.stopPropagation();
                   setPhotoMaxWidth(!photoMaxWidth);
                 }}
+                onLoad={() => setLoadingIcon(false)}
                 className={
                   photoMaxWidth === false
                     ? "cursor-pointer medium-width border-4 border-accent-2 max-w-4xl max-md:w-screen max-h-[85vh] max-sm:w-screen "

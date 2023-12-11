@@ -134,8 +134,8 @@ const Nav = ({ overlap, setOverlap }) => {
           <div
             className={
               navState === true
-                ? "nav flex relative py-1 transition-all max-md:gap-4 "
-                : "nav hidden"
+                ? "cards-container nav flex relative py-1 transition-all max-md:gap-4 "
+                : "cards-container nav hidden"
             }
           >
             {data.map((model) => (

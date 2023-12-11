@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 import data from "../data/models-data.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PhantomF4History = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
@@ -24,7 +25,7 @@ const PhantomF4History = ({ id }) => {
       )}
       {historyState === true && (
         <article className="px-8">
-          <img
+          <LazyLoadImage
             className="pr-8 pt-2 float-left hover:cursor-pointer"
             src={src(1)}
             alt="F-4 Phantom II"
