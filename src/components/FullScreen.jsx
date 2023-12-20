@@ -52,7 +52,7 @@ const FullScreen = ({ prop, setFullScreen }) => {
           }}
           className={
             photoMaxWidth === false
-              ? "z-30 cursor-pointer medium-width border-4 border-accent-2 max-w-[500px] max-md:w-screen max-h-[95vh] max-sm:w-screen "
+              ? "z-30 cursor-pointer medium-width border-4 border-accent-2 max-w-[600px] max-md:w-screen max-h-[95vh] max-sm:w-screen "
               : "z-30 cursor-pointer medium-width border-4 border-accent-2 w-full overflow-auto  max-sm:min-w-max max-sm:w-screen"
           }
           src={src}

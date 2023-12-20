@@ -36,6 +36,7 @@ import PhantomF4 from "./sections/PhantomF4";
 import StarshipSN15 from "./sections/StarshipSN15";
 import Falcon9 from "./sections/Falcon9";
 import Wieżowce from "./sections/Wieżowce";
+import Wang from "./sections/Wang";
 
 function App() {
   if (localStorage.getItem("overlap") == null)
@@ -153,6 +154,7 @@ function App() {
             path="/Kartonowe-budowle/Falcon9"
             element={<Falcon9 id={27} />}
           />
+          <Route path="/Kartonowe-budowle/Wang" element={<Wang id={28} />} />
           <Route path="/Kartonowe-budowle/Wieżowce" element={<Wieżowce />} />
         </Routes>
         <br />

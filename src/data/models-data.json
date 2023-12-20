@@ -960,5 +960,31 @@
     },
     "photo": "models/falcon 9/falcon 9-photo",
     "description": "Dwustopniowa rakieta nośna, zaprojektowana i wyprodukowana przez amerykańską firmę SpaceX, przeznaczona do wynoszenia ładunków na orbitę, misji bezzałogowych i załogowych do Międzynarodowej Stacji Kosmicznej."
+  },
+  {
+    "id": 28,
+    "component": "Wang",
+    "typ": "Kościoły",
+    "oświetlenie": true,
+    "rok ukończenia": 9999,
+    "link": "/Kartonowe-budowle/Wang",
+    "cover": "models/wang/wang-cover.jpg",
+    "info": {
+      "Projekt": "od podstaw",
+      "Skala": "1:72",
+      "Szerokość": "39.5cm",
+      "Długość": "34.5cm"
+    },
+    "name": "Świątynia Wang",
+    "card": "./cards/wang-card.jpg",
+    "Galeria": {
+      "budowa": {
+        "quantity": 126,
+        "full": "./models/wang/build/full-res/wang-b",
+        "thumb": "./models/wang/build/thumb/wang-thumb-b"
+      }
+    },
+    "photo": "models/wang/wang-photo",
+    "description": "Ewangelicki kościół parafialny w Karpaczu w Karkonoszach, przeniesiony w 1842 z miejscowości Vang, leżącej nad jeziorem Vangsmjøsa w Norwegii."
   }
 ]

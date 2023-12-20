@@ -31,7 +31,9 @@ const Card = ({ model, overlap }) => {
             title="rok budowy modelu"
             className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white"
           >
-            {model["rok ukończenia"]}
+            {model["rok ukończenia"] == 9999
+              ? "w budowie"
+              : model["rok ukończenia"]}
           </div>
           {/* nazwa modelu */}
           <div className="nazwa-modelu absolute bottom-0 w-full text-sm  bg-accent px-3 py-2 pt-[5px] text-left rounded-b-lg leading-4 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6 ">
