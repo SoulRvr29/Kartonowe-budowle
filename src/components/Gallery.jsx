@@ -32,6 +32,7 @@ const Gallery = ({ id, name }) => {
       let nr = i;
       if (i < 10) nr = "0" + i;
       src.push(model[name][section].thumb + nr + ".jpg");
+      console.log(model[name][section].thumb + nr + ".jpg");
     }
     setActualSrc(src);
   };
@@ -116,7 +117,7 @@ const Gallery = ({ id, name }) => {
       <div className="gallery relative flex gap-5  flex-wrap justify-center">
         {galleryState === true && (
           <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
-            {actualSrc.map((loc) => {
+            {actualSrc.map((loc, index) => {
               return (
                 <button
                   key={loc}
@@ -132,7 +133,7 @@ const Gallery = ({ id, name }) => {
                   <LazyLoadImage
                     width={160}
                     height={160}
-                    value={loc.slice(-6, -4)}
+                    value={index + 1 < 10 ? "0" + (index + 1) : index + 1}
                     className="h-[10rem] w-auto border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
                     src={loc}
                     alt={model.name + " photo"}

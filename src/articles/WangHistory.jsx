@@ -66,16 +66,6 @@ const WangHistory = ({ id }) => {
             Malczyc, potem drogą lądową do Karpacza Górnego (wówczas niem.
             Brückenberg – Mostowa Góra), w którym znalazł się w roku 1842.
           </p>
-          <LazyLoadImage
-            className="pr-8 float-left "
-            src={src(2)}
-            alt="zdjęcie"
-            title="Świątynia Wang w 2006 roku."
-            onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
-            }}
-          />
           <p>
             Znaczna część oryginalnych elementów kościoła nie nadawała się do
             użytku. Kierujący budową pisał w kwietniu 1844 roku, że z Norwegii
@@ -89,6 +79,16 @@ const WangHistory = ({ id }) => {
             bogato zdobiony krucyfiks wyrzeźbiony w jednym pniu dębowym przez
             Jakuba z Janowic w 1846 roku.
           </p>
+          <LazyLoadImage
+            className="pl-8 float-right "
+            src={src(2)}
+            alt="zdjęcie"
+            title="Świątynia Wang w 2006 roku."
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+          />
           <p>
             28 lipca 1844 świątynia Wang stała się kościołem miejscowej parafii
             ewangelickiej i jest nim nadal. Stanowi atrakcję turystyczną
