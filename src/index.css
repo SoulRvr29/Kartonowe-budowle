@@ -73,7 +73,7 @@
     padding: 1rem 2rem;
     z-index: 10;
   }
-  article > img {
+  article img {
     max-width: 500px;
     padding: 1rem 0;
     cursor: pointer;

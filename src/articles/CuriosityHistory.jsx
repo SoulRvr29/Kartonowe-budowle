@@ -25,16 +25,16 @@ const CuriosityHistory = ({ id }) => {
       )}
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
+          <LazyLoadImage
+            className="pl-8 float-right hover:cursor-pointer"
+            src={src(2)}
+            alt="będzin"
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+          />
           <p>
-            <LazyLoadImage
-              className="pl-8 float-right hover:cursor-pointer"
-              src={src(2)}
-              alt="będzin"
-              onClick={(e) => {
-                setProp(e);
-                setFullScreen(true);
-              }}
-            />
             <span className="first-letter font-playfair">C</span>uriosity Rover
             – zautomatyzowane i autonomiczne laboratorium naukowo-badawcze
             wysłane na Marsa, w ramach programu badawczego Mars Science
