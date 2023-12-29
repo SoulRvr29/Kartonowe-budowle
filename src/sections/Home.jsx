@@ -1,31 +1,69 @@
 import ImagesGrid from "../components/ImagesGrid";
+import FullScreen from "../components/FullScreen";
+import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { NavLink } from "react-router-dom";
 
 const Article = () => {
+  const [prop, setProp] = useState(0);
+  const [fullScreen, setFullScreen] = useState(false);
+
   return (
     <>
+      {fullScreen === true && (
+        <FullScreen prop={prop} setFullScreen={setFullScreen} />
+      )}
       <hr className="grad-hr" />
       <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8">
-        <p className="max-w-3xl font-bold text-lg mx-auto text-center max-sm:text-sm m-4 drop-shadow-sm dark:text-text-light text-text-dark">
+        <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m-2 droh2-shadow-sm dark:text-text-light text-text-dark">
           Witaj na stronie.
-          <br />
-        </p>
+        </h2>
         <p>
           Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
-          Modele zacząłem sklejać koło 1998 roku, były to głównie budowle z
-          wydawnictwa GPM, ale jest też kilka wyjątków jak rakiety, samoloty,
-          czy figurki. Pierwsze modele są wykonane w standardzie bez żadnych
-          dodatków. Z czasem doszedł retusz, usztywnianie elementów tekturą,
-          roślinność, oświetlenie i dodatkowe wykonane przeze mnie elementy.
-          Modele można wybrać z listy powyżej z podziałem na kategorie. Lista
-          nie jest jeszcze w pełni kompletna, z czasem będę dodawał kolejne
-          pozycje.
+          Modele sklejam od 1998 roku, są to głównie budowle, ale jest też kilka
+          wyjątków jak rakiety, samoloty, czy figurki. Pierwsze modele
+          wykonanywałem jeszcze w standardzie bez żadnych dodatków. W kolejnych
+          modelach dodawałem retusz, elementy z drutu, roślinność i oświetlenie.
+          Zamki w Będzinie i Oporowie mają nawet wykonane wnętrza pomieszczeń. W
+          ostatnich modelach wprowadzałem sporo modyfikacji i zmieniałem
+          niektóre tekstury np. dachu, dorabiałem też swoje części. Ostatni
+          model świątyni Wang jest już w całości zaprojektowany przeze mnie.
         </p>
+        <p>
+          Modele można wybrać z listy powyżej z podziałem na kategorie. Modele
+          są ułożone od najnowszych od lewej. Lista nie jest jeszcze w pełni
+          kompletna, z czasem będę dodawał kolejne pozycje.
+        </p>
+        <p>
+          Jeśli miałbym wybrać najlepszy model jaki udało mi się do tej pory
+          ukończyć, to będzie z pewnością{" "}
+          <NavLink
+            to="/Kartonowe-budowle/Bedzin"
+            onClick={() =>
+              document.querySelector(".article-header").scrollIntoView()
+            }
+          >
+            {" "}
+            <span className="text-accent-4 dark:text-accent-2 hover:underline">
+              Zamek w Będzinie.
+            </span>
+          </NavLink>
+        </p>
+        <LazyLoadImage
+          className="w-full max-w-2xl mx-auto mb-4 cursor-pointer"
+          src="public\models\bedzin\day\full-res\bedzin-d01.jpg"
+          alt="będzin"
+          title=""
+          onClick={(e) => {
+            setProp(e);
+            setFullScreen(true);
+          }}
+        />
         <hr className="grad-hr" />
       </header>
       <div className=" mb-8 mx-8">
-        <br />
-        <h4 className="max-sm:text-base mx-auto">
-          Poniżej wybrane zdjęcia z najbardziej wartych uwagi modeli:
+        <h4 className="max-sm:text-base max-[425px]:text-xs mx-auto mt-4">
+          Poniżej kilka wybranych zdjęć z różnych modeli:
         </h4>
         <ImagesGrid />
       </div>
