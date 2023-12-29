@@ -103,9 +103,9 @@ const Gallery = ({ id, name }) => {
                     e.target.classList.add("active-section");
                   }}
                 >
-                  <span className="opacity-50">&nbsp;/</span>
+                  <span className="opacity-50">&nbsp;/&nbsp;</span>
                   <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all">
-                    {" " + section}
+                    {section}
                   </span>
                 </button>
               </div>

@@ -36,7 +36,7 @@ const Article = () => {
         </p>
         <p>
           Jeśli miałbym wybrać najlepszy model jaki udało mi się do tej pory
-          ukończyć, to będzie z pewnością{" "}
+          ukończyć, będzie to z pewnością{" "}
           <NavLink
             to="/Kartonowe-budowle/Bedzin"
             onClick={() =>
@@ -50,10 +50,10 @@ const Article = () => {
           </NavLink>
         </p>
         <LazyLoadImage
-          className="w-full max-w-2xl mx-auto mb-4 cursor-pointer"
-          src="public\models\bedzin\day\full-res\bedzin-d01.jpg"
+          className="w-full max-w-xl mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+          src="./models/bedzin/day/full-res/bedzin-d01.jpg"
           alt="będzin"
-          title=""
+          title="Zamek w Będzinie"
           onClick={(e) => {
             setProp(e);
             setFullScreen(true);
