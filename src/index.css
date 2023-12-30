@@ -40,6 +40,7 @@
     text-align: justify;
     animation: fade-in 3s;
     text-shadow: 1px 1px 0px #00000020;
+    overflow-x: hidden;
   }
   .dark .bkg-texture {
     background-image: url(..\src\assets\binding_dark.png);
@@ -315,6 +316,31 @@
       filter: brightness(1);
     }
   }
+  /********************************/
+  /**********  TECH NAV  **********/
+  /********************************/
+
+  .tech-li {
+    border: 4px outset var(--bkg-light);
+    background-color: #eee;
+  }
+  .tech-li:hover {
+    filter: brightness(1.1);
+  }
+  .dark .tech-li:hover {
+    filter: none;
+  }
+  .dark .tech-li {
+    border: 4px outset var(--accent);
+    background-color: #333;
+  }
+  .dark .tech-li:hover {
+    border: 4px outset var(--accent-2);
+  }
+  .active .tech-li {
+    border: 4px outset var(--accent-2);
+  }
+
   /************************/
   /******** BANNER ********/
   /************************/

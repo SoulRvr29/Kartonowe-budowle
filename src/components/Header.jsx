@@ -97,7 +97,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         </div>
         {/* main title */}
         <div className="absolute w-full flex gap-2 justify-center max-[460px]:static max-[460px]:-order-1">
-          <h1 className="text-accent dark:brightness-100 dark:drop-shadow-[2px_0px_0px_rgba(255,255,255,0.8)] drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
+          <h1 className="text-accent dark:brightness-100 dark:drop-shadow-[2px_0px_0px_rgba(255,255,255,0.8)] max-sm:dark:drop-shadow-[1px_0px_0px_rgba(255,255,255,0.8)] drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
             <div>k</div>
             <div>a</div>
             <div>r</div>

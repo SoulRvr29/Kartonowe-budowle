@@ -5,6 +5,13 @@ import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
 import BackToTop from "./components/BackToTop";
+import TechNav from "./components/TechNav";
+
+import Oświetlenie from "./sections/Oświetlenie";
+import Roślinność from "./sections/Roślinność";
+import Sadzarka from "./sections/Sadzarka";
+import Okna from "./sections/Okna";
+import Arduino from "./sections/Arduino";
 
 import Home from "./sections/Home";
 import Bedzin from "./sections/Bedzin";
@@ -63,6 +70,7 @@ function App() {
         />
         <Banner bannerState={bannerState} setBannerState={setBannerState} />
         <Nav overlap={overlap} setOverlap={setOverlap} />
+        <TechNav />
         <BackToTop />
         <Routes>
           <Route path="/Kartonowe-budowle/" element={<Home />} />
@@ -156,6 +164,17 @@ function App() {
           />
           <Route path="/Kartonowe-budowle/Wang" element={<Wang id={28} />} />
           <Route path="/Kartonowe-budowle/Wieżowce" element={<Wieżowce />} />
+          <Route
+            path="/Kartonowe-budowle/Oświetlenie"
+            element={<Oświetlenie />}
+          />
+          <Route
+            path="/Kartonowe-budowle/Roślinność"
+            element={<Roślinność />}
+          />
+          <Route path="/Kartonowe-budowle/Sadzarka" element={<Sadzarka />} />
+          <Route path="/Kartonowe-budowle/Okna" element={<Okna />} />
+          <Route path="/Kartonowe-budowle/Arduino" element={<Arduino />} />
         </Routes>
         <br />
         <br />
