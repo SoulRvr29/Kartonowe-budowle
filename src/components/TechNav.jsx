@@ -5,10 +5,12 @@ const TechNav_li = ({ name, link }) => {
   return (
     <li>
       <NavLink
-        onClick={() => document.querySelector(".tech-li").scrollIntoView()}
+        onClick={() =>
+          document.querySelector(".article-header").scrollIntoView()
+        }
         to={link}
       >
-        <button className="tech-li  text-cente w-fit px-4">{name}</button>
+        <button className="tech-li text-cente w-fit px-4">{name}</button>
       </NavLink>
     </li>
   );
@@ -16,16 +18,16 @@ const TechNav_li = ({ name, link }) => {
 
 const TechNav = () => {
   return (
-    <>
+    <nav className=" bg-bkg bg-opacity-20">
       <hr className="grad-hr"></hr>
-      <ul className=" w-full flex justify-center flex-wrap bg-bkg bg-opacity-20">
+      <ul className=" w-full flex justify-center items-center flex-wrap">
         <TechNav_li name="oświetlenie" link="/Kartonowe-budowle/Oświetlenie" />
         <TechNav_li name="roślinność" link="/Kartonowe-budowle/Roślinność" />
         <TechNav_li name="sadzarka" link="/Kartonowe-budowle/Sadzarka" />
         <TechNav_li name="okna" link="/Kartonowe-budowle/Okna" />
         <TechNav_li name="arduino" link="/Kartonowe-budowle/Arduino" />
       </ul>
-    </>
+    </nav>
   );
 };
 

@@ -28,7 +28,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
         }
       }}
     >
-      <li className="active-li">{name}</li>
+      <li className="active-li lowercase">{name}</li>
       {activeList != name && (
         <div className="custom-underline dark:bg-accent-2 bg-accent-4 h-[2px] w-0 justify-self-center transition-all duration-300"></div>
       )}
@@ -48,7 +48,7 @@ const Nav = ({ overlap, setOverlap }) => {
     <div className="relative grid select-none z-10">
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-[0.4rem]  max-[700px]:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
+        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
           <Nav_li
             name="Wszystkie modele"
             activeList={activeList}
@@ -56,7 +56,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Latarnie morskie"
             activeList={activeList}
@@ -64,7 +64,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Zamki i ratusze"
             activeList={activeList}
@@ -72,7 +72,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Kościoły"
             activeList={activeList}
@@ -80,7 +80,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Kosmos"
             activeList={activeList}
@@ -88,7 +88,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Figurki"
             activeList={activeList}
@@ -96,7 +96,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Samoloty"
             activeList={activeList}
@@ -104,7 +104,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />
-          -
+          <span className="max-[830px]:text-sm">-</span>
           <Nav_li
             name="Z oświetleniem"
             activeList={activeList}
