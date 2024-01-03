@@ -38,7 +38,7 @@ const Article = () => {
           Jeśli miałbym wybrać najlepszy model jaki udało mi się do tej pory
           ukończyć, będzie to z pewnością{" "}
           <NavLink
-            to="/Kartonowe-budowle/Bedzin"
+            to="/Bedzin"
             onClick={() =>
               document.querySelector(".article-header").scrollIntoView()
             }

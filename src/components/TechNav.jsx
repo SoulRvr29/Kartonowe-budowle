@@ -21,11 +21,11 @@ const TechNav = () => {
     <nav className=" bg-bkg bg-opacity-20">
       <hr className="grad-hr"></hr>
       <ul className=" w-full flex justify-center items-center flex-wrap">
-        <TechNav_li name="oświetlenie" link="/Kartonowe-budowle/Oświetlenie" />
-        <TechNav_li name="roślinność" link="/Kartonowe-budowle/Roślinność" />
-        <TechNav_li name="sadzarka" link="/Kartonowe-budowle/Sadzarka" />
-        <TechNav_li name="okna" link="/Kartonowe-budowle/Okna" />
-        <TechNav_li name="arduino" link="/Kartonowe-budowle/Arduino" />
+        <TechNav_li name="oświetlenie" link="/Oświetlenie" />
+        <TechNav_li name="roślinność" link="/Roślinność" />
+        <TechNav_li name="sadzarka" link="/Sadzarka" />
+        <TechNav_li name="okna" link="/Okna" />
+        <TechNav_li name="arduino" link="/Arduino" />
       </ul>
     </nav>
   );
