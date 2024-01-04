@@ -731,12 +731,13 @@
     "oświetlenie": false,
     "rok ukończenia": 2013,
     "link": "/Curiosity",
-    "publisher": "FREE",
+    "publisher": "model darmowy",
     "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
     "cover": "models/curiosity/curiosity-cover2.jpg",
     "info": {
-      "Wydawca": "FREE",
+      "Projekt": "Julius Perdana",
+      "Link do pobrania": "https://paper-replika.com/index.php/space/mars-rover-curiosity-paper-model",
       "Skala": "1:20",
       "Ilość stron": 3,
       "Długość": "16cm",
@@ -830,7 +831,8 @@
     "link": "/Mauler",
     "cover": "models/mauler/mauler-cover.jpg",
     "info": {
-      "Wydawca": "FREE",
+      "Projekt": "Alcli0nE",
+      "Link do pobrania": "https://drive.google.com/file/d/1L7qpYiVCOnafMv79WuhQQ3jeWfMIzchY/view",
       "Skala": "1:7",
       "Wysokość": "33cm"
     },
@@ -860,7 +862,8 @@
     "link": "/Predator",
     "cover": "models/predator/predator-cover.jpg",
     "info": {
-      "Wydawca": "FREE",
+      "Projekt": "BlueDragon",
+      "Link do pobrania": "https://actionpapercrafts.blogspot.com/2009/04/68cm-predator-papercraft.html",
       "Skala": "1:7",
       "Wysokość": "33cm"
     },
@@ -920,7 +923,8 @@
     "link": "/StarshipSN15",
     "cover": "models/starship sn15/starship sn15-cover.jpg",
     "info": {
-      "Wydawca": "FREE",
+      "Projekt": "AXM Paper Models",
+      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/spacex-starship/?singleproduct=3248",
       "Skala": "1:100",
       "Wysokość": "52cm"
     },
@@ -945,7 +949,8 @@
     "link": "/Falcon9",
     "cover": "models/falcon 9/falcon 9-cover.jpg",
     "info": {
-      "Wydawca": "FREE",
+      "Projekt": "AXM Paper Models",
+      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/falcon-9/?singleproduct=3199",
       "Skala": "1:100",
       "Wysokość": "66cm"
     },
@@ -970,7 +975,7 @@
     "link": "/Wang",
     "cover": "models/wang/wang-cover.jpg",
     "info": {
-      "Projekt": "od podstaw",
+      "Projekt": "własny",
       "Skala": "1:72",
       "Szerokość": "39.5cm",
       "Długość": "34.5cm"

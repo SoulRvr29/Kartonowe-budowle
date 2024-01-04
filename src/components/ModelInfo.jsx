@@ -28,7 +28,17 @@ const ModelInfo = ({ id }) => {
                     <span className="dark:text-text-light text-text-dark font-bold ">
                       {key}:{" "}
                     </span>
-                    {data.info[key]}
+                    {key == "Link do pobrania" ? (
+                      <a
+                        className="hover:underline hover:text-accent-4 dark:hover:text-accent-2"
+                        href={data.info[key]}
+                        target="_blank"
+                      >
+                        link
+                      </a>
+                    ) : (
+                      data.info[key]
+                    )}
                   </li>
                 );
               })}

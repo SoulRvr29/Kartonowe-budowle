@@ -81,7 +81,8 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         {/* left side */}
         <div className="flex gap-2 z-10 -mb-1 max-[460px]:mb-1 max-[460px]:gap-4 ">
           <button className="mb-1">
-            <Link to="/" title="strona główna" reloadDocument>
+            <Link to="/" title="strona główna">
+              {/* <Link to="/" title="strona główna" reloadDocument> */}
               <svg
                 className="header-icon opacity-50 dark:opacity-100 transition-all"
                 height="1.1em"

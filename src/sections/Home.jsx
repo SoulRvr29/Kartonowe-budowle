@@ -20,14 +20,38 @@ const Article = () => {
         </h2>
         <p>
           Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
-          Modele sklejam od 1998 roku, są to głównie budowle, ale jest też kilka
-          wyjątków jak rakiety, samoloty, czy figurki. Pierwsze modele
-          wykonanywałem jeszcze w standardzie bez żadnych dodatków. W kolejnych
-          modelach dodawałem retusz, elementy z drutu, roślinność i oświetlenie.
-          Zamki w Będzinie i Oporowie mają nawet wykonane wnętrza pomieszczeń. W
-          ostatnich modelach wprowadzałem sporo modyfikacji i zmieniałem
-          niektóre tekstury np. dachu, dorabiałem też swoje części. Ostatni
-          model świątyni Wang jest już w całości zaprojektowany przeze mnie.
+          Modele sklejam od 1998 roku, głównie budowle, ale jest też kilka
+          rakiet, samolot, czy figurki. Pierwsze modele wykonanywałem w
+          standardzie bez żadnych dodatków. W kolejnych modelach dodawałem
+          retusz krawędzi, elementy z drutu jak np. barierki, roślinność oraz
+          oświetlenie. Zamki w{" "}
+          <NavLink
+            to="/Bedzin"
+            onClick={() =>
+              document.querySelector(".article-header").scrollIntoView()
+            }
+          >
+            {" "}
+            <span className="text-accent-4 dark:text-accent-2 hover:underline">
+              Będzinie
+            </span>
+          </NavLink>{" "}
+          i{" "}
+          <NavLink
+            to="/Oporow"
+            onClick={() =>
+              document.querySelector(".article-header").scrollIntoView()
+            }
+          >
+            {" "}
+            <span className="text-accent-4 dark:text-accent-2 hover:underline">
+              Oporowie
+            </span>
+          </NavLink>{" "}
+          mają również wykonane wnętrza pomieszczeń. W ostatnich modelach
+          wprowadzałem sporo modyfikacji i zmieniałem niektóre tekstury np.
+          dachu, dorabiałem też swoje części. Ostatni model świątyni Wang jest
+          już w całości zaprojektowany przeze mnie.
         </p>
         <p>
           Modele można wybrać z listy powyżej z podziałem na kategorie. Modele
@@ -50,7 +74,7 @@ const Article = () => {
           </NavLink>
         </p>
         <LazyLoadImage
-          className="w-full max-w-xl mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+          className="w-fit max-h-[40rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
           src="./models/bedzin/day/full-res/bedzin-d01.jpg"
           alt="będzin"
           title="Zamek w Będzinie"
@@ -59,6 +83,28 @@ const Article = () => {
             setFullScreen(true);
           }}
         />
+        <div className="flex flex-wrap items-center gap-4 mb-8">
+          <LazyLoadImage
+            className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+            src="./models/bedzin/day/full-res/bedzin-d19.jpg"
+            alt="będzin"
+            title="Zamek w Będzinie"
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+          />
+          <LazyLoadImage
+            className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+            src="./models/bedzin/day/full-res/bedzin-d27.jpg"
+            alt="będzin"
+            title="Zamek w Będzinie"
+            onClick={(e) => {
+              setProp(e);
+              setFullScreen(true);
+            }}
+          />
+        </div>
         <hr className="grad-hr" />
       </header>
       <div className=" mb-8 mx-8">

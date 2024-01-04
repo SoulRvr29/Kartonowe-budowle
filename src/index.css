@@ -152,26 +152,27 @@
   /**********  MODEL INFO ANIMATION  **********/
   /********************************************/
   .model-cover {
-    animation: rotateY 1.5s;
+    animation: rotateY 1.25s;
   }
 
   .model-info {
     overflow: hidden;
-    animation: rotateX 1.5s;
+    transform: rotateX(-90deg);
+    animation: rotateX 1s forwards;
   }
   .info-text {
     transform: translateX(-110%);
-    animation: text-slideX 1.5s 1s forwards;
+    animation: text-slideX 1s 0.75s forwards;
   }
 
   @media (max-width: 640px) {
     .model-info {
       transform: rotateY(-90deg);
-      animation: rotateY 1.5s 0.5s forwards;
+      animation: rotateY 1s 0.5s forwards;
     }
     .info-text {
       transform: translateY(-200%);
-      animation: text-slideY 1.5s 1s forwards;
+      animation: text-slideY 1s 1s forwards;
     }
   }
 
