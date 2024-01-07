@@ -21,9 +21,9 @@ const Article = () => {
         <p>
           Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
           Modele sklejam od 1998 roku, głównie budowle, ale jest też kilka
-          rakiet, samolot, czy figurki. Pierwsze modele wykonanywałem w
+          rakiet, samolot, czy figurki. Pierwsze modele wykonywałem w
           standardzie bez żadnych dodatków. W kolejnych modelach dodawałem
-          retusz krawędzi, elementy z drutu jak np. barierki, roślinność oraz
+          retusz krawędzi, elementy z drutu, jak np. barierki, roślinność oraz
           oświetlenie. Zamki w{" "}
           <NavLink
             to="/Bedzin"
@@ -50,16 +50,16 @@ const Article = () => {
           </NavLink>{" "}
           mają również wykonane wnętrza pomieszczeń. W ostatnich modelach
           wprowadzałem sporo modyfikacji i zmieniałem niektóre tekstury np.
-          dachu, dorabiałem też swoje części. Ostatni model świątyni Wang jest
-          już w całości zaprojektowany przeze mnie.
+          dachu, dorabiałem też swoje części. Świątynia Wang, jeszcze nie
+          ukończona, jest już w całości zaprojektowana przeze mnie.
         </p>
-        <p>
+        {/* <p>
           Modele można wybrać z listy powyżej z podziałem na kategorie. Modele
           są ułożone od najnowszych od lewej. Lista nie jest jeszcze w pełni
           kompletna, z czasem będę dodawał kolejne pozycje.
-        </p>
+        </p> */}
         <p>
-          Jeśli miałbym wybrać najlepszy model jaki udało mi się do tej pory
+          Jeśli miałbym wybrać najlepszy model, jaki udało mi się do tej pory
           ukończyć, będzie to z pewnością{" "}
           <NavLink
             to="/Bedzin"

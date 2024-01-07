@@ -25,16 +25,18 @@ const ModelInfo = ({ id }) => {
               {info.map((key) => {
                 return (
                   <li className="dark:text-accent-3 text-text-light" key={key}>
-                    <span className="dark:text-text-light text-text-dark font-bold ">
-                      {key}:{" "}
-                    </span>
+                    {key != "Link do pobrania" && (
+                      <span className="dark:text-text-light text-text-dark font-bold ">
+                        {key}:{" "}
+                      </span>
+                    )}
                     {key == "Link do pobrania" ? (
                       <a
-                        className="hover:underline hover:text-accent-4 dark:hover:text-accent-2"
+                        className="hover:underline text-accent-4 dark:text-accent-2"
                         href={data.info[key]}
                         target="_blank"
                       >
-                        link
+                        Download
                       </a>
                     ) : (
                       data.info[key]

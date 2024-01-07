@@ -737,12 +737,12 @@
     "cover": "models/curiosity/curiosity-cover2.jpg",
     "info": {
       "Projekt": "Julius Perdana",
-      "Link do pobrania": "https://paper-replika.com/index.php/space/mars-rover-curiosity-paper-model",
       "Skala": "1:20",
       "Ilość stron": 3,
       "Długość": "16cm",
       "Szerokość": "14cm",
-      "Wysokość": "11cm"
+      "Wysokość": "11cm",
+      "Link do pobrania": "https://paper-replika.com/index.php/space/mars-rover-curiosity-paper-model"
     },
     "Galeria": {
       "model": {
@@ -832,9 +832,9 @@
     "cover": "models/mauler/mauler-cover.jpg",
     "info": {
       "Projekt": "Alcli0nE",
-      "Link do pobrania": "https://drive.google.com/file/d/1L7qpYiVCOnafMv79WuhQQ3jeWfMIzchY/view",
       "Skala": "1:7",
-      "Wysokość": "33cm"
+      "Wysokość": "33cm",
+      "Link do pobrania": "https://drive.google.com/file/d/1L7qpYiVCOnafMv79WuhQQ3jeWfMIzchY/view"
     },
     "name": "Mauler - Gears of War",
     "card": "./cards/mauler-card.jpg",
@@ -863,9 +863,9 @@
     "cover": "models/predator/predator-cover.jpg",
     "info": {
       "Projekt": "BlueDragon",
-      "Link do pobrania": "https://actionpapercrafts.blogspot.com/2009/04/68cm-predator-papercraft.html",
       "Skala": "1:7",
-      "Wysokość": "33cm"
+      "Wysokość": "33cm",
+      "Link do pobrania": "https://actionpapercrafts.blogspot.com/2009/04/68cm-predator-papercraft.html"
     },
     "name": "Predator",
     "card": "./cards/predator-card.jpg",
@@ -924,9 +924,9 @@
     "cover": "models/starship sn15/starship sn15-cover.jpg",
     "info": {
       "Projekt": "AXM Paper Models",
-      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/spacex-starship/?singleproduct=3248",
       "Skala": "1:100",
-      "Wysokość": "52cm"
+      "Wysokość": "52cm",
+      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/spacex-starship/?singleproduct=3248"
     },
     "name": "Rakieta Starship SN15",
     "card": "./cards/starship sn15-card.jpg",
@@ -950,9 +950,9 @@
     "cover": "models/falcon 9/falcon 9-cover.jpg",
     "info": {
       "Projekt": "AXM Paper Models",
-      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/falcon-9/?singleproduct=3199",
       "Skala": "1:100",
-      "Wysokość": "66cm"
+      "Wysokość": "66cm",
+      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/falcon-9/?singleproduct=3199"
     },
     "name": "Rakieta Falcon 9",
     "card": "./cards/falcon 9-card.jpg",
