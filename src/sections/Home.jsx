@@ -20,8 +20,9 @@ const Article = () => {
         </h2>
         <p>
           Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
-          Modele sklejam od 1998 roku, głównie budowle, ale jest też kilka
-          rakiet, samolot, czy figurki. Pierwsze modele wykonywałem w
+          Modele sklejam od 1998 roku, głównie budowle, takie jak zamki,
+          ratusze, czy latarnie morskie. Zdarzyło mi się też skleić kilka
+          rakiet, samolotów, czy figurek. Pierwsze modele wykonywałem w
           standardzie bez żadnych dodatków. W kolejnych modelach dodawałem
           retusz krawędzi, elementy z drutu, jak np. barierki, roślinność oraz
           oświetlenie. Zamki w{" "}
@@ -50,8 +51,8 @@ const Article = () => {
           </NavLink>{" "}
           mają również wykonane wnętrza pomieszczeń. W ostatnich modelach
           wprowadzałem sporo modyfikacji i zmieniałem niektóre tekstury np.
-          dachu, dorabiałem też swoje części. Świątynia Wang, jeszcze nie
-          ukończona, jest już w całości zaprojektowana przeze mnie.
+          dachu, podstawy, dorabiałem też swoje części. Świątynia Wang, jeszcze
+          nieukończona, jest już w całości zaprojektowana przeze mnie.
         </p>
         {/* <p>
           Modele można wybrać z listy powyżej z podziałem na kategorie. Modele
@@ -69,7 +70,7 @@ const Article = () => {
           >
             {" "}
             <span className="text-accent-4 dark:text-accent-2 hover:underline">
-              Zamek w Będzinie.
+              zamek w Będzinie.
             </span>
           </NavLink>
         </p>

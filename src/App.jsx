@@ -7,11 +7,11 @@ import Nav from "./components/Nav";
 import BackToTop from "./components/BackToTop";
 import TechNav from "./components/TechNav";
 
-import Oświetlenie from "./sections/Oświetlenie";
-import Roślinność from "./sections/Roślinność";
-import Sadzarka from "./sections/Sadzarka";
-import Okna from "./sections/Okna";
-import Arduino from "./sections/Arduino";
+import Oświetlenie from "./techSections/Oświetlenie";
+import Roślinność from "./techSections/Roślinność";
+import Sadzarka from "./techSections/Sadzarka";
+import Okna from "./techSections/Okna";
+import Arduino from "./techSections/Arduino";
 
 import Home from "./sections/Home";
 import Bedzin from "./sections/Bedzin";
@@ -70,7 +70,7 @@ function App() {
         />
         <Banner bannerState={bannerState} setBannerState={setBannerState} />
         <Nav overlap={overlap} setOverlap={setOverlap} />
-        <TechNav />
+        {/* <TechNav /> */}
         <BackToTop />
         <Routes>
           <Route path="/" element={<Home />} />
