@@ -4,6 +4,6 @@ Modele można wybrać z kart które są na pasku nawigacji i sortować listę po
 Strona zrobiona jest z wykorzystaniem biblioteki REACT i frameworka Tailwind CSS.
 Do przełączania między podstronami użyłem React Router.
 
-Link do strony: https://kartonowebudowle.pl
+##Link do strony: https://kartonowebudowle.pl
 
 ![screenshot](screenshot.jpeg)
