@@ -1,8 +1,10 @@
 const SectionHeader = ({ sectionState, setSectionState, sectionName }) => {
   return (
-    <div className="z-10">
-      <header className="history-cont font-bold mx-8 max-sm:mx-4">
-        <h3 className="flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base ">
+    <div className="z-10 relative">
+      <div className="absolute w-full h-full -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 -z-10"></div>
+
+      <header className="history-cont font-bold ">
+        <h3 className="flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base mx-8 max-sm:mx-4 ">
           <button
             className="arrow-up-down"
             onClick={() => {

@@ -62,59 +62,62 @@ const Gallery = ({ id, name }) => {
   };
 
   return (
-    <section className="gallery-cont px-8 select-none max-sm:px-4 grid ">
-      <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base">
-        {/* //////////// gallery on/of button //////////// */}
-        <button
-          className="arrow-up-down"
-          onClick={() => {
-            setGalleryState(galleryState === false ? true : false);
-            // galleryState === "off" &&
-            //   document.querySelector(".gallery-cont").scrollIntoView();
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1.3rem"
-            viewBox="0 0 512 512"
-            fill="var(--accent-4)"
-            className={
-              galleryState === false
-                ? "transition-all arrow-down dark:fill-accent-2 mr-2 mt-1 max-sm:h-3 rotate-180"
-                : "transition-all arrow-up dark:fill-accent-2 mr-2 mt-1 max-sm:h-3"
-            }
+    <section className="gallery-cont select-none grid ">
+      <header className="relative">
+        <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20"></div>
+        <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base z-10  mx-8 max-sm:mx-4">
+          {/* //////////// gallery on/of button //////////// */}
+          <button
+            className="arrow-up-down z-20"
+            onClick={() => {
+              setGalleryState(galleryState === false ? true : false);
+              // galleryState === "off" &&
+              //   document.querySelector(".gallery-cont").scrollIntoView();
+            }}
           >
-            <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
-          </svg>
-        </button>
-        {name === undefined ? "Galeria" : name}
-        {/* //////////// gallery-type button //////////// */}
-        {gallerySections.length > 1 &&
-          gallerySections.map((section) => {
-            return (
-              <div key={section}>
-                <button
-                  onClick={(e) => {
-                    getPhotosSrc(section);
-                    setActualSection(section);
-                    document.querySelectorAll(".section").forEach((item) => {
-                      item.classList.remove("active-section");
-                    });
-                    e.target.classList.add("active-section");
-                  }}
-                >
-                  <span className="opacity-50">&nbsp;/&nbsp;</span>
-                  <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all">
-                    {section}
-                  </span>
-                </button>
-              </div>
-            );
-          })}
-      </h3>
-      <hr className=" dark:bg-accent-2 bg-accent-4 w-full" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.3rem"
+              viewBox="0 0 512 512"
+              fill="var(--accent-4)"
+              className={
+                galleryState === false
+                  ? "transition-all arrow-down dark:fill-accent-2 mr-2 mt-1 max-sm:h-3 rotate-180"
+                  : "transition-all arrow-up dark:fill-accent-2 mr-2 mt-1 max-sm:h-3"
+              }
+            >
+              <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg>
+          </button>
+          {name === undefined ? "Galeria" : name}
+          {/* //////////// gallery-type button //////////// */}
+          {gallerySections.length > 1 &&
+            gallerySections.map((section) => {
+              return (
+                <div key={section}>
+                  <button
+                    onClick={(e) => {
+                      getPhotosSrc(section);
+                      setActualSection(section);
+                      document.querySelectorAll(".section").forEach((item) => {
+                        item.classList.remove("active-section");
+                      });
+                      e.target.classList.add("active-section");
+                    }}
+                  >
+                    <span className="opacity-50">&nbsp;/&nbsp;</span>
+                    <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all">
+                      {section}
+                    </span>
+                  </button>
+                </div>
+              );
+            })}
+        </h3>
+        <hr className=" dark:bg-accent-2 bg-accent-4 w-full" />
+      </header>
       {/* ////////////  thumbials  //////////// */}
-      <div className="gallery relative flex gap-5  flex-wrap justify-center">
+      <div className="gallery relative flex gap-5  flex-wrap justify-center  mx-8 max-sm:mx-4">
         {galleryState === true && (
           <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
             {actualSrc.map((loc, index) => {
@@ -134,7 +137,7 @@ const Gallery = ({ id, name }) => {
                     width={160}
                     height={160}
                     value={index + 1 < 10 ? "0" + (index + 1) : index + 1}
-                    className="h-[10rem] w-auto border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
+                    className="gallery-thumb h-[10rem] w-auto border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
                     src={loc}
                     alt={model.name + " photo"}
                   />

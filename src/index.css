@@ -152,17 +152,46 @@
   /**********  MODEL INFO ANIMATION  **********/
   /********************************************/
   .model-cover {
-    animation: rotateY 1.25s;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  @media (min-width: 641px) {
+    .model-cover {
+      animation:
+        model-cover-anim 1.5s forwards,
+        fade-in 1s 0.5s forwards;
+    }
+  }
+
+  @keyframes zoom-out {
+    0% {
+      scale: 1;
+    }
+
+    100% {
+      scale: 1;
+    }
+  }
+  @keyframes model-cover-anim {
+    0% {
+      transform: translateX(50%);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   .model-info {
     overflow: hidden;
     transform: rotateX(-90deg);
-    animation: rotateX 1s forwards;
+    animation: rotateX 1s 1s forwards;
   }
   .info-text {
     transform: translateX(-110%);
-    animation: text-slideX 1s 0.75s forwards;
+    animation: text-slideX 1s 1.75s forwards;
   }
 
   @media (max-width: 640px) {
@@ -424,7 +453,18 @@
   .confirm {
     animation: fade-in-out 1s;
   }
-
+  .gallery-thumb {
+    width: 0%;
+    animation: scale-in 0.5s forwards;
+  }
+  @keyframes scale-in {
+    from {
+      scale: 70%;
+    }
+    to {
+      scale: 100%;
+    }
+  }
   @keyframes fade-in {
     from {
       opacity: 0;
