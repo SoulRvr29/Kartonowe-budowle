@@ -62,13 +62,13 @@ const Gallery = ({ id, name }) => {
   };
 
   return (
-    <section className="gallery-cont select-none grid ">
+    <section className="gallery-cont select-none grid z-0">
       <header className="relative">
-        <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20"></div>
+        <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 -z-10"></div>
         <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base z-10  mx-8 max-sm:mx-4">
           {/* //////////// gallery on/of button //////////// */}
           <button
-            className="arrow-up-down z-20"
+            className="arrow-up-down "
             onClick={() => {
               setGalleryState(galleryState === false ? true : false);
               // galleryState === "off" &&
