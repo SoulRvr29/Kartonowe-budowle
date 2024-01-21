@@ -1,18 +1,19 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import data from "../data/models-data.json";
 
 const BedzinHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
+  const [photoProps, setPhotoProps] = useState(null);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
-  };
+  const photosArr = [
+    "models/bedzin/bedzin-photo5.jpg",
+    "models/bedzin/bedzin-photo1.jpg",
+    "models/bedzin/bedzin-photo6.jpg",
+    "models/bedzin/bedzin-photo4.jpg",
+  ];
+
   return (
     <>
       <SectionHeader
@@ -20,9 +21,15 @@ const BedzinHistory = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-      {fullScreen === true && (
+      <ArticleGallery
+        photosArr={photosArr}
+        photoProps={photoProps}
+        setPhotoProps={setPhotoProps}
+      />
+
+      {/* {fullScreen === true && (
         <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      )} */}
       {historyState === true && (
         <article className="px-8">
           <p>
@@ -42,11 +49,10 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 float-left hover:cursor-pointer"
-            src={src(5)}
+            src="models/bedzin/bedzin-photo5.jpg"
             alt="będzin"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              setPhotoProps(e);
             }}
           />
           <p>
@@ -111,12 +117,11 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pl-8 float-right "
-            src={src(1)}
+            src="models/bedzin/bedzin-photo1.jpg"
             alt="będzin"
             title="Obecny wygląd zamku."
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              setPhotoProps(e);
             }}
           />
           <p>
@@ -163,12 +168,11 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 float-left"
-            src={src(6)}
+            src="models/bedzin/bedzin-photo6.jpg"
             alt="będzin"
             title="Zamek na litografii Napoleona Ordy"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              setPhotoProps(e);
             }}
           />
           <p>
@@ -237,12 +241,11 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="mx-auto"
-            src={src(4)}
+            src="models/bedzin/bedzin-photo4.jpg"
             alt="będzin"
             title="Porównanie dawnej fotografi ze stanem obecnym."
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              setPhotoProps(e);
             }}
           />
           <p>

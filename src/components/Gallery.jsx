@@ -32,7 +32,7 @@ const Gallery = ({ id, name }) => {
       let nr = i;
       if (i < 10) nr = "0" + i;
       src.push(model[name][section].thumb + nr + ".jpg");
-      console.log(model[name][section].thumb + nr + ".jpg");
+      // console.log(model[name][section].thumb + nr + ".jpg");
     }
     setActualSrc(src);
   };
