@@ -5,14 +5,26 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BedzinHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [photoProps, setPhotoProps] = useState(null);
 
-  const photosArr = [
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
     "models/bedzin/bedzin-photo5.jpg",
     "models/bedzin/bedzin-photo1.jpg",
     "models/bedzin/bedzin-photo6.jpg",
     "models/bedzin/bedzin-photo4.jpg",
   ];
+  const photosTitle = [
+    "",
+    "Obecny wygląd zamku.",
+    "Zamek na litografii Napoleona Ordy",
+    "Porównanie dawnej fotografi ze stanem obecnym.",
+  ];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
+  };
+  /////////////////////////////////////////////////////////////////
 
   return (
     <>
@@ -22,14 +34,11 @@ const BedzinHistory = ({ id }) => {
         setSectionState={setHistoryState}
       />
       <ArticleGallery
-        photosArr={photosArr}
-        photoProps={photoProps}
-        setPhotoProps={setPhotoProps}
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
       />
-
-      {/* {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )} */}
       {historyState === true && (
         <article className="px-8">
           <p>
@@ -49,10 +58,10 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 float-left hover:cursor-pointer"
-            src="models/bedzin/bedzin-photo5.jpg"
+            src={photosSrc[0]}
             alt="będzin"
             onClick={(e) => {
-              setPhotoProps(e);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -117,11 +126,11 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pl-8 float-right "
-            src="models/bedzin/bedzin-photo1.jpg"
+            src={photosSrc[1]}
             alt="będzin"
-            title="Obecny wygląd zamku."
+            title={photosTitle[1]}
             onClick={(e) => {
-              setPhotoProps(e);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -172,7 +181,7 @@ const BedzinHistory = ({ id }) => {
             alt="będzin"
             title="Zamek na litografii Napoleona Ordy"
             onClick={(e) => {
-              setPhotoProps(e);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -245,7 +254,7 @@ const BedzinHistory = ({ id }) => {
             alt="będzin"
             title="Porównanie dawnej fotografi ze stanem obecnym."
             onClick={(e) => {
-              setPhotoProps(e);
+              photoClickHandler(e);
             }}
           />
           <p>
