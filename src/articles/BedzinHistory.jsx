@@ -177,9 +177,9 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 float-left"
-            src="models/bedzin/bedzin-photo6.jpg"
+            src={photosSrc[2]}
             alt="będzin"
-            title="Zamek na litografii Napoleona Ordy"
+            title={photosTitle[2]}
             onClick={(e) => {
               photoClickHandler(e);
             }}
@@ -250,9 +250,9 @@ const BedzinHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="mx-auto"
-            src="models/bedzin/bedzin-photo4.jpg"
+            src={photosSrc[3]}
             alt="będzin"
-            title="Porównanie dawnej fotografi ze stanem obecnym."
+            title={photosTitle[3]}
             onClick={(e) => {
               photoClickHandler(e);
             }}

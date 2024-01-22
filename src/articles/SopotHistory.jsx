@@ -1,18 +1,20 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SopotHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = ["models/latarnie morskie/sopot/sopot-photo-1.jpg"];
+  const photosTitle = ["Obecny wygląd latarni"];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       {" "}
@@ -21,21 +23,23 @@ const SopotHistory = ({ id }) => {
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
           {" "}
           <LazyLoadImage
             className=" max-h-[300px] pt-2 pr-8 float-left"
-            src={src(1)}
+            src={photosSrc[0]}
             alt="Sopot"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
-            title="Obecny wygląd latarni."
+            title={photosTitle[0]}
           />
           <p>
             <span className="first-letter font-playfair">W </span> &nbsp;1903

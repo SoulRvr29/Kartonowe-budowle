@@ -1,19 +1,23 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
 import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BedzinArch = ({ id }) => {
   const [architectureState, setArchitectureState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = ["models/bedzin/bedzin-photo3.jpg"];
+  const photosTitle = [
+    "Ekipa odbudowująca zamek w Będzinie w 1953; drugi od prawej w szeregu stojących Roman Romański – wojewódzki konserwator zabytków w Katowicach w latach 1954–1961",
+  ];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
-
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -21,19 +25,21 @@ const BedzinArch = ({ id }) => {
         sectionState={architectureState}
         setSectionState={setArchitectureState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {architectureState === true && (
         <article className="px-8">
           <LazyLoadImage
             className="pr-8 float-left max-w-xs"
-            src={src(3)}
+            src={photosSrc[0]}
             alt="będzin"
-            title="Ekipa odbudowująca zamek w Będzinie w 1953; drugi od prawej w szeregu stojących Roman Romański – wojewódzki konserwator zabytków w Katowicach w latach 1954–1961"
+            title={photosTitle[0]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <p>

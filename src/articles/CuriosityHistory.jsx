@@ -1,18 +1,22 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const CuriosityHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
-
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "models/curiosity/curiosity-photo-2.jpg",
+    "models/curiosity/curiosity-photo-1.jpg",
+  ];
+  const photosTitle = ["", ""];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -20,18 +24,20 @@ const CuriosityHistory = ({ id }) => {
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
           <LazyLoadImage
             className="pl-8 float-right hover:cursor-pointer"
-            src={src(2)}
-            alt="będzin"
+            src={photosSrc[0]}
+            alt="curiosity"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -83,11 +89,10 @@ const CuriosityHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 float-left max-w-[300px]"
-            src={src(1)}
-            alt="będzin"
+            src={photosSrc[1]}
+            alt="curiosity"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <h4 className="inline-block mt-2">Miejsce lądowania</h4>

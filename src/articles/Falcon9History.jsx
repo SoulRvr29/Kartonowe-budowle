@@ -1,18 +1,22 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Falcon9History = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
-
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "models/falcon 9/falcon 9-photo2.jpg",
+    "models/falcon 9/falcon 9-photo1.jpg",
+  ];
+  const photosTitle = ["Rodzina rakiet Falcon", "Start rakiety Falcon 9"];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -20,9 +24,12 @@ const Falcon9History = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {historyState === true && (
         <article className="px-8">
           <h4>Rakieta Falcon 9</h4>
@@ -40,12 +47,11 @@ const Falcon9History = ({ id }) => {
           </p>
           <LazyLoadImage
             className="mx-auto  max-w-4xl hover:cursor-pointer"
-            src={src(2)}
+            src={photosSrc[0]}
             alt="Rodzina rakiet Falcon."
-            title="Rodzina rakiet Falcon."
+            title={photosTitle[0]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <h4>Misja DM-2 (SpaceX Demonstration Mission 2)</h4>
@@ -60,12 +66,11 @@ const Falcon9History = ({ id }) => {
           </p>
           <LazyLoadImage
             className="mx-auto hover:cursor-pointer"
-            src={src(1)}
+            src={photosSrc[1]}
             alt="Start rakiety Falcon 9."
-            title="Start rakiety Falcon 9."
+            title={photosTitle[1]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
         </article>

@@ -1,18 +1,24 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StiloHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "models/latarnie morskie/stilo/stilo-photo-1.jpg",
+    "models/latarnie morskie/stilo/stilo-photo-2.jpg",
+    "models/latarnie morskie/stilo/stilo-photo-3.jpg",
+  ];
+  const photosTitle = ["Obecny wygląd", "Obecny wygląd", ""];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       {" "}
@@ -21,9 +27,12 @@ const StiloHistory = ({ id }) => {
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
           <p>
@@ -42,13 +51,12 @@ const StiloHistory = ({ id }) => {
           <div className="flex justify-center gap-8 max-md:flex-col">
             <LazyLoadImage
               className="pr-8 float-left"
-              src={src(1)}
+              src={photosSrc[0]}
               alt="Stilo"
               onClick={(e) => {
-                setProp(e);
-                setFullScreen(true);
+                photoClickHandler(e);
               }}
-              title="Obecny wygląd."
+              title={photosTitle[0]}
             />
             <ul className="list-disc pl-8 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left font-bold border-2 h-full border-text-dark rounded-xl p-4 ">
               <li>
@@ -112,7 +120,7 @@ const StiloHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 float-left"
-            src={src(3)}
+            src={photosSrc[1]}
             alt="Stilo"
             onClick={(e) => {
               setProp(e);
@@ -176,7 +184,7 @@ const StiloHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 mx-auto"
-            src={src(2)}
+            src={photosSrc[2]}
             alt="Stilo"
             onClick={(e) => {
               setProp(e);

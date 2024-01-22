@@ -1,18 +1,20 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StarshipSN15History = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = ["models/starship sn15/starship sn15-photo1.jpg"];
+  const photosTitle = ["Prototyp SN15 na stanowisku startowym"];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -20,19 +22,21 @@ const StarshipSN15History = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {historyState === true && (
         <article className="px-8">
           <LazyLoadImage
             className="pr-8 float-left hover:cursor-pointer"
-            src={src(1)}
+            src={photosSrc[0]}
             alt="starship sn15"
-            title="Prototyp SN15 na stanowisku startowym."
+            title={photosTitle[0]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <p>

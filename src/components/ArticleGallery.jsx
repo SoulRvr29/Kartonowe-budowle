@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
-  const [photoMaxWidth, setPhotoMaxWidth] = useState(true);
   const [actualSrc, setActualSrc] = useState(photosSrc[photoIndex]);
 
   useEffect(() => {
@@ -30,13 +29,7 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
           className="select-none grid full-size bg-black bg-opacity-70 backdrop-blur-sm fixed top-0 left-0 z-30 w-screen h-screen"
         >
           {/* ////////////  ICON CONTAINER  //////////// */}
-          <div
-            className={
-              photoMaxWidth == false
-                ? "mx-auto relative grid max-w-6xl w-full"
-                : "grid"
-            }
-          >
+          <div className="grid">
             {/* close icon */}
 
             <svg
@@ -44,14 +37,9 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
               height="3em"
               viewBox="0 0 384 512"
               fill="white"
-              className={
-                photoMaxWidth == false
-                  ? "absolute hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 right-0 top-0 m-16 max-sm:justify-self-center max-sm:right-auto"
-                  : "fixed opacity-50 hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
-              }
+              className="fixed  hover:scale-125 hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-14 right-20 max-sm:top-2 max-sm:justify-self-center max-sm:right-auto"
               onClick={(e) => {
                 e.stopPropagation();
-                setPhotoMaxWidth(false);
                 setPhotoIndex(null);
                 document
                   .querySelector("body")
@@ -67,11 +55,7 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
                   e.stopPropagation();
                   imgSwitchHandler("left");
                 }}
-                className={
-                  photoMaxWidth == false
-                    ? "p-1 px-2  gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:ml-2 "
-                    : "p-1 px-2  fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-2 "
-                }
+                className="p-1 px-2 fixed hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-2 "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -86,11 +70,7 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
             {/* right icon */}
             {photoIndex < photosSrc.length - 1 && (
               <button
-                className={
-                  photoMaxWidth == false
-                    ? "p-1 px-2 fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:mr-2"
-                    : "p-1 px-2 fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-2"
-                }
+                className="p-1 px-2 fixed hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-2"
                 onClick={(e) => {
                   e.stopPropagation();
                   imgSwitchHandler("right");
@@ -108,25 +88,19 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
             )}
           </div>
           {/* IMG CONTAINER medium-w-false / full-w-true */}
-          <div className="fixed w-screen h-screen left-0 top-0 z-30 grid place-content-center overflow-auto">
+          <div className="fixed w-screen h-screen left-0 top-0 z-30 grid place-content-center overflow-auto ">
             <img
               onClick={(e) => {
                 e.stopPropagation();
-                setPhotoMaxWidth(!photoMaxWidth);
               }}
-              className={
-                photoMaxWidth === false
-                  ? "z-30 cursor-pointer medium-width border-4 border-accent-2 max-w-[600px] max-md:w-screen max-h-[95vh] max-sm:w-screen "
-                  : "z-30 cursor-pointer medium-width border-4 border-accent-2 w-full overflow-auto  max-sm:min-w-max max-sm:w-screen"
-              }
+              className="z-30 medium-width border-4 border-accent-2  overflow-auto max-sm:min-w-max max-sm:w-screen max-h-[90vh] justify-self-center"
               src={actualSrc}
               alt="photo"
             />
             <span
               className={
-                photoMaxWidth === false
-                  ? "photo-title opacity-0 text-text-light text-lg max-w-[500px] bg-black px-3 border border-t-0 border-accent-2  w-fit max-sm:w-screen mx-auto text-center"
-                  : "photo-title opacity-0 text-text-light  text-lg bg-black px-3 border border-accent-2 border-t-0 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50"
+                "max-w-3xl photo-title opacity-0 text-text-light text-lg bg-black px-3 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50 " +
+                (photosTitle[photoIndex] != "" && "border border-accent-2")
               }
             >
               {photosTitle[photoIndex]}

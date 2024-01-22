@@ -1,18 +1,27 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const OporowHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
-
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "models/oporow/oporow-photo-2.jpg",
+    "models/oporow/oporow-photo-3.jpg",
+    "models/oporow/oporow-photo-1.jpg",
+  ];
+  const photosTitle = [
+    "Wizerunek zamku z litografii Wincentego Kasprzyckiego, 1844 rok.",
+    "Zamek w latach 60. XX wieku.",
+    "Zamek współcześnie",
+  ];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -20,9 +29,12 @@ const OporowHistory = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {historyState === true && (
         <article className="px-8">
           <h4>Budowa i zniszczenie pierwszego dworu</h4>
@@ -39,13 +51,12 @@ const OporowHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 mx-auto"
-            src={src(2)}
+            src={photosSrc[0]}
             alt="Oporów"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
-            title="Wizerunek zamku z litografii Wincentego Kasprzyckiego, 1844 rok."
+            title={photosTitle[0]}
           />
           <h4>Nowy i okazalszy dwór</h4>
           <p>
@@ -164,13 +175,12 @@ const OporowHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 mx-auto"
-            src={src(3)}
+            src={photosSrc[1]}
             alt="Oporów"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
-            title="Zamek w latach 60. XX wieku."
+            title={photosTitle[1]}
           />
           <h4>Kolejni właściciele</h4>
           <p>
@@ -227,13 +237,12 @@ const OporowHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pr-8 mx-auto"
-            src={src(1)}
+            src={photosSrc[2]}
             alt="Oporów"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
-            title="Zamek współcześnie"
+            title={photosTitle[2]}
           />
         </article>
       )}

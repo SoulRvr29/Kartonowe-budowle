@@ -1,18 +1,28 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SandomierzHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "models/sandomierz/sandomierz-photo-1.jpg",
+    "models/sandomierz/sandomierz-photo-2.jpg",
+    "models/sandomierz/sandomierz-photo-3.jpg",
+  ];
+  const photosTitle = [
+    "Ratusz w roku 1899",
+    "Ratusz obecnie",
+    "Brama Opatowska obecnie",
+  ];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -20,21 +30,23 @@ const SandomierzHistory = ({ id }) => {
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {sectionState === true && (
         <article className="px-8 max-sm:px-4">
           <h4>Ratusz w Sandomierzu</h4>
           <LazyLoadImage
             className="pr-8 float-left max-w-[400px]"
-            src={src(1)}
+            src={photosSrc[0]}
             alt="ratusz"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
-            title="Ratusz w roku 1899."
+            title={photosTitle[0]}
           />
           <p>
             <span className="first-letter font-playfair">B</span>
@@ -63,24 +75,22 @@ const SandomierzHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pl-8 mx-auto"
-            src={src(2)}
+            src={photosSrc[1]}
             alt="ratusz"
-            title="Ratusz obecnie"
+            title={photosTitle[1]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <hr className="dark:bg-accent-2 bg-accent-4 " />
           <h4 className="">Brama Opatowska</h4>
           <LazyLoadImage
             className="pr-8 float-left max-w-md"
-            src={src(3)}
+            src={photosSrc[2]}
             alt="brama"
-            title="Brama Opatowska obecnie."
+            title={photosTitle[2]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
 

@@ -1,18 +1,10 @@
 import SectionHeader from "../components/SectionHeader";
 import FullScreen from "../components/FullScreen";
 import { useState } from "react";
-import data from "../data/models-data.json";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PhantomF4History = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
-  };
   return (
     <>
       <SectionHeader
@@ -20,9 +12,6 @@ const PhantomF4History = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
       {historyState === true && (
         <article className="px-8">
           <span className="first-letter font-playfair">P</span>

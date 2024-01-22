@@ -1,18 +1,30 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import data from "../data/models-data.json";
 
 const WangHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
 
-  const photo = data.filter((item) => item.id == id)[0].photo;
-  const src = (nr) => {
-    return photo + nr + ".jpg";
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "models/wang/wang-photo1.jpg",
+    "models/wang/wang-photo2.jpg",
+    "models/wang/wang-photo3.jpg",
+    "models/wang/wang-photo4.jpg",
+  ];
+  const photosTitle = [
+    "Świątynia Wang w Norwegii, rysunek F.W. Schiertza z 1841 roku",
+    "Świątynia Wang w 2006 roku",
+    "Świątynia Wang obecnie",
+    "Świątynia Wang obecnie",
+  ];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
   };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
@@ -20,19 +32,21 @@ const WangHistory = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       {historyState === true && (
         <article className="px-8">
           <LazyLoadImage
             className="pr-8 float-left "
-            src={src(1)}
+            src={photosSrc[0]}
             alt="zdjęcie"
-            title="Świątynia Wang w Norwegii, rysunek F.W. Schiertza z 1841 roku"
+            title={photosTitle[0]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -81,12 +95,11 @@ const WangHistory = ({ id }) => {
           </p>
           <LazyLoadImage
             className="pl-8 float-right "
-            src={src(2)}
+            src={photosSrc[1]}
             alt="zdjęcie"
-            title="Świątynia Wang w 2006 roku."
+            title={photosTitle[1]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -125,22 +138,20 @@ const WangHistory = ({ id }) => {
           <div className="flex gap-8 justify-center flex-wrap">
             <LazyLoadImage
               className="max-h-[20rem] cursor-pointer max-sm:w-full "
-              src={src(3)}
+              src={photosSrc[2]}
               alt="zdjęcie"
-              title="Świątynia Wang obecnie."
+              title={photosTitle[2]}
               onClick={(e) => {
-                setProp(e);
-                setFullScreen(true);
+                photoClickHandler(e);
               }}
             />
             <LazyLoadImage
               className="max-h-[20rem] cursor-pointer max-sm:w-full "
-              src={src(4)}
+              src={photosSrc[3]}
               alt="zdjęcie"
-              title="Świątynia Wang obecnie."
+              title={photosTitle[3]}
               onClick={(e) => {
-                setProp(e);
-                setFullScreen(true);
+                photoClickHandler(e);
               }}
             />
           </div>
