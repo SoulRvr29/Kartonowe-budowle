@@ -62,13 +62,13 @@ const Gallery = ({ id, name }) => {
   };
 
   return (
-    <section className="gallery-cont select-none grid z-0">
+    <section className="gallery-cont select-none grid ">
       <header className="relative">
-        <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 -z-10"></div>
-        <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base z-10  mx-8 max-sm:mx-4">
+        <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
+        <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base mx-8 max-sm:mx-4">
           {/* //////////// gallery on/of button //////////// */}
           <button
-            className="arrow-up-down "
+            className="arrow-up-down z-10"
             onClick={() => {
               setGalleryState(galleryState === false ? true : false);
               // galleryState === "off" &&
@@ -89,12 +89,13 @@ const Gallery = ({ id, name }) => {
               <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
             </svg>
           </button>
-          {name === undefined ? "Galeria" : name}
+          <span className="z-10">{name === undefined ? "Galeria" : name}</span>
           {/* //////////// gallery-type button //////////// */}
           {gallerySections.length > 1 &&
             gallerySections.map((section) => {
               return (
-                <div key={section}>
+                <div key={section} className="z-10">
+                  <span className="opacity-50 z-10">&nbsp;/&nbsp;</span>
                   <button
                     onClick={(e) => {
                       getPhotosSrc(section);
@@ -105,8 +106,7 @@ const Gallery = ({ id, name }) => {
                       e.target.classList.add("active-section");
                     }}
                   >
-                    <span className="opacity-50">&nbsp;/&nbsp;</span>
-                    <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all">
+                    <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all  z-10">
                       {section}
                     </span>
                   </button>

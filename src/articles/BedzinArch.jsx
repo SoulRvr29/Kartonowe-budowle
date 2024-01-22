@@ -1,7 +1,6 @@
 import SectionHeader from "../components/SectionHeader";
 import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
-import data from "../data/models-data.json";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BedzinArch = ({ id }) => {

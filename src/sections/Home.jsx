@@ -1,19 +1,33 @@
 import ImagesGrid from "../components/ImagesGrid";
-import FullScreen from "../components/FullScreen";
+import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { NavLink } from "react-router-dom";
 
 const Article = () => {
-  const [prop, setProp] = useState(0);
-  const [fullScreen, setFullScreen] = useState(false);
-
+  ///////////////////////// PHOTOS SCRIPTS /////////////////////////
+  const [photoIndex, setPhotoIndex] = useState(null);
+  const photosSrc = [
+    "./models/bedzin/day/full-res/bedzin-d01.jpg",
+    "./models/bedzin/day/full-res/bedzin-d19.jpg",
+    "./models/bedzin/day/full-res/bedzin-d27.jpg",
+  ];
+  const photosTitle = ["Zamek w Będzinie", "Wejście do zamku", "Dziedziniec"];
+  const photoClickHandler = (e) => {
+    setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
+    document.querySelector("body").classList.add("site-overflow");
+  };
+  /////////////////////////////////////////////////////////////////
   return (
     <>
-      {fullScreen === true && (
-        <FullScreen prop={prop} setFullScreen={setFullScreen} />
-      )}
+      <ArticleGallery
+        photosSrc={photosSrc}
+        photosTitle={photosTitle}
+        photoIndex={photoIndex}
+        setPhotoIndex={setPhotoIndex}
+      />
       <hr className="grad-hr" />
+
       <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8">
         <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m-2 droh2-shadow-sm dark:text-text-light text-text-dark">
           Witaj na stronie.
@@ -76,33 +90,30 @@ const Article = () => {
         </p>
         <LazyLoadImage
           className="w-fit max-h-[40rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-          src="./models/bedzin/day/full-res/bedzin-d01.jpg"
+          src={photosSrc[0]}
           alt="będzin"
-          title="Zamek w Będzinie"
+          title={photosTitle[0]}
           onClick={(e) => {
-            setProp(e);
-            setFullScreen(true);
+            photoClickHandler(e);
           }}
         />
         <div className="flex flex-wrap items-center gap-4 mb-8">
           <LazyLoadImage
             className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-            src="./models/bedzin/day/full-res/bedzin-d19.jpg"
+            src={photosSrc[1]}
             alt="będzin"
-            title="Zamek w Będzinie"
+            title={photosTitle[1]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <LazyLoadImage
             className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-            src="./models/bedzin/day/full-res/bedzin-d27.jpg"
+            src={photosSrc[2]}
             alt="będzin"
-            title="Zamek w Będzinie"
+            title={photosTitle[2]}
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
         </div>

@@ -100,7 +100,7 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
             <span
               className={
                 "max-w-3xl photo-title opacity-0 text-text-light text-lg bg-black px-3 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50 " +
-                (photosTitle[photoIndex] != "" && "border border-accent-2")
+                (photosTitle[photoIndex] != "" && "border-2 border-accent-2")
               }
             >
               {photosTitle[photoIndex]}
