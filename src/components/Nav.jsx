@@ -6,14 +6,16 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
       className={
-        "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg  " +
+        "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light  " +
         (activeList == name &&
-          " text-accent-4 dark:text-accent-2 hover:cursor-default")
+          " text-accent-4 dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-text-light max-sm:bg-accent hover:cursor-default")
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);
-        if (name == "Wszystkie modele") setData(completeData);
-        else if (name == "Z oświetleniem")
+        console.log(e.target.outerText, name);
+        console.log(e.target.outerText == name);
+        if (name == "wszystkie modele") setData(completeData);
+        else if (name == "z oświetleniem")
           setData(
             completeData.filter((item) => {
               return item.oświetlenie == true;
@@ -28,7 +30,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
         }
       }}
     >
-      <li className="active-li lowercase">{name}</li>
+      <li className="active-li ">{name}</li>
       {activeList != name && (
         <div className="custom-underline dark:bg-accent-2 bg-accent-4 h-[2px] w-0 justify-self-center transition-all duration-300"></div>
       )}
@@ -42,71 +44,71 @@ const Nav = ({ overlap, setOverlap }) => {
   });
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
-  const [activeList, setActiveList] = useState("Wszystkie modele");
+  const [activeList, setActiveList] = useState("wszystkie modele");
 
   return (
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] max-sm:gap-y-0 w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg">
+        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg max-sm:gap-1">
           <Nav_li
-            name="Wszystkie modele"
+            name="wszystkie modele"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Latarnie morskie"
+            name="latarnie morskie"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Zamki i ratusze"
+            name="zamki i ratusze"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Kościoły"
+            name="kościoły"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Kosmos"
+            name="kosmos"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Figurki"
+            name="figurki"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Samoloty"
+            name="samoloty"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
           <Nav_li
-            name="Z oświetleniem"
+            name="z oświetleniem"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
@@ -118,7 +120,7 @@ const Nav = ({ overlap, setOverlap }) => {
       <nav
         className={
           navState === true
-            ? "max-sm:mx-0 mx-8 relative grid overflow-y-hidden max-md:px-0 px-8  h-[14rem] pt-2 " +
+            ? "max-sm:mx-0 mx-8 relative grid overflow-y-hidden max-md:px-0 px-8 pt-2 " +
               (!overlap && "pl-20")
             : "relative h-5"
         }
@@ -127,8 +129,8 @@ const Nav = ({ overlap, setOverlap }) => {
         <section
           className={
             overlap
-              ? "w-max relative grid justify-self-center max-md:justify-start  max-md:px-4"
-              : "w-max relative grid justify-self-center px-10 max-md:justify-start  max-md:px-4"
+              ? "w-max relative grid justify-self-center max-md:justify-start  max-md:px-4 mb-4 max-sm:mb-2"
+              : "w-max relative grid justify-self-center px-10 max-md:justify-start  max-md:px-4 mb-4 max-sm:mb-2"
           }
         >
           <div

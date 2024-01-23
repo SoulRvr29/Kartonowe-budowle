@@ -77,7 +77,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const [settingsState, setSettingsState] = useState(false);
   return (
     <div className="relative ">
-      <header className="relative px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[460px]:flex-wrap max-[460px]:justify-center py-4 max-[460px]:py-0 pb-4  max-[460px]:gap-x-4">
+      <header className="relative header-main px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[460px]:flex-wrap max-[460px]:justify-center py-4 max-[460px]:py-0 pb-4  max-[460px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
         {/* left side */}
         <div className="flex gap-2 z-10 -mb-1 max-[460px]:mb-1 max-[460px]:gap-4 ">
           <button className="mb-1">

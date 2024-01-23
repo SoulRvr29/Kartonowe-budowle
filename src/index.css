@@ -148,6 +148,21 @@
   .nav-li:hover .custom-underline {
     width: 100%;
   }
+
+  @media (max-width: 640px) {
+    .nav-li:hover .custom-underline {
+      width: 0%;
+    }
+  }
+
+  .header-main {
+    background-image: url(/src/assets/brick_wall_light.png);
+    background-position: 0%;
+  }
+  .dark .header-main {
+    background-image: url(/src/assets/brick_wall_dark.png);
+  }
+
   /********************************************/
   /**********  MODEL INFO ANIMATION  **********/
   /********************************************/
@@ -159,7 +174,7 @@
     .model-cover {
       animation:
         model-cover-anim 1.5s forwards,
-        fade-in 1s 0.5s forwards;
+        fade-in 1s 0.2s forwards;
     }
   }
 
@@ -174,13 +189,13 @@
   }
   @keyframes model-cover-anim {
     0% {
-      transform: translateX(50%);
+      transform: translateX(50%) scale(50%);
     }
     50% {
-      transform: translateX(50%);
+      transform: translateX(50%) scale(100%);
     }
     100% {
-      transform: translateX(0%);
+      transform: translateX(0%) scale(100%);
     }
   }
 

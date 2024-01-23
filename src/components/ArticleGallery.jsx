@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
   const [actualSrc, setActualSrc] = useState(photosSrc[photoIndex]);
+  const [loadingIcon, setLoadingIcon] = useState(true);
 
   useEffect(() => {
     setActualSrc(photosSrc[photoIndex]);
@@ -9,12 +10,18 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
 
   const imgSwitchHandler = (direction) => {
     if (direction == "left") {
-      if (photoIndex > 0) setPhotoIndex(photoIndex - 1);
-      setActualSrc(photosSrc[photoIndex]);
+      if (photoIndex > 0) {
+        setPhotoIndex(photoIndex - 1);
+        setActualSrc(photosSrc[photoIndex]);
+        setLoadingIcon(true);
+      }
     }
     if (direction == "right") {
-      if (photoIndex < photosSrc.length - 1) setPhotoIndex(photoIndex + 1);
-      setActualSrc(photosSrc[photoIndex]);
+      if (photoIndex < photosSrc.length - 1) {
+        setPhotoIndex(photoIndex + 1);
+        setActualSrc(photosSrc[photoIndex]);
+        setLoadingIcon(true);
+      }
     }
   };
 
@@ -86,20 +93,26 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
                 </svg>
               </button>
             )}
+            {/* loading icon */}
+            {loadingIcon && (
+              <div className="loading-icon fixed top-1/2 justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)]"></div>
+            )}
           </div>
           {/* IMG CONTAINER medium-w-false / full-w-true */}
-          <div className="fixed w-screen h-screen left-0 top-0 z-30 grid place-content-center overflow-auto ">
+          <div className="fixed w-screen h-full left-0 top-0 z-30 grid place-content-center overflow-auto">
             <img
+              onLoad={() => setLoadingIcon(false)}
               onClick={(e) => {
                 e.stopPropagation();
               }}
-              className="z-30 medium-width border-4 border-accent-2  overflow-auto max-sm:min-w-max max-sm:w-screen max-h-[90vh] justify-self-center"
+              className="z-30 medium-width border-4 border-accent-2 overflow-auto w- max-sm:w-screen max-sm:h-full max-sm:min-w-max max-h-[90vh] justify-self-center max-sm:justify-self-auto"
+              // className="medium-width w-full max-sm:w-screen max-sm:h-full max-sm:min-w-max "
               src={actualSrc}
               alt="photo"
             />
             <span
               className={
-                "max-w-3xl photo-title opacity-0 text-text-light text-lg bg-black px-3 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50 " +
+                "max-w-3xl photo-title opacity-0 text-text-light text-lg bg-black px-3 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50 max-sm:text-base " +
                 (photosTitle[photoIndex] != "" && "border-2 border-accent-2")
               }
             >

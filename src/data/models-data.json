@@ -2,7 +2,7 @@
   {
     "id": 0,
     "component": "Bedzin",
-    "typ": "Zamki i ratusze",
+    "typ": "zamki i ratusze",
     "oświetlenie": true,
     "rok ukończenia": 2019,
     "link": "/Bedzin",
@@ -42,7 +42,7 @@
   {
     "id": 1,
     "component": "Oporow",
-    "typ": "Zamki i ratusze",
+    "typ": "zamki i ratusze",
     "oświetlenie": true,
     "rok ukończenia": 2016,
     "link": "/Oporow",
@@ -83,7 +83,7 @@
   {
     "id": 4,
     "component": "Sandomierz",
-    "typ": "Zamki i ratusze",
+    "typ": "zamki i ratusze",
     "oświetlenie": true,
     "rok ukończenia": 2014,
     "link": "/Sandomierz",
@@ -135,7 +135,7 @@
   {
     "id": 2,
     "component": "Stilo",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": true,
     "rok ukończenia": 2013,
     "link": "/Stilo",
@@ -174,7 +174,7 @@
   {
     "id": 5,
     "component": "Darlowo",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": true,
     "rok ukończenia": 2011,
     "link": "/Darlowo",
@@ -208,7 +208,7 @@
   {
     "id": 6,
     "component": "Czołpino",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2011,
     "link": "/Czołpino",
@@ -242,7 +242,7 @@
   {
     "id": 8,
     "component": "Gąski",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": true,
     "rok ukończenia": 2017,
     "link": "/Gąski",
@@ -291,7 +291,7 @@
   {
     "id": 9,
     "component": "Hel",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": true,
     "rok ukończenia": 2014,
     "link": "/Hel",
@@ -325,7 +325,7 @@
   {
     "id": 10,
     "component": "Jarosławiec",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2004,
     "link": "/Jarosławiec",
@@ -354,7 +354,7 @@
   {
     "id": 11,
     "component": "Jastarnia",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2011,
     "link": "/Jastarnia",
@@ -388,7 +388,7 @@
   {
     "id": 12,
     "component": "Kikut",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2011,
     "link": "/Kikut",
@@ -417,7 +417,7 @@
   {
     "id": 13,
     "component": "Kołobrzeg",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2008,
     "link": "/Kołobrzeg",
@@ -446,7 +446,7 @@
   {
     "id": 14,
     "component": "KrynicaMorska",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2004,
     "link": "/Krynica Morska",
@@ -475,7 +475,7 @@
   {
     "id": 15,
     "component": "Niechorze",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2001,
     "link": "/Niechorze",
@@ -504,7 +504,7 @@
   {
     "id": 16,
     "component": "NowyPort",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": true,
     "rok ukończenia": 2011,
     "link": "/Nowy Port",
@@ -543,7 +543,7 @@
   {
     "id": 17,
     "component": "PortPółnocny",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2017,
     "link": "/Port Północny",
@@ -589,7 +589,7 @@
   {
     "id": 18,
     "component": "Rozewie",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2004,
     "link": "/Rozewie",
@@ -618,7 +618,7 @@
   {
     "id": 19,
     "component": "Sopot",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": true,
     "rok ukończenia": 2017,
     "link": "/Sopot",
@@ -669,7 +669,7 @@
   {
     "id": 20,
     "component": "Świnoujście",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2004,
     "link": "/Świnoujście",
@@ -698,7 +698,7 @@
   {
     "id": 7,
     "component": "Ustka",
-    "typ": "Latarnie morskie",
+    "typ": "latarnie morskie",
     "oświetlenie": false,
     "rok ukończenia": 2008,
     "link": "/Ustka",
@@ -727,7 +727,7 @@
   {
     "id": 3,
     "component": "Curiosity",
-    "typ": "Kosmos",
+    "typ": "kosmos",
     "oświetlenie": false,
     "rok ukończenia": 2013,
     "link": "/Curiosity",
@@ -762,7 +762,7 @@
   {
     "id": 21,
     "component": "Baranów",
-    "typ": "Zamki i ratusze",
+    "typ": "zamki i ratusze",
     "oświetlenie": false,
     "rok ukończenia": 2014,
     "link": "/Baranów",
@@ -792,7 +792,7 @@
   {
     "id": 22,
     "component": "Gryfino",
-    "typ": "Kościoły",
+    "typ": "kościoły",
     "oświetlenie": false,
     "rok ukończenia": 2011,
     "link": "/Gryfino",
@@ -825,7 +825,7 @@
   {
     "id": 23,
     "component": "Mauler",
-    "typ": "Figurki",
+    "typ": "figurki",
     "oświetlenie": false,
     "rok ukończenia": 2012,
     "link": "/Mauler",
@@ -856,7 +856,7 @@
   {
     "id": 24,
     "component": "Predator",
-    "typ": "Figurki",
+    "typ": "figurki",
     "oświetlenie": false,
     "rok ukończenia": 2017,
     "link": "/Predator",
@@ -887,7 +887,7 @@
   {
     "id": 25,
     "component": "PhantomF4",
-    "typ": "Samoloty",
+    "typ": "samoloty",
     "oświetlenie": false,
     "rok ukończenia": 2009,
     "link": "/PhantomF4",
@@ -917,7 +917,7 @@
   {
     "id": 26,
     "component": "StarshipSN15",
-    "typ": "Kosmos",
+    "typ": "kosmos",
     "oświetlenie": false,
     "rok ukończenia": 2021,
     "link": "/StarshipSN15",
@@ -943,7 +943,7 @@
   {
     "id": 27,
     "component": "Falcon9",
-    "typ": "Kosmos",
+    "typ": "kosmos",
     "oświetlenie": false,
     "rok ukończenia": 2021,
     "link": "/Falcon9",
@@ -969,7 +969,7 @@
   {
     "id": 28,
     "component": "Wang",
-    "typ": "Kościoły",
+    "typ": "kościoły",
     "oświetlenie": true,
     "rok ukończenia": 9999,
     "link": "/Wang",

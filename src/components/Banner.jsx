@@ -7,8 +7,10 @@ const Banner = ({ bannerState, setBannerState }) => {
   const [name, setName] = useState(bannerData[0].name);
   const [link, setLink] = useState(bannerData[0].link);
   const [index, setIndex] = useState(1);
+  const [loadingIcon, setLoadingIcon] = useState(false);
 
   const animEndHandler = () => {
+    setLoadingIcon(true);
     setIndex(index + 1);
     if (index >= bannerData.length - 1) setIndex(0);
 
@@ -33,11 +35,15 @@ const Banner = ({ bannerState, setBannerState }) => {
         to={bannerState === true && link}
         className="relative z-10 grid"
       >
-        <hr className="grad-hr" />
+        <hr className="grad-hr dark:hidden" />
+        {/* loading icon */}
+        {loadingIcon && (
+          <div className="loading-icon absolute top-[40%] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
+        )}
         <section
           className={
             bannerState == true
-              ? "banner-section pointer h-[200px] max-[400px]:h-[80px] w-full overflow-hidden relative flex flex-col"
+              ? "banner-section pointer h-[200px] max-sm:h-[80px] w-full overflow-hidden relative flex flex-col"
               : "banner-section pointer h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
           }
         >
@@ -52,7 +58,10 @@ const Banner = ({ bannerState, setBannerState }) => {
             {bannerState && (
               <img
                 onAnimationEnd={() => animEndHandler()}
-                onLoad={() => imgLoadHandler()}
+                onLoad={() => {
+                  imgLoadHandler();
+                  setLoadingIcon(false);
+                }}
                 className="banner-img opacity-0 relative bottom-[11rem] place-self-center w-screen min-w-max max-[400px]:min-w-[600px] max-[400px]:mb-[3rem] max-[400px]:ml-[-4rem] "
                 src={image}
                 alt="banner photo"
