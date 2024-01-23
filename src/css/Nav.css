@@ -1,0 +1,61 @@
+.active img,
+.active .nazwa-modelu {
+  border-color: var(--accent-2);
+  background-color: var(--accent-2);
+}
+
+.dark .cards-container div {
+  animation: cards-reload-dark 1s forwards;
+}
+
+.cards-container div {
+  animation: cards-reload-light 1s forwards;
+}
+
+@keyframes cards-reload-light {
+  0% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+@keyframes cards-reload-dark {
+  0% {
+    filter: brightness(0.25);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.arrow-l:hover,
+.arrow-r:hover {
+  animation: arrow-zoom-anim 1s infinite;
+}
+.arrow-l,
+.arrow-r {
+  transition: all 1s;
+}
+
+@keyframes arrow-zoom-anim {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.25;
+  }
+}
+
+/*** li underline animation ***/
+.nav-li:hover .custom-underline {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .nav-li:hover .custom-underline {
+    width: 0%;
+  }
+}

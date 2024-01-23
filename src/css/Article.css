@@ -1,0 +1,48 @@
+article {
+  padding: 1rem 2rem;
+  z-index: 10;
+}
+
+article img {
+  max-width: 500px;
+  padding: 1rem 0;
+  cursor: pointer;
+  filter: drop-shadow(8px 8px 2px rgba(0, 0, 0, 0.1));
+}
+
+article,
+.article-header {
+  animation: article-fade-in 1s;
+}
+
+@keyframes article-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  article > img {
+    padding: 1rem 0 !important;
+    width: fit-content !important;
+    float: none !important;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  article > img {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  article {
+    padding: 1rem !important;
+  }
+}
+
+.photo-title {
+  animation: fade-in 2s forwards 1s;
+}

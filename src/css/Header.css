@@ -1,0 +1,46 @@
+.text-header {
+  font-size: clamp(1.2rem, 4.5vw, 2.25rem);
+}
+.header-main {
+  background-image: url(/src/assets/brick_wall_light.png);
+  background-position: 0%;
+}
+.dark .header-main {
+  background-image: url(/src/assets/brick_wall_dark.png);
+}
+
+h1 {
+  display: flex;
+}
+
+h1 div {
+  display: block;
+  transform: rotateY(90deg);
+}
+
+@keyframes letter-rotate {
+  10% {
+    transform: rotateY(90deg);
+  }
+  20% {
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.header-icon:hover {
+  animation: brightness-pulse 0.75s infinite;
+}
+
+@keyframes brightness-pulse {
+  0%,
+  100% {
+    filter: brightness(150%) drop-shadow(0 0 1px rgba(255, 255, 255, 0));
+  }
+  50% {
+    filter: brightness(170%) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
+  }
+}

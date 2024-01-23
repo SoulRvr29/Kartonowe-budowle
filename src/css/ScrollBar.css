@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 30, 30, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bkg-light);
+  border-radius: 100px;
+  border: 2px solid var(--text-light);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 100px;
+  border: 2px solid var(--text-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eee;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-2);
+}

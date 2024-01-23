@@ -1,0 +1,31 @@
+.confirm {
+  animation: settings-fade-in-out 1s;
+}
+
+.settings {
+  animation: settings-fade-in 1s;
+}
+
+@keyframes settings-fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes settings-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

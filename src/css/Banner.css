@@ -1,0 +1,56 @@
+.banner-grad {
+  background-image: linear-gradient(
+    to right,
+    var(--bkg),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    var(--bkg)
+  );
+}
+
+.banner-anim {
+  animation: 15s linear scrolling-anim;
+}
+.banner-text-anim {
+  animation: 15s linear banner-text-anim;
+}
+
+@keyframes banner-text-anim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scrolling-anim {
+  0% {
+    bottom: 65%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 2%;
+    opacity: 0;
+  }
+}

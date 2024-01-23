@@ -1,0 +1,55 @@
+.active-section {
+  opacity: 1 !important;
+}
+
+.section:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+.active-section:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+.gallery button {
+  animation: gallery-fade-in 1s;
+}
+
+.full-size {
+  animation: gallery-fade-in 1.5s;
+}
+.medium-width {
+  animation: img-width-in 1s forwards;
+}
+
+.gallery-thumb {
+  scale: 0%;
+  animation: thumb-scale-in 0.5s forwards;
+}
+
+@keyframes thumb-scale-in {
+  from {
+    scale: 70%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+
+@keyframes img-width-in {
+  from {
+    scale: 0%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+
+@keyframes gallery-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

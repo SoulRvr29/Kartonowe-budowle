@@ -43,8 +43,8 @@ const Banner = ({ bannerState, setBannerState }) => {
         <section
           className={
             bannerState == true
-              ? "banner-section pointer h-[200px] max-sm:h-[80px] w-full overflow-hidden relative flex flex-col"
-              : "banner-section pointer h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
+              ? "banner-section h-[200px] max-sm:h-[80px] w-full overflow-hidden relative flex flex-col"
+              : "banner-section h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
           }
         >
           {bannerState && (
