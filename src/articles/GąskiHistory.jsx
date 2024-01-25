@@ -51,7 +51,7 @@ const GąskiHistory = ({ id }) => {
             w laternie umieszczona jest soczewka pierścieniowo-bębnowa z 1500 W
             żarówką.
           </p>
-          <div className="flex justify-center gap-8">
+          <div className="flex justify-center gap-8 flex-wrap">
             <LazyLoadImage
               className=" max-h-[500px]"
               src={photosSrc[0]}

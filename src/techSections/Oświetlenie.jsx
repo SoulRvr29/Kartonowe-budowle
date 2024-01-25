@@ -62,6 +62,19 @@ const Article = () => {
           accusamus voluptatibus itaque perferendis fugiat cum optio quidem et
           blanditiis, consequuntur quos dicta atque dolorem tenetur!
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          illum iste perspiciatis harum mollitia sit quisquam repellat aliquam
+          amet saepe! Id necessitatibus perferendis autem voluptatem rerum
+          excepturi neque commodi similique. Placeat laudantium harum fugiat
+          nostrum quasi obcaecati beatae adipisci, iure reiciendis! Veniam
+          voluptatibus nobis, unde amet quia velit provident accusantium
+          aspernatur possimus numquam sed quo quod, necessitatibus, recusandae
+          debitis facilis! Quaerat quae ea totam! Dignissimos sunt, recusandae
+          voluptatum animi laboriosam voluptas odio, possimus molestias modi
+          dolore dolorum iste! Enim ratione aspernatur quisquam nihil. Cumque
+          nisi numquam nam accusamus molestias enim.
+        </p>
       </article>
     </>
   );

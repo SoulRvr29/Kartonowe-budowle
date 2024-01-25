@@ -7,6 +7,10 @@
   background: rgba(30, 30, 30, 0.1);
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--bkg-light);
   border-radius: 100px;

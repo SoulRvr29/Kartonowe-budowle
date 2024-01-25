@@ -1,6 +1,11 @@
 .text-header {
   font-size: clamp(1.2rem, 4.5vw, 2.25rem);
 }
+@media (max-width: 460px) {
+  .text-header {
+    font-size: clamp(1rem, 7vw, 2rem);
+  }
+}
 .header-main {
   background-image: url(/src/assets/brick_wall_light.png);
   background-position: 0%;

@@ -200,8 +200,8 @@ const Gallery = ({ id, name }) => {
                   }}
                   className={
                     photoMaxWidth == false
-                      ? "p-1 px-2  gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-1/2 ml-8 max-sm:ml-2 "
-                      : "p-1 px-2  fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 left-16 max-sm:left-2 "
+                      ? "p-1 px-2  gallery-icon icon-hidden fixed  hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 top-[calc(50vh-26px)] ml-8 max-sm:ml-2 "
+                      : "p-1 px-2  fixed opacity-50 hover:opacity-100 hover:scale-125 transition-all drop-shadow-[0_0_3px_grey] z-40 top-[calc(50vh-26px)] left-16 max-sm:left-2 "
                   }
                 >
                   <svg
@@ -219,8 +219,8 @@ const Gallery = ({ id, name }) => {
                 <button
                   className={
                     photoMaxWidth == false
-                      ? "p-1 px-2 fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-1/2  mr-8 max-sm:mr-2"
-                      : "p-1 px-2 fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-1/2 right-20  max-sm:right-2"
+                      ? "p-1 px-2 fixed hover:scale-125 transition-all drop-shadow-[0_0_3px_black] z-40 justify-self-end top-[calc(50vh-26px)]  mr-8 max-sm:mr-2"
+                      : "p-1 px-2 fixed opacity-50 hover:scale-125  hover:opacity-100 transition-all drop-shadow-[0_0_3px_grey] z-40 top-[calc(50vh-26px)] right-20  max-sm:right-2"
                   }
                   onClick={(e) => {
                     e.stopPropagation();

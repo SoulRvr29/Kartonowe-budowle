@@ -103,7 +103,7 @@ function App() {
           <Route path="/StarshipSN15" element={<StarshipSN15 id={26} />} />
           <Route path="/Falcon9" element={<Falcon9 id={27} />} />
           <Route path="/Wang" element={<Wang id={28} />} />
-          <Route path="/Wieżowce" element={<Wieżowce />} />
+          <Route path="/Wieżowce" element={<Wieżowce id={29} />} />
           <Route path="/Oświetlenie" element={<Oświetlenie />} />
           <Route path="/Roślinność" element={<Roślinność />} />
           <Route path="/Sadzarka" element={<Sadzarka />} />

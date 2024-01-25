@@ -74,6 +74,12 @@
     font-size: clamp(0.5rem, 2.5vw, 1rem);
   } */
 
+  /***** IMAGES GRID PHOTO SIGNATURE *****/
+  .photo-container:hover .photo-div {
+    visibility: visible;
+    animation: fade-in 1s forwards;
+  }
+
   /***** SCROLL BLOCKED ON FULLSCREEN PHOTO *****/
   .site-overflow {
     overflow: hidden;

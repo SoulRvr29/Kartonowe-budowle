@@ -123,8 +123,7 @@ const StiloHistory = ({ id }) => {
             src={photosSrc[1]}
             alt="Stilo"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
           <p>
@@ -187,8 +186,7 @@ const StiloHistory = ({ id }) => {
             src={photosSrc[2]}
             alt="Stilo"
             onClick={(e) => {
-              setProp(e);
-              setFullScreen(true);
+              photoClickHandler(e);
             }}
           />
         </article>

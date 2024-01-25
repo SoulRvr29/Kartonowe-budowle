@@ -12,7 +12,11 @@ const Article = () => {
     "./models/bedzin/day/full-res/bedzin-d19.jpg",
     "./models/bedzin/day/full-res/bedzin-d27.jpg",
   ];
-  const photosTitle = ["Zamek w Będzinie", "Wejście do zamku", "Dziedziniec"];
+  const photosTitle = [
+    "Zamek w Będzinie",
+    "Wejście do zamku w Będzinie",
+    "Dziedziniec zamku w Będzinie",
+  ];
   const photoClickHandler = (e) => {
     setPhotoIndex(photosSrc.indexOf(e.target.getAttribute("src")));
     document.querySelector("body").classList.add("site-overflow");
@@ -28,7 +32,7 @@ const Article = () => {
       />
       <hr className="grad-hr" />
 
-      <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8">
+      <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4">
         <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m-2 droh2-shadow-sm dark:text-text-light text-text-dark">
           Witaj na stronie.
         </h2>

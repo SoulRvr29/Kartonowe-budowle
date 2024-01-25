@@ -33,7 +33,7 @@ const SopotHistory = ({ id }) => {
         <article className="px-8 max-sm:px-4">
           {" "}
           <LazyLoadImage
-            className=" max-h-[300px] pt-2 pr-8 float-left"
+            className=" max-h-[300px] pt-2 pr-8 float-left max-sm:float-none max-sm:max-h-none"
             src={photosSrc[0]}
             alt="Sopot"
             onClick={(e) => {

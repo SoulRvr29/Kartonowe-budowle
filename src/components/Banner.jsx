@@ -52,7 +52,7 @@ const Banner = ({ bannerState, setBannerState }) => {
               {name}
             </h2>
           )}
-          <div className="grid ">
+          <div className="grid justify-center">
             {/* gradient */}
             <div className="w-full h-full absolute grad banner-grad z-10"></div>
             {bannerState && (
@@ -62,7 +62,7 @@ const Banner = ({ bannerState, setBannerState }) => {
                   imgLoadHandler();
                   setLoadingIcon(false);
                 }}
-                className="banner-img opacity-0 relative bottom-[11rem] place-self-center w-screen min-w-max max-[400px]:min-w-[600px] max-[400px]:mb-[3rem] max-[400px]:ml-[-4rem] "
+                className="banner-img opacity-0 relative bottom-[11rem] place-self-center w-screen min-w-max max-sm:min-w-[700px] max-sm:mb-[3rem] max-sm:ml-[-4rem] "
                 src={image}
                 alt="banner photo"
               />
