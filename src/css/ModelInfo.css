@@ -33,6 +33,20 @@
   }
 }
 
+.map {
+  opacity: 0;
+  animation: map-fade-in 2s forwards;
+}
+
+@keyframes map-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes model-cover-anim {
   0% {
     transform: translateX(50%) scale(50%);
