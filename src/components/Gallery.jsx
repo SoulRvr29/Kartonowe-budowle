@@ -21,7 +21,9 @@ const Gallery = ({ id, name }) => {
   useEffect(() => {
     getPhotosSrc(gallerySections[0]);
     gallerySections.length > 1 &&
-      document.querySelector(".section").classList.add("active-section");
+      document
+        .querySelector(".section-list .section")
+        .classList.add("active-section");
   }, []);
 
   const getPhotosSrc = (section) => {
@@ -91,28 +93,32 @@ const Gallery = ({ id, name }) => {
           </button>
           <span className="z-10">{name === undefined ? "Galeria" : name}</span>
           {/* //////////// gallery-type button //////////// */}
-          {gallerySections.length > 1 &&
-            gallerySections.map((section) => {
-              return (
-                <div key={section} className="z-10">
-                  <span className="opacity-50 z-10">&nbsp;/&nbsp;</span>
-                  <button
-                    onClick={(e) => {
-                      getPhotosSrc(section);
-                      setActualSection(section);
-                      document.querySelectorAll(".section").forEach((item) => {
-                        item.classList.remove("active-section");
-                      });
-                      e.target.classList.add("active-section");
-                    }}
-                  >
-                    <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all  z-10">
-                      {section}
-                    </span>
-                  </button>
-                </div>
-              );
-            })}
+          <div className="flex section-list">
+            {gallerySections.length > 1 &&
+              gallerySections.map((section) => {
+                return (
+                  <div key={section} className="z-10">
+                    <span className="opacity-50 z-10">&nbsp;/&nbsp;</span>
+                    <button
+                      onClick={(e) => {
+                        getPhotosSrc(section);
+                        setActualSection(section);
+                        document
+                          .querySelectorAll(".section")
+                          .forEach((item) => {
+                            item.classList.remove("active-section");
+                          });
+                        e.target.classList.add("active-section");
+                      }}
+                    >
+                      <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all  z-10">
+                        {section}
+                      </span>
+                    </button>
+                  </div>
+                );
+              })}
+          </div>
         </h3>
         <hr className=" dark:bg-accent-2 bg-accent-4 w-full" />
       </header>

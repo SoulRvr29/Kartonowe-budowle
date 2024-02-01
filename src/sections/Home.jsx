@@ -123,10 +123,10 @@ const Article = () => {
         </div>
         <hr className="grad-hr" />
       </header>
-      <div className=" mb-8 mx-8">
-        <h4 className="max-sm:text-base max-[425px]:text-xs mx-auto mt-4">
+      <div className=" mb-8 mt-4 mx-8">
+        {/* <h4 className="max-sm:text-base max-[425px]:text-xs mx-auto mt-4">
           Poniżej kilka wybranych zdjęć z różnych modeli:
-        </h4>
+        </h4> */}
         <ImagesGrid />
       </div>
     </>

@@ -12,8 +12,6 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);
-        console.log(e.target.outerText, name);
-        console.log(e.target.outerText == name);
         if (name == "wszystkie modele") setData(completeData);
         else if (name == "z oświetleniem")
           setData(
