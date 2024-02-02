@@ -33,10 +33,11 @@
   }
 }
 
-.map {
+/* .map,
+.map-btn {
   opacity: 0;
   animation: map-fade-in 2s forwards;
-}
+} */
 
 @keyframes map-fade-in {
   from {

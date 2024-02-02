@@ -18,7 +18,7 @@ const LightInfo = ({ id }) => {
         <div className="flex w-fit mx-auto gap-10 p-4 pr-6 max-md:flex-col">
           <ul className="list-disc pl-8 marker:text-accent max-md:mb-4 max-sm:text-left font-bold  h-full w-fit rounded-xl ">
             {daneTech.map((item) => (
-              <li>
+              <li key={item}>
                 {item + ": "}
                 <span className="li-span">
                   {model["Dane techniczne"][item]}
@@ -28,7 +28,7 @@ const LightInfo = ({ id }) => {
           </ul>
           <ul className="list-disc pl-8 marker:text-accent max-md:mb-4 max-sm:text-left font-bold  h-full w-fit rounded-xl">
             {fazy.map((item) => (
-              <li>
+              <li key={item}>
                 {item + ": "}
                 <span className="li-span">{model["Fazy światła"][item]}</span>
               </li>
