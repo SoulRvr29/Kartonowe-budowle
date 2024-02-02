@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import polandIcon from "../assets/icons/poland-icon.png";
 
 const map = ({ position }) => {
   const [mapSize, setMapSize] = useState(false);
@@ -63,7 +64,11 @@ const map = ({ position }) => {
           }}
         >
           {zoom === 17 ? (
-            <img src="/src/assets/icons/poland-icon.png" alt="poland icon" />
+            <img
+              // src="/src/assets/icons/poland-icon.png"
+              src={polandIcon}
+              alt="poland icon"
+            />
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,14 +93,12 @@ const map = ({ position }) => {
         className="map h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
       >
         <TileLayer
-          attribution='&copy;{" "}
-        <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>{" "}
+          attribution='&copy;
+        <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
         contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[...position]}>
-          {/* <Popup>Latarnia morska Gąski</Popup> */}
-        </Marker>
+        <Marker position={[...position]}></Marker>
       </MapContainer>
     </div>
   );
