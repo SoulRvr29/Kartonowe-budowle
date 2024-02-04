@@ -8,6 +8,7 @@
     "link": "/Bedzin",
     "cover": "models/bedzin/bedzin-cover.jpg",
     "position": [50.327222, 19.129167],
+    "address": "Zamkowa 1, 42-500 Będzin",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:160",
@@ -52,6 +53,7 @@
     "card": "./cards/oporow-card.jpg",
     "cover": "models/oporow/oporow-cover.jpg",
     "position": [52.2625, 19.56226],
+    "address": "Oporów 34, 99-322 Oporów",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -94,6 +96,7 @@
     "card": "./cards/sandomierz-card.jpg",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "position": [50.679417, 21.749361],
+    "address": "Rynek, 27-600 Sandomierz",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -147,6 +150,7 @@
     "card": "./cards/stilo-card.jpg",
     "cover": "models/latarnie morskie/stilo/stilo-cover.jpg",
     "position": [54.786857, 17.733979],
+    "address": "Morska 25, 84-211 Sasino",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -187,6 +191,7 @@
     "card": "./cards/darłowo-card.jpg",
     "cover": "models/latarnie morskie/darlowo/darłowo-cover.jpg",
     "position": [54.4403, 16.3786],
+    "address": "Wschodnia 14, 76-150 Darłowo",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -222,6 +227,7 @@
     "card": "./cards/czołpino-card.jpg",
     "cover": "models/latarnie morskie/czołpino/czołpino-cover.jpg",
     "position": [54.718257511904355, 17.24124935123231],
+    "address": "76-214 Czołpino",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -257,6 +263,7 @@
     "card": "./cards/gąski-card.jpg",
     "cover": "models/latarnie morskie/gąski/gąski-cover.jpg",
     "position": [54.242778, 15.872778],
+    "address": "Latarników 7, 76-034 Gąski",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -307,6 +314,7 @@
     "card": "./cards/hel-card.jpg",
     "cover": "models/latarnie morskie/hel/hel-cover.jpg",
     "position": [54.6, 18.812778],
+    "address": "Bałtycka 4, 84-150 Hel",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -342,6 +350,7 @@
     "card": "./cards/jarosławiec-card.jpg",
     "cover": "models/latarnie morskie/jarosławiec/jarosławiec-cover.jpg",
     "position": [54.53972, 16.542332],
+    "address": "Szkolna 1, 76-107 Jarosławiec",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -372,6 +381,7 @@
     "card": "./cards/jastarnia-card.jpg",
     "cover": "models/latarnie morskie/jastarnia/jastarnia-cover.jpg",
     "position": [54.700238, 18.681598],
+    "address": "Kościuszki 2A, 84-140 Jastarnia",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -407,6 +417,7 @@
     "card": "./cards/kikut-card.jpg",
     "cover": "models/latarnie morskie/kikut/kikut-cover.jpg",
     "position": [53.98144067064031, 14.580362573141587],
+    "address": "72-513 Wisełka",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -437,6 +448,7 @@
     "card": "./cards/kołobrzeg-card.jpg",
     "cover": "models/latarnie morskie/kołobrzeg/kołobrzeg-cover.jpg",
     "position": [54.1864035359489, 15.554220485672046],
+    "address": "Morska 1, 78-100 Kołobrzeg",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -467,6 +479,7 @@
     "card": "./cards/krynica morska-card.jpg",
     "cover": "models/latarnie morskie/krynica morska/krynica morska-cover.jpg",
     "position": [54.38538, 19.4508],
+    "address": "Żołnierzy 1B, 82-120 Krynica Morska",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -497,6 +510,7 @@
     "card": "./cards/niechorze-card.jpg",
     "cover": "models/latarnie morskie/niechorze/niechorze-cover.jpg",
     "position": [54.09472, 15.06387],
+    "address": "Polna 30, 72-350 Niechorze",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -527,6 +541,7 @@
     "card": "./cards/nowy port-card.jpg",
     "cover": "models/latarnie morskie/nowy port/nowy port-cover.jpg",
     "position": [54.40628621824836, 18.661173945021158],
+    "address": "Przemysłowa 6, 80-542 Gdańsk",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -567,6 +582,7 @@
     "card": "./cards/port północny-card.jpg",
     "cover": "models/latarnie morskie/port północny/port północny-cover.jpg",
     "position": [54.399689, 18.696278],
+    "address": "Kapitana Żeglugi Wielkiej Witolda Poinca 1, 80-601 Gdańsk",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -614,6 +630,7 @@
     "card": "./cards/rozewie-card.jpg",
     "cover": "models/latarnie morskie/rozewie/rozewie-cover.jpg",
     "position": [54.830375, 18.336289],
+    "address": "Leona Wzorka 1, 84-104 Władysławowo",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -644,6 +661,7 @@
     "card": "./cards/sopot-card.jpg",
     "cover": "models/latarnie morskie/sopot/sopot-cover.jpg",
     "position": [54.445358, 18.570453],
+    "address": "Plac Zdrojowy 3, 81-720 Sopot",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -696,6 +714,7 @@
     "card": "./cards/świnoujście-card.jpg",
     "cover": "models/latarnie morskie/świnoujście/świnoujście-cover.jpg",
     "position": [53.916, 14.284167],
+    "address": "Ku Morzu 5a, 72-600 Świnoujście",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -726,6 +745,7 @@
     "card": "./cards/ustka-card.jpg",
     "cover": "models/latarnie morskie/ustka/ustka-cover.jpg",
     "position": [54.587944, 16.854556],
+    "address": "Marynarki Polskiej 1, 76-270 Ustka",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -788,6 +808,7 @@
     "link": "/Baranów",
     "cover": "models/baranów/baranów-cover.jpg",
     "position": [50.501944, 21.53563],
+    "address": "Zamkowa 22, 39-450 Baranów Sandomierski",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -819,6 +840,7 @@
     "link": "/Gryfino",
     "cover": "models/gryfino/gryfino-cover.jpg",
     "position": [53.253056, 14.487778],
+    "address": "Kościelna 31, 74-100 Gryfino",
     "info": {
       "Wydawca": "MODELIK",
       "Skala": "1:150",
@@ -997,6 +1019,7 @@
     "link": "/Wang",
     "cover": "models/wang/wang-cover.jpg",
     "position": [50.777365, 15.724156],
+    "address": "Na Śnieżkę 8, 58-540 Karpacz",
     "info": {
       "Projekt": "własny",
       "Skala": "1:72",

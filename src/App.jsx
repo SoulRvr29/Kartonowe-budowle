@@ -70,7 +70,7 @@ function App() {
         />
         <Banner bannerState={bannerState} setBannerState={setBannerState} />
         <Nav overlap={overlap} setOverlap={setOverlap} />
-        {/* <TechNav /> */}
+        <TechNav />
         <BackToTop />
         <Routes>
           <Route path="/" element={<Home />} />

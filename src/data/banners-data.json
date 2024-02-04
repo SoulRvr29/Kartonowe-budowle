@@ -1,7 +1,7 @@
 [
   {
     "name": "Zamek w Będzinie",
-    "source": "./banner/bedzin-banner.jpg",
+    "source": "./banner/bedzin-night-banner.jpg",
     "link": "/Bedzin"
   },
   {
@@ -25,8 +25,23 @@
     "link": "/Gryfino"
   },
   {
+    "name": "Zamek w Będzinie",
+    "source": "./banner/bedzin-banner.jpg",
+    "link": "/Bedzin"
+  },
+  {
     "name": "Wieżowce",
     "source": "./banner/wiezowce-banner.jpg",
     "link": "/Wieżowce"
+  },
+  {
+    "name": "Zamek w Oporowie",
+    "source": "./banner/oporow-night-banner.jpg",
+    "link": "/Oporow"
+  },
+  {
+    "name": "Phantom F-4B",
+    "source": "./banner/phantom-banner.jpg",
+    "link": "/PhantomF4"
   }
 ]

@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import polandIcon from "../assets/icons/poland-icon.png";
+import modelsData from "../data/models-data.json";
 
-const map = ({ position }) => {
+const map = ({ id, position }) => {
+  const address = modelsData.filter((item) => item.id == id)[0].address || null;
   const [mapSize, setMapSize] = useState(false);
   const [zoom, setZoom] = useState(17);
-  // const [zoom, setZoom] = useState(5);
   const [center, setcenter] = useState([...position]);
+  // const [zoom, setZoom] = useState(5);
   // const [center, setcenter] = useState([52, 19]);
-  const poland = [52, 19];
+  const polandMap = [52, 19];
 
   return (
     <div
@@ -18,15 +20,15 @@ const map = ({ position }) => {
           : "w-full max-w-sm relative h-[20rem] "
       }
     >
-      <div className="z-10 absolute right-3 top-3 flex flex-col gap-2">
+      <div className="z-10 absolute right-3 top-3 flex flex-col">
         {/* map size button */}
         <button
-          title={mapSize ? "min size" : "max size"}
+          title={mapSize ? "małe okno" : "duże okno"}
           onClick={() => {
             setMapSize(!mapSize);
             console.log(mapSize);
           }}
-          className="map-btn border-2 rounded-md bg-white border-gray-400 p-[5px] hover:bg-gray-100"
+          className="map-btn border-2 border-b rounded-t-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100"
         >
           {mapSize ? (
             <svg
@@ -50,13 +52,13 @@ const map = ({ position }) => {
         </button>
         {/* map zoom button */}
         <button
-          title={zoom === 17 ? "poland map" : "zoomed map"}
-          className="border-2 rounded-md bg-white border-gray-400 p-[5px] hover:bg-gray-100 w-8 flex justify-center h-8"
+          title={zoom === 17 ? "mapa Polski" : "mapa szczegółowa"}
+          className="border-2 border-t-0 rounded-b-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100 w-8 flex justify-center h-8"
           onClick={() => {
             if (zoom === 17) {
               if (!mapSize) setZoom(5);
               else setZoom(6);
-              setcenter(poland);
+              setcenter(polandMap);
             } else {
               setZoom(17);
               setcenter([...position]);
@@ -98,7 +100,9 @@ const map = ({ position }) => {
         contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[...position]}></Marker>
+        <Marker position={[...position]}>
+          {address && <Popup>{address}</Popup>}
+        </Marker>
       </MapContainer>
     </div>
   );

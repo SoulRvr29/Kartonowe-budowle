@@ -5,7 +5,7 @@ import Map from "./Map";
 
 const ModelInfo = ({ id }) => {
   const data = modelsData.filter((item) => item.id == id)[0];
-  // console.log(data);
+  // console.log(id);
   const info = Object.keys(data.info);
   const [sectionState, setSectionState] = useState(true);
   return (
@@ -17,7 +17,7 @@ const ModelInfo = ({ id }) => {
       />
       {sectionState === true && (
         <div className="flex justify-evenly p-4 pb-8 flex-wrap gap-4">
-          {data.position && <Map position={data.position} />}
+          {data.position && <Map id={id} position={data.position} />}
 
           <section className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4 z-10">
             <img
