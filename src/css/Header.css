@@ -43,9 +43,9 @@ h1 div {
 @keyframes brightness-pulse {
   0%,
   100% {
-    filter: brightness(150%) drop-shadow(0 0 1px rgba(255, 255, 255, 0));
+    filter: brightness(100%) drop-shadow(0 0 1px rgba(255, 255, 255, 0));
   }
   50% {
-    filter: brightness(170%) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
+    filter: brightness(120%) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   }
 }

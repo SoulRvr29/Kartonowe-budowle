@@ -25,7 +25,7 @@ article,
 }
 
 @media screen and (max-width: 900px) {
-  article > img {
+  article img {
     padding: 1rem 0 !important;
     width: fit-content !important;
     float: none !important;
@@ -33,7 +33,7 @@ article,
   }
 }
 @media screen and (max-width: 700px) {
-  article > img {
+  article img {
     width: 100% !important;
   }
 }
