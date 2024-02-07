@@ -31,40 +31,54 @@ const Article = () => {
         photoIndex={photoIndex}
         setPhotoIndex={setPhotoIndex}
       />
-      <TechHeader title="Oświetlenie w modelach" />
+      <TechHeader title="Oświetlenie w modelach kartonowych" />
       <article>
         <p>
-          W swoich modelach do wykonania oświetlenia używam różnego rodzaju diod
-          LED w większości białych o ciepłej barwie światła. Można je podzielić
-          na dwa typy - standardowe i SMD.
+          Do wykonania oświetlenia używam różnego rodzaju diod LED, zazwyczaj
+          białych o ciepłej barwie światła. Można je podzielić na dwa typy -
+          standardowe i SMD.
         </p>
-        <LazyLoadImage
-          className="mx-auto"
-          src={photosSrc[0]}
-          alt={photosTitle[0]}
-          title={photosTitle[0]}
-          onClick={(e) => {
-            photoClickHandler(e);
-          }}
-        />
+        {/* placeholder */}
+        <div className="bg-[#222] border-2 border-[#333] w-[24rem] h-[16rem] mx-auto text-gray-500 grid place-content-center">
+          wiele różnych diod
+        </div>
+        <h3>Diody standardowe</h3>
         <p>
-          <span className="font-bold">Diody standardowe: </span>
-          wąski kąt świecenia (kilkadziesiąt stopni), dają ładny efekt snopów
-          światła przy oświetlaniu ścian, ale są trudne w montażu. Pod takie
-          diody trzeba przygotować otwory i odpowiednio dużo miejsca, np. dioda
-          LED 3mm przy zagiętych nóżkach ma 6mm wysokości. Do podświetlania
-          ścian używam diod o średnicy 3mm, w latarniach morskich o średnicy
-          5mm.
+          Mają wąski kąt świecenia (kilkadziesiąt stopni), dają ładny efekt
+          snopów światła przy oświetlaniu ścian, ale z racji rozmiarów i
+          sztywnych nóżek są trudne w montażu. Pod takie diody trzeba
+          przygotować otwory i odpowiednio dużo miejsca. Do podświetlania ścian
+          używam diod o średnicy 3mm, jako światło w latarniach morskich o
+          średnicy 5mm.
         </p>
+        {/* placeholder */}
+        <div className="bg-[#222] border-2 border-[#333] w-[24rem] h-[16rem] mx-auto text-gray-500 grid place-content-center">
+          kilka diod standardowych
+        </div>
+        <h3>Diody SMD (Surface Mount Device)</h3>
         <p>
-          <span className="font-bold">Diody SMD: </span>
-          szeroki kąt świecenia (do 160 stopni), są łatwe w montażu. Mają dużo
-          różnych rozmiarów, ja używam zazwyczaj SMD 3528 (3.5mm na 2.8mm), a do
+          Mają szeroki kąt świecenia (do 160 stopni), niewielkie rozmiary i są
+          łatwe w montażu. Używam zazwyczaj SMD 3528 (3.5mm na 2.8mm), a do
           mniejszych elementów jak np. światło latarnii ulicznej przy zamku w
-          Będzinie SMD 0805. Do takich diod przylutowuję przewody z cienkiego
-          drutu nawojowego (ok. 0.2mm).
+          Będzinie SMD 0805.
         </p>
-        <LazyLoadImage
+        {/* placeholder */}
+        <div className="bg-[#222] border-2 border-[#333] w-[24rem] h-[16rem] mx-auto text-gray-500 grid place-content-center">
+          kilka diod SMD
+        </div>
+        <h3>Podłączenie</h3>
+        Diody podłączam do zasilania 9V, do każdej dodaję opornik 330Ω. Wartośc
+        opornika można łatwo obliczyć z poniższego wzoru:
+        {/* placeholder */}
+        <div className="bg-[#222] border-2 border-[#333] w-[14rem] h-[6rem] mx-auto text-gray-500 grid place-content-center">
+          wzór
+        </div>
+        R to wartość rezystora <br />V<small>s</small> to napięcie zasilania{" "}
+        <br /> V<small>f</small> to napięcie przewodzenia diody (dla białych LED
+        to zazwyczaj 3V) <br /> I<small>f</small> to prąd przewodzenia diody
+        diody (zazwyczaj 20mA).
+        <p></p>
+        {/* <LazyLoadImage
           className="mx-auto"
           src={photosSrc[3]}
           alt={photosTitle[3]}
@@ -72,7 +86,7 @@ const Article = () => {
           onClick={(e) => {
             photoClickHandler(e);
           }}
-        />
+        /> */}
         {/* <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
           eveniet cum, nulla tempora deleniti ad amet architecto eos aperiam
