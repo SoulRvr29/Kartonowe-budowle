@@ -3,7 +3,7 @@ import TechHeader from "../components/TechHeader";
 const Article = () => {
   return (
     <>
-      <TechHeader title="Sadzarka" />
+      <TechHeader title="Sadzarka do trawy statycznej" />
       <article>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus

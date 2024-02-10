@@ -20,7 +20,7 @@ const map = ({ id, position }) => {
           : "w-full max-w-sm relative h-[20rem] "
       }
     >
-      <div className="z-10 absolute right-3 top-3 flex flex-col">
+      <div className="z-10 absolute right-3 top-3 flex flex-col  dark:brightness-75 dark:contrast-150">
         {/* map size button */}
         <button
           title={mapSize ? "małe okno" : "duże okno"}
@@ -92,7 +92,7 @@ const map = ({ id, position }) => {
         zoom={zoom}
         scrollWheelZoom={true}
         zoomControl={true}
-        className="map h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
+        className="map dark:brightness-75 dark:contrast-150 h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
       >
         <TileLayer
           attribution='&copy;

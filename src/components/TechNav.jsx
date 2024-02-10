@@ -25,10 +25,10 @@ const TechNav = () => {
           Tematy:
         </h2>
         <TechNav_li name="oświetlenie" link="/Oświetlenie" />
-        <TechNav_li name="roślinność" link="/Roślinność" />
+        {/* <TechNav_li name="roślinność" link="/Roślinność" />
         <TechNav_li name="sadzarka" link="/Sadzarka" />
         <TechNav_li name="okna" link="/Okna" />
-        <TechNav_li name="arduino" link="/Arduino" />
+        <TechNav_li name="arduino" link="/Arduino" /> */}
       </ul>
     </nav>
   );

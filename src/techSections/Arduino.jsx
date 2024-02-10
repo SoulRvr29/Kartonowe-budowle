@@ -3,7 +3,7 @@ import TechHeader from "../components/TechHeader";
 const Article = () => {
   return (
     <>
-      <TechHeader title="Arduino" />
+      <TechHeader title="Programowanie Arduino" />
       <article>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus

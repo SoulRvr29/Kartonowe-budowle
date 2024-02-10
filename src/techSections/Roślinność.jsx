@@ -3,7 +3,7 @@ import TechHeader from "../components/TechHeader";
 const Article = () => {
   return (
     <>
-      <TechHeader title="Roślinność" />
+      <TechHeader title="Roślinność na modelach" />
       <article>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus

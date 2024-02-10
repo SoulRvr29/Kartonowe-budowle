@@ -14,6 +14,7 @@ import Okna from "./techSections/Okna";
 import Arduino from "./techSections/Arduino";
 
 import Home from "./sections/Home";
+import About from "./sections/About";
 import Bedzin from "./sections/Bedzin";
 import Oporow from "./sections/Oporow";
 import Curiosity from "./sections/Curiosity";
@@ -74,6 +75,7 @@ function App() {
         <BackToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
           <Route path="/Bedzin" element={<Bedzin id={0} />} />
           <Route path="/Oporow" element={<Oporow id={1} />} />
           <Route path="/Sandomierz" element={<Sandomierz id={4} />} />

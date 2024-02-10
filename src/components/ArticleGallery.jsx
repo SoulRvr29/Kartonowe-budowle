@@ -105,7 +105,7 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
               onClick={(e) => {
                 e.stopPropagation();
               }}
-              className="z-30 medium-width border-4 border-accent-2 overflow-auto w- max-sm:w-screen max-sm:h-full max-sm:min-w-max max-h-[90vh] justify-self-center max-sm:justify-self-auto"
+              className="z-30 medium-width border-2 border-accent overflow-auto w- max-sm:w-screen max-sm:h-full max-sm:min-w-max max-h-[90vh] justify-self-center max-sm:justify-self-auto"
               // className="medium-width w-full max-sm:w-screen max-sm:h-full max-sm:min-w-max "
               src={actualSrc}
               alt="photo"
@@ -113,7 +113,8 @@ const FullScreen = ({ photosSrc, photosTitle, photoIndex, setPhotoIndex }) => {
             <span
               className={
                 "max-w-3xl photo-title opacity-0 text-text-light text-lg bg-black px-3 mx-auto text-center max-sm:fixed bottom-0 left-0 max-sm:border-t max-sm:w-screen max-sm:z-50 max-sm:text-base " +
-                (photosTitle[photoIndex] != "" && "border-2 border-accent-2")
+                (photosTitle[photoIndex] != "" &&
+                  "border-2 border-accent relative -top-[2px]")
               }
             >
               {photosTitle[photoIndex]}

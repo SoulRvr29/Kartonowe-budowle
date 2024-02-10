@@ -77,9 +77,9 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const [settingsState, setSettingsState] = useState(false);
   return (
     <div className="relative ">
-      <header className="relative header-main px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[460px]:flex-wrap max-[460px]:justify-center py-4 max-[460px]:py-0 pb-4  max-[460px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
+      <header className="relative header-main px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
         {/* left side */}
-        <div className="flex gap-2 z-10 -mb-1 max-[460px]:mb-1 max-[460px]:gap-4 ">
+        <div className="flex gap-2 z-10 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
           <button className="mb-1">
             <Link to="/" title="strona główna">
               {/* <Link to="/" title="strona główna" reloadDocument> */}
@@ -97,8 +97,8 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           <Timer />
         </div>
         {/* main title */}
-        <div className="absolute w-full flex gap-2 justify-center max-[460px]:static max-[460px]:-order-1">
-          <h1 className="text-accent dark:brightness-100 dark:drop-shadow-[2px_0px_0px_rgba(255,255,255,0.8)] max-sm:dark:drop-shadow-[1px_0px_0px_rgba(255,255,255,0.8)] drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
+        <div className="absolute w-full flex gap-2 justify-center max-[560px]:static max-[560px]:-order-1">
+          <h1 className="text-accent dark:brightness-100 dark:drop-shadow-[2px_0px_0px_rgba(255,255,255,0.8)] max-sm:dark:drop-shadow-[1px_0px_0px_rgba(255,255,255,0.8)] drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[560px]:text-[7vw] max-[560px]:-mb-1">
             <div>k</div>
             <div>a</div>
             <div>r</div>
@@ -117,12 +117,12 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
             <div>l</div>
             <div>e</div>
           </h1>
-          {/* <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[460px]:text-[7vw] max-[460px]:-mb-1">
+          {/* <h1 className="text-accent dark:brightness-100 drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[560px]:text-[7vw] max-[560px]:-mb-1">
             Kartonowe &nbsp;budowle
           </h1> */}
         </div>
         {/* right side */}
-        <div className="flex gap-2 z-10 -mb-1 max-[460px]:mb-1 max-[460px]:gap-4">
+        <div className="flex gap-2 z-10 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
           {/* gear icon */}
           <button title="ustawienia">
             <svg
@@ -169,6 +169,20 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
               <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
             </svg>
           </a>
+          {/* about icon */}
+          <button>
+            <Link to="/About" title="o autorze">
+              <svg
+                className="header-icon hover:brightness-150 transition-all "
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                height="1.1em"
+                fill="var(--icon-gray)"
+              >
+                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+              </svg>
+            </Link>
+          </button>
         </div>
       </header>
       {settingsState && (

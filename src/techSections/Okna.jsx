@@ -3,7 +3,7 @@ import TechHeader from "../components/TechHeader";
 const Article = () => {
   return (
     <>
-      <TechHeader title="Okna" />
+      <TechHeader title="Wykononie okien" />
       <article>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus

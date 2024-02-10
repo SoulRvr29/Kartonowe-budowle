@@ -143,7 +143,7 @@ const Gallery = ({ id, name }) => {
                     width={160}
                     height={160}
                     value={index + 1 < 10 ? "0" + (index + 1) : index + 1}
-                    className="gallery-thumb h-[10rem] w-auto border-2 border-accent-3 rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
+                    className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
                     src={loc}
                     alt={model.name + " photo"}
                   />
@@ -258,7 +258,7 @@ const Gallery = ({ id, name }) => {
                 onLoad={() => setLoadingIcon(false)}
                 className={
                   photoMaxWidth === false
-                    ? "cursor-pointer medium-width border-4 border-accent-2 max-w-4xl max-md:w-screen max-h-[85vh] max-sm:w-screen "
+                    ? "cursor-pointer medium-width border-4 border-accent border-t-sky-500 border-l-sky-500 border-r-sky-700 border-b-sky-700 max-w-4xl max-md:w-screen max-h-[85vh] max-sm:w-screen "
                     : "cursor-pointer medium-width w-full max-sm:w-screen overflow-auto max-sm:h-full max-sm:min-w-max "
                 }
                 src={model[name][actualSection].full + photoId + ".jpg"}
