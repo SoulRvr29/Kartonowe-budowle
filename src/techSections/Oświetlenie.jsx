@@ -2,6 +2,7 @@ import TechHeader from "../components/TechHeader";
 import ArticleGallery from "../components/ArticleGallery";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ResistorCalc from "../components/ResistorCalc";
 
 const Article = () => {
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
@@ -59,7 +60,7 @@ const Article = () => {
             }}
           />
           <LazyLoadImage
-            className=" max-h-[18rem] max-md:max-h-none"
+            className=" max-h-[18rem] max-md:hidden"
             src={photosSrc[1]}
             alt={photosTitle[1]}
             title={photosTitle[1]}
@@ -110,28 +111,28 @@ const Article = () => {
           drobnych elementów, np. światła latarni ulicznej w modelu zamku w
           Będzinie, użyłem diody SMD 0805, a właściewie dwóch diod połączonych
           ze sobą.
-          <div className="flex gap-4 flex-wrap">
-            <LazyLoadImage
-              className="mx-auto max-h-[22rem] max-md:max-h-none"
-              src={photosSrc[4]}
-              alt={photosTitle[4]}
-              title={photosTitle[4]}
-              onClick={(e) => {
-                photoClickHandler(e);
-              }}
-            />
-            <LazyLoadImage
-              className="mx-auto max-h-[22rem] max-md:max-h-none"
-              src={photosSrc[11]}
-              alt={photosTitle[11]}
-              title={photosTitle[11]}
-              onClick={(e) => {
-                photoClickHandler(e);
-              }}
-            />
-          </div>
-          Do diod SMD dolutowuję przewody (0.2mm) z drutu nawojowego.
         </p>
+        <div className="flex gap-4 flex-wrap">
+          <LazyLoadImage
+            className="mx-auto max-h-[22rem] max-md:max-h-none"
+            src={photosSrc[4]}
+            alt={photosTitle[4]}
+            title={photosTitle[4]}
+            onClick={(e) => {
+              photoClickHandler(e);
+            }}
+          />
+          <LazyLoadImage
+            className="mx-auto max-h-[22rem] max-md:max-h-none"
+            src={photosSrc[11]}
+            alt={photosTitle[11]}
+            title={photosTitle[11]}
+            onClick={(e) => {
+              photoClickHandler(e);
+            }}
+          />
+        </div>
+        Do diod SMD dolutowuję przewody (0.2mm) z drutu nawojowego.
         <h4>Dobór rezystora</h4>
         <p>
           Do każdej diody dodaję rezystor (opornik). Wartośc rezystora można
@@ -163,31 +164,36 @@ const Article = () => {
             }}
           />
           Rezystor powinien mieć opór zawsze większy niż wskazuje wynik, czyli
-          odpowiedni będzie np. 330&Omega;, a dla zasilania 5V byłby 150&Omega;.
+          odpowiedni będzie np. 330&Omega;, a dla zasilania 5V byłby to
+          150&Omega;.
         </p>
+        <p>Do obliczeń zrobiłem taki prosty Kalkulator:</p>
+        <div className="flex flex-col justify-center items-center mb-4">
+          <ResistorCalc />
+        </div>
         <p>
           Odczyt oporu z rezystora można dokonać na podstawie kolorów pasków:
-          <ol className="list-decimal ml-4">
-            <li>Pierwsza cyfra.</li>
-            <li>Druga cyfra.</li>
-            <li>
-              Mnożnik, czyli ilość zer, które trzeba dodać po dwóch pierwszych
-              cyfrach.
-            </li>
-            <li>Tolerancja, czyli dokładność wartości rezystora.</li>
-          </ol>
-          <LazyLoadImage
-            className="mx-auto max-w-[30rem]"
-            src={photosSrc[7]}
-            alt={photosTitle[7]}
-            title={photosTitle[7]}
-            onClick={(e) => {
-              photoClickHandler(e);
-            }}
-          />
-          Rezystor 330&Omega; 5% to paski: pomarańczowy, pomarańczowy, brązowy,
-          złoty.
         </p>
+        <ol className="list-decimal ml-4">
+          <li>Pierwsza cyfra.</li>
+          <li>Druga cyfra.</li>
+          <li>
+            Mnożnik, czyli ilość zer, które trzeba dodać po dwóch pierwszych
+            cyfrach.
+          </li>
+          <li>Tolerancja, czyli dokładność wartości rezystora.</li>
+        </ol>
+        <LazyLoadImage
+          className="mx-auto max-w-[30rem]"
+          src={photosSrc[7]}
+          alt={photosTitle[7]}
+          title={photosTitle[7]}
+          onClick={(e) => {
+            photoClickHandler(e);
+          }}
+        />
+        Rezystor 330&Omega; 5% to paski: pomarańczowy, pomarańczowy, brązowy,
+        złoty.
         <h4>Zasilanie</h4>
         <p>
           Jako źródło zasilania używam zasilacza 9V z wtykiem DC 5.5mm. Są dwa
