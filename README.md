@@ -4,6 +4,6 @@ Modele można wybrać z kart, które są na pasku nawigacji i sortować listę p
 Strona zrobiona jest z wykorzystaniem biblioteki REACT i frameworka Tailwind CSS.
 Do przełączania między podstronami użyłem React Router. Interaktywne mapki są dodane przy użyciu biblioteki Leaflet.
 
-### Link do strony: https://www.kartonowebudowle.pl
+### Link do strony: https://kartonowebudowle.pl
 
 ![screenshot](screenshot.jpeg)
