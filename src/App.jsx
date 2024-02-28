@@ -45,6 +45,7 @@ import StarshipSN15 from "./sections/StarshipSN15";
 import Falcon9 from "./sections/Falcon9";
 import Wieżowce from "./sections/Wieżowce";
 import Wang from "./sections/Wang";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   if (localStorage.getItem("overlap") == null)
@@ -116,6 +117,7 @@ function App() {
         <br />
         <Footer />
       </main>
+      <SpeedInsights />
     </>
   );
 }
