@@ -116,11 +116,11 @@
   }
   /***** BACKGROUND *****/
   .bkg-texture {
-    background-image: url(..\src\assets\binding_light.png);
+    background-image: url(/src/assets/binding_light.png);
   }
 
   .dark .bkg-texture {
-    background-image: url(..\src\assets\binding_dark.png);
+    background-image: url(/src/assets/binding_dark.png);
   }
 
   .bkg-sides {
