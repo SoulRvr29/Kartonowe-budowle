@@ -76,10 +76,10 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
 
   const [settingsState, setSettingsState] = useState(false);
   return (
-    <div className="relative ">
-      <header className="relative header-main px-4 max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
+    <div className="relative">
+      <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
         {/* left side */}
-        <div className="flex gap-2 z-10 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
+        <div className="flex gap-2 z-10 ml-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
           <button className="mb-1">
             <Link to="/" title="strona główna">
               {/* <Link to="/" title="strona główna" reloadDocument> */}
@@ -122,7 +122,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           </h1> */}
         </div>
         {/* right side */}
-        <div className="flex gap-2 z-10 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
+        <div className="flex gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
           {/* gear icon */}
           <button title="ustawienia">
             <svg
