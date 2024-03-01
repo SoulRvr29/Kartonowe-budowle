@@ -1,3 +1,40 @@
+/* react-photo-view */
+
+.PhotoView-Slider__ArrowLeft svg,
+.PhotoView-Slider__ArrowRight svg {
+  border-radius: 8px !important;
+}
+.PhotoView-Slider__BannerWrap {
+  background: none !important;
+}
+.PhotoView-Slider__BannerRight {
+  border-radius: 0 0 0 12px;
+  padding-left: 2px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.PhotoView-Slider__Counter {
+  padding: 6px 14px 6px 8px !important;
+  border-radius: 0 0 12px 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 641px) {
+  .PhotoView-Slider__Counter {
+    font-size: 1.3rem !important;
+  }
+  .PhotoView-Slider__BannerRight svg {
+    scale: 1.3;
+  }
+  .PhotoView-Slider__ArrowLeft svg,
+  .PhotoView-Slider__ArrowRight svg {
+    scale: 1.2;
+  }
+  .photo-description {
+    font-size: 1.2rem !important;
+    padding: 8px 12px;
+  }
+}
+/**********************************/
+
 .active-section {
   opacity: 1 !important;
 }

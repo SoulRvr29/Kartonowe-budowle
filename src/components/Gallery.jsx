@@ -1,7 +1,6 @@
 import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { motion, AnimatePresence } from "framer-motion";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const Gallery = ({ id, name }) => {
@@ -17,7 +16,6 @@ const Gallery = ({ id, name }) => {
   );
   const [actualSrcThumb, setactualSrcThumb] = useState([]);
   const [actualSrcFull, setactualSrcFull] = useState([]);
-  const [loadingIcon, setLoadingIcon] = useState(false);
 
   useEffect(() => {
     getPhotosSrc(gallerySections[0]);
@@ -37,7 +35,6 @@ const Gallery = ({ id, name }) => {
       if (i < 10) nr = "0" + i;
       srcThumb.push(model[name][section].thumb + nr + ".jpg");
       srcFull.push(model[name][section].full + nr + ".jpg");
-      // console.log(model[name][section].thumb + nr + ".jpg");
     }
     setactualSrcThumb(srcThumb);
     setactualSrcFull(srcFull);
@@ -67,7 +64,6 @@ const Gallery = ({ id, name }) => {
     setPhotoId(nr);
   };
 
-  // console.log(actualSrcThumb, actualSrcFull);
   return (
     <section className="gallery-cont select-none grid ">
       <header className="relative">
@@ -130,45 +126,9 @@ const Gallery = ({ id, name }) => {
       </header>
 
       {/* ////////////  thumbnails  //////////// */}
-      <div className="gallery relative  flex gap-5  flex-wrap justify-center  mx-8 max-sm:mx-4">
+      <div className="gallery relative flex gap-5  flex-wrap justify-center  mx-8 max-sm:mx-4">
         {galleryState === true && (
           <PhotoProvider
-            toolbarRender={({ onScale, scale, rotate, onRotate }) => {
-              return (
-                <>
-                  <svg
-                    class="PhotoView-Slider__toolbarIcon"
-                    width="44"
-                    height="44"
-                    viewBox="0 0 768 768"
-                    fill="white"
-                    onClick={() => onScale(scale + 1)}
-                  >
-                    <path d="M384 640.5q105 0 180.75-75.75t75.75-180.75-75.75-180.75-180.75-75.75-180.75 75.75-75.75 180.75 75.75 180.75 180.75 75.75zM384 64.5q132 0 225.75 93.75t93.75 225.75-93.75 225.75-225.75 93.75-225.75-93.75-93.75-225.75 93.75-225.75 225.75-93.75zM415.5 223.5v129h129v63h-129v129h-63v-129h-129v-63h129v-129h63z"></path>
-                  </svg>
-                  <svg
-                    class="PhotoView-Slider__toolbarIcon"
-                    width="44"
-                    height="44"
-                    viewBox="0 0 768 768"
-                    fill="white"
-                    onClick={() => onScale(scale - 1)}
-                  >
-                    <path d="M384 640.5q105 0 180.75-75.75t75.75-180.75-75.75-180.75-180.75-75.75-180.75 75.75-75.75 180.75 75.75 180.75 180.75 75.75zM384 64.5q132 0 225.75 93.75t93.75 225.75-93.75 225.75-225.75 93.75-225.75-93.75-93.75-225.75 93.75-225.75 225.75-93.75zM223.5 352.5h321v63h-321v-63z"></path>
-                  </svg>
-                  <svg
-                    class="PhotoView-Slider__toolbarIcon"
-                    width="44"
-                    height="44"
-                    fill="white"
-                    viewBox="0 0 768 768"
-                    onClick={() => onRotate(rotate + 90)}
-                  >
-                    <path d="M565.5 202.5l75-75v225h-225l103.5-103.5c-34.5-34.5-82.5-57-135-57-106.5 0-192 85.5-192 192s85.5 192 192 192c84 0 156-52.5 181.5-127.5h66c-28.5 111-127.5 192-247.5 192-141 0-255-115.5-255-256.5s114-256.5 255-256.5c70.5 0 135 28.5 181.5 75z"></path>
-                  </svg>
-                </>
-              );
-            }}
             maskOpacity={0.5}
             maskClassName="backdrop-blur-sm"
             loadingElement={<div class="loader"></div>}
@@ -176,16 +136,10 @@ const Gallery = ({ id, name }) => {
           >
             <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
               {actualSrcThumb.map((item, index) => {
-                // console.log(item);
-
                 return (
                   <PhotoView key={index} src={actualSrcFull[index]}>
                     <div className="cursor-pointer">
                       <LazyLoadImage
-                        onClick={() => {
-                          setLoadingIcon(true);
-                          console.log(actualSrcFull);
-                        }}
                         width={160}
                         height={160}
                         // value={index + 1 < 10 ? "0" + (index + 1) : index + 1}

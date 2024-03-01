@@ -1,5 +1,4 @@
 import SectionHeader from "../components/SectionHeader";
-import FullScreen from "../components/FullScreen";
 import { useState } from "react";
 
 const PhantomF4History = ({ id }) => {
