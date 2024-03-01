@@ -77,11 +77,6 @@ const Article = () => {
             dachu, podstawy, dorabiałem też swoje części. Świątynia Wang,
             jeszcze nieukończona, jest już w całości zaprojektowana przeze mnie.
           </p>
-          {/* <p>
-          Modele można wybrać z listy powyżej z podziałem na kategorie. Modele
-          są ułożone od najnowszych od lewej. Lista nie jest jeszcze w pełni
-          kompletna, z czasem będę dodawał kolejne pozycje.
-        </p> */}
           <p>
             Jeśli miałbym wybrać najlepszy model, jaki udało mi się do tej pory
             ukończyć, będzie to z pewnością{" "}
@@ -105,6 +100,24 @@ const Article = () => {
               title={photosTitle[0]}
             />
           </PhotoView>
+          <div className="flex flex-wrap items-center gap-4 mb-8">
+            <PhotoView src={photosSrc[1]}>
+              <LazyLoadImage
+                className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+                src={photosSrc[1]}
+                alt="będzin"
+                title={photosTitle[1]}
+              />
+            </PhotoView>
+            <PhotoView src={photosSrc[2]}>
+              <LazyLoadImage
+                className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+                src={photosSrc[2]}
+                alt="będzin"
+                title={photosTitle[2]}
+              />
+            </PhotoView>
+          </div>
         </header>
       </PhotoProvider>
     </>
