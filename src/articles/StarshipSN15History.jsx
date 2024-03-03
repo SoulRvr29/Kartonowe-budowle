@@ -7,8 +7,14 @@ const StarshipSN15History = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/starship sn15/starship sn15-photo1.jpg"];
-  const photosTitle = ["Prototyp SN15 na stanowisku startowym"];
+  const photosSrc = [
+    "models/starship sn15/starship sn15-photo1.jpg",
+    "models/starship sn15/starship landing.gif",
+  ];
+  const photosTitle = [
+    "Prototyp SN15 na stanowisku startowym",
+    "Udane lądowanie SN15",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -34,7 +40,7 @@ const StarshipSN15History = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
             <PhotoView src={photosSrc[0]}>
@@ -73,6 +79,14 @@ const StarshipSN15History = ({ id }) => {
               zajął swoje miejsce w Rocket Garden. 26 lipca 2023 roku SN15
               został zezłomowany.
             </p>
+            <PhotoView src={photosSrc[1]}>
+              <LazyLoadImage
+                className="mx-auto"
+                src={photosSrc[1]}
+                alt="starship sn15"
+                title={photosTitle[1]}
+              />
+            </PhotoView>
           </article>
         </PhotoProvider>
       )}

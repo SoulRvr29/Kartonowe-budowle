@@ -323,6 +323,19 @@
       "Ilość stron": 2,
       "Wysokość": "28cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°36,06 N 18°48,56 E",
+      "Wysokość wieży": "41,50 m",
+      "Wysokość światła": "39m n.p.m.",
+      "Zasięg nominalny światła": "17 Mm (31,5 km)",
+      "Sektor widzialności światła": "151°-102°",
+      "Charakterystyka światła": "Izofazowe"
+    },
+    "Fazy światła": {
+      "1": "Światło 5 s",
+      "2": "Przerwa 5 s",
+      "Okres": "10 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 14,

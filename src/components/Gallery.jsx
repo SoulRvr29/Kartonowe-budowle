@@ -131,7 +131,7 @@ const Gallery = ({ id, name }) => {
           <PhotoProvider
             maskOpacity={0.5}
             maskClassName="backdrop-blur-sm"
-            loadingElement={<div class="loader"></div>}
+            loadingElement={<div className="loader"></div>}
             key={actualSrcFull}
           >
             <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">

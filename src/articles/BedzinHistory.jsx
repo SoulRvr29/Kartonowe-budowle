@@ -1,7 +1,7 @@
 import SectionHeader from "../components/SectionHeader";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const BedzinHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
@@ -44,7 +44,7 @@ const BedzinHistory = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
             <p>

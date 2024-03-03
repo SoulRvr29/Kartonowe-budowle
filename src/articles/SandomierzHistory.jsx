@@ -89,7 +89,6 @@ const SandomierzHistory = ({ id }) => {
                 title={photosTitle[1]}
               />
             </PhotoView>
-            <hr className="dark:bg-accent-2 bg-accent-4 " />
             <h4 className="">Brama Opatowska</h4>
             <PhotoView src={photosSrc[2]}>
               <LazyLoadImage

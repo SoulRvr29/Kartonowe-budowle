@@ -36,9 +36,17 @@ const StiloHistory = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8 max-sm:px-4">
+            <PhotoView src={photosSrc[0]}>
+              <LazyLoadImage
+                className="pr-8 float-left max-h-[400px]"
+                src={photosSrc[0]}
+                alt="Stilo"
+                title={photosTitle[0]}
+              />
+            </PhotoView>
             <p>
               <span className="first-letter font-playfair">L</span>atarnia
               mieści się na wieży Kapitanatu Portu Gdańsk i nie jest
@@ -56,14 +64,6 @@ const StiloHistory = ({ id }) => {
               na zewnątrz bez dodatkowego zabezpieczenia) dające światłość
               1500000 kandeli na odległość 25 Mm.
             </p>
-            <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className="pr-8 float-left max-h-[500px]"
-                src={photosSrc[0]}
-                alt="Stilo"
-                title={photosTitle[0]}
-              />
-            </PhotoView>
           </article>
         </PhotoProvider>
       )}

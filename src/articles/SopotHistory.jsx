@@ -34,18 +34,10 @@ const SopotHistory = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8 max-sm:px-4">
             {" "}
-            <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className=" max-h-[300px] pt-2 pr-8 float-left max-sm:float-none max-sm:max-h-none"
-                src={photosSrc[0]}
-                alt="Sopot"
-                title={photosTitle[0]}
-              />
-            </PhotoView>
             <p>
               <span className="first-letter font-playfair">W </span> &nbsp;1903
               roku w Sopocie wybudowano zakład balneologiczny, który istniał do
@@ -63,7 +55,15 @@ const SopotHistory = ({ id }) => {
               stało się latarnią morską. Obecnie światło ma zasięg nominalny 7
               mil morskich i formalnie nie jest już zaliczane do polskich
               latarni morskich.
-            </p>
+            </p>{" "}
+            <PhotoView src={photosSrc[0]}>
+              <LazyLoadImage
+                className="mx-auto"
+                src={photosSrc[0]}
+                alt="Sopot"
+                title={photosTitle[0]}
+              />
+            </PhotoView>
           </article>
         </PhotoProvider>
       )}

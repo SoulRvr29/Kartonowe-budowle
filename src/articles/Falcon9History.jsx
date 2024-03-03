@@ -36,7 +36,7 @@ const Falcon9History = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
             <h4>Rakieta Falcon 9</h4>
@@ -58,7 +58,7 @@ const Falcon9History = ({ id }) => {
                 src={photosSrc[0]}
                 alt="Rodzina rakiet Falcon."
                 title={photosTitle[0]}
-              />{" "}
+              />
             </PhotoView>
             <h4>Misja DM-2 (SpaceX Demonstration Mission 2)</h4>
             <p>
@@ -76,7 +76,7 @@ const Falcon9History = ({ id }) => {
                 src={photosSrc[1]}
                 alt="Start rakiety Falcon 9."
                 title={photosTitle[1]}
-              />{" "}
+              />
             </PhotoView>
           </article>
         </PhotoProvider>

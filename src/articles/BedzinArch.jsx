@@ -36,7 +36,7 @@ const BedzinArch = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
             <PhotoView src={photosSrc[0]}>

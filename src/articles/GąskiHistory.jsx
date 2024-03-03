@@ -10,7 +10,7 @@ const GąskiHistory = ({ id }) => {
     "models/latarnie morskie/gąski/gąski-photo-1.jpg",
     "models/latarnie morskie/gąski/gąski-photo-2.jpg",
   ];
-  const photosTitle = ["Obecny wygląd latarni", "Obecny wygląd latarni"];
+  const photosTitle = ["", ""];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -36,7 +36,7 @@ const GąskiHistory = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8 max-sm:px-4">
             <p>

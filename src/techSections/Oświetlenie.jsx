@@ -54,7 +54,7 @@ const Article = () => {
         }}
         maskOpacity={0.5}
         maskClassName="backdrop-blur-sm"
-        loadingElement={<div class="loader"></div>}
+        loadingElement={<div className="loader"></div>}
       >
         <article>
           <div className="flex gap-x-4 justify-center flex-wrap -mt-4 ">

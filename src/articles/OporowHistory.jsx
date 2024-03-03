@@ -41,7 +41,7 @@ const OporowHistory = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
             <h4>Budowa i zniszczenie pierwszego dworu</h4>
@@ -58,7 +58,7 @@ const OporowHistory = ({ id }) => {
             </p>
             <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
-                className="pr-8 mx-auto"
+                className=" mx-auto"
                 src={photosSrc[0]}
                 alt="Oporów"
                 title={photosTitle[0]}
@@ -182,7 +182,7 @@ const OporowHistory = ({ id }) => {
             </p>
             <PhotoView src={photosSrc[1]}>
               <LazyLoadImage
-                className="pr-8 mx-auto"
+                className=" mx-auto"
                 src={photosSrc[1]}
                 alt="Oporów"
                 title={photosTitle[1]}
@@ -243,7 +243,7 @@ const OporowHistory = ({ id }) => {
             </p>
             <PhotoView src={photosSrc[2]}>
               <LazyLoadImage
-                className="pr-8 mx-auto"
+                className="mx-auto"
                 src={photosSrc[2]}
                 alt="Oporów"
                 title={photosTitle[2]}

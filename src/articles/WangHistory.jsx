@@ -44,7 +44,7 @@ const WangHistory = ({ id }) => {
           }}
           maskOpacity={0.5}
           maskClassName="backdrop-blur-sm"
-          loadingElement={<div class="loader"></div>}
+          loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
             <PhotoView src={photosSrc[0]}>
@@ -99,7 +99,7 @@ const WangHistory = ({ id }) => {
               uwagę zasługuje bogato zdobiony krucyfiks wyrzeźbiony w jednym
               pniu dębowym przez Jakuba z Janowic w 1846 roku.
             </p>
-            <PhotoView src={photosSrc[0]}>
+            <PhotoView src={photosSrc[1]}>
               <LazyLoadImage
                 className="pl-8 float-right "
                 src={photosSrc[1]}
