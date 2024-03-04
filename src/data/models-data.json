@@ -159,6 +159,23 @@
       "Ilość stron": 2,
       "Wysokość": "20cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°47,12' N 17°44,02' E",
+      "Wysokość wydmy": "41 m n.p.m.",
+      "Wysokość wieży": "33,40 m",
+      "Wysokość światła": "70m n.p.m.",
+      "Zasięg nominalny światła": "23,50 Mm (43,522 km)",
+      "Charakterystyka światła": "Błyskowe grupowe"
+    },
+    "Fazy światła": {
+      "1": "Błysk 0,3 s",
+      "2": "Przerwa 2,2 s",
+      "3": "Błysk 0,3 s",
+      "4": "Przerwa 2,2 s",
+      "5": "Błysk 0,3 s",
+      "6": "Przerwa 6,7 s",
+      "Okres": "12 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 17,

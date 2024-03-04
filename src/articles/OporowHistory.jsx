@@ -7,13 +7,19 @@ const OporowHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
+    "models/oporow/oporow-rekonstrukcja.jpg",
+    "models/oporow/oporow-photo-1.webp",
     "models/oporow/oporow-photo-2.jpg",
     "models/oporow/oporow-photo-3.jpg",
-    "models/oporow/oporow-photo-1.jpg",
+    "models/oporow/oporow-photo-4.jpg",
+    "models/oporow/oporow-photo-5.jpg",
   ];
   const photosTitle = [
+    "Rekonstrukcja zamku z połowy XV wieku wg J.Zachwatowicza",
     "Wizerunek zamku z litografii Wincentego Kasprzyckiego, 1844 rok.",
-    "Zamek w latach 60. XX wieku.",
+    "Zamek w latach 60-tych",
+    "Zamek w 1970 roku",
+    "Zamek współcześnie",
     "Zamek współcześnie",
   ];
 
@@ -56,15 +62,15 @@ const OporowHistory = ({ id }) => {
               Oporowa, co może świadczyć o tym, iż miejscowość była już w tym
               czasie siedzibą rodu.
             </p>
+            <h4>Nowy i okazalszy dwór</h4>{" "}
             <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
-                className=" mx-auto"
+                className="float-left mr-8 max-h-[20rem] mt-2 "
                 src={photosSrc[0]}
                 alt="Oporów"
                 title={photosTitle[0]}
               />
             </PhotoView>
-            <h4>Nowy i okazalszy dwór</h4>
             <p>
               Powstanie budowli przypisuje Mikołajowi Oporowskiemu, który już w
               1392 roku pełnił ważny urząd, był podczaszym łęczyckim. Kolejny
@@ -91,7 +97,7 @@ const OporowHistory = ({ id }) => {
               arcybiskupa gnieźnieńskiego, który miał wokół siebie liczne grono
               duchownych, orszak zbrojny, krewnych oraz urzędników i służbę.
             </p>
-            <h4>Dalsze losy Oporowskich</h4>
+            <h4>Dalsze losy Oporowskich</h4>{" "}
             <p>
               Oporowscy byli związani z wsią od jej początku, bo jak wiadomo,
               pierwsza wzmianka o wsi padła w 1363 roku. Dziedzic Oporowa,
@@ -116,7 +122,7 @@ const OporowHistory = ({ id }) => {
               uniwersytetach w Wiedniu i Bolonii od funkcji kanonika
               wrocławskiego, by w 1428 zostać podkanclerzym koronnym, a w 1449 –
               arcybiskupem gnieźnieńskim i prymasem Polski.
-            </p>
+            </p>{" "}
             <h4>Sołłohubowie</h4>
             <p>
               W 1725 roku w posiadanie zamku wszedł Jan Sołłohub herbu Prawdzic,
@@ -131,6 +137,14 @@ const OporowHistory = ({ id }) => {
               ojca swego był małej substancji, szlachcic żmudzki, człek serca
               mężnego, w naukach nie był biegły, a rozumu naturalnego czystego".
             </p>
+            <PhotoView src={photosSrc[2]}>
+              <LazyLoadImage
+                className="float-left mr-8 max-h-[20rem] mt-2 "
+                src={photosSrc[2]}
+                alt="Oporów"
+                title={photosTitle[1]}
+              />
+            </PhotoView>
             <p>
               Do 1740 roku dobrami oporowskimi władał Jan Sołłohub, kiedy to
               przekazał część majątku synom z małżeństwa z Heleną Szamowską –
@@ -180,15 +194,7 @@ const OporowHistory = ({ id }) => {
               w posiadanie Kajetana Korzeniowskiego herbu Lis, pisarza
               litewskiego.
             </p>
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className=" mx-auto"
-                src={photosSrc[1]}
-                alt="Oporów"
-                title={photosTitle[1]}
-              />
-            </PhotoView>
-            <h4>Kolejni właściciele</h4>
+            <h4>Kolejni właściciele</h4>{" "}
             <p>
               Kajetan Korzeniowski herbu Lis nabył Oporów i okoliczne ziemie w
               1792 roku za 384000 zł polskich. W kilka lat cały teren przejęła
@@ -201,7 +207,25 @@ const OporowHistory = ({ id }) => {
               Ów syn – Teodor Pociej (1801-1856) sprzedał oporowskie ziemie
               Petroneli Oborskiej z Ossowskich (zm. 1832), wdowie po kasztelanie
               ciechanowskim.
-            </p>
+            </p>{" "}
+            <div className="flex flex-wrap justify-center gap-x-8">
+              <PhotoView src={photosSrc[3]}>
+                <LazyLoadImage
+                  className="max-h-[20rem]"
+                  src={photosSrc[3]}
+                  alt="Oporów"
+                  title={photosTitle[2]}
+                />
+              </PhotoView>{" "}
+              <PhotoView src={photosSrc[4]}>
+                <LazyLoadImage
+                  className=" max-h-[20rem]"
+                  src={photosSrc[4]}
+                  alt="Oporów"
+                  title={photosTitle[3]}
+                />
+              </PhotoView>
+            </div>
             <p>
               Za czasów Pociejów prace remontowe zostały najprawdopodobniej
               przeprowadzone na piętrze, włącznie ze zmianą wystroju na modny w
@@ -241,14 +265,24 @@ const OporowHistory = ({ id }) => {
               właścicieli zamku (to głównie obrazy i inne cenne przedmioty).
               Większość ze zbiorów także udostępniona dla zwiedzających.
             </p>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className="mx-auto"
-                src={photosSrc[2]}
-                alt="Oporów"
-                title={photosTitle[2]}
-              />
-            </PhotoView>
+            <div className="flex flex-wrap justify-center gap-x-8">
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className=" max-h-[20rem]"
+                  src={photosSrc[1]}
+                  alt="Oporów"
+                  title={photosTitle[4]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[5]}>
+                <LazyLoadImage
+                  className="max-h-[20rem]"
+                  src={photosSrc[5]}
+                  alt="Oporów"
+                  title={photosTitle[5]}
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}

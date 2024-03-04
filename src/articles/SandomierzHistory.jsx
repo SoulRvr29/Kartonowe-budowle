@@ -15,7 +15,7 @@ const SandomierzHistory = ({ id }) => {
   const photosTitle = [
     "Ratusz w roku 1899",
     "Ratusz obecnie",
-    "Brama Opatowska obecnie",
+    "Brama Opatowska",
   ];
   /////////////////////////////////////////////////////////////////
   return (
@@ -46,14 +46,6 @@ const SandomierzHistory = ({ id }) => {
         >
           <article className="px-8 max-sm:px-4">
             <h4>Ratusz w Sandomierzu</h4>
-            <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className="pr-8 float-left max-w-[400px]"
-                src={photosSrc[0]}
-                alt="ratusz"
-                title={photosTitle[0]}
-              />
-            </PhotoView>
             <p>
               <span className="first-letter font-playfair">B</span>
               udynek wzniesiony w 1349 r. - wkrótce po najeździe Litwinów.
@@ -80,25 +72,34 @@ const SandomierzHistory = ({ id }) => {
             <p>
               O godzinie 12.00 z wieży ratuszowej grany jest hejnał
               sandomierski.
-            </p>
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className="pl-8 mx-auto"
-                src={photosSrc[1]}
-                alt="ratusz"
-                title={photosTitle[1]}
-              />
-            </PhotoView>
+            </p>{" "}
+            <div className="flex flex-wrap justify-center gap-x-8">
+              <PhotoView src={photosSrc[0]}>
+                <LazyLoadImage
+                  className="max-h-[25rem]"
+                  src={photosSrc[0]}
+                  alt="ratusz"
+                  title={photosTitle[0]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className="max-h-[25rem]"
+                  src={photosSrc[1]}
+                  alt="ratusz"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+            </div>
             <h4 className="">Brama Opatowska</h4>
             <PhotoView src={photosSrc[2]}>
               <LazyLoadImage
-                className="pr-8 float-left max-w-md"
+                className="pr-8 float-left max-h-[20rem]"
                 src={photosSrc[2]}
                 alt="brama"
                 title={photosTitle[2]}
               />
             </PhotoView>
-
             <p className="pt-2">
               <span className="first-letter font-playfair">B</span>rama
               Opatowska – gotycka brama wjazdowa z 2 poł. XIV w. w Sandomierzu.

@@ -142,8 +142,11 @@
 
   /***** LIGHTHOUSE TECH DATA LI *****/
   .li-span {
-    color: var(--accent-3);
+    color: rgb(230, 230, 230);
     font-weight: 500;
+  }
+  .dark .li-span {
+    color: #acacac;
   }
 
   /***** LOADING RING ICON ANIMATION *****/

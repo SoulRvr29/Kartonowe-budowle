@@ -15,7 +15,7 @@ const LightInfo = ({ id }) => {
         setSectionState={setSectionState}
       />
       {sectionState && (
-        <div className="flex w-fit mx-auto gap-10 p-4 pr-6 max-md:flex-col">
+        <div className="flex w-fit mx-auto gap-x-10 p-4 pr-6 max-md:flex-col">
           <ul className="list-disc pl-8 marker:text-accent max-md:mb-4 max-sm:text-left font-bold  h-full w-fit rounded-xl ">
             {daneTech.map((item) => (
               <li key={item}>

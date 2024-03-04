@@ -12,12 +12,16 @@ const WangHistory = ({ id }) => {
     "models/wang/wang-photo2.jpg",
     "models/wang/wang-photo3.jpg",
     "models/wang/wang-photo4.jpg",
+    "models/wang/wang-photo5.jpg",
+    "models/wang/wang-photo6.webp",
   ];
   const photosTitle = [
     "Świątynia Wang w Norwegii, rysunek F.W. Schiertza z 1841 roku",
+    "Świątynia Wang w 1891 roku",
     "Świątynia Wang w 2006 roku",
     "Świątynia Wang obecnie",
-    "Świątynia Wang obecnie",
+    "Widok na świątynię od strony cmentarza",
+    "„Wskrzeszenie Łazarza” rzeźba autorstwa Ryszarda Zająca",
   ];
   /////////////////////////////////////////////////////////////////
   return (
@@ -72,6 +76,15 @@ const WangHistory = ({ id }) => {
               Dahl przebywający w Dreźnie skłonił pruskiego króla Fryderyka
               Wilhelma IV do jej zakupu za 427 marek dla berlińskiego muzeum.
             </p>
+            <br />
+            <PhotoView src={photosSrc[4]}>
+              <LazyLoadImage
+                className="float-right ml-8"
+                src={photosSrc[4]}
+                alt="zdjęcie"
+                title={photosTitle[1]}
+              />
+            </PhotoView>
             <p>
               W 1841 rozebraną świątynię przewieziono najpierw do Szczecina, a
               potem do Berlina, jednak zaprzyjaźniona z królem hrabina Fryderyka
@@ -99,19 +112,20 @@ const WangHistory = ({ id }) => {
               uwagę zasługuje bogato zdobiony krucyfiks wyrzeźbiony w jednym
               pniu dębowym przez Jakuba z Janowic w 1846 roku.
             </p>
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className="pl-8 float-right "
-                src={photosSrc[1]}
-                alt="zdjęcie"
-                title={photosTitle[1]}
-              />
-            </PhotoView>
             <p>
               28 lipca 1844 świątynia Wang stała się kościołem miejscowej
               parafii ewangelickiej i jest nim nadal. Stanowi atrakcję
               turystyczną Karpacza.
             </p>
+            <PhotoView src={photosSrc[1]}>
+              <LazyLoadImage
+                className="mr-8 float-left"
+                src={photosSrc[1]}
+                alt="zdjęcie"
+                title={photosTitle[2]}
+              />
+            </PhotoView>
+
             <p>
               Konstrukcja kościoła wykonana jest bez użycia gwoździ, wszystkie
               połączenia zrealizowano przy pomocy drewnianych złączy
@@ -142,13 +156,13 @@ const WangHistory = ({ id }) => {
               znajduje się rzeźba „Wskrzeszenie Łazarza” autorstwa Ryszarda
               Zająca.
             </p>
-            <div className="flex gap-8 justify-center flex-wrap">
+            <div className="flex gap-x-8 justify-center flex-wrap">
               <PhotoView src={photosSrc[2]}>
                 <LazyLoadImage
                   className="max-h-[20rem] cursor-pointer max-sm:w-full "
                   src={photosSrc[2]}
                   alt="zdjęcie"
-                  title={photosTitle[2]}
+                  title={photosTitle[3]}
                 />
               </PhotoView>
               <PhotoView src={photosSrc[3]}>
@@ -156,7 +170,15 @@ const WangHistory = ({ id }) => {
                   className="max-h-[20rem] cursor-pointer max-sm:w-full "
                   src={photosSrc[3]}
                   alt="zdjęcie"
-                  title={photosTitle[3]}
+                  title={photosTitle[4]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[5]}>
+                <LazyLoadImage
+                  className="max-h-[20rem] cursor-pointer max-sm:w-full "
+                  src={photosSrc[5]}
+                  alt="zdjęcie"
+                  title={photosTitle[5]}
                 />
               </PhotoView>
             </div>

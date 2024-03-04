@@ -15,7 +15,7 @@ const HelHistory = ({ id }) => {
     "models/latarnie morskie/hel/Hel-photo5.jpg",
   ];
   const photosTitle = [
-    "Latarnia w 1989 roku",
+    "Latarnia w 1898 roku",
     "Latarnia około 1932-1935 roku",
     "Laterna latarni morskiej Hel",
     "Tablica upamiętniająca wizytę marszałka Józefa Piłsudskiego",

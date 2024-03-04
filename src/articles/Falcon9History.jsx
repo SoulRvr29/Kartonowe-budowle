@@ -54,7 +54,7 @@ const Falcon9History = ({ id }) => {
             </p>
             <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
-                className="mx-auto  max-w-4xl hover:cursor-pointer"
+                className="mx-auto  max-w-4xl w-full max-[900px]:max-w-2xl"
                 src={photosSrc[0]}
                 alt="Rodzina rakiet Falcon."
                 title={photosTitle[0]}

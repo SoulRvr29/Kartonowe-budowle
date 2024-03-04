@@ -7,8 +7,16 @@ const SopotHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/latarnie morskie/sopot/sopot-photo-1.jpg"];
-  const photosTitle = ["Obecny wygląd latarni"];
+  const photosSrc = [
+    "models/latarnie morskie/sopot/sopot-photo-1.jpg",
+    "models/latarnie morskie/sopot/sopot-photo-2.jpg",
+    "models/latarnie morskie/sopot/sopot-photo-3.jpg",
+  ];
+  const photosTitle = [
+    "Latarnia Sopot z widocznym jeszcze kominem",
+    "Latarnia w 2012 roku",
+    "Latarnia w 2023 roku",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -56,14 +64,32 @@ const SopotHistory = ({ id }) => {
               mil morskich i formalnie nie jest już zaliczane do polskich
               latarni morskich.
             </p>{" "}
-            <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className="mx-auto"
-                src={photosSrc[0]}
-                alt="Sopot"
-                title={photosTitle[0]}
-              />
-            </PhotoView>
+            <div className="flex flex-wrap justify-center gap-x-8">
+              <PhotoView src={photosSrc[0]}>
+                <LazyLoadImage
+                  className="max-h-[30rem]"
+                  src={photosSrc[0]}
+                  alt="Sopot"
+                  title={photosTitle[0]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className="max-h-[30rem]"
+                  src={photosSrc[1]}
+                  alt="Sopot"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[2]}>
+                <LazyLoadImage
+                  className="max-h-[30rem]"
+                  src={photosSrc[2]}
+                  alt="Sopot"
+                  title={photosTitle[2]}
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}

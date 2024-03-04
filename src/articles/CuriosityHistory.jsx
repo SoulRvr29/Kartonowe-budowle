@@ -15,7 +15,7 @@ const CuriosityHistory = ({ id }) => {
   return (
     <>
       <SectionHeader
-        sectionName="Informacje"
+        sectionName="Historia"
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
@@ -47,21 +47,8 @@ const CuriosityHistory = ({ id }) => {
               />
             </PhotoView>
             <p>
-              <span className="first-letter font-playfair">C</span>uriosity
-              Rover – zautomatyzowane i autonomiczne laboratorium
-              naukowo-badawcze wysłane na Marsa, w ramach programu badawczego
-              Mars Science Laboratory (MSL) w celu oceny możliwości występowania
-              potencjalnych warunków do życia w przeszłości, zbadania możliwości
-              utrzymania się życia organicznego na Marsie, wykonania pomiarów
-              meteorologicznych, poszukiwania pierwiastków biogennych, badania
-              stopnia wilgotności gleby oraz poszukiwania wody i związków
-              mineralnych z nią związanych, przeprowadzenia pomiarów widma
-              wysokoenergetycznego promieniowania naturalnego, zbadania składu
-              skał i gleby oraz określenia charakterystyki możliwych cyklów
-              hydrologicznych na badanej planecie.
-            </p>
-            <p>
-              Curiosity jest sześciokołowym pojazdem (łazikiem) z zamontowanym
+              <span className="first-letter font-playfair">C</span>
+              uriosity jest sześciokołowym pojazdem (łazikiem) z zamontowanym
               oprzyrządowaniem badawczym, ramieniem robotycznym, systemami
               nawigacyjnymi i komunikacyjnymi, awioniką, oprogramowaniem i
               autonomicznym źródłem zasilania – radioizotopowym generatorem
@@ -93,6 +80,7 @@ const CuriosityHistory = ({ id }) => {
               interesujący, ponieważ łączą się tam trzy różne typy terenu
               charakterystyczne dla marsjańskiego krajobrazu.
             </p>{" "}
+            <h4>Miejsce lądowania</h4>
             <PhotoView src={photosSrc[1]}>
               <LazyLoadImage
                 className="pr-8 float-left max-w-[300px]"
@@ -100,7 +88,6 @@ const CuriosityHistory = ({ id }) => {
                 alt="curiosity"
               />
             </PhotoView>
-            <h4 className="inline-block mt-2">Miejsce lądowania</h4>
             <p>
               Miejscem lądowania misji, wybranym przez naukowców zaproszonych
               przez NASA, był krater Gale leżący na południe od równika. Zdjęcia

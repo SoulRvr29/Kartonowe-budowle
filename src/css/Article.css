@@ -3,14 +3,28 @@ article {
   z-index: 10;
 }
 
+/* article img:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+} */
+
 article img {
   max-width: 500px;
-  padding: 1rem 0;
+  margin: 1rem 0;
   cursor: pointer;
   filter: drop-shadow(8px 8px 2px rgba(0, 0, 0, 0.1));
+  /* border: 2px solid transparent; */
 }
+
+.article-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
 article > img:first-child {
-  margin-top: -0.5rem;
+  margin-top: 0.5rem !important;
 }
 
 article,

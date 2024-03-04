@@ -8,16 +8,22 @@ const BedzinHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/bedzin/bedzin-photo5.jpg",
     "models/bedzin/bedzin-photo1.jpg",
-    "models/bedzin/bedzin-photo6.jpg",
+    "models/bedzin/bedzin-photo2.jpg",
+    "models/bedzin/bedzin-photo3.jpg",
     "models/bedzin/bedzin-photo4.jpg",
+    "models/bedzin/bedzin-photo5.jpg",
+    "models/bedzin/bedzin-photo6.jpg",
+    "models/bedzin/bedzin-photo8.jpg",
   ];
   const photosTitle = [
-    "",
-    "Obecny wygląd zamku.",
-    "Zamek na litografii Napoleona Ordy",
-    "Porównanie dawnej fotografi ze stanem obecnym.",
+    "Najstarszy znany wizerunek zamku, Matthias Gerung 1536",
+    "Drzeworyt według rysunku Dymitrowicza 1867",
+    "Litografia Napoleona Ordy 1880",
+    "Ruiny zamku na fotografii z początku XX wieku",
+    "Ruiny zamku na fotografii z początku XX wieku",
+    "Odbudowany zamek na zdjęciu z 1965 roku",
+    "Porównanie ruin zamku z lat 30 ze stanem obecnym",
   ];
   /////////////////////////////////////////////////////////////////
 
@@ -47,6 +53,14 @@ const BedzinHistory = ({ id }) => {
           loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
+            <PhotoView src={photosSrc[0]}>
+              <LazyLoadImage
+                className="pr-8 float-left hover:cursor-pointer"
+                src={photosSrc[0]}
+                alt={photosTitle[0] || "photo"}
+                title={photosTitle[0]}
+              />
+            </PhotoView>
             <p>
               <span className="first-letter font-playfair">H</span>istoria
               fortyfikacji w Będzinie sięga IX wieku. Już wtedy na Górze
@@ -62,14 +76,6 @@ const BedzinHistory = ({ id }) => {
               w świetle najnowszych badań archeologicznych (m.in. metodą
               dendrochronologii) pochodzą z lat wcześniejszych.
             </p>
-            <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className="pr-8 float-left hover:cursor-pointer"
-                src={photosSrc[0]}
-                alt={photosTitle[0] || "photo"}
-                title={photosTitle[0]}
-              />
-            </PhotoView>
             <p>
               W 2 połowie XIII wieku, prawdopodobnie za panowania Bolesława
               Wstydliwego, w obrębie grodu wzniesiono kamienny stołp – wieżę,
@@ -94,7 +100,15 @@ const BedzinHistory = ({ id }) => {
               staroście sławkowskiemu wykupić zamek oraz miasto królewskie
               Będzin wraz z wsiami z rąk Bieniasza Pogórskiego. Według lustracji
               z 1564 zamek był częściowo opustoszały i popadał w ruinę.
-            </p>
+            </p>{" "}
+            <PhotoView src={photosSrc[1]}>
+              <LazyLoadImage
+                className="pl-8 float-right mt-2 "
+                src={photosSrc[1]}
+                alt={photosTitle[1] || "photo"}
+                title={photosTitle[1]}
+              />
+            </PhotoView>
             <p>
               W sierpniu 1588 zamek stał się miejscem pertraktacji, prowadzonych
               przez pełnomocników cesarza Rudolfa II z Polską, o zwolnienie
@@ -132,12 +146,12 @@ const BedzinHistory = ({ id }) => {
               królewscy zjechali do Będzina, rozkazali zamek odbudować co
               nastąpiło w 1665.
             </p>
-            <PhotoView src={photosSrc[1]}>
+            <PhotoView src={photosSrc[2]}>
               <LazyLoadImage
-                className="pl-8 float-right "
-                src={photosSrc[1]}
-                alt={photosTitle[1]}
-                title={photosTitle[1]}
+                className="pr-8 float-left mt-2"
+                src={photosSrc[2]}
+                alt={photosTitle[2] || "photo"}
+                title={photosTitle[2]}
               />
             </PhotoView>
             <p>
@@ -183,24 +197,32 @@ const BedzinHistory = ({ id }) => {
               kosztem obsadził wzgórze drzewami, dając początek dzisiejszemu
               parkowi.
             </p>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className="pr-8 float-left"
-                src={photosSrc[2]}
-                alt="będzin"
-                title={photosTitle[2]}
-                // onClick={(e) => {
-                //   photoClickHandler(e);
-                // }}
-              />
-            </PhotoView>
             <p>
               Przy kopaniu dołów pod drzewa natrafiano na groby, z których kilka
               furmanek kości ludzkich wywieziono na pobliski cmentarz. Odkryto
               także chodnik podziemny, prowadzący z zamku w stronę kościoła św.
               Tomasza. Jednak wikariusz ks. Podczaski zabezpieczając go przed
               poszukiwaczami skarbów, kazał otwór zamurować i zasypać gruzem.
-            </p>
+            </p>{" "}
+            <div className="flex flex-wrap justify-center gap-x-8">
+              {" "}
+              <PhotoView src={photosSrc[3]}>
+                <LazyLoadImage
+                  className=""
+                  src={photosSrc[3]}
+                  alt={photosTitle[3] || "photo"}
+                  title={photosTitle[3]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[4]}>
+                <LazyLoadImage
+                  className=""
+                  src={photosSrc[4]}
+                  alt={photosTitle[4] || "photo"}
+                  title={photosTitle[4]}
+                />
+              </PhotoView>
+            </div>
             <p>
               Mieroszewscy nie mieszkając na zamku, nie dbali o niego, więc
               popadał w ruinę, co potwierdza lustracja z 1789. Gdy w 1825 pod
@@ -239,6 +261,14 @@ const BedzinHistory = ({ id }) => {
               Następnie po drobnych przeróbkach zamek służył też jako szpital.
               Nie nadając się do tego celu już w 1849 znów popadł w ruinę.
             </p>
+            <PhotoView src={photosSrc[5]}>
+              <LazyLoadImage
+                className="mx-auto"
+                src={photosSrc[5]}
+                alt={photosTitle[5] || "photo"}
+                title={photosTitle[5]}
+              />
+            </PhotoView>
             <h4>XX lecie międzywojenne</h4>
             <p>
               W 1919 z inicjatywy Stefana Warchoła – inżyniera powiatowego, Jana
@@ -258,17 +288,6 @@ const BedzinHistory = ({ id }) => {
               uwieczniający podpisanie paktu będzińskiego. Kamień umieszczono w
               ogrodzie J. Gęborskiego.
             </p>
-            <PhotoView src={photosSrc[3]}>
-              <LazyLoadImage
-                className="mx-auto"
-                src={photosSrc[3]}
-                alt="będzin"
-                title={photosTitle[3]}
-                // onClick={(e) => {
-                //   photoClickHandler(e);
-                // }}
-              />
-            </PhotoView>
             <p>
               Obecny wygląd zamek zawdzięcza przebudowie neogotyckiej z 1834
               przeprowadzonym przez Franciszka Marię Lanciego oraz pracom
@@ -280,6 +299,14 @@ const BedzinHistory = ({ id }) => {
               Zamek posiadał w średniowieczu także dodatkową część otoczoną
               murem z bramą, której jednak nie odtworzono.
             </p>
+            <PhotoView src={photosSrc[6]}>
+              <LazyLoadImage
+                className="mx-auto max-w-3xl max-lg:max-w-xl"
+                src={photosSrc[6]}
+                alt={photosTitle[6] || "photo"}
+                title={photosTitle[6]}
+              />
+            </PhotoView>
           </article>
         </PhotoProvider>
       )}

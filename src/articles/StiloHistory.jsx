@@ -11,14 +11,20 @@ const StiloHistory = ({ id }) => {
     "models/latarnie morskie/stilo/stilo-photo-1.jpg",
     "models/latarnie morskie/stilo/stilo-photo-2.jpg",
     "models/latarnie morskie/stilo/stilo-photo-3.jpg",
+    "models/latarnie morskie/stilo/stilo-photo-4.jpg",
   ];
-  const photosTitle = ["Obecny wygląd", "Obecny wygląd", ""];
+  const photosTitle = [
+    "Latarnia w 1929 roku",
+    "Wieża, w której niegdyś zamontowany był buczek mgłowy",
+    "",
+    "",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <>
       {" "}
       <SectionHeader
-        sectionName="Informacje"
+        sectionName="Historia"
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
@@ -28,7 +34,7 @@ const StiloHistory = ({ id }) => {
             return (
               <div
                 className={
-                  "photo-description absolute bottom-0 text-center w-full z-30 p-3 bg-black bg-opacity-40 text-text-light " +
+                  "photo-description absolute bottom-0 text-center w-full z-30 p-3 bg-black bg-opacity-40 text-text-light  " +
                   (!photosTitle[index] && " hidden")
                 }
               >
@@ -41,96 +47,26 @@ const StiloHistory = ({ id }) => {
           loadingElement={<div className="loader"></div>}
         >
           <article className="px-8 max-sm:px-4">
-            <p>
-              <span className="first-letter font-playfair">W</span>ieża latarni
-              położona jest na wierzchołku wydmy 41 m n.p.m., odległej około
-              1000 m od morza. Latarnia zbudowana została przez Niemców na
-              fundamencie z granitu i betonu. Wieża latarni, szesnastokątna, u
-              podstawy o średnicy 7,3 m, natomiast u nasady laterny zwęża się do
-              3,9 m średnicy. Korpus jest wykonany z żeliwnych płyt, w kształcie
-              trapezu, większe u dołu, lecz o tej samej wysokości, 95 cm, każda
-              łączonych śrubami i uszczelnianych ołowiem. Pomiędzy parterem i
-              górną galerią znajduje się 10 kondygnacji, przez które przechodzą
-              prawoskrętne schody.
-            </p>
-            <h4>Dane techniczne</h4>
-            <div className="flex justify-center gap-8 max-md:flex-col">
-              <PhotoView src={photosSrc[0]}>
-                <LazyLoadImage
-                  className="pr-8 float-left"
-                  src={photosSrc[0]}
-                  alt="Stilo"
-                  title={photosTitle[0]}
-                />
-              </PhotoView>
-              <ul className="list-disc pl-8 marker:text-accent mt-10 max-md:mt-0 max-md:mb-4 max-sm:text-left font-bold border-2 h-full border-text-dark rounded-xl p-4 ">
-                <li>
-                  Położenie:{" "}
-                  <span className="li-span">54°47'12" N 17°44'02" E</span>
-                </li>
-                <li>
-                  Wysokość wydmy: <span className="li-span">41 m n.p.m.</span>
-                </li>
-                <li>
-                  Wysokość wieży:<span className="li-span"> 33,40 m</span>
-                </li>
-                <li>
-                  Wysokość światła:{" "}
-                  <span className="li-span">75,00 m n.p.m.</span>
-                </li>
-                <li>
-                  Zasięg nominalny światła:{" "}
-                  <span className="li-span">23,50 Mm (43,522 km)</span>
-                </li>
-                <li>
-                  Charakterystyka światła:{" "}
-                  <span className="li-span">Błyskowe grupowe</span>
-                  <ul className="list-disc pl-6 pt-2">
-                    <li>
-                      Błysk: <span className="li-span">0,3 s</span>
-                    </li>
-                    <li>
-                      Przerwa: <span className="li-span">2,2 s</span>
-                    </li>
-                    <li>
-                      Błysk: <span className="li-span">0,3 s</span>
-                    </li>
-                    <li>
-                      Przerwa: <span className="li-span">2,2 s</span>
-                    </li>
-                    <li>
-                      Błysk: <span className="li-span">0,3 s</span>
-                    </li>
-                    <li>
-                      Przerwa: <span className="li-span">6,7 s</span>
-                    </li>
-                    <li>
-                      Okres (pełny cykl):{" "}
-                      <span className="li-span">12,0 s</span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <h4>Historia</h4>
-            <p>
-              Latarnia została zbudowana w latach 1904–1906 na wniosek
-              Niemieckiego Związku Nawigacyjnego według projektu niemieckiego
-              architekta Waltera Körtego przez firmę Nordische Elektrizitäts und
-              Stahlwerke AG z Gdańska. Laterna została wykonana z drewna przez
-              firmę Juliusa Pintscha z Berlina, natomiast optykę wykonał Wilhelm
-              Weule z Goslar. Pierwotnie zainstalowano lampę łukową zasilaną
-              prądem stałym o napięciu 110 V. W 1926 roku przeprowadzono
-              modernizację, wprowadzając oświetlenie żarówką o mocy 2000 W i
-              instalując rezerwowe oświetlenie gazowe.
-            </p>
-            <PhotoView src={photosSrc[1]}>
+            <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
-                className="pr-8 float-left"
-                src={photosSrc[1]}
+                className="mr-8 float-left max-h-[20rem]"
+                src={photosSrc[0]}
                 alt="Stilo"
+                title={photosTitle[0]}
               />
             </PhotoView>
+            <p>
+              <span className="first-letter font-playfair">L</span>atarnia
+              została zbudowana w latach 1904–1906 na wniosek Niemieckiego
+              Związku Nawigacyjnego według projektu niemieckiego architekta
+              Waltera Körtego przez firmę Nordische Elektrizitäts und Stahlwerke
+              AG z Gdańska. Laterna została wykonana z drewna przez firmę
+              Juliusa Pintscha z Berlina, natomiast optykę wykonał Wilhelm Weule
+              z Goslar. Pierwotnie zainstalowano lampę łukową zasilaną prądem
+              stałym o napięciu 110 V. W 1926 roku przeprowadzono modernizację,
+              wprowadzając oświetlenie żarówką o mocy 2000 W i instalując
+              rezerwowe oświetlenie gazowe.
+            </p>
             <p>
               Od 1975 roku latarnia posiada oświetlenie halogenowe o mocy snopu
               światła 1 200 W/12V szwedzkiej firmy AGA PRB-21 (Aktiebolaget
@@ -153,6 +89,14 @@ const StiloHistory = ({ id }) => {
               akustyczną, urządzenia zdemontowano, a wieża, która pozostała
               obecnie służy, jako obiekt treningowy dla wspinaczy skałkowych.
             </p>
+            <PhotoView src={photosSrc[2]}>
+              <LazyLoadImage
+                className="mr-8 float-left max-h-[20rem]"
+                src={photosSrc[2]}
+                alt="Stilo"
+                title={photosTitle[1]}
+              />
+            </PhotoView>
             <p>
               W 2006 roku, w stulecie otwarcia latarni, przeprowadzono remont,
               podczas którego między innymi pokryto korpus całkowicie nową
@@ -185,14 +129,25 @@ const StiloHistory = ({ id }) => {
               Stefanie Łozickim kierownictwo latarni objął jego syn – Romuald
               Łozicki wraz z małżonką Weroniką (jedna z trzech kobiet –
               latarników), a następnie wnuk – Damian Łozicki.
-            </p>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className="pr-8 mx-auto"
-                src={photosSrc[2]}
-                alt="Stilo"
-              />
-            </PhotoView>
+            </p>{" "}
+            <div className="article-div">
+              <PhotoView src={photosSrc[3]}>
+                <LazyLoadImage
+                  className="max-h-[30rem] max-w-xl"
+                  src={photosSrc[3]}
+                  alt="Stilo"
+                  title={photosTitle[3]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className="max-h-[30rem] max-w-xl"
+                  src={photosSrc[1]}
+                  alt="Stilo"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}

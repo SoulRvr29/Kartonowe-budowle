@@ -9,8 +9,15 @@ const GąskiHistory = ({ id }) => {
   const photosSrc = [
     "models/latarnie morskie/gąski/gąski-photo-1.jpg",
     "models/latarnie morskie/gąski/gąski-photo-2.jpg",
+    "models/latarnie morskie/gąski/gąski-photo-3.jpg",
+    "models/latarnie morskie/gąski/gąski-photo-4.jpg",
   ];
-  const photosTitle = ["", ""];
+  const photosTitle = [
+    "Latarnia Gąski z 1904 roku",
+    "Latarnia Gąski obecnie",
+    "",
+    "",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -58,6 +65,22 @@ const GąskiHistory = ({ id }) => {
               pierścieniowo-bębnowa z 1500 W żarówką.
             </p>
             <div className="flex justify-center gap-8 flex-wrap">
+              <PhotoView src={photosSrc[2]}>
+                <LazyLoadImage
+                  className="max-h-[500px]"
+                  src={photosSrc[2]}
+                  alt="Gąski"
+                  title={photosTitle[2]}
+                />
+              </PhotoView>{" "}
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className=" max-h-[500px]"
+                  src={photosSrc[1]}
+                  alt="Gąski"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
               <PhotoView src={photosSrc[0]}>
                 <LazyLoadImage
                   className=" max-h-[500px]"
@@ -66,12 +89,12 @@ const GąskiHistory = ({ id }) => {
                   title={photosTitle[0]}
                 />
               </PhotoView>
-              <PhotoView src={photosSrc[1]}>
+              <PhotoView src={photosSrc[3]}>
                 <LazyLoadImage
-                  className=" max-h-[500px]"
-                  src={photosSrc[1]}
+                  className="max-h-[500px]"
+                  src={photosSrc[3]}
                   alt="Gąski"
-                  title={photosTitle[1]}
+                  title={photosTitle[3]}
                 />
               </PhotoView>
             </div>

@@ -10,7 +10,7 @@ const StiloHistory = ({ id }) => {
   const photosSrc = [
     "models/latarnie morskie/port północny/port północny-photo-1.jpg",
   ];
-  const photosTitle = ["Obecny wygląd latarni"];
+  const photosTitle = [""];
   /////////////////////////////////////////////////////////////////
   return (
     <>
