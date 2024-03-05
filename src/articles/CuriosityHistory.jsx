@@ -10,7 +10,10 @@ const CuriosityHistory = ({ id }) => {
     "models/curiosity/curiosity-photo-2.jpg",
     "models/curiosity/curiosity-photo-1.jpg",
   ];
-  const photosTitle = ["", ""];
+  const photosTitle = [
+    "Łazik Curiosity w zakładzie montażu w Pasadenie w Kalifornii",
+    "Autoportret łazika u podnóża Aeolis Mons z 2015 roku",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <>

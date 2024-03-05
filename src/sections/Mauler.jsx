@@ -1,6 +1,7 @@
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
+import MaulerHistory from "../articles/MaulerHistory";
 
 const Article = ({ id }) => {
   return (
@@ -8,6 +9,7 @@ const Article = ({ id }) => {
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
+      <MaulerHistory id={id} />
     </>
   );
 };

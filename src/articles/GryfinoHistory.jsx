@@ -7,10 +7,11 @@ const GryfinoHistory = ({ id }) => {
   const [historyState, setHistoryState] = useState(true);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
+    "models/gryfino/gryfino-photo3.jpg",
     "models/gryfino/gryfino-photo1.jpg",
     "models/gryfino/gryfino-photo2.jpg",
   ];
-  const photosTitle = ["", ""];
+  const photosTitle = ["Kościół w 1905 roku", "", ""];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -40,7 +41,7 @@ const GryfinoHistory = ({ id }) => {
           <article className="px-8">
             <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
-                className="pr-8 pt-2 float-left hover:cursor-pointer"
+                className="mr-8 float-left max-h-[20rem]"
                 src={photosSrc[0]}
                 alt="Kościół w gryfinie"
               />
@@ -82,13 +83,24 @@ const GryfinoHistory = ({ id }) => {
               stożek na wieży na kolidujący architekturą gotyku hełm
               neobarokowy. Od 1945 jest to ponownie świątynia katolicka.
             </p>
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className="pr-8 pt-2 max-w-[700px] mx-auto hover:cursor-pointer"
-                src={photosSrc[1]}
-                alt="Kościół w gryfinie"
-              />
-            </PhotoView>
+            <div className="article-div">
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className="max-h-[400px]"
+                  src={photosSrc[1]}
+                  alt="Kościół w gryfinie"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[2]}>
+                <LazyLoadImage
+                  className="max-h-[400px]"
+                  src={photosSrc[2]}
+                  alt="Kościół w gryfinie"
+                  title={photosTitle[2]}
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}

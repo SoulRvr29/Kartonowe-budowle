@@ -15,7 +15,7 @@ const StiloHistory = ({ id }) => {
   ];
   const photosTitle = [
     "Latarnia w 1929 roku",
-    "Wieża, w której niegdyś zamontowany był buczek mgłowy",
+    "Wieża, w której niegdyś zamontowany był nautofon",
     "",
     "",
   ];

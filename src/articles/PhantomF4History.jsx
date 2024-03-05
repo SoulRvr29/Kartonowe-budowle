@@ -13,7 +13,7 @@ const PhantomF4History = ({ id }) => {
   return (
     <>
       <SectionHeader
-        sectionName="Charakterystyka"
+        sectionName="Historia"
         sectionState={historyState}
         setSectionState={setHistoryState}
       />

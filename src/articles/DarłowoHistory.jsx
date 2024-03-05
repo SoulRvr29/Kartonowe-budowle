@@ -7,8 +7,12 @@ const DarłowoHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(true);
   ///////////////////////// PHOTOS DATA /////////////////////////
 
-  const photosSrc = ["models/latarnie morskie/darlowo/darłowo-photo-1.jpg"];
-  const photosTitle = ["Obecny wygląd latarni"];
+  const photosSrc = [
+    "models/latarnie morskie/darlowo/darłowo-photo-1.jpg",
+    "models/latarnie morskie/darlowo/darłowo-photo-2.jpg",
+    "models/latarnie morskie/darlowo/darłowo-photo-3.jpg",
+  ];
+  const photosTitle = ["Latarnia Darłowo około 1900-1903 roku", "", ""];
 
   /////////////////////////////////////////////////////////////////
   return (
@@ -40,7 +44,7 @@ const DarłowoHistory = ({ id }) => {
           <article className="px-8 max-sm:px-4">
             <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
-                className="pr-8 pt-0 float-left w-[400px]"
+                className="pr-8 pt-0 float-left max-w-[500px]"
                 src={photosSrc[0]}
                 alt="Latarina Darłowo"
                 title={photosTitle[0]}
@@ -78,6 +82,24 @@ const DarłowoHistory = ({ id }) => {
               przez długi okres nie była udostępniona turystom, ale po remoncie
               kapitalnym w 2006 roku znów można ją zwiedzać.
             </p>
+            <div className="article-div">
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className="max-h-[25rem]"
+                  src={photosSrc[1]}
+                  alt="Latarnia Darłowo"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[2]}>
+                <LazyLoadImage
+                  className="max-h-[25rem]"
+                  src={photosSrc[2]}
+                  alt="Latarnia Darłowo"
+                  title={photosTitle[2]}
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}

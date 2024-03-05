@@ -64,7 +64,7 @@ const GąskiHistory = ({ id }) => {
               roku. Obecnie w laternie umieszczona jest soczewka
               pierścieniowo-bębnowa z 1500 W żarówką.
             </p>
-            <div className="flex justify-center gap-8 flex-wrap">
+            <div className="flex justify-center gap-x-8 flex-wrap">
               <PhotoView src={photosSrc[2]}>
                 <LazyLoadImage
                   className="max-h-[500px]"

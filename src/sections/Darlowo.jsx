@@ -2,6 +2,7 @@ import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
 import DarłowoHistory from "../articles/DarłowoHistory";
+import LightInfo from "../components/LightInfo";
 
 const Article = ({ id }) => {
   return (
@@ -10,6 +11,7 @@ const Article = ({ id }) => {
       <ModelInfo id={id} />
       <Gallery id={id} />
       <DarłowoHistory id={id} />
+      <LightInfo id={id} />
     </>
   );
 };
