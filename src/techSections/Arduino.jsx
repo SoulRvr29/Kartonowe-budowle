@@ -41,13 +41,12 @@ const Article = () => {
             />
           </PhotoView>
           Arduino to niewielka płytka drukowana z mikroprocesorem i szeregiem
-          złącz, którą można dowolnie programować. Do programowania używa się
-          aplikacji{" "}
+          złącz, którą można programować. Używa się do tego aplikacji{" "}
           <a href="https://www.arduino.cc/en/software" target="_blank">
             Arduino IDE
           </a>
           , a program wgrywa się podłączając płytkę przez port USB do komputera.
-          Język programowania którego się używa bazuje na języku C/C++.
+          Język programowania w Arduino bazuje na języku C/C++.
           <h4 className="mt-4">Rodzaje płytek Arduino</h4>
           Jest wiele różnych rodzajów płytek, bardziej lub mniej rozbudowanych,
           najpopularniejszą jest Arduino UNO

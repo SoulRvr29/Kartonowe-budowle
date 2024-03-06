@@ -418,6 +418,20 @@
       "Ilość stron": 4,
       "Wysokość": "22cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°32'30 N 16°32'41 E",
+      "Wysokość wieży": "33,3 m",
+      "Wysokość światła": "50,2 m n.p.m.",
+      "Zasięg nominalny światła": "23 Mm (42,6 km)",
+      "Charakterystyka światła": "Błyskowe grupowe"
+    },
+    "Fazy światła": {
+      "1": "Błysk 0,45 s",
+      "2": "Przerwa 2,05 s",
+      "3": "Błysk 0,45 s",
+      "4": "Przerwa 6,05 s",
+      "Okres": "9 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 11,
@@ -544,6 +558,19 @@
       "Ilość stron": 2,
       "Wysokość": "18cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°11'17 N 15°33'22 E",
+      "Wysokość wieży": "26 m",
+      "Wysokość światła": "36 m n.p.m.",
+      "Zasięg nominalny światła": "16 Mm (29,6 km)",
+      "Sektor widzialności światła": "079,5°-242°(162,5°)",
+      "Charakterystyka światła": "Błyskowe"
+    },
+    "Fazy światła": {
+      "1": "Światło 1 s",
+      "2": "Przerwa 2 s",
+      "Okres": "3 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 14,
@@ -575,6 +602,20 @@
       "Ilość stron": 4,
       "Wysokość": "17cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°23'07,2 N 19°27'03,6 E",
+      "Wysokość wieży": "26,5 m",
+      "Wysokość światła": "53 m n.p.m.",
+      "Zasięg nominalny światła": "18 Mm (33,3 km)",
+      "Charakterystyka światła": "Błyskowe grupowe"
+    },
+    "Fazy światła": {
+      "1": "Błysk 2 s",
+      "2": "Przerwa 2 s",
+      "3": "Błysk 2 s",
+      "4": "Przerwa 6 s",
+      "Okres": "12 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 4,
@@ -605,6 +646,18 @@
       "Stopień trudności": 1,
       "Ilość stron": 4,
       "Wysokość": "30cm"
+    },
+    "Dane techniczne": {
+      "Położenie": "54°05'47 N 15°03'57 E",
+      "Wysokość wieży": "45 m",
+      "Wysokość światła": "62,8 m n.p.m.",
+      "Zasięg nominalny światła": "20 Mm (37,04 km)",
+      "Charakterystyka światła": "Błyskowe"
+    },
+    "Fazy światła": {
+      "1": "Błysk 0,45 s",
+      "2": "Przerwa 9,55 s",
+      "Okres": "10 s"
     },
     "Galeria": {
       "dzień": {
@@ -737,6 +790,18 @@
       "Ilość stron": 2,
       "Wysokość": "23cm"
     },
+    "Dane techniczne": {
+      "Położenie": "54°49,82 N 18°20,18 E",
+      "Wysokość wieży": "32,7 m",
+      "Wysokość światła": "83 m n.p.m.",
+      "Zasięg nominalny światła": "26 Mm (48,32 km)",
+      "Charakterystyka światła": "Błyskowe"
+    },
+    "Fazy światła": {
+      "1": "Błysk 0,1 s",
+      "2": "Przerwa 2,9 s",
+      "Okres": "3 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 10,
@@ -821,6 +886,18 @@
       "Ilość stron": 4,
       "Wysokość": "45cm"
     },
+    "Dane techniczne": {
+      "Położenie": "53 54'96 N 14 17'05 E",
+      "Wysokość wieży": "67,7 m",
+      "Wysokość światła": "65 m n.p.m.",
+      "Zasięg nominalny światła": "24 Mm (46,3 km)",
+      "Charakterystyka światła": "Przerywane"
+    },
+    "Fazy światła": {
+      "1": "Światło 4 s",
+      "2": "Przerwa 1 s",
+      "Okres": "5 s"
+    },
     "Galeria": {
       "dzień": {
         "quantity": 13,
@@ -851,6 +928,18 @@
       "Stopień trudności": 1,
       "Ilość stron": 2,
       "Wysokość": "13cm"
+    },
+    "Dane techniczne": {
+      "Położenie": "54°35'16,60 N 16°51'16,40 E",
+      "Wysokość wieży": "19,5 m",
+      "Wysokość światła": "22,2 m n.p.m.",
+      "Zasięg nominalny światła": "18 Mm (33,3 km)",
+      "Charakterystyka światła": "Przerywane"
+    },
+    "Fazy światła": {
+      "1": "Światło 4 s",
+      "2": "Przerwa 2 s",
+      "Okres": "6 s"
     },
     "Galeria": {
       "dzień": {

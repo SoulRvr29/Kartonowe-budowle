@@ -1,6 +1,8 @@
 import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
+import KrynicaMorskaHistory from "../articles/KrynicaMorskaHistory";
+import LightInfo from "../components/LightInfo";
 
 const Article = ({ id }) => {
   return (
@@ -8,6 +10,8 @@ const Article = ({ id }) => {
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
+      <KrynicaMorskaHistory id={id} />
+      <LightInfo id={id} />
     </>
   );
 };

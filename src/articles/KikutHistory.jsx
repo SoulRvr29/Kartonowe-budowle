@@ -42,9 +42,10 @@ const KikutHistory = ({ id }) => {
         >
           <article className="px-8 max-sm:px-4">
             <p>
-              Etymologia pochodzi od niemieckiej nazwy wieży widokowej z XIX w.
-              "Kiekturm", na której zbudowano latarnię morską. Rdzeń "kiek" lub
-              "kyk" pochodzi od niemieckiego "gycke" - spoglądaj.
+              <span className="first-letter">E</span>tymologia pochodzi od
+              niemieckiej nazwy wieży widokowej z XIX w. "Kiekturm", na której
+              zbudowano latarnię morską. Rdzeń "kiek" lub "kyk" pochodzi od
+              niemieckiego "gycke" - spoglądaj.
             </p>
             <p>
               W latach 60. XX wieku rozwój zespołu portowego
