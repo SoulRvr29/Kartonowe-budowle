@@ -75,12 +75,24 @@ const Article = () => {
             </NavLink>{" "}
             mają również wykonane wnętrza pomieszczeń. W ostatnich modelach
             wprowadzałem sporo modyfikacji i zmieniałem niektóre tekstury np.
-            dachu, podstawy, dorabiałem też swoje części. Świątynia Wang,
-            jeszcze nieukończona, jest już w całości zaprojektowana przeze mnie.
+            dachu, podstawy, dorabiałem też swoje części. Świątynia
+            <NavLink
+              to="/Wang"
+              onClick={() =>
+                document.querySelector(".article-header").scrollIntoView()
+              }
+            >
+              {" "}
+              <span className="text-accent-4 dark:text-accent-2 hover:underline">
+                Wang
+              </span>
+            </NavLink>
+            , jeszcze nieukończona, jest już w całości zaprojektowana przeze
+            mnie.
           </p>
           <p>
             Jeśli miałbym wybrać najlepszy model, jaki udało mi się do tej pory
-            ukończyć, będzie to z pewnością{" "}
+            ukończyć, będzie to z pewnością zamek w
             <NavLink
               to="/Bedzin"
               onClick={() =>
@@ -89,7 +101,7 @@ const Article = () => {
             >
               {" "}
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                zamek w Będzinie.
+                Będzinie.
               </span>
             </NavLink>
           </p>
@@ -101,7 +113,7 @@ const Article = () => {
               title={photosTitle[0]}
             />
           </PhotoView>
-          <div className="flex flex-wrap items-center gap-4 mb-8">
+          {/* <div className="flex flex-wrap items-center gap-4 mb-8">
             <PhotoView src={photosSrc[1]}>
               <LazyLoadImage
                 className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
@@ -118,7 +130,7 @@ const Article = () => {
                 title={photosTitle[2]}
               />
             </PhotoView>
-          </div>
+          </div> */}
           <hr className="grad-hr" />
         </header>
       </PhotoProvider>

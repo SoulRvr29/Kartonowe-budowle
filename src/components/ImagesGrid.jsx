@@ -31,7 +31,7 @@ const ImagesGrid = () => {
       {photoSrc.map((src, index) => (
         <div
           key={index}
-          className="relative h-[25vh] grow max max-[440px]:h-auto border-2 border-bkg border-opacity-50 hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] "
+          className="relative h-[17vh] grow max max-[440px]:h-auto border-2 border-bkg border-opacity-50 hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] "
         >
           <NavLink
             to={data[order[index] - 1].link}
@@ -42,8 +42,8 @@ const ImagesGrid = () => {
             <div className="photo-container h-full w-full">
               <LazyLoadImage
                 className=" hover:cursor-pointer max-h-full min-w-full  object-cover align-bottom max-[440px]:object-contain max-[440px]:w-[full] max-[440px]:px-10 max-[440px]:py-1 max-[440px]:h-auto"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 src={src}
                 alt={data[order[index] - 1].name}
               />
