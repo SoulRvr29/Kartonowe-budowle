@@ -177,10 +177,10 @@
     }
   }
   /***** RANDOM IMG GRID ON HOME PAGE *****/
-  .img-grid > div:last-child,
+  /* .img-grid > div:last-child,
   .img-grid > div:nth-last-child(2) {
     flex-grow: 0;
-  }
+  } */
 
   @keyframes fade-in {
     from {

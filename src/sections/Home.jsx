@@ -38,105 +38,51 @@ const Article = () => {
       >
         <hr className="grad-hr" />
 
-        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4">
-          <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m-2 droh2-shadow-sm dark:text-text-light text-text-dark">
-            Witaj na stronie.
-          </h2>
+        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 max-sm:py-0 max-sm:pb-2 ">
+          {/* <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m-2 droh2-shadow-sm dark:text-text-light text-text-dark">
+            Witaj na stronie głównej.
+          </h2> */}
+          <h4>Modele w budowie:</h4>
           <p>
-            Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
-            Modele sklejam od 1998 roku, głównie budowle, takie jak zamki,
-            ratusze, czy latarnie morskie. Zdarzyło mi się też skleić kilka
-            rakiet, samolotów, czy figurek. Pierwsze modele wykonywałem w
-            standardzie bez żadnych dodatków. W kolejnych modelach dodawałem
-            retusz krawędzi, elementy z drutu, jak np. barierki, roślinność oraz
-            oświetlenie. Zamki w{" "}
-            <NavLink
-              to="/Bedzin"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
-              {" "}
-              <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                Będzinie
-              </span>
-            </NavLink>{" "}
-            i{" "}
-            <NavLink
-              to="/Oporow"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
-              {" "}
-              <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                Oporowie
-              </span>
-            </NavLink>{" "}
-            mają również wykonane wnętrza pomieszczeń. W ostatnich modelach
-            wprowadzałem sporo modyfikacji i zmieniałem niektóre tekstury np.
-            dachu, podstawy, dorabiałem też swoje części. Świątynia
-            <NavLink
-              to="/Wang"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
-              {" "}
-              <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                Wang
-              </span>
-            </NavLink>
-            , jeszcze nieukończona, jest już w całości zaprojektowana przeze
-            mnie.
+            <b>
+              <NavLink
+                to="/Wang"
+                onClick={() =>
+                  document.querySelector(".article-header").scrollIntoView()
+                }
+              >
+                <span className="text-accent-4 dark:text-accent-2 hover:underline">
+                  Świątynia Wang{" "}
+                </span>
+              </NavLink>
+              (projekt własny){" "}
+            </b>
+            - budowla jest już na ukończeniu, do zrobienia trawniki, drzewka,
+            oświetlenie wokół budowli. <br />
+            <b> Świątynia Wang (GPM)</b> - budowla gotowa, do zrobienia drzewka.
+            <br />
+            <b>Rakieta Saturn V</b> - do zrobienia górny stopień rakiety,
+            silniki i detale.
           </p>
-          <p>
-            Jeśli miałbym wybrać najlepszy model, jaki udało mi się do tej pory
-            ukończyć, będzie to z pewnością zamek w
-            <NavLink
-              to="/Bedzin"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
-              {" "}
-              <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                Będzinie.
-              </span>
-            </NavLink>
-          </p>
-          <PhotoView src={photosSrc[0]}>
-            <LazyLoadImage
-              className="w-fit max-h-[40rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-              src={photosSrc[0]}
-              alt="będzin"
-              title={photosTitle[0]}
-            />
-          </PhotoView>
-          {/* <div className="flex flex-wrap items-center gap-4 mb-8">
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-                src={photosSrc[1]}
-                alt="będzin"
-                title={photosTitle[1]}
-              />
-            </PhotoView>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-                src={photosSrc[2]}
-                alt="będzin"
-                title={photosTitle[2]}
-              />
-            </PhotoView>
-          </div> */}
-          <hr className="grad-hr" />
+          <h4>Galerie do dodania:</h4>
+          <ul className="list-disc list-inside">
+            <li>Rakieta Atlas V</li>
+            <li>wieżowce</li>
+            <br />
+            <b>Starsze modele (do 2010r):</b>
+            <li>Olsztyn</li>
+            <li>Malbork</li>
+            <li>Nowy Wiśnicz</li>
+            <li>Wawel</li>
+            <li>Samolot Mig 29UB</li>
+            <li>Samolot P51-B Mustang</li>
+          </ul>
         </header>
+        <hr className="grad-hr" />
       </PhotoProvider>
-      <div className=" mb-8 mt-4 mx-8">
-        {/* <h4 className="max-sm:text-base max-[425px]:text-xs mx-auto mt-4">
-          Poniżej kilka wybranych zdjęć z różnych modeli:
+      <div className="m-8 my-4 max-sm:mb-2">
+        {/* <h4 className="max-sm:text-base max-[350px]:text-xs mx-auto text-center mb-4">
+          Losowe zdjęcia z różnych modeli:
         </h4> */}
         <ImagesGrid />
       </div>

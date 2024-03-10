@@ -43,12 +43,13 @@ const Article = () => {
           </h2>
           <p>
             Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
-            Modele sklejam od 1998 roku, głównie budowle, takie jak zamki,
-            ratusze, czy latarnie morskie. Zdarzyło mi się też skleić kilka
-            rakiet, samolotów, czy figurek. Pierwsze modele wykonywałem w
-            standardzie bez żadnych dodatków. W kolejnych modelach dodawałem
-            retusz krawędzi, elementy z drutu, jak np. barierki, roślinność oraz
-            oświetlenie. Zamki w{" "}
+            Większość modeli to budowle, takie jak zamki, ratusze, czy latarnie
+            morskie, ale jest też się kilka rakiet, samolotów, czy figurek.
+            Modelarstwem zajmuję się od około 1998 roku. Pierwsze modele
+            wykonywałem w standardzie bez żadnych dodatków, w kolejnych modelach
+            dodawałem retusz krawędzi, elementy z drutu (np. barierki) oraz
+            roślinność i oświetlenie. Dwa razy podjąłem się też wykonania
+            pomieszczeń w modelach zamku w{" "}
             <NavLink
               to="/Bedzin"
               onClick={() =>
@@ -71,11 +72,23 @@ const Article = () => {
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
                 Oporowie
               </span>
-            </NavLink>{" "}
-            mają również wykonane wnętrza pomieszczeń. W ostatnich modelach
-            wprowadzałem sporo modyfikacji i zmieniałem niektóre tekstury np.
-            dachu, podstawy, dorabiałem też swoje części. Świątynia Wang,
-            jeszcze nieukończona, jest już w całości zaprojektowana przeze mnie.
+            </NavLink>
+            . W ostatnich modelach wprowadzałem sporo modyfikacji i zmieniałem
+            niektóre tekstury (np. dachu, podstawy), dorabiałem również swoje
+            elementy. Świątynia
+            <NavLink
+              to="/Wang"
+              onClick={() =>
+                document.querySelector(".article-header").scrollIntoView()
+              }
+            >
+              {" "}
+              <span className="text-accent-4 dark:text-accent-2 hover:underline">
+                Wang
+              </span>
+            </NavLink>
+            , jeszcze nieukończona, jest już w całości zaprojektowana przeze
+            mnie.
           </p>
           <p>
             Jeśli miałbym wybrać najlepszy model, jaki udało mi się do tej pory
@@ -94,30 +107,12 @@ const Article = () => {
           </p>
           <PhotoView src={photosSrc[0]}>
             <LazyLoadImage
-              className="w-fit max-h-[40rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+              className="w-fit max-h-[30rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
               src={photosSrc[0]}
               alt="będzin"
               title={photosTitle[0]}
             />
           </PhotoView>
-          <div className="flex flex-wrap items-center gap-4 mb-8">
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-                src={photosSrc[1]}
-                alt="będzin"
-                title={photosTitle[1]}
-              />
-            </PhotoView>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className="w-fit max-h-[25rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
-                src={photosSrc[2]}
-                alt="będzin"
-                title={photosTitle[2]}
-              />
-            </PhotoView>
-          </div>
         </header>
       </PhotoProvider>
     </>
