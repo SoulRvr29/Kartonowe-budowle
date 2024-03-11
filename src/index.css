@@ -109,7 +109,9 @@
     visibility: visible;
     animation: fade-in 1s forwards;
   }
-
+  .random-img {
+    animation: fade-in 1s forwards;
+  }
   /***** SCROLL BLOCKED ON FULLSCREEN PHOTO *****/
   .site-overflow {
     overflow: hidden;
