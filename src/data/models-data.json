@@ -86,13 +86,13 @@
   },
   {
     "id": 4,
-    "component": "Sandomierz",
+    "component": "SandomierzRatusz",
     "typ": "zamki i ratusze",
     "oświetlenie": true,
     "rok ukończenia": 2014,
-    "link": "/Sandomierz",
+    "link": "/SandomierzRatusz",
     "publisher": "GPM",
-    "name": "Ratusz i Brama Opatowska w Sandomierzu",
+    "name": "Ratusz w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "position": [50.679417, 21.749361],
@@ -102,10 +102,10 @@
       "Skala": "1:150",
       "Rok wydania": 2001,
       "Stopień trudności": 2,
-      "Ilość stron": 6,
-      "Wysokość modeli": "22cm i 19cm"
+      "Ilość stron": 4,
+      "Wysokość": "22cm"
     },
-    "Galeria - Ratusz": {
+    "Galeria": {
       "dzień": {
         "quantity": 12,
         "full": "./models/sandomierz/ratusz/dzień/full-res/ratusz-d",
@@ -122,7 +122,32 @@
         "thumb": "./models/sandomierz/ratusz/budowa/thumb/ratusz-thumb-b"
       }
     },
-    "Galeria - Brama": {
+
+    "photo": "models/sandomierz/sandomierz-photo-",
+    "description": "Ratusz - budynek wzniesiony w 1349 r. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą."
+  },
+  {
+    "id": 29,
+    "component": "SandomierzBrama",
+    "typ": "zamki i ratusze",
+    "oświetlenie": false,
+    "rok ukończenia": 2014,
+    "link": "/SandomierzBrama",
+    "publisher": "GPM",
+    "name": "Brama Opatowska w Sandomierzu",
+    "card": "./cards/sandomierz brama-card.jpg",
+    "cover": "models/sandomierz/sandomierz-cover.jpg",
+    "position": [50.681541, 21.749438],
+    "address": "Opatowska 40, 27-600 Sandomierz",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2001,
+      "Stopień trudności": 2,
+      "Ilość stron": 2,
+      "Wysokość": "19cm"
+    },
+    "Galeria": {
       "dzień": {
         "quantity": 6,
         "full": "./models/sandomierz/wieża/dzień/full-res/wieża-d",
@@ -135,8 +160,8 @@
       }
     },
     "photo": "models/sandomierz/sandomierz-photo-",
-    "description": "Ratusz - budynek wzniesiony w 1349 r. Pierwotnie gotycki, był budowlą na planie kwadratu zwieńczoną wysoką, ośmioboczną wieżą.",
-    "description2": "Brama - gotycka brama wjazdowa z 2 poł. XIV w. Zbudowana z fundacji Kazimierza Wielkiego jako część murów obronnych miasta."
+
+    "description": "Brama - gotycka brama wjazdowa z 2 poł. XIV w. Zbudowana z fundacji Kazimierza Wielkiego jako część murów obronnych miasta."
   },
   {
     "id": 2,

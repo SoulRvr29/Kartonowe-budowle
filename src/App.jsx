@@ -18,7 +18,8 @@ import About from "./sections/About";
 import Bedzin from "./sections/Bedzin";
 import Oporow from "./sections/Oporow";
 import Curiosity from "./sections/Curiosity";
-import Sandomierz from "./sections/Sandomierz";
+import SandomierzRatusz from "./sections/SandomierzRatusz";
+import SandomierzBrama from "./sections/SandomierzBrama";
 import Stilo from "./sections/Stilo";
 import Darlowo from "./sections/Darlowo";
 import Czołpino from "./sections/Czołpino";
@@ -79,7 +80,14 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Bedzin" element={<Bedzin id={0} />} />
           <Route path="/Oporow" element={<Oporow id={1} />} />
-          <Route path="/Sandomierz" element={<Sandomierz id={4} />} />
+          <Route
+            path="/SandomierzRatusz"
+            element={<SandomierzRatusz id={4} />}
+          />
+          <Route
+            path="/SandomierzBrama"
+            element={<SandomierzBrama id={29} />}
+          />
           <Route path="/Stilo" element={<Stilo id={2} />} />
           <Route path="/Darlowo" element={<Darlowo id={5} />} />
           <Route path="/Czołpino" element={<Czołpino id={6} />} />
@@ -106,7 +114,7 @@ function App() {
           <Route path="/StarshipSN15" element={<StarshipSN15 id={26} />} />
           <Route path="/Falcon9" element={<Falcon9 id={27} />} />
           <Route path="/Wang" element={<Wang id={28} />} />
-          <Route path="/Wieżowce" element={<Wieżowce id={29} />} />
+          <Route path="/Wieżowce" element={<Wieżowce id={30} />} />
           <Route path="/Oświetlenie" element={<Oświetlenie />} />
           <Route path="/Roślinność" element={<Roślinność />} />
           <Route path="/Sadzarka" element={<Sadzarka />} />

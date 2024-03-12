@@ -55,7 +55,7 @@ const Article = () => {
               </NavLink>
               (projekt własny){" "}
             </b>
-            - budowla jest już na ukończeniu, do zrobienia trawniki, drzewka,
+            - budowla jest na ukończeniu, do zrobienia trawniki, drzewka,
             oświetlenie wokół budowli. <br />
             <b> Świątynia Wang (GPM)</b> - budowla gotowa, do zrobienia drzewka.
             <br />
@@ -74,7 +74,6 @@ const Article = () => {
             <li>Nowy Wiśnicz</li>
             <li>Wawel</li>
             <li>Samolot Mig 29UB</li>
-            <li>Samolot P51-B Mustang</li>
           </ul>
         </header>
         <hr className="grad-hr" />

@@ -10,18 +10,13 @@ const SandomierzHistory = ({ id }) => {
   const photosSrc = [
     "models/sandomierz/sandomierz-photo-1.jpg",
     "models/sandomierz/sandomierz-photo-2.jpg",
-    "models/sandomierz/sandomierz-photo-3.jpg",
   ];
-  const photosTitle = [
-    "Ratusz w roku 1899",
-    "Ratusz obecnie",
-    "Brama Opatowska",
-  ];
+  const photosTitle = ["Ratusz w roku 1899", "Ratusz obecnie"];
   /////////////////////////////////////////////////////////////////
   return (
     <>
       <SectionHeader
-        sectionName="Informacje"
+        sectionName="Historia"
         sectionState={sectionState}
         setSectionState={setSectionState}
       />
@@ -45,7 +40,6 @@ const SandomierzHistory = ({ id }) => {
           loadingElement={<div class="loader"></div>}
         >
           <article className="px-8 max-sm:px-4">
-            <h4>Ratusz w Sandomierzu</h4>
             <p>
               <span className="first-letter font-playfair">B</span>
               udynek wzniesiony w 1349 r. - wkrótce po najeździe Litwinów.
@@ -91,36 +85,6 @@ const SandomierzHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
-            <h4 className="">Brama Opatowska</h4>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className="pr-8 float-left max-h-[20rem]"
-                src={photosSrc[2]}
-                alt="brama"
-                title={photosTitle[2]}
-              />
-            </PhotoView>
-            <p className="pt-2">
-              <span className="first-letter font-playfair">B</span>rama
-              Opatowska – gotycka brama wjazdowa z 2 poł. XIV w. w Sandomierzu.
-              Zbudowana z fundacji Kazimierza Wielkiego jako część murów
-              obronnych miasta. W XVI w. została zwieńczona renesansową attyką
-              ufundowaną przez sandomierskiego lekarza Stanisława Bartolona.
-            </p>
-            <p>
-              W czasie powstania styczniowego 8 lutego 1863 r. miał tu miejsce
-              dramatyczny epilog bitwy pod Słupczą. Uchodzący z pola bitwy
-              rozgromieni powstańcy próbowali stawiać opór na barykadzie
-              wzniesionej w Bramie Opatowskiej. Została ona jednak zdobyta już
-              przy pierwszym ataku ścigających ich Kozaków.
-            </p>
-            <p>
-              Jest jedyną zachowaną bramą spośród czterech, które prowadziły
-              niegdyś do Sandomierza. Poza Opatowską do miasta prowadziły
-              jeszcze bramy: Zawichojska, Lubelska i Krakowska oraz dwie furty,
-              spośród których zachowała się jedna – Dominikańska, nazywana Uchem
-              Igielnym.
-            </p>
           </article>
         </PhotoProvider>
       )}
