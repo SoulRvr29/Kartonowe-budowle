@@ -1,7 +1,5 @@
 import ImagesGrid from "../components/ImagesGrid";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { NavLink } from "react-router-dom";
 
 const Article = () => {
@@ -38,11 +36,11 @@ const Article = () => {
       >
         <hr className="grad-hr" />
 
-        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-0 max-sm:py-0 max-sm:pb-2 ">
-          {/* <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m-2 droh2-shadow-sm dark:text-text-light text-text-dark">
+        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-4 max-sm:py-0 max-sm:pb-2 ">
+          {/* <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m drop-shadow-sm dark:text-text-light text-text-dark">
             Witaj na stronie głównej.
           </h2> */}
-          <h4>Aktualnie w budowie:</h4>
+          <h5>Aktualnie w budowie:</h5>
           <p>
             <b>
               <NavLink
@@ -64,23 +62,24 @@ const Article = () => {
             <b>Rakieta Saturn V</b> - do zrobienia górny stopień rakiety,
             silniki i detale.
           </p>
-          <h4>Galerie do dodania:</h4>
+          <h5>Galerie do dodania:</h5>
           <ul className="list-disc list-inside">
             <li>Rakieta Atlas V</li>
             <li>wieżowce</li>
-            <br />
+            {/* <br /> */}
             <b>Starsze modele (do 2010r):</b>
             <li>Olsztyn</li>
             <li>Malbork</li>
+            <li>Wilczy Szaniec</li>
             <li>Nowy Wiśnicz</li>
             <li>Wawel</li>
             <li>Samolot Mig 29UB</li>
             <li>Samolot P51-B Mustang</li>
           </ul>
         </header>
-        {/* <hr className="grad-hr" /> */}
+        <hr className="grad-hr" />
       </PhotoProvider>
-      <div className="losowe-container m-8 max-sm:m-4 mb-4 max-sm:mb-2 relative">
+      <div className="losowe-container m-8 mt-0 max-sm:m-4 mb-4 max-sm:mb-2 relative">
         <ImagesGrid />
       </div>
     </>
