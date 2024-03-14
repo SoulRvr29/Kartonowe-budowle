@@ -13,7 +13,7 @@ const SandomierzHistory = ({ id }) => {
   return (
     <>
       <SectionHeader
-        sectionName="Informacje"
+        sectionName="Historia"
         sectionState={sectionState}
         setSectionState={setSectionState}
       />

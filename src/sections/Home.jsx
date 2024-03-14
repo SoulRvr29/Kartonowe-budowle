@@ -53,11 +53,11 @@ const Article = () => {
                   Świątynia Wang{" "}
                 </span>
               </NavLink>
-              (projekt własny){" "}
+              1:72{" "}
             </b>
             - budowla jest na ukończeniu, do zrobienia trawniki, drzewka,
             oświetlenie wokół budowli. <br />
-            <b> Świątynia Wang (GPM)</b> - budowla gotowa, do zrobienia drzewka.
+            <b> Świątynia Wang 1:150</b> - budowla gotowa, do zrobienia drzewka.
             <br />
             <b>Rakieta Saturn V</b> - do zrobienia górny stopień rakiety,
             silniki i detale.
@@ -65,7 +65,7 @@ const Article = () => {
           <h5>Galerie do dodania:</h5>
           <ul className="list-disc list-inside">
             <li>Rakieta Atlas V</li>
-            <li>wieżowce</li>
+            <li>Wieżowce</li>
             {/* <br /> */}
             <b>Starsze modele (do 2010r):</b>
             <li>Olsztyn</li>
