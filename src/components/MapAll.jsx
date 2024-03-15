@@ -1,21 +1,20 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import polandIcon from "../assets/icons/poland-icon.png";
 import modelsData from "../data/models-data.json";
-
-const map = ({ id, position }) => {
-  const address = modelsData.filter((item) => item.id == id)[0].address || null;
+import imgTest from "../../public/models/oporow/oporow-miniature.png";
+const map = () => {
   const [mapSize, setMapSize] = useState(false);
-  const [zoom, setZoom] = useState(17);
-  const [center, setcenter] = useState([...position]);
   const polandMap = [52, 19];
+
+  const [zoom, setZoom] = useState(6);
+  const [center, setcenter] = useState(polandMap);
 
   return (
     <div
       className={
         mapSize
-          ? "w-full relative h-[40rem] "
-          : "w-full max-w-sm relative h-[20rem] "
+          ? "w-full mx-auto relative h-[40rem] "
+          : "w-full mx-auto my-2 max-w-xl relative h-[34rem] max-sm:h-[24rem]"
       }
     >
       <div className="z-10 absolute right-3 top-3 flex flex-col  dark:brightness-75 dark:contrast-150">
@@ -24,7 +23,6 @@ const map = ({ id, position }) => {
           title={mapSize ? "małe okno" : "duże okno"}
           onClick={() => {
             setMapSize(!mapSize);
-            console.log(mapSize);
           }}
           className="map-btn border-2 border-b rounded-t-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100"
         >
@@ -48,41 +46,11 @@ const map = ({ id, position }) => {
             </svg>
           )}
         </button>
-        {/* map zoom button */}
-        <button
-          title={zoom === 17 ? "mapa Polski" : "mapa szczegółowa"}
-          className="border-2 border-t-0 rounded-b-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100 w-8 flex justify-center h-8"
-          onClick={() => {
-            if (zoom === 17) {
-              if (!mapSize) setZoom(5);
-              else setZoom(6);
-              setcenter(polandMap);
-            } else {
-              setZoom(17);
-              setcenter([...position]);
-            }
-          }}
-        >
-          {zoom === 17 ? (
-            <img
-              // src="/src/assets/icons/poland-icon.png"
-              src={polandIcon}
-              alt="poland icon"
-            />
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 512"
-              height="1.1em"
-            >
-              <path d="M480 48c0-26.5-21.5-48-48-48H336c-26.5 0-48 21.5-48 48V96H224V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V96H112V24c0-13.3-10.7-24-24-24S64 10.7 64 24V96H48C21.5 96 0 117.5 0 144v96V464c0 26.5 21.5 48 48 48H304h32 96H592c26.5 0 48-21.5 48-48V240c0-26.5-21.5-48-48-48H480V48zm96 320v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM240 416H208c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zM128 400c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM560 256c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H528c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32zM256 176v32c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM112 160c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32zM256 304c0 8.8-7.2 16-16 16H208c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32zM112 320H80c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16zm304-48v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16zM400 64c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V80c0-8.8 7.2-16 16-16h32zm16 112v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16z" />
-            </svg>
-          )}
-        </button>
       </div>
+      {/* <img src={modelsData[0].icon} alt="" /> */}
       <MapContainer
         key={
-          (mapSize === true && zoom === 17) || (mapSize === false && zoom != 17)
+          (mapSize === true && zoom === 6) || (mapSize === false && zoom != 6)
             ? "open-state"
             : "closed-state"
         }
@@ -90,7 +58,7 @@ const map = ({ id, position }) => {
         zoom={zoom}
         scrollWheelZoom={true}
         zoomControl={true}
-        className="map dark:brightness-75 dark:contrast-150 h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
+        className="map dark:brightness-90 dark:contrast-125 h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
       >
         <TileLayer
           attribution='&copy;
@@ -98,9 +66,27 @@ const map = ({ id, position }) => {
         contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[...position]}>
-          {address && <Popup>{address}</Popup>}
-        </Marker>
+        {modelsData.map(
+          (item) =>
+            item.position && (
+              <div key={item.id} className="">
+                <Marker
+                  className="scale-50 marker"
+                  position={item.position}
+                  icon={L.icon({
+                    iconUrl: item.icon,
+                    iconSize: [50, 50],
+                    iconAnchor: [25, 40],
+                    popupAnchor: [0, -25],
+                  })}
+                >
+                  <div className="opacity-0">
+                    <Popup>{item.name}</Popup>
+                  </div>
+                </Marker>
+              </div>
+            )
+        )}
       </MapContainer>
     </div>
   );

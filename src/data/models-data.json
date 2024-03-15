@@ -21,6 +21,7 @@
     },
     "name": "Zamek w Będzinie",
     "card": "./cards/bedzin-card.jpg",
+    "icon": "./models-icons/bedzin-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 58,
@@ -51,6 +52,7 @@
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
     "card": "./cards/oporow-card.jpg",
+    "icon": "./models-icons/oporow-icon.png",
     "cover": "models/oporow/oporow-cover.jpg",
     "position": [52.2625, 19.56226],
     "address": "Oporów 34, 99-322 Oporów",
@@ -94,6 +96,7 @@
     "publisher": "GPM",
     "name": "Ratusz w Sandomierzu",
     "card": "./cards/sandomierz-card.jpg",
+    "icon": "./models-icons/sandomierz-icon.png",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "position": [50.679417, 21.749361],
     "address": "Rynek, 27-600 Sandomierz",
@@ -136,6 +139,7 @@
     "publisher": "GPM",
     "name": "Brama Opatowska w Sandomierzu",
     "card": "./cards/sandomierz brama-card.jpg",
+    "icon": "./models-icons/sandomierz brama-icon.png",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "position": [50.681541, 21.749438],
     "address": "Opatowska 40, 27-600 Sandomierz",
@@ -173,6 +177,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Stilo",
     "card": "./cards/stilo-card.jpg",
+    "icon": "./models-icons/stilo-icon.png",
     "cover": "models/latarnie morskie/stilo/stilo-cover.jpg",
     "position": [54.786857, 17.733979],
     "address": "Morska 25, 84-211 Sasino",
@@ -231,6 +236,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Darłowo",
     "card": "./cards/darłowo-card.jpg",
+    "icon": "./models-icons/darłowo-icon.png",
     "cover": "models/latarnie morskie/darlowo/darłowo-cover.jpg",
     "position": [54.4403, 16.3786],
     "address": "Wschodnia 14, 76-150 Darłowo",
@@ -281,6 +287,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Czołpino",
     "card": "./cards/czołpino-card.jpg",
+    "icon": "./models-icons/czołpino-icon.png",
     "cover": "models/latarnie morskie/czołpino/czołpino-cover.jpg",
     "position": [54.718257511904355, 17.24124935123231],
     "address": "76-214 Czołpino",
@@ -332,6 +339,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Gąski",
     "card": "./cards/gąski-card.jpg",
+    "icon": "./models-icons/gąski-icon.png",
     "cover": "models/latarnie morskie/gąski/gąski-cover.jpg",
     "position": [54.242778, 15.872778],
     "address": "Latarników 7, 76-034 Gąski",
@@ -383,6 +391,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Hel",
     "card": "./cards/hel-card.jpg",
+    "icon": "./models-icons/hel-icon.png",
     "cover": "models/latarnie morskie/hel/hel-cover.jpg",
     "position": [54.6, 18.812778],
     "address": "Bałtycka 4, 84-150 Hel",
@@ -432,6 +441,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Jarosławiec",
     "card": "./cards/jarosławiec-card.jpg",
+    "icon": "./models-icons/jarosławiec-icon.png",
     "cover": "models/latarnie morskie/jarosławiec/jarosławiec-cover.jpg",
     "position": [54.53972, 16.542332],
     "address": "Szkolna 1, 76-107 Jarosławiec",
@@ -477,6 +487,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Jastarnia",
     "card": "./cards/jastarnia-card.jpg",
+    "icon": "./models-icons/jastarnia-icon.png",
     "cover": "models/latarnie morskie/jastarnia/jastarnia-cover.jpg",
     "position": [54.700238, 18.681598],
     "address": "Kościuszki 2A, 84-140 Jastarnia",
@@ -528,6 +539,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Kikut",
     "card": "./cards/kikut-card.jpg",
+    "icon": "./models-icons/kikut-icon.png",
     "cover": "models/latarnie morskie/kikut/kikut-cover.jpg",
     "position": [53.98144067064031, 14.580362573141587],
     "address": "72-513 Wisełka",
@@ -572,6 +584,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Kołobrzeg",
     "card": "./cards/kołobrzeg-card.jpg",
+    "icon": "./models-icons/kołobrzeg-icon.png",
     "cover": "models/latarnie morskie/kołobrzeg/kołobrzeg-cover.jpg",
     "position": [54.1864035359489, 15.554220485672046],
     "address": "Morska 1, 78-100 Kołobrzeg",
@@ -616,6 +629,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Krynica Morska",
     "card": "./cards/krynica morska-card.jpg",
+    "icon": "./models-icons/krynica morska-icon.png",
     "cover": "models/latarnie morskie/krynica morska/krynica morska-cover.jpg",
     "position": [54.38538, 19.4508],
     "address": "Żołnierzy 1B, 82-120 Krynica Morska",
@@ -661,6 +675,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Niechorze",
     "card": "./cards/niechorze-card.jpg",
+    "icon": "./models-icons/niechorze-icon.png",
     "cover": "models/latarnie morskie/niechorze/niechorze-cover.jpg",
     "position": [54.09472, 15.06387],
     "address": "Polna 30, 72-350 Niechorze",
@@ -704,6 +719,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Nowy Port",
     "card": "./cards/nowy port-card.jpg",
+    "icon": "./models-icons/nowy port-icon.png",
     "cover": "models/latarnie morskie/nowy port/nowy port-cover.jpg",
     "position": [54.40628621824836, 18.661173945021158],
     "address": "Przemysłowa 6, 80-542 Gdańsk",
@@ -756,6 +772,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Port Północny",
     "card": "./cards/port północny-card.jpg",
+    "icon": "./models-icons/port północny-icon.png",
     "cover": "models/latarnie morskie/port północny/port północny-cover.jpg",
     "position": [54.399689, 18.696278],
     "address": "Kapitana Żeglugi Wielkiej Witolda Poinca 1, 80-601 Gdańsk",
@@ -804,6 +821,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Rozewie",
     "card": "./cards/rozewie-card.jpg",
+    "icon": "./models-icons/rozewie-icon.png",
     "cover": "models/latarnie morskie/rozewie/rozewie-cover.jpg",
     "position": [54.830375, 18.336289],
     "address": "Leona Wzorka 1, 84-104 Władysławowo",
@@ -847,6 +865,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Sopot",
     "card": "./cards/sopot-card.jpg",
+    "icon": "./models-icons/sopot-icon.png",
     "cover": "models/latarnie morskie/sopot/sopot-cover.jpg",
     "position": [54.445358, 18.570453],
     "address": "Plac Zdrojowy 3, 81-720 Sopot",
@@ -900,6 +919,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Świnoujście",
     "card": "./cards/świnoujście-card.jpg",
+    "icon": "./models-icons/świnoujście-icon.png",
     "cover": "models/latarnie morskie/świnoujście/świnoujście-cover.jpg",
     "position": [53.916, 14.284167],
     "address": "Ku Morzu 5a, 72-600 Świnoujście",
@@ -943,6 +963,7 @@
     "publisher": "GPM",
     "name": "Latarnia morska Ustka",
     "card": "./cards/ustka-card.jpg",
+    "icon": "./models-icons/ustka-icon.png",
     "cover": "models/latarnie morskie/ustka/ustka-cover.jpg",
     "position": [54.587944, 16.854556],
     "address": "Marynarki Polskiej 1, 76-270 Ustka",
@@ -986,6 +1007,7 @@
     "publisher": "model darmowy",
     "name": "Łazik marsjański Curiosity",
     "card": "./cards/curiosity-card.jpg",
+    "icon": "./models-icons/curiosity-icon.png",
     "cover": "models/curiosity/curiosity-cover2.jpg",
     "info": {
       "Projekt": "Julius Perdana",
@@ -1033,6 +1055,7 @@
     },
     "name": "Zamek w Baranowie Sandomierskim",
     "card": "./cards/baranów-card.jpg",
+    "icon": "./models-icons/baranów-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 17,
@@ -1063,6 +1086,7 @@
     },
     "name": "Kościół w Gryfinie",
     "card": "./cards/gryfino-card.jpg",
+    "icon": "./models-icons/gryfino-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 22,
@@ -1094,6 +1118,7 @@
     },
     "name": "Mauler - Gears of War",
     "card": "./cards/mauler-card.jpg",
+    "icon": "./models-icons/mauler-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 10,
@@ -1125,6 +1150,7 @@
     },
     "name": "Predator",
     "card": "./cards/predator-card.jpg",
+    "icon": "./models-icons/predator-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 26,
@@ -1160,6 +1186,7 @@
     },
     "name": "Phantom F-4B",
     "card": "./cards/phantom f4-card.jpg",
+    "icon": "./models-icons/phantom f4-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 26,
@@ -1186,6 +1213,7 @@
     },
     "name": "Rakieta Starship SN15",
     "card": "./cards/starship sn15-card.jpg",
+    "icon": "./models-icons/starship sn15-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 15,
@@ -1212,6 +1240,7 @@
     },
     "name": "Rakieta Falcon 9",
     "card": "./cards/falcon 9-card.jpg",
+    "icon": "./models-icons/falcon 9-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 13,
@@ -1240,6 +1269,7 @@
     },
     "name": "Świątynia Wang",
     "card": "./cards/wang-card.jpg",
+    "icon": "./models-icons/wang-icon.png",
     "Galeria": {
       "budowa": {
         "quantity": 126,

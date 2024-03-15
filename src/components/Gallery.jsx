@@ -126,7 +126,9 @@ const Gallery = ({ id, name }) => {
       </header>
       <h5 className="mx-auto border-none">
         {" "}
-        {`Rok budowy modelu: ${model["rok ukończenia"]}`}
+        {model["rok ukończenia"] < 3000
+          ? `Rok budowy modelu: ${model["rok ukończenia"]}`
+          : "Model w budowie"}
       </h5>
       {/* ////////////  thumbnails  //////////// */}
       <div className="gallery relative flex gap-5  flex-wrap justify-center  mx-8 max-sm:mx-4">

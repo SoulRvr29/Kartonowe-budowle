@@ -10,6 +10,7 @@ const Banner = ({ bannerState, setBannerState }) => {
   });
   let index = useRef(0);
   const [loadingIcon, setLoadingIcon] = useState(false);
+  const [animRunning, setAnimRunning] = useState(true);
 
   const animEndHandler = (direction) => {
     setLoadingIcon(true);
@@ -53,16 +54,17 @@ const Banner = ({ bannerState, setBannerState }) => {
           <div className="loading-icon absolute top-[40%] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
         )}
         {bannerState && (
-          <div className="absolute top-2 left-4 max-sm:top-0 max-sm:left-1 z-[15]">
+          <div className="absolute flex top-2 left-4 max-sm:top-0 max-sm:left-1 z-[15]">
             {/* banner prev button */}
             <button
               onClick={(e) => {
+                setAnimRunning(true);
                 animEndHandler("prev");
                 e.stopPropagation();
                 e.preventDefault();
               }}
               title="poprzedni"
-              className="px-2 max-sm:px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
+              className="px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,15 +75,35 @@ const Banner = ({ bannerState, setBannerState }) => {
                 <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
               </svg>
             </button>
+            {/* banner pause button */}
+            <button
+              onClick={(e) => {
+                setAnimRunning(!animRunning);
+                e.stopPropagation();
+                e.preventDefault();
+              }}
+              title={animRunning ? "pauza" : "wznów"}
+              className="px-2 max-sm:px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                height="1.5em"
+                fill="var(--text-light)"
+              >
+                <path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z" />
+              </svg>
+            </button>
             {/* banner next button */}
             <button
               onClick={(e) => {
+                setAnimRunning(true);
                 animEndHandler("next");
                 e.stopPropagation();
                 e.preventDefault();
               }}
               title="następny"
-              className="px-2 max-sm:px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
+              className="px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +139,11 @@ const Banner = ({ bannerState, setBannerState }) => {
                   setLoadingIcon(false);
                 }}
                 className="banner-img opacity-0 relative bottom-[11rem] place-self-center w-screen min-w-max max-sm:min-w-[700px] max-sm:mb-[3rem] max-sm:ml-[-4rem] "
+                style={
+                  animRunning
+                    ? { animationPlayState: "running" }
+                    : { animationPlayState: "paused" }
+                }
                 src={actualBanner.source}
                 alt="banner photo"
               />

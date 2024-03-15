@@ -72,7 +72,7 @@ const ImagesGrid = () => {
 
   return (
     <>
-      <h5 className="losowe-header sticky top-0 z-10 flex justify-center items-center gap-4 mb-1 bg-bkg-light dark:bg-bkg pb-1  mx-auto border-none w-full">
+      <h5 className="losowe-header sticky top-0 z-10 flex justify-center items-center gap-4 my-1 bg-bkg-light dark:bg-bkg pb-1  mx-auto border-none w-full">
         Losowa galeria{" "}
         {/* <button
           className="absolute top-2 right-0 hover:scale-110 transition-transform fill-text-dark dark:fill-text-light header-icon hover:fill-accent-4 dark:hover:fill-accent-2 shuffle-icon"

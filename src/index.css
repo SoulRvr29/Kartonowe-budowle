@@ -227,3 +227,11 @@
     }
   }
 }
+
+.leaflet-marker-icon {
+  filter: drop-shadow(5px 1px 3px rgba(0, 0, 0, 0.4));
+}
+.dark .leaflet-marker-icon {
+  filter: drop-shadow(5px 1px 3px rgba(0, 0, 0, 0.4)) brightness(115%)
+    contrast(85%);
+}
