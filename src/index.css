@@ -229,9 +229,16 @@
 }
 
 .leaflet-marker-icon {
-  filter: drop-shadow(5px 1px 3px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(5px 1px 3px rgba(0, 0, 0, 0.4)) brightness(1.1);
 }
-.dark .leaflet-marker-icon {
-  filter: drop-shadow(5px 1px 3px rgba(0, 0, 0, 0.4)) brightness(115%)
-    contrast(85%);
+.leaflet-marker-icon:hover {
+  filter: drop-shadow(5px 1px 3px rgba(0, 0, 0, 0.4)) brightness(1.3);
+}
+
+.leaflet-popup-content a {
+  color: black;
+  transition: color 0.3s;
+}
+.leaflet-popup-content a:hover {
+  color: var(--accent);
 }

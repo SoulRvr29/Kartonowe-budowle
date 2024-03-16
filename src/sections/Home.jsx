@@ -50,7 +50,7 @@ const Article = () => {
         loadingElement={<div class="loader"></div>}
       >
         <hr className="grad-hr" />
-        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-4 max-sm:py-0 max-sm:pb-2 flex gap-8 max-lg:flex-col">
+        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-4 max-sm:py-0 max-sm:pb-2 relative">
           <div>
             {/* <h2 className="max-w-3xl font-bold text-xl mx-auto text-center max-sm:text-sm m drop-shadow-sm dark:text-text-light text-text-dark">
             Witaj na stronie głównej.
@@ -97,7 +97,6 @@ const Article = () => {
               galerii oraz <b>{photosQuantity}</b> zdjęć.
             </div>
           </div>
-
           <MapAll />
         </header>
         <hr className="grad-hr" />

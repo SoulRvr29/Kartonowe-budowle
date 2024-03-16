@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { NavLink } from "react-router-dom";
 import modelsData from "../data/models-data.json";
-import imgTest from "../../public/models/oporow/oporow-miniature.png";
+
 const map = () => {
   const [mapSize, setMapSize] = useState(false);
   const polandMap = [52, 19];
@@ -13,11 +14,11 @@ const map = () => {
     <div
       className={
         mapSize
-          ? "w-full mx-auto relative h-[40rem] "
-          : "w-full mx-auto my-2 max-w-xl relative h-[34rem] max-sm:h-[24rem]"
+          ? "w-full mx-auto my-4 relative h-[50rem] max-sm:h-[40rem] "
+          : "w-full mx-auto my-4 max-w-xl relative h-[34rem] max-sm:h-[24rem]"
       }
     >
-      <div className="z-10 absolute right-3 top-3 flex flex-col  dark:brightness-75 dark:contrast-150">
+      <div className="z-10 absolute right-3 top-3 flex flex-col  ">
         {/* map size button */}
         <button
           title={mapSize ? "małe okno" : "duże okno"}
@@ -46,19 +47,24 @@ const map = () => {
             </svg>
           )}
         </button>
+        {/* map zoom button */}
+        {/* <button
+          title={zoom === 17 ? "mapa Polski" : "mapa szczegółowa"}
+          className="border-2 border-t-0 rounded-b-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100 w-8 flex justify-center h-8"
+          onClick={() => {
+            setZoom(6);
+          }}
+        >
+          <img src="/src/assets/icons/poland-icon.png" alt="poland icon" />
+        </button> */}
       </div>
-      {/* <img src={modelsData[0].icon} alt="" /> */}
       <MapContainer
-        key={
-          (mapSize === true && zoom === 6) || (mapSize === false && zoom != 6)
-            ? "open-state"
-            : "closed-state"
-        }
+        key={mapSize === true && zoom === 6 ? "open-state" : "closed-state"}
         center={[...center]}
         zoom={zoom}
         scrollWheelZoom={true}
         zoomControl={true}
-        className="map dark:brightness-90 dark:contrast-125 h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
+        className="map h-full border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)]"
       >
         <TileLayer
           attribution='&copy;
@@ -76,12 +82,23 @@ const map = () => {
                   icon={L.icon({
                     iconUrl: item.icon,
                     iconSize: [50, 50],
-                    iconAnchor: [25, 40],
+                    iconAnchor: [25, 45],
                     popupAnchor: [0, -25],
                   })}
                 >
                   <div className="opacity-0">
-                    <Popup>{item.name}</Popup>
+                    <Popup>
+                      <NavLink
+                        onClick={() =>
+                          document
+                            .querySelector(".article-header")
+                            .scrollIntoView()
+                        }
+                        to={item.link}
+                      >
+                        {item.name}
+                      </NavLink>
+                    </Popup>
                   </div>
                 </Marker>
               </div>
