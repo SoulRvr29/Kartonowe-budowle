@@ -66,7 +66,7 @@ const Gallery = ({ id, name }) => {
 
   return (
     <section className="gallery-cont select-none grid ">
-      <header className="relative">
+      <header className="relative max-sm:w-screen">
         <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
         <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base mx-8 max-sm:mx-4">
           {/* //////////// gallery on/of button //////////// */}
@@ -124,14 +124,8 @@ const Gallery = ({ id, name }) => {
         </h3>
         <hr className=" dark:bg-accent-2 bg-accent-4 w-full" />
       </header>
-      <h5 className="mx-auto border-none">
-        {" "}
-        {model["rok ukończenia"] < 3000
-          ? `Rok budowy modelu: ${model["rok ukończenia"]}`
-          : "Model w budowie"}
-      </h5>
       {/* ////////////  thumbnails  //////////// */}
-      <div className="gallery relative flex gap-5  flex-wrap justify-center  mx-8 max-sm:mx-4">
+      <div className="gallery relative flex flex-wrap justify-center  mx-8 max-sm:mx-4 max-[300px]:mx-1">
         {galleryState === true && (
           <PhotoProvider
             maskOpacity={0.5}
@@ -139,6 +133,12 @@ const Gallery = ({ id, name }) => {
             loadingElement={<div className="loader"></div>}
             key={actualSrcFull}
           >
+            <h5 className="mx-auto border-none -my-1 mt-0 max-sm:text-base">
+              {" "}
+              {model["rok ukończenia"] < 3000
+                ? `Rok budowy modelu: ${model["rok ukończenia"]}`
+                : "Model w budowie"}
+            </h5>
             <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
               {actualSrcThumb.map((item, index) => {
                 return (
@@ -148,7 +148,7 @@ const Gallery = ({ id, name }) => {
                         width={160}
                         height={160}
                         // value={index + 1 < 10 ? "0" + (index + 1) : index + 1}
-                        className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  "
+                        className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
                         src={item}
                         alt={model.name + " photo"}
                       />
