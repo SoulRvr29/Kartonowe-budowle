@@ -6,8 +6,12 @@ import { FaHome, FaLightbulb, FaInfoCircle } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 
 function App({ bannerState, setBannerState, overlap, setOverlap }) {
+  const darkModeCheck = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  console.log(darkModeCheck);
   if (localStorage.getItem("darkMode") == null)
-    localStorage.setItem("darkMode", "true");
+    localStorage.setItem("darkMode", darkModeCheck);
   const [darkMode, setDarkMode] = useState(
     JSON.parse(localStorage.getItem("darkMode"))
   );

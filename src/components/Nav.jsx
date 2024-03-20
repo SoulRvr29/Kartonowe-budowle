@@ -1,12 +1,14 @@
 import Card from "./Card.jsx";
 import modelsData from "../data/models-data.json";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { FaCaretLeft, FaCaretRight, FaArrowsLeftRight } from "react-icons/fa6";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
       className={
-        "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light  " +
+        "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light h-7 max-md:h-auto " +
         (activeList == name &&
           " text-accent-4 dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-white max-sm:bg-accent-2  hover:cursor-default")
       }
@@ -44,6 +46,8 @@ const Nav = ({ overlap, setOverlap }) => {
   const [data, setData] = useState(completeData);
   const [activeList, setActiveList] = useState("wszystkie modele");
 
+  const navWidth = useRef(null);
+
   return (
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
       {/* CATEGORIES LIST */}
@@ -56,7 +60,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="latarnie morskie"
             activeList={activeList}
@@ -64,7 +68,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="zamki i ratusze"
             activeList={activeList}
@@ -72,7 +76,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="kościoły"
             activeList={activeList}
@@ -80,7 +84,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="kosmos"
             activeList={activeList}
@@ -88,7 +92,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="figurki"
             activeList={activeList}
@@ -96,7 +100,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="samoloty"
             activeList={activeList}
@@ -104,7 +108,7 @@ const Nav = ({ overlap, setOverlap }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden">-</span>
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="z oświetleniem"
             activeList={activeList}
@@ -118,7 +122,7 @@ const Nav = ({ overlap, setOverlap }) => {
       <nav
         className={
           navState === true
-            ? "max-sm:mx-0 mx-8 relative grid overflow-y-hidden max-md:px-0 px-8 pt-2 " +
+            ? "max-sm:mx-0 mx-8 relative grid overflow-y-hidden overflow-x-scroll max-md:px-0 px-8 pt-2 " +
               (!overlap && "pl-20")
             : "relative h-5"
         }
@@ -132,6 +136,7 @@ const Nav = ({ overlap, setOverlap }) => {
           }
         >
           <div
+            ref={navWidth}
             className={
               navState === true
                 ? "cards-container nav flex relative py-1 transition-all max-md:gap-4 "
@@ -152,23 +157,24 @@ const Nav = ({ overlap, setOverlap }) => {
             : "hidden"
         }
       >
-        <button>
-          <svg
+        <button
+          onMouseDown={() => {
+            document.querySelector("nav").scrollLeft -=
+              navWidth.current.clientWidth;
+          }}
+          onMouseUp={() => {
+            document.querySelector("nav").scrollLeft -= 0;
+          }}
+        >
+          <FaCaretLeft
+            size={34}
+            color="var(--text-light)"
             className={
               navState
-                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
+                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
                 : "hidden"
             }
-            onClick={() => {
-              document.querySelector("nav").scrollLeft -= 400;
-            }}
-            xmlns="http://www.w3.org/2000/svg"
-            height="2.2em"
-            viewBox="0 0 256 512"
-            fill="var(--text-light)"
-          >
-            <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
-          </svg>
+          />
         </button>
         <div
           className={
@@ -186,23 +192,24 @@ const Nav = ({ overlap, setOverlap }) => {
             : "hidden"
         }
       >
-        <button>
-          <svg
+        <button
+          onMouseDown={() => {
+            document.querySelector("nav").scrollLeft +=
+              navWidth.current.clientWidth;
+          }}
+          onMouseUp={() => {
+            document.querySelector("nav").scrollLeft += 0;
+          }}
+        >
+          <FaCaretRight
+            size={34}
+            color="var(--text-light)"
             className={
               navState
-                ? "arrow-r fill-white dark:fill-text-light absolute top-[calc(50%-20px)] left-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
+                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
                 : "hidden"
             }
-            onClick={() => {
-              document.querySelector("nav").scrollLeft += 400;
-            }}
-            xmlns="http://www.w3.org/2000/svg"
-            height="2.2em"
-            viewBox="0 0 256 512"
-            fill="var(--text-light)"
-          >
-            <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
-          </svg>
+          />
         </button>
         <div
           className={
@@ -212,30 +219,25 @@ const Nav = ({ overlap, setOverlap }) => {
           }
         ></div>
       </div>
-      {/* nav hide icon */}
+      {/* nav hide */}
       <button
         title={navState ? "ukryj nawigację" : "pokaż nawigację"}
-        className="absolute -top-[2px] max-sm:top-[2px] max-sm:right-2 right-1 "
+        className="absolute -top-[2px] max-sm:top-[2px] right-[2px] "
+        onClick={(e) => {
+          setNavState(!navState);
+        }}
       >
-        <svg
-          onClick={(e) => {
-            // e.stopPropagation();
-            setNavState(!navState);
-          }}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-          height="1.5em"
-          fill="var(--text-light)"
+        <IoIosArrowUp
+          size={26}
+          color="var(--text-light)"
           className={
             navState == true
               ? "opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black] hover:dark:opacity-100 hover:opacity-100  max-sm:h-4"
-              : "opacity-40 dark:opacity-20 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
+              : "opacity-40 dark:opacity-20 hover:dark:opacity-100 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
           }
-        >
-          <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
-        </svg>
+        />
       </button>
-      {/* nav show button */}
+      {/* nav show */}
       <button
         onClick={(e) => {
           setNavState(!navState);
@@ -248,26 +250,22 @@ const Nav = ({ overlap, setOverlap }) => {
       >
         nawigacja
       </button>
-      {/* overlap button */}
+      {/* overlap */}
       {navState && (
         <button
           title={!overlap ? "szeroko" : "wąsko"}
           className="absolute right-[5px] bottom-1 max-sm:hidden "
+          onClick={() => setOverlap(!overlap)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1.2em"
-            fill="var(--text-light)"
-            viewBox="0 0 512 512"
-            onClick={() => setOverlap(!overlap)}
+          <FaArrowsLeftRight
+            size={19}
+            color="var(--text-light)"
             className={
               overlap == false
                 ? "opacity-60 dark:opacity-50 drop-shadow-[0_0_0_black] hover:opacity-100 hover:dark:opacity-100 max-sm:h-4"
-                : "opacity-60 dark:opacity-50 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
+                : "opacity-60 dark:opacity-50 hover:opacity-100 hover:dark:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
             }
-          >
-            <path d="M406.6 374.6l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224l-293.5 0 41.4-41.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288l293.5 0-41.4 41.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
-          </svg>
+          />
         </button>
       )}
     </div>
