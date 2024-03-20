@@ -3,49 +3,49 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
-import Nav from "./components/Nav";
+import Nav from "./components/MainNav";
 import BackToTop from "./components/BackToTop";
 import TechNav from "./components/TechNav";
 
-import Oświetlenie from "./techSections/Oświetlenie";
-import Roślinność from "./techSections/Roślinność";
-import Sadzarka from "./techSections/Sadzarka";
-import Okna from "./techSections/Okna";
-import Arduino from "./techSections/Arduino";
+import Oświetlenie from "./techPages/Oświetlenie";
+import Roślinność from "./techPages/Roślinność";
+import Sadzarka from "./techPages/Sadzarka";
+import Okna from "./techPages/Okna";
+import Arduino from "./techPages/Arduino";
 
-import Home from "./sections/Home";
-import About from "./sections/About";
-import Bedzin from "./sections/Bedzin";
-import Oporow from "./sections/Oporow";
-import Curiosity from "./sections/Curiosity";
-import SandomierzRatusz from "./sections/SandomierzRatusz";
-import SandomierzBrama from "./sections/SandomierzBrama";
-import Stilo from "./sections/Stilo";
-import Darlowo from "./sections/Darlowo";
-import Czołpino from "./sections/Czołpino";
-import Gąski from "./sections/Gąski";
-import Hel from "./sections/Hel";
-import Jarosławiec from "./sections/Jarosławiec";
-import Jastarnia from "./sections/Jastarnia";
-import Kikut from "./sections/Kikut";
-import Kołobrzeg from "./sections/Kołobrzeg";
-import KrynicaMorska from "./sections/KrynicaMorska";
-import Niechorze from "./sections/Niechorze";
-import NowyPort from "./sections/NowyPort";
-import PortPółnocny from "./sections/PortPółnocny";
-import Rozewie from "./sections/Rozewie";
-import Sopot from "./sections/Sopot";
-import Świnoujście from "./sections/Świnoujście";
-import Ustka from "./sections/Ustka";
-import Baranów from "./sections/Baranów";
-import Gryfino from "./sections/Gryfino";
-import Mauler from "./sections/Mauler";
-import Predator from "./sections/Predator";
-import PhantomF4 from "./sections/PhantomF4";
-import StarshipSN15 from "./sections/StarshipSN15";
-import Falcon9 from "./sections/Falcon9";
-import Wieżowce from "./sections/Wieżowce";
-import Wang from "./sections/Wang";
+import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Bedzin from "./pages/Bedzin";
+import Oporow from "./pages/Oporow";
+import Curiosity from "./pages/Curiosity";
+import SandomierzRatusz from "./pages/SandomierzRatusz";
+import SandomierzBrama from "./pages/SandomierzBrama";
+import Stilo from "./pages/Stilo";
+import Darlowo from "./pages/Darlowo";
+import Czołpino from "./pages/Czołpino";
+import Gąski from "./pages/Gąski";
+import Hel from "./pages/Hel";
+import Jarosławiec from "./pages/Jarosławiec";
+import Jastarnia from "./pages/Jastarnia";
+import Kikut from "./pages/Kikut";
+import Kołobrzeg from "./pages/Kołobrzeg";
+import KrynicaMorska from "./pages/KrynicaMorska";
+import Niechorze from "./pages/Niechorze";
+import NowyPort from "./pages/NowyPort";
+import PortPółnocny from "./pages/PortPółnocny";
+import Rozewie from "./pages/Rozewie";
+import Sopot from "./pages/Sopot";
+import Świnoujście from "./pages/Świnoujście";
+import Ustka from "./pages/Ustka";
+import Baranów from "./pages/Baranów";
+import Gryfino from "./pages/Gryfino";
+import Mauler from "./pages/Mauler";
+import Predator from "./pages/Predator";
+import PhantomF4 from "./pages/PhantomF4";
+import StarshipSN15 from "./pages/StarshipSN15";
+import Falcon9 from "./pages/Falcon9";
+import Wang from "./pages/Wang";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
@@ -76,6 +76,7 @@ function App() {
         <TechNav />
         <BackToTop />
         <Routes>
+          <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Bedzin" element={<Bedzin id={0} />} />
@@ -114,7 +115,6 @@ function App() {
           <Route path="/StarshipSN15" element={<StarshipSN15 id={26} />} />
           <Route path="/Falcon9" element={<Falcon9 id={27} />} />
           <Route path="/Wang" element={<Wang id={28} />} />
-          <Route path="/Wieżowce" element={<Wieżowce id={30} />} />
           <Route path="/Oświetlenie" element={<Oświetlenie />} />
           <Route path="/Roślinność" element={<Roślinność />} />
           <Route path="/Sadzarka" element={<Sadzarka />} />

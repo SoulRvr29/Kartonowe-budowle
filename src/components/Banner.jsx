@@ -124,7 +124,14 @@ const Banner = ({ bannerState, setBannerState }) => {
           }
         >
           {bannerState && (
-            <h2 className="banner-text opacity-0 absolute z-[15] bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs">
+            <h2
+              className="banner-text opacity-0 absolute z-[15] bottom-4 left-8 text-xl text-text-light drop-shadow-[1px_2px_1px_var(--bkg)] font-bold name-fade max-md:text-base max-md:left-4 max-md:bottom-2 max-[400px]:text-xs"
+              style={
+                animRunning
+                  ? { animationPlayState: "running" }
+                  : { animationPlayState: "paused" }
+              }
+            >
               {actualBanner.name}
             </h2>
           )}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import polandIcon from "../assets/icons/poland-icon.png";
+import { GiPoland } from "react-icons/gi";
 import modelsData from "../data/models-data.json";
 
 const map = ({ id, position }) => {
@@ -64,11 +64,7 @@ const map = ({ id, position }) => {
           }}
         >
           {zoom === 17 ? (
-            <img
-              // src="/src/assets/icons/poland-icon.png"
-              src={polandIcon}
-              alt="poland icon"
-            />
+            <GiPoland size={22} />
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
