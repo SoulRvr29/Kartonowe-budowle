@@ -11,8 +11,6 @@ const ArticleHeader = ({ id }) => {
       <hr className="max-w-3xl mx-auto hr dark:bg-accent-2 bg-accent-4" />
       <p className="max-w-3xl font-bold text-lg mx-auto text-center max-sm:text-sm px-4 drop-shadow-sm dark:text-text-light text-text-dark">
         {model.description}
-        <br />
-        {model.description2}
       </p>
       <hr className="grad-hr" />
     </header>

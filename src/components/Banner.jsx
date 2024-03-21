@@ -1,6 +1,9 @@
 import { useState, useRef } from "react";
 import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";
+import { PiCaretDoubleLeftFill, PiCaretDoubleRightFill } from "react-icons/pi";
+import { FaPause } from "react-icons/fa6";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Banner = ({ bannerState, setBannerState }) => {
   const [actualBanner, setActualBanner] = useState({
@@ -54,7 +57,7 @@ const Banner = ({ bannerState, setBannerState }) => {
           <div className="loading-icon absolute top-[40%] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
         )}
         {bannerState && (
-          <div className="absolute flex top-2 left-4 max-sm:top-0 max-sm:left-1 z-[15]">
+          <div className="absolute flex gap-1 max-sm:gap-0 top-3 left-4 max-sm:top-1 max-sm:left-1 z-[15]">
             {/* banner prev button */}
             <button
               onClick={(e) => {
@@ -64,16 +67,9 @@ const Banner = ({ bannerState, setBannerState }) => {
                 e.preventDefault();
               }}
               title="poprzedni"
-              className="px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
+              className="drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity max-sm:scale-[85%]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1.8em"
-                viewBox="0 0 256 512"
-                fill="var(--text-light)"
-              >
-                <path d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6l0 256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
-              </svg>
+              <PiCaretDoubleLeftFill size={22} fill="var(--text-light)" />
             </button>
             {/* banner pause button */}
             <button
@@ -83,16 +79,9 @@ const Banner = ({ bannerState, setBannerState }) => {
                 e.preventDefault();
               }}
               title={animRunning ? "pauza" : "wznów"}
-              className="px-2 max-sm:px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
+              className="max-sm:px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity max-sm:scale-[85%]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512"
-                height="1.5em"
-                fill="var(--text-light)"
-              >
-                <path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z" />
-              </svg>
+              <FaPause size={22} fill="var(--text-light)" />
             </button>
             {/* banner next button */}
             <button
@@ -103,16 +92,9 @@ const Banner = ({ bannerState, setBannerState }) => {
                 e.preventDefault();
               }}
               title="następny"
-              className="px-1 drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity"
+              className="drop-shadow-[1px_2px_1px_var(--bkg)] opacity-50 dark:opacity-30 dark:hover:opacity-100 hover:opacity-100 transition-opacity max-sm:scale-[85%]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1.8em"
-                viewBox="0 0 256 512"
-                fill="var(--text-light)"
-              >
-                <path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
-              </svg>
+              <PiCaretDoubleRightFill size={22} fill="var(--text-light)" />
             </button>
           </div>
         )}
@@ -173,25 +155,23 @@ const Banner = ({ bannerState, setBannerState }) => {
           banner
         </button>
         {/* banner hide icon */}
-        <button title={bannerState ? "ukryj banner" : "pokaż banner"}>
-          <svg
-            onClick={(e) => {
-              setBannerState(!bannerState);
-              e.stopPropagation();
-              e.preventDefault();
-            }}
-            xmlns="http://www.w3.org/2000/svg"
-            height="1.5em"
-            viewBox="0 0 448 512"
+        <button
+          title={bannerState ? "ukryj banner" : "pokaż banner"}
+          onClick={(e) => {
+            setBannerState(!bannerState);
+            e.stopPropagation();
+            e.preventDefault();
+          }}
+        >
+          <IoIosArrowUp
+            size={26}
             fill="var(--text-light)"
             className={
               bannerState == true
-                ? "absolute top-0 max-sm:top-1 max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
-                : "absolute top-0  max-sm:right-2 right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
+                ? "absolute top-0 max-sm:top-1 max-sm:right-2 right-[2px] opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
+                : "absolute top-0  max-sm:right-2 right-[2px]  opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
             }
-          >
-            <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
-          </svg>
+          />
         </button>
         <hr className="grad-hr" />
       </Link>

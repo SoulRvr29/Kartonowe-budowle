@@ -2,6 +2,7 @@ import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Gallery = ({ id, name }) => {
   if (name === undefined) name = "Galeria";
@@ -74,23 +75,17 @@ const Gallery = ({ id, name }) => {
             className="arrow-up-down z-10"
             onClick={() => {
               setGalleryState(galleryState === false ? true : false);
-              // galleryState === "off" &&
-              //   document.querySelector(".gallery-cont").scrollIntoView();
             }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="1.3rem"
-              viewBox="0 0 512 512"
+            <IoIosArrowUp
+              size={28}
               fill="var(--accent-4)"
               className={
                 galleryState === false
                   ? "transition-all arrow-down dark:fill-accent-2 mr-2 mt-1 max-sm:h-3 rotate-180"
                   : "transition-all arrow-up dark:fill-accent-2 mr-2 mt-1 max-sm:h-3"
               }
-            >
-              <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
-            </svg>
+            />
           </button>
           <span className="z-10">{name === undefined ? "Galeria" : name}</span>
           {/* //////////// gallery-type button //////////// */}
@@ -110,7 +105,6 @@ const Gallery = ({ id, name }) => {
                             item.classList.remove("active-section");
                           });
                         e.target.classList.add("active-section");
-                        // console.log(actualSrcThumb, actualSrcFull);
                       }}
                     >
                       <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all  z-10">
@@ -147,7 +141,6 @@ const Gallery = ({ id, name }) => {
                       <LazyLoadImage
                         width={160}
                         height={160}
-                        // value={index + 1 < 10 ? "0" + (index + 1) : index + 1}
                         className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
                         src={item}
                         alt={model.name + " photo"}

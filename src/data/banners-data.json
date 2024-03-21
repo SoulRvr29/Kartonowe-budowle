@@ -1,47 +1,47 @@
 [
   {
     "name": "Zamek w Będzinie",
-    "source": "./banner/bedzin-night-banner.jpg",
+    "source": "./banners/bedzin-night-banner.jpg",
     "link": "/Bedzin"
   },
   {
     "name": "Zamek w Oporowie",
-    "source": "./banner/oporow-banner.jpg",
+    "source": "./banners/oporow-banner.jpg",
     "link": "/Oporow"
   },
   {
     "name": "Łazik Curiosity",
-    "source": "./banner/curiosity-banner.jpg",
+    "source": "./banners/curiosity-banner.jpg",
     "link": "/Curiosity"
   },
   {
     "name": "Ratusz w Sandomierzu",
-    "source": "./banner/sandomierz-banner.jpg",
+    "source": "./banners/sandomierz-banner.jpg",
     "link": "/Sandomierz"
   },
   {
     "name": "Kościół w Gryfinie",
-    "source": "./banner/gryfin-banner.jpg",
+    "source": "./banners/gryfin-banner.jpg",
     "link": "/Gryfino"
   },
   {
     "name": "Zamek w Będzinie",
-    "source": "./banner/bedzin-banner.jpg",
+    "source": "./banners/bedzin-banner.jpg",
     "link": "/Bedzin"
   },
   {
     "name": "Wieżowce",
-    "source": "./banner/wiezowce-banner.jpg",
+    "source": "./banners/wiezowce-banner.jpg",
     "link": "/Wieżowce"
   },
   {
     "name": "Zamek w Oporowie",
-    "source": "./banner/oporow-night-banner.jpg",
+    "source": "./banners/oporow-night-banner.jpg",
     "link": "/Oporow"
   },
   {
     "name": "Phantom F-4B",
-    "source": "./banner/phantom-banner.jpg",
+    "source": "./banners/phantom-banner.jpg",
     "link": "/PhantomF4"
   }
 ]

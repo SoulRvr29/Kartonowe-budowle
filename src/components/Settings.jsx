@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaCheck } from "react-icons/fa";
 
 const Settings = ({
   modeChange,
@@ -22,7 +23,6 @@ const Settings = ({
       <div className="settings grid w-80 max-sm:right-auto max-sm:mx-4 max-sm:w-[calc(100%-2rem)] max-sm:top-7 select-none absolute top-[62px] right-8 dark:bg-text-dark bg-text-light rounded-xl drop-shadow-[5px_5px_10px_rgba(0,0,0,0.5)] border-2 dark:border-text-light dark:border-opacity-40 z-20 px-4 pt-1 pb-4 dark:text-text-light text-text-dark">
         <div className={!confirm ? " visible" : " invisible"}>
           <h5 className="text-center text-xl">Ustawienia</h5>
-          {/* <hr className="bg-white h-[2px]" /> */}
           <ul className=" font-medium grid gap-y-1 mt-2">
             {/* KOLORYSTYKA */}
             <li className="rounded-md  flex justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
@@ -44,8 +44,8 @@ const Settings = ({
                 {actualFontSize == 1
                   ? "duża"
                   : actualFontSize == 2
-                  ? "mała"
-                  : "średnia"}
+                    ? "mała"
+                    : "średnia"}
               </button>
             </li>
             {/* RUCHOMY BANNER */}
@@ -76,7 +76,6 @@ const Settings = ({
                   setconfirm(true);
                   setTimeout(() => {
                     setconfirm(false);
-                    //   setSettingsState(false);
                   }, 1000);
                 }}
                 className="drop-shadow-lg bg-green-700 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg"
@@ -100,14 +99,10 @@ const Settings = ({
           }
         >
           Zapisano{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1.2em"
-            viewBox="0 0 448 512"
+          <FaCheck
+            size={38}
             className="fill-green-500 drop-shadow-[0px_1px_1px_rgba(0,0,0,0.5)]"
-          >
-            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-          </svg>
+          />
         </div>
       </div>
     </>

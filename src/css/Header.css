@@ -6,11 +6,13 @@
     font-size: clamp(1rem, 7vw, 2rem);
   }
 }
-.header-main {
+.header-main,
+footer {
   background-image: url(/src/assets/brick_wall_light.png);
   background-position: 0%;
 }
-.dark .header-main {
+.dark .header-main,
+.dark footer {
   background-image: url(/src/assets/brick_wall_dark.png);
 }
 
