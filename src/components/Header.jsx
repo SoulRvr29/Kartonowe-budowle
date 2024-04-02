@@ -35,11 +35,11 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     if (!darkMode) {
       document.querySelector("html").classList.remove("dark");
       document.querySelector("body").classList.add("bkg-sides");
-      document.querySelector(".grad").classList.remove("banner-grad");
+      // document.querySelector(".grad").classList.remove("banner-grad");
     } else {
       document.querySelector("html").classList.add("dark");
       document.querySelector("body").classList.remove("bkg-sides");
-      document.querySelector(".grad").classList.add("banner-grad");
+      // document.querySelector(".grad").classList.add("banner-grad");
     }
     fontSize();
     titleAnimation();

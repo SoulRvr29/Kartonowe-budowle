@@ -12,16 +12,13 @@ import "./css/Settings.css";
 import "./css/TechNav.css";
 import "./css/ScrollBar.css";
 import "./css/CustomHR.css";
-import { BrowserRouter } from "react-router-dom";
 import "react-photo-view/dist/react-photo-view.css";
 import "./css/Loader.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <App />
     </React.StrictMode>
   </>
 );
