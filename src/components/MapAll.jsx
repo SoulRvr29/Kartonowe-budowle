@@ -27,9 +27,9 @@ const map = () => {
           className="map-btn border-2 border-b rounded-t-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100"
         >
           {mapSize ? (
-            <PiArrowsInBold size={18} className="scale-125" />
+            <PiArrowsInBold size={18} color="black" className="scale-125" />
           ) : (
-            <PiArrowsOutBold size={18} className="scale-125" />
+            <PiArrowsOutBold size={18} color="black" className="scale-125" />
           )}
         </button>
       </div>

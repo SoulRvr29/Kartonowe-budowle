@@ -69,7 +69,7 @@ const Gallery = ({ id, name }) => {
     <section className="gallery-cont select-none grid ">
       <header className="relative max-sm:w-screen">
         <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
-        <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base mx-8 max-sm:mx-4">
+        <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base mx-6 max-sm:mx-2">
           {/* //////////// gallery on/of button //////////// */}
           <button
             className="arrow-up-down z-10"
@@ -82,8 +82,8 @@ const Gallery = ({ id, name }) => {
               fill="var(--accent-4)"
               className={
                 galleryState === false
-                  ? "transition-all arrow-down dark:fill-accent-2 mr-2 mt-1 max-sm:h-3 rotate-180"
-                  : "transition-all arrow-up dark:fill-accent-2 mr-2 mt-1 max-sm:h-3"
+                  ? "transition-all arrow-down dark:fill-accent-2 mr-2 max-sm:h-6 mt-1 max-sm:mt-0 rotate-180"
+                  : "transition-all arrow-up dark:fill-accent-2 mr-2 max-sm:h-6 mt-1 max-sm:mt-0"
               }
             />
           </button>
