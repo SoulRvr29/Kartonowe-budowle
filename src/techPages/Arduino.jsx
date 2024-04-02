@@ -1,8 +1,12 @@
 import TechHeader from "../components/TechHeader";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "Arduino - Kartonowe budowle";
+  }, []);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
     "/techSections/arduino/Arduino_Logo.png",

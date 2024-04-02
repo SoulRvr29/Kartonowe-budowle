@@ -1,6 +1,10 @@
 import TechHeader from "../components/TechHeader";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "Okna - Kartonowe budowle";
+  }, []);
   return (
     <>
       <TechHeader title="Wykononie okien" />

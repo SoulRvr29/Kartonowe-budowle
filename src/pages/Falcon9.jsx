@@ -2,8 +2,13 @@ import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
 import Falcon9History from "../historySections/Falcon9History";
+import { useEffect } from "react";
 
 const Article = ({ id }) => {
+  useEffect(() => {
+    document.title = "Falcon 9 - Kartonowe budowle";
+  }, []);
+
   return (
     <>
       <ArticleHeader id={id} />

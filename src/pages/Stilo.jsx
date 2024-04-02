@@ -3,7 +3,13 @@ import Gallery from "../components/Gallery";
 import StiloHistory from "../historySections/StiloHistory";
 import ModelInfo from "../components/ModelInfo";
 import LightInfo from "../components/LightInfo";
+import { useEffect } from "react";
+
 const Article = ({ id }) => {
+  useEffect(() => {
+    document.title = "Stilo - Kartonowe budowle";
+  }, []);
+
   return (
     <>
       <ArticleHeader id={id} />

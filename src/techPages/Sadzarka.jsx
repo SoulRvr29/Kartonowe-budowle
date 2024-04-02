@@ -1,6 +1,10 @@
 import TechHeader from "../components/TechHeader";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "Sadzarka - Kartonowe budowle";
+  }, []);
   return (
     <>
       <TechHeader title="Sadzarka do trawy statycznej" />

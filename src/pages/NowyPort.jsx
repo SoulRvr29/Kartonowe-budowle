@@ -3,8 +3,13 @@ import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
 import NowyPortHistory from "../historySections/NowyPortHistory";
 import LightInfo from "../components/LightInfo";
+import { useEffect } from "react";
 
 const Article = ({ id }) => {
+  useEffect(() => {
+    document.title = "Nowy Port - Kartonowe budowle";
+  }, []);
+
   return (
     <>
       <ArticleHeader id={id} />

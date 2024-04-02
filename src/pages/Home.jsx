@@ -3,8 +3,12 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import { NavLink } from "react-router-dom";
 import modelsData from "../data/models-data.json";
 import MapAll from "../components/MapAll";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "Kartonowe budowle";
+  }, []);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
     "./models/bedzin/day/full-res/bedzin-d01.jpg",

@@ -1,8 +1,12 @@
 import React from "react";
 import { IoIosWarning } from "react-icons/io";
 import { FaRegSmileWink, FaArrowLeft } from "react-icons/fa";
+import { useEffect } from "react";
 
 function NotFound() {
+  useEffect(() => {
+    document.title = "Not Found";
+  }, []);
   return (
     <div className="grid justify-center gap-8 max-sm:gap-4 my-auto p-4 ">
       <IoIosWarning

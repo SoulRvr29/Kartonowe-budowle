@@ -3,8 +3,12 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { NavLink } from "react-router-dom";
 import { IoIosMail } from "react-icons/io";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "O autorze - Kartonowe budowle";
+  }, []);
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
   const photosSrc = [
     "./models/bedzin/day/full-res/bedzin-d01.jpg",

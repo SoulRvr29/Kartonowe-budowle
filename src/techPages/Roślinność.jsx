@@ -1,6 +1,10 @@
 import TechHeader from "../components/TechHeader";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "Roślinność - Kartonowe budowle";
+  }, []);
   return (
     <>
       <TechHeader title="Roślinność na modelach" />

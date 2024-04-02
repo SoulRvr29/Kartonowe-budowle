@@ -3,8 +3,13 @@ import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
 import KikutHistory from "../historySections/KikutHistory";
 import LightInfo from "../components/LightInfo";
+import { useEffect } from "react";
 
 const Article = ({ id }) => {
+  useEffect(() => {
+    document.title = "Kikut - Kartonowe budowle";
+  }, []);
+
   return (
     <>
       <ArticleHeader id={id} />

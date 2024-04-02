@@ -2,8 +2,12 @@ import TechHeader from "../components/TechHeader";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import ResistorCalc from "../components/ResistorCalc";
+import { useEffect } from "react";
 
 const Article = () => {
+  useEffect(() => {
+    document.title = "Oświetlenie - Kartonowe budowle";
+  }, []);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
     "/models/oporow/night/full-res/oporow-n05.jpg",
