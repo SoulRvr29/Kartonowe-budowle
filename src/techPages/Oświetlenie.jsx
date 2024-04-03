@@ -25,9 +25,6 @@ const Article = () => {
     "/models/bedzin/night/full-res/bedzin-n18.jpg",
   ];
   const photosTitle = [
-    "Oświetlenie zamku w Oporowie przy użyciu diod 3mm",
-    "Światło w latarni morskiej Gąski przy użyciu diody 5mm",
-    "Oświetlenie zamku w Będzinie przy użyciu diod SMD 3528",
     "trzy rodzaje najczęściej używanych przeze mnie diod",
     "diody SMD 0805 w latarni ulicznej",
     "latarnia uliczna w modelu zamku w Będzinie",
@@ -38,6 +35,9 @@ const Article = () => {
     "wtyk i gniazdo DC",
     "schemat układu z jedną diodą",
     "schemat układu z trzema diodami",
+    "Oświetlenie zamku w Oporowie przy użyciu diod 3mm",
+    "Światło w latarni morskiej Gąski przy użyciu diody 5mm",
+    "Oświetlenie zamku w Będzinie przy użyciu diod SMD 3528",
   ];
   /////////////////////////////////////////////////////////////////
   return (
@@ -61,32 +61,6 @@ const Article = () => {
         loadingElement={<div className="loader"></div>}
       >
         <article>
-          <div className="flex gap-x-4 justify-center flex-wrap -mt-4 ">
-            <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className=" max-h-[18rem] max-md:max-h-none"
-                src={photosSrc[0]}
-                alt={photosTitle[0]}
-                title={photosTitle[0]}
-              />
-            </PhotoView>
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none "
-                src={photosSrc[1]}
-                alt={photosTitle[1]}
-                title={photosTitle[1]}
-              />
-            </PhotoView>
-            <PhotoView src={photosSrc[2]}>
-              <LazyLoadImage
-                className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none"
-                src={photosSrc[2]}
-                alt={photosTitle[2]}
-                title={photosTitle[2]}
-              />
-            </PhotoView>
-          </div>
           <p>
             Do wykonania oświetlenia wykorzystuję różne diody LED, początkowo
             były to głównie zwykłe diody <b>3mm</b>, a jako światło w latarniach
@@ -252,7 +226,34 @@ const Article = () => {
               title={photosTitle[11]}
             />
           </PhotoView>
-        </article>
+        </article>{" "}
+        <hr className="grad-hr" />
+        <div className="flex gap-4 justify-center flex-wrap my-8 ">
+          <PhotoView src={photosSrc[0]}>
+            <LazyLoadImage
+              className=" max-h-[18rem] max-md:max-h-none"
+              src={photosSrc[0]}
+              alt={photosTitle[0]}
+              title={photosTitle[0]}
+            />
+          </PhotoView>
+          <PhotoView src={photosSrc[1]}>
+            <LazyLoadImage
+              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none "
+              src={photosSrc[1]}
+              alt={photosTitle[1]}
+              title={photosTitle[1]}
+            />
+          </PhotoView>
+          <PhotoView src={photosSrc[2]}>
+            <LazyLoadImage
+              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none"
+              src={photosSrc[2]}
+              alt={photosTitle[2]}
+              title={photosTitle[2]}
+            />
+          </PhotoView>
+        </div>
       </PhotoProvider>
     </>
   );

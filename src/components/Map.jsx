@@ -30,9 +30,9 @@ const map = ({ id, position }) => {
           className="map-btn border-2 border-b rounded-t-[3px] bg-white border-gray-400 p-[5px] hover:bg-gray-100"
         >
           {mapSize ? (
-            <PiArrowsInBold size={18} className="scale-125" />
+            <PiArrowsInBold size={18} color="black" className="scale-125" />
           ) : (
-            <PiArrowsOutBold size={18} className="scale-125" />
+            <PiArrowsOutBold size={18} color="black" className="scale-125" />
           )}
         </button>
         {/* map zoom button */}
@@ -50,7 +50,11 @@ const map = ({ id, position }) => {
             }
           }}
         >
-          {zoom === 17 ? <GiPoland size={22} /> : <FaCity size={22} />}
+          {zoom === 17 ? (
+            <GiPoland size={22} color="black" />
+          ) : (
+            <FaCity size={22} color="black" />
+          )}
         </button>
       </div>
       <MapContainer

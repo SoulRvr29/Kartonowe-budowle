@@ -79,14 +79,16 @@ const StarshipSN15History = ({ id }) => {
               zajął swoje miejsce w Rocket Garden. 26 lipca 2023 roku SN15
               został zezłomowany.
             </p>
-            <PhotoView src={photosSrc[1]}>
-              <LazyLoadImage
-                className="mx-auto"
-                src={photosSrc[1]}
-                alt="starship sn15"
-                title={photosTitle[1]}
-              />
-            </PhotoView>
+            <div className="w-full flex">
+              <PhotoView src={photosSrc[1]}>
+                <LazyLoadImage
+                  className="mx-auto"
+                  src={photosSrc[1]}
+                  alt="starship sn15"
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}
