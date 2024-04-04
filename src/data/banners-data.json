@@ -1,47 +1,56 @@
 [
   {
     "name": "Zamek w Będzinie",
-    "source": "./banners/bedzin-night-banner.jpg",
+    "full": "./banners/full/bedzin-night-banner.jpg",
+    "mobile": "./banners/mobile/bedzin-night-banner-mobile.jpg",
     "link": "/Bedzin"
   },
   {
     "name": "Zamek w Oporowie",
-    "source": "./banners/oporow-banner.jpg",
+    "full": "./banners/full/oporow-banner.jpg",
+    "mobile": "./banners/mobile/oporow-banner-mobile.jpg",
     "link": "/Oporow"
   },
   {
     "name": "Łazik Curiosity",
-    "source": "./banners/curiosity-banner.jpg",
+    "full": "./banners/full/curiosity-banner.jpg",
+    "mobile": "./banners/mobile/curiosity-banner-mobile.jpg",
     "link": "/Curiosity"
   },
   {
     "name": "Ratusz w Sandomierzu",
-    "source": "./banners/sandomierz-banner.jpg",
+    "full": "./banners/full/sandomierz-banner.jpg",
+    "mobile": "./banners/mobile/sandomierz-banner-mobile.jpg",
     "link": "/SandomierzRatusz"
   },
   {
     "name": "Kościół w Gryfinie",
-    "source": "./banners/gryfin-banner.jpg",
+    "full": "./banners/full/gryfin-banner.jpg",
+    "mobile": "./banners/mobile/gryfin-banner-mobile.jpg",
     "link": "/Gryfino"
   },
   {
     "name": "Zamek w Będzinie",
-    "source": "./banners/bedzin-banner.jpg",
+    "full": "./banners/full/bedzin-banner.jpg",
+    "mobile": "./banners/mobile/bedzin-banner-mobile.jpg",
     "link": "/Bedzin"
   },
   {
     "name": "Wieżowce",
-    "source": "./banners/wiezowce-banner.jpg",
+    "full": "./banners/full/wiezowce-banner.jpg",
+    "mobile": "./banners/mobile/wiezowce-banner-mobile.jpg",
     "link": "/Wieżowce"
   },
   {
     "name": "Zamek w Oporowie",
-    "source": "./banners/oporow-night-banner.jpg",
+    "full": "./banners/full/oporow-night-banner.jpg",
+    "mobile": "./banners/mobile/oporow-night-banner-mobile.jpg",
     "link": "/Oporow"
   },
   {
     "name": "Phantom F-4B",
-    "source": "./banners/phantom-banner.jpg",
+    "full": "./banners/full/phantom-banner.jpg",
+    "mobile": "./banners/full/phantom-banner.jpg",
     "link": "/PhantomF4"
   }
 ]

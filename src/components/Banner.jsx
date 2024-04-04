@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";
 import { PiCaretDoubleLeftFill, PiCaretDoubleRightFill } from "react-icons/pi";
@@ -6,9 +6,12 @@ import { FaPause } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 
 const Banner = ({ bannerState, setBannerState }) => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const [actualBanner, setActualBanner] = useState({
     name: bannerData[0].name,
-    source: bannerData[0].source,
+    full: bannerData[0].full,
+    mobile: bannerData[0].mobile,
     link: bannerData[0].link,
   });
   let index = useRef(0);
@@ -29,7 +32,8 @@ const Banner = ({ bannerState, setBannerState }) => {
 
     setActualBanner({
       name: bannerData[index.current].name,
-      source: bannerData[index.current].source,
+      full: bannerData[index.current].full,
+      mobile: bannerData[index.current].mobile,
       link: bannerData[index.current].link,
     });
 
@@ -41,6 +45,16 @@ const Banner = ({ bannerState, setBannerState }) => {
     document.querySelector(".banner-img").classList.add("banner-anim");
     document.querySelector(".banner-text").classList.add("banner-text-anim");
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -101,7 +115,7 @@ const Banner = ({ bannerState, setBannerState }) => {
         <section
           className={
             bannerState == true
-              ? "banner-section h-[200px] max-sm:h-[80px] w-full overflow-hidden relative flex flex-col"
+              ? "banner-section h-[200px] max-sm:h-[92px] w-full overflow-hidden relative flex flex-col"
               : "banner-section h-6  w-full overflow-hidden relative flex flex-col max-sm:h-5 invisible"
           }
         >
@@ -133,7 +147,9 @@ const Banner = ({ bannerState, setBannerState }) => {
                     ? { animationPlayState: "running" }
                     : { animationPlayState: "paused" }
                 }
-                src={actualBanner.source}
+                src={
+                  screenWidth > 640 ? actualBanner.full : actualBanner.mobile
+                }
                 alt="banner photo"
               />
             )}
@@ -168,8 +184,8 @@ const Banner = ({ bannerState, setBannerState }) => {
             fill="var(--text-light)"
             className={
               bannerState == true
-                ? "absolute top-0 max-sm:top-1 max-sm:right-2 right-[2px] opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
-                : "absolute top-0  max-sm:right-2 right-[2px]  opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
+                ? "absolute top-0 max-sm:top-1 max-sm:right-1 right-[2px] opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4"
+                : "absolute top-0  max-sm:right-1 right-[1px]  opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] max-sm:h-4 fill-accent-2 rotate-180 max-sm:top-[3px]"
             }
           />
         </button>
