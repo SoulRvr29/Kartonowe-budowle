@@ -164,7 +164,7 @@ const BedzinHistory = ({ id }) => {
             </p>
             <p>
               15 września 1696 na zamek przybył August II Mocny (1677–1733), a w
-              1797 r. Stanisław August Poniatowski[potrzebny przypis].
+              1797 r. Stanisław August Poniatowski.
             </p>
             <p>
               Do końca XVI w. zamkiem zarządzali z ramienia króla burgrabiowie,

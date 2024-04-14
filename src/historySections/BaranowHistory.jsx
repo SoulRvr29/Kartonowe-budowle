@@ -55,7 +55,7 @@ const BaranowHistory = ({ id }) => {
               Leszczyńskiemu herbu Wieniawa który wybudował tu dwór renesansowy
               na planie prostokąta stanowiący dziś część zachodnią zamku Według
               innej teorii parter zamku ma pochodzić z czasów Rafała
-              Leszczyńskiego, zaś piętro z czasów Andrzeja Leszczyńskiego
+              Leszczyńskiego, zaś piętro z czasów Andrzeja Leszczyńskiego.
             </p>
             <p>
               Andrzej Leszczyński – wojewoda brzeskokujawski rozbudował zamek
@@ -64,7 +64,7 @@ const BaranowHistory = ({ id }) => {
               Stefan Batory. Około 1620 roku murowany zamek został otoczony
               niezachowanymi ziemnymi fortyfikacjami bastionowymi. Ostatnim
               właścicielem z rodu Leszczyńskich był Rafał – ojciec Stanisława
-              Leszczyńskiego – króla Polski
+              Leszczyńskiego – króla Polski.
             </p>
             <p>
               Kolejnym właścicielem był Dymitr Jerzy Wiśniowiecki (w latach
@@ -87,7 +87,7 @@ const BaranowHistory = ({ id }) => {
               płonął. Odbudowę powierzono Tadeuszowi Stryjeńskiemu. W kaplicy
               zamkowej zaznaczony został przez niego styl krakowskiej secesji.
               Witraże zaprojektowane zostały przez Józefa Mehoffera, a autorem
-              obrazu ołtarzowego „Matka Boska Niepokalana” był Jacek Malczewski
+              obrazu ołtarzowego „Matka Boska Niepokalana” był Jacek Malczewski.
               W ramach odbudowy zamek pokryto nową dachówką, zlikwidowano
               ogródek znajdujący się na dziedzińcu i położono tam kamienną
               posadzkę. Oprócz tego odnowiono zamkowe wnętrza. W czasie I wojny
@@ -105,7 +105,7 @@ const BaranowHistory = ({ id }) => {
             </PhotoView>
             <p>
               Ostatnim właścicielem był Roman Dolański (zm.1956) który stracił
-              zamek w wyniku reformy rolnej z 1945 roku
+              zamek w wyniku reformy rolnej z 1945 roku.
             </p>
             <p>
               W czasie II wojny światowej w zamku znajdował się niemiecki zarząd
@@ -120,17 +120,17 @@ const BaranowHistory = ({ id }) => {
               odwołano, ponieważ odkryto, że Niemcy zaplanowali atak Batalionów
               na zamek oraz postawili w stan gotowości okoliczne oddziały
               Wermachtu, ogłosili alarm w stacjonującej w Nagnajowie jednostce
-              artylerii i sprowadzili dodatkowe oddziały żandarmerii
+              artylerii i sprowadzili dodatkowe oddziały żandarmerii.
             </p>
             <p>
               Czasy drugiej wojny światowej i krótki okres po jej zakończeniu w
               tragiczny sposób odbiły swoje piętno na stanie technicznym zamku.
               Nie dbali o niego ani hitlerowcy, ani tym bardziej Sowieci, którzy
               zdewastowali jego wnętrza paląc w nich ogniska z posadzek i
-              zabytkowych mebli Po zakończeniu działań wojennych, ówczesna
+              zabytkowych mebli. Po zakończeniu działań wojennych, ówczesna
               władza ludowa, przeznaczyła kaplicę na cele społeczne. Budynek
-              zamku zamieniono na stajnie i magazyn GS Przechowywano w nim zboża
-              i nawozy sztuczne, na potrzeby miejscowej ludności.
+              zamku zamieniono na stajnie i magazyn GS. Przechowywano w nim
+              zboża i nawozy sztuczne, na potrzeby miejscowej ludności.
             </p>
             <p>
               W latach 1959-1968 zamek został odnowiony i odrestaurowany pod
@@ -146,14 +146,13 @@ const BaranowHistory = ({ id }) => {
               gospodarcze przebudowano na hotel, wprowadzono nową kompozycję
               parkową wg. projektów prof. Gerarda Antoniego Ciołka i Alfreda
               Majewskiego, do przetrzebionego drzewostanu wprowadzono wiele
-              nowych nasadzeń
+              nowych nasadzeń.
             </p>
             <p>
               Część pomieszczeń jest udostępniona zwiedzającym. W zamkowych
               podziemiach znajduje się największe w Europie czółno wydłubane z
-              pnia drzewa, wystawa ćmielowskiej porcelany oraz fotografii. Dla
-              zwiedzających udostępniona jest również zbrojownia rycerska.
-              Możliwość wynajęcia restauracji zamkowej na imprezy
+              pnia drzewa, wystawa ćmielowskiej porcelany oraz fotografii.
+              Możliwe jest wynajęcie restauracji zamkowej na imprezy
               okolicznościowe (sympozja, wesela). W pobliżu zamku znajduje się
               hotel i basen. W zamkowych salach, krużgankach i dziedzińcu
               kręcony był serial Czarne chmury oraz filmy: Barbara

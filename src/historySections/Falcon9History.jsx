@@ -39,7 +39,7 @@ const Falcon9History = ({ id }) => {
           loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
-            <h4>Rakieta Falcon 9</h4>
+            <h4>Rakiety Falcon 9</h4>
             <p>
               <span className="first-letter font-playfair">R</span>odzina
               dwustopniowych rakiet nośnych, zaprojektowana i wyprodukowana
@@ -63,10 +63,10 @@ const Falcon9History = ({ id }) => {
             <h4>Misja DM-2 (SpaceX Demonstration Mission 2)</h4>
             <p>
               <span className="first-letter font-playfair">D</span>ruga testowa
-              misja orbitalna załogowej wersji kapsuły Dragon (ang. Smok) firmy
-              SpaceX. Była pierwszą misją załogową należącą do prowadzonego
-              przez NASA programu lotów na Międzynarodową Stację Kosmiczną przy
-              pomocy pojazdów partnerów komercyjnych (Commercial Crew Program) i
+              misja orbitalna załogowej wersji kapsuły Dragon firmy SpaceX. Była
+              pierwszą misją załogową należącą do prowadzonego przez NASA
+              programu lotów na Międzynarodową Stację Kosmiczną przy pomocy
+              pojazdów partnerów komercyjnych (Commercial Crew Program) i
               pierwszym załogowym lotem kosmicznym z terytorium USA od czasu
               ostatniej misji programu wahadłowców, STS-135.
             </p>

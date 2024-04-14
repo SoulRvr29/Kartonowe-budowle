@@ -119,7 +119,7 @@ const Gallery = ({ id, name }) => {
         <hr className=" dark:bg-accent-2 bg-accent-4 w-full" />
       </header>
       {/* ////////////  thumbnails  //////////// */}
-      <div className="gallery relative flex flex-wrap justify-center  mx-8 max-sm:mx-4 max-[300px]:mx-1">
+      <div className="gallery relative flex flex-col flex-wrap justify-center  mx-8 max-sm:mx-4 max-[300px]:mx-1">
         {galleryState === true && (
           <PhotoProvider
             maskOpacity={0.5}

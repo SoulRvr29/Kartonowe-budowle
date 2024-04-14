@@ -72,18 +72,19 @@ const OporowHistory = ({ id }) => {
               />
             </PhotoView>
             <p>
-              Powstanie budowli przypisuje Mikołajowi Oporowskiemu, który już w
-              1392 roku pełnił ważny urząd, był podczaszym łęczyckim. Kolejny
-              dwór także wybudowano z drewna (w miejscu, gdzie obecnie stoi tzw.
-              domek szwajcarski), jednakże był on znacznie większy, posadowiony
-              na szerszym fundamencie, a także podniesiony (około 0,8 m powyżej
-              gruntu), by zapobiec dostawaniu się wilgoci do budynku. Szerokość
-              budynku wyniosła 8 m, a wokół ustawiono drewniany plot, poza tym
-              nie znaleziono śladów charakteru obronnego budowli. Dwór posiadał
-              prawdopodobnie dwie kondygnacje naziemne oraz ogromny piec
-              centralnego ogrzewania, zwany hypocaustum. Podobne piece posiadały
-              później również pobliski kościół i klasztor. Budowa takiego pieca
-              była w owym czasie bardzo kosztowna.
+              Powstanie budowli przypisuje się Mikołajowi Oporowskiemu, który
+              już w 1392 roku pełnił ważny urząd, był podczaszym łęczyckim.
+              Kolejny dwór także wybudowano z drewna (w miejscu, gdzie obecnie
+              stoi tzw. domek szwajcarski), jednakże był on znacznie większy,
+              posadowiony na szerszym fundamencie, a także podniesiony (około
+              0,8 m powyżej gruntu), by zapobiec dostawaniu się wilgoci do
+              budynku. Szerokość budynku wyniosła 8 m, a wokół ustawiono
+              drewniany plot, poza tym nie znaleziono śladów charakteru
+              obronnego budowli. Dwór posiadał prawdopodobnie dwie kondygnacje
+              naziemne oraz ogromny piec centralnego ogrzewania, zwany
+              hypocaustum. Podobne piece posiadały później również pobliski
+              kościół i klasztor. Budowa takiego pieca była w owym czasie bardzo
+              kosztowna.
             </p>
             <p>
               Dokument z 1428 roku potwierdza istnienie „curie” z zabudowaniami
@@ -126,16 +127,16 @@ const OporowHistory = ({ id }) => {
             <h4>Sołłohubowie</h4>
             <p>
               W 1725 roku w posiadanie zamku wszedł Jan Sołłohub herbu Prawdzic,
-              nabywszy dobra oporowskie za 41550 zł polskich (AGAD, ŁGRel. 244A,
-              k. 443v) od Michała Stanisława Tarnowskiego, kasztelana
-              sieradzkiego, który pozbył się części swych ziem po 11 latach od
-              ich nabycia, ze względu na ich zadłużenie. Nowy właściciel był
-              podkomorzym gostynińskim, następnie podskarbim wielkim litewskim i
-              wojewodą brzesko-litewskim. Jan Sołłohub był przedstawicielem
-              rodziny szlachty litewskiej, pierwszym z rodu, który osiadł na
-              Mazowszu. Według Marcina Matuszewicza, wyglądał następująco: „z
-              ojca swego był małej substancji, szlachcic żmudzki, człek serca
-              mężnego, w naukach nie był biegły, a rozumu naturalnego czystego".
+              nabywszy dobra oporowskie za 41550 zł polskich od Michała
+              Stanisława Tarnowskiego, kasztelana sieradzkiego, który pozbył się
+              części swych ziem po 11 latach od ich nabycia, ze względu na ich
+              zadłużenie. Nowy właściciel był podkomorzym gostynińskim,
+              następnie podskarbim wielkim litewskim i wojewodą
+              brzesko-litewskim. Jan Sołłohub był przedstawicielem rodziny
+              szlachty litewskiej, pierwszym z rodu, który osiadł na Mazowszu.
+              Według Marcina Matuszewicza, wyglądał następująco: „z ojca swego
+              był małej substancji, szlachcic żmudzki, człek serca mężnego, w
+              naukach nie był biegły, a rozumu naturalnego czystego".
             </p>
             <PhotoView src={photosSrc[2]}>
               <LazyLoadImage

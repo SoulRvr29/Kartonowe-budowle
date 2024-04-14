@@ -65,19 +65,19 @@ const StarshipSN15History = ({ id }) => {
             <p>
               W prototypie SN15 wprowadzono ulepszone oprogramowanie awioniki,
               zaktualizowaną architekturę paliwa na rufie oraz nowy projekt i
-              konfigurację Raptora. Kolejną nowością była antena Starlink
-              umieszczona z boku pojazdu. SN15 przeszedł próbę ciśnieniową w
-              temperaturze otoczenia (9 kwietnia), próbę kriogeniczną (12
-              kwietnia) i próbę kriogeniczną zbiornika górnego (13 kwietnia).
-              Następnie nastąpił test statyczny (26 kwietnia) i test statyczny
-              zbiornika górnego (27 kwietnia). Próbę w locie na dużej wysokości
-              10 km (33 000 stóp) przeprowadzono przy pochmurnej pogodzie 5
-              maja, uzyskując miękkie przyziemienie. Mały pożar w pobliżu bazy
-              został opanowany wkrótce po wylądowaniu. Po usunięciu silników 31
-              maja został wycofany ze służby jako pierwszy prototyp statku
-              kosmicznego, który latał, lądował i został odzyskany. Prototyp
-              zajął swoje miejsce w Rocket Garden. 26 lipca 2023 roku SN15
-              został zezłomowany.
+              konfigurację Raptora (silnika rakietowego). Kolejną nowością była
+              antena Starlink umieszczona z boku pojazdu. SN15 przeszedł próbę
+              ciśnieniową w temperaturze otoczenia (9 kwietnia), próbę
+              kriogeniczną (12 kwietnia) i próbę kriogeniczną zbiornika górnego
+              (13 kwietnia). Następnie nastąpił test statyczny (26 kwietnia) i
+              test statyczny zbiornika górnego (27 kwietnia). Próbę w locie na
+              dużej wysokości 10 km (33 000 stóp) przeprowadzono przy pochmurnej
+              pogodzie 5 maja, uzyskując miękkie przyziemienie. Mały pożar w
+              pobliżu bazy został opanowany wkrótce po wylądowaniu. Po usunięciu
+              silników 31 maja został wycofany ze służby jako pierwszy prototyp
+              statku kosmicznego, który latał, lądował i został odzyskany.
+              Prototyp zajął swoje miejsce w Rocket Garden. 26 lipca 2023 roku
+              SN15 został zezłomowany.
             </p>
             <div className="w-full flex">
               <PhotoView src={photosSrc[1]}>

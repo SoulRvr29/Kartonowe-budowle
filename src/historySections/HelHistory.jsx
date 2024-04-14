@@ -72,8 +72,7 @@ const HelHistory = ({ id }) => {
               odchylać nawet o stopę i więcej. Po prawie 100 latach firma
               Pintsch zainstalowała w latarni lampę naftową w czterosoczewkowym
               aparacie optycznym, a w roku 1938 wprowadzono światło elektryczne
-              z żarówką mocy 3000 W. Aby latarnia była lepiej widoczna
-              pomalowano ją w 1929 roku w biało czerwone poziome pasy.
+              z żarówką mocy 3000 W.
             </p>{" "}
             <div className="flex flex-wrap justify-center gap-4">
               <PhotoView src={photosSrc[3]}>
@@ -118,7 +117,7 @@ const HelHistory = ({ id }) => {
               zachowano.
             </p>
             <p>
-              Źródłem światła jest 1000 w żarówka, która w przypadku przepalenia
+              Źródłem światła jest 1000 W żarówka, która w przypadku przepalenia
               wykonuje automatycznie obrót o 180° by ustawić żarówkę zapasową.
               Helska latarnia jest znaczącym punktem dla żeglugi, szczególnie
               dla portów w Gdańsku i Gdyni. Od 1957 była także ona także
