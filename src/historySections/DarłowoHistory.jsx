@@ -78,7 +78,7 @@ const DarłowoHistory = ({ id }) => {
               jest skuta lodem. Spowodowało to konieczność umocnienia północnej
               ściany, która obmurowana dodatkową warstwą cegieł i otynkowana
               tynkiem cementowo – wapiennym, ma imponująca grubość 54
-              centymetrów. Z powodu nawilgocenie i zasolenia murów latarnia
+              centymetrów. Z powodu nawilgocenia i zasolenia murów latarnia
               przez długi okres nie była udostępniona turystom, ale po remoncie
               kapitalnym w 2006 roku znów można ją zwiedzać.
             </p>

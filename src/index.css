@@ -39,7 +39,7 @@
     color: var(--text-dark);
     text-align: justify;
     animation: fade-in 3s;
-    text-shadow: 1px 1px 0px #00000020;
+    text-shadow: 1px 1px 0px #00000010;
     overflow-x: hidden;
   }
 

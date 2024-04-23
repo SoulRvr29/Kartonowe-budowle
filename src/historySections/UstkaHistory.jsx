@@ -53,10 +53,9 @@ const UstkaHistory = ({ id }) => {
             </PhotoView>
             <p>
               <span className="first-letter">Z</span>e względu na trudne wejście
-              do portu, a szczególne rozmieszczenie jego główek, w 1871 roku
-              postawiono przy stacji pilotów 11 metrowy maszt, na który wciągano
-              lampę naftową z soczewką Fresnela. Dawała ona stałe, czerwone
-              światło o zasięgu 6 Mm.
+              do portu, w 1871 roku postawiono przy stacji pilotów 11 metrowy
+              maszt, na który wciągano lampę naftową z soczewką Fresnela. Dawała
+              ona stałe, czerwone światło o zasięgu 6 Mm.
             </p>
             <p>
               Obecna budowla została wzniesiona w 1892 roku. Składa się z

@@ -68,7 +68,7 @@ const KikutHistory = ({ id }) => {
               poprawki chronometrów okrętowych, żeby później móc dokładnie
               określić położenie statku na otwartym morzu. Kula została usunięta
               i dopiero w 2008 roku została zrekonstruowana i ponownie
-              umieszczona na szcycie latarni.
+              umieszczona na szczycie latarni.
             </p>
             <p>
               1 września 1939 roku strzałem z okna latarni dano znak żołnierzom
