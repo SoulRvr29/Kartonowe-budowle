@@ -79,7 +79,7 @@ const ImagesGrid = () => {
       {loadingIcon && (
         <div className="loading-icon fixed top-[calc(50vh-40px)] justify-self-center left-[calc(50vw-40px)] z-40 w-20 h-20 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
       )}
-      <div className="flex flex-wrap gap-4 justify-center img-container transition-all duration-1000">
+      <div className="flex flex-wrap gap-4 justify-center img-container transition-all duration-1000 relative z-[15]">
         <PhotoProvider
           overlayRender={({ index }) => {
             return (
@@ -99,12 +99,9 @@ const ImagesGrid = () => {
           loadingElement={<div className="loader"></div>}
         >
           {data.map((item, index) => (
-            <div
-              key={index}
-              className="random-img relative border-2 border-bkg dark:border-accent dark:hover:border-white  hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] cursor-pointer "
-            >
+            <div key={index} className="random-img relative cursor-pointer ">
               <PhotoView key={index} src={item.full}>
-                <div className="photo-container">
+                <div className="gallery-thumb photo-container  border-2 border-bkg rounded-xl dark:border-accent dark:hover:border-white hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] overflow-hidden hover:scale-105 transition-transform">
                   <LazyLoadImage
                     title={item.name}
                     onLoad={() => {
@@ -115,14 +112,14 @@ const ImagesGrid = () => {
                         setLoadingIcon(false);
                       }
                     }}
-                    className=" gallery-thumb hover:cursor-pointer h-[12rem] w-auto max-[400px]:h-full max-[400px]:w-full"
+                    className="hover:cursor-pointer h-[12rem] w-auto max-[400px]:h-full max-[400px]:w-full"
                     width={200}
                     height={200}
                     src={item.thumb}
                     alt={item.name}
                   />
-                  <div className="photo-div invisible absolute grid justify-center items-end top-0 left-0 w-full h-full ">
-                    <div className="w-full absolute px-1 bg-black  bg-opacity-50 font-bold break-words break text-center text-white py-1">
+                  <div className="photo-div invisible absolute grid justify-center items-end top-0 left-0 w-full h-full">
+                    <div className="w-full absolute px-1 bg-black  bg-opacity-50 font-bold break-words break text-center text-white py-1 rounded-b-xl">
                       {item.name}
                     </div>
                   </div>

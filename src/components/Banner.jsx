@@ -133,7 +133,7 @@ const Banner = ({ bannerState, setBannerState }) => {
           )}
           <div className="grid justify-center">
             {/* gradient */}
-            <div className="w-full h-full absolute grad banner-grad z-10"></div>
+            <div className="w-full h-full absolute grad banner-grad z-10 invisible dark:visible"></div>
             {bannerState && (
               <img
                 onAnimationEnd={() => animEndHandler("next")}

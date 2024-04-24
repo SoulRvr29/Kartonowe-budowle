@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { NavLink } from "react-router-dom";
 import modelsData from "../data/models-data.json";
 import { PiArrowsOutBold, PiArrowsInBold } from "react-icons/pi";
 
-const map = () => {
-  const [mapSize, setMapSize] = useState(false);
+const map = ({ mapSize, setMapSize }) => {
   const polandMap = [52, 19];
   const zoom = 6;
 
