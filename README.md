@@ -5,6 +5,6 @@ Strona zrobiona jest z wykorzystaniem biblioteki REACT i frameworka Tailwind CSS
 Do przełączania między podstronami użyłem React Router. Wyświetlanie zdjęć działa przy pomocy biblioteki react-photo-view. Interaktywne mapki są dodane przy użyciu biblioteki Leaflet.
 Strona ma do wyboru jasną i ciemną kolorystykę. Ustawienia zapisują się do pamięci lokalnej w przeglądarce.
 
-### Link do strony: https://kartonowebudowle.pl
+### Link do strony: www.kartonowebudowle.pl
 
 ![screenshot](screenshot.jpeg)
