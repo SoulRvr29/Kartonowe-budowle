@@ -10,7 +10,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       className={
         "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light h-7 max-md:h-auto " +
         (activeList == name &&
-          " text-accent-4 dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-white max-sm:bg-accent-2  hover:cursor-default")
+          " text-accent-4 dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-accent-4 hover:cursor-default")
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);

@@ -55,7 +55,7 @@ const Article = () => {
         loadingElement={<div class="loader"></div>}
       >
         <hr className="grad-hr" />
-        <header className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-0 max-sm:py-0 relative">
+        <header className="article-header dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-0 max-sm:py-0 relative">
           <div
             className={
               "flex max-lg:flex-col max-lg:gap-0 gap-8 " +

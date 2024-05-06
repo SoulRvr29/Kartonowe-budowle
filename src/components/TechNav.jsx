@@ -20,8 +20,8 @@ const TechNav = () => {
   return (
     <nav className=" bg-bkg bg-opacity-20 dark:bg-accent dark:bg-opacity-20 ">
       <hr className="grad-hr "></hr>
-      <ul className=" w-full flex justify-start items-center flex-wrap max-sm:justify-center px-2 max-sm:mb-2">
-        <h2 className="mr-4 ml-2 text-white font-bold uppercase max-sm:w-full max-sm:mb-1 text-center drop-shadow-[1px_2px_1px_rgba(0,0,0,0.3)]">
+      <ul className=" w-full flex justify-start items-center flex-wrap max-sm:justify-center px-2  max-sm:text-xs">
+        <h2 className="mr-4 ml-2 text-white font-bold uppercase max-sm:w-full text-center drop-shadow-[1px_2px_1px_rgba(0,0,0,0.3)]">
           Tematy:
         </h2>
         <TechNav_li name="oświetlenie" link="/Oświetlenie" />
