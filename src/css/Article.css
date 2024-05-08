@@ -27,9 +27,13 @@ article > img:first-child {
   margin-top: 0.5rem !important;
 }
 
-article,
-.article-header {
+article {
   animation: article-fade-in 1s;
+}
+
+.article-header {
+  opacity: 0;
+  animation: article-fade-in 2s 0.3s forwards;
 }
 
 @keyframes article-fade-in {
@@ -73,4 +77,67 @@ article a {
 }
 article a:hover {
   text-decoration: underline;
+}
+
+.grad-rad {
+  position: absolute;
+  border-radius: 99999px;
+  width: 30rem;
+  height: 30rem;
+  opacity: 0.5;
+}
+.grad-rad-l {
+  bottom: -15rem;
+  left: -15rem;
+  background-image: radial-gradient(
+    circle at center,
+    white 0%,
+    transparent 70%
+  );
+  animation: grad-l-anim 1s 0.3s forwards;
+}
+.grad-rad-r {
+  top: -15rem;
+  right: -15rem;
+  background-image: radial-gradient(
+    circle at center,
+    white 0%,
+    transparent 70%
+  );
+  animation: grad-r-anim 1s 0.3s forwards;
+}
+@keyframes grad-l-anim {
+  from {
+    opacity: 1;
+    scale: 10;
+  }
+  to {
+    opacity: none;
+    scale: 1;
+  }
+}
+@keyframes grad-r-anim {
+  from {
+    opacity: 1;
+    scale: 10;
+  }
+  to {
+    opacity: none;
+    scale: 1;
+  }
+}
+.dark .grad-rad-l {
+  background-image: radial-gradient(
+    circle at center,
+    var(--accent) 0%,
+    transparent 70%
+  );
+}
+
+.dark .grad-rad-r {
+  background-image: radial-gradient(
+    circle at center,
+    var(--accent) 0%,
+    transparent 70%
+  );
 }

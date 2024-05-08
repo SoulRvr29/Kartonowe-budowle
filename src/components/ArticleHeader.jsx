@@ -7,7 +7,6 @@ const ArticleHeader = ({ id }) => {
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="grad-rad grad-rad-l"></div>
         <div className="grad-rad grad-rad-r"></div>
-        <div className="grad-rad grad-rad-c"></div>
       </div>
       <hr className="grad-hr" />
       <h2 className="font-Calistoga tracking-widest text-center text-3xl  max-sm:text-xl font-semibold pt-2 px-2  dark:text-accent-2 text-accent-4 dark:drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)] drop-shadow-[1px_0px_0px_rgba(0,0,0,0.5)]">
