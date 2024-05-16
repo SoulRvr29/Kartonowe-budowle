@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { IoIosArrowUp } from "react-icons/io";
+import { FaShareNodes } from "react-icons/fa6";
+import ShareScreen from "./ShareScreen";
 
 const Gallery = ({ id, name }) => {
   if (name === undefined) name = "Galeria";
@@ -65,6 +67,24 @@ const Gallery = ({ id, name }) => {
     setPhotoId(nr);
   };
 
+  let [directFull, setDirectFull] = useState("");
+  let [directThumb, setDirectThumb] = useState("");
+  let [shareForum, setShareForum] = useState("");
+  let [shareWebsite, setShareWebsite] = useState("");
+
+  const [shareScreen, setShareScreen] = useState(false);
+
+  const makeShareLinks = (i) => {
+    const siteAddress = "https://www.kartonowebudowle.pl";
+    setDirectFull(siteAddress + actualSrcFull[i].slice(1));
+    setDirectThumb(siteAddress + actualSrcThumb[i].slice(1));
+
+    setShareForum(`[url=${directFull}][img]${directThumb}[/img][/url]`);
+    setShareWebsite(
+      `<a href="${directFull}" target='_blank'><img src="${directThumb}" border='0' alt='photo thumbnail'/></a>`
+    );
+  };
+
   return (
     <section className="gallery-cont select-none grid ">
       <header className="relative max-sm:w-screen">
@@ -122,6 +142,20 @@ const Gallery = ({ id, name }) => {
       <div className="gallery relative flex flex-col flex-wrap justify-center  mx-8 max-sm:mx-4 max-[300px]:mx-1">
         {galleryState === true && (
           <PhotoProvider
+            onIndexChange={(index) => {
+              makeShareLinks(index);
+            }}
+            toolbarRender={() => {
+              return (
+                <FaShareNodes
+                  size={16}
+                  fill="var(--text-light)"
+                  className="mx-4 hover:fill-white"
+                  title="share"
+                  onClick={() => setShareScreen(!shareScreen)}
+                />
+              );
+            }}
             maskOpacity={0.5}
             maskClassName="backdrop-blur-sm"
             loadingElement={<div className="loader"></div>}
@@ -144,6 +178,9 @@ const Gallery = ({ id, name }) => {
                         className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
                         src={item}
                         alt={model.name + " photo"}
+                        onClick={() => {
+                          makeShareLinks(index);
+                        }}
                       />
                     </div>
                   </PhotoView>
@@ -153,6 +190,13 @@ const Gallery = ({ id, name }) => {
           </PhotoProvider>
         )}
       </div>
+      <ShareScreen
+        shareScreen={shareScreen}
+        setShareScreen={setShareScreen}
+        directFull={directFull}
+        shareForum={shareForum}
+        shareWebsite={shareWebsite}
+      />
     </section>
   );
 };
