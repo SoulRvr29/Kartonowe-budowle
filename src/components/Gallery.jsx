@@ -68,20 +68,20 @@ const Gallery = ({ id, name }) => {
   };
 
   let [directFull, setDirectFull] = useState("");
-  let [directThumb, setDirectThumb] = useState("");
   let [shareForum, setShareForum] = useState("");
   let [shareWebsite, setShareWebsite] = useState("");
 
   const [shareScreen, setShareScreen] = useState(false);
 
   const makeShareLinks = (i) => {
-    const siteAddress = "https://www.kartonowebudowle.pl";
-    setDirectFull(siteAddress + actualSrcFull[i].slice(1));
-    setDirectThumb(siteAddress + actualSrcThumb[i].slice(1));
-
-    setShareForum(`[url=${directFull}][img]${directThumb}[/img][/url]`);
+    const full = `https://www.kartonowebudowle.pl${actualSrcFull[i].slice(1)}`;
+    const thumb = `https://www.kartonowebudowle.pl${actualSrcThumb[i].slice(
+      1
+    )}`;
+    setDirectFull(full);
+    setShareForum(`[url=${full}][img]${thumb}[/img][/url]`);
     setShareWebsite(
-      `<a href="${directFull}" target='_blank'><img src="${directThumb}" border='0' alt='photo thumbnail'/></a>`
+      `<a href="${full}" target='_blank'><img src="${thumb}" border='0' alt='photo thumbnail'/></a>`
     );
   };
 
