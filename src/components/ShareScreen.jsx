@@ -5,37 +5,42 @@ import { FaCopy } from "react-icons/fa";
 const ShareLi = ({ type, link }) => {
   const [copy, setCopy] = useState(false);
   return (
-    <li className="relative flex max-md:flex-col max-md:items-start items-center text-lg ">
-      <div className="max-md:ml-8">{type}:</div>
-      <div className="flex items-center max-md:w-screen max-w-2xl max-md:px-8">
-        <input
-          onClick={(e) => e.target.select()}
-          className="w-[20rem] max-md:w-full h-10 border-accent border-2 rounded-md rounded-r-none px-2 focus:outline-none ml-2 max-md:m-0 hover:border-white bg-bkg "
-          type="text"
-          value={link}
-          autocomplete="off"
-          readOnly
-        />
-        <div
-          className="grid place-content-center h-10 w-10 border-2 rounded-r-md border-accent border-l-0 bg-bkg hover:bg-accent cursor-pointer"
-          onClick={() => {
-            navigator.clipboard.writeText(link);
-            setCopy(true);
-            setTimeout(() => {
-              setCopy(false);
-            }, 1000);
-          }}
-          title="copy"
-        >
-          <FaCopy size={20} />
+    <li className="relative flex-col items-center text-lg max-sm:text-xs">
+      <div>
+        <div className="flex justify-between items-center max-md:w-screen max-w-2xl  mb-1 max-md:mx-8 max-md:px-4">
+          <label htmlFor={type}>{type}:</label>
+          <div
+            className={
+              "text-accent-3 transition-opacity duration-500 opacity-0 " +
+              (copy && " opacity-100")
+            }
+          >
+            Skopiowano
+          </div>
         </div>
-        <div
-          className={
-            "ml-2 text-accent-3 absolute -right-20 max-md:right-8  max-md:top-0 transition-opacity duration-500 opacity-0 " +
-            (copy && " opacity-100")
-          }
-        >
-          Copied!
+        <div className="flex max-md:mx-8 max-md:px-4">
+          <input
+            id={type}
+            onClick={(e) => e.target.select()}
+            className="w-[40rem] max-md:w-full h-10 max-md:text-sm border-accent border-2 rounded-md rounded-r-none px-2 focus:outline-none max-md:m-0 hover:border-white bg-bkg font-normal "
+            type="text"
+            value={link}
+            autocomplete="off"
+            readOnly
+          />
+          <div
+            className="grid place-content-center h-10 w-10 border-2 rounded-r-md border-accent border-l-0 bg-bkg hover:bg-accent cursor-pointer"
+            onClick={() => {
+              navigator.clipboard.writeText(link);
+              setCopy(true);
+              setTimeout(() => {
+                setCopy(false);
+              }, 1000);
+            }}
+            title="copy"
+          >
+            <FaCopy size={20} />
+          </div>
         </div>
       </div>
     </li>
@@ -62,11 +67,11 @@ const ShareScreen = ({
             onClick={(e) => {
               e.stopPropagation();
             }}
-            className="grid justify-items-end gap-4 font-bold"
+            className="grid justify-items-end gap-6 font-bold"
           >
-            <ShareLi type="Direct link" link={directFull} />
-            <ShareLi type="Forum thumb" link={shareForum} />
-            <ShareLi type="Website thumb" link={shareWebsite} />
+            <ShareLi type="Link bezpośredni" link={directFull} />
+            <ShareLi type="Miniaturka na forum" link={shareForum} />
+            <ShareLi type="Miniaturka na stronę" link={shareWebsite} />
           </ul>
         </div>
       )}

@@ -94,7 +94,7 @@ article a:hover {
     white 0%,
     transparent 70%
   );
-  animation: grad-l-anim 1s 0.3s forwards;
+  animation: grad-l-anim 2s 0.3s forwards;
 }
 .grad-rad-r {
   top: -15rem;
@@ -104,7 +104,7 @@ article a:hover {
     white 0%,
     transparent 70%
   );
-  animation: grad-r-anim 1s 0.3s forwards;
+  animation: grad-r-anim 2s 0.3s forwards;
 }
 @keyframes grad-l-anim {
   from {
