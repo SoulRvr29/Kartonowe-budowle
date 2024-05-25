@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const InfoCard = ({ mapSize }) => {
+  const [loadingIcon, setLoadingIcon] = useState(true);
   const apiURL = "https://kartonowe-budowle-mongo-db-api.vercel.app/api/models";
   const [apiData, setApiData] = useState([]);
 
@@ -17,7 +18,9 @@ const InfoCard = ({ mapSize }) => {
         throw new Error("Failed to fetch");
       }
       const data = await res.json();
+
       setApiData(data);
+      setLoadingIcon(false);
     } catch (error) {
       console.log("Error fetching posts: ", error);
     }
@@ -26,10 +29,14 @@ const InfoCard = ({ mapSize }) => {
   return (
     <div
       className={
-        "max-w-xl mx-auto border-2 border-accent rounded-xl bg-[#aaa] dark:bg-[#222] my-4 p-8 drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
+        "w-full min-h-[30rem] max-w-xl mx-auto border-2 border-accent rounded-xl bg-[#aaa] dark:bg-[#222] my-4 p-8 drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
         (mapSize && " order-1 max-lg:order-first")
       }
     >
+      {/* loading icon */}
+      {loadingIcon && (
+        <div className="loading-icon absolute left-[calc(50%-24px)] top-[calc(50%-24px)] max-sm:left-[calc(50%-12px)] max-sm:top-[calc(50%-12px)] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
+      )}
       {apiData.map((item) => (
         <div className="mb-4" key={item["_id"]}>
           <h5>{item.title}</h5>
