@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import modelsData from "../data/models-data.json";
 import MapAll from "../components/MapAll";
 import { useEffect, useState } from "react";
+import InfoCard from "../components/InfoCard";
 
 const Article = () => {
   useEffect(() => {
@@ -62,50 +63,7 @@ const Article = () => {
               (mapSize && " flex-col gap-0")
             }
           >
-            <div
-              className={
-                "max-w-xl mx-auto border-2 border-accent rounded-xl bg-[#aaa] dark:bg-[#222] my-4 p-8 drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
-                (mapSize && " order-1 max-lg:order-first")
-              }
-            >
-              <h5>Aktualnie w budowie:</h5>
-              <p>
-                <b>
-                  <NavLink
-                    to="/Wang"
-                    onClick={() =>
-                      document.querySelector(".article-header").scrollIntoView()
-                    }
-                  >
-                    <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                      Świątynia Wang{" "}
-                    </span>
-                  </NavLink>
-                  1:72{" "}
-                </b>
-                - budowla jest na ukończeniu, do zrobienia trawniki, drzewka,
-                oświetlenie wokół budowli. <br />
-                <b> Świątynia Wang 1:150</b> - budowla gotowa, do zrobienia
-                drzewka.
-                <br />
-                <b>Rakieta Saturn V</b> - do zrobienia górny stopień rakiety,
-                silniki i detale.
-              </p>
-              <h5>Galerie do dodania:</h5>
-              <ul className="list-disc list-inside">
-                <li>Rakieta Atlas V</li>
-                <li>Wieżowce</li>
-
-                <b>Starsze modele (do 2010r):</b>
-                <li>Olsztyn</li>
-                <li>Malbork</li>
-                <li>Wilczy Szaniec</li>
-                <li>Nowy Wiśnicz</li>
-                <li>Wawel</li>
-                <li>Samolot Mig 29UB</li>
-              </ul>
-              <br />
-            </div>
+            <InfoCard mapSize={mapSize} />
             <MapAll mapSize={mapSize} setMapSize={setMapSize} />
           </div>
           <div className="rounded-full max-sm:rounded-xl dark:bg-accent/20 bg-white/20 px-4 py-1 text-center">
