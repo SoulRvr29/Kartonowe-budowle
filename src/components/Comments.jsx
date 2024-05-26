@@ -8,8 +8,9 @@ const Comments = ({ id }) => {
   const [loadingIcon, setLoadingIcon] = useState(true);
   const [sectionState, setSectionState] = useState(true);
   const sectionName = modelsData.filter((item) => item.id === id)[0].component;
-  const apiURL = "http://localhost:5000/api/comments";
-  // "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
+  const apiURL =
+    "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
+  // "http://localhost:5000/api/comments";
   const [apiData, setApiData] = useState([]);
 
   async function fetchData() {
