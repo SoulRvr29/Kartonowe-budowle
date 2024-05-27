@@ -13,8 +13,8 @@ const Comments = ({ id }) => {
   const [newComment, setNewComment] = useState("");
   const sectionName = modelsData.filter((item) => item.id === id)[0].component;
   const apiURL =
-    // "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
-    "http://localhost:5000/api/comments";
+    "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
+  // "http://localhost:5000/api/comments";
   const [apiData, setApiData] = useState([]);
   const [SectionID, setSectionID] = useState("");
 
