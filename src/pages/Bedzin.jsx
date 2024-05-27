@@ -14,9 +14,9 @@ const Article = ({ id }) => {
   return (
     <>
       <ArticleHeader id={id} />
-      <Comments id={id} />
       <ModelInfo id={id} />
       <Gallery id={id} />
+      <Comments id={id} />
       <BedzinHistory id={id} />
       <BedzinArch id={id} />
     </>
