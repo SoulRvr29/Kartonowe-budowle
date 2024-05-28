@@ -12,6 +12,8 @@ const Settings = ({
   setOverlap,
   setSettingsState,
   saveSettings,
+  autoScroll,
+  setAutoScroll,
 }) => {
   const [confirm, setconfirm] = useState(false);
   return (
@@ -66,6 +68,16 @@ const Settings = ({
                 onClick={() => setOverlap(!overlap)}
               >
                 {overlap ? "szeroko" : "wąsko"}
+              </button>
+            </li>
+            {/* AUTOPRZEWIJANIE */}
+            <li className="rounded-md max-sm:hidden flex justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
+              Autoprzewijanie:{" "}
+              <button
+                className=" dark:border-text-dark w-24 rounded-[4px] pb-[2px] px-2 dark:hover:text-text-dark dark:hover:bg-text-light dark:bg-text-dark bg-text-light bg-opacity-60 hover:text-text-light hover:bg-text-dark hover:bg-opacity-60 transition-colors"
+                onClick={() => setAutoScroll(!autoScroll)}
+              >
+                {autoScroll ? "włączone" : "wyłączone"}
               </button>
             </li>
             {/* PRZYCISKI ZAPISZ / ZAMKNIJ */}

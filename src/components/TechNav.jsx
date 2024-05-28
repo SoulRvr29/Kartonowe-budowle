@@ -5,9 +5,11 @@ const TechNav_li = ({ name, link }) => {
   return (
     <li>
       <NavLink
-        onClick={() =>
-          document.querySelector(".article-header").scrollIntoView()
-        }
+        onClick={() => {
+          if (localStorage.getItem("autoScroll") == "true") {
+            document.querySelector(".article-header").scrollIntoView();
+          }
+        }}
         to={link}
       >
         <button className="tech-li text-cente w-fit px-4 ">{name}</button>

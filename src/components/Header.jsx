@@ -9,15 +9,23 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const darkModeCheck = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
+
   if (localStorage.getItem("darkMode") == null)
     localStorage.setItem("darkMode", darkModeCheck);
   const [darkMode, setDarkMode] = useState(
     JSON.parse(localStorage.getItem("darkMode"))
   );
+
   if (localStorage.getItem("fontSize") == null)
     localStorage.setItem("fontSize", 1);
   const [actualFontSize, setActualFontSize] = useState(
     JSON.parse(localStorage.getItem("fontSize"))
+  );
+
+  if (localStorage.getItem("autoScroll") == null)
+    localStorage.setItem("autoScroll", true);
+  const [autoScroll, setAutoScroll] = useState(
+    JSON.parse(localStorage.getItem("autoScroll"))
   );
 
   const titleAnimation = () => {
@@ -89,6 +97,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     localStorage.setItem("darkMode", darkMode);
     localStorage.setItem("banner", bannerState);
     localStorage.setItem("overlap", overlap);
+    localStorage.setItem("autoScroll", autoScroll);
   };
 
   const [settingsState, setSettingsState] = useState(false);
@@ -164,6 +173,8 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           overlap={overlap}
           setOverlap={setOverlap}
           setSettingsState={setSettingsState}
+          autoScroll={autoScroll}
+          setAutoScroll={setAutoScroll}
           saveSettings={saveSettings}
         />
       )}

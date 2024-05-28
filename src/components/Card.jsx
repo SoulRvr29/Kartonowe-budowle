@@ -10,9 +10,11 @@ const Card = ({ model, overlap }) => {
       }
     >
       <NavLink
-        onClick={() =>
-          document.querySelector(".article-header").scrollIntoView()
-        }
+        onClick={() => {
+          if (localStorage.getItem("autoScroll") == "true") {
+            document.querySelector(".article-header").scrollIntoView();
+          }
+        }}
         to={model.link}
       >
         {/* gradient */}

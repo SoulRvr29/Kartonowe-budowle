@@ -59,9 +59,11 @@ const Banner = ({ bannerState, setBannerState }) => {
   return (
     <>
       <Link
-        onClick={() =>
-          document.querySelector(".article-header").scrollIntoView()
-        }
+        onClick={() => {
+          if (localStorage.getItem("autoScroll") == "true") {
+            document.querySelector(".article-header").scrollIntoView();
+          }
+        }}
         to={bannerState === true && actualBanner.link}
         className="relative z-10 grid"
       >

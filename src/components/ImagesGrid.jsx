@@ -84,9 +84,11 @@ const ImagesGrid = () => {
           overlayRender={({ index }) => {
             return (
               <NavLink
-                onClick={() =>
-                  document.querySelector(".article-header").scrollIntoView()
-                }
+                onClick={() => {
+                  if (localStorage.getItem("autoScroll") == "true") {
+                    document.querySelector(".article-header").scrollIntoView();
+                  }
+                }}
                 to={data[index].link}
                 className="photo-description absolute bottom-0 text-center w-full z-30 p-3 bg-black bg-opacity-40 text-text-light hover:text-white transition-colors "
               >

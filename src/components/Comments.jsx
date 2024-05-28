@@ -20,6 +20,7 @@ const Comments = ({ id }) => {
 
   const getComments = () => {
     axios
+
       .get(apiURL)
       .then((response) => {
         const secitionData = response.data.filter(
@@ -39,6 +40,7 @@ const Comments = ({ id }) => {
     const newData = {
       user: userName,
       comment: newComment,
+      createdAt: new Date(new Date().getTime() + 7200000),
     };
     axios
       .put(`${apiURL}/${SectionID}`, newData)
@@ -52,12 +54,9 @@ const Comments = ({ id }) => {
       });
   };
 
-  const deleteComment = (id) => {
-    const newData = apiData.filter((item) => item["_id"] !== id);
-
-    // console.log(newData);
+  const deleteComment = (commentID) => {
     axios
-      .put(`${apiURL}/${SectionID}`, newData)
+      .delete(`${apiURL}/${SectionID}/`, { data: { commentID: commentID } })
       .then(() => {
         getComments();
       })
@@ -112,12 +111,12 @@ const Comments = ({ id }) => {
                       <p className="m-0">
                         {item.createdAt && item.createdAt.slice(11, 19)}
                       </p>
-                      {/* <button
+                      <button
                         className="hover:text-accent-4 dark:hover:text-accent-2"
                         onClick={() => deleteComment(item["_id"])}
                       >
                         <FaTrashAlt />
-                      </button> */}
+                      </button>
                     </div>
                   </div>
                   <p className="my-1 mx-2 text-left">{item.comment}</p>
@@ -178,8 +177,8 @@ const Comments = ({ id }) => {
               </div>
             </form>
           )}
-          {!inputState && (
-            <div className="w-full flex justify-center">
+          {!inputState && !loadingIcon && (
+            <div className="w-full flex justify-center ">
               <button
                 onClick={() => {
                   setInputState(true);
