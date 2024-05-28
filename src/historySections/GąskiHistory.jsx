@@ -4,7 +4,9 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const GąskiHistory = ({ id }) => {
-  const [sectionState, setSectionState] = useState(true);
+  const [sectionState, setSectionState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
   const photosSrc = [
     "models/latarnie morskie/gąski/gąski-photo-1.jpg",

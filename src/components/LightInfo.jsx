@@ -5,7 +5,9 @@ const LightInfo = ({ id }) => {
   const model = modelsData.filter((item) => item.id == id)[0];
   const daneTech = Object.keys(model["Dane techniczne"]);
   const fazy = Object.keys(model["Fazy światła"]);
-  const [sectionState, setSectionState] = useState(true);
+  const [sectionState, setSectionState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
 
   return (
     <>

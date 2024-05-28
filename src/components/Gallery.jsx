@@ -12,7 +12,9 @@ const Gallery = ({ id, name }) => {
   const gallerySections = Object.keys(model[name]);
 
   const [photoId, setPhotoId] = useState(1);
-  const [galleryState, setGalleryState] = useState(true);
+  const [galleryState, setGalleryState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
   const [actualSection, setActualSection] = useState(gallerySections[0]);
   const [galleryLength, setGalleryLength] = useState(
     model[name][actualSection].quantity

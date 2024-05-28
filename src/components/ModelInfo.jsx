@@ -6,7 +6,9 @@ import Map from "./Map";
 const ModelInfo = ({ id }) => {
   const data = modelsData.filter((item) => item.id == id)[0];
   const info = Object.keys(data.info);
-  const [sectionState, setSectionState] = useState(true);
+  const [sectionState, setSectionState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
 
   return (
     <>

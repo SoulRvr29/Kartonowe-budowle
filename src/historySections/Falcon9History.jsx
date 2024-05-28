@@ -4,7 +4,9 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Falcon9History = ({ id }) => {
-  const [historyState, setHistoryState] = useState(true);
+  const [historyState, setHistoryState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
     "models/falcon 9/falcon 9-photo2.jpg",

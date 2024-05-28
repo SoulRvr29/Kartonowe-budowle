@@ -4,7 +4,9 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BedzinHistory = ({ id }) => {
-  const [historyState, setHistoryState] = useState(true);
+  const [historyState, setHistoryState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [

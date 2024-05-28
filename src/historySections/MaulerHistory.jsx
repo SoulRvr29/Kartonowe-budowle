@@ -4,7 +4,9 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MaulerHistory = ({ id }) => {
-  const [sectionState, setSectionState] = useState(true);
+  const [sectionState, setSectionState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = ["/models/mauler/mauler-photo1.webp"];
   const photosTitle = [""];

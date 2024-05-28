@@ -4,7 +4,9 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BedzinArch = ({ id }) => {
-  const [architectureState, setArchitectureState] = useState(true);
+  const [architectureState, setArchitectureState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = ["models/bedzin/bedzin-arch.jpg"];

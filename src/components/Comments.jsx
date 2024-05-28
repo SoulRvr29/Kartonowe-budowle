@@ -7,7 +7,9 @@ import axios from "axios";
 
 const Comments = ({ id }) => {
   const [loadingIcon, setLoadingIcon] = useState(true);
-  const [sectionState, setSectionState] = useState(true);
+  const [sectionState, setSectionState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
   const [inputState, setInputState] = useState(false);
   const [userName, setUserName] = useState("");
   const [newComment, setNewComment] = useState("");
@@ -46,6 +48,8 @@ const Comments = ({ id }) => {
       .put(`${apiURL}/${SectionID}`, newData)
       .then(() => {
         setInputState(false);
+        setUserName("");
+        setNewComment("");
         getComments();
         console.log(apiData);
       })
@@ -70,7 +74,7 @@ const Comments = ({ id }) => {
   }, []);
 
   return (
-    <div className="mb-2 relative">
+    <div className="relative">
       <SectionHeader
         sectionName="Komentarze"
         sectionState={sectionState}
@@ -111,12 +115,14 @@ const Comments = ({ id }) => {
                       <p className="m-0">
                         {item.createdAt && item.createdAt.slice(11, 19)}
                       </p>
-                      <button
-                        className="hover:text-accent-4 dark:hover:text-accent-2"
-                        onClick={() => deleteComment(item["_id"])}
-                      >
-                        <FaTrashAlt />
-                      </button>
+                      {localStorage.getItem("devMode") === "true" && (
+                        <button
+                          className="hover:text-accent-4 dark:hover:text-accent-2"
+                          onClick={() => deleteComment(item["_id"])}
+                        >
+                          <FaTrashAlt />
+                        </button>
+                      )}
                     </div>
                   </div>
                   <p className="my-1 mx-2 text-left">{item.comment}</p>
@@ -125,11 +131,11 @@ const Comments = ({ id }) => {
             ))
           ) : !loadingIcon ? (
             <div className="flex justify-center items-center gap-2">
-              <div className="w-32 mb-3 h-[1px] bg-text-light" />
+              <div className="w-32 mb-4 h-[1px] bg-text-light" />
               <p className="text-center font-semibold whitespace-nowrap">
                 Brak komentarzy
               </p>
-              <div className="w-32 mb-3 h-[1px] bg-text-light" />
+              <div className="w-32 mb-4 h-[1px] bg-text-light" />
             </div>
           ) : (
             <p className="opacity-0">null</p>
@@ -159,7 +165,7 @@ const Comments = ({ id }) => {
                 className="w-full rounded-md border-2 border-accent   dark:focus:border-accent-2 focus:border-accent-4 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 "
                 placeholder="Treść komentarza..."
               />
-              <div className="flex gap-4 justify-center ">
+              <div className="flex gap-4 justify-center mt-2">
                 <button
                   type="submit"
                   className="w-fit m-2 drop-shadow-lg bg-green-700 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg text-text-light font-semibold"

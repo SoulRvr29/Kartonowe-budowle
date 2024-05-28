@@ -28,6 +28,18 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     JSON.parse(localStorage.getItem("autoScroll"))
   );
 
+  if (localStorage.getItem("sections") == null)
+    localStorage.setItem("sections", true);
+  const [sections, setSections] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
+
+  if (localStorage.getItem("devMode") == null)
+    localStorage.setItem("devMode", false);
+  const [devMode, setDevMode] = useState(
+    JSON.parse(localStorage.getItem("devMode"))
+  );
+
   const titleAnimation = () => {
     const title = document.querySelectorAll("h1 div");
     let timeout = 100;
@@ -98,6 +110,8 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     localStorage.setItem("banner", bannerState);
     localStorage.setItem("overlap", overlap);
     localStorage.setItem("autoScroll", autoScroll);
+    localStorage.setItem("sections", sections);
+    localStorage.setItem("devMode", devMode);
   };
 
   const [settingsState, setSettingsState] = useState(false);
@@ -176,6 +190,10 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           autoScroll={autoScroll}
           setAutoScroll={setAutoScroll}
           saveSettings={saveSettings}
+          sections={sections}
+          setSections={setSections}
+          devMode={devMode}
+          setDevMode={setDevMode}
         />
       )}
     </div>

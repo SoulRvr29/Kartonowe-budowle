@@ -4,7 +4,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const PhantomF4History = ({ id }) => {
-  const [historyState, setHistoryState] = useState(true);
+  const [historyState, setHistoryState] = useState(
+    JSON.parse(localStorage.getItem("sections"))
+  );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
     "models/predator/Predator-1987.webp",

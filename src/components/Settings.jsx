@@ -14,8 +14,14 @@ const Settings = ({
   saveSettings,
   autoScroll,
   setAutoScroll,
+  sections,
+  setSections,
+  devMode,
+  setDevMode,
 }) => {
   const [confirm, setconfirm] = useState(false);
+  const [devInput, setDevInput] = useState(false);
+  const [devPassword, setDevPassword] = useState("");
   return (
     <>
       <div
@@ -71,7 +77,7 @@ const Settings = ({
               </button>
             </li>
             {/* AUTOPRZEWIJANIE */}
-            <li className="rounded-md max-sm:hidden flex justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
+            <li className="rounded-md flex justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
               Autoprzewijanie:{" "}
               <button
                 className=" dark:border-text-dark w-24 rounded-[4px] pb-[2px] px-2 dark:hover:text-text-dark dark:hover:bg-text-light dark:bg-text-dark bg-text-light bg-opacity-60 hover:text-text-light hover:bg-text-dark hover:bg-opacity-60 transition-colors"
@@ -79,6 +85,73 @@ const Settings = ({
               >
                 {autoScroll ? "włączone" : "wyłączone"}
               </button>
+            </li>
+            {/* SEKCJE */}
+            <li className="rounded-md flex justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
+              Zwijanie sekcji:{" "}
+              <button
+                className=" dark:border-text-dark w-24 rounded-[4px] pb-[2px] px-2 dark:hover:text-text-dark dark:hover:bg-text-light dark:bg-text-dark bg-text-light bg-opacity-60 hover:text-text-light hover:bg-text-dark hover:bg-opacity-60 transition-colors"
+                onClick={() => setSections(!sections)}
+              >
+                {sections ? "wyłączone" : "włączone"}
+              </button>
+            </li>
+            {/* DEV MODE */}
+            <li className="rounded-md gap-1 flex flex-col justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
+              <div className="flex justify-between">
+                Tryb Dev:{" "}
+                <button
+                  className=" dark:border-text-dark w-24 rounded-[4px] pb-[2px] px-2 dark:hover:text-text-dark dark:hover:bg-text-light dark:bg-text-dark bg-text-light bg-opacity-60 hover:text-text-light hover:bg-text-dark hover:bg-opacity-60 transition-colors"
+                  onClick={() => {
+                    if (devMode === true) {
+                      setDevMode(false);
+                      setDevInput(false);
+                    } else setDevInput(!devInput);
+                  }}
+                >
+                  {devMode ? "włączony" : "wyłączony"}
+                </button>
+              </div>
+              {devInput && (
+                <form
+                  className="flex relative"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setDevPassword("");
+                    if (devPassword === import.meta.env.VITE_DEV_PASSWORD) {
+                      setDevMode(true);
+                      setDevInput(false);
+                    } else {
+                      setDevPassword("Błędne hasło");
+                      setTimeout(() => {
+                        setDevPassword("");
+                      }, 1000);
+                    }
+                  }}
+                >
+                  <input
+                    onChange={(e) => setDevPassword(e.target.value)}
+                    value={devPassword}
+                    className={
+                      "rounded-sm rounded-r-md px-1 w-full h-6 pr-12 " +
+                      (devPassword == "Błędne hasło"
+                        ? " text-accent-4"
+                        : " text-text-dark")
+                    }
+                    type="text"
+                    placeholder="Podaj hasło"
+                    name="dev"
+                    id="dev"
+                  />
+                  <button
+                    type="submit"
+                    className="absolute top-0 right-0 drop-shadow-lg h-6 bg-accent-4 py-1 px-2 grid place-content-center hover:brightness-125 text-lg rounded-sm rounded-l-none"
+                  >
+                    {" "}
+                    OK
+                  </button>
+                </form>
+              )}
             </li>
             {/* PRZYCISKI ZAPISZ / ZAMKNIJ */}
             <div className="flex justify-center gap-6 px-8 max-sm:px-0 pt-3 text-white">
