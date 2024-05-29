@@ -22,6 +22,7 @@ const Settings = ({
   const [confirm, setconfirm] = useState(false);
   const [devInput, setDevInput] = useState(false);
   const [devPassword, setDevPassword] = useState("");
+  const [devPlaceholder, setDevPalaceholder] = useState("Podaj hasło");
   return (
     <>
       <div
@@ -119,12 +120,16 @@ const Settings = ({
                     e.preventDefault();
                     setDevPassword("");
                     if (devPassword === import.meta.env.VITE_DEV_PASSWORD) {
-                      setDevMode(true);
-                      setDevInput(false);
-                    } else {
-                      setDevPassword("Błędne hasło");
+                      setDevPalaceholder("Hasło prawidłowe");
                       setTimeout(() => {
-                        setDevPassword("");
+                        setDevPalaceholder("Podaj hasło");
+                        setDevMode(true);
+                        setDevInput(false);
+                      }, 1000);
+                    } else {
+                      setDevPalaceholder("Błędne hasło");
+                      setTimeout(() => {
+                        setDevPalaceholder("Podaj hasło");
                       }, 1000);
                     }
                   }}
@@ -138,8 +143,8 @@ const Settings = ({
                         ? " text-accent-4"
                         : " text-text-dark")
                     }
-                    type="text"
-                    placeholder="Podaj hasło"
+                    type="password"
+                    placeholder={devPlaceholder}
                     name="dev"
                     id="dev"
                   />

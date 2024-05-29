@@ -239,3 +239,20 @@
 .leaflet-popup-content a:hover {
   color: var(--accent);
 }
+
+.comment {
+  animation: comments-fade-in 1s forwards;
+}
+
+@keyframes comments-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  -webkit-user-drag: none;
+}

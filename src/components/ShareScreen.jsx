@@ -7,7 +7,7 @@ const ShareLi = ({ type, link }) => {
   return (
     <li className="relative flex-col items-center text-lg max-sm:text-xs">
       <div>
-        <div className="flex justify-between items-center max-md:w-screen max-w-2xl  mb-1 max-md:mx-8 max-md:px-4">
+        <div className="flex justify-between items-center max-md:w-screen max-w-2xl  mb-1 max-md:mx-8 max-md:px-4 text-text-light">
           <label htmlFor={type}>{type}:</label>
           <div
             className={
@@ -22,14 +22,14 @@ const ShareLi = ({ type, link }) => {
           <input
             id={type}
             onClick={(e) => e.target.select()}
-            className="w-[40rem] max-md:w-full h-10 max-md:text-sm border-accent border-2 rounded-md rounded-r-none px-2 focus:outline-none max-md:m-0 hover:border-white bg-bkg font-normal "
+            className="w-[40rem] max-md:w-full h-10 max-md:text-sm border-accent border-2 rounded-md rounded-r-none px-2 focus:outline-none max-md:m-0 hover:border-white bg-bkg font-normal text-text-light"
             type="text"
             value={link}
             autocomplete="off"
             readOnly
           />
           <div
-            className="grid place-content-center h-10 w-10 border-2 rounded-r-md border-accent border-l-0 bg-bkg hover:bg-accent cursor-pointer"
+            className="grid place-content-center h-10 w-10 border-2 rounded-r-md border-accent border-l-0 bg-bkg hover:bg-accent cursor-pointer text-text-light"
             onClick={() => {
               navigator.clipboard.writeText(link);
               setCopy(true);

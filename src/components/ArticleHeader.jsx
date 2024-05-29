@@ -9,13 +9,15 @@ const ArticleHeader = ({ id }) => {
         <div className="grad-rad grad-rad-r"></div>
       </div>
       <hr className="grad-hr" />
-      <h2 className="font-Calistoga tracking-widest text-center text-3xl  max-sm:text-xl font-semibold pt-2 px-2  dark:text-accent-2 text-accent-4 dark:drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)] drop-shadow-[1px_0px_0px_rgba(0,0,0,0.5)]">
-        {model.name} <br />
-      </h2>
-      <hr className="max-w-3xl mx-auto hr dark:bg-accent-2 bg-accent-4" />
-      <p className="max-w-3xl font-bold text-lg mx-auto text-center max-sm:text-sm px-4 drop-shadow-sm dark:text-text-light text-text-dark">
-        {model.description}
-      </p>
+      <div className="article-text">
+        <h2 className="font-Calistoga tracking-widest text-center text-3xl  max-sm:text-xl font-semibold pt-2 px-2  dark:text-accent-2 text-accent-4 dark:drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)] drop-shadow-[1px_0px_0px_rgba(0,0,0,0.5)]">
+          {model.name} <br />
+        </h2>
+        <hr className="max-w-3xl mx-auto hr dark:bg-accent-2 bg-accent-4" />
+        <p className="max-w-3xl font-bold text-lg mx-auto text-center max-sm:text-sm px-4 drop-shadow-sm dark:text-text-light text-text-dark">
+          {model.description}
+        </p>
+      </div>
       <hr className="grad-hr" />
     </header>
   );
