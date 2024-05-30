@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Settings from "./Settings";
+import Account from "./Account";
 import Timer from "../components/Timer";
-import { FaHome, FaLightbulb, FaInfoCircle } from "react-icons/fa";
+import { FaHome, FaLightbulb, FaInfoCircle, FaUser } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
+import axios from "axios";
 
 function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const darkModeCheck = window.matchMedia(
@@ -115,6 +117,43 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   };
 
   const [settingsState, setSettingsState] = useState(false);
+  const [accountState, setAccountState] = useState(false);
+  const [accountExist, setAccountExist] = useState(false);
+  const [loginRegister, setLoginRegister] = useState(true);
+  const [confirm, setConfirm] = useState(false);
+
+  const apiURL = "https://kartonowe-budowle-mongo-db-api.vercel.app/api/users";
+  // "http://localhost:5000/api/users";
+
+  const registerSubmit = async (newUser) => {
+    try {
+      const response = await axios.post(`${apiURL}`, newUser);
+      setAccountExist(false);
+      console.log(response.data);
+      setConfirm(true);
+      setTimeout(() => {
+        setConfirm(false);
+        setAccountState(false);
+      }, 1000);
+    } catch (error) {
+      setAccountExist(true);
+      console.error("Error sending data: ", error);
+    }
+  };
+
+  const loginSubmit = async (user) => {
+    try {
+      const response = await axios.get(`${apiURL}`);
+      const data = response.data;
+      data.forEach((item) => {
+        if (item.login === user.login) console.log("login exist");
+      });
+      // console.log(data);
+    } catch (error) {
+      console.error("Error getting data: ", error);
+    }
+  };
+
   return (
     <div className="relative">
       <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
@@ -137,6 +176,14 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         </div>
         {/* right side */}
         <div className="flex gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
+          {" "}
+          <button title="konto" onClick={() => setAccountState(!accountState)}>
+            <FaUser
+              className="header-icon transition-all"
+              size={18}
+              color="var(--icon-gray)"
+            />
+          </button>
           <button
             title="ustawienia"
             onClick={() => setSettingsState(!settingsState)}
@@ -194,6 +241,17 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           setSections={setSections}
           devMode={devMode}
           setDevMode={setDevMode}
+        />
+      )}
+      {accountState && (
+        <Account
+          setAccountState={setAccountState}
+          registerSubmit={registerSubmit}
+          loginSubmit={loginSubmit}
+          accountExist={accountExist}
+          confirm={confirm}
+          loginRegister={loginRegister}
+          setLoginRegister={setLoginRegister}
         />
       )}
     </div>
