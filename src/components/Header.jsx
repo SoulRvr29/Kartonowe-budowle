@@ -121,6 +121,9 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const [accountExist, setAccountExist] = useState(false);
   const [loginRegister, setLoginRegister] = useState(true);
   const [confirm, setConfirm] = useState(false);
+  const [isLogged, setIsLogged] = useState(false);
+  const [userData, setUserData] = useState({});
+  const [loginError, setLoginError] = useState(false);
 
   const apiURL = "https://kartonowe-budowle-mongo-db-api.vercel.app/api/users";
   // "http://localhost:5000/api/users";
@@ -133,7 +136,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
       setConfirm(true);
       setTimeout(() => {
         setConfirm(false);
-        setAccountState(false);
+        setLoginRegister(true);
       }, 1000);
     } catch (error) {
       setAccountExist(true);
@@ -143,13 +146,22 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
 
   const loginSubmit = async (user) => {
     try {
-      const response = await axios.get(`${apiURL}`);
-      const data = response.data;
-      data.forEach((item) => {
-        if (item.login === user.login) console.log("login exist");
-      });
-      // console.log(data);
+      const response = await axios.post(`${apiURL}/verify`, user);
+      const data = await response.data;
+      if (data.verify) {
+        setLoginError(false);
+        setConfirm(true);
+        setUserData(data);
+        setTimeout(() => {
+          setConfirm(false);
+          setIsLogged(true);
+        }, 1000);
+      } else {
+        setConfirm(false);
+        setLoginError(true);
+      }
     } catch (error) {
+      setLoginError(true);
       console.error("Error getting data: ", error);
     }
   };
@@ -175,13 +187,22 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           <h1 className=" text-accent dark:brightness-100 dark:drop-shadow-[2px_0px_0px_rgba(255,255,255,0.8)] max-sm:dark:drop-shadow-[1px_0px_0px_rgba(255,255,255,0.8)] drop-shadow-[1px_1px_0px_rgba(0,0,0,0.8)] brightness-90 text-header font-bold uppercase p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[560px]:text-[7vw] max-[560px]:-mb-1"></h1>
         </div>
         {/* right side */}
-        <div className="flex gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
+        <div className="relative flex items-center gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
           {" "}
-          <button title="konto" onClick={() => setAccountState(!accountState)}>
+          {isLogged && (
+            <div className="text-xs font-bold text-white dark:text-accent max-md:hidden">
+              {userData.login}
+            </div>
+          )}
+          <button
+            className="dev "
+            title="konto"
+            onClick={() => setAccountState(!accountState)}
+          >
             <FaUser
               className="header-icon transition-all"
               size={18}
-              color="var(--icon-gray)"
+              color={isLogged ? "var(--accent)" : "var(--icon-gray)"}
             />
           </button>
           <button
@@ -252,6 +273,11 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           confirm={confirm}
           loginRegister={loginRegister}
           setLoginRegister={setLoginRegister}
+          isLogged={isLogged}
+          setIsLogged={setIsLogged}
+          userData={userData}
+          loginError={loginError}
+          setLoginError={setLoginError}
         />
       )}
     </div>

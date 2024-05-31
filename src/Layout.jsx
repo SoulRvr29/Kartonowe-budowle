@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
@@ -20,6 +20,19 @@ const Layout = () => {
   const [bannerState, setBannerState] = useState(
     JSON.parse(localStorage.getItem("banner"))
   );
+
+  useEffect(() => {
+    if (localStorage.getItem("devMode") == "false") {
+      document
+        .querySelectorAll(".dev")
+        .forEach((item) => (item.style.display = "none"));
+    } else {
+      document
+        .querySelectorAll(".dev")
+        .forEach((item) => (item.style.display = " block"));
+    }
+  }, []);
+
   return (
     <>
       <div className="bkg-texture fixed top-0 left-0 w-screen h-screen flex justify-center -z-20"></div>

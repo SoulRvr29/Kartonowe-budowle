@@ -117,14 +117,13 @@ const Comments = ({ id }) => {
                         <p className="m-0">
                           {item.createdAt && item.createdAt.slice(11, 19)}
                         </p>
-                        {localStorage.getItem("devMode") === "true" && (
-                          <button
-                            className="hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:right-2 max-sm:top-4 "
-                            onClick={() => deleteComment(item["_id"])}
-                          >
-                            <FaTrashAlt className="max-sm:text-lg" />
-                          </button>
-                        )}
+
+                        <button
+                          className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:right-2 max-sm:top-4 "
+                          onClick={() => deleteComment(item["_id"])}
+                        >
+                          <FaTrashAlt className="max-sm:text-lg" />
+                        </button>
                       </div>
                     </div>
                     <pre className="my-1 mx-2 text-left whitespace-pre-wrap">
