@@ -11,7 +11,6 @@ const Comments = ({ id }) => {
     JSON.parse(localStorage.getItem("sections"))
   );
   const [inputState, setInputState] = useState(false);
-  const [userName, setUserName] = useState("");
   const [newComment, setNewComment] = useState("");
   const sectionName = modelsData.filter((item) => item.id === id)[0].component;
   const apiURL =
@@ -20,6 +19,7 @@ const Comments = ({ id }) => {
   const [apiData, setApiData] = useState([]);
   const [SectionID, setSectionID] = useState("");
   const [visibleComments, setVisibleComments] = useState(-5);
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
   const getComments = () => {
     axios
@@ -41,15 +41,16 @@ const Comments = ({ id }) => {
 
   const sendNewComment = () => {
     const newData = {
-      user: userName,
+      login: user.login,
       comment: newComment,
       createdAt: new Date(new Date().getTime() + 7200000),
+      admin: user.admin,
     };
     axios
       .put(`${apiURL}/${SectionID}`, newData)
       .then(() => {
+        console.log(user);
         setInputState(false);
-        setUserName("");
         setNewComment("");
         getComments();
         console.log(apiData);
@@ -98,12 +99,19 @@ const Comments = ({ id }) => {
                 >
                   <div className="bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md ">
                     <div className="w-16 h-16 max-sm:w-8 max-sm:h-8 grid place-content-center text-4xl dark:bg-accent bg-white bg-opacity-40 rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga ">
-                      {item.user && item.user.at(0)}
+                      {item.login && item.login.at(0)}
                     </div>
                   </div>
                   <div className="w-full bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md">
                     <div className="flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md">
-                      <p className="m-0 font-bold">{item.user}</p>
+                      <div className="font-bold flex">
+                        {item.login}
+                        {item.admin && (
+                          <div className="text-accent-4 bg-white bg-opacity-75 px-1 rounded-md scale-[70%]">
+                            Admin
+                          </div>
+                        )}
+                      </div>
                       <div className="flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8">
                         {/* <div className="flex gap-2 text-accent dark:text-accent-3 font-semibold">
                         {item.likes}
@@ -118,12 +126,14 @@ const Comments = ({ id }) => {
                           {item.createdAt && item.createdAt.slice(11, 19)}
                         </p>
 
-                        <button
-                          className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:right-2 max-sm:top-4 "
-                          onClick={() => deleteComment(item["_id"])}
-                        >
-                          <FaTrashAlt className="max-sm:text-lg" />
-                        </button>
+                        {localStorage.getItem("devMode") == "true" && (
+                          <button
+                            className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:right-2 max-sm:top-4 "
+                            onClick={() => deleteComment(item["_id"])}
+                          >
+                            <FaTrashAlt className="max-sm:text-lg" />
+                          </button>
+                        )}
                       </div>
                     </div>
                     <pre className="my-1 mx-2 text-left whitespace-pre-wrap">
@@ -166,7 +176,10 @@ const Comments = ({ id }) => {
               }}
               className="grid"
             >
-              <input
+              <div className="text-lg dark:text-accent font-bold">
+                {user.login}
+              </div>
+              {/* <input
                 onChange={(e) => setUserName(e.target.value)}
                 type="text"
                 name="user"
@@ -174,7 +187,7 @@ const Comments = ({ id }) => {
                 placeholder="Nazwa użytkownika"
                 required
                 className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
-              />
+              /> */}
               <textarea
                 onChange={(e) => setNewComment(e.target.value)}
                 name="newComment"
@@ -205,16 +218,23 @@ const Comments = ({ id }) => {
           )}
           {!inputState && !loadingIcon && (
             <div className="w-full flex justify-center ">
-              <button
-                onClick={() => {
-                  setInputState(true);
-                }}
-                className="w-fit m-2 drop-shadow-lg bg-accent-3 dark:bg-accent font-semibold py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg "
-              >
-                {apiData.length
-                  ? "Dodaj swój komentarz"
-                  : "Skomentuj jako pierwszy"}
-              </button>
+              {user ? (
+                <button
+                  onClick={() => {
+                    setUser(JSON.parse(localStorage.getItem("user")));
+                    setInputState(true);
+                  }}
+                  className="w-fit m-2 drop-shadow-lg bg-accent-3 dark:bg-accent font-semibold py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg "
+                >
+                  {apiData.length
+                    ? "Dodaj swój komentarz"
+                    : "Skomentuj jako pierwszy"}
+                </button>
+              ) : (
+                <div className="font-semibold">
+                  Zaloguj się by dodać komentarz
+                </div>
+              )}
             </div>
           )}
         </div>

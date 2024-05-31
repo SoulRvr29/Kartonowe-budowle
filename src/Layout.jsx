@@ -21,18 +21,6 @@ const Layout = () => {
     JSON.parse(localStorage.getItem("banner"))
   );
 
-  useEffect(() => {
-    if (localStorage.getItem("devMode") == "false") {
-      document
-        .querySelectorAll(".dev")
-        .forEach((item) => (item.style.display = "none"));
-    } else {
-      document
-        .querySelectorAll(".dev")
-        .forEach((item) => (item.style.display = " block"));
-    }
-  }, []);
-
   return (
     <>
       <div className="bkg-texture fixed top-0 left-0 w-screen h-screen flex justify-center -z-20"></div>

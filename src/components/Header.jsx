@@ -152,6 +152,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         setLoginError(false);
         setConfirm(true);
         setUserData(data);
+        localStorage.setItem("user", JSON.stringify(data));
         setTimeout(() => {
           setConfirm(false);
           setIsLogged(true);
@@ -165,6 +166,11 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
       console.error("Error getting data: ", error);
     }
   };
+
+  useEffect(() => {
+    const localUser = JSON.parse(localStorage.getItem("user"));
+    if (localUser) loginSubmit(localUser);
+  }, []);
 
   return (
     <div className="relative">

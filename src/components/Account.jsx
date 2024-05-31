@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaCheck, FaArrowRight } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 const Account = ({
   setAccountState,
@@ -84,7 +85,7 @@ const Account = ({
                     <label className="text-sm">Login:</label>
                     <input
                       onChange={(e) => setLogin(e.target.value)}
-                      className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black"
+                      className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
                       type="text"
                       value={login}
                       name="login"
@@ -99,7 +100,7 @@ const Account = ({
                       <label className="text-sm">Email:</label>
                       <input
                         onChange={(e) => setEmail(e.target.value)}
-                        className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black"
+                        className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
                         placeholder="user@example.com"
                         type="email"
                         name="email"
@@ -115,7 +116,7 @@ const Account = ({
                     <input
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black"
+                      className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
                       type="password"
                       placeholder="********"
                       title="hasło musi zawierać litery i cyfry"
@@ -131,7 +132,7 @@ const Account = ({
                       <input
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black"
+                        className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
                         type="password"
                         title="hasło musi zawierać litery i cyfry"
                         name="passwordConfirm"
@@ -189,12 +190,15 @@ const Account = ({
                   {/* PRZYCISKI ZAMKNIJ / WYLOGUJ */}
                   <div
                     onClick={() => setAccountState(false)}
-                    className="drop-shadow-lg bg-green-700 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg cursor-pointer"
+                    className="drop-shadow-lg hover:brightness-125 text-lg  cursor-pointer absolute top-[6px] right-2 text-text-light"
                   >
-                    Zamknij
+                    <IoClose size={30} />
                   </div>
                   <div
-                    onClick={() => setIsLogged(false)}
+                    onClick={() => {
+                      setIsLogged(false);
+                      localStorage.removeItem("user");
+                    }}
                     className="drop-shadow-lg  bg-accent-4 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg cursor-pointer"
                   >
                     Wyloguj
