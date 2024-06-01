@@ -195,11 +195,16 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         {/* right side */}
         <div className="relative flex items-center gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
           {" "}
-          {isLogged && (
-            <div className="text-xs font-bold text-white dark:text-accent max-md:hidden">
-              {userData.login}
-            </div>
-          )}
+          {isLogged &&
+            (userData.login.length > 10 ? (
+              <div className="text-xs font-bold text-white dark:text-accent max-md:hidden absolute -bottom-[17px] -right-[10px]">
+                {userData.login}
+              </div>
+            ) : (
+              <div className="text-xs font-bold text-white dark:text-accent max-md:hidden">
+                {userData.login}
+              </div>
+            ))}
           <button
             className="dev "
             title="konto"

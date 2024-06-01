@@ -13,18 +13,20 @@ const Comments = ({ id }) => {
   const [inputState, setInputState] = useState(false);
   const [newComment, setNewComment] = useState("");
   const sectionName = modelsData.filter((item) => item.id === id)[0].component;
-  const apiURL =
+  const apiURLcomments =
     "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
   // "http://localhost:5000/api/comments";
+
   const [apiData, setApiData] = useState([]);
   const [SectionID, setSectionID] = useState("");
   const [visibleComments, setVisibleComments] = useState(-5);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+  let userName = "Anonimowy";
 
   const getComments = () => {
     axios
 
-      .get(apiURL)
+      .get(apiURLcomments)
       .then((response) => {
         const secitionData = response.data.filter(
           (item) => item.section === sectionName
@@ -40,14 +42,19 @@ const Comments = ({ id }) => {
   };
 
   const sendNewComment = () => {
+    let admin = false;
+    if (user) {
+      admin = user.admin;
+      userName = user.login;
+    }
     const newData = {
-      login: user.login,
+      login: userName,
       comment: newComment,
       createdAt: new Date(new Date().getTime() + 7200000),
-      admin: user.admin,
+      admin: admin,
     };
     axios
-      .put(`${apiURL}/${SectionID}`, newData)
+      .put(`${apiURLcomments}/${SectionID}`, newData)
       .then(() => {
         console.log(user);
         setInputState(false);
@@ -62,7 +69,9 @@ const Comments = ({ id }) => {
 
   const deleteComment = (commentID) => {
     axios
-      .delete(`${apiURL}/${SectionID}/`, { data: { commentID: commentID } })
+      .delete(`${apiURLcomments}/${SectionID}/`, {
+        data: { commentID: commentID },
+      })
       .then(() => {
         getComments();
       })
@@ -78,6 +87,7 @@ const Comments = ({ id }) => {
   return (
     <div className="relative">
       <SectionHeader
+        sectionNumber={apiData.length}
         sectionName="Komentarze"
         sectionState={sectionState}
         setSectionState={setSectionState}
@@ -95,15 +105,38 @@ const Comments = ({ id }) => {
               .map((item, index) => (
                 <div
                   key={index}
-                  className="comment grid grid-cols-[5rem,1fr] max-sm:grid-cols-[2.8rem,1fr] gap-1 my-4"
+                  className="comment grid grid-cols-[5rem,1fr] max-sm:grid-cols-[2.8rem,1fr] gap-1 my-2"
                 >
                   <div className="bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md ">
-                    <div className="w-16 h-16 max-sm:w-8 max-sm:h-8 grid place-content-center text-4xl dark:bg-accent bg-white bg-opacity-40 rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga ">
+                    <div
+                      className={
+                        "w-16 h-16 max-sm:w-8 max-sm:h-8 grid bg-white dark:bg-accent place-content-center text-4xl rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga " +
+                        (item.login == "Anonimowy"
+                          ? " invert dark:invert-0 opacity-50 dark:opacity-80 dark:bg-bkg"
+                          : item.admin
+                            ? " bg-opacity-70 dark:bg-opacity-80"
+                            : " bg-opacity-40 dark:bg-opacity-60")
+                      }
+                    >
                       {item.login && item.login.at(0)}
+                      {/* {item.admin ? (
+                        <div className="admin-avatar w-16 h-16 rounded-full"></div>
+                      ) : (
+                        item.login && item.login.at(0)
+                      )} */}
                     </div>
                   </div>
                   <div className="w-full bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md">
-                    <div className="flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md">
+                    <div
+                      className={
+                        "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md" +
+                        (item.login == "Anonimowy"
+                          ? " opacity-60  dark:bg-bkg-light"
+                          : item.admin
+                            ? " bg-opacity-60 dark:bg-opacity-70"
+                            : "")
+                      }
+                    >
                       <div className="font-bold flex">
                         {item.login}
                         {item.admin && (
@@ -176,18 +209,23 @@ const Comments = ({ id }) => {
               }}
               className="grid"
             >
-              <div className="text-lg dark:text-accent font-bold">
-                {user.login}
-              </div>
+              <div className="flex gap-2 items-center text-lg dark:text-accent font-bold">
+                {user ? user.login : "Anonimowy"}
+                {/* {!user && (
+                  <div className="font-semibold text-xs dark:bg-accent-2 cursor-pointer dark:text-text-light bg-accent-3 px-1 py-[2px] rounded-md">
+                    Zaloguj się
+                  </div>
+                )} */}
+              </div>{" "}
               {/* <input
-                onChange={(e) => setUserName(e.target.value)}
-                type="text"
-                name="user"
-                id="user"
-                placeholder="Nazwa użytkownika"
-                required
-                className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
-              /> */}
+                  onChange={(e) => setUserName(e.target.value)}
+                  type="text"
+                  name="user"
+                  id="user"
+                  placeholder="Nazwa użytkownika"
+                  required
+                  className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
+                /> */}
               <textarea
                 onChange={(e) => setNewComment(e.target.value)}
                 name="newComment"
@@ -218,23 +256,17 @@ const Comments = ({ id }) => {
           )}
           {!inputState && !loadingIcon && (
             <div className="w-full flex justify-center ">
-              {user ? (
-                <button
-                  onClick={() => {
-                    setUser(JSON.parse(localStorage.getItem("user")));
-                    setInputState(true);
-                  }}
-                  className="w-fit m-2 drop-shadow-lg bg-accent-3 dark:bg-accent font-semibold py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg "
-                >
-                  {apiData.length
-                    ? "Dodaj swój komentarz"
-                    : "Skomentuj jako pierwszy"}
-                </button>
-              ) : (
-                <div className="font-semibold">
-                  Zaloguj się by dodać komentarz
-                </div>
-              )}
+              <button
+                onClick={() => {
+                  setUser(JSON.parse(localStorage.getItem("user")));
+                  setInputState(true);
+                }}
+                className="w-fit m-2 drop-shadow-lg bg-accent-3 dark:bg-accent font-semibold py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg "
+              >
+                {apiData.length
+                  ? "Dodaj swój komentarz"
+                  : "Skomentuj jako pierwszy"}
+              </button>
             </div>
           )}
         </div>

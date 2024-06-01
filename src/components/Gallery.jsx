@@ -110,6 +110,9 @@ const Gallery = ({ id, name }) => {
             />
           </button>
           <span className="z-10">{name === undefined ? "Galeria" : name}</span>
+          {actualSrcThumb.length > 0 && (
+            <div className="grid place-content-center ml-2 opacity-30 text-xl max-md:text-sm">{`(${actualSrcThumb.length})`}</div>
+          )}
           {/* //////////// gallery-type button //////////// */}
           <div className="flex section-list">
             {gallerySections.length > 1 &&

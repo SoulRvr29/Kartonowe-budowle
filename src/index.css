@@ -256,3 +256,8 @@
 img {
   -webkit-user-drag: none;
 }
+
+/* .admin-avatar {
+  background-image: url(/src/assets/avatar.jpg);
+  background-size: contain;
+} */

@@ -91,7 +91,8 @@ const Account = ({
                       name="login"
                       placeholder="user"
                       id="login"
-                      // minLength={3}
+                      minLength={3}
+                      maxLength={20}
                       required
                     />
                   </div>
@@ -119,10 +120,10 @@ const Account = ({
                       className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
                       type="password"
                       placeholder="********"
-                      title="hasło musi zawierać litery i cyfry"
                       name="password"
                       id="password"
                       // pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
+                      minLength={5}
                       required
                     />
                   </div>
@@ -134,11 +135,11 @@ const Account = ({
                         onChange={(e) => setConfirmPassword(e.target.value)}
                         className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
                         type="password"
-                        title="hasło musi zawierać litery i cyfry"
                         name="passwordConfirm"
                         placeholder="********"
                         id="passwordConfirm"
                         // pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
+                        minLength={5}
                         required
                       />
                     </div>

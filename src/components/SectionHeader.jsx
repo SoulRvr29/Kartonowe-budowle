@@ -1,6 +1,11 @@
 import { IoIosArrowUp } from "react-icons/io";
 
-const SectionHeader = ({ sectionState, setSectionState, sectionName }) => {
+const SectionHeader = ({
+  sectionState,
+  setSectionState,
+  sectionName,
+  sectionNumber,
+}) => {
   return (
     <div className="z-10 relative">
       <div className="absolute w-full h-full -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 -z-10"></div>
@@ -24,6 +29,9 @@ const SectionHeader = ({ sectionState, setSectionState, sectionName }) => {
             />
           </button>
           {sectionName}
+          {sectionNumber > 0 && (
+            <div className="grid place-content-center ml-2 opacity-30 text-xl">{`(${sectionNumber})`}</div>
+          )}
         </h3>
 
         <hr className="dark:bg-accent-2 bg-accent-4" />
