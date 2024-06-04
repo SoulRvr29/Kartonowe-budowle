@@ -244,6 +244,10 @@
   animation: comments-fade-in 1s forwards;
 }
 
+.comment:hover .edit-btn {
+  opacity: 1;
+}
+
 @keyframes comments-fade-in {
   from {
     opacity: 0;

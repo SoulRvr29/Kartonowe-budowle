@@ -21,7 +21,7 @@ const Comments = ({ id }) => {
   const [SectionID, setSectionID] = useState("");
   const [visibleComments, setVisibleComments] = useState(-5);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-  let userName = "Anonimowy";
+  let userName = "Bez logowania";
 
   const getComments = () => {
     axios
@@ -52,6 +52,10 @@ const Comments = ({ id }) => {
       comment: newComment,
       createdAt: new Date(new Date().getTime() + 7200000),
       admin: admin,
+      likes: {
+        quantity: 0,
+        users: [],
+      },
     };
     axios
       .put(`${apiURLcomments}/${SectionID}`, newData)
@@ -65,6 +69,20 @@ const Comments = ({ id }) => {
       .catch((error) => {
         console.error("Error sending comment: ", error);
       });
+  };
+
+  const [editComment, setEditComment] = useState(-1);
+  const [editCommentText, setEditCommentText] = useState("");
+
+  const updateComment = (comment, index) => {
+    const data = {
+      comment: comment,
+      index: index,
+    };
+    axios.put(`${apiURLcomments}/${SectionID}/update`, data).then(() => {
+      getComments();
+      setEditComment(-1);
+    });
   };
 
   const deleteComment = (commentID) => {
@@ -83,6 +101,22 @@ const Comments = ({ id }) => {
   useEffect(() => {
     getComments();
   }, []);
+
+  const [likesError, setLikesError] = useState(-1);
+  const likesHandler = (index) => {
+    const data = {
+      user: user.login,
+      index: index,
+    };
+    axios
+      .put(`${apiURLcomments}/${SectionID}/like`, data)
+      .then(() => {
+        getComments();
+      })
+      .catch((error) => {
+        console.error("Error sending comment: ", error);
+      });
+  };
 
   return (
     <div className="relative">
@@ -111,8 +145,8 @@ const Comments = ({ id }) => {
                     <div
                       className={
                         "w-16 h-16 max-sm:w-8 max-sm:h-8 grid bg-white dark:bg-accent place-content-center text-4xl rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga " +
-                        (item.login == "Anonimowy"
-                          ? " invert dark:invert-0 opacity-50 dark:opacity-80 dark:bg-bkg"
+                        (item.login == "Bez logowania"
+                          ? " invert dark:invert-0 opacity-30 dark:opacity-80 dark:bg-bkg"
                           : item.admin
                             ? " bg-opacity-70 dark:bg-opacity-80"
                             : " bg-opacity-40 dark:bg-opacity-60")
@@ -130,7 +164,7 @@ const Comments = ({ id }) => {
                     <div
                       className={
                         "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md" +
-                        (item.login == "Anonimowy"
+                        (item.login == "Bez logowania"
                           ? " opacity-60  dark:bg-bkg-light"
                           : item.admin
                             ? " bg-opacity-60 dark:bg-opacity-70"
@@ -145,11 +179,33 @@ const Comments = ({ id }) => {
                           </div>
                         )}
                       </div>
-                      <div className="flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8">
-                        {/* <div className="flex gap-2 text-accent dark:text-accent-3 font-semibold">
-                        {item.likes}
-                        <FaThumbsUp className="relative top-0.5 fill-accent dark:fill-accent-3" />
-                      </div> */}
+                      <div className="flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8 ">
+                        <div
+                          className="relative flex gap-2 text-green-700 dark:text-green-500 font-semibold hover:brightness-125 transition-all"
+                          title="polub"
+                          onClick={() => {
+                            if (user) {
+                              likesHandler(index);
+                            } else {
+                              setLikesError(index);
+                              setTimeout(() => {
+                                setLikesError(-1);
+                              }, 1000);
+                            }
+                          }}
+                        >
+                          <div
+                            className={
+                              "absolute like-prompt whitespace-nowrap -top-10 -left-16 max-sm:left-[-3.3rem] max-sm:-top-8 bg-bkg dark:bg-bkg-light dark:text-text-dark text-text-light px-2 py-[2px] rounded-md  " +
+                              (likesError === index ? " block" : " hidden")
+                            }
+                          >
+                            <div className="h-4 w-4 bg-bkg dark:bg-bkg-light -z-10 absolute -bottom-2 left-[calc(50%-8px)] rotate-45"></div>
+                            Zaloguj się by oceniać
+                          </div>
+                          {item.likes.quantity}
+                          <FaThumbsUp className="relative top-0.5 fill-green-700 dark:fill-green-500" />
+                        </div>
                         <p className="m-0 opacity-70">
                           {item.createdAt && item.createdAt.slice(8, 10)}
                           {item.createdAt && item.createdAt.slice(4, 8)}
@@ -169,10 +225,58 @@ const Comments = ({ id }) => {
                         )}
                       </div>
                     </div>
-                    <pre className="my-1 mx-2 text-left whitespace-pre-wrap">
-                      {item.comment}
-                    </pre>
+                    {editComment !== index && (
+                      <pre className="relative my-1 mx-2 text-left whitespace-pre-wrap">
+                        {item.comment}
+                        {user && user.login === item.login && (
+                          <div
+                            onClick={() => {
+                              setEditComment(index);
+                              setEditCommentText(item.comment);
+                            }}
+                            className="edit-btn absolute top-1 right-0 bg-white bg-opacity-70 font-semibold text-text-dark dark:bg-opacity-20 px-1 rounded-md  dark:text-text-light opacity-0 transition-opacity cursor-pointer"
+                          >
+                            edycja
+                          </div>
+                        )}
+                      </pre>
+                    )}
+                    {editComment === index && (
+                      <>
+                        <textarea
+                          onChange={(e) => setEditCommentText(e.target.value)}
+                          value={editCommentText}
+                          name="updateComment"
+                          id="updateComment"
+                          rows={3}
+                          required
+                          wrap="hard"
+                          className="w-full outline-none bg-transparent px-2 py-1 border-2 dark:border-accent rounded-b-md"
+                        />
+                      </>
+                    )}
                   </div>
+                  {editComment === index && (
+                    <div className=" col-span-2 w-full flex gap-4 justify-center mt-2">
+                      <button
+                        onClick={() => {
+                          updateComment(editCommentText, index);
+                        }}
+                        className="w-fit m-2 drop-shadow-lg bg-green-700 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg text-text-light font-semibold"
+                      >
+                        Aktualizuj
+                      </button>
+                      <button
+                        onClick={() => {
+                          setEditComment(-1);
+                          setEditCommentText("");
+                        }}
+                        className="w-fit m-2 drop-shadow-lg bg-accent-4 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg text-text-light font-semibold"
+                      >
+                        Anuluj
+                      </button>
+                    </div>
+                  )}
                 </div>
               ))
           ) : !loadingIcon ? (
@@ -210,7 +314,7 @@ const Comments = ({ id }) => {
               className="grid"
             >
               <div className="flex gap-2 items-center text-lg dark:text-accent font-bold">
-                {user ? user.login : "Anonimowy"}
+                {user ? user.login : "Bez logowania"}
                 {/* {!user && (
                   <div className="font-semibold text-xs dark:bg-accent-2 cursor-pointer dark:text-text-light bg-accent-3 px-1 py-[2px] rounded-md">
                     Zaloguj się
