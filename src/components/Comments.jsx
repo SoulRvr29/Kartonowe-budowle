@@ -2,7 +2,7 @@ import React from "react";
 import modelsData from "../data/models-data.json";
 import SectionHeader from "./SectionHeader";
 import { useState, useEffect } from "react";
-import { FaThumbsUp, FaTrashAlt, FaCaretDown } from "react-icons/fa";
+import { FaThumbsUp, FaTrashAlt, FaCaretUp } from "react-icons/fa";
 import axios from "axios";
 
 const Comments = ({ id }) => {
@@ -21,7 +21,7 @@ const Comments = ({ id }) => {
   const [SectionID, setSectionID] = useState("");
   const [visibleComments, setVisibleComments] = useState(-5);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-  let userName = "Bez logowania";
+  let userName = "Bez konta";
 
   const getComments = () => {
     axios
@@ -127,10 +127,24 @@ const Comments = ({ id }) => {
         setSectionState={setSectionState}
       />
       {sectionState && (
-        <div className="m-8 relative mx-auto max-w-4xl">
+        <div className="m-8 relative mx-auto max-w-4xl px-2">
           {/* loading icon */}
           {loadingIcon && (
             <div className="loading-icon absolute left-[calc(50%-24px)] top-[calc(50%-24px)] max-sm:left-[calc(50%-12px)] max-sm:top-[calc(50%-12px)] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
+          )}
+          {/* show more comments */}
+          {apiData.length > 5 && visibleComments !== 0 && (
+            <button
+              onClick={() => {
+                setVisibleComments(0);
+                console.log(visibleComments, apiData.length);
+              }}
+              className="w-full text-center mb-4 flex justify-center items-center gap-4"
+            >
+              <FaCaretUp size={30} />
+              Pokaż resztę komentarzy
+              <FaCaretUp size={30} />
+            </button>
           )}
           {/* comments list*/}
           {apiData.length > 0 ? (
@@ -145,7 +159,7 @@ const Comments = ({ id }) => {
                     <div
                       className={
                         "w-16 h-16 max-sm:w-8 max-sm:h-8 grid bg-white dark:bg-accent place-content-center text-4xl rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga " +
-                        (item.login == "Bez logowania"
+                        (item.login == "Bez konta"
                           ? " invert dark:invert-0 opacity-30 dark:opacity-80 dark:bg-bkg"
                           : item.admin
                             ? " bg-opacity-70 dark:bg-opacity-80"
@@ -164,7 +178,7 @@ const Comments = ({ id }) => {
                     <div
                       className={
                         "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md" +
-                        (item.login == "Bez logowania"
+                        (item.login == "Bez konta"
                           ? " opacity-60  dark:bg-bkg-light"
                           : item.admin
                             ? " bg-opacity-60 dark:bg-opacity-70"
@@ -179,7 +193,7 @@ const Comments = ({ id }) => {
                           </div>
                         )}
                       </div>
-                      <div className="flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8 ">
+                      <div className="relative flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8 ">
                         <div
                           className="relative flex gap-2 text-green-700 dark:text-green-500 font-semibold hover:brightness-125 transition-all"
                           title="polub"
@@ -217,10 +231,10 @@ const Comments = ({ id }) => {
 
                         {localStorage.getItem("devMode") == "true" && (
                           <button
-                            className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:right-2 max-sm:top-4 "
+                            className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:-right-9 max-sm:top-[-22px] "
                             onClick={() => deleteComment(item["_id"])}
                           >
-                            <FaTrashAlt className="max-sm:text-lg" />
+                            <FaTrashAlt className="max-sm:text-base" />
                           </button>
                         )}
                       </div>
@@ -234,12 +248,29 @@ const Comments = ({ id }) => {
                               setEditComment(index);
                               setEditCommentText(item.comment);
                             }}
-                            className="edit-btn absolute top-1 right-0 bg-white bg-opacity-70 font-semibold text-text-dark dark:bg-opacity-20 px-1 rounded-md  dark:text-text-light opacity-0 transition-opacity cursor-pointer"
+                            className={
+                              "edit-btn absolute top-1 right-0 bg-white bg-opacity-70 font-semibold text-text-dark dark:bg-opacity-20 px-1 rounded-md  dark:text-text-light opacity-0 transition-opacity cursor-pointer max-sm:opacity-100 max-sm:top-[-46px] max-sm:text-xs " +
+                              (localStorage.getItem("devMode") == "true" &&
+                                "  max-sm:right-4")
+                            }
                           >
                             edycja
                           </div>
                         )}
                       </pre>
+                    )}
+                    {item.updatedAt && (
+                      <div className="text-xs opacity-40 p-1 flex gap-1">
+                        <div>Edytowano:</div>
+                        <div>
+                          {item.updatedAt && item.updatedAt.slice(8, 10)}
+                          {item.updatedAt && item.updatedAt.slice(4, 8)}
+                          {item.updatedAt && item.updatedAt.slice(0, 4)}
+                        </div>
+                        <div>
+                          {item.updatedAt && item.updatedAt.slice(11, 19)}
+                        </div>
+                      </div>
                     )}
                     {editComment === index && (
                       <>
@@ -280,30 +311,17 @@ const Comments = ({ id }) => {
                 </div>
               ))
           ) : !loadingIcon ? (
-            <div className="flex justify-center items-center gap-2">
-              <div className="w-32 mb-4 h-[1px] bg-text-light" />
+            <div className="flex justify-center items-center gap-2 max-sm:-mt-2">
+              <div className="w-32 mb-4 h-[1px] bg-text-light max-sm:hidden" />
               <p className="text-center font-semibold whitespace-nowrap text-text-light text-lg">
                 Brak komentarzy
               </p>
-              <div className="w-32 mb-4 h-[1px] bg-text-light" />
+              <div className="w-32 mb-4 h-[1px] bg-text-light max-sm:hidden" />
             </div>
           ) : (
             <p className="opacity-0">null</p>
           )}
-          {/* show more comments */}
-          {apiData.length > 5 && visibleComments !== 0 && (
-            <button
-              onClick={() => {
-                setVisibleComments(0);
-                console.log(visibleComments, apiData.length);
-              }}
-              className="w-full text-center mb-4 flex justify-center items-center gap-4"
-            >
-              <FaCaretDown size={30} />
-              Pokaż resztę komentarzy
-              <FaCaretDown size={30} />
-            </button>
-          )}
+
           {/* new comment input */}
           {inputState && (
             <form
@@ -314,7 +332,7 @@ const Comments = ({ id }) => {
               className="grid"
             >
               <div className="flex gap-2 items-center text-lg dark:text-accent font-bold">
-                {user ? user.login : "Bez logowania"}
+                {user ? user.login : "Bez konta"}
                 {/* {!user && (
                   <div className="font-semibold text-xs dark:bg-accent-2 cursor-pointer dark:text-text-light bg-accent-3 px-1 py-[2px] rounded-md">
                     Zaloguj się

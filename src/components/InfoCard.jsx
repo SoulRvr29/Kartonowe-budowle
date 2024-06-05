@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 
 const InfoCard = ({ mapSize }) => {
   const [loadingIcon, setLoadingIcon] = useState(true);
-  const apiURL = "https://kartonowe-budowle-mongo-db-api.vercel.app/api/models";
+  const apiURL =
+    //  "http://localhost:5000/api/info";
+    "https://kartonowe-budowle-mongo-db-api.vercel.app/api/info";
   const [apiData, setApiData] = useState([]);
 
   useEffect(() => {

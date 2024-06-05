@@ -113,22 +113,80 @@ const Article = () => {
           </p>
           <PhotoView src={photosSrc[0]}>
             <LazyLoadImage
-              className="w-fit max-h-[30rem] mx-auto mb-4 cursor-pointer border-4 dark:border-accent border-[#666] "
+              className="w-fit max-h-[30rem] mx-auto mb-4 cursor-pointer "
               src={photosSrc[0]}
               alt="będzin"
               title={photosTitle[0]}
             />
           </PhotoView>
-          <div className="flex gap-2 h-8">
+          <h5 className="font-semibold text-left max-sm:text-base max-sm:leading-5">
+            Frontend strony został wykonany przy użyciu frameworka{" "}
+            <span className="text-accent brightness-90 dark:brightness-125">
+              REACT
+            </span>{" "}
+            i bibliotek:{" "}
+          </h5>
+          <ul className="list-disc list-inside mb-4">
+            <li className="text-left">
+              <span className="font-bold -ml-2">react-router-dom</span> -
+              podział na podstrony
+            </li>
+            <li className="text-left">
+              <span className="font-bold -ml-2">react-leaflet</span> -
+              interaktywne mapki
+            </li>
+            <li className="text-left">
+              <span className="font-bold -ml-2">react-photo-view</span> -
+              obsługa galerii
+            </li>
+            <li className="text-left">
+              <span className="font-bold -ml-2">
+                react-lazy-load-image-component
+              </span>{" "}
+              - optymalizacja zdjęć
+            </li>
+            <li className="text-left">
+              <span className="font-bold -ml-2">react-icons</span> - ikonki
+            </li>
+          </ul>
+          <h5 className="font-semibold text-left max-sm:text-base max-sm:leading-5">
+            Backend strony (logowanie, komentarze) zrobiłem przy użyciu
+            frameworka{" "}
+            <span className="text-accent brightness-90 dark:brightness-125">
+              Express
+            </span>{" "}
+            oraz:
+          </h5>
+          <ul className="list-disc list-inside mb-4">
+            <li className="text-left">
+              <span className="font-bold -ml-2">MongoDB</span> - baza danych
+            </li>
+            <li className="text-left">
+              <span className="font-bold -ml-2">Mongoose</span> - modelowanie
+              danych
+            </li>
+            <li className="text-left">
+              <span className="font-bold -ml-2">argon2</span> - szyfrowanie
+              haseł
+            </li>
+          </ul>
+          <p className="font-semibold">
+            Strona jest hostowana na platformie{" "}
+            <span className="text-accent brightness-90 dark:brightness-125">
+              Vercel
+            </span>
+          </p>
+          <div className="flex items-center gap-2 h-8 font-bold text-lg max-sm:text-base max-sm:leading-5">
             {/* mail icon */}
             <a title="wyślij mail" href="mailto:pawelc29@interia.pl">
               <IoIosMail
                 size={28}
                 fill="var(--icon-gray)"
-                className="header-icon hover:brightness-150 transition-all "
+                className="header-icon hover:brightness-150 transition-all dark:brightness-125"
               />
             </a>
-            <p>pawelc29@interia.pl</p>
+
+            <p className="m-0">Kontakt: pawelc29@interia.pl</p>
           </div>
         </article>
       </PhotoProvider>

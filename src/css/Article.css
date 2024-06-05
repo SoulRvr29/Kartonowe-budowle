@@ -98,29 +98,29 @@ article a:hover {
 .grad-rad {
   position: absolute;
   border-radius: 99999px;
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   opacity: 0.5;
 }
 .grad-rad-l {
-  bottom: -15rem;
-  left: -15rem;
+  top: -24rem;
+  left: -20rem;
   background-image: radial-gradient(
     circle at center,
     white 0%,
     transparent 70%
   );
-  animation: grad-l-anim 2s 0.3s forwards;
+  animation: grad-l-anim 1.5s 0.3s forwards;
 }
 .grad-rad-r {
-  top: -15rem;
-  right: -15rem;
+  bottom: -24rem;
+  right: -20rem;
   background-image: radial-gradient(
     circle at center,
     white 0%,
     transparent 70%
   );
-  animation: grad-r-anim 2s 0.3s forwards;
+  animation: grad-r-anim 1.5s 0.3s forwards;
 }
 @keyframes grad-l-anim {
   from {

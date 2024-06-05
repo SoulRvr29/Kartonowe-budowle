@@ -3,7 +3,7 @@ import modelsData from "../data/models-data.json";
 const ArticleHeader = ({ id }) => {
   const model = modelsData.filter((item) => item.id == id)[0];
   return (
-    <header className="article-header relative bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10">
+    <header className="article-header relative bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 mb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.1)] dark:via-[rgba(0,122,204,0.1)] to-transparent z-10">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="grad-rad grad-rad-l"></div>
         <div className="grad-rad grad-rad-r"></div>
