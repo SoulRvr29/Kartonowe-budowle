@@ -44,6 +44,7 @@ import PhantomF4 from "./pages/PhantomF4";
 import StarshipSN15 from "./pages/StarshipSN15";
 import Falcon9 from "./pages/Falcon9";
 import Wang from "./pages/Wang";
+import AtlasV from "./pages/AtlasV";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Layout from "./Layout";
 
@@ -84,6 +85,7 @@ function App() {
         <Route path="/StarshipSN15" element={<StarshipSN15 id={26} />} />
         <Route path="/Falcon9" element={<Falcon9 id={27} />} />
         <Route path="/Wang" element={<Wang id={28} />} />
+        <Route path="/AtlasV" element={<AtlasV id={30} />} />
         <Route path="/Oświetlenie" element={<Oświetlenie />} />
         <Route path="/Roślinność" element={<Roślinność />} />
         <Route path="/Sadzarka" element={<Sadzarka />} />

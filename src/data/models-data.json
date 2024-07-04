@@ -1279,5 +1279,34 @@
     },
     "photo": "models/wang/wang-photo",
     "description": "Ewangelicki kościół parafialny w Karpaczu w Karkonoszach, przeniesiony w 1842 z miejscowości Vang, leżącej nad jeziorem Vangsmjøsa w Norwegii."
+  },
+  {
+    "id": 30,
+    "component": "AtlasV",
+    "typ": "kosmos",
+    "oświetlenie": false,
+    "rok ukończenia": 2013,
+    "link": "/AtlasV",
+    "publisher": "model darmowy",
+    "name": "Rakieta Atlas V",
+    "card": "./cards/atlasV-card.jpg",
+    "icon": "./models-icons/atlasV-icon.png",
+    "cover": "models/atlasV/atlasV-cover.jpg",
+    "info": {
+      "Projekt": "AXM Paper Models",
+      "Skala": "1:144",
+      "Ilość stron": 4,
+      "Wysokość": "43cm",
+      "Link do pobrania": "https://www.axmpaperspacescalemodels.com/old/AtlasV.html"
+    },
+    "Galeria": {
+      "dzień": {
+        "quantity": 20,
+        "full": "./models/atlasV/full-res/atlasV-d",
+        "thumb": "./models/atlasV/thumb/atlasV-thumb-d"
+      }
+    },
+    "photo": "models/atlasV/atlasV-photo-",
+    "description": "Dwustopniowa rakieta z rodziny Atlas. Została zaprojektowana przez Lockheed Martin i jest obsługiwana przez United Launch Alliance (ULA) od 2006 roku."
   }
 ]

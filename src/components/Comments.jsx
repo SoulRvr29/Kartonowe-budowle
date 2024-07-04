@@ -16,12 +16,26 @@ const Comments = ({ id }) => {
   const apiURLcomments =
     "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
   // "http://localhost:5000/api/comments";
+  const apiURLusers =
+    "https://kartonowe-budowle-mongo-db-api.vercel.app/api/users";
+  // "http://localhost:5000/api/users";
 
   const [apiData, setApiData] = useState([]);
   const [SectionID, setSectionID] = useState("");
   const [visibleComments, setVisibleComments] = useState(-5);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-  let userName = "Bez konta";
+  const [unLoggedUserName, setUnLoggedUserName] = useState("");
+  const [usersList, setUsersList] = useState([]);
+  const getUsersList = () => {
+    axios
+      .get(apiURLusers)
+      .then((response) => {
+        setUsersList(response.data.map((item) => item.login));
+      })
+      .catch((error) => {
+        console.error("Error fetching comments: ", error);
+      });
+  };
 
   const getComments = () => {
     axios
@@ -42,6 +56,7 @@ const Comments = ({ id }) => {
   };
 
   const sendNewComment = () => {
+    let userName = unLoggedUserName;
     let admin = false;
     if (user) {
       admin = user.admin;
@@ -60,11 +75,11 @@ const Comments = ({ id }) => {
     axios
       .put(`${apiURLcomments}/${SectionID}`, newData)
       .then(() => {
-        console.log(user);
+        // console.log(user);
         setInputState(false);
         setNewComment("");
         getComments();
-        console.log(apiData);
+        // console.log(apiData);
       })
       .catch((error) => {
         console.error("Error sending comment: ", error);
@@ -100,6 +115,7 @@ const Comments = ({ id }) => {
 
   useEffect(() => {
     getComments();
+    getUsersList();
   }, []);
 
   const [likesError, setLikesError] = useState(-1);
@@ -137,7 +153,7 @@ const Comments = ({ id }) => {
             <button
               onClick={() => {
                 setVisibleComments(0);
-                console.log(visibleComments, apiData.length);
+                // console.log(visibleComments, apiData.length);
               }}
               className="w-full text-center mb-4 flex justify-center items-center gap-4"
             >
@@ -153,13 +169,14 @@ const Comments = ({ id }) => {
               .map((item, index) => (
                 <div
                   key={index}
-                  className="comment grid grid-cols-[5rem,1fr] max-sm:grid-cols-[2.8rem,1fr] gap-1 my-2"
+                  className="comment grid grid-cols-[5rem,1fr] max-md:grid-cols-[1fr] gap-1 my-2"
                 >
-                  <div className="bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md ">
+                  <div className="bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md max-md:hidden ">
                     <div
                       className={
                         "w-16 h-16 max-sm:w-8 max-sm:h-8 grid bg-white dark:bg-accent place-content-center text-4xl rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga " +
-                        (item.login == "Bez konta"
+                        // (item.login == "Bez konta"
+                        (!usersList.includes(item.login)
                           ? " invert dark:invert-0 opacity-30 dark:opacity-80 dark:bg-bkg"
                           : item.admin
                             ? " bg-opacity-70 dark:bg-opacity-80"
@@ -178,7 +195,8 @@ const Comments = ({ id }) => {
                     <div
                       className={
                         "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md" +
-                        (item.login == "Bez konta"
+                        // (item.login == "Bez konta"
+                        (!usersList.includes(item.login)
                           ? " opacity-60  dark:bg-bkg-light"
                           : item.admin
                             ? " bg-opacity-60 dark:bg-opacity-70"
@@ -259,19 +277,6 @@ const Comments = ({ id }) => {
                         )}
                       </pre>
                     )}
-                    {item.updatedAt && (
-                      <div className="text-xs opacity-40 p-1 flex gap-1">
-                        <div>Edytowano:</div>
-                        <div>
-                          {item.updatedAt && item.updatedAt.slice(8, 10)}
-                          {item.updatedAt && item.updatedAt.slice(4, 8)}
-                          {item.updatedAt && item.updatedAt.slice(0, 4)}
-                        </div>
-                        <div>
-                          {item.updatedAt && item.updatedAt.slice(11, 19)}
-                        </div>
-                      </div>
-                    )}
                     {editComment === index && (
                       <>
                         <textarea
@@ -285,6 +290,19 @@ const Comments = ({ id }) => {
                           className="w-full outline-none bg-transparent px-2 py-1 border-2 dark:border-accent rounded-b-md"
                         />
                       </>
+                    )}
+                    {item.updatedAt && (
+                      <div className="text-xs opacity-40 p-1 flex gap-1">
+                        <div>Edytowano:</div>
+                        <div>
+                          {item.updatedAt && item.updatedAt.slice(8, 10)}
+                          {item.updatedAt && item.updatedAt.slice(4, 8)}
+                          {item.updatedAt && item.updatedAt.slice(0, 4)}
+                        </div>
+                        <div>
+                          {item.updatedAt && item.updatedAt.slice(11, 19)}
+                        </div>
+                      </div>
                     )}
                   </div>
                   {editComment === index && (
@@ -327,27 +345,36 @@ const Comments = ({ id }) => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                sendNewComment();
+                if (usersList.includes(unLoggedUserName)) {
+                  alert("Nazwa użytkownika jest już zajęta");
+                } else {
+                  sendNewComment();
+                }
               }}
               className="grid"
             >
-              <div className="flex gap-2 items-center text-lg dark:text-accent font-bold">
-                {user ? user.login : "Bez konta"}
+              <div className="flex gap-2 items-center dark:text-accent font-bold">
+                {user ? (
+                  user.login
+                ) : (
+                  <input
+                    onChange={(e) => {
+                      setUnLoggedUserName(e.target.value);
+                    }}
+                    type="text"
+                    name="user"
+                    id="user"
+                    placeholder="Nazwa użytkownika"
+                    required
+                    className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
+                  />
+                )}
                 {/* {!user && (
                   <div className="font-semibold text-xs dark:bg-accent-2 cursor-pointer dark:text-text-light bg-accent-3 px-1 py-[2px] rounded-md">
                     Zaloguj się
                   </div>
                 )} */}
               </div>{" "}
-              {/* <input
-                  onChange={(e) => setUserName(e.target.value)}
-                  type="text"
-                  name="user"
-                  id="user"
-                  placeholder="Nazwa użytkownika"
-                  required
-                  className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
-                /> */}
               <textarea
                 onChange={(e) => setNewComment(e.target.value)}
                 name="newComment"

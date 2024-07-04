@@ -72,8 +72,8 @@ const Article = () => {
             <LazyLoadImage
               className="mx-auto"
               src={photosSrc[3]}
-              alt={photosTitle[3]}
-              title={photosTitle[3]}
+              alt={photosTitle[0]}
+              title={photosTitle[0]}
             />
           </PhotoView>
           <h4>Diody SMD</h4>
@@ -97,24 +97,24 @@ const Article = () => {
               <LazyLoadImage
                 className="mx-auto max-h-[22rem] max-md:max-h-none"
                 src={photosSrc[4]}
-                alt={photosTitle[4]}
-                title={photosTitle[4]}
+                alt={photosTitle[1]}
+                title={photosTitle[1]}
               />
             </PhotoView>
             <PhotoView src={photosSrc[12]}>
               <LazyLoadImage
                 className="mx-auto max-h-[22rem] max-md:max-h-none"
                 src={photosSrc[12]}
-                alt={photosTitle[12]}
-                title={photosTitle[12]}
+                alt={photosTitle[2]}
+                title={photosTitle[2]}
               />
             </PhotoView>
             <PhotoView src={photosSrc[5]}>
               <LazyLoadImage
                 className="mx-auto max-h-[22rem] max-md:max-h-none"
                 src={photosSrc[5]}
-                alt={photosTitle[5]}
-                title={photosTitle[5]}
+                alt={photosTitle[3]}
+                title={photosTitle[3]}
               />
             </PhotoView>
           </div>
@@ -127,8 +127,8 @@ const Article = () => {
               <LazyLoadImage
                 className="mx-auto max-w-[12rem]"
                 src={photosSrc[6]}
-                alt={photosTitle[6]}
-                title={photosTitle[6]}
+                alt={photosTitle[4]}
+                title={photosTitle[4]}
               />
             </PhotoView>
             R - wartość rezystora
@@ -144,8 +144,8 @@ const Article = () => {
               <LazyLoadImage
                 className="mx-auto max-w-[22rem]"
                 src={photosSrc[7]}
-                alt={photosTitle[7]}
-                title={photosTitle[7]}
+                alt={photosTitle[5]}
+                title={photosTitle[5]}
               />
             </PhotoView>
             Rezystor powinien mieć opór zawsze większy niż wskazuje wynik, czyli
@@ -172,8 +172,8 @@ const Article = () => {
             <LazyLoadImage
               className="mx-auto max-w-[30rem]"
               src={photosSrc[8]}
-              alt={photosTitle[8]}
-              title={photosTitle[8]}
+              alt={photosTitle[6]}
+              title={photosTitle[6]}
             />
           </PhotoView>
           Rezystor 330&Omega; 5% to paski: pomarańczowy, pomarańczowy, brązowy,
@@ -190,8 +190,8 @@ const Article = () => {
               <LazyLoadImage
                 className="mx-auto max-w-[30rem]"
                 src={photosSrc[9]}
-                alt={photosTitle[9]}
-                title={photosTitle[9]}
+                alt={photosTitle[7]}
+                title={photosTitle[7]}
               />
             </PhotoView>
           </p>
@@ -202,8 +202,8 @@ const Article = () => {
               <LazyLoadImage
                 className="max-w-[30rem] dark:invert"
                 src={photosSrc[10]}
-                alt={photosTitle[10]}
-                title={photosTitle[10]}
+                alt={photosTitle[8]}
+                title={photosTitle[8]}
               />
             </PhotoView>
             <ul className="list-disc ml-4">
@@ -222,8 +222,8 @@ const Article = () => {
             <LazyLoadImage
               className="max-w-[35rem] mx-auto dark:invert"
               src={photosSrc[11]}
-              alt={photosTitle[11]}
-              title={photosTitle[11]}
+              alt={photosTitle[9]}
+              title={photosTitle[9]}
             />
           </PhotoView>
         </article>{" "}
@@ -233,24 +233,24 @@ const Article = () => {
             <LazyLoadImage
               className=" max-h-[18rem] max-md:max-h-none"
               src={photosSrc[0]}
-              alt={photosTitle[0]}
-              title={photosTitle[0]}
+              alt={photosTitle[10]}
+              title={photosTitle[10]}
             />
           </PhotoView>
           <PhotoView src={photosSrc[1]}>
             <LazyLoadImage
               className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none "
               src={photosSrc[1]}
-              alt={photosTitle[1]}
-              title={photosTitle[1]}
+              alt={photosTitle[11]}
+              title={photosTitle[11]}
             />
           </PhotoView>
           <PhotoView src={photosSrc[2]}>
             <LazyLoadImage
               className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none"
               src={photosSrc[2]}
-              alt={photosTitle[2]}
-              title={photosTitle[2]}
+              alt={photosTitle[12]}
+              title={photosTitle[12]}
             />
           </PhotoView>
         </div>
