@@ -12,7 +12,7 @@ const ImagesGrid = () => {
   const randomArr = (length) => {
     let arr = [];
     while (arr.length < length) {
-      let randomArrNr = Math.floor(Math.random() * length + 1);
+      let randomArrNr = Math.floor(Math.random() * length);
       if (!arr.includes(randomArrNr)) arr.push(randomArrNr);
     }
     return arr;
@@ -67,7 +67,7 @@ const ImagesGrid = () => {
   };
 
   useEffect(() => {
-    setData(randomData(modelsData.length - 1));
+    setData(randomData(modelsData.length));
   }, []);
 
   return (

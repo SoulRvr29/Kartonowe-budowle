@@ -1173,7 +1173,7 @@
     "oświetlenie": false,
     "rok ukończenia": 2009,
     "link": "/PhantomF4",
-    "cover": "models/phantom f4/phantom f4-cover.jpg",
+    "cover": "models/phantom_f4/phantom_f4-cover.jpg",
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:33",
@@ -1190,11 +1190,11 @@
     "Galeria": {
       "dzień": {
         "quantity": 26,
-        "full": "./models/phantom f4/full-res/phantom f4-d",
-        "thumb": "./models/phantom f4/thumb/phantom f4-thumb-d"
+        "full": "./models/phantom_f4/full-res/phantom_f4-d",
+        "thumb": "./models/phantom_f4/thumb/phantom_f4-thumb-d"
       }
     },
-    "photo": "models/phantom f4/phantom f4-photo",
+    "photo": "models/phantom_f4/phantom_f4-photo",
     "description": "Dwumiejscowy, naddźwiękowy samolot myśliwsko-bombowy dalekiego zasięgu zdolny do działania w każdych warunkach pogodowych."
   },
   {
@@ -1205,6 +1205,7 @@
     "rok ukończenia": 2021,
     "link": "/StarshipSN15",
     "cover": "models/starship sn15/starship sn15-cover.jpg",
+    "position": [25.99626989, -97.15444383],
     "info": {
       "Projekt": "AXM Paper Models",
       "Skala": "1:100",
@@ -1213,15 +1214,15 @@
     },
     "name": "Rakieta Starship SN15",
     "card": "./cards/starship sn15-card.jpg",
-    "icon": "./models-icons/starship sn15-icon.png",
+    "icon": "./models-icons/starship SN15-icon.png",
     "Galeria": {
       "dzień": {
         "quantity": 15,
-        "full": "./models/starship sn15/full-res/starship sn15-d",
-        "thumb": "./models/starship sn15/thumb/starship sn15-thumb-d"
+        "full": "./models/starship_sn15/full-res/starship_sn15-d",
+        "thumb": "./models/starship_sn15/thumb/starship_sn15-thumb-d"
       }
     },
-    "photo": "models/starship sn15/starship sn15-photo",
+    "photo": "models/starship_sn15/starship_sn15-photo",
     "description": "Prototypowy statek kosmiczny opracowany przez amerykańską firmę lotniczą SpaceX."
   },
   {
@@ -1231,7 +1232,8 @@
     "oświetlenie": false,
     "rok ukończenia": 2021,
     "link": "/Falcon9",
-    "cover": "models/falcon 9/falcon 9-cover.jpg",
+    "cover": "models/falcon_9/falcon_9-cover.jpg",
+    "position": [28.60849492, -80.60394976],
     "info": {
       "Projekt": "AXM Paper Models",
       "Skala": "1:100",
@@ -1244,11 +1246,11 @@
     "Galeria": {
       "dzień": {
         "quantity": 13,
-        "full": "./models/falcon 9/full-res/falcon 9-d",
-        "thumb": "./models/falcon 9/thumb/falcon 9-thumb-d"
+        "full": "./models/falcon_9/full-res/falcon_9-d",
+        "thumb": "./models/falcon_9/thumb/falcon_9-thumb-d"
       }
     },
-    "photo": "models/falcon 9/falcon 9-photo",
+    "photo": "models/falcon_9/falcon_9-photo",
     "description": "Dwustopniowa rakieta nośna, zaprojektowana i wyprodukowana przez amerykańską firmę SpaceX, przeznaczona do wynoszenia ładunków na orbitę, misji bezzałogowych i załogowych do Międzynarodowej Stacji Kosmicznej."
   },
   {
@@ -1292,6 +1294,7 @@
     "card": "./cards/atlasV-card.jpg",
     "icon": "./models-icons/atlasV-icon.png",
     "cover": "models/atlasV/atlasV-cover.jpg",
+    "position": [28.583815537, -80.5828231],
     "info": {
       "Projekt": "AXM Paper Models",
       "Skala": "1:144",
