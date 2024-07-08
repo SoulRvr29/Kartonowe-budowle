@@ -10,9 +10,9 @@ const Article = () => {
   }, []);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "/models/oporow/night/full-res/oporow-n05.jpg",
+    "/models/oporow/night/full-res/oporow-n05.webp",
     "/models/latarnie morskie/gąski/noc/full-res/gąski-n02.jpg",
-    "/models/bedzin/night/full-res/bedzin-n06.jpg",
+    "/models/bedzin/night/full-res/bedzin-n06.webp",
     "/techSections/oświetlenie/diody.jpg",
     "/techSections/oświetlenie/latarnia.jpg",
     "/techSections/oświetlenie/SMD_2x.jpg",
@@ -22,7 +22,7 @@ const Article = () => {
     "/techSections/oświetlenie/wtyk-gniazdo.png",
     "/techSections/oświetlenie/schemat1.png",
     "/techSections/oświetlenie/schemat2.png",
-    "/models/bedzin/night/full-res/bedzin-n18.jpg",
+    "/models/bedzin/night/full-res/bedzin-n18.webp",
   ];
   const photosTitle = [
     "trzy rodzaje najczęściej używanych przeze mnie diod",
@@ -200,7 +200,7 @@ const Article = () => {
           <div className="flex gap-8 justify-center items-center flex-wrap">
             <PhotoView src={photosSrc[10]}>
               <LazyLoadImage
-                className="max-w-[30rem] dark:invert"
+                className="max-w-[30rem] "
                 src={photosSrc[10]}
                 alt={photosTitle[8]}
                 title={photosTitle[8]}
@@ -220,7 +220,7 @@ const Article = () => {
           LED, dodając kolejne diody równolegle.
           <PhotoView src={photosSrc[11]}>
             <LazyLoadImage
-              className="max-w-[35rem] mx-auto dark:invert"
+              className="max-w-[35rem] mx-auto "
               src={photosSrc[11]}
               alt={photosTitle[9]}
               title={photosTitle[9]}
@@ -231,7 +231,7 @@ const Article = () => {
         <div className="flex gap-4 justify-center flex-wrap my-8 ">
           <PhotoView src={photosSrc[0]}>
             <LazyLoadImage
-              className=" max-h-[18rem] max-md:max-h-none"
+              className=" max-h-[18rem] max-md:max-h-none cursor-pointer"
               src={photosSrc[0]}
               alt={photosTitle[10]}
               title={photosTitle[10]}
@@ -239,7 +239,7 @@ const Article = () => {
           </PhotoView>
           <PhotoView src={photosSrc[1]}>
             <LazyLoadImage
-              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none "
+              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none  cursor-pointer"
               src={photosSrc[1]}
               alt={photosTitle[11]}
               title={photosTitle[11]}
@@ -247,7 +247,7 @@ const Article = () => {
           </PhotoView>
           <PhotoView src={photosSrc[2]}>
             <LazyLoadImage
-              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none"
+              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none cursor-pointer"
               src={photosSrc[2]}
               alt={photosTitle[12]}
               title={photosTitle[12]}

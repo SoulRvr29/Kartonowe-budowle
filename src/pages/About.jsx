@@ -11,9 +11,9 @@ const Article = () => {
   }, []);
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
   const photosSrc = [
-    "./models/bedzin/day/full-res/bedzin-d01.jpg",
-    "./models/bedzin/day/full-res/bedzin-d19.jpg",
-    "./models/bedzin/day/full-res/bedzin-d27.jpg",
+    "./models/bedzin/day/full-res/bedzin-d01.webp",
+    "./models/bedzin/day/full-res/bedzin-d19.webp",
+    "./models/bedzin/day/full-res/bedzin-d27.webp",
   ];
   const photosTitle = [
     "Zamek w Będzinie",
@@ -121,60 +121,120 @@ const Article = () => {
           </PhotoView>
           <h5 className="font-semibold text-left max-sm:text-base max-sm:leading-5">
             Frontend strony został wykonany przy użyciu frameworka{" "}
-            <span className="text-accent brightness-90 dark:brightness-125">
+            <a
+              className=" text-accent brightness-75 dark:brightness-100 dark:text-accent"
+              href="https://react.dev/"
+              target="_blank"
+            >
               REACT
-            </span>{" "}
+            </a>{" "}
             i bibliotek:{" "}
           </h5>
           <ul className="list-disc list-inside mb-4">
             <li className="text-left">
-              <span className="font-bold -ml-2">react-router-dom</span> -
-              podział na podstrony
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.npmjs.com/package/react-router-dom"
+                target="_blank"
+              >
+                react-router-dom
+              </a>{" "}
+              - podział na podstrony
             </li>
             <li className="text-left">
-              <span className="font-bold -ml-2">react-leaflet</span> -
-              interaktywne mapki
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.npmjs.com/package/react-leaflet"
+                target="_blank"
+              >
+                react-leaflet
+              </a>{" "}
+              - interaktywne mapki
             </li>
             <li className="text-left">
-              <span className="font-bold -ml-2">react-photo-view</span> -
-              obsługa galerii
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.npmjs.com/package/react-photo-view"
+                target="_blank"
+              >
+                react-photo-view
+              </a>{" "}
+              - obsługa galerii
             </li>
             <li className="text-left">
-              <span className="font-bold -ml-2">
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.npmjs.com/package/react-lazy-load-image-component"
+                target="_blank"
+              >
                 react-lazy-load-image-component
-              </span>{" "}
+              </a>{" "}
               - optymalizacja zdjęć
             </li>
             <li className="text-left">
-              <span className="font-bold -ml-2">react-icons</span> - ikonki
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.npmjs.com/package/react-icons"
+                target="_blank"
+              >
+                react-icons
+              </a>{" "}
+              - ikonki
             </li>
           </ul>
           <h5 className="font-semibold text-left max-sm:text-base max-sm:leading-5">
-            Backend strony (logowanie, komentarze) zrobiłem przy użyciu
+            Backend strony (logowanie, komentarze) został wykonany przy użyciu
             frameworka{" "}
-            <span className="text-accent brightness-90 dark:brightness-125">
+            <a
+              className=" text-accent brightness-75 dark:brightness-100 dark:text-accent"
+              href="https://expressjs.com/"
+              target="_blank"
+            >
               Express
-            </span>{" "}
+            </a>{" "}
             oraz:
           </h5>
-          <ul className="list-disc list-inside mb-4">
+          <ul className="list-disc list-inside mb-4 ">
             <li className="text-left">
-              <span className="font-bold -ml-2">MongoDB</span> - baza danych
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.mongodb.com/"
+                target="_blank"
+              >
+                MongoDB
+              </a>{" "}
+              - baza danych
             </li>
             <li className="text-left">
-              <span className="font-bold -ml-2">Mongoose</span> - modelowanie
-              danych
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://mongoosejs.com/"
+                target="_blank"
+              >
+                Mongoose
+              </a>{" "}
+              - modelowanie danych
             </li>
             <li className="text-left">
-              <span className="font-bold -ml-2">argon2</span> - szyfrowanie
-              haseł
+              <a
+                className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
+                href="https://www.npmjs.com/package/argon2"
+                target="_blank"
+              >
+                argon2
+              </a>{" "}
+              - szyfrowanie haseł
             </li>
           </ul>
-          <p className="font-semibold">
+          <p className="font-semibold text-lg">
             Strona jest hostowana na platformie{" "}
-            <span className="text-accent brightness-90 dark:brightness-125">
+            <a
+              className=" text-accent brightness-75 dark:brightness-100 dark:text-accent"
+              href="https://vercel.com/"
+              target="_blank"
+            >
               Vercel
-            </span>
+            </a>
           </p>
           <div className="flex items-center gap-2 h-8 font-bold text-lg max-sm:text-base max-sm:leading-5">
             {/* mail icon */}
