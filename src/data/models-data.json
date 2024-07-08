@@ -25,16 +25,19 @@
     "Galeria": {
       "dzień": {
         "quantity": 58,
+        "format": ".webp",
         "full": "./models/bedzin/day/full-res/bedzin-d",
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb-d"
       },
       "noc": {
         "quantity": 39,
+        "format": ".webp",
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
       "budowa": {
         "quantity": 83,
+        "format": ".jpg",
         "full": "./models/bedzin/build/full-res/bedzin-b",
         "thumb": "./models/bedzin/build/thumb/bedzin-thumb-b"
       }
@@ -68,17 +71,20 @@
     },
     "Galeria": {
       "dzień": {
-        "quantity": 26,
+        "quantity": 33,
+        "format": ".webp",
         "full": "./models/oporow/day/full-res/oporow-d",
         "thumb": "./models/oporow/day/thumb/oporow-thumb-d"
       },
       "noc": {
-        "quantity": 20,
+        "quantity": 29,
+        "format": ".webp",
         "full": "./models/oporow/night/full-res/oporow-n",
         "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
       },
       "budowa": {
         "quantity": 69,
+        "format": ".jpg",
         "full": "./models/oporow/budowa/full-res/oporow-b",
         "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
       }
@@ -110,17 +116,20 @@
     },
     "Galeria": {
       "dzień": {
-        "quantity": 12,
+        "quantity": 32,
+        "format": ".webp",
         "full": "./models/sandomierz/ratusz/dzień/full-res/ratusz-d",
         "thumb": "./models/sandomierz/ratusz/dzień/thumb/ratusz-thumb-d"
       },
       "noc": {
-        "quantity": 17,
+        "quantity": 18,
+        "format": ".webp",
         "full": "./models/sandomierz/ratusz/noc/full-res/ratusz-n",
         "thumb": "./models/sandomierz/ratusz/noc/thumb/ratusz-thumb-n"
       },
       "budowa": {
         "quantity": 24,
+        "format": ".jpg",
         "full": "./models/sandomierz/ratusz/budowa/full-res/ratusz-b",
         "thumb": "./models/sandomierz/ratusz/budowa/thumb/ratusz-thumb-b"
       }
@@ -154,11 +163,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 6,
+        "format": ".jpg",
         "full": "./models/sandomierz/wieża/dzień/full-res/wieża-d",
         "thumb": "./models/sandomierz/wieża/dzień/thumb/wieża-thumb-d"
       },
       "budowa": {
         "quantity": 17,
+        "format": ".jpg",
         "full": "./models/sandomierz/wieża/budowa/full-res/wieża-b",
         "thumb": "./models/sandomierz/wieża/budowa/thumb/wieża-thumb-b"
       }
@@ -209,16 +220,19 @@
     "Galeria": {
       "dzień": {
         "quantity": 17,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/stilo/day/full-res/stilo-d",
         "thumb": "./models/latarnie morskie/stilo/day/thumb/stilo-thumb-d"
       },
       "noc": {
         "quantity": 5,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/stilo/night/full-res/stilo-n",
         "thumb": "./models/latarnie morskie/stilo/night/thumb/stilo-thumb-n"
       },
       "budowa": {
         "quantity": 6,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/stilo/budowa/full-res/stilo-b",
         "thumb": "./models/latarnie morskie/stilo/budowa/thumb/stilo-thumb-b"
       }
@@ -265,11 +279,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 19,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/darlowo/dzień/full-res/darłowo-d",
         "thumb": "./models/latarnie morskie/darlowo/dzień/thumb/darłowo-thumb-d"
       },
       "noc": {
         "quantity": 3,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/darlowo/noc/full-res/darłowo-n",
         "thumb": "./models/latarnie morskie/darlowo/noc/thumb/darłowo-thumb-n"
       }
@@ -317,11 +333,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 16,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/czołpino/dzień/full-res/czołpino-d",
         "thumb": "./models/latarnie morskie/czołpino/dzień/thumb/czołpino-thumb-d"
       },
       "budowa": {
         "quantity": 6,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/czołpino/budowa/full-res/czołpino-b",
         "thumb": "./models/latarnie morskie/czołpino/budowa/thumb/czołpino-thumb-b"
       }
@@ -369,11 +387,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 8,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/gąski/dzień/full-res/gąski-d",
         "thumb": "./models/latarnie morskie/gąski/dzień/thumb/gąski-thumb-d"
       },
       "noc": {
         "quantity": 4,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/gąski/noc/full-res/gąski-n",
         "thumb": "./models/latarnie morskie/gąski/noc/thumb/gąski-thumb-n"
       }
@@ -419,11 +439,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 14,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/hel/dzień/full-res/hel-d",
         "thumb": "./models/latarnie morskie/hel/dzień/thumb/hel-thumb-d"
       },
       "noc": {
         "quantity": 3,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/hel/noc/full-res/hel-n",
         "thumb": "./models/latarnie morskie/hel/noc/thumb/hel-thumb-n"
       }
@@ -470,6 +492,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 11,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/jarosławiec/full-res/jarosławiec-d",
         "thumb": "./models/latarnie morskie/jarosławiec/thumb/jarosławiec-thumb-d"
       }
@@ -517,11 +540,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 14,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/jastarnia/dzień/full-res/jastarnia-d",
         "thumb": "./models/latarnie morskie/jastarnia/dzień/thumb/jastarnia-thumb-d"
       },
       "zima": {
         "quantity": 5,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/jastarnia/zima/full-res/jastarnia-z",
         "thumb": "./models/latarnie morskie/jastarnia/zima/thumb/jastarnia-thumb-z"
       }
@@ -567,6 +592,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 11,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/kikut/full-res/kikut-d",
         "thumb": "./models/latarnie morskie/kikut/thumb/kikut-thumb-d"
       }
@@ -612,6 +638,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 14,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/kołobrzeg/full-res/kołobrzeg-d",
         "thumb": "./models/latarnie morskie/kołobrzeg/thumb/kołobrzeg-thumb-d"
       }
@@ -658,6 +685,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 4,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/krynica morska/full-res/krynica morska-d",
         "thumb": "./models/latarnie morskie/krynica morska/thumb/krynica morska-thumb-d"
       }
@@ -702,6 +730,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 8,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/niechorze/full-res/niechorze-d",
         "thumb": "./models/latarnie morskie/niechorze/thumb/niechorze-thumb-d"
       }
@@ -745,16 +774,19 @@
     "Galeria": {
       "dzień": {
         "quantity": 17,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/nowy port/dzień/full-res/nowy port-d",
         "thumb": "./models/latarnie morskie/nowy port/dzień/thumb/nowy port-thumb-d"
       },
       "noc": {
         "quantity": 3,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/nowy port/noc/full-res/nowy port-n",
         "thumb": "./models/latarnie morskie/nowy port/noc/thumb/nowy port-thumb-n"
       },
       "budowa": {
         "quantity": 16,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/nowy port/budowa/full-res/nowy port-b",
         "thumb": "./models/latarnie morskie/nowy port/budowa/thumb/nowy port-thumb-b"
       }
@@ -804,6 +836,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 13,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/port północny/full-res/port północny-d",
         "thumb": "./models/latarnie morskie/port północny/thumb/port północny-thumb-d"
       }
@@ -848,6 +881,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 10,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/rozewie/full-res/rozewie-d",
         "thumb": "./models/latarnie morskie/rozewie/thumb/rozewie-thumb-d"
       }
@@ -892,16 +926,19 @@
     "Galeria": {
       "dzień": {
         "quantity": 15,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/sopot/dzień/full-res/sopot-d",
         "thumb": "./models/latarnie morskie/sopot/dzień/thumb/sopot-thumb-d"
       },
       "noc": {
         "quantity": 2,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/sopot/noc/full-res/sopot-n",
         "thumb": "./models/latarnie morskie/sopot/noc/thumb/sopot-thumb-n"
       },
       "budowa": {
         "quantity": 4,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/sopot/budowa/full-res/sopot-b",
         "thumb": "./models/latarnie morskie/sopot/budowa/thumb/sopot-thumb-b"
       }
@@ -946,6 +983,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 13,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/świnoujście/full-res/świnoujście-d",
         "thumb": "./models/latarnie morskie/świnoujście/thumb/świnoujście-thumb-d"
       }
@@ -990,6 +1028,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 15,
+        "format": ".jpg",
         "full": "./models/latarnie morskie/ustka/full-res/ustka-d",
         "thumb": "./models/latarnie morskie/ustka/thumb/ustka-thumb-d"
       }
@@ -1021,11 +1060,13 @@
     "Galeria": {
       "model": {
         "quantity": 22,
+        "format": ".jpg",
         "full": "./models/curiosity/model/full-res/curiosity-m",
         "thumb": "./models/curiosity/model/thumb/curiosity-thumb-m"
       },
       "podstawka": {
         "quantity": 9,
+        "format": ".jpg",
         "full": "./models/curiosity/podstawka/full-res/curiosity-p",
         "thumb": "./models/curiosity/podstawka/thumb/curiosity-thumb-p"
       }
@@ -1059,6 +1100,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 17,
+        "format": ".jpg",
         "full": "./models/baranów/full-res/baranów-d",
         "thumb": "./models/baranów/thumb/baranów-thumb-d"
       }
@@ -1090,11 +1132,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 22,
+        "format": ".jpg",
         "full": "./models/gryfino/dzień/full-res/gryfino-d",
         "thumb": "./models/gryfino/dzień/thumb/gryfino-thumb-d"
       },
       "budowa": {
         "quantity": 18,
+        "format": ".jpg",
         "full": "./models/gryfino/budowa/full-res/gryfino-b",
         "thumb": "./models/gryfino/budowa/thumb/gryfino-thumb-b"
       }
@@ -1122,11 +1166,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 10,
+        "format": ".jpg",
         "full": "./models/mauler/dzień/full-res/mauler-d",
         "thumb": "./models/mauler/dzień/thumb/mauler-thumb-d"
       },
       "budowa": {
         "quantity": 24,
+        "format": ".jpg",
         "full": "./models/mauler/budowa/full-res/mauler-b",
         "thumb": "./models/mauler/budowa/thumb/mauler-thumb-b"
       }
@@ -1154,11 +1200,13 @@
     "Galeria": {
       "dzień": {
         "quantity": 26,
+        "format": ".jpg",
         "full": "./models/predator/dzień/full-res/predator-d",
         "thumb": "./models/predator/dzień/thumb/predator-thumb-d"
       },
       "budowa": {
         "quantity": 11,
+        "format": ".jpg",
         "full": "./models/predator/budowa/full-res/predator-b",
         "thumb": "./models/predator/budowa/thumb/predator-thumb-b"
       }
@@ -1190,6 +1238,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 26,
+        "format": ".jpg",
         "full": "./models/phantom_f4/full-res/phantom_f4-d",
         "thumb": "./models/phantom_f4/thumb/phantom_f4-thumb-d"
       }
@@ -1204,7 +1253,7 @@
     "oświetlenie": false,
     "rok ukończenia": 2021,
     "link": "/StarshipSN15",
-    "cover": "models/starship sn15/starship sn15-cover.jpg",
+    "cover": "models/starship_sn15/starship sn15-cover.jpg",
     "position": [25.99626989, -97.15444383],
     "info": {
       "Projekt": "AXM Paper Models",
@@ -1218,6 +1267,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 15,
+        "format": ".webp",
         "full": "./models/starship_sn15/full-res/starship_sn15-d",
         "thumb": "./models/starship_sn15/thumb/starship_sn15-thumb-d"
       }
@@ -1246,6 +1296,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 13,
+        "format": ".webp",
         "full": "./models/falcon_9/full-res/falcon_9-d",
         "thumb": "./models/falcon_9/thumb/falcon_9-thumb-d"
       }
@@ -1275,6 +1326,7 @@
     "Galeria": {
       "budowa": {
         "quantity": 126,
+        "format": ".jpg",
         "full": "./models/wang/build/full-res/wang-b",
         "thumb": "./models/wang/build/thumb/wang-thumb-b"
       }
@@ -1305,6 +1357,7 @@
     "Galeria": {
       "dzień": {
         "quantity": 20,
+        "format": ".jpg",
         "full": "./models/atlasV/full-res/atlasV-d",
         "thumb": "./models/atlasV/thumb/atlasV-thumb-d"
       }

@@ -38,8 +38,12 @@ const Gallery = ({ id, name }) => {
     for (let i = 1; i <= max; i++) {
       let nr = i;
       if (i < 10) nr = "0" + i;
-      srcThumb.push(model[name][section].thumb + nr + ".jpg");
-      srcFull.push(model[name][section].full + nr + ".jpg");
+      srcThumb.push(
+        model[name][section].thumb + nr + model[name][section].format
+      );
+      srcFull.push(
+        model[name][section].full + nr + model[name][section].format
+      );
     }
     setactualSrcThumb(srcThumb);
     setactualSrcFull(srcFull);

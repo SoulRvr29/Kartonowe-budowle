@@ -10,8 +10,8 @@ const StarshipSN15History = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/starship sn15/starship sn15-photo1.jpg",
-    "models/starship sn15/starship landing.gif",
+    "models/starship_sn15/starship_sn15-photo1.jpg",
+    "models/starship_sn15/starship_landing.gif",
   ];
   const photosTitle = [
     "Prototyp SN15 na stanowisku startowym",

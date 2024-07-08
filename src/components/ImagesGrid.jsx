@@ -42,11 +42,11 @@ const ImagesGrid = () => {
         thumb =
           Object.entries(photo)[randomGalleryType][1].thumb +
           randomPhotoNr +
-          ".jpg";
+          Object.entries(photo)[randomGalleryType][1].format;
         full =
           Object.entries(photo)[randomGalleryType][1].full +
           randomPhotoNr +
-          ".jpg";
+          Object.entries(photo)[randomGalleryType][1].format;
       }
       // if there is single gallery section
       else {
@@ -54,8 +54,14 @@ const ImagesGrid = () => {
           Math.random() * photo[Object.keys(photo)[0]].quantity + 1
         );
         if (randomPhotoNr < 10) randomPhotoNr = `0${randomPhotoNr}`;
-        thumb = photo[Object.keys(photo)[0]].thumb + randomPhotoNr + ".jpg";
-        full = photo[Object.keys(photo)[0]].full + randomPhotoNr + ".jpg";
+        thumb =
+          photo[Object.keys(photo)[0]].thumb +
+          randomPhotoNr +
+          photo[Object.keys(photo)[0]].format;
+        full =
+          photo[Object.keys(photo)[0]].full +
+          randomPhotoNr +
+          photo[Object.keys(photo)[0]].format;
       }
 
       let name = modelsData[arr[x]].name;
