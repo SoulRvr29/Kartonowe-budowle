@@ -8,38 +8,7 @@ const Article = () => {
   useEffect(() => {
     document.title = "Oświetlenie - Kartonowe budowle";
   }, []);
-  ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = [
-    "/models/oporow/night/full-res/oporow-n05.webp",
-    "/models/latarnie morskie/gąski/noc/full-res/gąski-n02.jpg",
-    "/models/bedzin/night/full-res/bedzin-n06.webp",
-    "/techSections/oświetlenie/diody.jpg",
-    "/techSections/oświetlenie/latarnia.jpg",
-    "/techSections/oświetlenie/SMD_2x.jpg",
-    "/techSections/oświetlenie/wzór1.png",
-    "/techSections/oświetlenie/wzór2.png",
-    "/techSections/oświetlenie/kod_paskowy.jpg",
-    "/techSections/oświetlenie/wtyk-gniazdo.png",
-    "/techSections/oświetlenie/schemat1.png",
-    "/techSections/oświetlenie/schemat2.png",
-    "/models/bedzin/night/full-res/bedzin-n18.webp",
-  ];
-  const photosTitle = [
-    "trzy rodzaje najczęściej używanych przeze mnie diod",
-    "diody SMD 0805 w latarni ulicznej",
-    "latarnia uliczna w modelu zamku w Będzinie",
-    "połączone diody SMD 3528 biała i 1206 niebieska",
-    "wzór na rezystor",
-    "wynik rezystora dla białej diody przy zasilaniu 9V ",
-    "kody paskowe rezystorów",
-    "wtyk i gniazdo DC",
-    "schemat układu z jedną diodą",
-    "schemat układu z trzema diodami",
-    "Oświetlenie zamku w Oporowie przy użyciu diod 3mm",
-    "Światło w latarni morskiej Gąski przy użyciu diody 5mm",
-    "Oświetlenie zamku w Będzinie przy użyciu diod SMD 3528",
-  ];
-  /////////////////////////////////////////////////////////////////
+
   return (
     <>
       <TechHeader title="Oświetlenie modeli" />
@@ -49,10 +18,11 @@ const Article = () => {
             <div
               className={
                 "photo-description absolute bottom-0 text-center w-full z-30 p-3 bg-black bg-opacity-40 text-text-light " +
-                (!photosTitle[index] && " hidden")
+                (!document.querySelectorAll(`article img`)[index] && " hidden")
               }
             >
-              {photosTitle[index]}
+              {document.querySelectorAll(`article img`)[index] &&
+                document.querySelectorAll(`article img`)[index].title}
             </div>
           );
         }}
@@ -66,14 +36,14 @@ const Article = () => {
             były to głównie zwykłe diody <b>3mm</b>, a jako światło w latarniach
             morskich diody <b>5mm</b>. W ostatnich modelach zacząłem używać diod{" "}
             <b>SMD</b>, które z racji mniejszych rozmiarów są dużo łatwiejsze w
-            montażu. Używam białych diod o ciepłej barwie światła.
+            montażu. Używam zazwyczaj białych diod o ciepłej barwie światła.
           </p>
-          <PhotoView src={photosSrc[3]}>
+          <PhotoView src="/techSections/oświetlenie/full-res/diody.webp">
             <LazyLoadImage
               className="mx-auto"
-              src={photosSrc[3]}
-              alt={photosTitle[0]}
-              title={photosTitle[0]}
+              src="/techSections/oświetlenie/full-res/diody.webp"
+              alt="trzy rodzaje najczęściej używanych przeze mnie diod"
+              title="trzy rodzaje najczęściej używanych przeze mnie diod"
             />
           </PhotoView>
           <h4>Diody SMD</h4>
@@ -86,49 +56,66 @@ const Article = () => {
           <p>
             Diody SMD mają bardzo szeroki zakres rozmiarów, najczęściej używam
             diod 3528. Podobna do nich jest dioda SMD 2835, która jest cieńsza,
-            ale może się łatwo stopić podczas lutowania i dlatego wolę grubszą i
+            ale łatwo topi się podczas lutowania i dlatego wolę grubszą i
             bardziej wytrzymałą SMD 3528. Numer 3528 określa wymiary diody,
             czyli 3,5mm na 2,8mm. Dla drobnych elementów, np. światła latarni
-            ulicznej w modelu zamku w Będzinie, użyłem diody SMD 0805, a
+            ulicznej w modelu zamku w Będzinie, użyłem diody SMD 0805 (tutaj
+            numer już nie określa wymiarów, które wynoszą 2mm na 1,25mm), a
             właściwie dwóch diod połączonych ze sobą.
           </p>
-          <div className="flex gap-4 flex-wrap">
-            <PhotoView src={photosSrc[4]}>
+          <div className="flex gap-4 flex-wrap justify-evenly">
+            <PhotoView src="/techSections/oświetlenie/full-res/latarnia.webp">
               <LazyLoadImage
-                className="mx-auto max-h-[22rem] max-md:max-h-none"
-                src={photosSrc[4]}
-                alt={photosTitle[1]}
-                title={photosTitle[1]}
+                className=" max-h-[18rem] max-md:max-h-none"
+                src="/techSections/oświetlenie/thumb/latarnia-thumb.webp"
+                alt="diody SMD 0805 w latarni ulicznej"
+                title="diody SMD 0805 w latarni ulicznej"
               />
             </PhotoView>
-            <PhotoView src={photosSrc[12]}>
+            <PhotoView src="models/bedzin/night/full-res/bedzin-n18.webp">
               <LazyLoadImage
-                className="mx-auto max-h-[22rem] max-md:max-h-none"
-                src={photosSrc[12]}
-                alt={photosTitle[2]}
-                title={photosTitle[2]}
-              />
-            </PhotoView>
-            <PhotoView src={photosSrc[5]}>
-              <LazyLoadImage
-                className="mx-auto max-h-[22rem] max-md:max-h-none"
-                src={photosSrc[5]}
-                alt={photosTitle[3]}
-                title={photosTitle[3]}
+                className=" max-h-[18rem] max-md:max-h-none"
+                src="models/bedzin/night/thumb/bedzin-thumb-n18.webp"
+                alt="latarnia uliczna w modelu zamku w Będzinie"
+                title="latarnia uliczna w modelu zamku w Będzinie"
               />
             </PhotoView>
           </div>
-          Do diod SMD dolutowuję przewody (0.2mm) z drutu nawojowego.
+          <p>
+            {" "}
+            Do diod SMD dolutowuję przewody (0.2mm) z drutu nawojowego, który
+            można łatwo pozyskać np. ze starych zasilaczy, silniczków. Taki drut
+            jest pokryty warstwą izolacyjną i należy zdrapać ją z końcówek przed
+            lutowaniem.
+          </p>
+          <div className="flex gap-4 flex-wrap justify-evenly">
+            <PhotoView src="/techSections/oświetlenie/full-res/SMD_2x.webp">
+              <LazyLoadImage
+                className="mx-auto max-h-[18rem] max-md:max-h-none"
+                src="/techSections/oświetlenie/thumb/SMD_2x-thumb.webp"
+                alt="połączone diody SMD 3528 biała i 1206 niebieska"
+                title="połączone diody SMD 3528 biała i 1206 niebieska"
+              />
+            </PhotoView>
+            <PhotoView src="/techSections/oświetlenie/full-res/wnętrza.webp">
+              <LazyLoadImage
+                className="mx-auto max-h-[18rem] max-md:max-h-none"
+                src="/techSections/oświetlenie/thumb/wnętrza-thumb.webp"
+                alt="Wnętrze zamku w Będzinie oświetlone diodami SMD 3528"
+                title="Wnętrze zamku w Będzinie oświetlone diodami SMD 3528"
+              />
+            </PhotoView>
+          </div>
           <h4>Dobór rezystora</h4>
           <p>
             Do każdej diody dodaję rezystor (opornik). Wartośc rezystora można
             łatwo obliczyć z poniższego wzoru:{" "}
-            <PhotoView src={photosSrc[6]}>
+            <PhotoView src="/techSections/oświetlenie/full-res/wzór1.png">
               <LazyLoadImage
                 className="mx-auto max-w-[12rem]"
-                src={photosSrc[6]}
-                alt={photosTitle[4]}
-                title={photosTitle[4]}
+                src="/techSections/oświetlenie/full-res/wzór1.png"
+                alt="wzór na rezystor"
+                title="wzór na rezystor"
               />
             </PhotoView>
             R - wartość rezystora
@@ -140,12 +127,12 @@ const Article = () => {
             Białe diody LED mają zazwyczaj napięcie przewodzenia około <b>3V</b>{" "}
             i prąd przewodzenia <b>20mA</b> (0.02A). Czyli dla zasilania{" "}
             <b>9V</b>:
-            <PhotoView src={photosSrc[7]}>
+            <PhotoView src="/techSections/oświetlenie/full-res/wzór2.png">
               <LazyLoadImage
                 className="mx-auto max-w-[22rem]"
-                src={photosSrc[7]}
-                alt={photosTitle[5]}
-                title={photosTitle[5]}
+                src="/techSections/oświetlenie/full-res/wzór2.png"
+                alt="wynik rezystora dla białej diody przy zasilaniu 9V"
+                title="wynik rezystora dla białej diody przy zasilaniu 9V"
               />
             </PhotoView>
             Rezystor powinien mieć opór zawsze większy niż wskazuje wynik, czyli
@@ -168,42 +155,48 @@ const Article = () => {
             </li>
             <li>Tolerancja, czyli dokładność wartości rezystora.</li>
           </ol>
-          <PhotoView src={photosSrc[8]}>
+          <PhotoView src="/techSections/oświetlenie/full-res/kod_paskowy.png">
             <LazyLoadImage
               className="mx-auto max-w-[30rem]"
-              src={photosSrc[8]}
-              alt={photosTitle[6]}
-              title={photosTitle[6]}
+              src="/techSections/oświetlenie/full-res/kod_paskowy.png"
+              alt="kody paskowe rezystorów"
+              title="kody paskowe rezystorów"
             />
           </PhotoView>
-          Rezystor 330&Omega; 5% to paski: pomarańczowy, pomarańczowy, brązowy,
-          złoty.
+          <p>
+            Rezystor <b>330&Omega; 5%</b> to paski:{" "}
+            <b>pomarańczowy, pomarańczowy, brązowy, złoty.</b>
+          </p>
           <h4>Zasilanie</h4>
           <p>
-            Jako źródło zasilania używam zasilacza 9V z wtykiem <b>DC 5.5mm</b>.
-            Są dwa rodzaje takich wtyków, 5.5/2.1 oraz 5.5/2.5. Lepiej zwrócić
-            na to uwagę, gdyż różnią się wielkością otworu na bolec i wtyk
-            5.5/2.1 nie wejdzie na gniazdo 5.5/2.5, a z kolei wtyk 5.5/2.5
-            wejdzie na gniazdo 5.5/2.1, ale z powodu luzu mogą nie zawsze łączyć
-            styki.
-            <PhotoView src={photosSrc[9]}>
-              <LazyLoadImage
-                className="mx-auto max-w-[30rem]"
-                src={photosSrc[9]}
-                alt={photosTitle[7]}
-                title={photosTitle[7]}
-              />
-            </PhotoView>
+            Jako źródło zasilania używam zasilacza <b>9V</b> z wtykiem{" "}
+            <b>DC 5.5mm</b>. Są dwa rodzaje takich wtyków, 5.5/2.1 oraz 5.5/2.5.
+            Lepiej zwrócić na to uwagę, gdyż różnią się wielkością otworu na
+            bolec i wtyk 5.5/2.1 nie wejdzie na gniazdo 5.5/2.5, a z kolei wtyk
+            5.5/2.5 wejdzie na gniazdo 5.5/2.1, ale z powodu luzu mogą nie
+            zawsze łączyć styki.
+          </p>
+          <PhotoView src="/techSections/oświetlenie/full-res/wtyk-gniazdo.png">
+            <LazyLoadImage
+              className="mx-auto max-w-[30rem]"
+              src="/techSections/oświetlenie/full-res/wtyk-gniazdo.png"
+              alt="wtyk i gniazdo DC"
+              title="wtyk i gniazdo DC"
+            />
+          </PhotoView>
+          <p>
+            Gniazda DC montuję tylko w większych modelach, w mniejszych jak
+            latarnie morskie zostawiam same kabelki.
           </p>
           <h4>Sterowanie jasnością</h4>
           <p>Do sterowania jasnością można użyć tego prostego układu:</p>
           <div className="flex gap-8 justify-center items-center flex-wrap">
-            <PhotoView src={photosSrc[10]}>
+            <PhotoView src="/techSections/oświetlenie/full-res/schemat1.png">
               <LazyLoadImage
                 className="max-w-[30rem] "
-                src={photosSrc[10]}
-                alt={photosTitle[8]}
-                title={photosTitle[8]}
+                src="/techSections/oświetlenie/full-res/schemat1.png"
+                alt="schemat układu z jedną diodą"
+                title="schemat układu z jedną diodą"
               />
             </PhotoView>
             <ul className="list-disc ml-4">
@@ -218,42 +211,42 @@ const Article = () => {
           <br />
           Taki układ umożliwia płynną regulację jasności, można podłączyć więcej
           LED, dodając kolejne diody równolegle.
-          <PhotoView src={photosSrc[11]}>
+          <PhotoView src="/techSections/oświetlenie/full-res/schemat2.png">
             <LazyLoadImage
               className="max-w-[35rem] mx-auto "
-              src={photosSrc[11]}
-              alt={photosTitle[9]}
-              title={photosTitle[9]}
+              src="/techSections/oświetlenie/full-res/schemat2.png"
+              alt="schemat układu z trzema diodami"
+              title="schemat układu z trzema diodami"
             />
           </PhotoView>
+          <hr className="grad-hr " />
+          <div className="flex gap-4 justify-center flex-wrap  ">
+            <PhotoView src="/models/oporow/night/full-res/oporow-n05.webp">
+              <LazyLoadImage
+                className=" max-h-[18rem] max-md:max-h-none cursor-pointer"
+                src="/models/oporow/night/thumb/oporow-thumb-n05.webp"
+                alt="Oświetlenie zamku w Oporowie przy użyciu diod 3mm (0805 w latarniach)"
+                title="Oświetlenie zamku w Oporowie przy użyciu diod 3mm (0805 w latarniach)"
+              />
+            </PhotoView>
+            <PhotoView src="/models/latarnie morskie/gąski/noc/full-res/gąski-n02.jpg">
+              <LazyLoadImage
+                className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none  cursor-pointer"
+                src="/models/latarnie morskie/gąski/noc/thumb/gąski-thumb-n02.jpg"
+                alt="Światło w latarni morskiej Gąski przy użyciu diody 5mm"
+                title="Światło w latarni morskiej Gąski przy użyciu diody 5mm"
+              />
+            </PhotoView>
+            <PhotoView src="/models/bedzin/night/full-res/bedzin-n06.webp">
+              <LazyLoadImage
+                className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none cursor-pointer"
+                src="/models/bedzin/night/thumb/bedzin-thumb-n06.webp"
+                alt="Oświetlenie zamku w Będzinie przy użyciu diod SMD 3528 (0805 na wieży)"
+                title="Oświetlenie zamku w Będzinie przy użyciu diod SMD 3528 (0805 na wieży)"
+              />
+            </PhotoView>
+          </div>
         </article>{" "}
-        <hr className="grad-hr" />
-        <div className="flex gap-4 justify-center flex-wrap my-8 ">
-          <PhotoView src={photosSrc[0]}>
-            <LazyLoadImage
-              className=" max-h-[18rem] max-md:max-h-none cursor-pointer"
-              src={photosSrc[0]}
-              alt={photosTitle[10]}
-              title={photosTitle[10]}
-            />
-          </PhotoView>
-          <PhotoView src={photosSrc[1]}>
-            <LazyLoadImage
-              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none  cursor-pointer"
-              src={photosSrc[1]}
-              alt={photosTitle[11]}
-              title={photosTitle[11]}
-            />
-          </PhotoView>
-          <PhotoView src={photosSrc[2]}>
-            <LazyLoadImage
-              className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none cursor-pointer"
-              src={photosSrc[2]}
-              alt={photosTitle[12]}
-              title={photosTitle[12]}
-            />
-          </PhotoView>
-        </div>
       </PhotoProvider>
     </>
   );
