@@ -2,7 +2,7 @@ import fs from "fs";
 import { SitemapStream, streamToPromise } from "sitemap";
 
 const sitemap = new SitemapStream({
-  hostname: "https://www.kartonowebudowle.pl/",
+  hostname: "https://www.modelcraft.pl/",
 });
 
 const routes = [
