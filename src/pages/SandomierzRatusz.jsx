@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Article = ({ id }) => {
   useEffect(() => {
-    document.title = "Ratusz w Sandomierzu - Kartonowe budowle";
+    document.title = "Ratusz w Sandomierzu - ModelCraft";
   }, []);
 
   return (

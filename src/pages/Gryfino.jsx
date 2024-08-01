@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Article = ({ id }) => {
   useEffect(() => {
-    document.title = "Kościół w Gryfinie - Kartonowe budowle";
+    document.title = "Kościół w Gryfinie - ModelCraft";
   }, []);
 
   return (

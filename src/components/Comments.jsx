@@ -63,6 +63,7 @@ const Comments = ({ id }) => {
       userName = user.login;
     }
     const newData = {
+      modelName: modelsData.filter((item) => item.id === id)[0].name,
       login: userName,
       comment: newComment,
       createdAt: new Date(new Date().getTime() + 7200000),

@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const Article = ({ id }) => {
   useEffect(() => {
-    document.title = "Nowy Port - Kartonowe budowle";
+    document.title = "Nowy Port - ModelCraft";
   }, []);
 
   return (

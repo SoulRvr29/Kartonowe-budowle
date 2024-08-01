@@ -23,6 +23,22 @@ h1 {
 h1 div {
   display: block;
   transform: rotateY(90deg);
+  background-image: linear-gradient(150deg, white 20%, #eee 60%, #555 120%);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark h1 div {
+  background-image: linear-gradient(
+    150deg,
+    white 0%,
+    var(--accent) 50%,
+    black 150%
+  );
+  filter: brightness(1.1);
+  position: relative;
 }
 
 @keyframes letter-rotate {
@@ -45,9 +61,11 @@ h1 div {
 @keyframes brightness-pulse {
   0%,
   100% {
+    color: var(--icon-gray);
     filter: brightness(100%) drop-shadow(0 0 1px rgba(255, 255, 255, 0));
   }
   50% {
+    color: var(--accent);
     filter: brightness(120%) drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   }
 }

@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Article = ({ id }) => {
   useEffect(() => {
-    document.title = "Świątynia Wang - Kartonowe budowle";
+    document.title = "Świątynia Wang - ModelCraft";
   }, []);
 
   return (

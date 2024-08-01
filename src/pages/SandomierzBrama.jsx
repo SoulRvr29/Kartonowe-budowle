@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Article = ({ id }) => {
   useEffect(() => {
-    document.title = "Brama Opatowska w Sandomierzu - Kartonowe budowle";
+    document.title = "Brama Opatowska w Sandomierzu - ModelCraft";
   }, []);
 
   return (

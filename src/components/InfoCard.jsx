@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+// import Markdown from "react-markdown";
+// import remarkGfm from "remark-gfm";
 
 const InfoCard = ({ mapSize }) => {
   const [loadingIcon, setLoadingIcon] = useState(true);
@@ -27,7 +28,20 @@ const InfoCard = ({ mapSize }) => {
       console.log("Error fetching posts: ", error);
     }
   }
+  // const markdown = `
+  // # W budowie
+  // **Świątynia Wang 1:72** - budowla jest na ukończeniu, do zrobienia trawniki, drzewka, oświetlenie wokół budowli.
+  // **Świątynia Wang 1:150** - budowla gotowa, do zrobienia drzewka.
 
+  // # Gelerie do dodania
+  // - Rakieta Saturn V
+  // - Wieżowce
+  // - Olsztyn
+  // - Wilczy Szaniec
+  // - Nowy Wiśnicz
+  // - Wawel
+  // - Samolot Mig 29UB
+  // `;
   return (
     <div
       className={
@@ -62,6 +76,9 @@ const InfoCard = ({ mapSize }) => {
           )}
         </div>
       ))}
+      {/* <Markdown className={"markdown"} remarkPlugins={[remarkGfm]}>
+        {markdown}
+      </Markdown> */}
     </div>
   );
 };

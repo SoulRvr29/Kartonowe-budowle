@@ -8,7 +8,7 @@ import InfoCard from "../components/InfoCard";
 
 const Article = () => {
   useEffect(() => {
-    document.title = "Kartonowe budowle";
+    document.title = "ModelCraft";
   }, []);
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [

@@ -80,10 +80,8 @@ const Gallery = ({ id, name }) => {
   const [shareScreen, setShareScreen] = useState(false);
 
   const makeShareLinks = (i) => {
-    const full = `https://www.kartonowebudowle.pl${actualSrcFull[i].slice(1)}`;
-    const thumb = `https://www.kartonowebudowle.pl${actualSrcThumb[i].slice(
-      1
-    )}`;
+    const full = `https://www.modelcraft.pl${actualSrcFull[i].slice(1)}`;
+    const thumb = `https://www.modelcraft.pl${actualSrcThumb[i].slice(1)}`;
     setDirectFull(full);
     setShareForum(`[url=${full}][img]${thumb}[/img][/url]`);
     setShareWebsite(

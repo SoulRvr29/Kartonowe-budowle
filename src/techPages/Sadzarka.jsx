@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const Article = () => {
   useEffect(() => {
-    document.title = "Sadzarka - Kartonowe budowle";
+    document.title = "Sadzarka - ModelCraft";
   }, []);
   return (
     <>

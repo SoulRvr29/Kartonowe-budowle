@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Article = () => {
   useEffect(() => {
-    document.title = "O autorze - Kartonowe budowle";
+    document.title = "O autorze - ModelCraft";
   }, []);
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
   const photosSrc = [

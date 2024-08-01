@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Article = ({ id }) => {
   useEffect(() => {
-    document.title = "Zamek w Oporowie - Kartonowe budowle";
+    document.title = "Zamek w Oporowie - ModelCraft";
   }, []);
 
   return (
