@@ -1,0 +1,21 @@
+.info h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid var(--accent);
+  width: fit-content;
+}
+
+.info ul {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.info li {
+  margin-left: 1.2rem;
+}
+
+.info table th,
+.info table td {
+  border: 1px solid var(--text-light);
+  padding: 0.25rem 0.5rem;
+}

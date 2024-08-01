@@ -14,6 +14,7 @@ import "./css/ScrollBar.css";
 import "./css/CustomHR.css";
 import "react-photo-view/dist/react-photo-view.css";
 import "./css/Loader.css";
+import "./css/InfoCard.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
