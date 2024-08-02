@@ -241,7 +241,7 @@ const Article = () => {
             <a title="wyślij mail" href="mailto:pawelc29@interia.pl">
               <IoIosMail
                 size={28}
-                fill="var(--icon-gray)"
+                color="var(--icon-gray)"
                 className="header-icon hover:brightness-150 transition-all dark:brightness-125"
               />
             </a>
