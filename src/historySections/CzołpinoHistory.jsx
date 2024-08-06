@@ -10,8 +10,8 @@ const CzołpinoHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/czołpino/czołpino-photo1.jpg",
-    "models/latarnie morskie/czołpino/czołpino-photo2.jpg",
+    "models/latarnie_morskie/czolpino/czolpino-photo1.jpg",
+    "models/latarnie_morskie/czolpino/czolpino-photo2.jpg",
   ];
   const photosTitle = [
     "Latarnia Czołpino około 1920-1930 roku",

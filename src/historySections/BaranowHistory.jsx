@@ -10,9 +10,9 @@ const BaranowHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/baranów/baranow-photo1.jpg",
-    "models/baranów/baranow-photo2.jpg",
-    "models/baranów/baranow-photo3.jpg",
+    "models/baranow/baranow-photo1.jpg",
+    "models/baranow/baranow-photo2.jpg",
+    "models/baranow/baranow-photo3.jpg",
   ];
   const photosTitle = ["Zamek około 1900-1904 roku", "", ""];
   /////////////////////////////////////////////////////////////////

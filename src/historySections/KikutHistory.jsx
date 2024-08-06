@@ -10,8 +10,8 @@ const KikutHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/kikut/kikut-photo1.jpg",
-    "models/latarnie morskie/kikut/kikut-photo2.jpg",
+    "models/latarnie_morskie/kikut/kikut-photo1.jpg",
+    "models/latarnie_morskie/kikut/kikut-photo2.jpg",
   ];
   const photosTitle = ["", ""];
 

@@ -10,10 +10,10 @@ const KikutHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/nowy port/nowyport-photo1.jpg",
-    "models/latarnie morskie/nowy port/nowyport-photo2.jpg",
-    "models/latarnie morskie/nowy port/nowyport-photo3.jpg",
-    "models/latarnie morskie/nowy port/nowyport-photo4.jpg",
+    "models/latarnie_morskie/nowy_port/nowyport-photo1.jpg",
+    "models/latarnie_morskie/nowy_port/nowyport-photo2.jpg",
+    "models/latarnie_morskie/nowy_port/nowyport-photo3.jpg",
+    "models/latarnie_morskie/nowy_port/nowyport-photo4.jpg",
   ];
   const photosTitle = ["Latarnia Nowy Port na początku XX wieku", "", "", ""];
 

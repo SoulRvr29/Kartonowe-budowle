@@ -10,9 +10,9 @@ const NiechorzeHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/niechorze/niechorze-photo1.jpg",
-    "models/latarnie morskie/niechorze/niechorze-photo2.jpg",
-    "models/latarnie morskie/niechorze/niechorze-photo3.jpg",
+    "models/latarnie_morskie/niechorze/niechorze-photo1.jpg",
+    "models/latarnie_morskie/niechorze/niechorze-photo2.jpg",
+    "models/latarnie_morskie/niechorze/niechorze-photo3.jpg",
   ];
   const photosTitle = ["Latarnia morska w 1905 roku"];
 

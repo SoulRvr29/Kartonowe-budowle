@@ -9,10 +9,10 @@ const GąskiHistory = ({ id }) => {
   );
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
   const photosSrc = [
-    "models/latarnie morskie/gąski/gąski-photo-1.jpg",
-    "models/latarnie morskie/gąski/gąski-photo-2.jpg",
-    "models/latarnie morskie/gąski/gąski-photo-3.jpg",
-    "models/latarnie morskie/gąski/gąski-photo-4.jpg",
+    "models/latarnie_morskie/gaski/gaski-photo-1.jpg",
+    "models/latarnie_morskie/gaski/gaski-photo-2.jpg",
+    "models/latarnie_morskie/gaski/gaski-photo-3.jpg",
+    "models/latarnie_morskie/gaski/gaski-photo-4.jpg",
   ];
   const photosTitle = [
     "Latarnia Gąski z 1904 roku",

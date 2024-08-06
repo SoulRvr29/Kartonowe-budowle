@@ -10,9 +10,9 @@ const DarłowoHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/darlowo/darłowo-photo-1.jpg",
-    "models/latarnie morskie/darlowo/darłowo-photo-2.jpg",
-    "models/latarnie morskie/darlowo/darłowo-photo-3.jpg",
+    "models/latarnie_morskie/darlowo/darlowo-photo-1.jpg",
+    "models/latarnie_morskie/darlowo/darlowo-photo-2.jpg",
+    "models/latarnie_morskie/darlowo/darlowo-photo-3.jpg",
   ];
   const photosTitle = ["Latarnia Darłowo około 1900-1903 roku", "", ""];
 

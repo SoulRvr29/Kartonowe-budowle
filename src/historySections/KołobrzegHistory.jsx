@@ -10,12 +10,12 @@ const KołobrzegHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/kołobrzeg/kołobrzeg-photo1.jpg",
-    "models/latarnie morskie/kołobrzeg/kołobrzeg-photo2.jpg",
-    "models/latarnie morskie/kołobrzeg/kołobrzeg-photo3.jpg",
-    "models/latarnie morskie/kołobrzeg/kołobrzeg-photo4.jpg",
-    "models/latarnie morskie/kołobrzeg/kołobrzeg-photo5.jpg",
-    "models/latarnie morskie/kołobrzeg/kołobrzeg-photo6.jpg",
+    "models/latarnie_morskie/kolobrzeg/kolobrzeg-photo1.jpg",
+    "models/latarnie_morskie/kolobrzeg/kolobrzeg-photo2.jpg",
+    "models/latarnie_morskie/kolobrzeg/kolobrzeg-photo3.jpg",
+    "models/latarnie_morskie/kolobrzeg/kolobrzeg-photo4.jpg",
+    "models/latarnie_morskie/kolobrzeg/kolobrzeg-photo5.jpg",
+    "models/latarnie_morskie/kolobrzeg/kolobrzeg-photo6.jpg",
   ];
   const photosTitle = [
     "Latarnia w Kołobrzegu w 1899 roku",

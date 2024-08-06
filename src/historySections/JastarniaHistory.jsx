@@ -10,9 +10,9 @@ const JastarniaHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie morskie/jastarnia/nautofon-photo.jpg",
-    "models/latarnie morskie/jastarnia/jastarnia-photo1.jpg",
-    "models/latarnie morskie/jastarnia/jastarnia-photo2.jpg",
+    "models/latarnie_morskie/jastarnia/nautofon-photo.jpg",
+    "models/latarnie_morskie/jastarnia/jastarnia-photo1.jpg",
+    "models/latarnie_morskie/jastarnia/jastarnia-photo2.jpg",
   ];
   const photosTitle = [
     "Dawny nautofon, którego części zostały wykorzystane do budowy latarni w Jastarni",

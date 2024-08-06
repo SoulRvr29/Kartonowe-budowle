@@ -38,10 +38,10 @@ const Article = () => {
             <b>SMD</b>, które z racji mniejszych rozmiarów są dużo łatwiejsze w
             montażu. Używam zazwyczaj białych diod o ciepłej barwie światła.
           </p>
-          <PhotoView src="/techSections/oświetlenie/full-res/diody.webp">
+          <PhotoView src="/techSections/oswietlenie/full-res/diody.webp">
             <LazyLoadImage
               className="mx-auto"
-              src="/techSections/oświetlenie/full-res/diody.webp"
+              src="/techSections/oswietlenie/full-res/diody.webp"
               alt="trzy rodzaje najczęściej używanych przeze mnie diod"
               title="trzy rodzaje najczęściej używanych przeze mnie diod"
             />
@@ -64,10 +64,10 @@ const Article = () => {
             właściwie dwóch diod połączonych ze sobą.
           </p>
           <div className="flex gap-4 flex-wrap justify-evenly">
-            <PhotoView src="/techSections/oświetlenie/full-res/latarnia.webp">
+            <PhotoView src="/techSections/oswietlenie/full-res/latarnia.webp">
               <LazyLoadImage
                 className=" max-h-[18rem] max-md:max-h-none"
-                src="/techSections/oświetlenie/thumb/latarnia-thumb.webp"
+                src="/techSections/oswietlenie/thumb/latarnia-thumb.webp"
                 alt="diody SMD 0805 w latarni ulicznej"
                 title="diody SMD 0805 w latarni ulicznej"
               />
@@ -89,18 +89,18 @@ const Article = () => {
             lutowaniem.
           </p>
           <div className="flex gap-4 flex-wrap justify-evenly">
-            <PhotoView src="/techSections/oświetlenie/full-res/SMD_2x.webp">
+            <PhotoView src="/techSections/oswietlenie/full-res/SMD_2x.webp">
               <LazyLoadImage
                 className="mx-auto max-h-[18rem] max-md:max-h-none"
-                src="/techSections/oświetlenie/thumb/SMD_2x-thumb.webp"
+                src="/techSections/oswietlenie/thumb/SMD_2x-thumb.webp"
                 alt="połączone diody SMD 3528 biała i 1206 niebieska"
                 title="połączone diody SMD 3528 biała i 1206 niebieska"
               />
             </PhotoView>
-            <PhotoView src="/techSections/oświetlenie/full-res/wnętrza.webp">
+            <PhotoView src="/techSections/oswietlenie/full-res/wnetrza.webp">
               <LazyLoadImage
                 className="mx-auto max-h-[18rem] max-md:max-h-none"
-                src="/techSections/oświetlenie/thumb/wnętrza-thumb.webp"
+                src="/techSections/oswietlenie/thumb/wnetrza-thumb.webp"
                 alt="Wnętrze zamku w Będzinie oświetlone diodami SMD 3528"
                 title="Wnętrze zamku w Będzinie oświetlone diodami SMD 3528"
               />
@@ -110,10 +110,10 @@ const Article = () => {
           <p>
             Do każdej diody dodaję rezystor (opornik). Wartośc rezystora można
             łatwo obliczyć z poniższego wzoru:{" "}
-            <PhotoView src="/techSections/oświetlenie/full-res/wzór1.png">
+            <PhotoView src="/techSections/oswietlenie/full-res/wzor1.png">
               <LazyLoadImage
                 className="mx-auto max-w-[12rem]"
-                src="/techSections/oświetlenie/full-res/wzór1.png"
+                src="/techSections/oswietlenie/full-res/wzor1.png"
                 alt="wzór na rezystor"
                 title="wzór na rezystor"
               />
@@ -127,10 +127,10 @@ const Article = () => {
             Białe diody LED mają zazwyczaj napięcie przewodzenia około <b>3V</b>{" "}
             i prąd przewodzenia <b>20mA</b> (0.02A). Czyli dla zasilania{" "}
             <b>9V</b>:
-            <PhotoView src="/techSections/oświetlenie/full-res/wzór2.png">
+            <PhotoView src="/techSections/oswietlenie/full-res/wzor2.png">
               <LazyLoadImage
                 className="mx-auto max-w-[22rem]"
-                src="/techSections/oświetlenie/full-res/wzór2.png"
+                src="/techSections/oswietlenie/full-res/wzor2.png"
                 alt="wynik rezystora dla białej diody przy zasilaniu 9V"
                 title="wynik rezystora dla białej diody przy zasilaniu 9V"
               />
@@ -155,10 +155,10 @@ const Article = () => {
             </li>
             <li>Tolerancja, czyli dokładność wartości rezystora.</li>
           </ol>
-          <PhotoView src="/techSections/oświetlenie/full-res/kod_paskowy.png">
+          <PhotoView src="/techSections/oswietlenie/full-res/kod_paskowy.png">
             <LazyLoadImage
               className="mx-auto max-w-[30rem]"
-              src="/techSections/oświetlenie/full-res/kod_paskowy.png"
+              src="/techSections/oswietlenie/full-res/kod_paskowy.png"
               alt="kody paskowe rezystorów"
               title="kody paskowe rezystorów"
             />
@@ -176,10 +176,10 @@ const Article = () => {
             5.5/2.5 wejdzie na gniazdo 5.5/2.1, ale z powodu luzu mogą nie
             zawsze łączyć styki.
           </p>
-          <PhotoView src="/techSections/oświetlenie/full-res/wtyk-gniazdo.png">
+          <PhotoView src="/techSections/oswietlenie/full-res/wtyk-gniazdo.png">
             <LazyLoadImage
               className="mx-auto max-w-[30rem]"
-              src="/techSections/oświetlenie/full-res/wtyk-gniazdo.png"
+              src="/techSections/oswietlenie/full-res/wtyk-gniazdo.png"
               alt="wtyk i gniazdo DC"
               title="wtyk i gniazdo DC"
             />
@@ -191,10 +191,10 @@ const Article = () => {
           <h4>Sterowanie jasnością</h4>
           <p>Do sterowania jasnością można użyć tego prostego układu:</p>
           <div className="flex gap-8 justify-center items-center flex-wrap">
-            <PhotoView src="/techSections/oświetlenie/full-res/schemat1.png">
+            <PhotoView src="/techSections/oswietlenie/full-res/schemat1.png">
               <LazyLoadImage
                 className="max-w-[30rem] "
-                src="/techSections/oświetlenie/full-res/schemat1.png"
+                src="/techSections/oswietlenie/full-res/schemat1.png"
                 alt="schemat układu z jedną diodą"
                 title="schemat układu z jedną diodą"
               />
@@ -211,10 +211,10 @@ const Article = () => {
           <br />
           Taki układ umożliwia płynną regulację jasności, można podłączyć więcej
           LED, dodając kolejne diody równolegle.
-          <PhotoView src="/techSections/oświetlenie/full-res/schemat2.png">
+          <PhotoView src="/techSections/oswietlenie/full-res/schemat2.png">
             <LazyLoadImage
               className="max-w-[35rem] mx-auto "
-              src="/techSections/oświetlenie/full-res/schemat2.png"
+              src="/techSections/oswietlenie/full-res/schemat2.png"
               alt="schemat układu z trzema diodami"
               title="schemat układu z trzema diodami"
             />
@@ -229,10 +229,10 @@ const Article = () => {
                 title="Oświetlenie zamku w Oporowie przy użyciu diod 3mm (0805 w latarniach)"
               />
             </PhotoView>
-            <PhotoView src="/models/latarnie morskie/gąski/noc/full-res/gąski-n02.jpg">
+            <PhotoView src="/models/latarnie_morskie/gaski/noc/full-res/gaski-n02.jpg">
               <LazyLoadImage
                 className=" max-h-[18rem] max-w-[20rem] max-md:max-h-none  cursor-pointer"
-                src="/models/latarnie morskie/gąski/noc/thumb/gąski-thumb-n02.jpg"
+                src="/models/latarnie_morskie/gaski/noc/thumb/gaski-thumb-n02.jpg"
                 alt="Światło w latarni morskiej Gąski przy użyciu diody 5mm"
                 title="Światło w latarni morskiej Gąski przy użyciu diody 5mm"
               />
