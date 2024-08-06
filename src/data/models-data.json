@@ -40,6 +40,11 @@
         "format": ".jpg",
         "full": "./models/bedzin/build/full-res/bedzin-b",
         "thumb": "./models/bedzin/build/thumb/bedzin-thumb-b"
+      },
+      "filmy": {
+        "quantity": 1,
+        "format": "youtube",
+        "videoId": "98O2UpxcMB0"
       }
     },
     "photo": "models/bedzin/bedzin-photo",
@@ -332,16 +337,22 @@
     },
     "Galeria": {
       "dzień": {
-        "quantity": 16,
-        "format": ".jpg",
+        "quantity": 14,
+        "format": ".webp",
         "full": "./models/latarnie morskie/czołpino/dzień/full-res/czołpino-d",
         "thumb": "./models/latarnie morskie/czołpino/dzień/thumb/czołpino-thumb-d"
       },
       "budowa": {
-        "quantity": 6,
-        "format": ".jpg",
+        "quantity": 13,
+        "format": ".webp",
         "full": "./models/latarnie morskie/czołpino/budowa/full-res/czołpino-b",
         "thumb": "./models/latarnie morskie/czołpino/budowa/thumb/czołpino-thumb-b"
+      },
+      "filmy": {
+        "quantity": 3,
+        "format": ".gif",
+        "full": "./models/latarnie morskie/czołpino/filmy/full-res/czolpino",
+        "thumb": "./models/latarnie morskie/czołpino/filmy/thumb/czolpino-thumb"
       }
     },
     "photo": "models/latarnie morskie/czołpino/czołpino-photo-",
@@ -941,6 +952,12 @@
         "format": ".jpg",
         "full": "./models/latarnie morskie/sopot/budowa/full-res/sopot-b",
         "thumb": "./models/latarnie morskie/sopot/budowa/thumb/sopot-thumb-b"
+      },
+      "filmy": {
+        "quantity": 2,
+        "format": ".gif",
+        "full": "./models/latarnie morskie/sopot/filmy/full-res/sopot",
+        "thumb": "./models/latarnie morskie/sopot/filmy/thumb/sopot-thumb"
       }
     },
     "photo": "models/latarnie morskie/sopot/sopot-photo-",

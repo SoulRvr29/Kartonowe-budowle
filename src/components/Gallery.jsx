@@ -11,6 +11,8 @@ const Gallery = ({ id, name }) => {
   const model = modelsData.filter((item) => item.id == id)[0];
   const gallerySections = Object.keys(model[name]);
 
+  // const videoId = model.Galeria.filmy.videoId || "";
+
   const [photoId, setPhotoId] = useState(1);
   const [galleryState, setGalleryState] = useState(
     JSON.parse(localStorage.getItem("sections"))
@@ -175,24 +177,25 @@ const Gallery = ({ id, name }) => {
                 : "Model w budowie"}
             </h5>
             <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
-              {actualSrcThumb.map((item, index) => {
-                return (
-                  <PhotoView key={index} src={actualSrcFull[index]}>
-                    <div className="cursor-pointer">
-                      <LazyLoadImage
-                        width={160}
-                        height={160}
-                        className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
-                        src={item}
-                        alt={model.name + " photo"}
-                        onClick={() => {
-                          makeShareLinks(index);
-                        }}
-                      />
-                    </div>
-                  </PhotoView>
-                );
-              })}
+              {model[name][actualSection].format !== "youtube" &&
+                actualSrcThumb.map((item, index) => {
+                  return (
+                    <PhotoView key={index} src={actualSrcFull[index]}>
+                      <div className="cursor-pointer">
+                        <LazyLoadImage
+                          width={160}
+                          height={160}
+                          className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
+                          src={item}
+                          alt={model.name + " photo"}
+                          onClick={() => {
+                            makeShareLinks(index);
+                          }}
+                        />
+                      </div>
+                    </PhotoView>
+                  );
+                })}
             </div>
           </PhotoProvider>
         )}
@@ -204,6 +207,22 @@ const Gallery = ({ id, name }) => {
         shareForum={shareForum}
         shareWebsite={shareWebsite}
       />
+      {model[name][actualSection].format === "youtube" &&
+        actualSection === "filmy" && (
+          <div className="flex justify-center pb-8 -mt-4">
+            <div className="w-full max-w-4xl px-4">
+              <div className="relative pb-[56.25%]">
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={`https://www.youtube.com/embed/${model.Galeria.filmy.videoId}`}
+                  title="YouTube video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        )}
     </section>
   );
 };
