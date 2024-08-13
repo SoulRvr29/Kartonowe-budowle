@@ -248,7 +248,9 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
             to="/About"
             title="o autorze"
             onClick={() => {
-              document.querySelector(".article-header").scrollIntoView();
+              if (localStorage.getItem("autoScroll") == "true") {
+                document.querySelector(".article-header").scrollIntoView();
+              }
             }}
           >
             <FaInfoCircle

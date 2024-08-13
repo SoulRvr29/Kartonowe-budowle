@@ -10,7 +10,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       className={
         "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light h-7 max-md:h-auto " +
         (activeList == name &&
-          " text-accent-4 dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-accent-4 hover:cursor-default")
+          " text-white dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-accent hover:cursor-default")
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);
@@ -32,7 +32,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
     >
       <li className="active-li ">{name}</li>
       {activeList != name && (
-        <div className="custom-underline dark:bg-accent-2 bg-accent-4 h-[2px] w-0 justify-self-center transition-all duration-300"></div>
+        <div className="custom-underline dark:bg-accent-2 bg-white h-[2px] w-0 justify-self-center transition-all duration-300"></div>
       )}
     </button>
   );
@@ -52,7 +52,7 @@ const Nav = ({ overlap, setOverlap }) => {
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
       <div
         title="ilość modeli"
-        className="absolute bottom-1 max-sm:bottom-[9px] left-0 font-bold opacity-50 w-8 text-center z-10 max-sm:text-sm"
+        className="absolute bottom-1 max-sm:bottom-[10px] left-0 max-sm:-left-1 font-bold opacity-50 w-8 text-center z-10 max-sm:text-sm text-white dark:text-text-light"
       >
         {data.length}
       </div>
@@ -166,18 +166,18 @@ const Nav = ({ overlap, setOverlap }) => {
         <button
           onMouseDown={() => {
             document.querySelector("nav").scrollLeft -=
-              navWidth.current.clientWidth;
+              navWidth.current.clientWidth / 5;
           }}
-          onMouseUp={() => {
-            document.querySelector("nav").scrollLeft -= 0;
-          }}
+          // onMouseUp={() => {
+          //   document.querySelector("nav").scrollLeft -= 0;
+          // }}
         >
           <FaCaretLeft
             size={34}
             color="var(--text-light)"
             className={
               navState
-                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
+                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent"
                 : "hidden"
             }
           />
@@ -201,18 +201,18 @@ const Nav = ({ overlap, setOverlap }) => {
         <button
           onMouseDown={() => {
             document.querySelector("nav").scrollLeft +=
-              navWidth.current.clientWidth;
+              navWidth.current.clientWidth / 5;
           }}
-          onMouseUp={() => {
-            document.querySelector("nav").scrollLeft += 0;
-          }}
+          // onMouseUp={() => {
+          //   document.querySelector("nav").scrollLeft += 0;
+          // }}
         >
           <FaCaretRight
             size={34}
             color="var(--text-light)"
             className={
               navState
-                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent-2"
+                ? "arrow-l fill-white dark:fill-text-light absolute top-[calc(50%-20px)] drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent"
                 : "hidden"
             }
           />
