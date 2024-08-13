@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosWarning } from "react-icons/io";
-import { FaRegSmileWink, FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 import { useEffect } from "react";
 
 function NotFound() {
@@ -10,13 +10,12 @@ function NotFound() {
   return (
     <div className="grid justify-center gap-8 max-sm:gap-4 my-auto p-4 ">
       <IoIosWarning
-        size={40}
-        className="fill-accent-3 mx-auto drop-shadow-md animate-pulse hover:cursor-default"
+        size={60}
+        className="fill-accent-4 dark:fill-accent-2 mx-auto drop-shadow-md animate-pulse hover:cursor-default"
       />
       <h1 className="mx-auto text-5xl max-sm:text-3xl">404 Not Found</h1>
       <p className="flex gap-2 text-xl max-sm:text-base items-center justify-center">
-        Strona jeszcze nie istnieje{" "}
-        <FaRegSmileWink className="hover:cursor-default" />
+        Strony nie znaleziono
       </p>
       <button
         onClick={() => window.history.back()}

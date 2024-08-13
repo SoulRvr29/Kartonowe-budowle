@@ -240,6 +240,12 @@
         "format": ".jpg",
         "full": "./models/latarnie_morskie/stilo/budowa/full-res/stilo-b",
         "thumb": "./models/latarnie_morskie/stilo/budowa/thumb/stilo-thumb-b"
+      },
+      "filmy": {
+        "quantity": 2,
+        "format": ".gif",
+        "full": "./models/latarnie_morskie/stilo/filmy/full-res/stilo",
+        "thumb": "./models/latarnie_morskie/stilo/filmy/thumb/stilo-thumb"
       }
     },
     "photo": "models/latarnie_morskie/stilo/stilo-photo-",
@@ -407,6 +413,12 @@
         "format": ".jpg",
         "full": "./models/latarnie_morskie/gaski/noc/full-res/gaski-n",
         "thumb": "./models/latarnie_morskie/gaski/noc/thumb/gaski-thumb-n"
+      },
+      "filmy": {
+        "quantity": 2,
+        "format": ".gif",
+        "full": "./models/latarnie_morskie/gaski/filmy/full-res/gaski",
+        "thumb": "./models/latarnie_morskie/gaski/filmy/thumb/gaski-thumb"
       }
     },
     "photo": "models/latarnie_morskie/gaski/gaski-photo-",
@@ -459,6 +471,12 @@
         "format": ".jpg",
         "full": "./models/latarnie_morskie/hel/noc/full-res/hel-n",
         "thumb": "./models/latarnie_morskie/hel/noc/thumb/hel-thumb-n"
+      },
+      "filmy": {
+        "quantity": 2,
+        "format": ".gif",
+        "full": "./models/latarnie_morskie/hel/filmy/full-res/hel",
+        "thumb": "./models/latarnie_morskie/hel/filmy/thumb/hel-thumb"
       }
     },
     "photo": "models/latarnie_morskie/hel/hel-photo-",

@@ -214,7 +214,7 @@ const Comments = ({ id }) => {
                       </div>
                       <div className="relative flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8 ">
                         <div
-                          className="relative flex gap-2 text-green-700 dark:text-green-500 font-semibold hover:brightness-125 transition-all"
+                          className="relative flex text-green-700 dark:text-green-500 font-semibold hover:brightness-125 transition-all"
                           title="polub"
                           onClick={() => {
                             if (user) {
@@ -227,17 +227,19 @@ const Comments = ({ id }) => {
                             }
                           }}
                         >
-                          <div
-                            className={
-                              "absolute like-prompt whitespace-nowrap -top-10 -left-16 max-sm:left-[-3.3rem] max-sm:-top-8 bg-bkg dark:bg-bkg-light dark:text-text-dark text-text-light px-2 py-[2px] rounded-md  " +
-                              (likesError === index ? " block" : " hidden")
-                            }
-                          >
-                            <div className="h-4 w-4 bg-bkg dark:bg-bkg-light -z-10 absolute -bottom-2 left-[calc(50%-8px)] rotate-45"></div>
-                            Zaloguj się by oceniać
+                          <div className="drop-shadow-[1px_1px_4px_rgba(0,0,0,0.4)]">
+                            <div
+                              className={
+                                "absolute like-prompt whitespace-nowrap -top-10 -left-16 max-sm:left-0 max-sm:-top-8 bg-accent-4 dark:bg-accent-2 text-text-light px-2 pt-[2px] pb-[4px] rounded-md  " +
+                                (likesError === index ? " block" : " hidden")
+                              }
+                            >
+                              <div className="h-4 w-4 bg-accent-4 dark:bg-accent-2 -z-10 absolute -bottom-2 left-[calc(50%-8px)] rotate-45 max-sm:left-3 "></div>
+                              Zaloguj się by oceniać
+                            </div>
                           </div>
                           {item.likes.quantity}
-                          <FaThumbsUp className="relative top-0.5 fill-green-700 dark:fill-green-500" />
+                          <FaThumbsUp className="relative top-0.5 fill-green-700 dark:fill-green-500 ml-2" />
                         </div>
                         <p className="m-0 opacity-70">
                           {item.createdAt && item.createdAt.slice(8, 10)}
