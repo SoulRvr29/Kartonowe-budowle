@@ -167,6 +167,15 @@ const KołobrzegHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Latarnia_Morska_Ko%C5%82obrzeg"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

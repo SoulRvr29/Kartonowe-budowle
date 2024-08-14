@@ -21,7 +21,6 @@ const Falcon9History = ({ id }) => {
         sectionState={historyState}
         setSectionState={setHistoryState}
       />
-
       {historyState === true && (
         <PhotoProvider
           overlayRender={({ index }) => {
@@ -80,6 +79,12 @@ const Falcon9History = ({ id }) => {
                 title={photosTitle[1]}
               />
             </PhotoView>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a href="https://pl.wikipedia.org/wiki/Falcon_9" target="_blank">
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

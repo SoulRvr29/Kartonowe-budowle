@@ -119,6 +119,15 @@ const CuriosityHistory = ({ id }) => {
               schowane instrumenty. Według naukowców krater Gale, jako krater
               uderzeniowy został uformowany 3,8 do 3,5 mld lat temu.
             </p>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Curiosity_Rover"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

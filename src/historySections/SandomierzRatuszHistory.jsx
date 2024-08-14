@@ -87,6 +87,15 @@ const SandomierzHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Ratusz_w_Sandomierzu"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

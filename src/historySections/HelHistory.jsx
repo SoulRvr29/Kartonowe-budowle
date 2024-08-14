@@ -165,6 +165,15 @@ const HelHistory = ({ id }) => {
                 title={photosTitle[0]}
               />
             </PhotoView>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Latarnia_Morska_Hel?wprov=srpw1_1"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

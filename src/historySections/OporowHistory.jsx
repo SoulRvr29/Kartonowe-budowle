@@ -286,6 +286,15 @@ const OporowHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Zamek_w_Oporowie"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

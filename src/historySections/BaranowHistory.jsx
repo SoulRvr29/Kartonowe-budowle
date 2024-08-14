@@ -186,6 +186,15 @@ const BaranowHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Zamek_w_Baranowie_Sandomierskim"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

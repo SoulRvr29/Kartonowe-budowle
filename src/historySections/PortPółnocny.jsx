@@ -66,6 +66,15 @@ const StiloHistory = ({ id }) => {
               na zewnątrz bez dodatkowego zabezpieczenia) dające światłość
               1500000 kandeli na odległość 25 Mm.
             </p>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Latarnia_Morska_Gda%C5%84sk_Port_P%C3%B3%C5%82nocny"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

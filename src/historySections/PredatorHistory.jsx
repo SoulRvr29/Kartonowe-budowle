@@ -142,6 +142,15 @@ const PhantomF4History = ({ id }) => {
               stronę pierwszego filmu i pokazali tzw. „ klasycznego Predatora”
               (Derek Mears) znanego z oryginału.
             </p>{" "}
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Predator_(posta%C4%87_fikcyjna)"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

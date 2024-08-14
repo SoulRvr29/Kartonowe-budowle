@@ -68,6 +68,15 @@ const SandomierzHistory = ({ id }) => {
               spośród których zachowała się jedna – Dominikańska, nazywana Uchem
               Igielnym.
             </p>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Brama_Opatowska"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

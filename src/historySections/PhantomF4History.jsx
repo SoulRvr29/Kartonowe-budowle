@@ -47,7 +47,6 @@ const PhantomF4History = ({ id }) => {
                 title={photosTitle[0]}
               />
             </PhotoView>
-
             <span className="first-letter font-playfair">S</span>
             <p>
               amolot F-4 Phantom II został zaprojektowany jako myśliwiec obrony
@@ -126,6 +125,15 @@ const PhantomF4History = ({ id }) => {
               Eagle i F-16 Fighting Falcon, a w marynarce przez F-14 Tomcat i
               F/A-18 Hornet. W roli średniego bombowca Phantom został zastąpiony
               przez maszyny General Dynamics F-111.
+            </p>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II"
+                target="_blank"
+              >
+                wikipedia
+              </a>
             </p>
           </article>
         </PhotoProvider>

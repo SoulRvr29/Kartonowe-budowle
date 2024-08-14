@@ -184,6 +184,15 @@ const WangHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/%C5%9Awi%C4%85tynia_Wang"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

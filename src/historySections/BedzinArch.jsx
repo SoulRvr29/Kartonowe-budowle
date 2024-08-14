@@ -83,6 +83,15 @@ const BedzinArch = ({ id }) => {
               znajdował się na zachód od zamku – posiadał dodatkowy mur obronny,
               czworoboczną basztę i bramę wychodzącą na północ.
             </p>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Zamek_w_B%C4%99dzinie"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

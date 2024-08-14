@@ -308,7 +308,7 @@
     "id": 6,
     "component": "Czolpino",
     "typ": "latarnie morskie",
-    "oświetlenie": false,
+    "oświetlenie": true,
     "rok ukończenia": 2011,
     "link": "/Czolpino",
     "publisher": "GPM",

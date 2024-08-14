@@ -95,6 +95,15 @@ const CzołpinoHistory = ({ id }) => {
                 title={photosTitle[1]}
               />
             </PhotoView>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Latarnia_Morska_Czo%C5%82pino"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

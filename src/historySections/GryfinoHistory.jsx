@@ -103,6 +103,15 @@ const GryfinoHistory = ({ id }) => {
                 />
               </PhotoView>
             </div>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a
+                href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Narodzenia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Gryfinie"
+                target="_blank"
+              >
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}

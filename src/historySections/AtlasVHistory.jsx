@@ -70,6 +70,12 @@ const Falcon9History = ({ id }) => {
                 title={photosTitle[0]}
               />
             </PhotoView>
+            <p className="opacity-75 m-0">
+              Źródło:{" "}
+              <a href="https://en.wikipedia.org/wiki/Atlas_V" target="_blank">
+                wikipedia
+              </a>
+            </p>
           </article>
         </PhotoProvider>
       )}
