@@ -119,6 +119,7 @@ const Article = () => {
               title={photosTitle[0]}
             />
           </PhotoView>
+          <hr className="mt-8 mb-6" />
           <h5 className="font-semibold text-left max-sm:text-base max-sm:leading-5">
             Frontend strony został wykonany przy użyciu frameworka{" "}
             <a
@@ -215,7 +216,7 @@ const Article = () => {
               </a>{" "}
               - modelowanie danych
             </li>
-            <li className="text-left">
+            {/* <li className="text-left">
               <a
                 className="font-bold -ml-2 text-accent brightness-75 dark:brightness-100 dark:text-accent"
                 href="https://www.npmjs.com/package/argon2"
@@ -224,7 +225,7 @@ const Article = () => {
                 argon2
               </a>{" "}
               - szyfrowanie haseł
-            </li>
+            </li> */}
           </ul>
           <p className="font-semibold text-lg">
             Strona jest hostowana na platformie{" "}

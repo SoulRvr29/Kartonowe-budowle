@@ -5,9 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        playfair: ["Playfair Display", "serif"],
         Calistoga: "Calistoga",
-        Orbitron: "Orbitron",
         digit: "digit",
       },
       colors: {

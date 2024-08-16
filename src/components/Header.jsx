@@ -191,7 +191,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         </div>
         {/* main title */}
         <div className="absolute w-full flex gap-2 justify-center max-[560px]:static max-[560px]:-order-1">
-          <h1 className="flex gap-1 text-header font-[900] p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[560px]:text-[7vw] max-[560px]:-mb-1 uppercase"></h1>{" "}
+          <h1 className="flex gap-1 text-header p-1 max-md:p-0 max-[330px]:text-center max-[330px]:leading-5 max-[330px]:p-1 max-[560px]:text-[7vw] max-[560px]:-mb-1 uppercase"></h1>{" "}
         </div>
         {/* right side */}
         <div className="relative flex items-center gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">

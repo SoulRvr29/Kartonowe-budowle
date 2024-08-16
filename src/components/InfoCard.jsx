@@ -53,7 +53,16 @@ const InfoCard = ({ mapSize }) => {
       )}
 
       {!isEditing ? (
-        <Markdown remarkPlugins={[remarkGfm]}>{savedMarkdown}</Markdown>
+        <Markdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            a: ({ node, ...props }) => (
+              <a target="_blank" rel="noopener noreferrer" {...props} />
+            ),
+          }}
+        >
+          {savedMarkdown}
+        </Markdown>
       ) : (
         <div className="flex flex-col justify-between gap-2 min-h-full">
           <textarea

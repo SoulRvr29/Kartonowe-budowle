@@ -52,7 +52,7 @@ const Nav = ({ overlap, setOverlap }) => {
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
       <div
         title="ilość modeli"
-        className="absolute bottom-1 max-sm:bottom-[10px] left-0 max-sm:-left-1 font-bold opacity-50 w-8 text-center z-10 max-sm:text-sm text-white dark:text-text-light"
+        className="absolute bottom-[7.2rem] left-[3rem] max-sm:-left-2 max-md:left-6 max-md:bottom-1 max-sm:bottom-0 font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-sm text-white dark:text-text-light"
       >
         {data.length}
       </div>
