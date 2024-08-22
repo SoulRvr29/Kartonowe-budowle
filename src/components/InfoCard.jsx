@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import axios from "axios";
@@ -56,9 +57,7 @@ const InfoCard = ({ mapSize }) => {
         <Markdown
           remarkPlugins={[remarkGfm]}
           components={{
-            a: ({ node, ...props }) => (
-              <a target="_blank" rel="noopener noreferrer" {...props} />
-            ),
+            a: ({ node, ...props }) => <NavLink {...props} to={props.href} />,
           }}
         >
           {savedMarkdown}

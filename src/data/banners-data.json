@@ -1,56 +1,56 @@
 [
   {
     "name": "Zamek w Będzinie",
-    "full": "./banners/full/bedzin-night-banner.jpg",
-    "mobile": "./banners/mobile/bedzin-night-banner-mobile.jpg",
+    "full": "./banners/full/bedzin-night-banner.webp",
+    "mobile": "./banners/mobile/bedzin-night-banner-mobile.webp",
     "link": "/Bedzin"
   },
   {
     "name": "Zamek w Oporowie",
-    "full": "./banners/full/oporow-banner.jpg",
-    "mobile": "./banners/mobile/oporow-banner-mobile.jpg",
+    "full": "./banners/full/oporow-banner.webp",
+    "mobile": "./banners/mobile/oporow-banner-mobile.webp",
     "link": "/Oporow"
   },
   {
     "name": "Łazik Curiosity",
-    "full": "./banners/full/curiosity-banner.jpg",
-    "mobile": "./banners/mobile/curiosity-banner-mobile.jpg",
+    "full": "./banners/full/curiosity-banner.webp",
+    "mobile": "./banners/mobile/curiosity-banner-mobile.webp",
     "link": "/Curiosity"
   },
   {
     "name": "Ratusz w Sandomierzu",
-    "full": "./banners/full/sandomierz-banner.jpg",
-    "mobile": "./banners/mobile/sandomierz-banner-mobile.jpg",
+    "full": "./banners/full/sandomierz-banner.webp",
+    "mobile": "./banners/mobile/sandomierz-banner-mobile.webp",
     "link": "/SandomierzRatusz"
   },
   {
     "name": "Kościół w Gryfinie",
-    "full": "./banners/full/gryfin-banner.jpg",
-    "mobile": "./banners/mobile/gryfin-banner-mobile.jpg",
+    "full": "./banners/full/gryfin-banner.webp",
+    "mobile": "./banners/mobile/gryfin-banner-mobile.webp",
     "link": "/Gryfino"
   },
   {
     "name": "Zamek w Będzinie",
-    "full": "./banners/full/bedzin-banner.jpg",
-    "mobile": "./banners/mobile/bedzin-banner-mobile.jpg",
+    "full": "./banners/full/bedzin-banner.webp",
+    "mobile": "./banners/mobile/bedzin-banner-mobile.webp",
     "link": "/Bedzin"
   },
   {
     "name": "Wieżowce",
-    "full": "./banners/full/wiezowce-banner.jpg",
-    "mobile": "./banners/mobile/wiezowce-banner-mobile.jpg",
+    "full": "./banners/full/wiezowce-banner.webp",
+    "mobile": "./banners/mobile/wiezowce-banner-mobile.webp",
     "link": "/Wieżowce"
   },
   {
     "name": "Zamek w Oporowie",
-    "full": "./banners/full/oporow-night-banner.jpg",
-    "mobile": "./banners/mobile/oporow-night-banner-mobile.jpg",
+    "full": "./banners/full/oporow-night-banner.webp",
+    "mobile": "./banners/mobile/oporow-night-banner-mobile.webp",
     "link": "/Oporow"
   },
   {
     "name": "Phantom F-4B",
-    "full": "./banners/full/phantom-banner.jpg",
-    "mobile": "./banners/full/phantom-banner.jpg",
+    "full": "./banners/full/phantom-banner.webp",
+    "mobile": "./banners/full/phantom-banner.webp",
     "link": "/PhantomF4"
   }
 ]

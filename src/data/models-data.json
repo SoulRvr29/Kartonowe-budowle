@@ -20,7 +20,7 @@
       "Wysokość": "22cm"
     },
     "name": "Zamek w Będzinie",
-    "card": "./cards/bedzin-card.jpg",
+    "card": "./cards/bedzin-card.webp",
     "icon": "./models-icons/bedzin-icon.png",
     "Galeria": {
       "dzień": {
@@ -59,7 +59,7 @@
     "link": "/Oporow",
     "publisher": "GPM",
     "name": "Zamek w Oporowie",
-    "card": "./cards/oporow-card.jpg",
+    "card": "./cards/oporow-card.webp",
     "icon": "./models-icons/oporow-icon.png",
     "cover": "models/oporow/oporow-cover.jpg",
     "position": [52.2625, 19.56226],
@@ -106,7 +106,7 @@
     "link": "/SandomierzRatusz",
     "publisher": "GPM",
     "name": "Ratusz w Sandomierzu",
-    "card": "./cards/sandomierz-card.jpg",
+    "card": "./cards/sandomierz-card.webp",
     "icon": "./models-icons/sandomierz-icon.png",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "position": [50.679417, 21.749361],
@@ -152,7 +152,7 @@
     "link": "/SandomierzBrama",
     "publisher": "GPM",
     "name": "Brama Opatowska w Sandomierzu",
-    "card": "./cards/sandomierz_brama-card.jpg",
+    "card": "./cards/sandomierz_brama-card.webp",
     "icon": "./models-icons/sandomierz_brama-icon.png",
     "cover": "models/sandomierz/sandomierz-cover.jpg",
     "position": [50.681541, 21.749438],
@@ -192,7 +192,7 @@
     "link": "/Stilo",
     "publisher": "GPM",
     "name": "Latarnia morska Stilo",
-    "card": "./cards/stilo-card.jpg",
+    "card": "./cards/stilo-card.webp",
     "icon": "./models-icons/stilo-icon.png",
     "cover": "models/latarnie_morskie/stilo/stilo-cover.jpg",
     "position": [54.786857, 17.733979],
@@ -260,7 +260,7 @@
     "link": "/Darlowo",
     "publisher": "GPM",
     "name": "Latarnia morska Darłowo",
-    "card": "./cards/darlowo-card.jpg",
+    "card": "./cards/darlowo-card.webp",
     "icon": "./models-icons/darlowo-icon.png",
     "cover": "models/latarnie_morskie/darlowo/darlowo-cover.jpg",
     "position": [54.4403, 16.3786],
@@ -313,7 +313,7 @@
     "link": "/Czolpino",
     "publisher": "GPM",
     "name": "Latarnia morska Czołpino",
-    "card": "./cards/czolpino-card.jpg",
+    "card": "./cards/czolpino-card.webp",
     "icon": "./models-icons/czolpino-icon.png",
     "cover": "models/latarnie_morskie/czolpino/czolpino-cover.jpg",
     "position": [54.718257511904355, 17.24124935123231],
@@ -373,7 +373,7 @@
     "link": "/Gaski",
     "publisher": "GPM",
     "name": "Latarnia morska Gąski",
-    "card": "./cards/gaski-card.jpg",
+    "card": "./cards/gaski-card.webp",
     "icon": "./models-icons/gaski-icon.png",
     "cover": "models/latarnie_morskie/gaski/gaski-cover.jpg",
     "position": [54.242778, 15.872778],
@@ -433,7 +433,7 @@
     "link": "/Hel",
     "publisher": "GPM",
     "name": "Latarnia morska Hel",
-    "card": "./cards/hel-card.jpg",
+    "card": "./cards/hel-card.webp",
     "icon": "./models-icons/hel-icon.png",
     "cover": "models/latarnie_morskie/hel/hel-cover.jpg",
     "position": [54.6, 18.812778],
@@ -491,7 +491,7 @@
     "link": "/Jaroslawiec",
     "publisher": "GPM",
     "name": "Latarnia morska Jarosławiec",
-    "card": "./cards/jaroslawiec-card.jpg",
+    "card": "./cards/jaroslawiec-card.webp",
     "icon": "./models-icons/jaroslawiec-icon.png",
     "cover": "models/latarnie_morskie/jaroslawiec/jaroslawiec-cover.jpg",
     "position": [54.53972, 16.542332],
@@ -538,7 +538,7 @@
     "link": "/Jastarnia",
     "publisher": "GPM",
     "name": "Latarnia morska Jastarnia",
-    "card": "./cards/jastarnia-card.jpg",
+    "card": "./cards/jastarnia-card.webp",
     "icon": "./models-icons/jastarnia-icon.png",
     "cover": "models/latarnie_morskie/jastarnia/jastarnia-cover.jpg",
     "position": [54.700238, 18.681598],
@@ -592,7 +592,7 @@
     "link": "/Kikut",
     "publisher": "GPM",
     "name": "Latarnia morska Kikut",
-    "card": "./cards/kikut-card.jpg",
+    "card": "./cards/kikut-card.webp",
     "icon": "./models-icons/kikut-icon.png",
     "cover": "models/latarnie_morskie/kikut/kikut-cover.jpg",
     "position": [53.98144067064031, 14.580362573141587],
@@ -638,7 +638,7 @@
     "link": "/Kolobrzeg",
     "publisher": "GPM",
     "name": "Latarnia morska Kołobrzeg",
-    "card": "./cards/kolobrzeg-card.jpg",
+    "card": "./cards/kolobrzeg-card.webp",
     "icon": "./models-icons/kolobrzeg-icon.png",
     "cover": "models/latarnie_morskie/kolobrzeg/kolobrzeg-cover.jpg",
     "position": [54.1864035359489, 15.554220485672046],
@@ -684,7 +684,7 @@
     "link": "/Krynica Morska",
     "publisher": "GPM",
     "name": "Latarnia morska Krynica Morska",
-    "card": "./cards/krynica_morska-card.jpg",
+    "card": "./cards/krynica_morska-card.webp",
     "icon": "./models-icons/krynica_morska-icon.png",
     "cover": "models/latarnie_morskie/krynica_morska/krynica_morska-cover.jpg",
     "position": [54.38538, 19.4508],
@@ -731,7 +731,7 @@
     "link": "/Niechorze",
     "publisher": "GPM",
     "name": "Latarnia morska Niechorze",
-    "card": "./cards/niechorze-card.jpg",
+    "card": "./cards/niechorze-card.webp",
     "icon": "./models-icons/niechorze-icon.png",
     "cover": "models/latarnie_morskie/niechorze/niechorze-cover.jpg",
     "position": [54.09472, 15.06387],
@@ -776,7 +776,7 @@
     "link": "/Nowy Port",
     "publisher": "GPM",
     "name": "Latarnia morska Nowy Port",
-    "card": "./cards/nowy_port-card.jpg",
+    "card": "./cards/nowy_port-card.webp",
     "icon": "./models-icons/nowy_port-icon.png",
     "cover": "models/latarnie_morskie/nowy_port/nowy_port-cover.jpg",
     "position": [54.40628621824836, 18.661173945021158],
@@ -832,7 +832,7 @@
     "link": "/Port Polnocny",
     "publisher": "GPM",
     "name": "Latarnia morska Port Północny",
-    "card": "./cards/port_polnocny-card.jpg",
+    "card": "./cards/port_polnocny-card.webp",
     "icon": "./models-icons/port_polnocny-icon.png",
     "cover": "models/latarnie_morskie/port_polnocny/port_polnocny-cover.jpg",
     "position": [54.399689, 18.696278],
@@ -882,7 +882,7 @@
     "link": "/Rozewie",
     "publisher": "GPM",
     "name": "Latarnia morska Rozewie",
-    "card": "./cards/rozewie-card.jpg",
+    "card": "./cards/rozewie-card.webp",
     "icon": "./models-icons/rozewie-icon.png",
     "cover": "models/latarnie_morskie/rozewie/rozewie-cover.jpg",
     "position": [54.830375, 18.336289],
@@ -927,7 +927,7 @@
     "link": "/Sopot",
     "publisher": "GPM",
     "name": "Latarnia morska Sopot",
-    "card": "./cards/sopot-card.jpg",
+    "card": "./cards/sopot-card.webp",
     "icon": "./models-icons/sopot-icon.png",
     "cover": "models/latarnie_morskie/sopot/sopot-cover.jpg",
     "position": [54.445358, 18.570453],
@@ -990,7 +990,7 @@
     "link": "/Swinoujscie",
     "publisher": "GPM",
     "name": "Latarnia morska Świnoujście",
-    "card": "./cards/swinoujscie-card.jpg",
+    "card": "./cards/swinoujscie-card.webp",
     "icon": "./models-icons/swinoujscie-icon.png",
     "cover": "models/latarnie_morskie/swinoujscie/swinoujscie-cover.jpg",
     "position": [53.916, 14.284167],
@@ -1035,7 +1035,7 @@
     "link": "/Ustka",
     "publisher": "GPM",
     "name": "Latarnia morska Ustka",
-    "card": "./cards/ustka-card.jpg",
+    "card": "./cards/ustka-card.webp",
     "icon": "./models-icons/ustka-icon.png",
     "cover": "models/latarnie_morskie/ustka/ustka-cover.jpg",
     "position": [54.587944, 16.854556],
@@ -1080,7 +1080,7 @@
     "link": "/Curiosity",
     "publisher": "model darmowy",
     "name": "Łazik marsjański Curiosity",
-    "card": "./cards/curiosity-card.jpg",
+    "card": "./cards/curiosity-card.webp",
     "icon": "./models-icons/curiosity-icon.png",
     "cover": "models/curiosity/curiosity-cover2.jpg",
     "info": {
@@ -1130,7 +1130,7 @@
       "Wysokość": "17cm"
     },
     "name": "Zamek w Baranowie Sandomierskim",
-    "card": "./cards/baranow-card.jpg",
+    "card": "./cards/baranow-card.webp",
     "icon": "./models-icons/baranow-icon.png",
     "Galeria": {
       "dzień": {
@@ -1162,7 +1162,7 @@
       "Wysokość": "38cm"
     },
     "name": "Kościół w Gryfinie",
-    "card": "./cards/gryfino-card.jpg",
+    "card": "./cards/gryfino-card.webp",
     "icon": "./models-icons/gryfino-icon.png",
     "Galeria": {
       "dzień": {
@@ -1196,7 +1196,7 @@
       "Link do pobrania": "https://drive.google.com/file/d/1L7qpYiVCOnafMv79WuhQQ3jeWfMIzchY/view"
     },
     "name": "Mauler - Gears of War",
-    "card": "./cards/mauler-card.jpg",
+    "card": "./cards/mauler-card.webp",
     "icon": "./models-icons/mauler-icon.png",
     "Galeria": {
       "dzień": {
@@ -1230,7 +1230,7 @@
       "Link do pobrania": "https://actionpapercrafts.blogspot.com/2009/04/68cm-predator-papercraft.html"
     },
     "name": "Predator",
-    "card": "./cards/predator-card.jpg",
+    "card": "./cards/predator-card.webp",
     "icon": "./models-icons/predator-icon.png",
     "Galeria": {
       "dzień": {
@@ -1268,7 +1268,7 @@
       "Wysokość": "15cm"
     },
     "name": "Phantom F-4B",
-    "card": "./cards/phantom_f4-card.jpg",
+    "card": "./cards/phantom_f4-card.webp",
     "icon": "./models-icons/phantom_f4-icon.png",
     "Galeria": {
       "dzień": {
@@ -1297,11 +1297,11 @@
       "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/spacex-starship/?singleproduct=3248"
     },
     "name": "Rakieta Starship SN15",
-    "card": "./cards/starship_sn15-card.jpg",
+    "card": "./cards/starship_sn15-card.webp",
     "icon": "./models-icons/starship_SN15-icon.png",
     "Galeria": {
       "dzień": {
-        "quantity": 15,
+        "quantity": 16,
         "format": ".webp",
         "full": "./models/starship_sn15/full-res/starship_sn15-d",
         "thumb": "./models/starship_sn15/thumb/starship_sn15-thumb-d"
@@ -1326,7 +1326,7 @@
       "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/falcon-9/?singleproduct=3199"
     },
     "name": "Rakieta Falcon 9",
-    "card": "./cards/falcon_9-card.jpg",
+    "card": "./cards/falcon_9-card.webp",
     "icon": "./models-icons/falcon_9-icon.png",
     "Galeria": {
       "dzień": {
@@ -1356,7 +1356,7 @@
       "Długość": "34.5cm"
     },
     "name": "Świątynia Wang",
-    "card": "./cards/wang-card.jpg",
+    "card": "./cards/wang-card.webp",
     "icon": "./models-icons/wang-icon.png",
     "Galeria": {
       "budowa": {
@@ -1378,7 +1378,7 @@
     "link": "/AtlasV",
     "publisher": "model darmowy",
     "name": "Rakieta Atlas V",
-    "card": "./cards/atlasV-card.jpg",
+    "card": "./cards/atlasV-card.webp",
     "icon": "./models-icons/atlasV-icon.png",
     "cover": "models/atlasV/atlasV-cover.jpg",
     "position": [28.583815537, -80.5828231],
