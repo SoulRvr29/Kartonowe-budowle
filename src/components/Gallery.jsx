@@ -1,3 +1,4 @@
+import "../css/Gallery.css";
 import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";

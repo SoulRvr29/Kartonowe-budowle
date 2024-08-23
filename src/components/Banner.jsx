@@ -1,3 +1,4 @@
+import "../css/Banner.css";
 import { useState, useRef, useEffect } from "react";
 import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";

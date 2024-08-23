@@ -2,6 +2,7 @@ import modelsData from "../data/models-data.json";
 import SectionHeader from "./SectionHeader";
 import { useState } from "react";
 import Map from "./Map";
+import "../css/ModelInfo.css";
 
 const ModelInfo = ({ id }) => {
   const data = modelsData.filter((item) => item.id == id)[0];
