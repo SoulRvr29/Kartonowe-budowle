@@ -261,7 +261,7 @@ const Comments = ({ id }) => {
                       </div>
                     </div>
                     {editComment !== index && (
-                      <pre className="relative my-1 mx-2 text-left whitespace-pre-wrap">
+                      <pre className="relative my-1 mx-2 text-left whitespace-pre-wrap max-md:text-sm font-sans">
                         {item.comment}
                         {user && user.login === item.login && (
                           <div

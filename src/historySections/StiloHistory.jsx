@@ -10,10 +10,10 @@ const StiloHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/latarnie_morskie/stilo/stilo-photo-1.jpg",
-    "models/latarnie_morskie/stilo/stilo-photo-2.jpg",
-    "models/latarnie_morskie/stilo/stilo-photo-3.jpg",
-    "models/latarnie_morskie/stilo/stilo-photo-4.jpg",
+    "models/latarnie_morskie/stilo/stilo-photo-1.webp",
+    "models/latarnie_morskie/stilo/stilo-photo-2.webp",
+    "models/latarnie_morskie/stilo/stilo-photo-3.webp",
+    "models/latarnie_morskie/stilo/stilo-photo-4.webp",
   ];
   const photosTitle = [
     "Latarnia w 1929 roku",

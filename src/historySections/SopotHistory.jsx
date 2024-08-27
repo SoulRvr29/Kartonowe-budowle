@@ -10,9 +10,9 @@ const SopotHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/latarnie_morskie/sopot/sopot-photo-1.jpg",
-    "models/latarnie_morskie/sopot/sopot-photo-2.jpg",
-    "models/latarnie_morskie/sopot/sopot-photo-3.jpg",
+    "models/latarnie_morskie/sopot/sopot-photo-1.webp",
+    "models/latarnie_morskie/sopot/sopot-photo-2.webp",
+    "models/latarnie_morskie/sopot/sopot-photo-3.webp",
   ];
   const photosTitle = [
     "Latarnia Sopot z widocznym jeszcze kominem",

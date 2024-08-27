@@ -10,11 +10,11 @@ const HelHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/latarnie_morskie/hel/Hel-photo1.jpg",
-    "models/latarnie_morskie/hel/Hel-photo2.jpg",
-    "models/latarnie_morskie/hel/Hel-photo3.jpg",
-    "models/latarnie_morskie/hel/Hel-photo4.jpg",
-    "models/latarnie_morskie/hel/Hel-photo5.jpg",
+    "models/latarnie_morskie/hel/Hel-photo1.webp",
+    "models/latarnie_morskie/hel/Hel-photo2.webp",
+    "models/latarnie_morskie/hel/Hel-photo3.webp",
+    "models/latarnie_morskie/hel/Hel-photo4.webp",
+    "models/latarnie_morskie/hel/Hel-photo5.webp",
   ];
   const photosTitle = [
     "Latarnia w 1898 roku",

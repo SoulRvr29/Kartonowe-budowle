@@ -9,8 +9,8 @@ const CuriosityHistory = ({ id }) => {
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/curiosity/curiosity-photo-2.jpg",
-    "models/curiosity/curiosity-photo-1.jpg",
+    "models/curiosity/curiosity-photo-2.webp",
+    "models/curiosity/curiosity-photo-1.webp",
   ];
   const photosTitle = [
     "Łazik Curiosity w zakładzie montażu w Pasadenie w Kalifornii",

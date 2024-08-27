@@ -30,7 +30,7 @@ const SectionHeader = ({
           </button>
           {sectionName}
           {sectionNumber > 0 && (
-            <div className="grid place-content-center ml-2 opacity-30 text-xl">{`(${sectionNumber})`}</div>
+            <div className="grid place-content-center ml-2 opacity-30 text-xl max-md:text-xs">{`(${sectionNumber})`}</div>
           )}
         </h3>
 

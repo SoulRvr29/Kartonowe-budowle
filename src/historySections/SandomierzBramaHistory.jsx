@@ -9,7 +9,7 @@ const SandomierzHistory = ({ id }) => {
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/sandomierz/sandomierz-photo-3.jpg"];
+  const photosSrc = ["models/sandomierz/sandomierz-photo-3.webp"];
   const photosTitle = ["Brama Opatowska"];
   /////////////////////////////////////////////////////////////////
   return (

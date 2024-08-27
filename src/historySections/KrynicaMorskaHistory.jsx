@@ -10,9 +10,9 @@ const KrynicaMorskaHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie_morskie/krynica_morska/krynica_morska-photo1.jpg",
-    "models/latarnie_morskie/krynica_morska/krynica_morska-photo2.jpg",
-    "models/latarnie_morskie/krynica_morska/krynica_morska-photo3.jpg",
+    "models/latarnie_morskie/krynica_morska/krynica_morska-photo1.webp",
+    "models/latarnie_morskie/krynica_morska/krynica_morska-photo2.webp",
+    "models/latarnie_morskie/krynica_morska/krynica_morska-photo3.webp",
   ];
   const photosTitle = [
     "Dawna latarnia w Krynicy Morskiej, zniszczona w 1945r.",

@@ -50,12 +50,14 @@ const Nav = ({ overlap, setOverlap }) => {
 
   return (
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
-      <div
-        title="ilość modeli"
-        className="absolute bottom-[7.2rem] left-[3rem] max-sm:-left-2 max-md:left-6 max-md:bottom-1 max-sm:bottom-0 font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-sm text-white dark:text-text-light"
-      >
-        {data.length}
-      </div>
+      {navState && (
+        <div
+          title="ilość modeli"
+          className="absolute bottom-[7.2rem] left-[3rem] max-sm:-left-2 max-md:left-6 max-md:bottom-1 max-sm:bottom-0 font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-sm text-white dark:text-text-light"
+        >
+          {data.length}
+        </div>
+      )}
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
         <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg max-sm:gap-1 ">

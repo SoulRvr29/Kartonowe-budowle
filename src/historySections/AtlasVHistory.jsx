@@ -8,7 +8,7 @@ const Falcon9History = ({ id }) => {
     JSON.parse(localStorage.getItem("sections"))
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/atlasV/atlasV-photo1.jpg"];
+  const photosSrc = ["models/atlasV/atlasV-photo1.webp"];
   const photosTitle = ["Start rakiety Atlas V"];
   /////////////////////////////////////////////////////////////////
   return (

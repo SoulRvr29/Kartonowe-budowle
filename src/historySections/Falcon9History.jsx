@@ -9,8 +9,8 @@ const Falcon9History = ({ id }) => {
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/falcon_9/falcon_9-photo2.jpg",
-    "models/falcon_9/falcon_9-photo1.jpg",
+    "models/falcon_9/falcon_9-photo2.webp",
+    "models/falcon_9/falcon_9-photo1.webp",
   ];
   const photosTitle = ["Rodzina rakiet Falcon", "Start rakiety Falcon 9"];
   /////////////////////////////////////////////////////////////////

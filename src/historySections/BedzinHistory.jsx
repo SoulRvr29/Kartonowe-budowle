@@ -10,13 +10,13 @@ const BedzinHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/bedzin/bedzin-photo1.jpg",
-    "models/bedzin/bedzin-photo2.jpg",
-    "models/bedzin/bedzin-photo3.jpg",
-    "models/bedzin/bedzin-photo4.jpg",
-    "models/bedzin/bedzin-photo5.jpg",
-    "models/bedzin/bedzin-photo6.jpg",
-    "models/bedzin/bedzin-photo8.jpg",
+    "models/bedzin/bedzin-photo1.webp",
+    "models/bedzin/bedzin-photo2.webp",
+    "models/bedzin/bedzin-photo3.webp",
+    "models/bedzin/bedzin-photo4.webp",
+    "models/bedzin/bedzin-photo5.webp",
+    "models/bedzin/bedzin-photo6.webp",
+    "models/bedzin/bedzin-photo8.webp",
   ];
   const photosTitle = [
     "Najstarszy znany wizerunek zamku, Matthias Gerung 1536",

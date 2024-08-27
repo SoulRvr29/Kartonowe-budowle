@@ -10,11 +10,11 @@ const ŚwinoujścieHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie_morskie/swinoujscie/swinoujscie-photo0.jpg",
-    "models/latarnie_morskie/swinoujscie/swinoujscie-photo1.jpg",
-    "models/latarnie_morskie/swinoujscie/swinoujscie-photo2.jpg",
-    "models/latarnie_morskie/swinoujscie/swinoujscie-photo3.jpg",
-    "models/latarnie_morskie/swinoujscie/swinoujscie-photo4.jpg",
+    "models/latarnie_morskie/swinoujscie/swinoujscie-photo0.webp",
+    "models/latarnie_morskie/swinoujscie/swinoujscie-photo1.webp",
+    "models/latarnie_morskie/swinoujscie/swinoujscie-photo2.webp",
+    "models/latarnie_morskie/swinoujscie/swinoujscie-photo3.webp",
+    "models/latarnie_morskie/swinoujscie/swinoujscie-photo4.webp",
   ];
   const photosTitle = [
     "Latarnia morska Świnoujście w 1898 roku",

@@ -9,12 +9,12 @@ const OporowHistory = ({ id }) => {
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/oporow/oporow-rekonstrukcja.jpg",
+    "models/oporow/oporow-rekonstrukcja.webp",
     "models/oporow/oporow-photo-1.webp",
-    "models/oporow/oporow-photo-2.jpg",
-    "models/oporow/oporow-photo-3.jpg",
-    "models/oporow/oporow-photo-4.jpg",
-    "models/oporow/oporow-photo-5.jpg",
+    "models/oporow/oporow-photo-2.webp",
+    "models/oporow/oporow-photo-3.webp",
+    "models/oporow/oporow-photo-4.webp",
+    "models/oporow/oporow-photo-5.webp",
   ];
   const photosTitle = [
     "Rekonstrukcja zamku z połowy XV wieku wg J.Zachwatowicza",

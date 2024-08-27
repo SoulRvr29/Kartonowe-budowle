@@ -9,9 +9,9 @@ const GryfinoHistory = ({ id }) => {
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/gryfino/gryfino-photo3.jpg",
-    "models/gryfino/gryfino-photo1.jpg",
-    "models/gryfino/gryfino-photo2.jpg",
+    "models/gryfino/gryfino-photo3.webp",
+    "models/gryfino/gryfino-photo1.webp",
+    "models/gryfino/gryfino-photo2.webp",
   ];
   const photosTitle = ["Kościół w 1905 roku", "", ""];
   /////////////////////////////////////////////////////////////////

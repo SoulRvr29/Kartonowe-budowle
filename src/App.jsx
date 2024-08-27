@@ -45,8 +45,10 @@ import StarshipSN15 from "./pages/StarshipSN15";
 import Falcon9 from "./pages/Falcon9";
 import Wang from "./pages/Wang";
 import AtlasV from "./pages/AtlasV";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import SaturnV from "./pages/SaturnV";
 import Layout from "./Layout";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -85,6 +87,7 @@ const router = createBrowserRouter(
       <Route path="/Falcon9" element={<Falcon9 id={27} />} />
       <Route path="/Wang" element={<Wang id={28} />} />
       <Route path="/AtlasV" element={<AtlasV id={30} />} />
+      <Route path="/SaturnV" element={<SaturnV id={31} />} />
       <Route path="/Oswietlenie" element={<Oswietlenie />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />
       <Route path="/Sadzarka" element={<Sadzarka />} />
@@ -99,6 +102,7 @@ function App() {
     <>
       <RouterProvider router={router} />
       <SpeedInsights />
+      <Analytics />
     </>
   );
 }

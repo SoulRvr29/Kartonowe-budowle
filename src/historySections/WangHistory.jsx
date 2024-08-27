@@ -10,11 +10,11 @@ const WangHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/wang/wang-photo1.jpg",
-    "models/wang/wang-photo2.jpg",
-    "models/wang/wang-photo3.jpg",
-    "models/wang/wang-photo4.jpg",
-    "models/wang/wang-photo5.jpg",
+    "models/wang/wang-photo1.webp",
+    "models/wang/wang-photo2.webp",
+    "models/wang/wang-photo3.webp",
+    "models/wang/wang-photo4.webp",
+    "models/wang/wang-photo5.webp",
     "models/wang/wang-photo6.webp",
   ];
   const photosTitle = [

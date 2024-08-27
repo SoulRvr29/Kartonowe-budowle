@@ -10,9 +10,9 @@ const UstkaHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie_morskie/ustka/ustka-photo1.jpg",
-    "models/latarnie_morskie/ustka/ustka-photo2.jpg",
-    "models/latarnie_morskie/ustka/ustka-photo3.jpg",
+    "models/latarnie_morskie/ustka/ustka-photo1.webp",
+    "models/latarnie_morskie/ustka/ustka-photo2.webp",
+    "models/latarnie_morskie/ustka/ustka-photo3.webp",
   ];
   const photosTitle = ["Latarnia Ustka w 1901 roku"];
 

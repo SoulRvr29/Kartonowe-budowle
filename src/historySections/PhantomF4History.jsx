@@ -9,7 +9,7 @@ const PhantomF4History = ({ id }) => {
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/phantom_f4/phantom_f4-photo1.jpg"];
+  const photosSrc = ["models/phantom_f4/phantom_f4-photo1.webp"];
   const photosTitle = ["F-4 Phantom II"];
   /////////////////////////////////////////////////////////////////
   return (

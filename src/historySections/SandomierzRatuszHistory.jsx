@@ -10,8 +10,8 @@ const SandomierzHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/sandomierz/sandomierz-photo-1.jpg",
-    "models/sandomierz/sandomierz-photo-2.jpg",
+    "models/sandomierz/sandomierz-photo-1.webp",
+    "models/sandomierz/sandomierz-photo-2.webp",
   ];
   const photosTitle = ["Ratusz w roku 1899", "Ratusz obecnie"];
   /////////////////////////////////////////////////////////////////

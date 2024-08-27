@@ -10,12 +10,12 @@ const RozewieHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie_morskie/rozewie/rozewie-photo1.jpg",
-    "models/latarnie_morskie/rozewie/rozewie-photo2.jpg",
-    "models/latarnie_morskie/rozewie/rozewie-photo3.jpg",
-    "models/latarnie_morskie/rozewie/rozewie-photo4.jpg",
-    "models/latarnie_morskie/rozewie/rozewie-photo5.jpg",
-    "models/latarnie_morskie/rozewie/rozewie-photo6.jpg",
+    "models/latarnie_morskie/rozewie/rozewie-photo1.webp",
+    "models/latarnie_morskie/rozewie/rozewie-photo2.webp",
+    "models/latarnie_morskie/rozewie/rozewie-photo3.webp",
+    "models/latarnie_morskie/rozewie/rozewie-photo4.webp",
+    "models/latarnie_morskie/rozewie/rozewie-photo5.webp",
+    "models/latarnie_morskie/rozewie/rozewie-photo6.webp",
   ];
   const photosTitle = [
     "Nowa, nieczynna latarnia z 1875 roku",

@@ -9,7 +9,7 @@ const BedzinArch = ({ id }) => {
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/bedzin/bedzin-arch.jpg"];
+  const photosSrc = ["models/bedzin/bedzin-arch.webp"];
   const photosTitle = [
     "Ekipa odbudowująca zamek w Będzinie w 1953; drugi od prawej w szeregu stojących Roman Romański – wojewódzki konserwator zabytków w Katowicach w latach 1954–1961",
   ];

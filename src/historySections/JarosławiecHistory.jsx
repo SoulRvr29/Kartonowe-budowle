@@ -10,10 +10,10 @@ const JarosławiecHistory = ({ id }) => {
   ///////////////////////// PHOTOS DATA /////////////////////////
 
   const photosSrc = [
-    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo1.jpg",
-    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo2.jpg",
-    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo3.jpg",
-    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo4.jpg",
+    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo1.webp",
+    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo2.webp",
+    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo3.webp",
+    "models/latarnie_morskie/jaroslawiec/jaroslawiec-photo4.webp",
   ];
   const photosTitle = ["Latarnia Jarosławiec w 1930 roku"];
 

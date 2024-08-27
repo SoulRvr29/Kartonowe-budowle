@@ -1,27 +1,16 @@
 import ImagesGrid from "../components/ImagesGrid";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import { NavLink } from "react-router-dom";
 import modelsData from "../data/models-data.json";
 import MapAll from "../components/MapAll";
 import { useEffect, useState } from "react";
 import InfoCard from "../components/InfoCard";
+import UpdatesList from "../components/UpdatesList";
 
 const Article = () => {
   useEffect(() => {
     document.title = "ModelCraft";
   }, []);
-  ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = [
-    "./models/bedzin/day/full-res/bedzin-d01.jpg",
-    "./models/bedzin/day/full-res/bedzin-d19.jpg",
-    "./models/bedzin/day/full-res/bedzin-d27.jpg",
-  ];
-  const photosTitle = [
-    "Zamek w Będzinie",
-    "Wejście do zamku w Będzinie",
-    "Dziedziniec zamku w Będzinie",
-  ];
-  /////////////////////////////////////////////////////////////////
+
   const photoCounter = () => {
     let count = 0;
     modelsData.forEach((item) => {
@@ -66,7 +55,8 @@ const Article = () => {
             <InfoCard mapSize={mapSize} />
             <MapAll mapSize={mapSize} setMapSize={setMapSize} />
           </div>
-          <div className="rounded-full max-sm:rounded-xl dark:bg-accent/20 bg-white/20 px-4 py-1 text-center">
+          <UpdatesList />
+          <div className="rounded-full max-sm:rounded-xl dark:bg-accent/20 bg-white/30 px-4 py-1 text-center drop-shadow-lg">
             Na stronie znajduje się aktualnie{" "}
             <b className="text-accent-4 dark:text-accent-2">
               {modelsData.length}
@@ -78,7 +68,7 @@ const Article = () => {
         </header>
         {/* <hr className="grad-hr" /> */}
       </PhotoProvider>
-      <div className="losowe-container m-8 mt-0 max-sm:m-4 mb-4 max-sm:mb-2 relative">
+      <div className="losowe-container m-8 mt-0 max-sm:m-4 max-sm:mt-0 mb-4 max-sm:mb-2 relative">
         <ImagesGrid />
       </div>
     </>

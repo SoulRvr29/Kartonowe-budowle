@@ -10,7 +10,7 @@ const StiloHistory = ({ id }) => {
 
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
-    "models/latarnie_morskie/port_polnocny/port_polnocny-photo-1.jpg",
+    "models/latarnie_morskie/port_polnocny/port_polnocny-photo-1.webp",
   ];
   const photosTitle = [""];
   /////////////////////////////////////////////////////////////////
