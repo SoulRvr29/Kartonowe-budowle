@@ -4,7 +4,7 @@ import modelsData from "../data/models-data.json";
 import { PiArrowsOutBold, PiArrowsInBold } from "react-icons/pi";
 
 const map = ({ mapSize, setMapSize }) => {
-  const polandMap = [52, 19];
+  const polandMap = [52.4, 19];
   const zoom = 6;
 
   return (
@@ -12,7 +12,7 @@ const map = ({ mapSize, setMapSize }) => {
       className={
         mapSize
           ? "w-full mx-auto my-4 relative h-[50rem] max-sm:h-[40rem] "
-          : "w-full mx-auto my-4 max-w-xl relative h-[34rem] max-sm:h-[24rem]"
+          : "w-full mx-auto my-4 max-w-lg relative h-[30rem] max-sm:h-[24rem]"
       }
     >
       <div className="z-10 absolute right-3 top-3 flex flex-col  ">

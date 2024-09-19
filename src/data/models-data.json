@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "new": false,
     "component": "Bedzin",
     "typ": "zamki i ratusze",
     "oświetlenie": true,
@@ -52,6 +53,7 @@
   },
   {
     "id": 1,
+    "new": false,
     "component": "Oporow",
     "typ": "zamki i ratusze",
     "oświetlenie": true,
@@ -99,6 +101,7 @@
   },
   {
     "id": 4,
+    "new": false,
     "component": "SandomierzRatusz",
     "typ": "zamki i ratusze",
     "oświetlenie": true,
@@ -145,6 +148,7 @@
   },
   {
     "id": 29,
+    "new": false,
     "component": "SandomierzBrama",
     "typ": "zamki i ratusze",
     "oświetlenie": false,
@@ -185,6 +189,7 @@
   },
   {
     "id": 2,
+    "new": false,
     "component": "Stilo",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -253,6 +258,7 @@
   },
   {
     "id": 5,
+    "new": false,
     "component": "Darlowo",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -306,6 +312,7 @@
   },
   {
     "id": 6,
+    "new": false,
     "component": "Czolpino",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -366,6 +373,7 @@
   },
   {
     "id": 8,
+    "new": false,
     "component": "Gaski",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -426,6 +434,7 @@
   },
   {
     "id": 9,
+    "new": false,
     "component": "Hel",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -484,6 +493,7 @@
   },
   {
     "id": 10,
+    "new": false,
     "component": "Jaroslawiec",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -531,6 +541,7 @@
   },
   {
     "id": 11,
+    "new": false,
     "component": "Jastarnia",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -585,6 +596,7 @@
   },
   {
     "id": 12,
+    "new": false,
     "component": "Kikut",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -631,6 +643,7 @@
   },
   {
     "id": 13,
+    "new": false,
     "component": "Kolobrzeg",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -677,6 +690,7 @@
   },
   {
     "id": 14,
+    "new": false,
     "component": "KrynicaMorska",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -724,6 +738,7 @@
   },
   {
     "id": 15,
+    "new": false,
     "component": "Niechorze",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -769,6 +784,7 @@
   },
   {
     "id": 16,
+    "new": false,
     "component": "NowyPort",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -825,6 +841,7 @@
   },
   {
     "id": 17,
+    "new": false,
     "component": "PortPolnocny",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -875,6 +892,7 @@
   },
   {
     "id": 18,
+    "new": false,
     "component": "Rozewie",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -920,6 +938,7 @@
   },
   {
     "id": 19,
+    "new": false,
     "component": "Sopot",
     "typ": "latarnie morskie",
     "oświetlenie": true,
@@ -983,6 +1002,7 @@
   },
   {
     "id": 20,
+    "new": false,
     "component": "Swinoujscie",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -1028,6 +1048,7 @@
   },
   {
     "id": 7,
+    "new": false,
     "component": "Ustka",
     "typ": "latarnie morskie",
     "oświetlenie": false,
@@ -1073,6 +1094,7 @@
   },
   {
     "id": 3,
+    "new": false,
     "component": "Curiosity",
     "typ": "kosmos",
     "oświetlenie": false,
@@ -1111,6 +1133,7 @@
   },
   {
     "id": 21,
+    "new": false,
     "component": "Baranow",
     "typ": "zamki i ratusze",
     "oświetlenie": false,
@@ -1145,6 +1168,7 @@
   },
   {
     "id": 22,
+    "new": false,
     "component": "Gryfino",
     "typ": "kościoły",
     "oświetlenie": false,
@@ -1183,6 +1207,7 @@
   },
   {
     "id": 23,
+    "new": false,
     "component": "Mauler",
     "typ": "figurki",
     "oświetlenie": false,
@@ -1217,6 +1242,7 @@
   },
   {
     "id": 24,
+    "new": false,
     "component": "Predator",
     "typ": "figurki",
     "oświetlenie": false,
@@ -1251,6 +1277,7 @@
   },
   {
     "id": 25,
+    "new": false,
     "component": "PhantomF4",
     "typ": "samoloty",
     "oświetlenie": false,
@@ -1283,6 +1310,7 @@
   },
   {
     "id": 26,
+    "new": false,
     "component": "StarshipSN15",
     "typ": "kosmos",
     "oświetlenie": false,
@@ -1312,6 +1340,7 @@
   },
   {
     "id": 27,
+    "new": false,
     "component": "Falcon9",
     "typ": "kosmos",
     "oświetlenie": false,
@@ -1341,6 +1370,7 @@
   },
   {
     "id": 28,
+    "new": false,
     "component": "Wang",
     "typ": "kościoły",
     "oświetlenie": true,
@@ -1371,6 +1401,7 @@
   },
   {
     "id": 30,
+    "new": false,
     "component": "AtlasV",
     "typ": "kosmos",
     "oświetlenie": false,
@@ -1399,5 +1430,43 @@
     },
     "photo": "models/atlasV/atlasV-photo-",
     "description": "Dwustopniowa rakieta z rodziny Atlas. Została zaprojektowana przez Lockheed Martin i jest obsługiwana przez United Launch Alliance (ULA) od 2006 roku."
+  },
+  {
+    "id": 31,
+    "new": true,
+    "component": "SaturnV",
+    "typ": "kosmos",
+    "oświetlenie": false,
+    "rok ukończenia": 2024,
+    "link": "/SaturnV",
+    "publisher": "model darmowy",
+    "name": "Rakieta Saturn V",
+    "card": "./cards/saturnV-card.webp",
+    "icon": "./models-icons/saturn_v-icon.png",
+    "cover": "models/saturn_v/saturn_v-cover.jpg",
+    "position": [28.60833502394, -80.6039243446],
+    "info": {
+      "Projekt": "jleslie48",
+      "Skala": "1:100",
+      "Ilość stron": 29,
+      "Wysokość": "112cm",
+      "Link do pobrania": "http://jleslie48.com/saturn1408/"
+    },
+    "Galeria": {
+      "dzień": {
+        "quantity": 39,
+        "format": ".webp",
+        "full": "./models/saturn_v/day/full-res/saturn_v-d",
+        "thumb": "./models/saturn_v/day/thumb/saturn_v-thumb-d"
+      },
+      "budowa": {
+        "quantity": 10,
+        "format": ".webp",
+        "full": "./models/saturn_v/build/full-res/saturn_v-b",
+        "thumb": "./models/saturn_v/build/thumb/saturn_v-thumb-b"
+      }
+    },
+    "photo": "models/saturn_v/saturn_v-photo-",
+    "description": "Wielostopniowa rakieta kosmiczna na paliwo ciekłe, wykorzystywana przez NASA w programach załogowych lotów kosmicznych Apollo i Skylab."
   }
 ]

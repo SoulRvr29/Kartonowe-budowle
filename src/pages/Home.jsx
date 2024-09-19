@@ -48,7 +48,7 @@ const Article = () => {
         <header className="article-header dark:bg-text-dark dark:bg-opacity-30  bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 py-4 pb-0 max-sm:py-0 relative">
           <div
             className={
-              "flex max-lg:flex-col max-lg:gap-0 gap-8 " +
+              "flex max-lg:flex-col max-lg:gap-0 gap-8  " +
               (mapSize && " flex-col gap-0")
             }
           >
@@ -56,20 +56,18 @@ const Article = () => {
             <MapAll mapSize={mapSize} setMapSize={setMapSize} />
           </div>
           <UpdatesList />
-          <div className="rounded-full max-sm:rounded-xl dark:bg-accent/20 bg-white/30 px-4 py-1 text-center drop-shadow-lg">
-            Na stronie znajduje się aktualnie{" "}
-            <b className="text-accent-4 dark:text-accent-2">
-              {modelsData.length}
-            </b>{" "}
-            galerii oraz{" "}
-            <b className="text-accent-4 dark:text-accent-2">{photosQuantity}</b>{" "}
-            zdjęć.
-          </div>
         </header>
         {/* <hr className="grad-hr" /> */}
       </PhotoProvider>
       <div className="losowe-container m-8 mt-0 max-sm:m-4 max-sm:mt-0 mb-4 max-sm:mb-2 relative">
         <ImagesGrid />
+      </div>
+      <div className="rounded-full max-sm:rounded-xl dark:bg-accent/20 bg-white/30 px-4 py-1 mb-4 max-sm:mb-3 mx-6 max-sm:mx-4 text-center drop-shadow-lg">
+        Na stronie znajduje się aktualnie{" "}
+        <b className="text-accent-4 dark:text-accent-2">{modelsData.length}</b>{" "}
+        galerii oraz{" "}
+        <b className="text-accent-4 dark:text-accent-2">{photosQuantity}</b>{" "}
+        zdjęć.
       </div>
     </>
   );

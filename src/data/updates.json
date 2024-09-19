@@ -1,7 +1,12 @@
 [
   {
     "id": 1,
-    "date": "2024-08-24",
+    "date": "24-08-2024",
     "description": "Nowe zdjęcia latarni morskiej Czołpino, oraz filmiki (gify) z oświetleniem."
+  },
+  {
+    "id": 2,
+    "date": "19-09-2024",
+    "description": "Nowa galeria - rakieta Saturn V"
   }
 ]

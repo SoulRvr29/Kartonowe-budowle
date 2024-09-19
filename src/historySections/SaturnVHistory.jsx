@@ -256,10 +256,7 @@ const StarshipSN15History = ({ id }) => {
             </div>
             <p className="opacity-75 m-0">
               Źródło:{" "}
-              <a
-                href="https://en.wikipedia.org/wiki/SpaceX_Starship"
-                target="_blank"
-              >
+              <a href="https://pl.wikipedia.org/wiki/Saturn_V" target="_blank">
                 wikipedia
               </a>
             </p>

@@ -44,7 +44,7 @@ const InfoCard = ({ mapSize }) => {
   return (
     <div
       className={
-        "info text-left relative w-full min-h-[30rem] max-w-xl mx-auto border-2 border-accent rounded-xl bg-[#bbb] dark:bg-[#222] my-4 p-8 py-6 drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
+        "info text-left relative w-full min-h-[30rem] max-w-lg mx-auto border-2 border-accent rounded-xl bg-[#bbb] dark:bg-[#222] my-4 p-8 py-6 drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
         (mapSize && " order-1 max-lg:order-first")
       }
     >

@@ -20,7 +20,7 @@ const UpdatesList = () => {
   );
 
   return (
-    <div className="rounded-xl dark:bg-accent/30 bg-white/30 py-0 mb-5 drop-shadow-lg">
+    <div className="rounded-xl dark:bg-accent/30 bg-white/30 py-0 drop-shadow-lg">
       <h4 className="text-lg max-sm:text-base text-center m-0 pb-1">
         Ostatnie aktualizacje
       </h4>

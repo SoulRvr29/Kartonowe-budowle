@@ -46,6 +46,7 @@ import Falcon9 from "./pages/Falcon9";
 import Wang from "./pages/Wang";
 import AtlasV from "./pages/AtlasV";
 import SaturnV from "./pages/SaturnV";
+import Olsztyn from "./pages/Olsztyn";
 import Layout from "./Layout";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -88,6 +89,8 @@ const router = createBrowserRouter(
       <Route path="/Wang" element={<Wang id={28} />} />
       <Route path="/AtlasV" element={<AtlasV id={30} />} />
       <Route path="/SaturnV" element={<SaturnV id={31} />} />
+      <Route path="/Olsztyn" element={<Olsztyn id={32} />} />
+
       <Route path="/Oswietlenie" element={<Oswietlenie />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />
       <Route path="/Sadzarka" element={<Sadzarka />} />
