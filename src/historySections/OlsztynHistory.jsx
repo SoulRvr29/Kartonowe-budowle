@@ -9,8 +9,20 @@ const OlsztynHistory = ({ id }) => {
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/saturn_v/saturnV-photo2.webp"];
-  const photosTitle = ["Kolejne wersje rakiety Saturn"];
+  const photosSrc = [
+    "models/olsztyn/olsztyn-photo1.webp",
+    "models/olsztyn/olsztyn-photo2.webp",
+    "models/olsztyn/olsztyn-photo5.webp",
+    "models/olsztyn/olsztyn-photo6.webp",
+    "models/olsztyn/olsztyn-photo4.webp",
+  ];
+  const photosTitle = [
+    "Zamek w Olsztynie w 1910 roku",
+    "Zamek w Olsztynie około 1939-1945 roku",
+    "Zamek obecnie",
+    "Zamek obecnie",
+    "Tablica astronomiczna Mikołaja Kopernika",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -39,17 +51,26 @@ const OlsztynHistory = ({ id }) => {
           loadingElement={<div className="loader"></div>}
         >
           <article className="px-8">
+            <PhotoView src={photosSrc[0]}>
+              <LazyLoadImage
+                className="float-left pr-8 max-h-[16rem]"
+                src={photosSrc[0]}
+                alt={photosTitle[0] || "photo"}
+                title={photosTitle[0]}
+              />
+            </PhotoView>
             <p>
-              Około 1334 powstała na wzgórzu w zakolu Łyny drewniano-ziemna
-              strażnica. Na jej miejscu kapituła warmińska rozpoczęła budowę
-              murowanego zamku, który powstał pomiędzy rokiem 1348 a 1353, gdy
-              miasto uzyskało prawa miejskie. Składał się on wówczas z jednego
-              północnego, głównego skrzydła po północno-wschodniej stronie
-              czworokątnego dziedzińca, którego ozdobą od strony dziedzin ca
-              były piętrowe krużganki. Mieściły się w nim pomieszczenia
-              reprezentacyjne: kaplica św. Anny, refektarz, mieszkanie
-              administratora i kancelaria. Dojście do zamku, otoczonego pasem
-              murów obronnych i fosą prowadziło od strony Łyny mostem zwodzonym.
+              <span className="first-letter font-playfair">O</span>koło 1334
+              powstała na wzgórzu w zakolu Łyny drewniano-ziemna strażnica. Na
+              jej miejscu kapituła warmińska rozpoczęła budowę murowanego zamku,
+              który powstał pomiędzy rokiem 1348 a 1353, gdy miasto uzyskało
+              prawa miejskie. Składał się on wówczas z jednego północnego,
+              głównego skrzydła po północno-wschodniej stronie czworokątnego
+              dziedzińca, którego ozdobą od strony dziedzinca były piętrowe
+              krużganki. Mieściły się w nim pomieszczenia reprezentacyjne:
+              kaplica św. Anny, refektarz, mieszkanie administratora i
+              kancelaria. Dojście do zamku, otoczonego pasem murów obronnych i
+              fosą prowadziło od strony Łyny mostem zwodzonym.
               Południowo-zachodnie skrzydło zamku zbudowano w XV w. Wieżę z
               połowy XIV w., położoną w zachodnim narożniku dziedzińca,
               przebudowano w początku XVI w., nadając jej kształt okrągły na
@@ -79,6 +100,14 @@ const OlsztynHistory = ({ id }) => {
               Anny, niedawno zbudowaną w południowo-zachodnim skrzydle zamku, a
               obdarzoną misternym siatkowym sklepieniem.
             </p>
+            <PhotoView src={photosSrc[1]}>
+              <LazyLoadImage
+                className="float-left pr-8 mt-2 max-h-[20rem]"
+                src={photosSrc[1]}
+                alt={photosTitle[1] || "photo"}
+                title={photosTitle[1]}
+              />
+            </PhotoView>
             <p>
               Z czasem oba skrzydła zamku utraciły militarne znaczenie, a dla
               celów mieszkalnych stały się mało dogodne. W 1758 doprowadzono
@@ -101,6 +130,7 @@ const OlsztynHistory = ({ id }) => {
               Leonarda Fromma – archeologa i Hugo Hermanna Grossa – nauczyciela
               przyrody.
             </p>
+
             <p>
               Zamek także i dzisiaj służy celom muzealnym. W 1945 zamek stał się
               siedzibą Muzeum Mazurskiego, które dzisiaj nosi nazwę Muzeum
@@ -110,6 +140,25 @@ const OlsztynHistory = ({ id }) => {
               organizowane tu w ramach Olsztyńskiego Lata Artystycznego (OLA)
               jak wieczory zamkowe i „Niedziele w Muzeum”.
             </p>
+            <div className="flex flex-wrap justify-center gap-x-8">
+              {" "}
+              <PhotoView src={photosSrc[2]}>
+                <LazyLoadImage
+                  className=""
+                  src={photosSrc[2]}
+                  alt={photosTitle[2] || "photo"}
+                  title={photosTitle[2]}
+                />
+              </PhotoView>
+              <PhotoView src={photosSrc[3]}>
+                <LazyLoadImage
+                  className=""
+                  src={photosSrc[3]}
+                  alt={photosTitle[3] || "photo"}
+                  title={photosTitle[3]}
+                />
+              </PhotoView>
+            </div>
             <h4>Muzeum</h4>
             <p>
               Na zamku znajduje się stała wystawa kopernikowska (zlokalizowana w
@@ -118,6 +167,14 @@ const OlsztynHistory = ({ id }) => {
               umieszczona jest astronomiczna tablica doświadczalna z 1517 r.,
               prawdopodobnie wykonana własnoręcznie przez Mikołaja Kopernika.
             </p>
+            <PhotoView src={photosSrc[4]}>
+              <LazyLoadImage
+                className="mx-auto"
+                src={photosSrc[4]}
+                alt={photosTitle[4] || "photo"}
+                title={photosTitle[4]}
+              />
+            </PhotoView>
             <h4>Mikołaj Kopernik</h4>
             <p>
               Mikołaj Kopernik mieszkał w północno-wschodnim skrzydle zamku, w
@@ -133,25 +190,18 @@ const OlsztynHistory = ({ id }) => {
               zachowaną pamiątką po Koperniku. Kopernik przebywał jeszcze na
               zamku w latach 1524, 1531, 1535 i 1538 jako wizytator.
             </p>
+
             <p>
               W roku 2010, od 16 marca do 21 maja na zamku przebywał sarkofag z
               doczesnymi szczątkami Mikołaja Kopernika. 22 maja sarkofag został
               przewieziony do Fromborka, gdzie został uroczyście pochowany w
               tamtejszej bazylice katedralnej.
             </p>
-            {/* <PhotoView src={photosSrc[0]}>
-              <LazyLoadImage
-                className="mx-auto"
-                src={photosSrc[0]}
-                alt={photosTitle[0] || "photo"}
-                title={photosTitle[0]}
-              />
-            </PhotoView> */}
 
             <p className="opacity-75 m-0">
               Źródło:{" "}
               <a
-                href="https://en.wikipedia.org/wiki/SpaceX_Starship"
+                href="https://pl.wikipedia.org/wiki/Zamek_Kapitu%C5%82y_Warmi%C5%84skiej_w_Olsztynie"
                 target="_blank"
               >
                 wikipedia

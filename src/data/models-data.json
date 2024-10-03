@@ -1468,5 +1468,40 @@
     },
     "photo": "models/saturn_v/saturn_v-photo-",
     "description": "Wielostopniowa rakieta kosmiczna na paliwo ciekłe, wykorzystywana przez NASA w programach załogowych lotów kosmicznych Apollo i Skylab."
+  },
+  {
+    "id": 32,
+    "new": true,
+    "component": "Olsztyn",
+    "typ": "zamki i ratusze",
+    "oświetlenie": false,
+    "rok ukończenia": 2010,
+    "link": "/Olsztyn",
+    "cover": "models/olsztyn/olsztyn-cover.webp",
+    "position": [53.77771535, 20.47427819],
+    "address": "Zamkowa 2, 10-074 Olsztyn",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:200",
+      "Rok wydania": 1999,
+      "Stopień trudności": 2,
+      "Ilość stron": 8,
+      "Szerokość": "31cm",
+      "Długość": "41cm",
+      "Wysokość": "23cm"
+    },
+    "name": "Zamek w Olsztynie",
+    "card": "./cards/olsztyn-card.webp",
+    "icon": "./models-icons/olsztyn-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 27,
+        "format": ".webp",
+        "full": "./models/olsztyn/day/full-res/olsztyn-d",
+        "thumb": "./models/olsztyn/day/thumb/olsztyn-thumb-d"
+      }
+    },
+    "photo": "models/olsztyn/olsztyn-photo",
+    "description": "Zamek wybudowany w połowie XIV w. w stylu gotyckim przez kapitułę warmińską, która była jego właścicielem do 1772. Zamek pełnił funkcje obronne oraz był siedzibą min. administratora dóbr kapituły."
   }
 ]
