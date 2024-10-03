@@ -31,8 +31,10 @@ const ImagesGrid = () => {
       // check if there are gallery sections
       if (Object.entries(photo).length > 1) {
         let randomGalleryType = 0;
+        randomGalleryType = Math.floor(
+          Math.random() * Object.entries(photo).length
+        );
         while (
-          randomGalleryType == 0 ||
           Object.entries(photo)[randomGalleryType][1].format == "youtube"
         ) {
           randomGalleryType = Math.floor(
