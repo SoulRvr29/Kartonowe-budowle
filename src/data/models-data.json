@@ -1390,7 +1390,7 @@
     "icon": "./models-icons/wang-icon.png",
     "Galeria": {
       "budowa": {
-        "quantity": 126,
+        "quantity": 140,
         "format": ".jpg",
         "full": "./models/wang/build/full-res/wang-b",
         "thumb": "./models/wang/build/thumb/wang-thumb-b"
