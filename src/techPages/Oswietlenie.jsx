@@ -3,8 +3,9 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import ResistorCalc from "../components/ResistorCalc";
 import { useEffect } from "react";
+import Comments from "../components/Comments";
 
-const Article = () => {
+const Article = ({ id }) => {
   useEffect(() => {
     document.title = "Oświetlenie - ModelCraft";
   }, []);
@@ -248,6 +249,7 @@ const Article = () => {
           </div>
         </article>{" "}
       </PhotoProvider>
+      <Comments id={id} />
     </>
   );
 };

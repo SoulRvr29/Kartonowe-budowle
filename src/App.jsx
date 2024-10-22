@@ -91,7 +91,7 @@ const router = createBrowserRouter(
       <Route path="/SaturnV" element={<SaturnV id={31} />} />
       <Route path="/Olsztyn" element={<Olsztyn id={32} />} />
 
-      <Route path="/Oswietlenie" element={<Oswietlenie />} />
+      <Route path="/Oswietlenie" element={<Oswietlenie id={"Oswietlenie"} />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />
       <Route path="/Sadzarka" element={<Sadzarka />} />
       <Route path="/Okna" element={<Okna />} />

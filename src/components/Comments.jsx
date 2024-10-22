@@ -12,7 +12,11 @@ const Comments = ({ id }) => {
   );
   const [inputState, setInputState] = useState(false);
   const [newComment, setNewComment] = useState("");
-  const sectionName = modelsData.filter((item) => item.id === id)[0].component;
+  const sectionName =
+    typeof id === "number"
+      ? modelsData.filter((item) => item.id === id)[0].component
+      : id;
+
   const apiURLcomments =
     "https://kartonowe-budowle-mongo-db-api.vercel.app/api/comments";
   // "http://localhost:5000/api/comments";
@@ -63,7 +67,10 @@ const Comments = ({ id }) => {
       userName = user.login;
     }
     const newData = {
-      modelName: modelsData.filter((item) => item.id === id)[0].name,
+      modelName:
+        typeof id === "number"
+          ? modelsData.filter((item) => item.id === id)[0].name
+          : id,
       login: userName,
       comment: newComment,
       createdAt: new Date(new Date().getTime() + 7200000),
