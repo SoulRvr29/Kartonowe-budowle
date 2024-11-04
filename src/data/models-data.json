@@ -1377,7 +1377,7 @@
     "rok ukończenia": 9999,
     "link": "/Wang",
     "cover": "models/wang/wang-cover.jpg",
-    "position": [50.777365, 15.724156],
+    "position": [50.777365, 15.724056],
     "address": "Na Śnieżkę 8, 58-540 Karpacz",
     "info": {
       "Projekt": "własny",
@@ -1433,7 +1433,7 @@
   },
   {
     "id": 31,
-    "new": true,
+    "new": false,
     "component": "SaturnV",
     "typ": "kosmos",
     "oświetlenie": false,
@@ -1471,7 +1471,7 @@
   },
   {
     "id": 32,
-    "new": true,
+    "new": false,
     "component": "Olsztyn",
     "typ": "zamki i ratusze",
     "oświetlenie": false,
@@ -1503,5 +1503,40 @@
     },
     "photo": "models/olsztyn/olsztyn-photo",
     "description": "Zamek wybudowany w połowie XIV w. w stylu gotyckim przez kapitułę warmińską, która była jego właścicielem do 1772. Zamek pełnił funkcje obronne oraz był siedzibą min. administratora dóbr kapituły."
+  },
+  {
+    "id": 33,
+    "new": true,
+    "component": "WangGPM",
+    "typ": "kościoły",
+    "oświetlenie": false,
+    "rok ukończenia": 2024,
+    "link": "/WangGPM",
+    "cover": "models/wang_gpm/wang_gpm-cover.jpg",
+    "position": [50.777365, 15.724286],
+    "address": "Na Śnieżkę 8, 58-540 Karpacz",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:150",
+      "Rok wydania": 2014,
+      "Stopień trudności": 1,
+      "Ilość stron": 4,
+      "Szerokość": "20cm",
+      "Długość": "20cm",
+      "Wysokość": "18cm"
+    },
+    "name": "Świątynia Wang",
+    "card": "./cards/wang_gpm-card.webp",
+    "icon": "./models-icons/wang_gpm-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 13,
+        "format": ".webp",
+        "full": "./models/wang_gpm/day/full-res/wang-gpm-d",
+        "thumb": "./models/wang_gpm/day/thumb/wang-gpm-thumb-d"
+      }
+    },
+    "photo": "models/wang_gpm/wang_gpm-photo",
+    "description": "Ewangelicki kościół parafialny w Karpaczu w Karkonoszach, przeniesiony w 1842 z miejscowości Vang, leżącej nad jeziorem Vangsmjøsa w Norwegii."
   }
 ]
