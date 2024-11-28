@@ -1390,7 +1390,7 @@
     "icon": "./models-icons/wang-icon.png",
     "Galeria": {
       "budowa": {
-        "quantity": 153,
+        "quantity": 161,
         "format": ".jpg",
         "full": "./models/wang/build/full-res/wang-b",
         "thumb": "./models/wang/build/thumb/wang-thumb-b"
@@ -1506,7 +1506,7 @@
   },
   {
     "id": 33,
-    "new": true,
+    "new": false,
     "component": "WangGPM",
     "typ": "kościoły",
     "oświetlenie": false,
