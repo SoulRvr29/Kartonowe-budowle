@@ -256,15 +256,14 @@ const Comments = ({ id }) => {
                         <p className="m-0">
                           {item.createdAt && item.createdAt.slice(11, 19)}
                         </p>
-
-                        {localStorage.getItem("devMode") == "true" && (
+                        {user && user.admin && (
                           <button
                             className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:-right-9 max-sm:top-[-22px] "
                             onClick={() => deleteComment(item["_id"])}
                           >
                             <FaTrashAlt className="max-sm:text-base" />
                           </button>
-                        )}
+                        )}{" "}
                       </div>
                     </div>
                     {editComment !== index && (
@@ -278,7 +277,8 @@ const Comments = ({ id }) => {
                             }}
                             className={
                               "edit-btn absolute top-1 right-0 bg-white bg-opacity-70 font-semibold text-text-dark dark:bg-opacity-20 px-1 rounded-md  dark:text-text-light opacity-0 transition-opacity cursor-pointer max-sm:opacity-100 max-sm:top-[-46px] max-sm:text-xs " +
-                              (localStorage.getItem("devMode") == "true" &&
+                              (user &&
+                                user.admin == "true" &&
                                 "  max-sm:right-4")
                             }
                           >

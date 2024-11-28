@@ -16,8 +16,8 @@ const Settings = ({
   setAutoScroll,
   sections,
   setSections,
-  devMode,
-  setDevMode,
+  // devMode,
+  // setDevMode,
 }) => {
   const [confirm, setconfirm] = useState(false);
   const [devInput, setDevInput] = useState(false);
@@ -98,7 +98,7 @@ const Settings = ({
               </button>
             </li>
             {/* DEV MODE */}
-            <li className="rounded-md gap-1 flex flex-col justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
+            {/* <li className="rounded-md gap-1 flex flex-col justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
               <div className="flex justify-between">
                 Tryb Dev:{" "}
                 <button
@@ -157,7 +157,7 @@ const Settings = ({
                   </button>
                 </form>
               )}
-            </li>
+            </li> */}
             {/* PRZYCISKI ZAPISZ / ZAMKNIJ */}
             <div className="flex justify-center gap-6 px-8 max-sm:px-0 pt-3 text-white">
               <button

@@ -12,6 +12,7 @@ const InfoCard = ({ mapSize }) => {
   const [markdown, setMarkdown] = useState("");
   const [savedMarkdown, setSavedMarkdown] = useState("");
   const [isEditing, setIsEditing] = useState(false);
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
   useEffect(() => {
     const fetchMarkdown = async () => {
@@ -92,7 +93,7 @@ const InfoCard = ({ mapSize }) => {
           )}
         </div>
       )}
-      {localStorage.getItem("devMode") == "true" && (
+      {user && user.admin && (
         <button
           onClick={() => {
             setIsEditing(!isEditing);
