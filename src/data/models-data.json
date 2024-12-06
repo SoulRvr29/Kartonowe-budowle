@@ -1213,7 +1213,7 @@
     "oświetlenie": false,
     "rok ukończenia": 2012,
     "link": "/Mauler",
-    "cover": "models/mauler/mauler-cover.jpg",
+    "cover": "models/mauler/mauler-cover.webp",
     "info": {
       "Projekt": "Alcli0nE",
       "Skala": "1:7",
@@ -1248,7 +1248,7 @@
     "oświetlenie": false,
     "rok ukończenia": 2017,
     "link": "/Predator",
-    "cover": "models/predator/predator-cover.jpg",
+    "cover": "models/predator/predator-cover.webp",
     "info": {
       "Projekt": "BlueDragon",
       "Skala": "1:7",
@@ -1538,5 +1538,38 @@
     },
     "photo": "models/wang_gpm/wang_gpm-photo",
     "description": "Ewangelicki kościół parafialny w Karpaczu w Karkonoszach, przeniesiony w 1842 z miejscowości Vang, leżącej nad jeziorem Vangsmjøsa w Norwegii."
+  },
+  {
+    "id": 34,
+    "new": true,
+    "component": "MiG29",
+    "typ": "samoloty",
+    "oświetlenie": false,
+    "rok ukończenia": 2008,
+    "link": "/MiG-29",
+    "cover": "models/mig_29/mig_29-cover.jpg",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:33",
+      "Rok wydania": 2004,
+      "Stopień trudności": 2,
+      "Ilość stron": 8,
+      "Długość": "52cm",
+      "Szerokość": "34cm",
+      "Wysokość": "13cm"
+    },
+    "name": "MiG-29UB",
+    "card": "./cards/mig_29-card.webp",
+    "icon": "./models-icons/mig_29-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 11,
+        "format": ".webp",
+        "full": "./models/mig_29/full-res/mig_29_ub-d",
+        "thumb": "./models/mig_29/thumb/mig_29_ub-thumb-d"
+      }
+    },
+    "photo": "models/mig_29_ub/mig_29_ub-photo",
+    "description": "Radziecki, obecnie rosyjski, współczesny myśliwiec frontowy, opracowany przez biuro konstrukcyjne MiG. Oblatany w 1977 roku i produkowany od 1983 roku."
   }
 ]
