@@ -1565,8 +1565,8 @@
       "dzień": {
         "quantity": 11,
         "format": ".webp",
-        "full": "./models/mig_29/full-res/mig_29_ub-d",
-        "thumb": "./models/mig_29/thumb/mig_29_ub-thumb-d"
+        "full": "./models/mig_29/full-res/mig_29-d",
+        "thumb": "./models/mig_29/thumb/mig_29-thumb-d"
       }
     },
     "photo": "models/mig_29_ub/mig_29_ub-photo",
