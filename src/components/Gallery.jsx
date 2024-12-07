@@ -173,9 +173,11 @@ const Gallery = ({ id, name }) => {
           >
             <h5 className="mx-auto border-none -my-1 mt-0 max-sm:text-base">
               {" "}
-              {model["rok ukończenia"] < 3000
-                ? `Rok budowy modelu: ${model["rok ukończenia"]}`
-                : "Model w budowie"}
+              {model["lata budowy modeli"]
+                ? `Lata budowy modeli: ${model["lata budowy modeli"]}`
+                : model["rok ukończenia"] < 3000
+                  ? `Rok budowy modelu: ${model["rok ukończenia"]}`
+                  : "Model w budowie"}
             </h5>
             <div className="p-4 gallery relative flex gap-5 flex-wrap justify-center">
               {model[name][actualSection].format !== "youtube" &&

@@ -49,6 +49,7 @@ import SaturnV from "./pages/SaturnV";
 import Olsztyn from "./pages/Olsztyn";
 import WangGPM from "./pages/WangGPM";
 import MiG29 from "./pages/MiG29";
+import Wiezowce from "./pages/Wiezowce";
 import Layout from "./Layout";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -94,6 +95,7 @@ const router = createBrowserRouter(
       <Route path="/Olsztyn" element={<Olsztyn id={32} />} />
       <Route path="/WangGPM" element={<WangGPM id={33} />} />
       <Route path="/MiG-29" element={<MiG29 id={34} />} />
+      <Route path="/Wiezowce" element={<Wiezowce id={35} />} />
 
       <Route path="/Oswietlenie" element={<Oswietlenie id={"Oswietlenie"} />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />

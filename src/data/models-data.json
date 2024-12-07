@@ -1541,7 +1541,7 @@
   },
   {
     "id": 34,
-    "new": true,
+    "new": false,
     "component": "MiG29",
     "typ": "samoloty",
     "oświetlenie": false,
@@ -1571,5 +1571,34 @@
     },
     "photo": "models/mig_29_ub/mig_29_ub-photo",
     "description": "Radziecki, obecnie rosyjski, współczesny myśliwiec frontowy, opracowany przez biuro konstrukcyjne MiG. Oblatany w 1977 roku i produkowany od 1983 roku."
+  },
+  {
+    "id": 35,
+    "new": true,
+    "component": "Wiezowce",
+    "typ": "",
+    "oświetlenie": false,
+    "rok ukończenia": 2019,
+    "lata budowy modeli": "2011-2019",
+    "link": "/Wiezowce",
+    "position": [40.731860593, -73.99407905],
+    "info": {
+      "Projekt": "skyscrapercity",
+      "Skala": "1:1800",
+      "Wysokość": "25.5cm"
+    },
+    "name": "Wieżowce NY 1909-1933",
+    "card": "./cards/wiezowce-card.webp",
+    "icon": "./models-icons/wiezowce-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 32,
+        "format": ".webp",
+        "full": "./models/wiezowce/day/full-res/wiezowce-d",
+        "thumb": "./models/wiezowce/day/thumb/wiezowce-thumb-d"
+      }
+    },
+    "photo": "models/wiezowce/wiezowce-photo",
+    "description": "Dziesięć najwyższych budynków w Nowym Jorku do końca lat 30. XX wieku."
   }
 ]
