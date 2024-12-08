@@ -30,7 +30,14 @@ const ModelInfo = ({ id }) => {
                 alt="okładka"
               />
             )}
-            <div className="model-info w-max h-min p-4 border-l-2 max-sm:border-l-0 max-sm:border-t-2 dark:border-accent-2 border-text-light">
+            <div
+              className={
+                "model-info w-max h-min p-4  " +
+                (data.cover
+                  ? "border-l-2 max-sm:border-l-0 max-sm:border-t-2 dark:border-accent-2 border-text-light"
+                  : "")
+              }
+            >
               <ul className="info-text text-lg max-sm:text-base text-accent-3 tracking-wide font-bold">
                 {info.map((key) => {
                   return (
