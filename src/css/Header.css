@@ -31,15 +31,23 @@ h1 div {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(-2px -2px 3px rgba(255, 255, 255, 0.15)) !important;
 }
 
 .dark h1 div {
   background-image: linear-gradient(
     150deg,
-    white 0%,
+    white 20%,
     var(--accent) 50%,
     black 150%
   );
+  filter: drop-shadow(-2px -2px 3px rgba(255, 255, 255, 0.15)) !important;
+  /* background-image: linear-gradient(
+    150deg,
+    white 0%,
+    var(--accent) 50%,
+    black 150%
+  ); */
   filter: brightness(1.1);
   position: relative;
 }
