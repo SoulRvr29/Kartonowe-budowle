@@ -6,6 +6,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaShareNodes } from "react-icons/fa6";
 import ShareScreen from "./ShareScreen";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Gallery = ({ id, name }) => {
   if (name === undefined) name = "Galeria";
@@ -184,11 +185,15 @@ const Gallery = ({ id, name }) => {
                 actualSrcThumb.map((item, index) => {
                   return (
                     <PhotoView key={index} src={actualSrcFull[index]}>
-                      <div className="cursor-pointer">
+                      <div className="cursor-pointer transition-opacity duration-500 ease-in-out opacity-0 ">
                         <LazyLoadImage
+                          threshold={300}
                           width={160}
                           height={160}
-                          className="gallery-thumb h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
+                          className="h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
+                          onLoad={(e) =>
+                            e.target.parentElement.classList.remove("opacity-0")
+                          }
                           src={item}
                           alt={model.name + " photo"}
                           onClick={() => {

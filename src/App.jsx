@@ -54,8 +54,6 @@ import Layout from "./Layout";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 
-import Snowfall from "react-snowfall";
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -113,10 +111,6 @@ function App() {
     <>
       <RouterProvider router={router} />
       <SpeedInsights />
-      <Snowfall
-        snowflakeCount={window.innerWidth < 768 ? 30 : 100}
-        style={{ zIndex: 100, position: "fixed", top: 0, left: 0 }}
-      />
       <Analytics />
     </>
   );

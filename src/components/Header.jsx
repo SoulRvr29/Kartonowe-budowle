@@ -6,6 +6,7 @@ import Timer from "../components/Timer";
 import { FaHome, FaLightbulb, FaInfoCircle, FaUser } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 import axios from "axios";
+import SnowFlakes from "./SnowFlakes";
 
 function App({ bannerState, setBannerState, overlap, setOverlap }) {
   const darkModeCheck = window.matchMedia(
@@ -133,7 +134,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     try {
       const response = await axios.post(`${apiURL}`, newUser);
       setAccountExist(false);
-      console.log(response.data);
+      // console.log(response.data);
       setConfirm(true);
       setTimeout(() => {
         setConfirm(false);
@@ -177,7 +178,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     <div className="relative">
       <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
         {/* left side */}
-        <div className="flex gap-3 z-10 ml-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
+        <div className="flex gap-2 z-10 ml-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
           <button className="mb-1">
             <Link to="/" title="strona główna">
               <FaHome
@@ -188,6 +189,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
             </Link>
           </button>
           <Timer />
+          <SnowFlakes />
         </div>
         {/* main title */}
         <div className="absolute w-full flex gap-2 justify-center max-[560px]:static max-[560px]:-order-1">
