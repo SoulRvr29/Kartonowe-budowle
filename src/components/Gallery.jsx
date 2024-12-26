@@ -6,7 +6,6 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaShareNodes } from "react-icons/fa6";
 import ShareScreen from "./ShareScreen";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Gallery = ({ id, name }) => {
   if (name === undefined) name = "Galeria";

@@ -117,10 +117,12 @@ const ImagesGrid = () => {
           {data.map((item, index) => (
             <div key={index} className="random-img relative cursor-pointer ">
               <PhotoView key={index} src={item.full}>
-                <div className="gallery-thumb photo-container  border-2 border-bkg rounded-xl dark:border-accent dark:hover:border-white hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] overflow-hidden hover:scale-105 transition-transform">
+                <div className="gallery-thumb photo-container  border-2 border-bkg rounded-xl dark:border-accent dark:hover:border-white hover:border-white hover:drop-shadow-[0_0_7px_rgba(255,255,255,0.5)] overflow-hidden hover:scale-105 transition-all opacity-0">
                   <LazyLoadImage
+                    threshold={300}
                     title={item.name}
-                    onLoad={() => {
+                    onLoad={(e) => {
+                      e.target.parentElement.classList.remove("opacity-0");
                       loadCounter++;
                       if (loadCounter === data.length - 1) {
                         document.querySelector(".img-container").style.opacity =

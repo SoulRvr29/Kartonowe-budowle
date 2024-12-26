@@ -2,13 +2,13 @@ import { FaRegSnowflake } from "react-icons/fa";
 import Snowfall from "react-snowfall";
 import { useState } from "react";
 
-const SnowFlakes = (snowflakesFromLocalStorage) => {
+const SnowFlakes = () => {
   if (localStorage.getItem("snowflakes") == null)
     localStorage.setItem("snowflakes", true);
   const [snowflakes, setSnowflakes] = useState(
     JSON.parse(localStorage.getItem("snowflakes"))
   );
-  console.log(snowflakesFromLocalStorage);
+
   return (
     <>
       {snowflakes && (
