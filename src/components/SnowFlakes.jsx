@@ -28,8 +28,12 @@ const SnowFlakes = () => {
       >
         <FaRegSnowflake
           size={20}
-          color="var(--icon-gray)"
-          className="header-icon  transition-all relative bottom-[1px]"
+          className={
+            "header-icon  transition-all relative bottom-[1px]" +
+            (snowflakes
+              ? " text-white drop-shadow-[0_0_4px_rgba(255,255,255,0.4)]"
+              : " text-icon-gray")
+          }
           title={snowflakes ? "Ukryj padający śnieg" : "Pokaż padający śnieg"}
         />
       </button>
