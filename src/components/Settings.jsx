@@ -16,20 +16,22 @@ const Settings = ({
   setAutoScroll,
   sections,
   setSections,
+  headerSticky,
+  setHeaderSticky,
   // devMode,
   // setDevMode,
 }) => {
   const [confirm, setconfirm] = useState(false);
-  const [devInput, setDevInput] = useState(false);
-  const [devPassword, setDevPassword] = useState("");
-  const [devPlaceholder, setDevPalaceholder] = useState("Podaj hasło");
+  // const [devInput, setDevInput] = useState(false);
+  // const [devPassword, setDevPassword] = useState("");
+  // const [devPlaceholder, setDevPalaceholder] = useState("Podaj hasło");
   return (
     <>
       <div
         onClick={() => setSettingsState(false)}
         className="settings max-sm:grid w-screen h-screen fixed top-0 left-0 bg-black bg-opacity-30 z-20 "
       ></div>
-      <div className="settings grid w-80 max-sm:right-auto max-sm:mx-4 max-sm:w-[calc(100%-2rem)] max-sm:top-7 select-none absolute top-[62px] right-8 dark:bg-text-dark bg-text-light rounded-xl drop-shadow-[5px_5px_10px_rgba(0,0,0,0.5)] border-2 dark:border-text-light dark:border-opacity-40 z-20 px-4 pt-1 pb-4 dark:text-text-light text-text-dark">
+      <div className="settings grid w-80 max-sm:right-auto max-sm:mx-4 max-sm:w-[calc(100%-2rem)] max-sm:top-7 select-none absolute top-[62px] right-8 dark:bg-text-dark bg-text-light rounded-xl drop-shadow-[5px_5px_10px_rgba(0,0,0,0.5)] border-2 dark:border-text-light dark:border-opacity-40 z-20 px-4 pt-1 pb-4 dark:text-text-light text-text-dark text-base">
         <div className={!confirm ? " visible" : " invisible"}>
           <h5 className="text-center text-xl">Ustawienia</h5>
           <ul className=" font-medium grid gap-y-1 mt-2">
@@ -95,6 +97,16 @@ const Settings = ({
                 onClick={() => setSections(!sections)}
               >
                 {sections ? "wyłączone" : "włączone"}
+              </button>
+            </li>
+            {/* HEADER */}
+            <li className="rounded-md flex justify-between bg-text-dark bg-opacity-20 p-1 pl-2 dark:bg-text-light dark:bg-opacity-20">
+              Nagłówek strony:{" "}
+              <button
+                className=" dark:border-text-dark w-24 rounded-[4px] pb-[2px] px-2 dark:hover:text-text-dark dark:hover:bg-text-light dark:bg-text-dark bg-text-light bg-opacity-60 hover:text-text-light hover:bg-text-dark hover:bg-opacity-60 transition-colors"
+                onClick={() => setHeaderSticky(!headerSticky)}
+              >
+                {!headerSticky ? "statyczny" : "przyklejony"}
               </button>
             </li>
             {/* DEV MODE */}

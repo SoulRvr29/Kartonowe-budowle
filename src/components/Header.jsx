@@ -43,6 +43,12 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     JSON.parse(localStorage.getItem("devMode"))
   );
 
+  if (localStorage.getItem("header") == null)
+    localStorage.setItem("header", true);
+  const [headerSticky, setHeaderSticky] = useState(
+    JSON.parse(localStorage.getItem("header"))
+  );
+
   const titleAnimation = () => {
     const title = document.querySelectorAll("h1 div");
     let timeout = 100;
@@ -116,6 +122,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     localStorage.setItem("autoScroll", autoScroll);
     localStorage.setItem("sections", sections);
     localStorage.setItem("devMode", devMode);
+    localStorage.setItem("header", headerSticky);
   };
 
   const [settingsState, setSettingsState] = useState(false);
@@ -182,7 +189,7 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
   window.addEventListener("scroll", shadowHandler);
 
   return (
-    <div className="sticky top-0 z-20 ">
+    <div className={headerSticky ? "sticky top-0 z-20 " : " "}>
       <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 border-b-2 dark:border-accent dark:border-opacity-50 border-white border-opacity-50">
         {/* left side */}
         <div className="flex gap-2 z-10 ml-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
@@ -288,6 +295,8 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           setSections={setSections}
           devMode={devMode}
           setDevMode={setDevMode}
+          headerSticky={headerSticky}
+          setHeaderSticky={setHeaderSticky}
         />
       )}
       {accountState && (
@@ -307,12 +316,14 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
         />
       )}
       {/* shadow below header */}
-      <div
-        className={
-          "bg-gradient-to-b pointer-events-none from-black to-transparent absolute -bottom-7 h-7 w-full transition-all duration-500 " +
-          (bottomShadow ? " opacity-30 dark:opacity-70" : " opacity-0")
-        }
-      ></div>
+      {headerSticky && (
+        <div
+          className={
+            "bg-gradient-to-b pointer-events-none from-black to-transparent absolute -bottom-7 h-7 w-full transition-all duration-500 " +
+            (bottomShadow ? " opacity-30 dark:opacity-70" : " opacity-0")
+          }
+        ></div>
+      )}
     </div>
   );
 }
