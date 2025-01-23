@@ -174,9 +174,16 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     if (localUser) loginSubmit(localUser);
   }, []);
 
+  const [bottomShadow, setBottomShadow] = useState(false);
+  const shadowHandler = () => {
+    let y = window.scrollY;
+    y > 0 ? setBottomShadow(true) : setBottomShadow(false);
+  };
+  window.addEventListener("scroll", shadowHandler);
+
   return (
-    <div className="relative">
-      <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 dark:border-b-2 border-accent border-opacity-50">
+    <div className="sticky top-0 z-20 ">
+      <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 border-b-2 dark:border-accent dark:border-opacity-50 border-white border-opacity-50">
         {/* left side */}
         <div className="flex gap-2 z-10 ml-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
           <button className="mb-1">
@@ -299,6 +306,13 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
           setLoginError={setLoginError}
         />
       )}
+      {/* shadow below header */}
+      <div
+        className={
+          "bg-gradient-to-b pointer-events-none from-black to-transparent absolute -bottom-7 h-7 w-full transition-all duration-500 " +
+          (bottomShadow ? " opacity-30 dark:opacity-70" : " opacity-0")
+        }
+      ></div>
     </div>
   );
 }

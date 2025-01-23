@@ -68,7 +68,7 @@ const Banner = ({ bannerState, setBannerState }) => {
         to={bannerState === true && actualBanner.link}
         className="relative z-10 grid"
       >
-        <hr className="grad-hr dark:hidden" />
+        <hr className="grad-hr hidden" />
         {/* loading icon */}
         {loadingIcon && (
           <div className="loading-icon absolute top-[40%] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
