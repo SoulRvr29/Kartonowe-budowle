@@ -38,7 +38,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   );
 };
 
-const Nav = ({ overlap, setOverlap }) => {
+const Nav = ({ overlap, setOverlap, headerSticky }) => {
   const completeData = modelsData.sort((a, b) => {
     return b["rok ukończenia"] - a["rok ukończenia"];
   });
@@ -152,7 +152,12 @@ const Nav = ({ overlap, setOverlap }) => {
             }
           >
             {data.map((model) => (
-              <Card model={model} key={model.id} overlap={overlap} />
+              <Card
+                model={model}
+                key={model.id}
+                overlap={overlap}
+                headerSticky={headerSticky}
+              />
             ))}
           </div>
         </section>

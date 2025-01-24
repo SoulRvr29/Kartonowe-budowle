@@ -8,7 +8,14 @@ import { FaGear } from "react-icons/fa6";
 import axios from "axios";
 import SnowFlakes from "./SnowFlakes";
 
-function App({ bannerState, setBannerState, overlap, setOverlap }) {
+function App({
+  bannerState,
+  setBannerState,
+  overlap,
+  setOverlap,
+  headerSticky,
+  setHeaderSticky,
+}) {
   const darkModeCheck = window.matchMedia(
     "(prefers-color-scheme: dark)"
   ).matches;
@@ -41,12 +48,6 @@ function App({ bannerState, setBannerState, overlap, setOverlap }) {
     localStorage.setItem("devMode", false);
   const [devMode, setDevMode] = useState(
     JSON.parse(localStorage.getItem("devMode"))
-  );
-
-  if (localStorage.getItem("header") == null)
-    localStorage.setItem("header", true);
-  const [headerSticky, setHeaderSticky] = useState(
-    JSON.parse(localStorage.getItem("header"))
   );
 
   const titleAnimation = () => {

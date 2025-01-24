@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Card = ({ model, overlap }) => {
+const Card = ({ model, overlap, headerSticky }) => {
   return (
     <div
       className={
@@ -12,7 +12,16 @@ const Card = ({ model, overlap }) => {
       <NavLink
         onClick={() => {
           if (localStorage.getItem("autoScroll") == "true") {
-            document.querySelector(".article-header").scrollIntoView();
+            // document.querySelector(".article-header").scrollIntoView();
+            const articleSection = document.querySelector(".article-header");
+            const header = document.querySelector("header");
+            const articleTop =
+              articleSection.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+              top: articleTop - header.offsetHeight,
+              behavior: "smooth",
+            });
           }
         }}
         to={model.link}

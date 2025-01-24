@@ -21,6 +21,11 @@ const Layout = () => {
     JSON.parse(localStorage.getItem("banner"))
   );
 
+  if (localStorage.getItem("header") == null)
+    localStorage.setItem("header", true);
+  const [headerSticky, setHeaderSticky] = useState(
+    JSON.parse(localStorage.getItem("header"))
+  );
   return (
     <>
       <div className="bkg-texture fixed top-0 left-0 w-screen h-screen flex justify-center -z-20"></div>
@@ -31,9 +36,15 @@ const Layout = () => {
           setBannerState={setBannerState}
           overlap={overlap}
           setOverlap={setOverlap}
+          headerSticky={headerSticky}
+          setHeaderSticky={setHeaderSticky}
         />
         <Banner bannerState={bannerState} setBannerState={setBannerState} />
-        <Nav overlap={overlap} setOverlap={setOverlap} />
+        <Nav
+          overlap={overlap}
+          setOverlap={setOverlap}
+          headerSticky={headerSticky}
+        />
         <TechNav />
         <BackToTop />
         <Outlet />
