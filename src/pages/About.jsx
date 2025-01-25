@@ -10,16 +10,8 @@ const Article = () => {
     document.title = "O autorze - ModelCraft";
   }, []);
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
-  const photosSrc = [
-    "./models/bedzin/day/full-res/bedzin-d01.webp",
-    "./models/bedzin/day/full-res/bedzin-d19.webp",
-    "./models/bedzin/day/full-res/bedzin-d27.webp",
-  ];
-  const photosTitle = [
-    "Zamek w Będzinie",
-    "Wejście do zamku w Będzinie",
-    "Dziedziniec zamku w Będzinie",
-  ];
+  const photosSrc = ["./models/wang/build/full-res/wang-b162.jpg"];
+  const photosTitle = ["Świątynia Wang"];
   /////////////////////////////////////////////////////////////////
   return (
     <>
@@ -56,24 +48,14 @@ const Article = () => {
             dodawałem retusz krawędzi, elementy z drutu (np. barierki, anteny)
             oraz roślinność i oświetlenie. Dwa razy podjąłem się też wykonania
             pomieszczeń w modelach zamku w{" "}
-            <NavLink
-              to="/Bedzin"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
+            <NavLink to="/Bedzin">
               {" "}
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
                 Będzinie
               </span>
             </NavLink>{" "}
             i{" "}
-            <NavLink
-              to="/Oporow"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
+            <NavLink to="/Oporow">
               {" "}
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
                 Oporowie
@@ -81,41 +63,19 @@ const Article = () => {
             </NavLink>
             . W ostatnich modelach wprowadzałem sporo modyfikacji i zmieniałem
             niektóre tekstury (np. dachu, podstawy), dorabiałem również swoje
-            części. Świątynia
-            <NavLink
-              to="/Wang"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
-              {" "}
+            części. Świątynia{" "}
+            <NavLink to="/Wang">
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
                 Wang
               </span>
             </NavLink>
-            , jeszcze nieukończona, jest już w całości budowana przeze mnie od
-            podstaw.
-          </p>
-          <p>
-            Jeśli miałbym wybrać najlepszy model, jaki udało mi się do tej pory
-            ukończyć, będzie to z pewnością{" "}
-            <NavLink
-              to="/Bedzin"
-              onClick={() =>
-                document.querySelector(".article-header").scrollIntoView()
-              }
-            >
-              {" "}
-              <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                zamek w Będzinie.
-              </span>
-            </NavLink>
+            , została już w całości zbudowana przeze mnie od podstaw.
           </p>
           <PhotoView src={photosSrc[0]}>
             <LazyLoadImage
               className="w-fit max-h-[30rem] mx-auto mb-4 cursor-pointer "
               src={photosSrc[0]}
-              alt="będzin"
+              alt="wang"
               title={photosTitle[0]}
             />
           </PhotoView>

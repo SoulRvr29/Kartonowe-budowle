@@ -266,7 +266,17 @@ function App({
             title="o autorze"
             onClick={() => {
               if (localStorage.getItem("autoScroll") == "true") {
-                document.querySelector(".article-header").scrollIntoView();
+                // document.querySelector(".article-header").scrollIntoView();
+                const articleSection =
+                  document.querySelector(".article-header");
+                const header = document.querySelector("header");
+                const articleTop =
+                  articleSection.getBoundingClientRect().top + window.scrollY;
+
+                window.scrollTo({
+                  top: articleTop - header.offsetHeight,
+                  behavior: "smooth",
+                });
               }
             }}
           >

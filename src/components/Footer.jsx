@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="relative grad-hr drop-shadow-[0_1px_0_#666] bottom-[1px]" />
       <div className="flex justify-center items-center">
         <h2 className="p-1 align-baseline font-medium">
-          Paweł Chudecki &copy; 2023-2024
+          Paweł Chudecki &copy; 2023-2025
         </h2>
 
         <a title="wyślij mail" href="mailto:pawelc29@interia.pl">
