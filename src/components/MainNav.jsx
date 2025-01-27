@@ -3,7 +3,7 @@ import modelsData from "../data/models-data.json";
 import { useState, useRef } from "react";
 import { FaCaretLeft, FaCaretRight, FaArrowsLeftRight } from "react-icons/fa6";
 import { IoIosArrowUp, IoMdSearch } from "react-icons/io";
-
+import { useNavigate } from "react-router-dom";
 const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
@@ -57,6 +57,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       .replace(/ł/g, "l") // Zamienia 'ł' na 'l'
       .replace(/Ł/g, "L"); // Zamienia 'Ł' na 'L';
   }
+  const navigate = useNavigate();
 
   return (
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
@@ -69,45 +70,69 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
         </div>
       )}
       {/* SEARCH BAR */}
-      <div className="mx-8 max-sm:mx-0 relative">
-        {!searchActive && (
-          <IoMdSearch
-            size={20}
-            className="absolute left-[calc(50%-2.6rem)] top-[5px] opacity-80 pointer-events-none"
-          />
-        )}
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Szukaj..."
-          className="w-full px-1 bg-white dark:bg-opacity-5 bg-opacity-20 text-lg text-text-dark dark:text-white placeholder:text-black placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none"
-          value={search}
-          onFocus={() => {
-            setSearch("");
-            setSearchActive(true);
-            setData(completeData);
-            setActiveList("");
-          }}
-          onBlur={() => {
-            setSearch("");
-            setSearchActive(false);
-          }}
-          onChange={(e) => {
-            const text = e.target.value;
-            const data = modelsData;
-            setSearch(text);
-            const filteredData = data.filter((item) => {
-              return (
-                removePLChars(item.name.toLowerCase()).indexOf(
-                  removePLChars(text.toLowerCase())
-                ) !== -1
-              );
-            });
-            setData(filteredData);
-          }}
-        />
-      </div>
+      {navState && (
+        <div className="mx-8 max-sm:mx-0 relative">
+          {!searchActive && (
+            <IoMdSearch
+              size={20}
+              className="absolute left-[calc(50%-2.6rem)] top-[5px] opacity-80 pointer-events-none"
+            />
+          )}
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+
+              if (data.length === 1) {
+                navigate(data[0].link);
+                if (localStorage.getItem("autoScroll") == "true") {
+                  const articleSection =
+                    document.querySelector(".article-header");
+                  const header = document.querySelector("header");
+                  const articleTop =
+                    articleSection.getBoundingClientRect().top + window.scrollY;
+
+                  window.scrollTo({
+                    top: articleTop - header.offsetHeight,
+                    behavior: "smooth",
+                  });
+                }
+              }
+            }}
+          >
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Szukaj..."
+              className="w-full px-1 bg-white dark:bg-opacity-5 bg-opacity-20 text-lg text-text-dark dark:text-white placeholder:text-black placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none"
+              value={search}
+              onFocus={() => {
+                setSearch("");
+                setSearchActive(true);
+                setData(completeData);
+                setActiveList("");
+              }}
+              onBlur={() => {
+                setSearch("");
+                setSearchActive(false);
+              }}
+              onChange={(e) => {
+                const text = e.target.value;
+                const data = modelsData;
+                setSearch(text);
+                const filteredData = data.filter((item) => {
+                  return (
+                    removePLChars(item.name.toLowerCase()).indexOf(
+                      removePLChars(text.toLowerCase())
+                    ) !== -1
+                  );
+                });
+                setData(filteredData);
+              }}
+            />
+          </form>
+        </div>
+      )}
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
         <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg max-sm:gap-1 ">
