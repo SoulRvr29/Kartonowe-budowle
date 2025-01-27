@@ -71,10 +71,11 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       )}
       {/* SEARCH BAR */}
       {navState && (
-        <div className="mx-8 max-sm:mx-0 relative">
+        <div className="mx-8 max-sm:mx-0 relative flex justify-center">
           {!searchActive && (
             <IoMdSearch
               size={20}
+              color="var(--accent)"
               className="absolute left-[calc(50%-2.6rem)] top-[5px] opacity-80 pointer-events-none"
             />
           )}
@@ -104,7 +105,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
               name="search"
               id="search"
               placeholder="Szukaj..."
-              className="w-full px-1 bg-white dark:bg-opacity-5 bg-opacity-20 text-lg text-text-dark dark:text-white placeholder:text-black placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none"
+              className="w-[30rem] max-sm:w-screen px-1 pb-[2px] bg-gradient-to-r bg-transparent via-[rgba(255,255,255,0.5)]  dark:via-[rgba(255,255,255,0.15)] text-lg text-text-dark dark:text-white placeholder:text-black placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none"
               value={search}
               onFocus={() => {
                 setSearch("");
@@ -130,6 +131,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
                 setData(filteredData);
               }}
             />
+            <hr className="grad-hr" />
           </form>
         </div>
       )}
