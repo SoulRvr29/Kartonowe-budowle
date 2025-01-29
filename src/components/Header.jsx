@@ -191,7 +191,7 @@ function App({
 
   return (
     <div className={headerSticky ? "sticky top-0 z-20 " : " "}>
-      <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-4 max-[560px]:py-0 pb-4  max-[560px]:gap-x-4 border-b-2 dark:border-accent dark:border-opacity-50 border-white border-opacity-50">
+      <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-2 max-[560px]:py-0 max-[560px]:gap-x-4 border-b-2 dark:border-accent dark:border-opacity-50 border-white border-opacity-50">
         {/* left side */}
         <div className="flex gap-2 z-10 ml-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4 ">
           <button className="mb-1">

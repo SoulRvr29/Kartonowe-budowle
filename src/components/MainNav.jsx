@@ -2,8 +2,9 @@ import Card from "./Card.jsx";
 import modelsData from "../data/models-data.json";
 import { useState, useRef } from "react";
 import { FaCaretLeft, FaCaretRight, FaArrowsLeftRight } from "react-icons/fa6";
-import { IoIosArrowUp, IoMdSearch } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
+import { IoIosArrowUp } from "react-icons/io";
+import SearchBar from "./SearchBar.jsx";
+
 const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
@@ -45,19 +46,8 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
   const [activeList, setActiveList] = useState("wszystkie modele");
-  const [search, setSearch] = useState("");
-  const [searchActive, setSearchActive] = useState(false);
 
   const navWidth = useRef(null);
-
-  function removePLChars(str) {
-    return str
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/ł/g, "l") // Zamienia 'ł' na 'l'
-      .replace(/Ł/g, "L"); // Zamienia 'Ł' na 'L';
-  }
-  const navigate = useNavigate();
 
   return (
     <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
@@ -71,69 +61,11 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       )}
       {/* SEARCH BAR */}
       {navState && (
-        <div className="mx-8 max-sm:mx-0 relative flex justify-center">
-          {!searchActive && (
-            <IoMdSearch
-              size={20}
-              color="var(--accent)"
-              className="absolute left-[calc(50%-2.6rem)] top-[5px] opacity-80 pointer-events-none"
-            />
-          )}
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-
-              if (data.length === 1) {
-                navigate(data[0].link);
-                if (localStorage.getItem("autoScroll") == "true") {
-                  const articleSection =
-                    document.querySelector(".article-header");
-                  const header = document.querySelector("header");
-                  const articleTop =
-                    articleSection.getBoundingClientRect().top + window.scrollY;
-
-                  window.scrollTo({
-                    top: articleTop - header.offsetHeight,
-                    behavior: "smooth",
-                  });
-                }
-              }
-            }}
-          >
-            <input
-              type="text"
-              name="search"
-              id="search"
-              placeholder="Szukaj..."
-              className="w-[30rem] max-sm:w-screen px-1 pb-[2px] bg-gradient-to-r bg-transparent via-[rgba(0,0,0,0.2)]  dark:via-[rgba(0,0,0,1)] text-lg text-white dark:text-white placeholder:text-white placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none caret-accent"
-              value={search}
-              onFocus={() => {
-                setSearch("");
-                setSearchActive(true);
-                setData(completeData);
-                setActiveList("");
-              }}
-              onBlur={() => {
-                setSearch("");
-                setSearchActive(false);
-              }}
-              onChange={(e) => {
-                const text = e.target.value;
-                const data = modelsData;
-                setSearch(text);
-                const filteredData = data.filter((item) => {
-                  return (
-                    removePLChars(item.name.toLowerCase()).indexOf(
-                      removePLChars(text.toLowerCase())
-                    ) !== -1
-                  );
-                });
-                setData(filteredData);
-              }}
-            />
-            <hr className="grad-hr" />
-          </form>
-        </div>
+        <SearchBar
+          data={data}
+          setData={setData}
+          setActiveList={setActiveList}
+        />
       )}
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>

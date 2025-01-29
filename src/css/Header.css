@@ -1,5 +1,5 @@
 .text-header {
-  font-size: clamp(1.4rem, 5vw, 2.4rem);
+  font-size: clamp(1.4rem, 4.6vw, 2.2rem);
 }
 @media (max-width: 460px) {
   .text-header {
