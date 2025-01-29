@@ -105,7 +105,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
               name="search"
               id="search"
               placeholder="Szukaj..."
-              className="w-[30rem] max-sm:w-screen px-1 pb-[2px] bg-gradient-to-r bg-transparent via-[rgba(255,255,255,0.5)]  dark:via-[rgba(255,255,255,0.15)] text-lg text-text-dark dark:text-white placeholder:text-black placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none"
+              className="w-[30rem] max-sm:w-screen px-1 pb-[2px] bg-gradient-to-r bg-transparent via-[rgba(0,0,0,0.2)]  dark:via-[rgba(0,0,0,1)] text-lg text-white dark:text-white placeholder:text-white placeholder:-ml-6 dark:placeholder:text-white dark:placeholder:opacity-50 placeholder:text-opacity-50 focus:placeholder:invisible text-center font-semibold focus:bg-opacity-30 dark:focus:bg-opacity-10 focus:outline-none caret-accent"
               value={search}
               onFocus={() => {
                 setSearch("");
