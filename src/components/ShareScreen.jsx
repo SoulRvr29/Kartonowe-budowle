@@ -25,7 +25,7 @@ const ShareLi = ({ type, link }) => {
             className="w-[40rem] max-md:w-full h-10 max-md:text-sm border-accent border-2 rounded-md rounded-r-none px-2 focus:outline-none max-md:m-0 hover:border-white bg-bkg font-normal text-text-light"
             type="text"
             value={link}
-            autocomplete="off"
+            autoComplete="off"
             readOnly
           />
           <div

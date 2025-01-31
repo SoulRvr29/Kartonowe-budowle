@@ -5,6 +5,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaShareNodes } from "react-icons/fa6";
+import { FaRegCopy } from "react-icons/fa";
+
 import ShareScreen from "./ShareScreen";
 
 const Gallery = ({ id, name }) => {
@@ -81,6 +83,7 @@ const Gallery = ({ id, name }) => {
   let [shareWebsite, setShareWebsite] = useState("");
 
   const [shareScreen, setShareScreen] = useState(false);
+  const [copy, setCopy] = useState(false);
 
   const makeShareLinks = (i) => {
     const full = `https://www.modelcraft.pl${actualSrcFull[i].slice(1)}`;
@@ -91,6 +94,18 @@ const Gallery = ({ id, name }) => {
       `<a href="${full}" target='_blank'><img src="${thumb}" border='0' alt='photo thumbnail'/></a>`
     );
   };
+
+  const makeAllThumbLinks = () => {
+    let thumbsArr = [];
+    for (let i = 0; i < actualSrcFull.length; i++) {
+      const full = `https://www.modelcraft.pl${actualSrcFull[i].slice(1)}`;
+      const thumb = `https://www.modelcraft.pl${actualSrcThumb[i].slice(1)}`;
+      thumbsArr.push(`[url=${full}][img]${thumb}[/img][/url]`);
+    }
+    return thumbsArr.join(" ");
+  };
+
+  const allThumbLinks = makeAllThumbLinks();
 
   return (
     <section className="gallery-cont select-none grid ">
@@ -157,13 +172,36 @@ const Gallery = ({ id, name }) => {
             }}
             toolbarRender={() => {
               return (
-                <FaShareNodes
-                  size={16}
-                  fill="var(--text-light)"
-                  className="mx-4 hover:fill-white"
-                  title="share"
-                  onClick={() => setShareScreen(!shareScreen)}
-                />
+                <>
+                  <FaRegCopy
+                    size={16}
+                    fill="var(--text-light)"
+                    className="mx-4 hover:fill-white"
+                    title="skopiuj wszystkie miniaturki"
+                    onClick={() => {
+                      navigator.clipboard.writeText(allThumbLinks);
+                      setCopy(true);
+                      setTimeout(() => {
+                        setCopy(false);
+                      }, 1000);
+                    }}
+                  />
+                  <div
+                    className={
+                      "absolute top-12 right-[4.4rem] text-accent-3 font-bold bg-black bg-opacity-30 px-2 rounded-md transition-opacity duration-500 opacity-0 pointer-events-none " +
+                      (copy && " opacity-100")
+                    }
+                  >
+                    Skopiowano
+                  </div>
+                  <FaShareNodes
+                    size={16}
+                    fill="var(--text-light)"
+                    className="mx-4 hover:fill-white"
+                    title="pokaż linki"
+                    onClick={() => setShareScreen(!shareScreen)}
+                  />
+                </>
               );
             }}
             maskOpacity={0.5}
