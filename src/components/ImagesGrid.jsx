@@ -100,10 +100,22 @@ const ImagesGrid = () => {
               <NavLink
                 onClick={() => {
                   if (localStorage.getItem("autoScroll") == "true") {
-                    document.querySelector(".article-header").scrollIntoView();
+                    // document.querySelector(".article-header").scrollIntoView();
+                    const articleSection =
+                      document.querySelector(".article-header");
+                    const header = document.querySelector("header");
+                    const articleTop =
+                      articleSection.getBoundingClientRect().top +
+                      window.scrollY;
+
+                    window.scrollTo({
+                      top: articleTop - header.offsetHeight,
+                      behavior: "smooth",
+                    });
                   }
                 }}
                 to={data[index].link}
+                title="Przejdź do galerii"
                 className="photo-description absolute bottom-0 text-center w-full z-30 p-3 bg-black bg-opacity-40 text-text-light hover:text-white transition-colors "
               >
                 {data[index].name}
