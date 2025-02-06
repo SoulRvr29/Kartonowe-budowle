@@ -9,13 +9,9 @@ import { IoIosArrowUp } from "react-icons/io";
 const Banner = ({ bannerState, setBannerState }) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const [actualBanner, setActualBanner] = useState({
-    name: bannerData[0].name,
-    full: bannerData[0].full,
-    mobile: bannerData[0].mobile,
-    link: bannerData[0].link,
-  });
-  let index = useRef(0);
+  let index = useRef(Math.floor(Math.random() * bannerData.length));
+  const [actualBanner, setActualBanner] = useState(bannerData[index.current]);
+
   const [loadingIcon, setLoadingIcon] = useState(false);
   const [animRunning, setAnimRunning] = useState(true);
 
@@ -31,12 +27,7 @@ const Banner = ({ bannerState, setBannerState }) => {
       if (index.current < 0) index.current = bannerData.length - 1;
     }
 
-    setActualBanner({
-      name: bannerData[index.current].name,
-      full: bannerData[index.current].full,
-      mobile: bannerData[index.current].mobile,
-      link: bannerData[index.current].link,
-    });
+    setActualBanner(bannerData[index.current]);
 
     document.querySelector(".banner-img").classList.remove("banner-anim");
     document.querySelector(".banner-text").classList.remove("banner-text-anim");
