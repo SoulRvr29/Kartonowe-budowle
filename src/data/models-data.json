@@ -1370,11 +1370,11 @@
   },
   {
     "id": 28,
-    "new": false,
+    "new": true,
     "component": "Wang",
     "typ": "kościoły",
     "oświetlenie": true,
-    "rok ukończenia": 9999,
+    "rok ukończenia": 2024,
     "link": "/Wang",
     "cover": "models/wang/wang-cover.jpg",
     "position": [50.777365, 15.724056],
@@ -1389,6 +1389,18 @@
     "card": "./cards/wang-card.webp",
     "icon": "./models-icons/wang-icon.png",
     "Galeria": {
+      "dzień": {
+        "quantity": 94,
+        "format": ".webp",
+        "full": "./models/wang/day/full-res/wang-d",
+        "thumb": "./models/wang/day/thumb/wang-thumb-d"
+      },
+      "noc": {
+        "quantity": 59,
+        "format": ".webp",
+        "full": "./models/wang/night/full-res/wang-n",
+        "thumb": "./models/wang/night/thumb/wang-thumb-n"
+      },
       "budowa": {
         "quantity": 162,
         "format": ".jpg",
@@ -1574,7 +1586,7 @@
   },
   {
     "id": 35,
-    "new": true,
+    "new": false,
     "component": "Wiezowce",
     "typ": "",
     "oświetlenie": false,

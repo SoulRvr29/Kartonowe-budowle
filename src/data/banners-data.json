@@ -6,6 +6,12 @@
     "link": "/Bedzin"
   },
   {
+    "name": "Świątynia Wang",
+    "full": "./banners/full/wang-night-banner2.webp",
+    "mobile": "./banners/mobile/wang-night-banner2-mobile.webp",
+    "link": "/Wang"
+  },
+  {
     "name": "Zamek w Oporowie",
     "full": "./banners/full/oporow-banner.webp",
     "mobile": "./banners/mobile/oporow-banner-mobile.webp",
@@ -16,6 +22,12 @@
     "full": "./banners/full/curiosity-banner.webp",
     "mobile": "./banners/mobile/curiosity-banner-mobile.webp",
     "link": "/Curiosity"
+  },
+  {
+    "name": "Świątynia Wang",
+    "full": "./banners/full/wang-banner.webp",
+    "mobile": "./banners/mobile/wang-banner-mobile.webp",
+    "link": "/Wang"
   },
   {
     "name": "Ratusz w Sandomierzu",
@@ -30,6 +42,12 @@
     "link": "/Gryfino"
   },
   {
+    "name": "Świątynia Wang",
+    "full": "./banners/full/wang-night-banner.webp",
+    "mobile": "./banners/mobile/wang-night-banner-mobile.webp",
+    "link": "/Wang"
+  },
+  {
     "name": "Zamek w Będzinie",
     "full": "./banners/full/bedzin-banner.webp",
     "mobile": "./banners/mobile/bedzin-banner-mobile.webp",
@@ -40,6 +58,12 @@
     "full": "./banners/full/wiezowce-banner.webp",
     "mobile": "./banners/mobile/wiezowce-banner-mobile.webp",
     "link": "/Wiezowce"
+  },
+  {
+    "name": "Świątynia Wang",
+    "full": "./banners/full/wang-banner2.webp",
+    "mobile": "./banners/mobile/wang-banner2-mobile.webp",
+    "link": "/Wang"
   },
   {
     "name": "Zamek w Oporowie",
