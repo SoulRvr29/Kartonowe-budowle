@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const SnowFlakes = () => {
   if (localStorage.getItem("snowflakes") == null)
-    localStorage.setItem("snowflakes", true);
+    localStorage.setItem("snowflakes", false);
   const [snowflakes, setSnowflakes] = useState(
     JSON.parse(localStorage.getItem("snowflakes"))
   );
