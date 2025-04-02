@@ -54,7 +54,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       {navState && (
         <div
           title="ilość modeli"
-          className="absolute bottom-[7.2rem] left-[3rem] max-sm:-left-2 max-md:left-6 max-md:bottom-1 max-sm:bottom-0 font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-sm text-white dark:text-text-light"
+          className="absolute bottom-[7.2rem] left-[3rem] max-sm:-left-2 max-md:left-6 max-md:bottom-1 max-sm:bottom-[6px] font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-sm text-white dark:text-text-light"
         >
           {data.length}
         </div>
@@ -69,7 +69,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       )}
       {/* CATEGORIES LIST */}
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
-        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg max-sm:gap-1 ">
+        <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg max-sm:gap-1 max-sm:mt-2 ">
           <Nav_li
             name="wszystkie modele"
             activeList={activeList}
@@ -259,8 +259,8 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
           color="var(--text-light)"
           className={
             navState == true
-              ? "opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black] hover:dark:opacity-100 hover:opacity-100  max-sm:h-4"
-              : "opacity-40 dark:opacity-20 hover:dark:opacity-100 hover:opacity-100 max-sm:h-4 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] "
+              ? "relative opacity-40 dark:opacity-20 drop-shadow-[0_0_0_black] hover:dark:opacity-100 hover:opacity-100 max-sm:-top-[4px] -right-[1px] max-sm:right-[2px]"
+              : "relative opacity-40 dark:opacity-20 hover:dark:opacity-100 hover:opacity-100 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] max-sm:-top-[4px] -right-[1px] max-sm:right-[2px]"
           }
         />
       </button>

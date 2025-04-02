@@ -2,6 +2,12 @@
   width: 14px;
   height: 14px;
 }
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 ::-webkit-scrollbar-track {
   background: rgba(30, 30, 30, 0.1);

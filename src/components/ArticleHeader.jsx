@@ -11,11 +11,11 @@ const ArticleHeader = ({ id }) => {
       <hr className="grad-hr" />
       <div className="article-text">
         {/* <h2 className="font-Calistoga tracking-widest text-center text-3xl  max-sm:text-xl font-semibold pt-2 px-2  dark:text-accent-2 text-accent-4 dark:drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)] drop-shadow-[1px_0px_0px_rgba(0,0,0,0.5)]"> */}
-        <h2 className="font-Calistoga tracking-widest text-center text-3xl  max-sm:text-xl font-semibold pt-2 px-2  dark:text-transparent text-transparent dark:drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)] drop-shadow-[1px_0px_0px_rgba(0,0,0,0.5)] bg-clip-text bg-gradient-to-br from-accent-2 via-accent-4 to-text-dark from-30% to-90% dark:from-accent-3 dark:via-accent-2 dark:to-accent-4 dark:from-30% dark:to-80%">
+        <h2 className="font-Calistoga tracking-widest text-center text-3xl  max-sm:text-2xl font-semibold pt-2 px-2  dark:text-transparent text-transparent dark:drop-shadow-[2px_2px_1px_rgba(0,0,0,0.5)] drop-shadow-[1px_0px_0px_rgba(0,0,0,0.5)] bg-clip-text bg-gradient-to-br from-accent-2 via-accent-4 to-text-dark from-30% to-90% dark:from-accent-3 dark:via-accent-2 dark:to-accent-4 dark:from-30% dark:to-80%">
           {model.name} <br />
         </h2>
         <hr className="max-w-3xl mx-auto hr dark:bg-accent-2 bg-accent-4" />
-        <p className="max-w-3xl font-bold text-lg mx-auto text-center max-sm:text-sm px-4 drop-shadow-sm text-transparent bg-gradient-to-br from-accent-4 to-text-dark from-0% to-70% dark:text-text-light bg-clip-text dark:bg-none">
+        <p className="max-w-3xl font-bold text-lg mx-auto text-center max-sm:text-base px-4 drop-shadow-sm text-transparent bg-gradient-to-br from-accent-4 to-text-dark from-0% to-70% dark:text-text-light bg-clip-text dark:bg-none">
           {model.description}
         </p>
       </div>

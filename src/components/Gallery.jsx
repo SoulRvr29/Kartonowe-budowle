@@ -134,12 +134,14 @@ const Gallery = ({ id, name }) => {
             <div className="grid place-content-center ml-2 opacity-30 text-xl max-md:text-sm">{`(${actualSrcThumb.length})`}</div>
           )}
           {/* //////////// gallery-type button //////////// */}
-          <div className="flex section-list">
+          <div className="flex section-list max-sm:gap-2 max-sm:px-2">
             {gallerySections.length > 1 &&
               gallerySections.map((section) => {
                 return (
                   <div key={section} className="z-10">
-                    <span className="opacity-50 z-10">&nbsp;/&nbsp;</span>
+                    <span className="opacity-50 z-10 max-sm:hidden">
+                      &nbsp;/&nbsp;
+                    </span>
                     <button
                       onClick={(e) => {
                         getPhotosSrc(section);
@@ -152,7 +154,7 @@ const Gallery = ({ id, name }) => {
                         e.target.classList.add("active-section");
                       }}
                     >
-                      <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all  z-10">
+                      <span className="section text-accent-4 dark:text-text-light opacity-40 transition-all z-10 max-sm:bg-text-light max-sm:px-[6px] max-sm:rounded-md dark:max-sm:bg-accent-2 dark:max-sm:bg-opacity-75 max-sm:pb-[2px]">
                         {section}
                       </span>
                     </button>
