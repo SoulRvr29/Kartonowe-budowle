@@ -22,6 +22,18 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
               return item.oświetlenie == true;
             })
           );
+        else if (name == "gpm")
+          setData(
+            completeData.filter((item) => {
+              return item.info.Wydawca == "GPM";
+            })
+          );
+        else if (name == "darmowe")
+          setData(
+            completeData.filter((item) => {
+              return item.info["Link do pobrania"];
+            })
+          );
         else {
           setData(
             completeData.filter((item) => {
@@ -139,6 +151,22 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
           <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
           <Nav_li
             name="z oświetleniem"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <Nav_li
+            name="gpm"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          />
+          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <Nav_li
+            name="darmowe"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
