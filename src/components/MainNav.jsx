@@ -54,9 +54,20 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       {navState && (
         <div
           title="ilość modeli"
-          className="absolute bottom-[7.2rem] left-[3rem] max-sm:-left-2 max-md:left-6 max-md:bottom-1 max-sm:bottom-[6px] font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-sm text-white dark:text-text-light"
+          className="absolute bottom-[7.2rem] left-[3rem] max-md:left-auto max-md:w-full max-md:bottom-2 max-sm:bottom-3 font-bold opacity-20 max-md:opacity-30 dark:max-md:opacity-20 dark:opacity-10 w-10 h-10 flex justify-center items-center z-0 max-md:z-10 text-6xl max-md:text-xl text-white dark:text-text-light flex-col max-md:flex-row"
         >
-          {data.length}
+          <div>{data.length} </div>
+          <div className="max-md:ml-1 max-md:text-xl text-base -ml-1 ">
+            {data.length === 1
+              ? "model"
+              : data.length > 1 && data.length < 5
+                ? "modele"
+                : data.length > 20 &&
+                    data.length.toString().slice(-1) < 5 &&
+                    data.length % 10 !== 0
+                  ? "modele"
+                  : "modeli"}
+          </div>
         </div>
       )}
       {/* SEARCH BAR */}
@@ -156,7 +167,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             ref={navWidth}
             className={
               navState === true
-                ? "cards-container nav flex h-[190px] max-sm:h-[160px] relative py-1 transition-all max-md:gap-4 "
+                ? "cards-container nav flex h-[190px] max-md:h-[200px] max-sm:h-[170px] relative py-1 transition-all max-md:gap-4 "
                 : "cards-container nav hidden"
             }
           >

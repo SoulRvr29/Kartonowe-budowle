@@ -1370,7 +1370,7 @@
   },
   {
     "id": 28,
-    "new": true,
+    "new": false,
     "component": "Wang",
     "typ": "kościoły",
     "oświetlenie": true,
@@ -1612,5 +1612,40 @@
     },
     "photo": "models/wiezowce/wiezowce-photo",
     "description": "Dziesięć najwyższych budynków w Nowym Jorku do końca lat 30. XX wieku."
+  },
+  {
+    "id": 36,
+    "new": false,
+    "component": "NowyWisnicz",
+    "typ": "zamki i ratusze",
+    "oświetlenie": false,
+    "rok ukończenia": 2005,
+    "link": "/NowyWisnicz",
+    "cover": "models/nowy_wisnicz/nowy_wisnicz-cover.jpg",
+    "position": [49.91719608, 20.46926139],
+    "address": "32-720 Stary Wiśnicz",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:200",
+      "Rok wydania": 2002,
+      "Stopień trudności": 3,
+      "Ilość stron": 12,
+      "Szerokość": "38cm",
+      "Długość": "30cm",
+      "Wysokość": "19cm"
+    },
+    "name": "Zamek w Wiśniczu",
+    "card": "./cards/nowy_wisnicz-card.webp",
+    "icon": "./models-icons/nowy_wisnicz-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 14,
+        "format": ".webp",
+        "full": "./models/nowy_wisnicz/day/full-res/wisnicz-d",
+        "thumb": "./models/nowy_wisnicz/day/thumb/wisnicz-thumb-d"
+      }
+    },
+    "photo": "models/nowy_wisnicz/nowy_wisnicz-photo",
+    "description": "Zamek w stylu renesansowym, położony na wzgórzu nad rzeką Leksandrówką. Zbudowany w XIV wieku przez ród Kmitów, później rozbudowany przez Lubomirskich."
   }
 ]
