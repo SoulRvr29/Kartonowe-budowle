@@ -9,6 +9,15 @@ const TechNav_li = ({ name, link }) => {
           if (localStorage.getItem("autoScroll") == "true") {
             document.querySelector(".article-header").scrollIntoView();
           }
+          const articleSection = document.querySelector(".article-header");
+          const header = document.querySelector("header");
+          const articleTop =
+            articleSection.getBoundingClientRect().top + window.scrollY;
+
+          window.scrollTo({
+            top: articleTop - header.offsetHeight,
+            behavior: "smooth",
+          });
         }}
         to={link}
       >
@@ -24,7 +33,7 @@ const TechNav = () => {
       <hr className="grad-hr "></hr>
       <ul className=" w-full flex justify-start items-center flex-wrap max-sm:justify-center px-2 max-sm:pb-1">
         <h2 className="mr-4 ml-2 text-white max-sm:text-sm font-bold uppercase max-sm:w-full text-center drop-shadow-[1px_2px_1px_rgba(0,0,0,0.3)]">
-          Tematy:
+          Artykuły:
         </h2>
         <TechNav_li name="oświetlenie" link="/Oswietlenie" />
         {/* <TechNav_li name="arduino" link="/Arduino" /> */}

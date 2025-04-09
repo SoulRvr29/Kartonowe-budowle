@@ -3,10 +3,15 @@ import modelsData from "../data/models-data.json";
 import SectionHeader from "./SectionHeader";
 import { useState, useEffect } from "react";
 import { FaThumbsUp, FaTrashAlt, FaCaretUp } from "react-icons/fa";
+import { ImSpinner2 } from "react-icons/im";
+
 import axios from "axios";
 
 const Comments = ({ id }) => {
   const [loadingIcon, setLoadingIcon] = useState(true);
+  const [sendingSpinner, setSendingIcon] = useState(false);
+  const [updatingSpinner, setUpdatingSpinner] = useState(false);
+  const [deletingSpinner, setDeletingSpinner] = useState(null);
   const [sectionState, setSectionState] = useState(
     JSON.parse(localStorage.getItem("sections"))
   );
@@ -52,6 +57,8 @@ const Comments = ({ id }) => {
         setSectionID(secitionData["_id"]);
         setApiData(secitionData.comments);
         setLoadingIcon(false);
+        setDeletingSpinner(null);
+        setUpdatingSpinner(false);
       })
       .catch((error) => {
         console.error("Error fetching comments: ", error);
@@ -60,6 +67,7 @@ const Comments = ({ id }) => {
   };
 
   const sendNewComment = () => {
+    setSendingIcon(true);
     let userName = unLoggedUserName;
     let admin = false;
     if (user) {
@@ -83,11 +91,10 @@ const Comments = ({ id }) => {
     axios
       .put(`${apiURLcomments}/${SectionID}`, newData)
       .then(() => {
-        // console.log(user);
         setInputState(false);
         setNewComment("");
         getComments();
-        // console.log(apiData);
+        setSendingIcon(false);
       })
       .catch((error) => {
         console.error("Error sending comment: ", error);
@@ -98,6 +105,7 @@ const Comments = ({ id }) => {
   const [editCommentText, setEditCommentText] = useState("");
 
   const updateComment = (comment, index) => {
+    setUpdatingSpinner(true);
     const data = {
       comment: comment,
       index: index,
@@ -109,6 +117,7 @@ const Comments = ({ id }) => {
   };
 
   const deleteComment = (commentID) => {
+    setDeletingSpinner(commentID);
     axios
       .delete(`${apiURLcomments}/${SectionID}/`, {
         data: { commentID: commentID },
@@ -261,7 +270,11 @@ const Comments = ({ id }) => {
                             className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:-right-9 max-sm:top-[-22px] "
                             onClick={() => deleteComment(item["_id"])}
                           >
-                            <FaTrashAlt className="max-sm:text-base" />
+                            {deletingSpinner === item["_id"] ? (
+                              <ImSpinner2 className="animate-spin" />
+                            ) : (
+                              <FaTrashAlt className="max-sm:text-base" />
+                            )}
                           </button>
                         )}{" "}
                       </div>
@@ -288,7 +301,7 @@ const Comments = ({ id }) => {
                       </pre>
                     )}
                     {editComment === index && (
-                      <>
+                      <div className="relative">
                         <textarea
                           onChange={(e) => setEditCommentText(e.target.value)}
                           value={editCommentText}
@@ -299,7 +312,13 @@ const Comments = ({ id }) => {
                           wrap="hard"
                           className="w-full outline-none bg-transparent px-2 py-1 border-2 dark:border-accent rounded-b-md"
                         />
-                      </>
+                        {/* updating spinner */}
+                        {updatingSpinner && (
+                          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+                            <ImSpinner2 className="animate-spin" size={40} />
+                          </div>
+                        )}
+                      </div>
                     )}
                     {item.updatedAt && (
                       <div className="text-xs opacity-40 p-1 flex gap-1">
@@ -376,6 +395,7 @@ const Comments = ({ id }) => {
                     id="user"
                     placeholder="Nazwa użytkownika"
                     required
+                    autoFocus
                     className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
                   />
                 )}
@@ -385,16 +405,25 @@ const Comments = ({ id }) => {
                   </div>
                 )} */}
               </div>{" "}
-              <textarea
-                onChange={(e) => setNewComment(e.target.value)}
-                name="newComment"
-                id="newComment"
-                rows={3}
-                required
-                wrap="hard"
-                className="w-full rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 "
-                placeholder="Treść komentarza..."
-              />
+              <div className="relative">
+                <textarea
+                  onChange={(e) => setNewComment(e.target.value)}
+                  name="newComment"
+                  id="newComment"
+                  rows={3}
+                  required
+                  autoFocus={user}
+                  wrap="hard"
+                  className="w-full rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 "
+                  placeholder="Treść komentarza..."
+                />
+                {/* sending spinner */}
+                {sendingSpinner && (
+                  <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+                    <ImSpinner2 className="animate-spin" size={40} />
+                  </div>
+                )}
+              </div>
               <div className="flex gap-4 justify-center mt-2">
                 <button
                   type="submit"

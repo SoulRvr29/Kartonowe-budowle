@@ -53,10 +53,10 @@ const Article = () => {
             <b>Arduino UNO</b> (76mm / 57mm) który ma gniazdo USB typu B
             (drukarkowe) i gniazdo zasilania DC. <b>Arduino NANO</b> (45mm /
             18mm) to bardzo podobna pomniejszona wersja bez gniazda DC i z
-            mniejszym gniazdem USB (zazwyczaj micro lub mini). Są też wersje jak{" "}
-            <b>Arduino MICRO</b> - jeszcze bardziej pomniejszona wersja, z
-            mniejszą ilością pinów, <b>Arduino MEGA</b> - bardziej rozbudowana
-            wersja, z dużo większą ilością pinów i wiele innych.
+            mniejszym gniazdem USB (zazwyczaj micro lub mini). Inne wersje to na
+            przykład <b>Arduino MICRO</b> - jeszcze bardziej pomniejszona
+            wersja, z mniejszą ilością pinów, <b>Arduino MEGA</b> - bardziej
+            rozbudowana wersja, z dużo większą ilością pinów i wiele innych.
           </p>
           <div className="flex gap-4 justify-evenly items-center max-md:flex-col">
             <PhotoView src="/techSections/arduino/full-res/Arduino_UNO.png">
@@ -90,8 +90,8 @@ const Article = () => {
             <LazyLoadImage
               className="mx-auto max-w-[8rem] max-h-[8rem]"
               src="/techSections/arduino/full-res/tiny85.png"
-              alt="Arduino NANO"
-              title="Arduino NANO"
+              alt="ATtiny85"
+              title="ATtiny85"
             />
           </PhotoView>
         </article>
