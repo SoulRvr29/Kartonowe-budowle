@@ -1647,5 +1647,40 @@
     },
     "photo": "models/nowy_wisnicz/nowy_wisnicz-photo",
     "description": "Zamek w stylu renesansowym, położony na wzgórzu nad rzeką Leksandrówką. Zbudowany w XIV wieku przez ród Kmitów, później rozbudowany przez Lubomirskich."
+  },
+  {
+    "id": 37,
+    "new": false,
+    "component": "WilczySzaniec",
+    "typ": "",
+    "oświetlenie": false,
+    "rok ukończenia": 2005,
+    "link": "/WilczySzaniec",
+    "cover": "models/wilczy_szaniec/wilczy_szaniec-cover.jpg",
+    "position": [54.0807482828, 21.494595734],
+    "address": "Gierłoż 5, 11-400 Kętrzyn",
+    "info": {
+      "Wydawca": "GPM",
+      "Skala": "1:200",
+      "Rok wydania": 2004,
+      "Stopień trudności": 1,
+      "Ilość stron": 6,
+      "Szerokość": "19cm",
+      "Długość": "33cm",
+      "Wysokość": "12cm"
+    },
+    "name": "Wilczy Szaniec",
+    "card": "./cards/wilczy_szaniec-card.webp",
+    "icon": "./models-icons/wilczy_szaniec-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 9,
+        "format": ".webp",
+        "full": "./models/wilczy_szaniec/day/full-res/wilczy-szaniec-d",
+        "thumb": "./models/wilczy_szaniec/day/thumb/wilczy-szaniec-thumb-d"
+      }
+    },
+    "photo": "models/wilczy_szaniec/wilczy_szaniec-photo",
+    "description": "Była kwatera główna Adolfa Hitlera na froncie wschodnim podczas II wojny światowej, położona w Gierłoży na Mazurach."
   }
 ]

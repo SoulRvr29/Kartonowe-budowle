@@ -229,12 +229,15 @@ const Gallery = ({ id, name }) => {
                           threshold={300}
                           width={160}
                           height={160}
-                          className="h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full"
+                          className="h-[10rem] w-auto border-2 border-accent rounded-xl hover:border-accent-2  hover:brightness-110 hover:scale-105 transition-all max-sm:max-w-[250px] max-sm:h-auto dark:drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] drop-shadow-[5px_5px_8px_rgba(0,0,0,0.5)]  max-[300px]:w-full text-sm text-center place-content-center"
                           onLoad={(e) =>
                             e.target.parentElement.classList.remove("opacity-0")
                           }
+                          onError={(e) =>
+                            e.target.parentElement.classList.remove("opacity-0")
+                          }
                           src={item}
-                          alt={model.name + " photo"}
+                          alt={model.name + " photo " + index}
                           onClick={() => {
                             makeShareLinks(index);
                           }}

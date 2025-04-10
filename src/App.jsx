@@ -51,6 +51,7 @@ import WangGPM from "./pages/WangGPM";
 import MiG29 from "./pages/MiG29";
 import Wiezowce from "./pages/Wiezowce";
 import NowyWisnicz from "./pages/NowyWisnicz";
+import WilczySzaniec from "./pages/WilczySzaniec";
 import Layout from "./Layout";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -98,6 +99,7 @@ const router = createBrowserRouter(
       <Route path="/MiG-29" element={<MiG29 id={34} />} />
       <Route path="/Wiezowce" element={<Wiezowce id={35} />} />
       <Route path="/NowyWisnicz" element={<NowyWisnicz id={36} />} />
+      <Route path="/WilczySzaniec" element={<WilczySzaniec id={37} />} />
 
       <Route path="/Oswietlenie" element={<Oswietlenie id={"Oswietlenie"} />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />

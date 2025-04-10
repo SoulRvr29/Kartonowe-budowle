@@ -36,7 +36,12 @@
   },
   {
     "id": 8,
-    "date": "07-04-2025",
+    "date": "08-04-2025",
     "description": "Nowa galeria - Zamek Nowy Wiśnicz"
+  },
+  {
+    "id": 9,
+    "date": "10-04-2025",
+    "description": "Nowa galeria - Wilczy Szaniec"
   }
 ]
