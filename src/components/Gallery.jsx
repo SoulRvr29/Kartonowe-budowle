@@ -111,7 +111,7 @@ const Gallery = ({ id, name }) => {
     <section className="gallery-cont select-none grid ">
       <header className="relative max-sm:w-screen">
         <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
-        <h3 className="font-bold flex flex-wrap text-2xl max-md:text-lg max-[400px]:text-base mx-6 max-sm:mx-2">
+        <h3 className="font-bold flex flex-wrap text-2xl max-sm:text-lg max-[400px]:text-base mx-6 max-sm:mx-2">
           {/* //////////// gallery on/of button //////////// */}
           <button
             className="arrow-up-down z-10"
@@ -140,7 +140,7 @@ const Gallery = ({ id, name }) => {
                 return (
                   <div key={section} className="z-10">
                     <span className="opacity-50 z-10 max-sm:hidden">
-                      &nbsp;/&nbsp;
+                      &nbsp;|&nbsp;
                     </span>
                     <button
                       onClick={(e) => {
@@ -154,7 +154,7 @@ const Gallery = ({ id, name }) => {
                         e.target.classList.add("active-section");
                       }}
                     >
-                      <span className="section text-accent-4 dark:text-text-light opacity-40 transition-all z-10 max-sm:bg-text-light max-sm:px-[6px] max-sm:rounded-md dark:max-sm:bg-accent-2 dark:max-sm:bg-opacity-75 max-sm:pb-[2px]">
+                      <span className="section text-accent-4 dark:text-accent-2 opacity-40 transition-all z-10 dark:max-sm:text-text-light max-sm:bg-text-light max-sm:px-[6px] max-sm:rounded-md dark:max-sm:bg-accent-2 dark:max-sm:bg-opacity-75 max-sm:pb-[2px]">
                         {section}
                       </span>
                     </button>

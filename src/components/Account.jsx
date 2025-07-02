@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaCheck, FaArrowRight } from "react-icons/fa";
+import { FaCheck, FaArrowRight, FaEye } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
 const Account = ({
@@ -21,6 +21,7 @@ const Account = ({
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [passCheck, setPassCheck] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <>
@@ -112,19 +113,26 @@ const Account = ({
                       />
                     </div>
                   )}
-                  <div className="rounded-md flex flex-col  justify-between bg-text-dark bg-opacity-20 p-2 pt-1 dark:bg-text-light dark:bg-opacity-20">
+                  <div className="rounded-md flex flex-col relative justify-between bg-text-dark bg-opacity-20 p-2 pt-1 dark:bg-text-light dark:bg-opacity-20">
                     <label className="text-sm">Hasło:</label>
                     <input
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       className="rounded-sm px-1 dark:text-text-light dark:bg-opacity-40 dark:bg-black dark:placeholder-text-light dark:placeholder:opacity-30"
-                      type="password"
+                      type={showPassword ? "text" : "password"}
                       placeholder="********"
                       name="password"
                       id="password"
                       // pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$"
                       minLength={5}
                       required
+                    />
+
+                    <FaEye
+                      className="absolute right-4 top-7 opacity-50 hover:opacity-100"
+                      onClick={() => setShowPassword((prev) => !prev)}
+                      size={16}
+                      title={showPassword ? "ukryj hasło" : "pokaż hasło"}
                     />
                   </div>
                   {!loginRegister && (

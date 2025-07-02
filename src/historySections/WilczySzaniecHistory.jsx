@@ -177,7 +177,7 @@ const NowyWisniczHistory = ({ id }) => {
               do końca 1944 r. wyniósł ok. 36 mln marek.
             </p>
             <p>Budowę kwatery prowadzono w trzech fazach:</p>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 mb-4">
               <li>
                 w latach 1940–1941 wybudowano kwaterę tymczasową – zakładano, że
                 wojna na wschodzie potrwa kilka miesięcy. Na całość kwatery

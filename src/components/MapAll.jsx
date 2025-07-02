@@ -79,11 +79,22 @@ const map = ({ mapSize, setMapSize }) => {
                   <div className="opacity-0">
                     <Popup>
                       <NavLink
-                        onClick={() =>
-                          document
-                            .querySelector(".article-header")
-                            .scrollIntoView()
-                        }
+                        onClick={() => {
+                          if (localStorage.getItem("autoScroll") == "true") {
+                            // document.querySelector(".article-header").scrollIntoView();
+                            const articleSection =
+                              document.querySelector(".article-header");
+                            const header = document.querySelector("header");
+                            const articleTop =
+                              articleSection.getBoundingClientRect().top +
+                              window.scrollY;
+
+                            window.scrollTo({
+                              top: articleTop - header.offsetHeight,
+                              behavior: "smooth",
+                            });
+                          }
+                        }}
                         to={item.link}
                       >
                         {item.name}
