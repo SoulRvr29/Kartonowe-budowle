@@ -64,7 +64,8 @@ const map = ({ mapSize, setMapSize }) => {
         />
         {modelsData.map(
           (item) =>
-            item.position && (
+            item.position &&
+            item.icon && (
               <div key={item.id} className="">
                 <Marker
                   className="scale-50 marker"

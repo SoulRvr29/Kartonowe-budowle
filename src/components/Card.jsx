@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { IoIosConstruct } from "react-icons/io";
 
 const Card = ({ model, overlap, headerSticky }) => {
+  if (model.id === 38) {
+    console.log(model.card);
+  }
   return (
     <div
       className={
@@ -37,11 +41,20 @@ const Card = ({ model, overlap, headerSticky }) => {
         {/* gradient */}
         <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute"></div>
         {/* zdjęcie */}
-        <img
-          className="h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg"
-          src={model.card}
-          alt={model.name}
-        />
+        {model.card ? (
+          <img
+            className="h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg"
+            src={model.card}
+            alt={model.name}
+          />
+        ) : (
+          <div className="h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg">
+            <IoIosConstruct
+              size={80}
+              className="w-full h-full p-6 opacity-50"
+            />
+          </div>
+        )}
 
         {/* nazwa modelu container */}
         <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-0 hover:opacity-100 transition-all duration-300">

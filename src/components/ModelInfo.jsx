@@ -50,7 +50,7 @@ const ModelInfo = ({ id }) => {
                           {key}:{" "}
                         </span>
                       )}
-                      {key == "Link do pobrania" ? (
+                      {key.includes("Link") ? (
                         <a
                           className="hover:underline text-accent-4 dark:text-accent-2"
                           href={data.info[key]}

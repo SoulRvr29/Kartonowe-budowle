@@ -31,7 +31,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
         else if (name == "darmowe")
           setData(
             completeData.filter((item) => {
-              return item.info["Link do pobrania"];
+              return Object.keys(item.info).some((key) => key.includes("Link"));
             })
           );
         else {

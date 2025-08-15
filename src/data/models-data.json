@@ -1682,5 +1682,34 @@
     },
     "photo": "models/wilczy_szaniec/wilczy_szaniec-photo",
     "description": "Była kwatera główna Adolfa Hitlera na froncie wschodnim podczas II wojny światowej, położona w Gierłoży na Mazurach."
+  },
+  {
+    "id": 38,
+    "new": false,
+    "component": "StarshipS30",
+    "typ": "kosmos",
+    "oświetlenie": false,
+    "rok ukończenia": 9999,
+    "link": "/StarshipS30",
+    "cover": "models/starship_s30/starship s30-cover.webp",
+    "position": [25.99626989, -97.15444383],
+    "info": {
+      "Projekt": "AXM Paper Models",
+      "Skala": "1:100",
+      "Wysokość": "121cm",
+      "Link do starshipa": "https://axmpaperspacescalemodels.com/index.php/spacex-starship/?singleproduct=5407",
+      "Link do boostera": "https://axmpaperspacescalemodels.com/index.php/spacex-starship/?singleproduct=5277"
+    },
+    "name": "Rakieta Starship S30",
+    "Galeria": {
+      "dzień": {
+        "quantity": 14,
+        "format": ".webp",
+        "full": "./models/starship_s30/full-res/starship_s30-d",
+        "thumb": "./models/starship_s30/thumb/starship_s30-thumb-d"
+      }
+    },
+    "photo": "models/starship_s30/starship_s30-photo",
+    "description": "Prototypowy statek kosmiczny opracowany przez amerykańską firmę lotniczą SpaceX."
   }
 ]
