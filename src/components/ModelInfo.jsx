@@ -32,7 +32,7 @@ const ModelInfo = ({ id }) => {
             )}
             <div
               className={
-                "model-info w-max h-min p-4  " +
+                "model-info w-max max-sm:w-full h-min p-4 text-left " +
                 (data.cover
                   ? "border-l-2 max-sm:border-l-0 max-sm:border-t-2 dark:border-accent-2 border-text-light"
                   : "")
@@ -45,12 +45,12 @@ const ModelInfo = ({ id }) => {
                       className="dark:text-accent-3 text-text-light"
                       key={key}
                     >
-                      {key != "Link do pobrania" && (
-                        <span className="dark:text-text-light text-text-dark font-bold ">
-                          {key}:{" "}
-                        </span>
-                      )}
-                      {key.includes("Link") ? (
+                      <span className="dark:text-text-light text-text-dark font-bold ">
+                        {key}:{" "}
+                      </span>
+
+                      {typeof data.info[key] === "string" &&
+                      data.info[key].includes("http") ? (
                         <a
                           className="hover:underline text-accent-4 dark:text-accent-2"
                           href={data.info[key]}

@@ -31,7 +31,11 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
         else if (name == "darmowe")
           setData(
             completeData.filter((item) => {
-              return Object.keys(item.info).some((key) => key.includes("Link"));
+              return Object.keys(item.info).some(
+                (key) =>
+                  typeof item.info[key] === "string" &&
+                  item.info[key].includes("http")
+              );
             })
           );
         else {
