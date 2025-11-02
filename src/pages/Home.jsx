@@ -59,7 +59,7 @@ const Article = () => {
         </header>
         {/* <hr className="grad-hr" /> */}
       </PhotoProvider>
-      <div className="losowe-container m-8 mt-0 max-sm:m-4 max-sm:mt-0 mb-4 max-sm:mb-2 relative">
+      <div className="losowe-container m-8 max-sm:m-4 max-sm:mt-8 mb-4 max-sm:mb-2 relative">
         <ImagesGrid />
       </div>
       <div className="rounded-full max-sm:rounded-xl dark:bg-accent/20 bg-white/30 px-4 py-1 mb-4 max-sm:mb-3 mx-6 max-sm:mx-4 text-center drop-shadow-lg">

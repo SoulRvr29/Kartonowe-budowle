@@ -86,14 +86,14 @@ const ImagesGrid = () => {
 
   return (
     <>
-      <h5 className="losowe-header flex justify-center items-center gap-4 my-1 bg-bkg-light dark:bg-bkg pb-1 pt-3 mx-auto border-none w-full">
+      {/* <h5 className="losowe-header flex justify-center items-center gap-4 my-1 bg-bkg-light dark:bg-bkg pb-1 pt-3 mx-auto border-none w-full">
         Losowe zdjęcia{" "}
-      </h5>
+      </h5> */}
       {/* loading icon */}
       {loadingIcon && (
         <div className="loading-icon fixed top-[calc(50vh-40px)] justify-self-center left-[calc(50vw-40px)] z-40 w-20 h-20 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
       )}
-      <div className="flex flex-wrap gap-4 justify-center img-container transition-all duration-1000 relative z-[15]">
+      <div className="flex flex-wrap gap-4 justify-center img-container transition-all duration-1000 relative z-[15] ">
         <PhotoProvider
           overlayRender={({ index }) => {
             return (

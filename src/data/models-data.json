@@ -1705,7 +1705,7 @@
     "name": "Rakieta Starship S30",
     "Galeria": {
       "dzień": {
-        "quantity": 29,
+        "quantity": 56,
         "format": ".webp",
         "full": "./models/starship_s30/full-res/starship_s30-d",
         "thumb": "./models/starship_s30/thumb/starship_s30-thumb-d"
