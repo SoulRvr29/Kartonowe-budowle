@@ -46,7 +46,7 @@ const Card = ({ model, overlap, headerSticky }) => {
         <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute z-10"></div>
         {/* zdjęcie */}
         {model.card ? (
-          <div className="h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl left-0  bg-bkg-light dark:bg-bkg border-8 max-sm:border-[6px] border-accent">
+          <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl left-0  bg-bkg-light dark:bg-bkg border-8 max-sm:border-[6px] border-accent transition-all duration-300">
             <img
               style={{
                 filter: `saturate(${saturation}%)`,
@@ -57,8 +57,7 @@ const Card = ({ model, overlap, headerSticky }) => {
           </div>
         ) : (
           <div>
-            <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute z-10"></div>
-            <div className="img h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg">
+            <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg transition-all duration-300">
               <IoIosConstruct
                 size={80}
                 className="w-full h-full p-6 bg-zinc-300 fill-zinc-600"
@@ -73,7 +72,7 @@ const Card = ({ model, overlap, headerSticky }) => {
           {!model.new && (
             <div
               title="rok ukończenia budowy"
-              className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70"
+              className="rok-ukonczenia text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70 transition-all duration-300"
             >
               {model["rok ukończenia"] > 9000
                 ? "w budowie"

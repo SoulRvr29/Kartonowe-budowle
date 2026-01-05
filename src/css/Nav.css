@@ -1,8 +1,12 @@
-.active img,
-.active .img,
+.active .card-container,
 .active .nazwa-modelu {
   border-color: var(--accent-2);
   background-color: var(--accent-2);
+}
+
+.active .rok-ukonczenia {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
 }
 
 .dark .cards-container div {
