@@ -2,10 +2,13 @@ import { NavLink } from "react-router-dom";
 import { IoIosConstruct } from "react-icons/io";
 
 const Card = ({ model, overlap, headerSticky }) => {
-  // if (model.id === 38) {
-  //   console.log(model.card);
-  // }
-  // console.log(model["rok ukończenia"], model["rok ukończenia"] > 9000);
+  const actualYear = new Date().getFullYear();
+  const saturation = Math.round(
+    ((model["rok ukończenia"] - 2001) / (actualYear - 2001)) * 100 * 2 > 100
+      ? 100
+      : ((model["rok ukończenia"] - 2001) / (actualYear - 2001)) * 100 * 2
+  );
+  // console.log(saturation);
   return (
     <div
       className={
@@ -40,14 +43,18 @@ const Card = ({ model, overlap, headerSticky }) => {
           )}
         </div>
         {/* gradient */}
-        <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute"></div>
+        <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute z-10"></div>
         {/* zdjęcie */}
         {model.card ? (
-          <img
-            className="h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg"
-            src={model.card}
-            alt={model.name}
-          />
+          <div className="h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl left-0  bg-bkg-light dark:bg-bkg border-8 max-sm:border-[6px] border-accent">
+            <img
+              style={{
+                filter: `saturate(${saturation}%)`,
+              }}
+              src={model.card}
+              alt={model.name}
+            />
+          </div>
         ) : (
           <div>
             <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute z-10"></div>
@@ -61,11 +68,11 @@ const Card = ({ model, overlap, headerSticky }) => {
         )}
 
         {/* nazwa modelu container */}
-        <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-100 hover:opacity-100 transition-all duration-300 group">
+        <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-100 hover:opacity-100 transition-all duration-300 group z-10">
           {/* rok ukończenia */}
           {!model.new && (
             <div
-              title="rok budowy modelu"
+              title="rok ukończenia budowy"
               className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70"
             >
               {model["rok ukończenia"] > 9000
