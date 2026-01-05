@@ -2,9 +2,10 @@ import { NavLink } from "react-router-dom";
 import { IoIosConstruct } from "react-icons/io";
 
 const Card = ({ model, overlap, headerSticky }) => {
-  if (model.id === 38) {
-    console.log(model.card);
-  }
+  // if (model.id === 38) {
+  //   console.log(model.card);
+  // }
+  // console.log(model["rok ukończenia"], model["rok ukończenia"] > 9000);
   return (
     <div
       className={
@@ -60,20 +61,20 @@ const Card = ({ model, overlap, headerSticky }) => {
         )}
 
         {/* nazwa modelu container */}
-        <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-0 hover:opacity-100 transition-all duration-300">
+        <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-100 hover:opacity-100 transition-all duration-300 group">
           {/* rok ukończenia */}
           {!model.new && (
             <div
               title="rok budowy modelu"
-              className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white"
+              className="text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70"
             >
-              {model["rok ukończenia"] == 9999
+              {model["rok ukończenia"] > 9000
                 ? "w budowie"
                 : model["rok ukończenia"]}
             </div>
           )}
           {/* nazwa modelu */}
-          <div className="nazwa-modelu absolute bottom-0 w-full max-sm:py-1 text-sm  bg-accent px-3 py-2 pt-[5px] text-left rounded-b-xl leading-4 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6 ">
+          <div className="nazwa-modelu absolute bottom-0 w-full max-sm:py-1 text-sm  bg-accent px-3 py-2 pt-[5px] text-left rounded-b-xl leading-4 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
             {model.name}
           </div>
         </div>

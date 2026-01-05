@@ -1689,7 +1689,7 @@
     "component": "StarshipS30",
     "typ": "kosmos",
     "oświetlenie": false,
-    "rok ukończenia": 9999,
+    "rok ukończenia": 9990,
     "link": "/StarshipS30",
     "cover": "models/starship_s30/starship s30-cover.webp",
     "position": [25.99626989, -97.15444383],
@@ -1714,5 +1714,34 @@
     },
     "photo": "models/starship_s30/starship_s30-photo",
     "description": "Prototypowy statek kosmiczny opracowany przez amerykańską firmę lotniczą SpaceX."
+  },
+  {
+    "id": 39,
+    "new": false,
+    "component": "SLS",
+    "typ": "kosmos",
+    "oświetlenie": false,
+    "rok ukończenia": 9999,
+    "link": "/SLS",
+
+    "position": [28.62730365, -80.620838353],
+    "publisher": "model darmowy",
+    "info": {
+      "Projekt": "AXM Paper Models",
+      "Skala": "1:100",
+      "Wysokość": "98cm",
+      "Link do pobrania": "https://axmpaperspacescalemodels.com/index.php/sls/?singleproduct=3690"
+    },
+    "name": "Rakieta Space Launch System (SLS)",
+    "Galeria": {
+      "dzień": {
+        "quantity": 19,
+        "format": ".webp",
+        "full": "./models/sls/full-res/sls-d",
+        "thumb": "./models/sls/thumb/sls-thumb-d"
+      }
+    },
+    "photo": "models/sls/sls-photo",
+    "description": "Rakieta zaprojektowana przez NASA do misji poza niską orbitę okołoziemską, w tym lotów na Księżyc w ramach programu Artemis."
   }
 ]

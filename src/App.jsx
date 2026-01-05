@@ -53,6 +53,8 @@ import Wiezowce from "./pages/Wiezowce";
 import NowyWisnicz from "./pages/NowyWisnicz";
 import WilczySzaniec from "./pages/WilczySzaniec";
 import StarshipS30 from "./pages/StarshipS30";
+import SLS from "./pages/SLS";
+
 import Layout from "./Layout";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -102,6 +104,7 @@ const router = createBrowserRouter(
       <Route path="/NowyWisnicz" element={<NowyWisnicz id={36} />} />
       <Route path="/WilczySzaniec" element={<WilczySzaniec id={37} />} />
       <Route path="/StarshipS30" element={<StarshipS30 id={38} />} />
+      <Route path="/SLS" element={<SLS id={39} />} />
 
       <Route path="/Oswietlenie" element={<Oswietlenie id={"Oswietlenie"} />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />
