@@ -207,6 +207,8 @@ const Account = ({
                     onClick={() => {
                       setIsLogged(false);
                       localStorage.removeItem("user");
+                      setAccountState(false);
+                      window.location.reload();
                     }}
                     className="drop-shadow-lg  bg-accent-4 py-1 px-4 pb-[6px] hover:brightness-125 text-lg rounded-lg cursor-pointer"
                   >

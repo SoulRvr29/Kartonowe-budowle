@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StarshipS30History = ({ id }) => {
   const [historyState, setHistoryState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
@@ -88,7 +88,7 @@ const StarshipS30History = ({ id }) => {
                 href="https://en.wikipedia.org/wiki/Space_Launch_System"
                 target="_blank"
               >
-                starship-spacex.fandom
+                wikipedia
               </a>
             </p>
           </article>

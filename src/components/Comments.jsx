@@ -13,7 +13,7 @@ const Comments = ({ id }) => {
   const [updatingSpinner, setUpdatingSpinner] = useState(false);
   const [deletingSpinner, setDeletingSpinner] = useState(null);
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
   const [inputState, setInputState] = useState(false);
   const [newComment, setNewComment] = useState("");
@@ -52,7 +52,7 @@ const Comments = ({ id }) => {
       .get(apiURLcomments)
       .then((response) => {
         const secitionData = response.data.filter(
-          (item) => item.section === sectionName
+          (item) => item.section === sectionName,
         )[0];
         setSectionID(secitionData["_id"]);
         setApiData(secitionData.comments);
@@ -117,6 +117,12 @@ const Comments = ({ id }) => {
   };
 
   const deleteComment = (commentID) => {
+    const confirmed = window.confirm(
+      "Czy na pewno chcesz usunąć ten komentarz?",
+    );
+    if (!confirmed) {
+      return;
+    }
     setDeletingSpinner(commentID);
     axios
       .delete(`${apiURLcomments}/${SectionID}/`, {
@@ -230,7 +236,7 @@ const Comments = ({ id }) => {
                       </div>
                       <div className="relative flex items-center gap-4 dark:font-medium max-sm:text-xs max-sm:mr-8 ">
                         <div
-                          className="relative flex text-green-700 dark:text-green-500 font-semibold hover:brightness-125 transition-all"
+                          className="relative flex text-green-700 dark:text-green-500 font-semibold "
                           title="polub"
                           onClick={() => {
                             if (user) {
@@ -255,7 +261,7 @@ const Comments = ({ id }) => {
                             </div>
                           </div>
                           {item.likes.quantity}
-                          <FaThumbsUp className="relative top-0.5 fill-green-700 dark:fill-green-500 ml-2" />
+                          <FaThumbsUp className="relative top-0.5 fill-green-700 dark:fill-green-500 ml-2 hover:brightness-125 transition-all" />
                         </div>
                         <p className="m-0 opacity-70">
                           {item.createdAt && item.createdAt.slice(8, 10)}
