@@ -158,6 +158,7 @@ function App({
   const loginSubmit = async (user) => {
     if (user.verify === "google") {
       googleSubmit(user);
+      return;
     }
     try {
       const response = await axios.post(`${apiURL}/verify`, user);
@@ -181,7 +182,7 @@ function App({
     }
   };
 
-  const googleSubmit = (user) => {
+  const googleSubmit = async (user) => {
     setLoginError(false);
     setConfirm(true);
     setUserData(user);
@@ -239,19 +240,18 @@ function App({
             title="konto"
             onClick={() => setAccountState(!accountState)}
           >
-            {userData.picture ? (
+            {/* {userData.picture ? (
               <img
                 src={userData.picture}
                 alt="user avatar"
-                className="w-5 h-5 rounded-full object-cover hover:brightness-125 transition-all"
+                className="w-8 h-8 rounded-full aspect-square object-cover hover:brightness-125 transition-all"
               />
-            ) : (
-              <FaUser
-                className="header-icon transition-all"
-                size={18}
-                color={isLogged ? "var(--accent)" : "var(--icon-gray)"}
-              />
-            )}
+            ) : ( */}
+            <FaUser
+              className="header-icon transition-all"
+              size={18}
+              color={isLogged ? "var(--accent)" : "var(--icon-gray)"}
+            />
           </button>
           <button
             title="ustawienia"
