@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { FaCheck, FaArrowRight, FaEye } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import { GoogleLogin } from "@react-oauth/google";
+import { jwtDecode } from "jwt-decode";
 
 const Account = ({
   setAccountState,
   registerSubmit,
-  loginSubmit,
+  googleSubmit,
   accountExist,
   confirm,
   loginRegister,
+  loginSubmit,
   setLoginRegister,
   isLogged,
   setIsLogged,
@@ -172,10 +175,13 @@ const Account = ({
                 <div className="rounded-md flex flex-col  justify-between bg-text-dark bg-opacity-20 p-2 pt-1 dark:bg-text-light dark:bg-opacity-20">
                   <div>Login: {userData.login}</div>
                   <div>Email: {userData.email}</div>
-                  <div>Hasło: {userData.password.replace(/./g, "*")}</div>
+                  {JSON.parse(localStorage.getItem("user"))?.verify !==
+                    "google" && (
+                    <div>Hasło: {userData.password.replace(/./g, "*")}</div>
+                  )}
                 </div>
               )}
-              {/* PRZYCISKI OK / ANULUJ */}
+              {/* PRZYCISKI ZALOGUJ / ANULUJ */}
               {!isLogged ? (
                 <div className="flex justify-center gap-6 px-8 max-sm:px-0 pt-2 text-white">
                   <button
@@ -218,6 +224,34 @@ const Account = ({
               )}
             </form>
           </div>
+          {/* GOOGLE LOGIN */}
+          {!isLogged && (
+            <div className="mt-4 flex justify-center border-2 border-black dark:border-white border-opacity-20 dark:border-opacity-30 rounded-full w-fit mx-auto">
+              <GoogleLogin
+                theme={
+                  JSON.parse(localStorage.getItem("darkMode"))
+                    ? "filled_black"
+                    : "filled_white"
+                }
+                size="large"
+                shape="pill"
+                width={250}
+                onSuccess={(credentialResponse) => {
+                  const decoded = jwtDecode(credentialResponse.credential);
+                  // console.log(decoded);
+                  googleSubmit({
+                    login: decoded.name,
+                    email: decoded.email,
+                    password: decoded.sub,
+                    verify: "google",
+                  });
+                }}
+                onError={() => {
+                  console.log("Logowanie nieudane");
+                }}
+              />
+            </div>
+          )}
         </div>
         {/* POTWIERDZENIE */}
         <div

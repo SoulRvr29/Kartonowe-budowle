@@ -17,37 +17,37 @@ function App({
   setHeaderSticky,
 }) {
   const darkModeCheck = window.matchMedia(
-    "(prefers-color-scheme: dark)"
+    "(prefers-color-scheme: dark)",
   ).matches;
 
   if (localStorage.getItem("darkMode") == null)
     localStorage.setItem("darkMode", darkModeCheck);
   const [darkMode, setDarkMode] = useState(
-    JSON.parse(localStorage.getItem("darkMode"))
+    JSON.parse(localStorage.getItem("darkMode")),
   );
 
   if (localStorage.getItem("fontSize") == null)
     localStorage.setItem("fontSize", 1);
   const [actualFontSize, setActualFontSize] = useState(
-    JSON.parse(localStorage.getItem("fontSize"))
+    JSON.parse(localStorage.getItem("fontSize")),
   );
 
   if (localStorage.getItem("autoScroll") == null)
     localStorage.setItem("autoScroll", true);
   const [autoScroll, setAutoScroll] = useState(
-    JSON.parse(localStorage.getItem("autoScroll"))
+    JSON.parse(localStorage.getItem("autoScroll")),
   );
 
   if (localStorage.getItem("sections") == null)
     localStorage.setItem("sections", true);
   const [sections, setSections] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   if (localStorage.getItem("devMode") == null)
     localStorage.setItem("devMode", false);
   const [devMode, setDevMode] = useState(
-    JSON.parse(localStorage.getItem("devMode"))
+    JSON.parse(localStorage.getItem("devMode")),
   );
 
   const titleAnimation = () => {
@@ -101,6 +101,7 @@ function App({
 
   const modeChange = () => {
     setDarkMode(!darkMode);
+    localStorage.setItem("darkMode", !darkMode);
     if (darkMode) {
       document.querySelector("html").classList.remove("dark");
       document.querySelector("body").classList.add("bkg-sides");
@@ -115,7 +116,7 @@ function App({
   const saveSettings = () => {
     localStorage.setItem(
       "fontSize",
-      actualFontSize === 1 ? 3 : actualFontSize === 2 ? 1 : 2
+      actualFontSize === 1 ? 3 : actualFontSize === 2 ? 1 : 2,
     );
     localStorage.setItem("darkMode", darkMode);
     localStorage.setItem("banner", bannerState);
@@ -155,6 +156,9 @@ function App({
   };
 
   const loginSubmit = async (user) => {
+    if (user.verify === "google") {
+      googleSubmit(user);
+    }
     try {
       const response = await axios.post(`${apiURL}/verify`, user);
       const data = await response.data;
@@ -175,6 +179,17 @@ function App({
       setLoginError(true);
       console.error("Error getting data: ", error);
     }
+  };
+
+  const googleSubmit = (user) => {
+    setLoginError(false);
+    setConfirm(true);
+    setUserData(user);
+    localStorage.setItem("user", JSON.stringify(user));
+    setTimeout(() => {
+      setConfirm(false);
+      setIsLogged(true);
+    }, 1000);
   };
 
   useEffect(() => {
@@ -213,16 +228,13 @@ function App({
         {/* right side */}
         <div className="relative flex items-center gap-2 z-10 mr-4 -mb-1 max-[560px]:mb-1 max-[560px]:gap-4">
           {" "}
-          {isLogged &&
-            (userData.login.length > 10 ? (
-              <div className="text-xs font-bold text-white dark:text-accent max-md:hidden absolute -bottom-[17px] -right-[10px]">
-                {userData.login}
-              </div>
-            ) : (
-              <div className="text-xs font-bold text-white dark:text-accent max-md:hidden">
-                {userData.login}
-              </div>
-            ))}
+          {isLogged && (
+            <div className="text-xs font-bold text-white dark:text-accent max-md:hidden">
+              {userData.login.length > 12
+                ? userData.login.substring(0, 10) + "..."
+                : userData.login}
+            </div>
+          )}
           <button
             className="dev "
             title="konto"
@@ -315,6 +327,7 @@ function App({
           setAccountState={setAccountState}
           registerSubmit={registerSubmit}
           loginSubmit={loginSubmit}
+          googleSubmit={googleSubmit}
           accountExist={accountExist}
           confirm={confirm}
           loginRegister={loginRegister}

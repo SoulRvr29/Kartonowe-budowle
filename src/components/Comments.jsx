@@ -199,7 +199,9 @@ const Comments = ({ id }) => {
                       className={
                         "w-16 h-16 max-sm:w-8 max-sm:h-8 grid bg-white dark:bg-accent place-content-center text-4xl rounded-full m-2 font-bold max-sm:text-xl uppercase font-Calistoga " +
                         // (item.login == "Bez konta"
-                        (!usersList.includes(item.login)
+                        (!usersList.includes(item.login) &&
+                        JSON.parse(localStorage.getItem("user"))?.verify !==
+                          "google"
                           ? " invert dark:invert-0 opacity-30 dark:opacity-80 dark:bg-bkg"
                           : item.admin
                             ? " bg-opacity-70 dark:bg-opacity-80"
@@ -219,7 +221,9 @@ const Comments = ({ id }) => {
                       className={
                         "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-40 bg-opacity-40 rounded-t-md" +
                         // (item.login == "Bez konta"
-                        (!usersList.includes(item.login)
+                        (!usersList.includes(item.login) &&
+                        JSON.parse(localStorage.getItem("user"))?.verify !==
+                          "google"
                           ? " opacity-60  dark:bg-bkg-light"
                           : item.admin
                             ? " bg-opacity-60 dark:bg-opacity-70"
