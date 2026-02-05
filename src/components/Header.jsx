@@ -203,7 +203,6 @@ function App({
     y > 0 ? setBottomShadow(true) : setBottomShadow(false);
   };
   window.addEventListener("scroll", shadowHandler);
-
   return (
     <div className={headerSticky ? "sticky top-0 z-20 " : " "}>
       <header className="relative header-main  max-[400px]:px-2 flex gap-x-2 justify-between items-center dark:bg-transparent bg-white bg-opacity-30 z-20 max-[560px]:flex-wrap max-[560px]:justify-center py-2 max-[560px]:py-0 max-[560px]:gap-x-4 border-b-2 dark:border-accent dark:border-opacity-50 border-white border-opacity-50">
@@ -240,11 +239,19 @@ function App({
             title="konto"
             onClick={() => setAccountState(!accountState)}
           >
-            <FaUser
-              className="header-icon transition-all"
-              size={18}
-              color={isLogged ? "var(--accent)" : "var(--icon-gray)"}
-            />
+            {userData.picture ? (
+              <img
+                src={userData.picture}
+                alt="user avatar"
+                className="w-5 h-5 rounded-full object-cover hover:brightness-125 transition-all"
+              />
+            ) : (
+              <FaUser
+                className="header-icon transition-all"
+                size={18}
+                color={isLogged ? "var(--accent)" : "var(--icon-gray)"}
+              />
+            )}
           </button>
           <button
             title="ustawienia"

@@ -243,6 +243,7 @@ const Account = ({
                     login: decoded.name,
                     email: decoded.email,
                     password: decoded.sub,
+                    picture: decoded.picture,
                     verify: "google",
                   });
                 }}

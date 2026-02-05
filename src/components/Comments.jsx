@@ -68,6 +68,7 @@ const Comments = ({ id }) => {
 
   const sendNewComment = () => {
     setSendingIcon(true);
+    // console.log(user);
     let userName = unLoggedUserName;
     let admin = false;
     if (user) {
@@ -83,6 +84,7 @@ const Comments = ({ id }) => {
       comment: newComment,
       createdAt: new Date(new Date().getTime() + 7200000),
       admin: admin,
+      picture: user?.picture || null,
       likes: {
         quantity: 0,
         users: [],
@@ -156,7 +158,7 @@ const Comments = ({ id }) => {
         console.error("Error sending comment: ", error);
       });
   };
-
+  // console.log(apiData);
   return (
     <div className="relative">
       <SectionHeader
@@ -208,12 +210,16 @@ const Comments = ({ id }) => {
                             : " bg-opacity-40 dark:bg-opacity-60")
                       }
                     >
-                      {item.login && item.login.at(0)}
-                      {/* {item.admin ? (
-                        <div className="admin-avatar w-16 h-16 rounded-full"></div>
+                      {/* {item.login && item.login.at(0)} */}
+                      {item.picture ? (
+                        <img
+                          src={item.picture}
+                          alt="user avatar"
+                          className="w-full h-full text-xs text-center lowercase rounded-full object-cover"
+                        />
                       ) : (
                         item.login && item.login.at(0)
-                      )} */}
+                      )}
                     </div>
                   </div>
                   <div className="w-full bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md">
