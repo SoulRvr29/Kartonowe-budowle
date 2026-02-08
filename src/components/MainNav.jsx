@@ -20,13 +20,13 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
           setData(
             completeData.filter((item) => {
               return item.oświetlenie == true;
-            })
+            }),
           );
         else if (name == "gpm")
           setData(
             completeData.filter((item) => {
               return item.info.Wydawca == "GPM";
-            })
+            }),
           );
         else if (name == "darmowe")
           setData(
@@ -34,15 +34,15 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
               return Object.keys(item.info).some(
                 (key) =>
                   typeof item.info[key] === "string" &&
-                  item.info[key].includes("http")
+                  item.info[key].includes("http"),
               );
-            })
+            }),
           );
         else {
           setData(
             completeData.filter((item) => {
               return item.typ == name;
-            })
+            }),
           );
         }
       }}

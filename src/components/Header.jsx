@@ -7,6 +7,7 @@ import { FaHome, FaLightbulb, FaInfoCircle, FaUser } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 import axios from "axios";
 import SnowFlakes from "./SnowFlakes";
+import SectionsNav from "./SectionsNav";
 
 function App({
   bannerState,
@@ -307,6 +308,7 @@ function App({
           </Link>
         </div>
       </header>
+      <SectionsNav />
       {settingsState && (
         <Settings
           modeChange={modeChange}
