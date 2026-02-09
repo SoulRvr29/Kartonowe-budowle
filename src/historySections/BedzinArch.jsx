@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BedzinArch = ({ id }) => {
   const [architectureState, setArchitectureState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
@@ -15,7 +15,7 @@ const BedzinArch = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       <SectionHeader
         sectionName="Architektura"
         sectionState={architectureState}
@@ -95,7 +95,7 @@ const BedzinArch = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 export default BedzinArch;

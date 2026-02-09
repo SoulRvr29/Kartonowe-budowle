@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StarshipS30History = ({ id }) => {
   const [historyState, setHistoryState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
@@ -19,7 +19,7 @@ const StarshipS30History = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
@@ -98,7 +98,7 @@ const StarshipS30History = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

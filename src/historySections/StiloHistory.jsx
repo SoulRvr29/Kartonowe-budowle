@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const StiloHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
@@ -23,7 +23,7 @@ const StiloHistory = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       {" "}
       <SectionHeader
         sectionName="Historia"
@@ -162,7 +162,7 @@ const StiloHistory = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

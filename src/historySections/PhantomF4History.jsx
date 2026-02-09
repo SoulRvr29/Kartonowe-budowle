@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PhantomF4History = ({ id }) => {
   const [historyState, setHistoryState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
@@ -13,7 +13,7 @@ const PhantomF4History = ({ id }) => {
   const photosTitle = ["F-4 Phantom II"];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
@@ -138,7 +138,7 @@ const PhantomF4History = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

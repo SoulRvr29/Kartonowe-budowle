@@ -8,11 +8,11 @@ const ModelInfo = ({ id }) => {
   const data = modelsData.filter((item) => item.id == id)[0];
   const info = Object.keys(data.info);
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   return (
-    <>
+    <section id="model">
       <SectionHeader
         sectionName="Model"
         sectionState={sectionState}
@@ -22,7 +22,7 @@ const ModelInfo = ({ id }) => {
         <div className="flex justify-evenly p-4 pb-8 flex-wrap gap-4">
           {data.position && <Map id={id} position={data.position} />}
 
-          <section className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4 z-10">
+          <div className="flex flex-wrap justify-center items-center gap-8 max-sm:gap-4 max-sm:flex-col py-4 z-10">
             {data.cover && (
               <img
                 className="model-cover max-h-[270px] max-w-[220px] w-auto max-sm:border-none border-2 border-accent drop-shadow-[5px_5px_1px_rgba(0,0,0,0.1)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] "
@@ -66,10 +66,10 @@ const ModelInfo = ({ id }) => {
                 })}
               </ul>
             </div>
-          </section>
+          </div>
         </div>
       )}
-    </>
+    </section>
   );
 };
 

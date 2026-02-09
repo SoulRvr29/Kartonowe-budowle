@@ -18,11 +18,11 @@ const Gallery = ({ id, name }) => {
 
   const [photoId, setPhotoId] = useState(1);
   const [galleryState, setGalleryState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
   const [actualSection, setActualSection] = useState(gallerySections[0]);
   const [galleryLength, setGalleryLength] = useState(
-    model[name][actualSection].quantity
+    model[name][actualSection].quantity,
   );
   const [actualSrcThumb, setactualSrcThumb] = useState([]);
   const [actualSrcFull, setactualSrcFull] = useState([]);
@@ -44,10 +44,10 @@ const Gallery = ({ id, name }) => {
       let nr = i;
       if (i < 10) nr = "0" + i;
       srcThumb.push(
-        model[name][section].thumb + nr + model[name][section].format
+        model[name][section].thumb + nr + model[name][section].format,
       );
       srcFull.push(
-        model[name][section].full + nr + model[name][section].format
+        model[name][section].full + nr + model[name][section].format,
       );
     }
     setactualSrcThumb(srcThumb);
@@ -91,7 +91,7 @@ const Gallery = ({ id, name }) => {
     setDirectFull(full);
     setShareForum(`[url=${full}][img]${thumb}[/img][/url]`);
     setShareWebsite(
-      `<a href="${full}" target='_blank'><img src="${thumb}" border='0' alt='photo thumbnail'/></a>`
+      `<a href="${full}" target='_blank'><img src="${thumb}" border='0' alt='photo thumbnail'/></a>`,
     );
   };
 
@@ -108,7 +108,7 @@ const Gallery = ({ id, name }) => {
   const allThumbLinks = makeAllThumbLinks();
 
   return (
-    <section className="gallery-cont select-none grid ">
+    <section id="galeria" className="gallery-cont select-none grid ">
       <header className="relative max-sm:w-screen">
         <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
         <h3 className="font-bold flex flex-wrap text-2xl max-sm:text-lg max-[400px]:text-base mx-6 max-sm:mx-2">

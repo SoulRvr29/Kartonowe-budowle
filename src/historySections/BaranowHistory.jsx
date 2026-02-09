@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const BaranowHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
@@ -17,7 +17,7 @@ const BaranowHistory = ({ id }) => {
   const photosTitle = ["Zamek około 1900-1904 roku", "", ""];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       {" "}
       <SectionHeader
         sectionName="Historia"
@@ -198,7 +198,7 @@ const BaranowHistory = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

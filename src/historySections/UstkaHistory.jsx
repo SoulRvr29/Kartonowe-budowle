@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const UstkaHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
 
@@ -18,7 +18,7 @@ const UstkaHistory = ({ id }) => {
 
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       {" "}
       <SectionHeader
         sectionName="Historia"
@@ -116,7 +116,7 @@ const UstkaHistory = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

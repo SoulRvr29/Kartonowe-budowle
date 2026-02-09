@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const GąskiHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
   const photosSrc = [
@@ -22,7 +22,7 @@ const GąskiHistory = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       {" "}
       <SectionHeader
         sectionName="Historia"
@@ -112,7 +112,7 @@ const GąskiHistory = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

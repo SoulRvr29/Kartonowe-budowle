@@ -13,7 +13,7 @@ const StarshipS30History = ({ id }) => {
   const photosTitle = ["Start rakiety SLS w misji Artemis I"];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
@@ -94,7 +94,7 @@ const StarshipS30History = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

@@ -5,14 +5,14 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MaulerHistory = ({ id }) => {
   const [sectionState, setSectionState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = ["/models/mauler/mauler-photo1.webp"];
   const photosTitle = [""];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       <SectionHeader
         sectionName="Historia"
         sectionState={sectionState}
@@ -58,7 +58,7 @@ const MaulerHistory = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

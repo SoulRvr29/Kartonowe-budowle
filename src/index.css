@@ -270,3 +270,7 @@ img {
   background-image: url(/src/assets/avatar.jpg);
   background-size: contain;
 } */
+
+section {
+  scroll-margin-top: 80px; /* wysokość navbara */
+}

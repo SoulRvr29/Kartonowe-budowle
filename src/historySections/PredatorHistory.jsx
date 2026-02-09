@@ -5,7 +5,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const PhantomF4History = ({ id }) => {
   const [historyState, setHistoryState] = useState(
-    JSON.parse(localStorage.getItem("sections"))
+    JSON.parse(localStorage.getItem("sections")),
   );
   ///////////////////////// PHOTOS DATA /////////////////////////
   const photosSrc = [
@@ -18,7 +18,7 @@ const PhantomF4History = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <>
+    <section id="historia">
       <SectionHeader
         sectionName="Historia"
         sectionState={historyState}
@@ -154,7 +154,7 @@ const PhantomF4History = ({ id }) => {
           </article>
         </PhotoProvider>
       )}
-    </>
+    </section>
   );
 };
 

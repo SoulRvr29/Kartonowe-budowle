@@ -161,7 +161,7 @@ const Comments = ({ id }) => {
   };
   // console.log(apiData);
   return (
-    <div className="relative">
+    <section id="komentarze" className="relative">
       <SectionHeader
         sectionNumber={apiData.length}
         sectionName="Komentarze"
@@ -467,7 +467,7 @@ const Comments = ({ id }) => {
           )}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
