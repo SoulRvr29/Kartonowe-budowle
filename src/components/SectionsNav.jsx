@@ -17,6 +17,7 @@ const SectionsNavLi = ({ sectionName, activeSection }) => {
 };
 
 const SectionsNav = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const location = useLocation();
   const pagesWithoutSectionsNav = ["/", "/About", "/Oswietlenie"];
@@ -46,25 +47,32 @@ const SectionsNav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [location.pathname]);
 
-  const scrollHandler = () => {
-    activeSection
-      ? (document.querySelector(".sectionsNav").style.display = "flex")
-      : (document.querySelector(".sectionsNav").style.display = "none");
-    // let y = window.scrollY;
-    // y > 450
-    //   ? (document.querySelector(".sectionsNav").style.display = "flex")
-    //   : (document.querySelector(".sectionsNav").style.display = "none");
-  };
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    const scrollHandler = () => {
+      // zamiast querySelector lepiej stanem
+      setIsVisible(Boolean(activeSection));
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    // uruchom od razu
+    scrollHandler();
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, [activeSection]); // zależność od activeSection, jeśli potrzebujesz
 
   if (pagesWithoutSectionsNav.includes(location.pathname)) return null;
-  return (
-    <div className="hidden sectionsNav z-50 absolute -bottom-[28px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-white bg-opacity-20 dark:bg-opacity-80 py-1  border-accent border-opacity-20">
-      <SectionsNavLi sectionName="model" activeSection={activeSection} />
-      <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
-      <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />
-      <SectionsNavLi sectionName="historia" activeSection={activeSection} />
-    </div>
-  );
+  if (isVisible)
+    return (
+      <div className="flex justify-center sectionsNav z-50 absolute -bottom-[28px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-white bg-opacity-20 dark:bg-opacity-80 py-1  border-accent border-opacity-20">
+        <SectionsNavLi sectionName="model" activeSection={activeSection} />
+        <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
+        <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />
+        <SectionsNavLi sectionName="historia" activeSection={activeSection} />
+      </div>
+    );
+  return null;
 };
 export default SectionsNav;
