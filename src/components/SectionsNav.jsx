@@ -26,7 +26,11 @@ const SectionsNav = () => {
     const sections = [...document.querySelectorAll("section")];
 
     const onScroll = () => {
-      const offset = 80; // wysokość navbara
+      let offset = 80; // wysokość navbara
+      if (window.innerWidth <= 560) {
+        offset = 110; // wysokość navbara na urządzeniach mobilnych
+      }
+
       let currentSection = sections[0].id;
 
       for (const section of sections) {
@@ -66,7 +70,7 @@ const SectionsNav = () => {
   if (pagesWithoutSectionsNav.includes(location.pathname)) return null;
   if (isVisible)
     return (
-      <div className="flex justify-center sectionsNav z-50 absolute -bottom-[28px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-white bg-opacity-20 dark:bg-opacity-80 py-1  border-accent border-opacity-20">
+      <div className="flex justify-center sectionsNav z-50 absolute -bottom-[30px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-80 dark:bg-opacity-80 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50">
         <SectionsNavLi sectionName="model" activeSection={activeSection} />
         <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
         <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />
