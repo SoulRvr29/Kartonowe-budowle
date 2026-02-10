@@ -138,7 +138,7 @@ const Banner = ({ bannerState, setBannerState }) => {
             )}
           </div>
         )}
-        <section
+        <div
           className={
             bannerState == true
               ? "banner-section h-[200px] max-sm:h-[120px] w-full overflow-hidden relative flex flex-col"
@@ -180,7 +180,7 @@ const Banner = ({ bannerState, setBannerState }) => {
               />
             )}
           </div>
-        </section>
+        </div>
         {/* show banner button */}
         <button
           onClick={(e) => {

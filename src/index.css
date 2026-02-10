@@ -272,7 +272,7 @@ img {
 } */
 
 section {
-  scroll-margin-top: 80px; /* wysokość navbara */
+  scroll-margin-top: 78px; /* wysokość navbara */
 }
 
 @media (max-width: 560px) {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { FaCaretUp } from "react-icons/fa";
 
 const SectionsNavLi = ({ sectionName, activeSection }) => {
   return (
@@ -23,7 +24,8 @@ const SectionsNav = () => {
   const pagesWithoutSectionsNav = ["/", "/About", "/Oswietlenie"];
 
   useEffect(() => {
-    const sections = [...document.querySelectorAll("section")];
+    const sections = [...document.querySelectorAll("section")] || [];
+    if (!sections.length) return;
 
     const onScroll = () => {
       let offset = 80; // wysokość navbara
@@ -31,7 +33,7 @@ const SectionsNav = () => {
         offset = 110; // wysokość navbara na urządzeniach mobilnych
       }
 
-      let currentSection = sections[0].id;
+      let currentSection = "";
 
       for (const section of sections) {
         const top = section.getBoundingClientRect().top;
@@ -53,7 +55,6 @@ const SectionsNav = () => {
 
   useEffect(() => {
     const scrollHandler = () => {
-      // zamiast querySelector lepiej stanem
       setIsVisible(Boolean(activeSection));
     };
 
@@ -65,12 +66,17 @@ const SectionsNav = () => {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, [activeSection]); // zależność od activeSection, jeśli potrzebujesz
+  }, [activeSection]);
 
   if (pagesWithoutSectionsNav.includes(location.pathname)) return null;
   if (isVisible)
     return (
-      <div className="flex justify-center sectionsNav z-50 absolute -bottom-[30px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-80 dark:bg-opacity-80 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50">
+      <div className="flex justify-center sectionsNav z-10 absolute -bottom-[30px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-80 dark:bg-opacity-80 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50 ">
+        <button>
+          <a href="#">
+            <FaCaretUp size={20} className="header-icon " />
+          </a>
+        </button>
         <SectionsNavLi sectionName="model" activeSection={activeSection} />
         <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
         <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />

@@ -188,7 +188,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
         }
       >
         {/* CARDS CONTAINER */}
-        <section
+        <div
           className={
             overlap
               ? "w-max relative grid justify-self-center max-md:justify-start  max-md:px-4 mb-4 max-sm:mb-2"
@@ -217,7 +217,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
               </div>
             )}
           </div>
-        </section>
+        </div>
       </nav>
       {/* nav left */}
       <div
