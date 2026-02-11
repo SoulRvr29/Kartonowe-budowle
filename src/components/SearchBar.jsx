@@ -24,8 +24,7 @@ const SearchBar = ({ data, setData, setActiveList }) => {
       {!searchActive && (
         <IoMdSearch
           size={20}
-          color="var(--accent)"
-          className="absolute left-[calc(50%-2.6rem)] top-[5px] opacity-80 pointer-events-none"
+          className="absolute left-[calc(50%-2.6rem)] top-[5px] opacity-80 pointer-events-none dark:fill-accent fill-white"
         />
       )}
       <form
@@ -73,7 +72,7 @@ const SearchBar = ({ data, setData, setActiveList }) => {
             const filteredData = newData.filter((item) => {
               return (
                 removePLChars(item.name.toLowerCase()).indexOf(
-                  removePLChars(text.toLowerCase())
+                  removePLChars(text.toLowerCase()),
                 ) !== -1
               );
             });

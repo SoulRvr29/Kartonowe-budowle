@@ -4,8 +4,8 @@ const Footer = () => {
   const actualYear = new Date().getFullYear();
 
   return (
-    <footer className="absolute w-full bottom-0 text-center z-10">
-      <div className="relative grad-hr drop-shadow-[0_1px_0_#666] bottom-[1px]" />
+    <footer className="absolute w-full bottom-0 text-center z-10 border-t-2 dark:border-accent dark:border-opacity-50 border-opacity-50 border-white">
+      {/* <div className="relative grad-hr drop-shadow-[0_1px_0_#666] bottom-[1px]" /> */}
       <div className="flex justify-center items-center">
         <h2 className="p-1 align-baseline font-medium">
           Paweł Chudecki &copy; 2023-{actualYear}

@@ -32,18 +32,18 @@ const ImagesGrid = () => {
       if (Object.entries(photo).length > 1) {
         let randomGalleryType = 0;
         randomGalleryType = Math.floor(
-          Math.random() * Object.entries(photo).length
+          Math.random() * Object.entries(photo).length,
         );
         while (
           Object.entries(photo)[randomGalleryType][1].format == "youtube"
         ) {
           randomGalleryType = Math.floor(
-            Math.random() * Object.entries(photo).length
+            Math.random() * Object.entries(photo).length,
           );
         }
         let randomPhotoNr = Math.floor(
           Math.random() * Object.entries(photo)[randomGalleryType][1].quantity +
-            1
+            1,
         );
         if (randomPhotoNr < 10) randomPhotoNr = `0${randomPhotoNr}`;
 
@@ -59,7 +59,7 @@ const ImagesGrid = () => {
       // if there is single gallery section
       else {
         let randomPhotoNr = Math.floor(
-          Math.random() * photo[Object.keys(photo)[0]].quantity + 1
+          Math.random() * photo[Object.keys(photo)[0]].quantity + 1,
         );
         if (randomPhotoNr < 10) randomPhotoNr = `0${randomPhotoNr}`;
         thumb =

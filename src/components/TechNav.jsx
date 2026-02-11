@@ -41,6 +41,7 @@ const TechNav = () => {
         {/* <TechNav_li name="sadzarka" link="/Sadzarka" /> */}
         {/* <TechNav_li name="okna" link="/Okna" /> */}
       </ul>
+      <hr className="grad-hr "></hr>
     </nav>
   );
 };

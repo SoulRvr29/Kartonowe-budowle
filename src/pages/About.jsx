@@ -32,7 +32,7 @@ const Article = () => {
         maskClassName="backdrop-blur-sm"
         loadingElement={<div class="loader"></div>}
       >
-        <hr className="grad-hr" />
+        {/* <hr className="grad-hr" /> */}
 
         <article className="article-header bg-opacity-20 bg-white dark:bg-text-dark dark:bg-opacity-30 pb-2 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.2)] dark:via-[rgba(0,122,204,0.15)] to-transparent z-10 px-8 max-sm:px-4 ">
           {" "}

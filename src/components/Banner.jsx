@@ -4,7 +4,7 @@ import bannerData from "../data/banners-data.json";
 import { Link } from "react-router-dom";
 import { PiCaretDoubleLeftFill, PiCaretDoubleRightFill } from "react-icons/pi";
 import { FaPause } from "react-icons/fa6";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 import { GoGear } from "react-icons/go";
 
 const Banner = ({ bannerState, setBannerState }) => {
@@ -49,6 +49,10 @@ const Banner = ({ bannerState, setBannerState }) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  if (bannerState == false) {
+    return null;
+  }
 
   return (
     <>
@@ -205,12 +209,12 @@ const Banner = ({ bannerState, setBannerState }) => {
             e.preventDefault();
           }}
         >
-          <IoIosArrowUp
+          <IoMdClose
             size={26}
             fill="var(--text-light)"
             className={
               bannerState == true
-                ? "absolute top-0 max-sm:-top-[2px] max-sm:right-1 right-[2px] opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15]"
+                ? "absolute top-2 right-2 max-sm:top-[2px] max-sm:right-1 opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15]"
                 : "absolute top-0  max-sm:right-1 right-[1px] opacity-30 drop-shadow-[0_0_0_black] hover:opacity-100 z-[15] fill-accent-2 rotate-180 max-sm:-top-[2px]"
             }
           />

@@ -33,7 +33,7 @@ const SectionsNav = () => {
         offset = 110; // wysokość navbara na urządzeniach mobilnych
       }
 
-      let currentSection = "";
+      let currentSection = null;
 
       for (const section of sections) {
         const top = section.getBoundingClientRect().top;
@@ -71,12 +71,13 @@ const SectionsNav = () => {
   if (pagesWithoutSectionsNav.includes(location.pathname)) return null;
   if (isVisible)
     return (
-      <div className="flex justify-center sectionsNav z-10 absolute -bottom-[30px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-80 dark:bg-opacity-80 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50 ">
-        <button>
-          <a href="#">
-            <FaCaretUp size={20} className="header-icon " />
-          </a>
-        </button>
+      <div className="flex justify-center sectionsNav z-10 absolute -bottom-[30px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-60 dark:bg-opacity-60 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50 backdrop-blur-[2px] capitalize">
+        <a href="#">
+          <FaCaretUp
+            size={20}
+            className="hover:text-white dark:hover:text-accent"
+          />
+        </a>
         <SectionsNavLi sectionName="model" activeSection={activeSection} />
         <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
         <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />
