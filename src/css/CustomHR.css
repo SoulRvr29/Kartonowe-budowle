@@ -14,7 +14,7 @@
   background: linear-gradient(
     to right,
     transparent,
-    var(--text-light),
+    var(--accent),
     transparent
   );
   opacity: 0.3;

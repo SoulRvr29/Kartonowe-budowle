@@ -54,6 +54,7 @@ import NowyWisnicz from "./pages/NowyWisnicz";
 import WilczySzaniec from "./pages/WilczySzaniec";
 import StarshipS30 from "./pages/StarshipS30";
 import SLS from "./pages/SLS";
+import P51BMustang from "./pages/P-51BMustang";
 
 import Layout from "./Layout";
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -105,14 +106,15 @@ const router = createBrowserRouter(
       <Route path="/WilczySzaniec" element={<WilczySzaniec id={37} />} />
       <Route path="/StarshipS30" element={<StarshipS30 id={38} />} />
       <Route path="/SLS" element={<SLS id={39} />} />
+      <Route path="/P-51BMustang" element={<P51BMustang id={40} />} />
 
       <Route path="/Oswietlenie" element={<Oswietlenie id={"Oswietlenie"} />} />
       <Route path="/Roslinnosc" element={<Roslinnosc />} />
       <Route path="/Sadzarka" element={<Sadzarka />} />
       <Route path="/Okna" element={<Okna />} />
       <Route path="/Arduino" element={<Arduino />} />
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 function App() {

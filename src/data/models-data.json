@@ -1743,5 +1743,37 @@
     },
     "photo": "models/sls/sls-photo",
     "description": "Rakieta zaprojektowana przez NASA do misji poza niską orbitę okołoziemską, w tym lotów na Księżyc w ramach programu Artemis."
+  },
+  {
+    "id": 40,
+    "new": false,
+    "component": "P-51BMustang",
+    "typ": "samoloty",
+    "oświetlenie": false,
+    "rok ukończenia": 2003,
+    "link": "/P-51BMustang",
+    "cover": "models/p-51b_mustang/p-51b_mustang-cover.jpg",
+    "info": {
+      "Wydawca": "Mały Modelarz",
+      "Skala": "1:33",
+      "Rok wydania": 2003,
+      "Ilość stron": 6,
+      "Długość": "30cm",
+      "Szerokość": "34cm",
+      "Wysokość": "13cm"
+    },
+    "name": "P-51B Mustang",
+    "card": "./cards/p-51b_mustang-card.webp",
+    "icon": "./models-icons/p-51b_mustang-icon.png",
+    "Galeria": {
+      "dzień": {
+        "quantity": 9,
+        "format": ".webp",
+        "full": "./models/p-51b_mustang/full-res/p-51b_mustang-d",
+        "thumb": "./models/p-51b_mustang/thumb/p-51b_mustang-thumb-d"
+      }
+    },
+    "photo": "models/p-51b_mustang/p-51b_mustang-photo",
+    "description": "Amerykański myśliwiec dalekiego zasięgu z czasów II wojny światowej."
   }
 ]
