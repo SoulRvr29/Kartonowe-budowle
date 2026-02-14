@@ -9,7 +9,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
   return (
     <button
       className={
-        "grid nav-li hover:underline-offset-2 max-[830px]:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light h-7 max-md:h-auto " +
+        "grid nav-li hover:underline-offset-2 max-sm:text-sm text-lg max-sm:bg-text-light max-sm:px-2 max-sm:border max-sm:border-white max-sm:rounded-md dark:max-sm:bg-accent dark:max-sm:bg-opacity-75 dark:max-sm:border-text-light h-7 max-md:h-auto " +
         (activeList == name &&
           " text-white dark:text-accent-2 max-sm:dark:text-text-light max-sm:dark:bg-accent-2 max-sm:text-accent hover:cursor-default")
       }
@@ -105,7 +105,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="latarnie morskie"
             activeList={activeList}
@@ -113,7 +113,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="zamki i ratusze"
             activeList={activeList}
@@ -121,7 +121,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="kościoły"
             activeList={activeList}
@@ -129,7 +129,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="kosmos"
             activeList={activeList}
@@ -137,7 +137,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />{" "}
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="figurki"
             activeList={activeList}
@@ -145,7 +145,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="samoloty"
             activeList={activeList}
@@ -153,7 +153,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="z oświetleniem"
             activeList={activeList}
@@ -161,7 +161,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="gpm"
             activeList={activeList}
@@ -169,7 +169,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             completeData={completeData}
             setData={setData}
           />
-          <span className="max-[830px]:text-sm max-sm:hidden ">-</span>
+          <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="darmowe"
             activeList={activeList}
@@ -188,6 +188,47 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             : "relative h-5"
         }
       >
+        {/* Mobile arrows */}
+        <div className="hidden max-sm:flex sticky top-[62px] z-10 left-0 w-screen justify-between px-2 h-0">
+          <button
+            onMouseDown={() => {
+              document.querySelector("nav").scrollLeft -=
+                navWidth.current.clientWidth / 5;
+            }}
+            // onMouseUp={() => {
+            //   document.querySelector("nav").scrollLeft -= 0;
+            // }}
+          >
+            <FaCaretLeft
+              size={34}
+              color="var(--text-light)"
+              className={
+                navState
+                  ? "arrow-l fill-white dark:fill-text-light drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent bg-accent rounded-full"
+                  : "hidden"
+              }
+            />
+          </button>
+          <button
+            onMouseDown={() => {
+              document.querySelector("nav").scrollLeft +=
+                navWidth.current.clientWidth / 5;
+            }}
+            // onMouseUp={() => {
+            //   document.querySelector("nav").scrollLeft += 0;
+            // }}
+          >
+            <FaCaretRight
+              size={34}
+              color="var(--text-light)"
+              className={
+                navState
+                  ? "arrow-r fill-white dark:fill-text-light drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent bg-accent rounded-full"
+                  : "hidden"
+              }
+            />
+          </button>
+        </div>
         {/* CARDS CONTAINER */}
         <div
           className={
