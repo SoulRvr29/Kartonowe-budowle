@@ -80,7 +80,8 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
                 ? "modele"
                 : data.length > 20 &&
                     data.length.toString().slice(-1) < 5 &&
-                    data.length % 10 !== 0
+                    data.length % 10 !== 0 &&
+                    data.length % 10 !== 1
                   ? "modele"
                   : "modeli"}
           </div>

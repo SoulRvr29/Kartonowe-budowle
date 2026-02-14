@@ -277,6 +277,6 @@ section {
 
 @media (max-width: 560px) {
   section {
-    scroll-margin-top: 108px; /* wysokość navbara na urządzeniach mobilnych */
+    scroll-margin-top: 106px; /* wysokość navbara na urządzeniach mobilnych */
   }
 }

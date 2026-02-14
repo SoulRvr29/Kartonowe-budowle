@@ -6,7 +6,7 @@ const Card = ({ model, overlap, headerSticky }) => {
   const saturation = Math.round(
     ((model["rok ukończenia"] - 2001) / (actualYear - 2001)) * 100 * 2 > 100
       ? 100
-      : ((model["rok ukończenia"] - 2001) / (actualYear - 2001)) * 100 * 2
+      : ((model["rok ukończenia"] - 2001) / (actualYear - 2001)) * 100 * 2,
   );
   // console.log(saturation);
   return (
@@ -43,10 +43,10 @@ const Card = ({ model, overlap, headerSticky }) => {
           )}
         </div>
         {/* gradient */}
-        <div className="rounded-xl  bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute z-10"></div>
+        <div className="rounded-xl max-sm:rounded-md bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] w-full h-full absolute z-10"></div>
         {/* zdjęcie */}
         {model.card ? (
-          <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl left-0  bg-bkg-light dark:bg-bkg border-8 max-sm:border-[6px] border-accent transition-all duration-300">
+          <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl max-sm:rounded-md left-0  bg-bkg-light dark:bg-bkg border-8 max-sm:border-[6px] border-accent transition-all duration-300">
             <img
               style={{
                 filter: `saturate(${saturation}%)`,
@@ -57,7 +57,7 @@ const Card = ({ model, overlap, headerSticky }) => {
           </div>
         ) : (
           <div>
-            <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg transition-all duration-300">
+            <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)] rounded-xl max-sm:rounded-md left-0 border-8 max-sm:border-[6px] border-accent bg-bkg-light dark:bg-bkg transition-all duration-300">
               <IoIosConstruct
                 size={80}
                 className="w-full h-full p-6 bg-zinc-300 fill-zinc-600"
@@ -67,12 +67,12 @@ const Card = ({ model, overlap, headerSticky }) => {
         )}
 
         {/* nazwa modelu container */}
-        <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl grid justify-start place-content-end  top-0  opacity-100 hover:opacity-100 transition-all duration-300 group z-10">
+        <div className="absolute text-white w-full h-full  bg-opacity-50 rounded-xl max-sm:rounded-md grid justify-start place-content-end  top-0  opacity-100 hover:opacity-100 transition-all duration-300 group z-10">
           {/* rok ukończenia */}
           {!model.new && (
             <div
               title="rok ukończenia budowy"
-              className="rok-ukonczenia text-accent absolute px-1 top-2 left-2 text-xs text-left rounded-tl-[4px] rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70 transition-all duration-300"
+              className="rok-ukonczenia text-accent absolute px-1 top-2 left-2 max-sm:top-[6px] max-sm:left-[6px] text-xs text-left  rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70 transition-all duration-300"
             >
               {model["rok ukończenia"] > 9000
                 ? "w budowie"
@@ -80,7 +80,7 @@ const Card = ({ model, overlap, headerSticky }) => {
             </div>
           )}
           {/* nazwa modelu */}
-          <div className="nazwa-modelu absolute bottom-0 w-full max-sm:py-1 text-sm  bg-accent px-3 py-2 pt-[5px] text-left rounded-b-xl leading-4 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="nazwa-modelu absolute bottom-0  w-full max-sm:py-1 text-sm bg-accent px-3 py-2 pt-[5px] text-left rounded-b-xl max-sm:rounded-b-none max-sm:m-[6px] max-sm:w-fit leading-4 font-bold bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.2)] pr-6 opacity-0 max-sm:opacity-100 max-sm:bg-opacity-50  group-hover:opacity-100 transition-all duration-300">
             {model.name}
           </div>
         </div>
