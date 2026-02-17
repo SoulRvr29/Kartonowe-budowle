@@ -192,8 +192,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
         <div className="hidden max-sm:flex sticky top-[62px] z-10 left-0 w-screen justify-between px-2 h-0">
           <button
             onMouseDown={() => {
-              document.querySelector("nav").scrollLeft -=
-                navWidth.current.clientWidth / 5;
+              document.querySelector("nav").scrollLeft -= 200;
             }}
             // onMouseUp={() => {
             //   document.querySelector("nav").scrollLeft -= 0;
@@ -204,15 +203,14 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
               color="var(--text-light)"
               className={
                 navState
-                  ? "arrow-l fill-white dark:fill-text-light drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent bg-accent rounded-full"
+                  ? "arrow-l drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] bg-accent rounded-full"
                   : "hidden"
               }
             />
           </button>
           <button
             onMouseDown={() => {
-              document.querySelector("nav").scrollLeft +=
-                navWidth.current.clientWidth / 5;
+              document.querySelector("nav").scrollLeft += 200;
             }}
             // onMouseUp={() => {
             //   document.querySelector("nav").scrollLeft += 0;
@@ -223,7 +221,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
               color="var(--text-light)"
               className={
                 navState
-                  ? "arrow-r fill-white dark:fill-text-light drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]  hover:fill-accent bg-accent rounded-full"
+                  ? "arrow-r drop-shadow-[1px_1px_2px_rgba(0,0,0,0.8)] bg-accent rounded-full"
                   : "hidden"
               }
             />
@@ -332,7 +330,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
         ></div>
       </div>
       {/* nav hide */}
-      <button
+      {/* <button
         title={navState ? "ukryj nawigację" : "pokaż nawigację"}
         className="absolute -top-[2px] max-sm:top-[2px] right-[2px] "
         onClick={(e) => {
@@ -348,7 +346,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
               : "relative opacity-40 dark:opacity-20 hover:dark:opacity-100 hover:opacity-100 fill-accent-2 rotate-180 drop-shadow-[0_0_0_black] max-sm:-top-[4px] -right-[1px] max-sm:right-[2px]"
           }
         />
-      </button>
+      </button> */}
       {/* nav show */}
       <button
         onClick={(e) => {
@@ -363,7 +361,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
         nawigacja
       </button>
       {/* overlap */}
-      {navState && (
+      {/* {navState && (
         <button
           title={!overlap ? "szeroko" : "wąsko"}
           className="absolute right-[5px] bottom-1 max-sm:hidden "
@@ -379,7 +377,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
             }
           />
         </button>
-      )}
+      )} */}
     </div>
   );
 };

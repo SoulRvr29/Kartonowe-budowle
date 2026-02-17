@@ -1,7 +1,7 @@
 .active .card-container,
 .active .nazwa-modelu {
   border-color: var(--accent-2);
-  background-color: var(--accent-2);
+  background-color: hsla(358, 79%, 66%, 0.5);
 }
 
 .active .rok-ukonczenia {

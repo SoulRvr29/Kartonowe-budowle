@@ -169,7 +169,7 @@ const Comments = ({ id }) => {
         setSectionState={setSectionState}
       />
       {sectionState && (
-        <div className="m-8 relative mx-auto max-w-4xl px-2">
+        <div className="m-8 max-sm:my-4 relative mx-auto max-w-4xl px-2 max-sm:px-0 ">
           {/* loading icon */}
           {loadingIcon && (
             <div className="loading-icon absolute left-[calc(50%-24px)] top-[calc(50%-24px)] max-sm:left-[calc(50%-12px)] max-sm:top-[calc(50%-12px)] justify-self-center z-40 w-12 h-12 border-[6px] border-white rounded-full border-b-accent drop-shadow-[0_0_4px_rgba(0,0,0,0.5)] max-sm:w-6 max-sm:h-6 max-sm:border-[3px]"></div>
@@ -218,13 +218,13 @@ const Comments = ({ id }) => {
                       </div>
                     </div>
                     {/* comment box */}
-                    <div className="w-full bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md">
+                    <div className="w-full bg-white bg-opacity-20 dark:bg-opacity-5 rounded-md max-sm:rounded-none">
                       <div
                         className={
-                          "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-50 bg-opacity-50 rounded-t-md"
+                          "flex max-sm:flex-col justify-between px-2 py-1 bg-white dark:bg-accent dark:bg-opacity-50 bg-opacity-50 rounded-t-md max-sm:rounded-none"
                         }
                       >
-                        <div className="font-bold flex">
+                        <div className="font-bold flex max-sm:text-sm">
                           {item.login}
                           {item.admin && (
                             <div className="text-accent-4 bg-white bg-opacity-75 px-1 rounded-md scale-[70%]">
@@ -404,7 +404,7 @@ const Comments = ({ id }) => {
                     placeholder="Nazwa użytkownika"
                     required
                     autoFocus
-                    className="w-fit rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
+                    className="w-fit rounded-md max-sm:rounded-none border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 mb-2"
                   />
                 )}
                 {/* {!user && (
@@ -422,7 +422,7 @@ const Comments = ({ id }) => {
                   required
                   autoFocus={user}
                   wrap="hard"
-                  className="w-full rounded-md border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 "
+                  className="w-full rounded-md max-sm:rounded-none border-2 border-text-light dark:border-accent dark:focus:border-accent-2 focus:border-accent-3 outline-none bg-bkg-light dark:bg-bkg px-2 py-1 placeholder:text-text-dark dark:placeholder:text-text-light placeholder:opacity-70 "
                   placeholder="Treść komentarza..."
                 />
                 {/* sending spinner */}
