@@ -2,6 +2,7 @@ import ArticleHeader from "../components/ArticleHeader";
 import Gallery from "../components/Gallery";
 import ModelInfo from "../components/ModelInfo";
 import StarshipS30History from "../historySections/StarshipS30History";
+import StarshipS30Report from "../reportSections/StarshipS30Report";
 import Comments from "../components/Comments";
 import { useEffect } from "react";
 
@@ -14,8 +15,9 @@ const Article = ({ id }) => {
     <>
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
-      <Gallery id={id} />
+      <StarshipS30Report id={id} />
       <Comments id={id} />
+      <Gallery id={id} />
       <StarshipS30History id={id} />
     </>
   );

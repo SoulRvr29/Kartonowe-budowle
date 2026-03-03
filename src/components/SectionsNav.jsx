@@ -23,6 +23,10 @@ const SectionsNav = () => {
   const location = useLocation();
   const pagesWithoutSectionsNav = ["/", "/About", "/Oswietlenie"];
 
+  const sectionsList = [...document.querySelectorAll("section")].map(
+    (section) => section.id,
+  );
+
   useEffect(() => {
     const sections = [...document.querySelectorAll("section")] || [];
     if (!sections.length) return;
@@ -78,10 +82,17 @@ const SectionsNav = () => {
             className="hover:text-white dark:hover:text-accent"
           />
         </a>
-        <SectionsNavLi sectionName="model" activeSection={activeSection} />
+        {sectionsList.map((section) => (
+          <SectionsNavLi
+            key={section}
+            sectionName={section}
+            activeSection={activeSection}
+          />
+        ))}
+        {/* <SectionsNavLi sectionName="model" activeSection={activeSection} />
         <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
         <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />
-        <SectionsNavLi sectionName="historia" activeSection={activeSection} />
+        <SectionsNavLi sectionName="historia" activeSection={activeSection} /> */}
       </div>
     );
   return null;
