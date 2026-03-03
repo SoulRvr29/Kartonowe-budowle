@@ -75,8 +75,8 @@ const SectionsNav = () => {
   if (pagesWithoutSectionsNav.includes(location.pathname)) return null;
   if (isVisible)
     return (
-      <div className="flex justify-center sectionsNav z-10 absolute -bottom-[30px] left-0 w-full gap-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-60 dark:bg-opacity-60 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50 backdrop-blur-[2px] capitalize">
-        <a href="#">
+      <div className="flex flex-wrap justify-center sectionsNav z-10 absolute left-0 w-full gap-x-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-60 dark:bg-opacity-60 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50 backdrop-blur-[2px] capitalize">
+        <a href="#" className="max-sm:hidden">
           <FaCaretUp
             size={20}
             className="hover:text-white dark:hover:text-accent"

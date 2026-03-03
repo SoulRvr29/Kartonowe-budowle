@@ -167,3 +167,31 @@ article h5 {
   border: none;
   font-size: 1.1rem;
 }
+
+.report-photo {
+  margin: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem !important;
+  max-height: 250px;
+  height: fit-content;
+  max-width: 350px;
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .report-photo {
+    padding: 0 !important;
+    width: auto !important;
+    margin: 0.5rem !important;
+    margin-bottom: 1rem !important;
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .report-photo {
+    width: 100% !important;
+    max-width: 300px;
+    max-height: none !important;
+  }
+}
