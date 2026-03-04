@@ -176,7 +176,7 @@ article h5 {
   height: fit-content;
   max-width: 350px;
   width: fit-content;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -193,5 +193,20 @@ article h5 {
     width: 100% !important;
     max-width: 300px;
     max-height: none !important;
+  }
+}
+
+.report-photo-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+@media not all and (min-width: 768px) {
+  .report-photo-group {
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }

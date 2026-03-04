@@ -7,10 +7,6 @@ const StarshipS30Report = ({ id }) => {
   const [reportState, setReportState] = useState(
     JSON.parse(localStorage.getItem("sections")),
   );
-  ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/atlasV/atlasV-photo1.webp"];
-  const photosTitle = ["Start rakiety Atlas V"];
-  /////////////////////////////////////////////////////////////////
   return (
     <section id="relacja">
       <SectionHeader
@@ -20,24 +16,8 @@ const StarshipS30Report = ({ id }) => {
       />
 
       {reportState === true && (
-        <PhotoProvider
-          overlayRender={({ index }) => {
-            return (
-              <div
-                className={
-                  "photo-description absolute bottom-0 text-center w-full z-30 p-3 bg-black bg-opacity-40 text-text-light " +
-                  (!photosTitle[index] && " hidden")
-                }
-              >
-                {photosTitle[index]}
-              </div>
-            );
-          }}
-          maskOpacity={0.5}
-          maskClassName="backdrop-blur-sm"
-          loadingElement={<div className="loader"></div>}
-        >
-          <article className="px-8">
+        <PhotoProvider loadingElement={<div className="loader"></div>}>
+          <article>
             <p>
               Sklejanie zacząłem od noska Starshipa. Poszczególne segmenty
               najlepiej łączyć ze sobą, patrząc na linie z przodu noska, bo gdy
@@ -46,29 +26,26 @@ const StarshipS30Report = ({ id }) => {
               idealnie spasowane i trzeba brać pod uwagę to, że nieraz coś
               będzie do poprawy.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d02.webp">
                 <LazyLoadImage
                   className="report-photo"
                   src="https://www.modelcraft.pl/models/starship_s30/thumb/starship_s30-thumb-d02.webp"
-                  alt="Start rakiety Atlas V."
-                  title={photosTitle[0]}
+                  alt="Nosek Starshipa"
                 />
               </PhotoView>
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d03.webp">
                 <LazyLoadImage
                   className="report-photo"
                   src="https://www.modelcraft.pl/models/starship_s30/thumb/starship_s30-thumb-d03.webp"
-                  alt="Start rakiety Atlas V."
-                  title={photosTitle[1]}
+                  alt="Nosek Starshipa"
                 />
               </PhotoView>
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d11.webp">
                 <LazyLoadImage
                   className="report-photo"
                   src="https://www.modelcraft.pl/models/starship_s30/thumb/starship_s30-thumb-d11.webp"
-                  alt="Start rakiety Atlas V."
-                  title={photosTitle[2]}
+                  alt="Nosek Starshipa"
                 />
               </PhotoView>
             </div>
@@ -80,7 +57,7 @@ const StarshipS30Report = ({ id }) => {
               nie widać, nie będę dodawał detali. Kratownice też średnio do
               siebie pasują i musiałem je w kilku miejscach wyginać i dociskać.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d06.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -108,7 +85,7 @@ const StarshipS30Report = ({ id }) => {
               środek kilka krążków z tektury 1,5 mm. Od góry wkleiłem kopułę
               głównego zbiornika, a od dołu podstawę pod silniki.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d04.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -137,7 +114,7 @@ const StarshipS30Report = ({ id }) => {
               Początkowo chciałem dać po cztery magnesy, ale dla pewności
               dodałem jeszcze po dwa kolejne po bokach.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d07.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -182,7 +159,7 @@ const StarshipS30Report = ({ id }) => {
               </PhotoView>
             </div>
             <p>Na nosku rakiety dodałem od siebie kilka drobnych detali.</p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d28.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -200,7 +177,7 @@ const StarshipS30Report = ({ id }) => {
               elementy na ściankach to podstawę rozciąłem na trzy części i tak
               po kawałku wklejałem.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d12.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -229,7 +206,7 @@ const StarshipS30Report = ({ id }) => {
               był za szeroki o jakieś 5 mm, więc musiałem tę część poprawić i
               ponownie wydrukować.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d42.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -257,7 +234,7 @@ const StarshipS30Report = ({ id }) => {
               ruchome. Zamocowałem je na prostym zawiasie - jedna rurka jest
               wsunięta w drugą.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d13.webp">
                 <LazyLoadImage
                   className="report-photo"
@@ -286,7 +263,7 @@ const StarshipS30Report = ({ id }) => {
               Przesunięcia w grafice między poszczególnymi segmentami też nie
               ułatwiają sprawy.
             </p>
-            <div className="flex max-sm:justify-center -ml-2 flex-wrap">
+            <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/starship_s30/full-res/starship_s30-d54.webp">
                 <LazyLoadImage
                   className="report-photo"
