@@ -1,10 +1,13 @@
 import { TbPlayerTrackNextFilled } from "react-icons/tb";
-import { useEffect } from "react";
-import { use } from "react";
+import { useState, useEffect } from "react";
 
 const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
+
   useEffect(() => {
-    document.querySelector("#relacja").scrollIntoView();
+    if (!isFirstLoad) {
+      document.querySelector("#relacja")?.scrollIntoView();
+    }
   }, [currentPage]);
 
   return (
@@ -13,6 +16,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
       <button
         onClick={() => {
           setCurrentPage(currentPage - 1);
+          setIsFirstLoad(false);
         }}
         disabled={currentPage === 1}
         className={`${
@@ -33,6 +37,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
               key={index}
               onClick={() => {
                 setCurrentPage(index);
+                setIsFirstLoad(false);
               }}
               className={` w-6 ${
                 currentPage === index
@@ -50,6 +55,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
       <button
         onClick={() => {
           setCurrentPage(currentPage + 1);
+          setIsFirstLoad(false);
         }}
         disabled={currentPage === totalPages}
         className={`${

@@ -1921,7 +1921,6 @@ const WangReport = ({ id }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = articleContent.length;
 
-  console.log(articleContent.length);
   return (
     <section id="relacja">
       <SectionHeader

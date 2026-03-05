@@ -89,10 +89,6 @@ const SectionsNav = () => {
             activeSection={activeSection}
           />
         ))}
-        {/* <SectionsNavLi sectionName="model" activeSection={activeSection} />
-        <SectionsNavLi sectionName="galeria" activeSection={activeSection} />
-        <SectionsNavLi sectionName="komentarze" activeSection={activeSection} />
-        <SectionsNavLi sectionName="historia" activeSection={activeSection} /> */}
       </div>
     );
   return null;
