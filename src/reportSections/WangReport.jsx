@@ -36,24 +36,24 @@ const WangReport = ({ id }) => {
               .
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/yNVv2xJ6/0002.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b01.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/yNVv2xJ6/0002.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b01.webp"
                   alt="Wang temple drawing 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/rwGfhxwY/0001.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b02.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/rwGfhxwY/0001.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b02.webp"
                   alt="Wang temple drawing 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/YSbb77g6/0000.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b03.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/YSbb77g6/0000.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b03.webp"
                   alt="Wang temple drawing 3"
                 />
               </PhotoView>
@@ -63,10 +63,10 @@ const WangReport = ({ id }) => {
               wykonać cały model. Będę wszystko przerysowywał w photoshopie. Tak
               wygląda porównanie podstawy GPM (po lewej) z rysunkiem powyżej:
             </p>
-            <PhotoView src="https://i.postimg.cc/qvpwk653/000.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b04.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/qvpwk653/000.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b04.webp"
                 alt="GPM base comparison"
               />
             </PhotoView>
@@ -74,72 +74,74 @@ const WangReport = ({ id }) => {
               Model z GPM przedstawia budowlę w ciemniejszej, starszej wersji,
               ja zrobię ją w wersji jaśniejszej, czyli takiej jak wygląda teraz.
             </p>
-            <PhotoView src="https://i.postimg.cc/xC8LXKvX/Vu6-DOCn7a5ajsyv-Js-X.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/xC8LXKvX/Vu6-DOCn7a5ajsyv-Js-X.jpg"
-                alt="Wang temple light version 1"
-              />
-            </PhotoView>
-            <PhotoView src="https://i.postimg.cc/s2wpfnhF/141-145389538118.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/s2wpfnhF/141-145389538118.jpg"
-                alt="Wang temple light version 2"
-              />
-            </PhotoView>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b05.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b05.webp"
+                  alt="Wang temple light version 1"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b06.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b06.webp"
+                  alt="Wang temple light version 2"
+                />
+              </PhotoView>
+            </div>
             <p>
               Sporą część modelu postanowiłem wykonać z drewna balsowego, więc
               kupiłem kilka listewek i kołków różnego rodzaju...
             </p>
-            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b04.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b07.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b04.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b07.webp"
                 alt="Balsa wood materials"
               />
             </PhotoView>
             <p>... i oto kilka gotowych ścianek:</p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b01.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b08.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b01.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b08.webp"
                   alt="Finished wall 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/tCpLCqY8/SS853255.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b12.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/tCpLCqY8/SS853255.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b12.webp"
                   alt="Finished wall 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/x1xr4wjh/SS853189.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b09.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/x1xr4wjh/SS853189.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b09.webp"
                   alt="Finished wall 3"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/jSKdTYbj/SS853213.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b10.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/jSKdTYbj/SS853213.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b10.webp"
                   alt="Finished wall 4"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/gcZY62cJ/SS853184.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b11.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/gcZY62cJ/SS853184.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b11.webp"
                   alt="Finished wall 5"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/50Hfgxws/SS853209.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b13.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/50Hfgxws/SS853209.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b13.webp"
                   alt="Finished wall 6"
                 />
               </PhotoView>
@@ -151,26 +153,26 @@ const WangReport = ({ id }) => {
               dociskałem każdy fragment po kolei małym dłutkiem, które
               spiłowałem do odpowiedniego kąta.
             </p>
-            <PhotoView src="https://i.postimg.cc/66nXpbz4/SS853279.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b14.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/66nXpbz4/SS853279.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b14.webp"
                 alt="Shingle texture process"
               />
             </PhotoView>
             <p>Następnie odcinałem środek i miałem gotowy taki oto fragment.</p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/V67vbpfw/SS853286.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b15.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/V67vbpfw/SS853286.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b15.webp"
                   alt="Fragment finished 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/1Xk9GZbk/SS853293.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b16.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/1Xk9GZbk/SS853293.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b16.webp"
                   alt="Fragment finished 2"
                 />
               </PhotoView>
@@ -179,10 +181,10 @@ const WangReport = ({ id }) => {
               Narożne kolumny wykonywałem w podobny sposób, tylko wzór musiałem
               już przykleić do całości i nacinać linie od ręki.
             </p>
-            <PhotoView src="https://i.postimg.cc/kXHFYw3w/SS853365.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b30.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/kXHFYw3w/SS853365.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b30.webp"
                 alt="Corner columns"
               />
             </PhotoView>
@@ -196,31 +198,31 @@ const WangReport = ({ id }) => {
               do podstawy. Wymiary podstawy to 32/33cm.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/Nj0Smd84/SS853335.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b17.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/Nj0Smd84/SS853335.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b17.webp"
                   alt="Final assembly 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/ZnF2FgDf/SS853356.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b20.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/ZnF2FgDf/SS853356.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b20.webp"
                   alt="Final assembly 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/RVd2Wkth/SS853351.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b18.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/RVd2Wkth/SS853351.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b18.webp"
                   alt="Final assembly 3"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/XJ5TXXK6/SS853346.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b19.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/XJ5TXXK6/SS853346.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b19.webp"
                   alt="Final assembly 4"
                 />
               </PhotoView>
@@ -228,62 +230,62 @@ const WangReport = ({ id }) => {
             <p>
               Główne wejście do świątyni, jeszcze bez drzwi i wszystkich detali.
             </p>
-            <PhotoView src="https://i.postimg.cc/zXkYnLsJ/5646.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b21.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/zXkYnLsJ/5646.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b21.webp"
                 alt="Main entrance"
               />
             </PhotoView>
 
             <p>Kolejne ścianki w budowie...</p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/VLjh98j1/SS853319.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b36.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/VLjh98j1/SS853319.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b36.webp"
                   alt="Walls in construction 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/FstqJRkD/SS853340.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b28.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/FstqJRkD/SS853340.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b28.webp"
                   alt="Walls in construction 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/4dLjFHy7/SS853351.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b29.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/4dLjFHy7/SS853351.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b29.webp"
                   alt="Walls in construction 3"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/9fB6ZnjB/SS853353.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b37.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/9fB6ZnjB/SS853353.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b37.webp"
                   alt="Walls in construction 4"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/RFLpLc8v/SS853362.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b31.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/RFLpLc8v/SS853362.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b31.webp"
                   alt="Walls in construction 5"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/N0YhywZM/SS853369.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b32.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/N0YhywZM/SS853369.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b32.webp"
                   alt="Walls in construction 6"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/3RJPBF8Q/SS853376.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b38.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/3RJPBF8Q/SS853376.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b38.webp"
                   alt="Walls in construction 7"
                 />
               </PhotoView>
@@ -293,73 +295,73 @@ const WangReport = ({ id }) => {
               wszystko dokładnie usztywniłem tekturą.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/yxLMGVXd/SS853411.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b40.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/yxLMGVXd/SS853411.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b40.webp"
                   alt="Finished walls 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/RCGxhR5B/SS853408.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b39.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/RCGxhR5B/SS853408.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b39.webp"
                   alt="Finished walls 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/sDXdhhsZ/SS853390.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b33.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/sDXdhhsZ/SS853390.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b33.webp"
                   alt="Finished walls 3"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/mgzvdWcL/SS853386.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b34.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/mgzvdWcL/SS853386.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b34.webp"
                   alt="Finished walls 4"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/BQVWcnn7/SS853387.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b35.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/BQVWcnn7/SS853387.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b35.webp"
                   alt="Finished walls 5"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/nzZNcs3r/SS853448.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b46.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/nzZNcs3r/SS853448.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b46.webp"
                   alt="Finished walls 6"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/mr70s3NK/SS853442.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b44.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/mr70s3NK/SS853442.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b44.webp"
                   alt="Finished walls 7"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/g2CfQtRv/SS853444.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b45.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/g2CfQtRv/SS853444.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b45.webp"
                   alt="Finished walls 8"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/qRLStkFL/SS853423.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b43.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/qRLStkFL/SS853423.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b43.webp"
                   alt="Finished walls 9"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/Wz1KgBLP/SS853425.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b41.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/Wz1KgBLP/SS853425.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b41.webp"
                   alt="Finished walls 10"
                 />
               </PhotoView>
@@ -370,66 +372,66 @@ const WangReport = ({ id }) => {
               daszek, który dodam w późniejszym etapie.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/jjZqr5wb/2520.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b22.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/jjZqr5wb/2520.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b22.webp"
                   alt="Main entrance detail 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/gc5JJnMc/16530609302_727bf16433_o.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b23.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/gc5JJnMc/16530609302_727bf16433_o.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b23.webp"
                   alt="Main entrance detail 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/NfSrWNh4/SS853421.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b26.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/NfSrWNh4/SS853421.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b26.webp"
                   alt="Main entrance detail 3"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/J4Gk6fF0/SS853381.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b24.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/J4Gk6fF0/SS853381.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b24.webp"
                   alt="Main entrance detail 4"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/L8PZRz2M/SS853400.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b27.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/L8PZRz2M/SS853400.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b27.webp"
                   alt="Main entrance detail 5"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/bvjSvswS/SS853410.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b25.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/bvjSvswS/SS853410.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b25.webp"
                   alt="Main entrance detail 6"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/0j3b1N4Q/SS853475.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b48.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/0j3b1N4Q/SS853475.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b48.webp"
                   alt="Main entrance detail 7"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/FKgdkNYW/SS853474.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b47.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/FKgdkNYW/SS853474.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b47.webp"
                   alt="Main entrance detail 8"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/sf0Bhn2r/SS853468.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b42.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/sf0Bhn2r/SS853468.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b42.webp"
                   alt="Main entrance detail 9"
                 />
               </PhotoView>
@@ -440,118 +442,120 @@ const WangReport = ({ id }) => {
               grubszego i cieńszego, a w górnej części wyciąłem żyletką rowek.
               Tak wygląda wszystko luzem:
             </p>
-            <PhotoView src="https://i.postimg.cc/Z5snDHyx/SS853485.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b49.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/Z5snDHyx/SS853485.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b49.webp"
                 alt="Assembly process 1"
               />
             </PhotoView>
             <p>
               Następnie górną część lekko przykleiłem do wydrukowanego szablonu
-              i dokleiłem słupki...
+              i dokleiłem słupki, które dociąłem do odpowiedniej długości i
+              dokleiłem u dołu szersze kawałki balsy. Do wszystkiego dokleiłem
+              poziomą belkę, podklejoną u dołu paskiem kartonu, żeby była
+              bardziej wysunięta.
             </p>
-            <PhotoView src="https://i.postimg.cc/1twzXZ7v/SS853491.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/1twzXZ7v/SS853491.jpg"
-                alt="Assembly process 2"
-              />
-            </PhotoView>
-            <p>
-              ... które dociąłem do odpowiedniej długości i dokleiłem u dołu
-              szersze kawałki balsy.
-            </p>
-            <PhotoView src="https://i.postimg.cc/3wPR3w1y/SS853504.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/3wPR3w1y/SS853504.jpg"
-                alt="Assembly process 3"
-              />
-            </PhotoView>
-            <p>
-              Do wszystkiego dokleiłem poziomą belkę, podklejoną u dołu paskiem
-              kartonu, żeby była bardziej wysunięta.
-            </p>
-            <PhotoView src="https://i.postimg.cc/NG8MwBHM/SS853508.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/NG8MwBHM/SS853508.jpg"
-                alt="Assembly process 4"
-              />
-            </PhotoView>
-            <p>
-              Odciąłem całość od szablonu i nakleiłem na tekturę. Pionowych
-              desek nie naklejałem z osobna, tylko wytłaczałem rowki igłą.
-            </p>
-            <PhotoView src="https://i.postimg.cc/4x0413r8/SS853513.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/4x0413r8/SS853513.jpg"
-                alt="Assembly process 5"
-              />
-            </PhotoView>
-            <p>Dokleiłem dolne belki i tak wygląda całość:</p>
-            <PhotoView src="https://i.postimg.cc/HspLYRwt/SS853520.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/HspLYRwt/SS853520.jpg"
-                alt="Assembly complete"
-              />
-            </PhotoView>
-            <p>Następnie pomalowałem wszystko ochrą żółtą...</p>
-            <PhotoView src="https://i.postimg.cc/D0cyQPTs/SS853532.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/D0cyQPTs/SS853532.jpg"
-                alt="Painting process 1"
-              />
-            </PhotoView>
-            <p>...później rozwodnioną umbrą paloną...</p>
-            <PhotoView src="https://i.postimg.cc/Hnmk7Pfd/SS853537.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/Hnmk7Pfd/SS853537.jpg"
-                alt="Painting process 2"
-              />
-            </PhotoView>
-            <p>... i na koniec wycierałem jaśniejszym kolorem.</p>
-            <PhotoView src="https://i.postimg.cc/5Nn26gpW/SS853547.jpg">
-              <LazyLoadImage
-                className="report-photo"
-                src="https://i.postimg.cc/5Nn26gpW/SS853547.jpg"
-                alt="Painting final"
-              />
-            </PhotoView>
-            <p>Dokleiłem okna i parapety.</p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/ZRtT1MYp/SS853702.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b50.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/ZRtT1MYp/SS853702.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b50.webp"
+                  alt="Assembly process 2"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b51.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b51.webp"
+                  alt="Assembly process 3"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b52.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b52.webp"
+                  alt="Assembly process 4"
+                />
+              </PhotoView>
+            </div>
+            <p>
+              Odciąłem całość od szablonu i nakleiłem na tekturę. Pionowych
+              desek nie naklejałem z osobna, tylko wytłaczałem rowki igłą. U
+              dołu dokleiłem dolne belki.
+            </p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b53.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b53.webp"
+                  alt="Assembly process 5"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b54.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b54.webp"
+                  alt="Assembly complete"
+                />
+              </PhotoView>
+            </div>
+            <p>
+              Następnie pomalowałem wszystko ochrą żółtą, później rozwodnioną
+              umbrą paloną i na koniec wycierałem jaśniejszym kolorem.
+            </p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b55.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b55.webp"
+                  alt="Painting process 1"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b56.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b56.webp"
+                  alt="Painting process 2"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b57.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b57.webp"
+                  alt="Painting final"
+                />
+              </PhotoView>
+            </div>
+            <p>Dokleiłem okna i parapety.</p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b58.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b58.webp"
                   alt="Windows and sills 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/HsZTpxsp/SS853693.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b59.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/HsZTpxsp/SS853693.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b59.webp"
                   alt="Windows and sills 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/fLcwZfkF/SS853699.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b60.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/fLcwZfkF/SS853699.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b60.webp"
                   alt="Windows and sills 3"
                 />
               </PhotoView>
             </div>
             <p>W ten sam sposób wykonałem kolejne ścianki.</p>
-            <PhotoView src="https://i.postimg.cc/T1TTP5DP/SS853687.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b61.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/T1TTP5DP/SS853687.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b61.webp"
                 alt="More walls"
               />
             </PhotoView>
@@ -559,10 +563,10 @@ const WangReport = ({ id }) => {
               Zrobiłem kilka narożnych kolumn, każda jest sklejona z trzech
               kawałków balsy.
             </p>
-            <PhotoView src="https://i.postimg.cc/HWtphzq8/SS853711.jpg">
+            <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b62.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://i.postimg.cc/HWtphzq8/SS853711.jpg"
+                src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b62.webp"
                 alt="Corner columns assembly"
               />
             </PhotoView>
@@ -574,69 +578,69 @@ const WangReport = ({ id }) => {
               segment z głównym wejściem o 1,5mm bo za bardzo wystawał.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/L5h8bHb8/SS853773.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b63.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/L5h8bHb8/SS853773.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b63.webp"
                   alt="Assembly with columns 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/DfYZbXSJ/SS853775.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b64.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/DfYZbXSJ/SS853775.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b64.webp"
                   alt="Assembly with columns 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/x1LT7ptM/SS853787.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b65.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/x1LT7ptM/SS853787.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b65.webp"
                   alt="Assembly with columns 3"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/zXbfwGhd/SS853794.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b66.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/zXbfwGhd/SS853794.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b66.webp"
                   alt="Assembly with columns 4"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/cCjLqVpM/SS853818.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b68.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/cCjLqVpM/SS853818.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b68.webp"
                   alt="Assembly with columns 5"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/rmwVDVcN/SS853825.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b69.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/rmwVDVcN/SS853825.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b69.webp"
                   alt="Assembly with columns 6"
                 />
               </PhotoView>
             </div>
             <p>Prawa strona świątyni zrobiona.</p>
             <div className="report-photo-group">
-              <PhotoView src="https://i.postimg.cc/Pxb6b9Md/SS853887.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b72.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/Pxb6b9Md/SS853887.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b72.webp"
                   alt="Right side complete 1"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/65pHRH4N/SS853880.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b70.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/65pHRH4N/SS853880.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b70.webp"
                   alt="Right side complete 2"
                 />
               </PhotoView>
-              <PhotoView src="https://i.postimg.cc/2jFh3bpg/SS853890_copy.jpg">
+              <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b75.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://i.postimg.cc/2jFh3bpg/SS853890_copy.jpg"
+                  src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b75.webp"
                   alt="Right side complete 3"
                 />
               </PhotoView>
