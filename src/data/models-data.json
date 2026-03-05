@@ -1402,8 +1402,8 @@
         "thumb": "./models/wang/night/thumb/wang-thumb-n"
       },
       "budowa": {
-        "quantity": 162,
-        "format": ".jpg",
+        "quantity": 211,
+        "format": ".webp",
         "full": "./models/wang/build/full-res/wang-b",
         "thumb": "./models/wang/build/thumb/wang-thumb-b"
       }

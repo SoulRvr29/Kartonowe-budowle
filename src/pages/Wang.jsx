@@ -3,6 +3,7 @@ import Gallery from "../components/Gallery";
 import WangHistory from "../historySections/WangHistory";
 import ModelInfo from "../components/ModelInfo";
 import Comments from "../components/Comments";
+import WangReport from "../reportSections/WangReport";
 import { useEffect } from "react";
 
 const Article = ({ id }) => {
@@ -16,6 +17,7 @@ const Article = ({ id }) => {
       <ModelInfo id={id} />
       <Gallery id={id} />
       <Comments id={id} />
+      <WangReport id={id} />
       <WangHistory id={id} />
     </>
   );

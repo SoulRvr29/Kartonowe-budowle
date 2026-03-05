@@ -51,6 +51,7 @@ const ShareScreen = ({
   shareScreen,
   setShareScreen,
   directFull,
+  directThumb,
   shareForum,
   shareWebsite,
 }) => {
@@ -70,6 +71,7 @@ const ShareScreen = ({
             className="grid justify-items-end gap-6 font-bold"
           >
             <ShareLi type="Link bezpośredni" link={directFull} />
+            <ShareLi type="Link do miniaturki" link={directThumb} />
             <ShareLi type="Miniaturka na forum" link={shareForum} />
             <ShareLi type="Miniaturka na stronę" link={shareWebsite} />
           </ul>

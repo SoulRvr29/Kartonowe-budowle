@@ -199,14 +199,27 @@ article h5 {
 .report-photo-group {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  /* row-gap: 1rem; */
+}
+.report-photo {
+  margin-left: 0 !important;
+  margin-right: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
 }
 
 @media not all and (min-width: 768px) {
   .report-photo-group {
     justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
+  }
+  article > .report-photo {
+    margin: auto;
+    justify-self: center;
+  }
+  .report-photo {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
   }
 }

@@ -79,6 +79,7 @@ const Gallery = ({ id, name }) => {
   };
 
   let [directFull, setDirectFull] = useState("");
+  let [directThumb, setDirectThumb] = useState("");
   let [shareForum, setShareForum] = useState("");
   let [shareWebsite, setShareWebsite] = useState("");
 
@@ -89,6 +90,7 @@ const Gallery = ({ id, name }) => {
     const full = `https://www.modelcraft.pl${actualSrcFull[i].slice(1)}`;
     const thumb = `https://www.modelcraft.pl${actualSrcThumb[i].slice(1)}`;
     setDirectFull(full);
+    setDirectThumb(thumb);
     setShareForum(`[url=${full}][img]${thumb}[/img][/url]`);
     setShareWebsite(
       `<a href="${full}" target='_blank'><img src="${thumb}" border='0' alt='photo thumbnail'/></a>`,
@@ -254,6 +256,7 @@ const Gallery = ({ id, name }) => {
         shareScreen={shareScreen}
         setShareScreen={setShareScreen}
         directFull={directFull}
+        directThumb={directThumb}
         shareForum={shareForum}
         shareWebsite={shareWebsite}
       />

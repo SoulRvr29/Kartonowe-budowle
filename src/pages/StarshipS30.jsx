@@ -15,9 +15,9 @@ const Article = ({ id }) => {
     <>
       <ArticleHeader id={id} />
       <ModelInfo id={id} />
-      <StarshipS30Report id={id} />
       <Gallery id={id} />
       <Comments id={id} />
+      <StarshipS30Report id={id} />
       <StarshipS30History id={id} />
     </>
   );
