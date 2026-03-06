@@ -11,7 +11,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
   }, [currentPage]);
 
   return (
-    <nav className="flex justify-center max-md:justify-between gap-4 mx-8 max-md:mx-4">
+    <nav className="flex justify-center max-md:justify-between gap-8 max-md:gap-4 mx-8 max-md:mx-4">
       {/* previous button */}
       <button
         onClick={() => {
@@ -24,7 +24,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
         }`}
       >
         <TbPlayerTrackNextFilled
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[1px] p-[3px] border-2 hover:bg-accent border-text-light dark:border-text-light dark:hover:bg-accent rotate-180 ${
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] border hover:bg-accent border-text-light dark:border-text-light dark:hover:bg-accent rotate-180 ${
             currentPage === 1 ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
@@ -63,7 +63,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
         }`}
       >
         <TbPlayerTrackNextFilled
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[1px] p-[3px] border-2 hover:bg-accent border-text-light dark:border-text-light dark:hover:bg-accent ${
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] border hover:bg-accent border-text-light dark:border-text-light dark:hover:bg-accent ${
             currentPage === totalPages ? "opacity-0 hover:cursor-default" : ""
           }`}
         />

@@ -15,7 +15,7 @@ const BedzinArch = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <section id="historia">
+    <section id="architektura">
       <SectionHeader
         sectionName="Architektura"
         sectionState={architectureState}

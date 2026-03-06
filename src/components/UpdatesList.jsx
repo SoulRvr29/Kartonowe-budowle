@@ -16,7 +16,7 @@ const Update = ({ date, description }) => {
 
 const UpdatesList = () => {
   const [visibleUpdates, setVisibleUpdates] = useState(
-    updates.length < 3 ? updates.length : 3
+    updates.length < 3 ? updates.length : 3,
   );
 
   return (
