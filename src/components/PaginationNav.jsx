@@ -1,4 +1,4 @@
-import { TbPlayerTrackNextFilled } from "react-icons/tb";
+import { PiCaretDoubleLeftBold } from "react-icons/pi";
 import { useState, useEffect } from "react";
 
 const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
@@ -23,8 +23,8 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
           currentPage === 1 ? "opacity-0 hover:cursor-default" : ""
         }`}
       >
-        <TbPlayerTrackNextFilled
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] border hover:bg-accent border-text-light dark:border-text-light dark:hover:bg-accent rotate-180 ${
+        <PiCaretDoubleLeftBold
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent bg-opacity-40 hover:bg-accent dark:hover:bg-accent ${
             currentPage === 1 ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
@@ -62,8 +62,8 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
           currentPage === totalPages ? "opacity-0 hover:cursor-default" : ""
         }`}
       >
-        <TbPlayerTrackNextFilled
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] border hover:bg-accent border-text-light dark:border-text-light dark:hover:bg-accent ${
+        <PiCaretDoubleLeftBold
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent bg-opacity-40 hover:bg-accent dark:hover:bg-accent rotate-180 ${
             currentPage === totalPages ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
