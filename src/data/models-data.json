@@ -1723,7 +1723,7 @@
     "oświetlenie": false,
     "rok ukończenia": 9999,
     "link": "/SLS",
-
+    "card": "./cards/sls-card.webp",
     "position": [28.62730365, -80.620838353],
     "publisher": "model darmowy",
     "info": {
