@@ -42,11 +42,7 @@
         "full": "./models/bedzin/build/full-res/bedzin-b",
         "thumb": "./models/bedzin/build/thumb/bedzin-thumb-b"
       },
-      "filmy": {
-        "quantity": 1,
-        "format": "youtube",
-        "videoId": "98O2UpxcMB0"
-      }
+      "filmy": { "quantity": 1, "format": "youtube", "videoId": "98O2UpxcMB0" }
     },
     "photo": "models/bedzin/bedzin-photo",
     "description": "Średniowieczna warownia obronna wzniesiona w połowie XIV wieku przez Kazimierza Wielkiego w systemie tzw. Orlich Gniazd w Małopolsce, 4,5 km od granicy ze Śląskiem, na wzgórzu nad Czarną Przemszą; wielokrotnie niszczona, odbudowana w 1956."
@@ -463,11 +459,7 @@
       "Sektor widzialności światła": "151°-102°",
       "Charakterystyka światła": "Izofazowe"
     },
-    "Fazy światła": {
-      "1": "Światło 5 s",
-      "2": "Przerwa 5 s",
-      "Okres": "10 s"
-    },
+    "Fazy światła": { "1": "Światło 5 s", "2": "Przerwa 5 s", "Okres": "10 s" },
     "Galeria": {
       "dzień": {
         "quantity": 14,
@@ -625,11 +617,7 @@
       "Sektor widzialności światła": "048°-261°(213°)",
       "Charakterystyka światła": "Izofazowe"
     },
-    "Fazy światła": {
-      "1": "Światło 5 s",
-      "2": "Przerwa 5 s",
-      "Okres": "10 s"
-    },
+    "Fazy światła": { "1": "Światło 5 s", "2": "Przerwa 5 s", "Okres": "10 s" },
     "Galeria": {
       "dzień": {
         "quantity": 11,
@@ -672,11 +660,7 @@
       "Sektor widzialności światła": "079,5°-242°(162,5°)",
       "Charakterystyka światła": "Błyskowe"
     },
-    "Fazy światła": {
-      "1": "Światło 1 s",
-      "2": "Przerwa 2 s",
-      "Okres": "3 s"
-    },
+    "Fazy światła": { "1": "Światło 1 s", "2": "Przerwa 2 s", "Okres": "3 s" },
     "Galeria": {
       "dzień": {
         "quantity": 14,
@@ -811,11 +795,7 @@
       "Wysokość światła": "27,3 m n.p.m.",
       "Zasięg nominalny światła": "17 Mm (31,48 km)"
     },
-    "Fazy światła": {
-      "1": "Światło 2 s",
-      "2": "Przerwa 3 s",
-      "Okres": "5 s"
-    },
+    "Fazy światła": { "1": "Światło 2 s", "2": "Przerwa 3 s", "Okres": "5 s" },
     "Galeria": {
       "dzień": {
         "quantity": 17,
@@ -1030,11 +1010,7 @@
       "Zasięg nominalny światła": "24 Mm (46,3 km)",
       "Charakterystyka światła": "Przerywane"
     },
-    "Fazy światła": {
-      "1": "Światło 4 s",
-      "2": "Przerwa 1 s",
-      "Okres": "5 s"
-    },
+    "Fazy światła": { "1": "Światło 4 s", "2": "Przerwa 1 s", "Okres": "5 s" },
     "Galeria": {
       "dzień": {
         "quantity": 13,
@@ -1076,11 +1052,7 @@
       "Zasięg nominalny światła": "18 Mm (33,3 km)",
       "Charakterystyka światła": "Przerywane"
     },
-    "Fazy światła": {
-      "1": "Światło 4 s",
-      "2": "Przerwa 2 s",
-      "Okres": "6 s"
-    },
+    "Fazy światła": { "1": "Światło 4 s", "2": "Przerwa 2 s", "Okres": "6 s" },
     "Galeria": {
       "dzień": {
         "quantity": 15,
@@ -1706,7 +1678,7 @@
     "card": "./cards/starship_s30-card.webp",
     "Galeria": {
       "dzień": {
-        "quantity": 56,
+        "quantity": 58,
         "format": ".webp",
         "full": "./models/starship_s30/full-res/starship_s30-d",
         "thumb": "./models/starship_s30/thumb/starship_s30-thumb-d"
