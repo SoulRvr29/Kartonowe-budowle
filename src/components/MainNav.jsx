@@ -192,7 +192,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
         <div className="hidden max-sm:flex sticky top-[62px] z-10 left-0 w-screen justify-between px-2 h-0">
           <button
             onMouseDown={() => {
-              document.querySelector("nav").scrollLeft -= 200;
+              document.querySelector("nav").scrollLeft -= 166;
             }}
             // onMouseUp={() => {
             //   document.querySelector("nav").scrollLeft -= 0;
@@ -210,7 +210,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
           </button>
           <button
             onMouseDown={() => {
-              document.querySelector("nav").scrollLeft += 200;
+              document.querySelector("nav").scrollLeft += 166;
             }}
             // onMouseUp={() => {
             //   document.querySelector("nav").scrollLeft += 0;

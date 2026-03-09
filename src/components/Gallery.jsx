@@ -3,7 +3,7 @@ import modelsData from "../data/models-data.json";
 import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { FaShareNodes } from "react-icons/fa6";
 import { FaRegCopy } from "react-icons/fa";
 
@@ -121,15 +121,19 @@ const Gallery = ({ id, name }) => {
               setGalleryState(galleryState === false ? true : false);
             }}
           >
-            <IoIosArrowUp
-              size={28}
-              fill="var(--accent-4)"
-              className={
-                galleryState === false
-                  ? "transition-all arrow-down dark:fill-accent-2 mr-2 max-sm:h-6 mt-1 max-sm:mt-0 rotate-180"
-                  : "transition-all arrow-up dark:fill-accent-2 mr-2 max-sm:h-6 mt-1 max-sm:mt-0"
-              }
-            />
+            {galleryState ? (
+              <IoIosArrowUp
+                size={28}
+                fill="var(--accent-4)"
+                className="transition-all arrow-up dark:fill-accent-2 mr-2 max-sm:h-6 mt-1 max-sm:mt-0"
+              />
+            ) : (
+              <IoIosArrowDown
+                size={28}
+                fill="var(--accent-4)"
+                className="transition-all arrow-down dark:fill-accent-2 mr-2 max-sm:h-6 mt-1 max-sm:mt-0"
+              />
+            )}
           </button>
           <span className="z-10">{name === undefined ? "Galeria" : name}</span>
           {actualSrcThumb.length > 0 && (
@@ -141,7 +145,7 @@ const Gallery = ({ id, name }) => {
               gallerySections.map((section) => {
                 return (
                   <div key={section} className="z-10">
-                    <span className="opacity-50 z-10 max-sm:hidden">
+                    <span className="opacity-50 z-10 max-sm:hidden text-accent-2">
                       &nbsp;|&nbsp;
                     </span>
                     <button

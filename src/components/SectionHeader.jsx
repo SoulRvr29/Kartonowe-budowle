@@ -1,4 +1,4 @@
-import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 const SectionHeader = ({
   sectionState,
@@ -18,15 +18,19 @@ const SectionHeader = ({
               setSectionState(!sectionState);
             }}
           >
-            <IoIosArrowUp
-              size={28}
-              fill="var(--accent-4)"
-              className={
-                sectionState === false
-                  ? "transition-all duration-300 dark:fill-accent-2 mr-2 mt-1 max-sm:mt-0 arrow-down max-sm:h-6 rotate-180"
-                  : "transition-all duration-300 dark:fill-accent-2 mr-2 mt-1 max-sm:mt-0 arrow-up max-sm:h-6"
-              }
-            />
+            {sectionState ? (
+              <IoIosArrowUp
+                size={28}
+                fill="var(--accent-4)"
+                className="transition-all duration-300 dark:fill-accent-2 mr-2 mt-1 max-sm:mt-0 arrow-up max-sm:h-6"
+              />
+            ) : (
+              <IoIosArrowDown
+                size={28}
+                fill="var(--accent-4)"
+                className="transition-all duration-300 dark:fill-accent-2 mr-2 mt-1 max-sm:mt-0 arrow-down max-sm:h-6 "
+              />
+            )}
           </button>
           {sectionName}
           {sectionNumber > 0 && (
