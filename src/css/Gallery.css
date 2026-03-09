@@ -37,14 +37,15 @@
 
 .active-section {
   opacity: 1 !important;
+  text-decoration: underline;
 }
 
 .section:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   opacity: 0.75;
 }
 .active-section:hover {
-  text-decoration: none;
+  text-decoration: underline;
   cursor: default;
 }
 

@@ -24,7 +24,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
         }`}
       >
         <PiCaretDoubleLeftBold
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent bg-opacity-40 hover:bg-accent dark:hover:bg-accent ${
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent-4 dark:bg-accent bg-opacity-40 hover:bg-opacity-100 ${
             currentPage === 1 ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
@@ -63,7 +63,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
         }`}
       >
         <PiCaretDoubleLeftBold
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent bg-opacity-40 hover:bg-accent dark:hover:bg-accent rotate-180 ${
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent-4 dark:bg-accent bg-opacity-40 hover:bg-opacity-100 rotate-180 ${
             currentPage === totalPages ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
