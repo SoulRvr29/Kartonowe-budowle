@@ -41,7 +41,7 @@
 
 .section:hover {
   text-decoration: underline;
-  opacity: 1;
+  opacity: 0.75;
 }
 .active-section:hover {
   text-decoration: none;

@@ -112,8 +112,8 @@ const Gallery = ({ id, name }) => {
   return (
     <section id="galeria" className="gallery-cont select-none grid ">
       <header className="relative max-sm:w-screen">
-        <div className="absolute w-full h-12 -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
-        <h3 className="font-bold flex flex-wrap text-2xl max-sm:text-lg max-[400px]:text-base mx-6 max-sm:mx-2">
+        <div className="absolute w-full h-full -top-2 left-0  bg-gradient-to-b from-transparent via-text-light dark:via-accent to-transparent opacity-20 "></div>
+        <h3 className="font-bold flex items-center gap-y-1 flex-wrap text-2xl max-sm:text-lg max-[400px]:text-base mx-6 max-sm:mx-2">
           {/* //////////// gallery on/of button //////////// */}
           <button
             className="arrow-up-down z-10"
@@ -137,7 +137,7 @@ const Gallery = ({ id, name }) => {
           </button>
           <span className="z-10">{name === undefined ? "Galeria" : name}</span>
           {actualSrcThumb.length > 0 && (
-            <div className="grid place-content-center ml-2 opacity-30 text-xl max-md:text-sm">{`(${actualSrcThumb.length})`}</div>
+            <div className="grid place-content-center px-1  h-fit mt-1 ml-2  text-lg max-sm:text-sm max-sm:mt-0 rounded-md bg-accent-4 dark:bg-accent-2 bg-opacity-20 dark:bg-opacity-40 max-sm:bg-transparent max-sm:border-2 dark:border-accent-2 border-accent-4 border-opacity-30 dark:border-opacity-50 text-accent-4 dark:text-accent-2 max-sm:pl-[3px] ">{`${actualSrcThumb.length}`}</div>
           )}
           {/* //////////// gallery-type button //////////// */}
           <div className="flex section-list max-sm:gap-2 max-sm:px-2">
@@ -265,7 +265,8 @@ const Gallery = ({ id, name }) => {
         shareWebsite={shareWebsite}
       />
       {model[name][actualSection].format === "youtube" &&
-        actualSection === "filmy" && (
+        actualSection === "filmy" &&
+        galleryState && (
           <div className="flex justify-center pb-8 -mt-4">
             <div className="w-full max-w-4xl px-4">
               <div className="relative pb-[56.25%]">
