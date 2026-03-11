@@ -137,7 +137,7 @@ const Gallery = ({ id, name }) => {
           </button>
           <span className="z-10">{name === undefined ? "Galeria" : name}</span>
           {actualSrcThumb.length > 0 && (
-            <div className="grid place-content-center px-[5px] max-sm:px-[3px] h-7 max-sm:h-6 mt-1 ml-2  text-lg max-sm:text-sm max-sm:mt-0 rounded-md border-2 dark:border-accent-2 opacity-90 border-accent-4 border-opacity-50 dark:border-opacity-50 text-accent-4  dark:text-accent-2">{`${actualSrcThumb.length}`}</div>
+            <div className="grid place-content-center px-[5px] max-sm:px-[3px] h-7 max-sm:h-6 mt-1 ml-2  text-lg max-sm:text-sm max-sm:mt-0 rounded-md border-2 dark:border-accent-2 opacity-90 border-accent-4 border-opacity-50 dark:border-opacity-50 text-accent-4  dark:text-accent-2 text-opacity-80 dark:text-opacity-70">{`${actualSrcThumb.length}`}</div>
           )}
           {/* //////////// gallery-type button //////////// */}
           <div className="flex section-list max-sm:gap-2 max-sm:px-2">
