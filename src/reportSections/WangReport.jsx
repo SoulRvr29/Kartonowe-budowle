@@ -20,7 +20,7 @@ const WangReport = () => {
       />
 
       {reportState === true && (
-        <div className="pt-2 pb-4">
+        <div className="pt-2 pb-6">
           <PhotoProvider loadingElement={<div className="loader"></div>}>
             <PaginationNav
               currentPage={currentPage}

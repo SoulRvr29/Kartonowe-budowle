@@ -178,6 +178,9 @@ article h5 {
   width: fit-content;
   border-radius: 0.5rem;
 }
+.report-photo:last-child {
+  margin-bottom: 0 !important;
+}
 
 @media screen and (max-width: 900px) {
   .report-photo {

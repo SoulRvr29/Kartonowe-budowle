@@ -11,7 +11,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
   }, [currentPage]);
 
   return (
-    <nav className="flex justify-center max-md:justify-between gap-8 max-md:gap-4 mx-8 max-md:mx-4">
+    <nav className="flex justify-center max-md:justify-between gap-10 max-md:gap-4 mx-8 max-md:mx-4">
       {/* previous button */}
       <button
         onClick={() => {
@@ -24,7 +24,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
         }`}
       >
         <PiCaretDoubleLeftBold
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent-4 dark:bg-accent bg-opacity-40 hover:bg-opacity-100 ${
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent-4 dark:bg-accent dark:bg-opacity-40 bg-opacity-40 dark:hover:bg-opacity-100 hover:bg-opacity-100 ${
             currentPage === 1 ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
@@ -63,7 +63,7 @@ const PaginationNav = ({ currentPage, setCurrentPage, totalPages }) => {
         }`}
       >
         <PiCaretDoubleLeftBold
-          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent-4 dark:bg-accent bg-opacity-40 hover:bg-opacity-100 rotate-180 ${
+          className={`max-md:text-2xl text-3xl text-text-light shadow-md rounded-md max-md:rounded-sm max-md:p-[2px] p-[4px] bg-accent-4 dark:bg-accent dark:bg-opacity-40 bg-opacity-40 dark:hover:bg-opacity-100 hover:bg-opacity-100 rotate-180 ${
             currentPage === totalPages ? "opacity-0 hover:cursor-default" : ""
           }`}
         />
