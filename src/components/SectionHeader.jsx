@@ -35,7 +35,7 @@ const SectionHeader = ({
           {sectionName}
           {sectionNumber > 0 && (
             // <div className="grid place-content-center ml-2 opacity-30 text-xl max-md:text-xs">{`(${sectionNumber})`}</div>
-            <div className="grid place-content-center px-[5px] max-sm:px-[3px] h-7 max-sm:h-6 mt-1 ml-2  text-lg max-sm:text-sm max-sm:mt-0 rounded-md border-2 dark:border-accent-2 opacity-90 border-accent-4 border-opacity-50 dark:border-opacity-50 text-accent-4  dark:text-accent-2">{`${sectionNumber}`}</div>
+            <div className="grid place-content-center px-[5px] max-sm:px-[3px] h-7 max-sm:h-6 mt-1 ml-2  text-lg max-sm:text-sm max-sm:mt-0 rounded-md border-2 dark:border-accent-2 opacity-90 border-accent-4 border-opacity-50 dark:border-opacity-50 text-accent-4  dark:text-accent-2 text-opacity-80 dark:text-opacity-70">{`${sectionNumber}`}</div>
           )}
         </h3>
 

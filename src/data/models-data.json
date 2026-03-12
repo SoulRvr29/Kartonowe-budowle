@@ -1351,6 +1351,7 @@
     "cover": "models/wang/wang-cover.jpg",
     "position": [50.777365, 15.724056],
     "address": "Na Śnieżkę 8, 58-540 Karpacz",
+    "report": true,
     "info": {
       "Projekt": "własny",
       "Skala": "1:72",
@@ -1666,6 +1667,7 @@
     "cover": "models/starship_s30/starship s30-cover.webp",
     "position": [25.99626989, -97.15444383],
     "publisher": "model darmowy",
+    "report": true,
     "info": {
       "Projekt": "AXM Paper Models",
       "Skala": "1:100",
@@ -1698,6 +1700,7 @@
     "card": "./cards/sls-card.webp",
     "position": [28.62730365, -80.620838353],
     "publisher": "model darmowy",
+    "report": true,
     "info": {
       "Projekt": "AXM Paper Models",
       "Skala": "1:100",

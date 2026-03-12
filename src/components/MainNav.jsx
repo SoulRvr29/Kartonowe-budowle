@@ -22,6 +22,12 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
               return item.oświetlenie == true;
             }),
           );
+        else if (name == "z relacją")
+          setData(
+            completeData.filter((item) => {
+              return item?.report === true;
+            }),
+          );
         else if (name == "gpm")
           setData(
             completeData.filter((item) => {
@@ -163,12 +169,20 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
           />
           <span className=" max-sm:hidden ">-</span>
           <Nav_li
-            name="gpm"
+            name="z relacją"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
             setData={setData}
           />
+          {/* <span className=" max-sm:hidden ">-</span>
+          <Nav_li
+            name="gpm"
+            activeList={activeList}
+            setActiveList={setActiveList}
+            completeData={completeData}
+            setData={setData}
+          /> */}
           <span className=" max-sm:hidden ">-</span>
           <Nav_li
             name="darmowe"

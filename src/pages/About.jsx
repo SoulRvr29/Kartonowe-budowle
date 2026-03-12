@@ -10,7 +10,7 @@ const Article = () => {
     document.title = "O autorze - ModelCraft";
   }, []);
   ///////////////////////// PHOTOS SCRIPTS /////////////////////////
-  const photosSrc = ["./models/wang/build/full-res/wang-b162.jpg"];
+  const photosSrc = ["./models/wang/day/full-res/wang-d01.webp"];
   const photosTitle = ["Świątynia Wang"];
   /////////////////////////////////////////////////////////////////
   return (
