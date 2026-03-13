@@ -35,6 +35,9 @@ const Comments = ({ id }) => {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
   const [unLoggedUserName, setUnLoggedUserName] = useState("");
   const [usersList, setUsersList] = useState([]);
+  const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
+
+  console.log(user);
 
   const getUsersList = () => {
     axios
@@ -75,6 +78,10 @@ const Comments = ({ id }) => {
     if (user) {
       admin = user.admin;
       userName = user.login;
+    }
+
+    if (user && user.email === adminEmail) {
+      admin = true;
     }
     const newData = {
       modelName:
@@ -269,7 +276,7 @@ const Comments = ({ id }) => {
                           <p className="m-0">
                             {item.createdAt && item.createdAt.slice(11, 19)}
                           </p>
-                          {user && user.admin && (
+                          {adminEmail && user && user.email === adminEmail && (
                             <button
                               className="dev hover:text-accent-4 dark:hover:text-accent-2 max-sm:absolute max-sm:-right-9 max-sm:top-[-22px] "
                               onClick={() => deleteComment(item["_id"])}
