@@ -34,7 +34,7 @@ const Card = ({ model, overlap, headerSticky }) => {
         }}
         to={model.link}
       >
-        <div className="absolute w-full h-full overflow-hidden z-0">
+        <div className="absolute w-full h-full overflow-hidden z-10">
           {/* new gallery band */}
           {model.new && (
             <div className="absolute top-[1.5rem] scale-75 -left-[4.4rem] text-accent-4 font-bold py-[2px] w-52 text-center leading-4 uppercase text-xs bg-white -rotate-45 tracking-wide">
