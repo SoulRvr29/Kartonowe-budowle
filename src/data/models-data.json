@@ -1679,6 +1679,12 @@
     "name": "Rakieta Starship S30",
     "card": "./cards/starship_s30-card.webp",
     "Galeria": {
+      "dzień": {
+        "quantity": 47,
+        "format": ".webp",
+        "full": "./models/starship_s30/day/full-res/starship_s30-d",
+        "thumb": "./models/starship_s30/day/thumb/starship_s30-thumb-d"
+      },
       "budowa": {
         "quantity": 58,
         "format": ".webp",
