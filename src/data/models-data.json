@@ -1715,11 +1715,11 @@
     },
     "name": "Rakieta Space Launch System (SLS)",
     "Galeria": {
-      "dzień": {
-        "quantity": 19,
+      "budowa": {
+        "quantity": 27,
         "format": ".webp",
-        "full": "./models/sls/full-res/sls-d",
-        "thumb": "./models/sls/thumb/sls-thumb-d"
+        "full": "./models/sls/full-res/sls-b",
+        "thumb": "./models/sls/thumb/sls-thumb-b"
       }
     },
     "photo": "models/sls/sls-photo",
