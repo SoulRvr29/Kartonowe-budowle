@@ -37,7 +37,7 @@ const Comments = ({ id }) => {
   const [usersList, setUsersList] = useState([]);
   const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
 
-  console.log(user);
+  // console.log(user);
 
   const getUsersList = () => {
     axios

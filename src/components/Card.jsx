@@ -46,8 +46,9 @@ const Card = ({ model, overlap, headerSticky }) => {
         <div className="rounded-xl max-sm:rounded-md bg-gradient-to-r  from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.4)] w-full h-full absolute z-10"></div>
         {/* zdjęcie */}
         {model.card ? (
-          <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl max-sm:rounded-md left-0  bg-bkg-light dark:bg-bkg border-8 max-sm:border-[6px] border-accent transition-all duration-300">
+          <div className="card-container h-[180px] max-sm:h-[150px] dark:shadow-[0_0_12px_black] shadow-[0_0_12px_rgba(0,0,0,0.3)]  rounded-xl max-sm:rounded-md left-0 border-8 max-sm:border-[6px] bg-acc border-accent transition-all duration-300">
             <img
+              className="rounded-md max-sm:rounded-sm"
               style={{
                 filter: `saturate(${saturation}%)`,
               }}
@@ -72,7 +73,7 @@ const Card = ({ model, overlap, headerSticky }) => {
           {!model.new && (
             <div
               title="rok ukończenia budowy"
-              className="rok-ukonczenia text-accent absolute px-1 top-2 left-2 max-sm:top-[6px] max-sm:left-[6px] text-xs text-left  rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70 transition-all duration-300"
+              className="rok-ukonczenia text-accent absolute px-1 top-2 left-2 max-sm:top-[6px] max-sm:left-[6px] text-xs text-left rounded-tl-md max-sm:rounded-tl-sm rounded-br-[4px] leading-5 font-bold bg-white bg-opacity-50 border-r-2 border-b-2 border-accent acti border-opacity-70 transition-all duration-300"
             >
               {model["rok ukończenia"] > 9000
                 ? "w budowie"
@@ -80,7 +81,7 @@ const Card = ({ model, overlap, headerSticky }) => {
             </div>
           )}
           {/* nazwa modelu */}
-          <div className="nazwa-modelu absolute bottom-0 max-sm:text-center w-full max-sm:py-1 text-sm bg-accent px-3 py-2 pt-[5px] text-left rounded-b-xl max-sm:rounded-b-none max-sm:m-[6px] max-sm:w-[calc(100%-12px)] leading-4 font-bold bg-gradient-to-r from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.4)] pr-6 opacity-0 max-sm:opacity-100 max-sm:bg-opacity-50  group-hover:opacity-100 transition-all duration-300">
+          <div className="nazwa-modelu absolute bottom-0 max-sm:text-center w-full max-sm:py-1 text-sm bg-accent px-3 py-2 pt-[5px] text-left rounded-b-xl max-sm:rounded-b-sm max-sm:m-[6px] max-sm:w-[calc(100%-12px)] leading-4 font-bold bg-gradient-to-r from-[rgba(255,255,255,0.2)] via-transparent to-[rgba(0,0,0,0.4)] pr-6 opacity-0 max-sm:opacity-100 max-sm:bg-opacity-50  group-hover:opacity-100 transition-all duration-300">
             {model.name}
           </div>
         </div>

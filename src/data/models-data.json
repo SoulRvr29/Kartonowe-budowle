@@ -24,19 +24,19 @@
     "card": "./cards/bedzin-card.webp",
     "icon": "./models-icons/bedzin-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 58,
         "format": ".webp",
         "full": "./models/bedzin/day/full-res/bedzin-d",
         "thumb": "./models/bedzin/day/thumb/bedzin-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 39,
         "format": ".webp",
         "full": "./models/bedzin/night/full-res/bedzin-n",
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 83,
         "format": ".jpg",
         "full": "./models/bedzin/build/full-res/bedzin-b",
@@ -73,23 +73,23 @@
       "Wysokość": "15cm"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 33,
         "format": ".webp",
         "full": "./models/oporow/day/full-res/oporow-d",
         "thumb": "./models/oporow/day/thumb/oporow-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 29,
         "format": ".webp",
         "full": "./models/oporow/night/full-res/oporow-n",
         "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 69,
         "format": ".jpg",
-        "full": "./models/oporow/budowa/full-res/oporow-b",
-        "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
+        "full": "./models/oporow/z budowy/full-res/oporow-b",
+        "thumb": "./models/oporow/z budowy/thumb/oporow-thumb-b"
       }
     },
     "photo": "models/oporow/oporow-photo-",
@@ -119,23 +119,23 @@
       "Wysokość": "22cm"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 32,
         "format": ".webp",
         "full": "./models/sandomierz/ratusz/dzien/full-res/ratusz-d",
         "thumb": "./models/sandomierz/ratusz/dzien/thumb/ratusz-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 18,
         "format": ".webp",
-        "full": "./models/sandomierz/ratusz/noc/full-res/ratusz-n",
-        "thumb": "./models/sandomierz/ratusz/noc/thumb/ratusz-thumb-n"
+        "full": "./models/sandomierz/ratusz/nocna/full-res/ratusz-n",
+        "thumb": "./models/sandomierz/ratusz/nocna/thumb/ratusz-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 24,
         "format": ".jpg",
-        "full": "./models/sandomierz/ratusz/budowa/full-res/ratusz-b",
-        "thumb": "./models/sandomierz/ratusz/budowa/thumb/ratusz-thumb-b"
+        "full": "./models/sandomierz/ratusz/z budowy/full-res/ratusz-b",
+        "thumb": "./models/sandomierz/ratusz/z budowy/thumb/ratusz-thumb-b"
       }
     },
 
@@ -166,17 +166,17 @@
       "Wysokość": "19cm"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 6,
         "format": ".jpg",
         "full": "./models/sandomierz/wieza/dzien/full-res/wieza-d",
         "thumb": "./models/sandomierz/wieza/dzien/thumb/wieza-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 17,
         "format": ".jpg",
-        "full": "./models/sandomierz/wieza/budowa/full-res/wieza-b",
-        "thumb": "./models/sandomierz/wieza/budowa/thumb/wieza-thumb-b"
+        "full": "./models/sandomierz/wieza/z budowy/full-res/wieza-b",
+        "thumb": "./models/sandomierz/wieza/z budowy/thumb/wieza-thumb-b"
       }
     },
     "photo": "models/sandomierz/sandomierz-photo-",
@@ -224,23 +224,23 @@
       "Okres": "12 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 17,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/stilo/day/full-res/stilo-d",
         "thumb": "./models/latarnie_morskie/stilo/day/thumb/stilo-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 5,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/stilo/night/full-res/stilo-n",
         "thumb": "./models/latarnie_morskie/stilo/night/thumb/stilo-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 6,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/stilo/budowa/full-res/stilo-b",
-        "thumb": "./models/latarnie_morskie/stilo/budowa/thumb/stilo-thumb-b"
+        "full": "./models/latarnie_morskie/stilo/z budowy/full-res/stilo-b",
+        "thumb": "./models/latarnie_morskie/stilo/z budowy/thumb/stilo-thumb-b"
       },
       "filmy": {
         "quantity": 2,
@@ -290,17 +290,17 @@
       "Okres": "15 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 19,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/darlowo/dzien/full-res/darlowo-d",
         "thumb": "./models/latarnie_morskie/darlowo/dzien/thumb/darlowo-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 3,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/darlowo/noc/full-res/darlowo-n",
-        "thumb": "./models/latarnie_morskie/darlowo/noc/thumb/darlowo-thumb-n"
+        "full": "./models/latarnie_morskie/darlowo/nocna/full-res/darlowo-n",
+        "thumb": "./models/latarnie_morskie/darlowo/nocna/thumb/darlowo-thumb-n"
       }
     },
     "photo": "models/latarnie_morskie/darlowo/darlowo-photo-",
@@ -345,17 +345,17 @@
       "Okres": "8 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 14,
         "format": ".webp",
         "full": "./models/latarnie_morskie/czolpino/dzien/full-res/czolpino-d",
         "thumb": "./models/latarnie_morskie/czolpino/dzien/thumb/czolpino-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 13,
         "format": ".webp",
-        "full": "./models/latarnie_morskie/czolpino/budowa/full-res/czolpino-b",
-        "thumb": "./models/latarnie_morskie/czolpino/budowa/thumb/czolpino-thumb-b"
+        "full": "./models/latarnie_morskie/czolpino/z budowy/full-res/czolpino-b",
+        "thumb": "./models/latarnie_morskie/czolpino/z budowy/thumb/czolpino-thumb-b"
       },
       "filmy": {
         "quantity": 3,
@@ -406,17 +406,17 @@
       "6": "Światło 6,4 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 8,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/gaski/dzien/full-res/gaski-d",
         "thumb": "./models/latarnie_morskie/gaski/dzien/thumb/gaski-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 4,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/gaski/noc/full-res/gaski-n",
-        "thumb": "./models/latarnie_morskie/gaski/noc/thumb/gaski-thumb-n"
+        "full": "./models/latarnie_morskie/gaski/nocna/full-res/gaski-n",
+        "thumb": "./models/latarnie_morskie/gaski/nocna/thumb/gaski-thumb-n"
       },
       "filmy": {
         "quantity": 2,
@@ -461,17 +461,17 @@
     },
     "Fazy światła": { "1": "Światło 5 s", "2": "Przerwa 5 s", "Okres": "10 s" },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 14,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/hel/dzien/full-res/hel-d",
         "thumb": "./models/latarnie_morskie/hel/dzien/thumb/hel-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 3,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/hel/noc/full-res/hel-n",
-        "thumb": "./models/latarnie_morskie/hel/noc/thumb/hel-thumb-n"
+        "full": "./models/latarnie_morskie/hel/nocna/full-res/hel-n",
+        "thumb": "./models/latarnie_morskie/hel/nocna/thumb/hel-thumb-n"
       },
       "filmy": {
         "quantity": 2,
@@ -521,7 +521,7 @@
       "Okres": "9 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 11,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/jaroslawiec/full-res/jaroslawiec-d",
@@ -570,7 +570,7 @@
       "Okres": "20 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 14,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/jastarnia/dzien/full-res/jastarnia-d",
@@ -619,7 +619,7 @@
     },
     "Fazy światła": { "1": "Światło 5 s", "2": "Przerwa 5 s", "Okres": "10 s" },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 11,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/kikut/full-res/kikut-d",
@@ -662,7 +662,7 @@
     },
     "Fazy światła": { "1": "Światło 1 s", "2": "Przerwa 2 s", "Okres": "3 s" },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 14,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/kolobrzeg/full-res/kolobrzeg-d",
@@ -710,7 +710,7 @@
       "Okres": "12 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 4,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/krynica_morska/full-res/krynica_morska-d",
@@ -756,7 +756,7 @@
       "Okres": "10 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 8,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/niechorze/full-res/niechorze-d",
@@ -797,23 +797,23 @@
     },
     "Fazy światła": { "1": "Światło 2 s", "2": "Przerwa 3 s", "Okres": "5 s" },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 17,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/nowy_port/dzien/full-res/nowy_port-d",
         "thumb": "./models/latarnie_morskie/nowy_port/dzien/thumb/nowy_port-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 3,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/nowy_port/noc/full-res/nowy_port-n",
-        "thumb": "./models/latarnie_morskie/nowy_port/noc/thumb/nowy_port-thumb-n"
+        "full": "./models/latarnie_morskie/nowy_port/nocna/full-res/nowy_port-n",
+        "thumb": "./models/latarnie_morskie/nowy_port/nocna/thumb/nowy_port-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 16,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/nowy_port/budowa/full-res/nowy_port-b",
-        "thumb": "./models/latarnie_morskie/nowy_port/budowa/thumb/nowy_port-thumb-b"
+        "full": "./models/latarnie_morskie/nowy_port/z budowy/full-res/nowy_port-b",
+        "thumb": "./models/latarnie_morskie/nowy_port/z budowy/thumb/nowy_port-thumb-b"
       }
     },
     "photo": "models/latarnie_morskie/nowy_port/nowy_port-photo-",
@@ -860,7 +860,7 @@
       "Okres": "9,0 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 13,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/port_polnocny/full-res/port_polnocny-d",
@@ -906,7 +906,7 @@
       "Okres": "3 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 10,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/rozewie/full-res/rozewie-d",
@@ -952,23 +952,23 @@
       "Okres": "4,0 s"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 15,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/sopot/dzien/full-res/sopot-d",
         "thumb": "./models/latarnie_morskie/sopot/dzien/thumb/sopot-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 2,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/sopot/noc/full-res/sopot-n",
-        "thumb": "./models/latarnie_morskie/sopot/noc/thumb/sopot-thumb-n"
+        "full": "./models/latarnie_morskie/sopot/nocna/full-res/sopot-n",
+        "thumb": "./models/latarnie_morskie/sopot/nocna/thumb/sopot-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 4,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/sopot/budowa/full-res/sopot-b",
-        "thumb": "./models/latarnie_morskie/sopot/budowa/thumb/sopot-thumb-b"
+        "full": "./models/latarnie_morskie/sopot/z budowy/full-res/sopot-b",
+        "thumb": "./models/latarnie_morskie/sopot/z budowy/thumb/sopot-thumb-b"
       },
       "filmy": {
         "quantity": 2,
@@ -1012,7 +1012,7 @@
     },
     "Fazy światła": { "1": "Światło 4 s", "2": "Przerwa 1 s", "Okres": "5 s" },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 13,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/swinoujscie/full-res/swinoujscie-d",
@@ -1054,7 +1054,7 @@
     },
     "Fazy światła": { "1": "Światło 4 s", "2": "Przerwa 2 s", "Okres": "6 s" },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 15,
         "format": ".jpg",
         "full": "./models/latarnie_morskie/ustka/full-res/ustka-d",
@@ -1128,7 +1128,7 @@
     "card": "./cards/baranow-card.webp",
     "icon": "./models-icons/baranow-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 17,
         "format": ".jpg",
         "full": "./models/baranow/full-res/baranow-d",
@@ -1161,17 +1161,17 @@
     "card": "./cards/gryfino-card.webp",
     "icon": "./models-icons/gryfino-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 22,
         "format": ".jpg",
         "full": "./models/gryfino/dzien/full-res/gryfino-d",
         "thumb": "./models/gryfino/dzien/thumb/gryfino-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 18,
         "format": ".jpg",
-        "full": "./models/gryfino/budowa/full-res/gryfino-b",
-        "thumb": "./models/gryfino/budowa/thumb/gryfino-thumb-b"
+        "full": "./models/gryfino/z budowy/full-res/gryfino-b",
+        "thumb": "./models/gryfino/z budowy/thumb/gryfino-thumb-b"
       }
     },
     "photo": "models/gryfino/gryfino-photo",
@@ -1196,17 +1196,17 @@
     "card": "./cards/mauler-card.webp",
     "icon": "./models-icons/mauler-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 10,
         "format": ".jpg",
         "full": "./models/mauler/dzien/full-res/mauler-d",
         "thumb": "./models/mauler/dzien/thumb/mauler-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 24,
         "format": ".jpg",
-        "full": "./models/mauler/budowa/full-res/mauler-b",
-        "thumb": "./models/mauler/budowa/thumb/mauler-thumb-b"
+        "full": "./models/mauler/z budowy/full-res/mauler-b",
+        "thumb": "./models/mauler/z budowy/thumb/mauler-thumb-b"
       }
     },
     "photo": "models/mauler/mauler-photo",
@@ -1231,17 +1231,17 @@
     "card": "./cards/predator-card.webp",
     "icon": "./models-icons/predator-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 26,
         "format": ".jpg",
         "full": "./models/predator/dzien/full-res/predator-d",
         "thumb": "./models/predator/dzien/thumb/predator-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 11,
         "format": ".jpg",
-        "full": "./models/predator/budowa/full-res/predator-b",
-        "thumb": "./models/predator/budowa/thumb/predator-thumb-b"
+        "full": "./models/predator/z budowy/full-res/predator-b",
+        "thumb": "./models/predator/z budowy/thumb/predator-thumb-b"
       }
     },
     "photo": "models/predator/predator-photo",
@@ -1270,7 +1270,7 @@
     "card": "./cards/phantom_f4-card.webp",
     "icon": "./models-icons/phantom_f4-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 26,
         "format": ".jpg",
         "full": "./models/phantom_f4/full-res/phantom_f4-d",
@@ -1300,7 +1300,7 @@
     "card": "./cards/starship_sn15-card.webp",
     "icon": "./models-icons/starship_SN15-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 16,
         "format": ".webp",
         "full": "./models/starship_sn15/full-res/starship_sn15-d",
@@ -1330,7 +1330,7 @@
     "card": "./cards/falcon_9-card.webp",
     "icon": "./models-icons/falcon_9-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 13,
         "format": ".webp",
         "full": "./models/falcon_9/full-res/falcon_9-d",
@@ -1362,19 +1362,19 @@
     "card": "./cards/wang-card.webp",
     "icon": "./models-icons/wang-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 94,
         "format": ".webp",
         "full": "./models/wang/day/full-res/wang-d",
         "thumb": "./models/wang/day/thumb/wang-thumb-d"
       },
-      "noc": {
+      "nocna": {
         "quantity": 59,
         "format": ".webp",
         "full": "./models/wang/night/full-res/wang-n",
         "thumb": "./models/wang/night/thumb/wang-thumb-n"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 211,
         "format": ".webp",
         "full": "./models/wang/build/full-res/wang-b",
@@ -1406,7 +1406,7 @@
       "Link do pobrania": "https://www.axmpaperspacescalemodels.com/old/AtlasV.html"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 20,
         "format": ".jpg",
         "full": "./models/atlasV/full-res/atlasV-d",
@@ -1438,13 +1438,13 @@
       "Link do pobrania": "http://jleslie48.com/saturn1408/"
     },
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 39,
         "format": ".webp",
         "full": "./models/saturn_v/day/full-res/saturn_v-d",
         "thumb": "./models/saturn_v/day/thumb/saturn_v-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 10,
         "format": ".webp",
         "full": "./models/saturn_v/build/full-res/saturn_v-b",
@@ -1479,7 +1479,7 @@
     "card": "./cards/olsztyn-card.webp",
     "icon": "./models-icons/olsztyn-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 27,
         "format": ".webp",
         "full": "./models/olsztyn/day/full-res/olsztyn-d",
@@ -1514,7 +1514,7 @@
     "card": "./cards/wang_gpm-card.webp",
     "icon": "./models-icons/wang_gpm-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 13,
         "format": ".webp",
         "full": "./models/wang_gpm/day/full-res/wang-gpm-d",
@@ -1547,7 +1547,7 @@
     "card": "./cards/mig_29-card.webp",
     "icon": "./models-icons/mig_29-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 11,
         "format": ".webp",
         "full": "./models/mig_29/full-res/mig_29-d",
@@ -1576,7 +1576,7 @@
     "card": "./cards/wiezowce-card.webp",
     "icon": "./models-icons/wiezowce-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 32,
         "format": ".webp",
         "full": "./models/wiezowce/day/full-res/wiezowce-d",
@@ -1611,7 +1611,7 @@
     "card": "./cards/nowy_wisnicz-card.webp",
     "icon": "./models-icons/nowy_wisnicz-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 14,
         "format": ".webp",
         "full": "./models/nowy_wisnicz/day/full-res/wisnicz-d",
@@ -1646,7 +1646,7 @@
     "card": "./cards/wilczy_szaniec-card.webp",
     "icon": "./models-icons/wilczy_szaniec-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 9,
         "format": ".webp",
         "full": "./models/wilczy_szaniec/day/full-res/wilczy-szaniec-d",
@@ -1679,13 +1679,13 @@
     "name": "Rakieta Starship S30",
     "card": "./cards/starship_s30-card.webp",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 47,
         "format": ".webp",
         "full": "./models/starship_s30/day/full-res/starship_s30-d",
         "thumb": "./models/starship_s30/day/thumb/starship_s30-thumb-d"
       },
-      "budowa": {
+      "z budowy": {
         "quantity": 58,
         "format": ".webp",
         "full": "./models/starship_s30/build/full-res/starship_s30-b",
@@ -1715,7 +1715,7 @@
     },
     "name": "Rakieta Space Launch System (SLS)",
     "Galeria": {
-      "budowa": {
+      "z budowy": {
         "quantity": 27,
         "format": ".webp",
         "full": "./models/sls/full-res/sls-b",
@@ -1747,7 +1747,7 @@
     "card": "./cards/p-51b_mustang-card.webp",
     "icon": "./models-icons/p-51b_mustang-icon.png",
     "Galeria": {
-      "dzień": {
+      "dzienna": {
         "quantity": 9,
         "format": ".webp",
         "full": "./models/p-51b_mustang/full-res/p-51b_mustang-d",

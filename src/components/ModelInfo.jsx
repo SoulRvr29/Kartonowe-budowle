@@ -14,7 +14,7 @@ const ModelInfo = ({ id }) => {
   return (
     <section id="model">
       <SectionHeader
-        sectionName="Model"
+        sectionName="Parametry"
         sectionState={sectionState}
         setSectionState={setSectionState}
       />

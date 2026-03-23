@@ -119,7 +119,6 @@ const SLSReport = () => {
               nie udawało mi się ich zmieścić, więc już tak zostanie. Szpary
               wypełniłem wikolem i zamalowałem.
             </p>
-
             <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b03.webp">
               <LazyLoadImage
                 className="report-photo"
@@ -127,7 +126,6 @@ const SLSReport = () => {
                 alt="SLS"
               />
             </PhotoView>
-
             <p>Dokleiłem resztę detali.</p>
             <div className="report-photo-group">
               <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b15.webp">
@@ -150,7 +148,6 @@ const SLSReport = () => {
               na mniejsze kawałki, żeby można było je łatwo zawinąć. Łączenia
               poszczególnych fragmentów zakrywają paski.
             </p>
-
             <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b11.webp">
               <LazyLoadImage
                 className="report-photo"
@@ -158,13 +155,11 @@ const SLSReport = () => {
                 alt="SLS"
               />
             </PhotoView>
-
             <p>
               Górne zakończenie rur nie wyglądało zbyt dobrze po sklejeniu, więc
               poprawiłem trochę jego kształt i całość wyszlifowałem i
               pomalowałem.
             </p>
-
             <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b12.webp">
               <LazyLoadImage
                 className="report-photo"
@@ -172,7 +167,6 @@ const SLSReport = () => {
                 alt="SLS"
               />
             </PhotoView>
-
             <p>
               Dolne końce rur w projekcie miały być zakończone na płasko, ale
               postanowiłem to poprawić i dodałem zaokrąglenie. Wykonałem je z
@@ -228,7 +222,86 @@ const SLSReport = () => {
                 />
               </PhotoView>
             </div>
-            <p>Dalszy ciąg relacji wkrótce...</p>
+
+            <p>
+              Wykonałem rury, które biegną wzdłuż pierwszego stopnia z drutu
+              cynowego. Trochę psują efekt te narysowane paski pod nimi. Mogłem
+              je wymazać przed wydrukowaniem.
+            </p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b23.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b23.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b24.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b24.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+            </div>
+            <p>
+              Złożyłem do końca boczne boostery. Musiałem pomniejszyć noski i
+              wykonać je ponownie, bo w projekcie mają trochę za dużą średnicę i
+              wystawały poza resztę.
+            </p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b26.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b26.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b27.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b27.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+            </div>
+            <p>
+              W dolnej części rakiety dodałem detale w formie wypukłych pasków,
+              prostokątów itp.
+            </p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b22.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b22.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b25.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b25.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+            </div>
+            <p>Pierwszy stopień rakiety jest już gotowy.</p>
+            <div className="report-photo-group">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b20.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b20.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b21.webp">
+                <LazyLoadImage
+                  className="report-photo"
+                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b21.webp"
+                  alt="SLS"
+                />
+              </PhotoView>
+            </div>
           </article>
         </PhotoProvider>
       )}
