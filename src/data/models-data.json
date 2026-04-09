@@ -1716,7 +1716,7 @@
     "name": "Rakieta Space Launch System (SLS)",
     "Galeria": {
       "z budowy": {
-        "quantity": 27,
+        "quantity": 41,
         "format": ".webp",
         "full": "./models/sls/full-res/sls-b",
         "thumb": "./models/sls/thumb/sls-thumb-b"
