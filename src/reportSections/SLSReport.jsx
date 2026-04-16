@@ -25,17 +25,17 @@ const SLSReport = () => {
               pierwszego stopnia.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b01.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b01.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b01.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b01.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b02.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b02.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b02.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b02.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -47,17 +47,17 @@ const SLSReport = () => {
               naklejeniu zamalowałem przestrzenie pomiędzy nimi.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b04.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b04.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b04.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b04.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b05.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b05.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b05.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b05.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -68,24 +68,24 @@ const SLSReport = () => {
               Niepotrzebnie zasugerowałem się ich grubością w projekcie.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b07.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b07.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b07.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b07.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b06.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b06.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b06.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b06.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b08.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b08.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b08.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b08.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -95,17 +95,17 @@ const SLSReport = () => {
               boostery. Środek usztywniłem kartonem i tekturą 1,5 mm.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b10.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b10.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b10.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b10.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b09.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b09.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b09.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b09.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -119,26 +119,26 @@ const SLSReport = () => {
               nie udawało mi się ich zmieścić, więc już tak zostanie. Szpary
               wypełniłem wikolem i zamalowałem.
             </p>
-            <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b03.webp">
+            <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b03.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b03.webp"
+                src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b03.webp"
                 alt="SLS"
               />
             </PhotoView>
             <p>Dokleiłem resztę detali.</p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b15.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b15.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b15.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b15.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b16.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b16.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b16.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b16.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -148,10 +148,10 @@ const SLSReport = () => {
               na mniejsze kawałki, żeby można było je łatwo zawinąć. Łączenia
               poszczególnych fragmentów zakrywają paski.
             </p>
-            <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b11.webp">
+            <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b11.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b11.webp"
+                src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b11.webp"
                 alt="SLS"
               />
             </PhotoView>
@@ -160,10 +160,10 @@ const SLSReport = () => {
               poprawiłem trochę jego kształt i całość wyszlifowałem i
               pomalowałem.
             </p>
-            <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b12.webp">
+            <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b12.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b12.webp"
+                src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b12.webp"
                 alt="SLS"
               />
             </PhotoView>
@@ -174,10 +174,10 @@ const SLSReport = () => {
               kontem 90 stopni. Następnie element ściąłem na zagięciu i
               wyszlifowałem do gładkiego zaokrąglenia.
             </p>
-            <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b13.webp">
+            <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b13.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b13.webp"
+                src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b13.webp"
                 alt="SLS"
               />
             </PhotoView>
@@ -186,10 +186,10 @@ const SLSReport = () => {
               osłonę przewodów która biegnie obok rury, a w projekcie była
               płaska.
             </p>
-            <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b14.webp">
+            <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b14.webp">
               <LazyLoadImage
                 className="report-photo"
-                src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b14.webp"
+                src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b14.webp"
                 alt="SLS"
               />
             </PhotoView>
@@ -200,24 +200,24 @@ const SLSReport = () => {
               magnesem 4mm.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b17.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b17.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b17.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b17.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b18.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b18.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b18.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b18.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b19.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b19.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b19.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b19.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -229,17 +229,17 @@ const SLSReport = () => {
               je wymazać przed wydrukowaniem.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b23.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b23.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b23.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b23.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b24.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b24.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b24.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b24.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -250,17 +250,17 @@ const SLSReport = () => {
               wystawały poza resztę.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b26.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b26.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b26.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b26.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b27.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b27.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b27.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b27.webp"
                   alt="SLS"
                 />
               </PhotoView>
@@ -270,34 +270,34 @@ const SLSReport = () => {
               prostokątów itp.
             </p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b22.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b22.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b22.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b22.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b25.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b25.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b25.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b25.webp"
                   alt="SLS"
                 />
               </PhotoView>
             </div>
             <p>Pierwszy stopień rakiety jest już gotowy.</p>
             <div className="report-photo-group">
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b20.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b20.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b20.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b20.webp"
                   alt="SLS"
                 />
               </PhotoView>
-              <PhotoView src="https://www.modelcraft.pl/models/sls/full-res/sls-b21.webp">
+              <PhotoView src="https://www.modelcraft.pl/models/sls/build/full-res/sls-b21.webp">
                 <LazyLoadImage
                   className="report-photo"
-                  src="https://www.modelcraft.pl/models/sls/thumb/sls-thumb-b21.webp"
+                  src="https://www.modelcraft.pl/models/sls/build/thumb/sls-thumb-b21.webp"
                   alt="SLS"
                 />
               </PhotoView>
