@@ -1718,8 +1718,8 @@
       "z budowy": {
         "quantity": 41,
         "format": ".webp",
-        "full": "./models/sls/full-res/sls-b",
-        "thumb": "./models/sls/thumb/sls-thumb-b"
+        "full": "./models/sls/build/full-res/sls-b",
+        "thumb": "./models/sls/build/thumb/sls-thumb-b"
       }
     },
     "photo": "models/sls/sls-photo",
