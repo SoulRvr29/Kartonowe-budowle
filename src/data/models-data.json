@@ -10,6 +10,7 @@
     "cover": "models/bedzin/bedzin-cover.jpg",
     "position": [50.327222, 19.129167],
     "address": "Zamkowa 1, 42-500 Będzin",
+    "report": true,
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:160",
@@ -37,8 +38,8 @@
         "thumb": "./models/bedzin/night/thumb/bedzin-thumb-n"
       },
       "z budowy": {
-        "quantity": 83,
-        "format": ".jpg",
+        "quantity": 185,
+        "format": ".webp",
         "full": "./models/bedzin/build/full-res/bedzin-b",
         "thumb": "./models/bedzin/build/thumb/bedzin-thumb-b"
       },
@@ -1708,6 +1709,7 @@
     "publisher": "model darmowy",
     "report": true,
     "info": {
+      "report": true,
       "Projekt": "AXM Paper Models",
       "Skala": "1:100",
       "Wysokość": "98cm",
