@@ -1,6 +1,16 @@
 article {
   padding: 1rem 2rem;
   z-index: 10;
+  max-width: 80rem;
+  margin: 1rem auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1330px) {
+  article {
+    background: none;
+    margin: 0 auto;
+  }
 }
 
 /* article img:hover {

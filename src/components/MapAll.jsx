@@ -14,7 +14,7 @@ const map = ({ mapSize, setMapSize }) => {
       className={
         mapSize
           ? "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 relative h-[50rem] max-sm:h-[40rem] "
-          : "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 max-w-lg relative h-[30rem] max-sm:h-[24rem]"
+          : "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 max-w-5xl relative h-[40rem] max-sm:h-[24rem]"
       }
     >
       {!mapActive && (
@@ -104,7 +104,7 @@ const map = ({ mapSize, setMapSize }) => {
                   </div>
                 </Marker>
               </div>
-            )
+            ),
         )}
       </MapContainer>
     </div>

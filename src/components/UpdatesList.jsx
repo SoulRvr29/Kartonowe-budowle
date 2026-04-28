@@ -20,7 +20,7 @@ const UpdatesList = () => {
   );
 
   return (
-    <div className="rounded-xl dark:bg-accent/30 bg-white/30 py-0 drop-shadow-lg">
+    <div className="rounded-xl dark:bg-accent/30 bg-white/30 py-0 drop-shadow-lg h-fit w-fit min-w-[50rem] m-auto">
       <h4 className="text-lg max-sm:text-base text-center m-0 pb-1">
         Ostatnie aktualizacje
       </h4>
@@ -41,7 +41,7 @@ const UpdatesList = () => {
               setVisibleUpdates(visibleUpdates + 3);
             else setVisibleUpdates(updates.length);
           }}
-          className="w-full max-sm:scale-75 max-sm:-mb-4 text-center flex justify-center items-center gap-4 -mb-3"
+          className="w-full max-sm:scale-75 max-sm:-mb-4 text-center flex justify-center items-center gap-4 "
         >
           <FaCaretDown size={30} />
           Pokaż więcej
@@ -53,7 +53,7 @@ const UpdatesList = () => {
           onClick={() => {
             setVisibleUpdates(3);
           }}
-          className="w-full text-center max-sm:scale-75 max-sm:-mb-4 flex justify-center items-center gap-4 -mb-3"
+          className="w-full text-center max-sm:scale-75 max-sm:-mb-4 flex justify-center items-center gap-4"
         >
           <FaCaretUp size={30} />
           Zwiń
