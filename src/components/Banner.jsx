@@ -74,7 +74,7 @@ const Banner = ({ bannerState, setBannerState }) => {
           }
         }}
         to={bannerState === true && actualBanner.link}
-        className="relative z-10 grid"
+        className="relative z-10 grid max-w-7xl mx-auto"
       >
         <hr className="grad-hr hidden" />
         {/* loading icon */}
@@ -163,7 +163,7 @@ const Banner = ({ bannerState, setBannerState }) => {
           )}
           <div className="grid justify-center">
             {/* gradient */}
-            <div className="w-full h-full absolute grad banner-grad z-10 invisible dark:visible"></div>
+            <div className="w-full h-full absolute grad banner-grad z-10 "></div>
             {bannerState && (
               <img
                 onAnimationEnd={() => animEndHandler("next")}
