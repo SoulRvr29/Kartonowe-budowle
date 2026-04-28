@@ -89,8 +89,8 @@
       "z budowy": {
         "quantity": 69,
         "format": ".jpg",
-        "full": "./models/oporow/z budowy/full-res/oporow-b",
-        "thumb": "./models/oporow/z budowy/thumb/oporow-thumb-b"
+        "full": "./models/oporow/budowa/full-res/oporow-b",
+        "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
       }
     },
     "photo": "models/oporow/oporow-photo-",
@@ -129,14 +129,14 @@
       "nocna": {
         "quantity": 18,
         "format": ".webp",
-        "full": "./models/sandomierz/ratusz/nocna/full-res/ratusz-n",
-        "thumb": "./models/sandomierz/ratusz/nocna/thumb/ratusz-thumb-n"
+        "full": "./models/sandomierz/ratusz/noc/full-res/ratusz-n",
+        "thumb": "./models/sandomierz/ratusz/noc/thumb/ratusz-thumb-n"
       },
       "z budowy": {
         "quantity": 24,
         "format": ".jpg",
-        "full": "./models/sandomierz/ratusz/z budowy/full-res/ratusz-b",
-        "thumb": "./models/sandomierz/ratusz/z budowy/thumb/ratusz-thumb-b"
+        "full": "./models/sandomierz/ratusz/budowa/full-res/ratusz-b",
+        "thumb": "./models/sandomierz/ratusz/budowa/thumb/ratusz-thumb-b"
       }
     },
 
@@ -176,8 +176,8 @@
       "z budowy": {
         "quantity": 17,
         "format": ".jpg",
-        "full": "./models/sandomierz/wieza/z budowy/full-res/wieza-b",
-        "thumb": "./models/sandomierz/wieza/z budowy/thumb/wieza-thumb-b"
+        "full": "./models/sandomierz/wieza/budowa/full-res/wieza-b",
+        "thumb": "./models/sandomierz/wieza/budowa/thumb/wieza-thumb-b"
       }
     },
     "photo": "models/sandomierz/sandomierz-photo-",
@@ -240,8 +240,8 @@
       "z budowy": {
         "quantity": 6,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/stilo/z budowy/full-res/stilo-b",
-        "thumb": "./models/latarnie_morskie/stilo/z budowy/thumb/stilo-thumb-b"
+        "full": "./models/latarnie_morskie/stilo/budowa/full-res/stilo-b",
+        "thumb": "./models/latarnie_morskie/stilo/budowa/thumb/stilo-thumb-b"
       },
       "filmy": {
         "quantity": 2,
@@ -300,8 +300,8 @@
       "nocna": {
         "quantity": 3,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/darlowo/nocna/full-res/darlowo-n",
-        "thumb": "./models/latarnie_morskie/darlowo/nocna/thumb/darlowo-thumb-n"
+        "full": "./models/latarnie_morskie/darlowo/noc/full-res/darlowo-n",
+        "thumb": "./models/latarnie_morskie/darlowo/noc/thumb/darlowo-thumb-n"
       }
     },
     "photo": "models/latarnie_morskie/darlowo/darlowo-photo-",
@@ -355,8 +355,8 @@
       "z budowy": {
         "quantity": 13,
         "format": ".webp",
-        "full": "./models/latarnie_morskie/czolpino/z budowy/full-res/czolpino-b",
-        "thumb": "./models/latarnie_morskie/czolpino/z budowy/thumb/czolpino-thumb-b"
+        "full": "./models/latarnie_morskie/czolpino/budowa/full-res/czolpino-b",
+        "thumb": "./models/latarnie_morskie/czolpino/budowa/thumb/czolpino-thumb-b"
       },
       "filmy": {
         "quantity": 3,
@@ -416,8 +416,8 @@
       "nocna": {
         "quantity": 4,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/gaski/nocna/full-res/gaski-n",
-        "thumb": "./models/latarnie_morskie/gaski/nocna/thumb/gaski-thumb-n"
+        "full": "./models/latarnie_morskie/gaski/noc/full-res/gaski-n",
+        "thumb": "./models/latarnie_morskie/gaski/noc/thumb/gaski-thumb-n"
       },
       "filmy": {
         "quantity": 2,
@@ -471,8 +471,8 @@
       "nocna": {
         "quantity": 3,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/hel/nocna/full-res/hel-n",
-        "thumb": "./models/latarnie_morskie/hel/nocna/thumb/hel-thumb-n"
+        "full": "./models/latarnie_morskie/hel/noc/full-res/hel-n",
+        "thumb": "./models/latarnie_morskie/hel/noc/thumb/hel-thumb-n"
       },
       "filmy": {
         "quantity": 2,
@@ -807,14 +807,14 @@
       "nocna": {
         "quantity": 3,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/nowy_port/nocna/full-res/nowy_port-n",
-        "thumb": "./models/latarnie_morskie/nowy_port/nocna/thumb/nowy_port-thumb-n"
+        "full": "./models/latarnie_morskie/nowy_port/noc/full-res/nowy_port-n",
+        "thumb": "./models/latarnie_morskie/nowy_port/noc/thumb/nowy_port-thumb-n"
       },
       "z budowy": {
         "quantity": 16,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/nowy_port/z budowy/full-res/nowy_port-b",
-        "thumb": "./models/latarnie_morskie/nowy_port/z budowy/thumb/nowy_port-thumb-b"
+        "full": "./models/latarnie_morskie/nowy_port/budowa/full-res/nowy_port-b",
+        "thumb": "./models/latarnie_morskie/nowy_port/budowa/thumb/nowy_port-thumb-b"
       }
     },
     "photo": "models/latarnie_morskie/nowy_port/nowy_port-photo-",
@@ -962,14 +962,14 @@
       "nocna": {
         "quantity": 2,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/sopot/nocna/full-res/sopot-n",
-        "thumb": "./models/latarnie_morskie/sopot/nocna/thumb/sopot-thumb-n"
+        "full": "./models/latarnie_morskie/sopot/noc/full-res/sopot-n",
+        "thumb": "./models/latarnie_morskie/sopot/noc/thumb/sopot-thumb-n"
       },
       "z budowy": {
         "quantity": 4,
         "format": ".jpg",
-        "full": "./models/latarnie_morskie/sopot/z budowy/full-res/sopot-b",
-        "thumb": "./models/latarnie_morskie/sopot/z budowy/thumb/sopot-thumb-b"
+        "full": "./models/latarnie_morskie/sopot/budowa/full-res/sopot-b",
+        "thumb": "./models/latarnie_morskie/sopot/budowa/thumb/sopot-thumb-b"
       },
       "filmy": {
         "quantity": 2,
@@ -1171,8 +1171,8 @@
       "z budowy": {
         "quantity": 18,
         "format": ".jpg",
-        "full": "./models/gryfino/z budowy/full-res/gryfino-b",
-        "thumb": "./models/gryfino/z budowy/thumb/gryfino-thumb-b"
+        "full": "./models/gryfino/budowa/full-res/gryfino-b",
+        "thumb": "./models/gryfino/budowa/thumb/gryfino-thumb-b"
       }
     },
     "photo": "models/gryfino/gryfino-photo",
@@ -1206,8 +1206,8 @@
       "z budowy": {
         "quantity": 24,
         "format": ".jpg",
-        "full": "./models/mauler/z budowy/full-res/mauler-b",
-        "thumb": "./models/mauler/z budowy/thumb/mauler-thumb-b"
+        "full": "./models/mauler/budowa/full-res/mauler-b",
+        "thumb": "./models/mauler/budowa/thumb/mauler-thumb-b"
       }
     },
     "photo": "models/mauler/mauler-photo",
@@ -1241,8 +1241,8 @@
       "z budowy": {
         "quantity": 11,
         "format": ".jpg",
-        "full": "./models/predator/z budowy/full-res/predator-b",
-        "thumb": "./models/predator/z budowy/thumb/predator-thumb-b"
+        "full": "./models/predator/budowa/full-res/predator-b",
+        "thumb": "./models/predator/budowa/thumb/predator-thumb-b"
       }
     },
     "photo": "models/predator/predator-photo",

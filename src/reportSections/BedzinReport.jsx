@@ -414,6 +414,7 @@ const WangReport = () => {
                     przełącznik żeby można to było przestawiać z jednego na
                     drugie.
                   </p>
+                  <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
             </article>
