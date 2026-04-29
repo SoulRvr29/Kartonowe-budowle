@@ -39,24 +39,24 @@ const StarshipS30Report = () => {
                     trzeba brać pod uwagę to, że nieraz coś będzie do poprawy.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b02.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b02.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b02.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b02.webp"
                         alt="Nosek Starshipa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b03.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b03.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b03.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b03.webp"
                         alt="Nosek Starshipa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b11.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b11.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b11.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b11.webp"
                         alt="Nosek Starshipa"
                       />
                     </PhotoView>
@@ -71,24 +71,24 @@ const StarshipS30Report = () => {
                     je w kilku miejscach wyginać i dociskać.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b06.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b06.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b06.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b06.webp"
                         alt="Wnętrze Starshipa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b05.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b05.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b05.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b05.webp"
                         alt="Wnętrze Starshipa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b10.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b10.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b10.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b10.webp"
                         alt="Wnętrze Starshipa"
                       />
                     </PhotoView>
@@ -100,24 +100,24 @@ const StarshipS30Report = () => {
                     silniki.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b04.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b04.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b04.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b04.webp"
                         alt="Dolna sekcja Starshipa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b08.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b08.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b08.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b08.webp"
                         alt="Dolna sekcja Starshipa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b09.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b09.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b09.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b09.webp"
                         alt="Dolna sekcja Starshipa"
                       />
                     </PhotoView>
@@ -129,45 +129,45 @@ const StarshipS30Report = () => {
                     pewności dodałem jeszcze po dwa kolejne po bokach.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b07.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b07.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b07.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b07.webp"
                         alt="Magnesy"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b14.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b14.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b14.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b14.webp"
                         alt="Magnesy"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b15.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b15.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b15.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b15.webp"
                         alt="Magnesy"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b25.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b25.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b25.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b25.webp"
                         alt="Magnesy"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b26.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b26.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b26.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b26.webp"
                         alt="Magnesy"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b27.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b27.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b27.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b27.webp"
                         alt="Magnesy"
                       />
                     </PhotoView>
@@ -176,10 +176,10 @@ const StarshipS30Report = () => {
                     Na nosku rakiety dodałem od siebie kilka drobnych detali.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b28.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b28.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b28.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b28.webp"
                         alt="Detale noska"
                       />
                     </PhotoView>
@@ -195,24 +195,24 @@ const StarshipS30Report = () => {
                     kawałku wklejałem.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b12.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b12.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b12.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b12.webp"
                         alt="Silniki Raptor"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b23.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b23.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b23.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b23.webp"
                         alt="Silniki Raptor"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b24.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b24.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b24.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b24.webp"
                         alt="Silniki Raptor"
                       />
                     </PhotoView>
@@ -224,24 +224,24 @@ const StarshipS30Report = () => {
                     musiałem tę część poprawić i ponownie wydrukować.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b42.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b42.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b42.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b42.webp"
                         alt="Drzwi ładowni"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b43.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b43.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b43.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b43.webp"
                         alt="Drzwi ładowni"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b41.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b41.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b41.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b41.webp"
                         alt="Drzwi ładowni"
                       />
                     </PhotoView>
@@ -252,24 +252,24 @@ const StarshipS30Report = () => {
                     rurka jest wsunięta w drugą.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b13.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b13.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b13.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b13.webp"
                         alt="Skrzydełka"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b52.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b52.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b52.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b52.webp"
                         alt="Skrzydełka"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b53.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b53.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b53.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b53.webp"
                         alt="Skrzydełka"
                       />
                     </PhotoView>
@@ -281,17 +281,17 @@ const StarshipS30Report = () => {
                     nie ułatwiają sprawy.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b54.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b54.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b54.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b54.webp"
                         alt="Górne skrzydełka"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b55.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b55.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b55.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b55.webp"
                         alt="Górne skrzydełka"
                       />
                     </PhotoView>
@@ -302,17 +302,17 @@ const StarshipS30Report = () => {
                     i trochę zmienić kształt by pasowały.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b56.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b56.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b56.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b56.webp"
                         alt="Osłony flapów"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b57.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b57.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b57.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b57.webp"
                         alt="Osłony flapów"
                       />
                     </PhotoView>
@@ -333,17 +333,17 @@ const StarshipS30Report = () => {
                     szpachlą.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b16.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b16.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b16.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b16.webp"
                         alt="Pierścień separacyjny z magnesami"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b17.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b17.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b17.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b17.webp"
                         alt="Pierścień separacyjny z magnesami"
                       />
                     </PhotoView>
@@ -353,10 +353,10 @@ const StarshipS30Report = () => {
                     separacyjnego.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b19.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b19.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b19.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b19.webp"
                         alt="Kratki pierścienia separacyjnego"
                       />
                     </PhotoView>
@@ -368,17 +368,17 @@ const StarshipS30Report = () => {
                     miejscach niewielkie prostokąty z tektury.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b37.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b37.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b37.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b37.webp"
                         alt="Gotowy pierścień separacyjny"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b38.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b38.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b38.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b38.webp"
                         alt="Gotowy pierścień separacyjny"
                       />
                     </PhotoView>
@@ -389,24 +389,24 @@ const StarshipS30Report = () => {
                     wkleiłem pierścień z magnesami.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b21.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b21.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b21.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b21.webp"
                         alt="Główna część boostera"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b22.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b22.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b22.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b22.webp"
                         alt="Główna część boostera"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b31.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b31.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b31.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b31.webp"
                         alt="Główna część boostera"
                       />
                     </PhotoView>
@@ -416,17 +416,17 @@ const StarshipS30Report = () => {
                     boosterem poprzez pierścień do separacji.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b40.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b40.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b40.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b40.webp"
                         alt="Połączenie Starshipa z boosterem"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b39.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b39.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b39.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b39.webp"
                         alt="Połączenie Starshipa z boosterem"
                       />
                     </PhotoView>
@@ -437,17 +437,17 @@ const StarshipS30Report = () => {
                     Górną część musiałem rozcinać w kilku miejscach i poprawiać.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b29.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b29.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b29.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b29.webp"
                         alt="Stery kratowe"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b30.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b30.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b30.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b30.webp"
                         alt="Stery kratowe"
                       />
                     </PhotoView>
@@ -457,17 +457,17 @@ const StarshipS30Report = () => {
                     boostera i pomalowałem stery kratowe.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b32.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b32.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b32.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b32.webp"
                         alt="Góra boostera"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b36.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b36.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b36.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b36.webp"
                         alt="Góra boostera"
                       />
                     </PhotoView>
@@ -477,24 +477,24 @@ const StarshipS30Report = () => {
                     trzymają się na magnesach i można nimi obracać.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b33.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b33.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b33.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b33.webp"
                         alt="Gotowa górna część boostera"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b34.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b34.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b34.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b34.webp"
                         alt="Gotowa górna część boostera"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b35.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b35.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b35.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b35.webp"
                         alt="Gotowa górna część boostera"
                       />
                     </PhotoView>
@@ -509,24 +509,24 @@ const StarshipS30Report = () => {
                     dopasować.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b48.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b48.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b48.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b48.webp"
                         alt="Dolna część boostera - sekcja silnikowa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b47.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b47.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b47.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b47.webp"
                         alt="Dolna część boostera - sekcja silnikowa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b46.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b46.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b46.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b46.webp"
                         alt="Dolna część boostera - sekcja silnikowa"
                       />
                     </PhotoView>
@@ -537,17 +537,17 @@ const StarshipS30Report = () => {
                     (tak samo jak stery kratowe) kolorem gunmetal.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b44.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b44.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b44.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b44.webp"
                         alt="Dysze silników Raptor"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b45.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b45.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b45.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b45.webp"
                         alt="Dysze silników Raptor"
                       />
                     </PhotoView>
@@ -557,27 +557,27 @@ const StarshipS30Report = () => {
                     wkleiłem jeszcze obciążenie, żeby model stał stabilniej.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b49.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b49.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b49.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b49.webp"
                         alt="Sekcja silnikowa"
                       />
                     </PhotoView>
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b50.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b50.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b50.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b50.webp"
                         alt="Sekcja silnikowa"
                       />
                     </PhotoView>
                   </div>
                   <p>I tak prezentuje się gotowa dolna część boostera.</p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b51.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b51.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/thumb/starship_s30-thumb-b51.webp"
+                        src="models/starship_s30/build/thumb/starship_s30-thumb-b51.webp"
                         alt="Gotowa dolna część boostera"
                       />
                     </PhotoView>
@@ -596,10 +596,10 @@ const StarshipS30Report = () => {
                     za pomocą programu do składania panoram.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b58.webp">
+                    <PhotoView src="models/starship_s30/build/full-res/starship_s30-b58.webp">
                       <LazyLoadImage
                         className="max-h-[80rem]"
-                        src="https://www.modelcraft.pl/models/starship_s30/build/full-res/starship_s30-b58.webp"
+                        src="models/starship_s30/build/full-res/starship_s30-b58.webp"
                         alt="Gotowy model Starship S30"
                       />
                     </PhotoView>
