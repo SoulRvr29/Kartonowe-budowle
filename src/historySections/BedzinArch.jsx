@@ -40,7 +40,7 @@ const BedzinArch = ({ id }) => {
           maskClassName="backdrop-blur-sm"
           loadingElement={<div className="loader"></div>}
         >
-          <article className="px-8">
+          <article className="px-8 pb-12">
             <PhotoView src={photosSrc[0]}>
               <LazyLoadImage
                 className="pr-8 float-left max-w-xs"

@@ -396,14 +396,14 @@ const WangReport = () => {
                       <LazyLoadImage
                         className="report-photo"
                         src="models/bedzin/build/thumb/bedzin-thumb-b87.webp"
-                        alt="Lighting in reality"
+                        alt="Model lighting in reality"
                       />
                     </PhotoView>
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b86.webp">
                       <LazyLoadImage
                         className="report-photo"
                         src="models/bedzin/build/thumb/bedzin-thumb-b86.webp"
-                        alt="Lighting in reality"
+                        alt="Model lighting in reality"
                       />
                     </PhotoView>
                   </div>
@@ -414,6 +414,349 @@ const WangReport = () => {
                     przełącznik żeby można to było przestawiać z jednego na
                     drugie.
                   </p>
+                  <p>Zabudowałem wnętrza i tak teraz prezentuje się całość:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b49.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b49.webp"
+                        alt="Completed interior of the model"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b50.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b50.webp"
+                        alt="Completed interior of the model"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Na dziedzińcu nakleiłem nową teksturę, bardziej
+                    realistyczną, tak samo na daszku z prawej.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b45.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b45.webp"
+                        alt="New courtyard texture"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b46.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b46.webp"
+                        alt="New courtyard texture"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b63.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b63.webp"
+                        alt="New courtyard texture"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b64.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b64.webp"
+                        alt="New courtyard texture"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Z tym pomieszczeniem było trochę problemów, bo nie znalazłem
+                    żadnych zdjęć z wnętrza, więc musiałem coś sam wykombinować,
+                    ale w sumie i tak przez te dwa małe okienka nie będzie tam
+                    wiele widać.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b44.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b44.webp"
+                        alt="Interior detail with small windows"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b43.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b43.webp"
+                        alt="Interior detail with small windows"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Murki które będą wokół dziedzińca są już prawie gotowe.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b70.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b70.webp"
+                        alt="Courtyard walls progress"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b69.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b69.webp"
+                        alt="Courtyard walls progress"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Ławeczki, barierki i inne detale jakie będą na dziedzińcu:
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b51.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b51.webp"
+                        alt="Courtyard benches and railings"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Te ławeczki zrobiłem z pasków papieru i cienkiego drutu...
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b52.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b52.webp"
+                        alt="Paper and wire benches"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    ...a te wyciąłem ze styroduru modelarskiego, dodałem
+                    żłobienia i pomalowałem.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b53.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b53.webp"
+                        alt="Styrofoam benches with grooves"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Tak wygląda dziedziniec po przyklejeniu wszystkich detali:
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b54.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b54.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models\bedzin\build\full-res\bedzin-b59.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b59.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b55.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b55.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b58.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b58.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b54.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b54.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b56.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b56.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b57.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b57.webp"
+                        alt="Courtyard after adding details"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Podłączyłem elektronikę: włącznik główny, 6 potencjometrów
+                    do regulacji, 11 włączników (do każdego z pomieszczeń),
+                    przełącznik na niebieskie diody i gniazdo na zasilacz.
+                    Podstawę podniosłem o 2cm.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b47.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b47.webp"
+                        alt="Wiring and electronics setup"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b67.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b67.webp"
+                        alt="Wiring and electronics setup"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b153.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b153.webp"
+                        alt="Wiring and electronics setup"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Całość podłączyłem jak zawsze pod ten sam układ, który
+                    powtórzyłem 6 razy na płytce drukowanej.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b34.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b34.webp"
+                        alt="Electronic circuit board"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Na dziedzińcu dodałem trochę roślinności:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b60.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b60.webp"
+                        alt="Added vegetation to courtyard"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie zabrałem się za sklejenie wieży zamkowej.
+                    Wystające fragmenty muru zrobiłem ze styroduru, a kamyczki z
+                    prawej są z korka.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b65.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b65.webp"
+                        alt="Castle tower assembly detail"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b61.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b61.webp"
+                        alt="Castle tower construction detail"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b62.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b62.webp"
+                        alt="Castle tower and cork stones"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak przód wieży wygląda w rzeczywistości:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b66.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b66.webp"
+                        alt="Actual front of the tower reference"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Górna część wieży i schodki które wkleję w środek.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b80.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b80.webp"
+                        alt="Top of the tower and stairs"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Dorobiłem jeszcze takie detale na jednym z murów...</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b68.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b68.webp"
+                        alt="Wall detail on the model"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>... i złożyłem wszystko w całość:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b71.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b71.webp"
+                        alt="Assembled model overview"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b72.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b72.webp"
+                        alt="Assembled model detail"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b73.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b73.webp"
+                        alt="Assembled model close-up"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b78.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b78.webp"
+                        alt="Assembled model with tower"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b79.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b79.webp"
+                        alt="Assembled model detail"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Jeden z dachów jest już zrobiony. Dachówki są trójwymiarowe,
+                    przyklejałem je całymi paskami, a przerwy pomiędzy
+                    dachówkami natłoczyłem igłą.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b74.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b74.webp"
+                        alt="Completed roof with 3D tiles"
+                      />
+                    </PhotoView>
+                  </div>
                   <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
