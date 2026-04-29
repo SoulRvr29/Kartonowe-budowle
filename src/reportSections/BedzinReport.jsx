@@ -46,106 +46,106 @@ const WangReport = () => {
                     wszystkie murki dookoła i podwyższyłem ją o 1 cm.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b01.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b01.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b01.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b01.webp"
                         alt="Bedzin castle"
                       />
                     </PhotoView>
                   </div>
                   <p>Główne ściany już zrobione...</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b04.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b04.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b04.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b04.webp"
                         alt="Main walls assembled"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b07.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b07.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b07.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b07.webp"
                         alt="Main walls assembled"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b05.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b05.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b05.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b05.webp"
                         alt="Main walls assembled"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b06.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b06.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b06.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b06.webp"
                         alt="Main walls assembled"
                       />
                     </PhotoView>
                   </div>
                   <p>...i tutaj część już przyklejona.</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b02.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b02.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b02.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b02.webp"
                         alt="Part glued"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b08.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b08.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b08.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b08.webp"
                         alt="Part glued"
                       />
                     </PhotoView>
                   </div>
                   <p>Następnie zabrałem się za wnętrza na parterze...</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b09.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b09.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b09.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b09.webp"
                         alt="Ground floor interiors"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b10.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b10.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b10.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b10.webp"
                         alt="Ground floor interiors"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b11.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b11.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b11.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b11.webp"
                         alt="Ground floor interiors"
                       />
                     </PhotoView>
                   </div>
                   <p>...i pierwsze piętro.</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b12.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b12.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b12.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b12.webp"
                         alt="First floor interiors"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b15.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b15.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b15.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b15.webp"
                         alt="First floor interiors"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b16.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b16.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b16.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b16.webp"
                         alt="First floor interiors"
                       />
                     </PhotoView>
@@ -157,17 +157,17 @@ const WangReport = () => {
                     rzeczywistością.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b14.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b14.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b14.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b14.webp"
                         alt="Interiors based on photos"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b13.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b13.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b13.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b13.webp"
                         alt="Comparison with reality"
                       />
                     </PhotoView>
@@ -177,69 +177,69 @@ const WangReport = () => {
                     internetu, potem prostuję i poprawiam w photoshopie.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b17.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b17.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b17.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b17.webp"
                         alt="Interiors based on photos"
                       />
                     </PhotoView>
                   </div>
                   <p>Drugie piętro zrobione.</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b20.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b20.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b20.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b20.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b21.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b21.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b21.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b21.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b18.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b18.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b18.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b18.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b19.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b19.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b19.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b19.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b25.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b25.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b25.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b25.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b22.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b22.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b22.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b22.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b23.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b23.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b23.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b23.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b24.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b24.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b24.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b24.webp"
                         alt="Second floor progress"
                       />
                     </PhotoView>
@@ -248,84 +248,84 @@ const WangReport = () => {
                     Dokończyłem resztę pięter. Całe wnętrze jest już gotowe.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b26.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b26.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b26.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b26.webp"
                         alt="Model update"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b30.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b30.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b30.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b30.webp"
                         alt="Model update"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b31.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b31.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b31.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b31.webp"
                         alt="Model update"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b40.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b40.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b40.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b40.webp"
                         alt="Model update"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b28.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b28.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b28.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b28.webp"
                         alt="Model update"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b27.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b27.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b27.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b27.webp"
                         alt="Model update"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b29.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b29.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b29.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b29.webp"
                         alt="Model update"
                       />
                     </PhotoView>
                   </div>
                   <p>Tak prezentuje się oświetlenie:</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b36.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b36.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b36.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b36.webp"
                         alt="Lighting preview"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b39.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b39.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b39.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b39.webp"
                         alt="Lighting preview"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b35.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b35.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b35.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b35.webp"
                         alt="Lighting preview"
                       />
                     </PhotoView>
 
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b38.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b38.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b38.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b38.webp"
                         alt="Lighting preview"
                       />
                     </PhotoView>
@@ -346,17 +346,17 @@ const WangReport = () => {
                   </div>
                   <p>A tak wygląda ścianka, którą zamknę całość.</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b41.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b41.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b41.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b41.webp"
                         alt="Closing wall"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b48.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b48.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b48.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b48.webp"
                         alt="Closing wall"
                       />
                     </PhotoView>
@@ -369,10 +369,10 @@ const WangReport = () => {
                     przed wejściem do zamku.
                   </p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b33.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b33.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b33.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b33.webp"
                         alt="Closing wall"
                       />
                     </PhotoView>
@@ -392,17 +392,17 @@ const WangReport = () => {
                   </p>
                   <p>Tak wygląda to w rzeczywistości:</p>
                   <div className="report-photo-group">
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b87.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b87.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b87.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b87.webp"
                         alt="Lighting in reality"
                       />
                     </PhotoView>
-                    <PhotoView src="public/models/bedzin/build/full-res/bedzin-b86.webp">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b86.webp">
                       <LazyLoadImage
                         className="report-photo"
-                        src="public/models/bedzin/build/thumb/bedzin-thumb-b86.webp"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b86.webp"
                         alt="Lighting in reality"
                       />
                     </PhotoView>
