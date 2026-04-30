@@ -208,7 +208,7 @@ const WangReport = () => {
                     </PhotoView>
                     <p>
                       Wykonałem takie gabloty ze zbrojami wewnątrz. Przeszklenie
-                      zrobyłem z przezroczystej folii, którą tylko lekko
+                      zrobiłem z przezroczystej folii, którą tylko lekko
                       skleiłem ze sobą na rogach.
                     </p>
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b18.webp">

@@ -482,6 +482,146 @@ const SLSReport = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Skleiłem moduł LAS (Launch Abort System), który będzie się
+                    łączyć z kapsułą Orion na górze rakiety. Kopułę trochę
+                    wzmocniłem. Skleiłem ją dwa razy i wsunąłem jedną część w
+                    drugą, odcinając wystający nadmiar.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b42.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b42.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b43.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b43.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b44.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b44.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Dodałem resztę detali ma module serwisowym. Wkleiłem sześć
+                    magnesów 2 mm, którymi moduł serwisowy będzie się łączyć z
+                    drugim stopniem rakiety.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b45.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b45.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b46.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b46.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b47.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b47.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Na module serwisowym będą przyczepione na magnesach panele
+                    słoneczne. Zrobię je jeszcze w drugiej wersji - rozłożonej.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b49.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b49.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b50.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b50.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie zabrałem się za sklejanie dolnej części drugiego
+                    stopnia. Dodałem osłony z folii aluminiowej, którą
+                    formowałem i wycinałem na wcześniej przygotowanych
+                    szablonach. Dojdzie tu jeszcze dysza silnika i różne drobne
+                    detale.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b51.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b51.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b52.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b52.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b53.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b53.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Postanowiłem dodać więcej magnesów, więc teraz drugi stopień
+                    łączy się ze stożkiem na ośmiu magnesach 2 mm.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b54.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b54.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak teraz wygląda górna część rakiety.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b48.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b48.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>A tak wygląda po rozłożeniu.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b55.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b55.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
                 </>
               )}
             </article>
