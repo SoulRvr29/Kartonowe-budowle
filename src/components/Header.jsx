@@ -9,7 +9,7 @@ import axios from "axios";
 import SnowFlakes from "./SnowFlakes";
 import SectionsNav from "./SectionsNav";
 
-function App({
+function Header({
   bannerState,
   setBannerState,
   overlap,
@@ -120,7 +120,7 @@ function App({
       actualFontSize === 1 ? 3 : actualFontSize === 2 ? 1 : 2,
     );
     localStorage.setItem("darkMode", darkMode);
-    localStorage.setItem("banner", bannerState);
+    localStorage.setItem("newBanner", bannerState);
     localStorage.setItem("overlap", overlap);
     localStorage.setItem("autoScroll", autoScroll);
     localStorage.setItem("sections", sections);
@@ -361,4 +361,4 @@ function App({
   );
 }
 
-export default App;
+export default Header;

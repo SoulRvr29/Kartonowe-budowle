@@ -15,10 +15,10 @@ const Layout = () => {
     JSON.parse(localStorage.getItem("overlap")),
   );
 
-  if (localStorage.getItem("banner") == null)
-    localStorage.setItem("banner", true);
+  if (localStorage.getItem("newBanner") == null)
+    localStorage.setItem("newBanner", false);
   const [bannerState, setBannerState] = useState(
-    JSON.parse(localStorage.getItem("banner")),
+    JSON.parse(localStorage.getItem("newBanner")),
   );
 
   if (localStorage.getItem("header") == null)
