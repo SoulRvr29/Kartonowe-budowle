@@ -1702,7 +1702,7 @@
     "component": "SLS",
     "typ": "kosmos",
     "oświetlenie": false,
-    "rok ukończenia": 9999,
+    "rok ukończenia": 2026,
     "link": "/SLS",
     "card": "./cards/sls-card.webp",
     "position": [28.62730365, -80.620838353],

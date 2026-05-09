@@ -622,6 +622,104 @@ const SLSReport = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Na dolnym stopniu dorobiłem mocowania rur, których brakowało
+                    w projekcie. Teraz widzę, że te boczne elementy są za
+                    wysokie. Powinny znajdować się kilka milimetrów niżej niż
+                    rura, a u mnie są prawie na równi.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b56.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b56.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Przykleiłem resztę detali na drugim stopniu. Te czarne
+                    podłużne zbiorniki nasączyłem klejem CA, mocno wyszlifowałem
+                    i pomalowałem. Tak samo zrobiłem z dwoma czerwonymi
+                    zbiornikami.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b57.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b57.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b58.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b58.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Dorobiłem panele słoneczne w wersji rozłożonej.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b59.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b59.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Ostatnią rzeczą do zrobienia została boczna osłona drugiego
+                    stopnia. Można by ją wykonać w formie całego walca i tylko
+                    wsuwać na miejsce. Ja postanowiłem zrobić ją tak, aby
+                    rozkładała się na trzy panele - tak jak w rzeczywistości.
+                    Panele połączę ze sobą magnesami. Ciężko było dopasować je
+                    do siebie i podchodziłem do tego kilka razy. Żeby panele
+                    pasowały musiałem poszerzyć je o ok. 1,5 mm i na bokach
+                    zrobić lekki ukos, ponieważ dolna część, do której
+                    przylegają, jest trochę szersza niż górna.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b60.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b60.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b61.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b61.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b62.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b62.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/sls/build/full-res/sls-b63.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b63.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I tak dotarłem do końca budowy.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/sls/build/full-res/sls-b64.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/sls/build/thumb/sls-thumb-b64.webp"
+                        alt="SLS"
+                      />
+                    </PhotoView>
+                  </div>
                 </>
               )}
             </article>
