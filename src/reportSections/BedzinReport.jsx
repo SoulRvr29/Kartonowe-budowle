@@ -3,13 +3,14 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PaginationNav from "../components/PaginationNav";
+import { NavLink } from "react-router-dom";
 
 const WangReport = () => {
   const [reportState, setReportState] = useState(
     JSON.parse(localStorage.getItem("sections")),
   );
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 2;
+  const totalPages = 3;
 
   return (
     <section id="relacja">
@@ -31,24 +32,28 @@ const WangReport = () => {
               {currentPage === 1 && (
                 <>
                   <p>
-                    Kolejny zamek, tym razem w Będzinie. Model ma trochę
-                    nietypową skalę 1:160 - większość budowli tego typu jest
-                    raczej w skali 1:150. Na plus w modelu na pewno można
-                    zaliczyć dodatkowe części do wykonania wnęk okien i drzwi,
-                    co odjęło mi to trochę pracy. Podobają mi się też tekstury
-                    ścian - są ładnie wykonane i realistyczne.
+                    Witam w kolejnej relacji z budowy, tym razem będzie to zamek
+                    w Będzinie. Model ma trochę nietypową skalę 1:160 -
+                    większość budowli tego typu jest raczej w skali 1:150. Na
+                    plus w modelu na pewno można zaliczyć dodatkowe części do
+                    wykonania wnęk okien i drzwi, co odjęło mi trochę pracy.
+                    Podobają mi się też tekstury ścian - są ładnie wykonane i
+                    realistyczne.
                   </p>
                   <p>
                     Z minusów można wymienić rozciągnięte tekstury na murach
-                    zewnętrznych. Wolałbym żeby po prostu powtarzał się ten sam
+                    zewnętrznych. Wolałbym, żeby po prostu powtarzał się ten sam
                     wzór. Są też drobne różnice w odcieniach poszczególnych
                     ścian, ale raczej nie powinno się to rzucać w oczy.
                   </p>
                   <p>
-                    Podobnie jak w modelu zamku w Oporowie, także i tutaj
-                    wykonam wnętrza pomieszczeń i całe oświetlenie. Powiększyłem
-                    też podstawę, żeby objęła wszystkie murki dookoła i
-                    podwyższyłem ją o 1 cm.
+                    Podobnie jak w modelu zamku w{" "}
+                    <NavLink to="/Oporow" target="_blank">
+                      Oporowie
+                    </NavLink>
+                    , także i tutaj wykonam wnętrza pomieszczeń oraz całe
+                    oświetlenie. Powiększyłem podstawę, żeby objęła wszystkie
+                    murki dookoła i podwyższyłem ją o 1 cm.
                   </p>
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b01.webp">
@@ -157,10 +162,10 @@ const WangReport = () => {
                   </div>
                   <p>
                     Wnętrza wykonuję na podstawie zdjęć, jakie udało mi się
-                    znaleźć. Niektóre elementy najpierw robię w Photoshopie, a
-                    inne po prostu wycinam "na oko". Tak to wygląda w porównaniu
-                    z rzeczywistością.
+                    znaleźć. Niektóre elementy najpierw projektuję w
+                    Photoshopie, a inne po prostu wycinam z tektury "na oko".
                   </p>
+                  <p> Tak to wygląda w porównaniu z rzeczywistością.</p>
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b14.webp">
                       <LazyLoadImage
@@ -343,7 +348,7 @@ const WangReport = () => {
                       />
                     </PhotoView>
                   </div>
-                  <p>Nagrałem krótki filmik:</p>
+                  <p>Nagrałem krótki filmik prezentujący wnętrze:</p>
                   <div className="flex justify-center pb-8">
                     <div className="w-full max-w-4xl px-0">
                       <div className="relative pb-[56.25%]">
@@ -376,10 +381,10 @@ const WangReport = () => {
                   </div>
                   <p>
                     Co do oświetlenia, to tym razem zdecydowałem się na użycie
-                    diod smd 3528, które o wiele łatwiej jest mi umieścić w
-                    modelu niż zwykłe ledy 3mm jakich wcześniej używałem. Z
-                    kolei diody smd 0805 użyję do oświetlenia na wieży i w
-                    latarni przed wejściem do zamku.
+                    diod smd 3528, które o wiele łatwiej jest umieścić w modelu
+                    niż zwykłe ledy 3mm, jakich wcześniej używałem. Z kolei
+                    diody smd 0805 użyję do oświetlenia na wieży i w latarni
+                    przed wejściem do zamku.
                   </p>
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b33.webp">
@@ -444,8 +449,8 @@ const WangReport = () => {
                     </PhotoView>
                   </div>
                   <p>
-                    Na dziedzińcu nakleiłem nową teksturę, bardziej
-                    realistyczną, tak samo na daszku z prawej.
+                    Na dziedzińcu nakleiłem nową teksturę, bardziej realistyczną
+                    niż oryginalna, tak samo na daszku z prawej.
                   </p>
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b45.webp">
@@ -764,9 +769,10 @@ const WangReport = () => {
                     </PhotoView>
                   </div>
                   <p>
-                    Zrobiłem jeden z dachów. Dachówki są trójwymiarowe.
-                    Przyklejałem je całymi paskami, a przerwy pomiędzy
-                    dachówkami natłoczyłem igłą.
+                    Zrobiłem jeden z dachów. Zmieniłem teksturę, bo oryginalna
+                    była kiepsko wykonana i nijak miała się do rzeczywistości.
+                    Dachówki są trójwymiarowe. Przyklejałem je całymi paskami, a
+                    przerwy pomiędzy nimi natłoczyłem igłą.
                   </p>
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b74.webp">
@@ -872,10 +878,6 @@ const WangReport = () => {
                     Schodki na dziedziniec i reszta muru gotowe. Droga wokół
                     zamku przyklejona. Mur okazał się za krótki o 1,5mm i trzeba
                     było dokleić pasek, ale po retuszu prawie tego nie widać.
-                    Schody niezbyt pasują do podłoża, ale to wszystko i tak
-                    będzie przykryte trawnikiem, a samą drogę planuję usypać z
-                    ziemi i pomalować. Dodałem też brakujące przejście z baszty
-                    na mury.
                   </p>
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b95.webp">
@@ -899,6 +901,13 @@ const WangReport = () => {
                         alt="Build progress image"
                       />
                     </PhotoView>
+                  </div>
+                  <div className="report-photo-group">
+                    <p>
+                      Schody niezbyt pasują do podłoża, ale to wszystko i tak
+                      będzie przykryte trawnikiem, a samą drogę planuję usypać z
+                      ziemi i pomalować.
+                    </p>
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b96.webp">
                       <LazyLoadImage
                         className="report-photo"
@@ -913,6 +922,9 @@ const WangReport = () => {
                         alt="Build progress image"
                       />
                     </PhotoView>
+                  </div>
+                  <p>Dodałem drewniane przejście z baszty na mury.</p>
+                  <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b94.webp">
                       <LazyLoadImage
                         className="report-photo"
@@ -923,7 +935,7 @@ const WangReport = () => {
                   </div>
                   <p>
                     Droga wokół zamku jest prawie gotowa. Dodam jeszcze tylko
-                    kilka krzaczków, ławek i pocieniuję trawę bo na razie
+                    kilka krzaczków, ławek i pocieniuję trawę, bo na razie
                     jeszcze dosyć sztucznie to wygląda. Trawniki wyciąłem z maty
                     trawiastej.
                   </p>
@@ -990,7 +1002,6 @@ const WangReport = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     Droga wokół zamku ukończona. Krzaczki zrobiłem swoją
                     tradycyjną metodą, czyli najpierw przyklejałem gałązki z{" "}
@@ -1007,9 +1018,8 @@ const WangReport = () => {
                     >
                       krzaczki
                     </a>
-                    , którą na koniec pomalowałem z wierzchu żółtą farbą.
+                    , którą na koniec lekko pomalowałem z wierzchu żółtą farbą.
                   </p>
-
                   <div className="report-photo-group">
                     <PhotoView src="models/bedzin/build/full-res/bedzin-b100.webp">
                       <LazyLoadImage
@@ -1081,7 +1091,6 @@ const WangReport = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     Zrobiłem segment z głównym wejściem na zamek. Dodałem
                     tabliczki oraz cegły ze styroduru. Drzwi zrobiłem po swojemu
@@ -1124,8 +1133,695 @@ const WangReport = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Dodałem kilka detali przy wejściu i przykleiłem przednią
+                    część muru.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b112.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b112.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b111.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b111.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie wkleiłem segment z wejściem na zamek. Lampę nad
+                    wejściem zrobiłem z przezroczystej folii, od góry wkleiłem
+                    diodę SMD 0805 podobną do tych z wieży. Nadrukowaną płaską
+                    lampę na ścianie zamalowałem.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b120.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b120.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b119.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b119.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b121.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b121.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak na ten moment prezentuje się całe oświetlenie.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b123.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b123.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b124.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b124.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b125.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b125.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b122.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b122.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                </>
+              )}
+              {currentPage === 3 && (
+                <>
+                  <p>
+                    Mur wokół zamku ukończony. Miałem sporo problemów ze
+                    spasowaniem, w paru miejscach trzeba było coś przyciąć, w
+                    innych zabrakło jednego czy dwóch milimetrów. Najgorzej było
+                    na zaokrągleniu muru gdzie po sklejeniu całego segmentu
+                    okazało się, że nie dam rady go dopasować do drogi , wiec
+                    musiałem rozcinać górną część gdzie są blanki i poprawiać. W
+                    wycinance brakuje też części 153, jest tylko numerek.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b131.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b131.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b132.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b132.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>W tym miejscu brakowało 3-4mm.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b130.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b130.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Koniec końców udało się wszystko dopasować. Zewnętrzną część
+                    muru przyklejałem do podstawy po kawałku, sprawdzając, czy
+                    zachowany jest kąt prosty, stąd te małe prostokąciki w
+                    dolnej części.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b128.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b128.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b127.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b127.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b126.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b126.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b129.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b129.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Postanowiłem dorobić pomieszczenie i mur na prawo od wejścia
+                    na zamek, nie było to przewidziane w wycinance.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b114.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b114.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b143.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b143.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b138.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b138.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Przykleiłem wszystkie przypory wokół zewnętrznego muru.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b142.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b142.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem mur oraz arkady z prawej strony zamku. Środkowy pas
+                    cegieł jest wypukły. Poziome cegły są z jednego paska, który
+                    po przyklejeniu ponacinałem. Całość robiłem na papierze
+                    milimetrowym i potem ten element odciąłem i nakleiłem na
+                    mur.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b135.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b135.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b136.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b136.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b139.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b139.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Wkleiłem dwie belki między murem zewnętrznym, a basztą.
+                    Niestety nie do końca zgrały się z drzwiami na baszcie,
+                    które powinny być pośrodku.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b141.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b141.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b128.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b128.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b137.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b137.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
 
-                  <p>Ciąg dalszy relacji wkrótce...</p>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b140.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b140.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b134.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b134.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem drogę przed zamkiem. Jest wykonana ze styroduru, na
+                    którym natłoczyłem igłą wzór kamieni i pomalowałem.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b144.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b144.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b145.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b145.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie zabrałem się za teren wokół zamku i na razie z
+                    grubsza ukształtowałem wszystko kawałkami styropianu.
+                    Później nałożę na to gips i wszystko wyrównam.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b147.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b147.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak na ten moment wygląda spód modelu.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b152.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b152.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Następnie okleiłem boki podstawy tekturą.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b151.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b151.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b146.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b146.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    W tym miejscu musiałem ściąć teren razem z płytą pilśniową
+                    żeby uzyskać większy spad.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b149.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b149.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Pokryłem podłoże wokół zamku gipsem i wyszlifowałem.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b154.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b154.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b156.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b156.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b155.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b155.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b157.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b157.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b160.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b160.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b158.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b158.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b159.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b159.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Dodałem diody wokół zamku. Wywierciłem otwory i wyciąłem
+                    rowki na kable. Po podłączeniu ponownie wyrównałem wszystko
+                    gipsem.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b161.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b161.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie zabrałem się za przyklejanie trawnika. Najpierw
+                    wykonałem szablon, czyli zamaskowałem całe podłoże kawałkami
+                    papieru, tak by wszystko trzymało się razem, ale do podłoża
+                    było tylko lekko przyklejone.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b163.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b163.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b162.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b162.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Oderwałem całość i miałem taki oto szablon, który potem
+                    pociąłem na mniejsze fragmenty.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b164.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b164.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Po kolei odrysowywałem i wycinałem każdy fragment z maty
+                    trawiastej. Przyklejałem wszystko na wikol i trochę było
+                    problemu z tym, że po posmarowaniu klejem mata się rozciąga,
+                    więc kolejne segmenty musiałem skracać bo zawsze były
+                    odrobinę za duże.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b165.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b165.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b167.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b167.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Po przyklejeniu trochę widać w niektórych miejscach łączenia
+                    poszczególnych fragmentów, ale postaram się to jeszcze jakoś
+                    zamaskować.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b166.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b166.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak teraz prezentuje się wejście na zamek.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b16.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b168.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b179.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b179.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Pomalowałem trawniki różnymi odcieniami zieleni, żeby
+                    wyglądały bardziej realistycznie. W kilku miejscach
+                    wytargałem trawkę i zrobiłem prześwity, dodałem też kilka
+                    kamieni.
+                  </p>
+                  <p>Tak trawnik wyglądał przed malowaniem:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b169.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b169.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>A tak wygląda teraz:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b178.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b178.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b181.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b181.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Dodałem kilka drzew i krzaków. Szkoda, że nie ma ich więcej
+                    wokół zamku. Podstawa modelu obejmuje taki oto teren:
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b03.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b03.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b184.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b184.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b180.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b180.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b183.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b183.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b182.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b182.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Poniżej przedstawiam sposób w jaki wykonałem drzewo. Nie
+                    jest to najszybsza metoda, ale jestem zadowolony z efektu.
+                  </p>
+                  <p>
+                    Skręciłem z drutu 0.2mm pień i gałęzie oraz dodałem jeszcze
+                    kilka mniejszych gałęzi, które dokleiłem po środku i u dołu.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b170.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b170.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b171.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b171.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie pień i grubsze gałęzie obłożyłem wikolem. Pień
+                    dodatkowo owinąłem cienką warstwą chusteczki higienicznej,
+                    po to by nie było widać skręcenia drutu. Całość pomalowałem.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b172.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b172.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Na końcach gałęzi przykleiłem posypkę o strukturze zmielonej
+                    gąbki, żeby dodatkowo zagęścić gałęzie i również pomalowałem
+                    na brązowo.
+                  </p>
+                  <p></p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b173.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b173.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b174.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b174.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie nałożyłem już właściwą{" "}
+                    <a
+                      href="https://materialy-modelarskie.pl/krzaczki-premium-zielen"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      posypkę
+                    </a>{" "}
+                    imitującą liście, którą później lekko pomalowałem z wierzchu
+                    żółtą farbą. Nadmiar pnia odciąłem i wkleiłem w środek drut.
+                    Dolną część pnia poszerzyłem owijając dodatkowym paskiem z
+                    chusteczki.
+                  </p>
+
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b175.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b175.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b176.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b176.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Pień podrapałem wzdłuż, tępą stroną nożyka i pomalowałem
+                    bardzo rozwodnioną czarną farbą, tak by zebrała się w
+                    rowkach. Po wyschnięciu pomalowałem prawie suchym pędzlem z
+                    jasno-brązową farbą.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b177.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b177.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I tak oto dotarłem do końca budowy modelu.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/bedzin/build/full-res/bedzin-b185.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/bedzin/build/thumb/bedzin-thumb-b185.webp"
+                        alt="Build progress image"
+                      />
+                    </PhotoView>
+                  </div>
                 </>
               )}
             </article>
