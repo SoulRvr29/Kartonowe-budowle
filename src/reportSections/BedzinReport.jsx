@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import PaginationNav from "../components/PaginationNav";
 import { NavLink } from "react-router-dom";
 
-const WangReport = () => {
+const BedzinReport = () => {
   const [reportState, setReportState] = useState(
     JSON.parse(localStorage.getItem("sections")),
   );
@@ -1837,4 +1837,4 @@ const WangReport = () => {
   );
 };
 
-export default WangReport;
+export default BedzinReport;

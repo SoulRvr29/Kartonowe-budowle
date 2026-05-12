@@ -4,6 +4,7 @@ import OporowHistory from "../historySections/OporowHistory";
 import ModelInfo from "../components/ModelInfo";
 import Comments from "../components/Comments";
 import { useEffect } from "react";
+import OporowReport from "../reportSections/OporowReport";
 
 const Article = ({ id }) => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const Article = ({ id }) => {
       <ModelInfo id={id} />
       <Gallery id={id} />
       <Comments id={id} />
+      <OporowReport id={id} />
       <OporowHistory id={id} />
     </>
   );

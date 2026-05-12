@@ -63,6 +63,7 @@
     "cover": "models/oporow/oporow-cover.jpg",
     "position": [52.2625, 19.56226],
     "address": "Oporów 34, 99-322 Oporów",
+    "report": true,
     "info": {
       "Wydawca": "GPM",
       "Skala": "1:150",
@@ -87,8 +88,8 @@
         "thumb": "./models/oporow/night/thumb/oporow-thumb-n"
       },
       "z budowy": {
-        "quantity": 69,
-        "format": ".jpg",
+        "quantity": 161,
+        "format": ".webp",
         "full": "./models/oporow/budowa/full-res/oporow-b",
         "thumb": "./models/oporow/budowa/thumb/oporow-thumb-b"
       }
