@@ -14,8 +14,8 @@ const map = ({ mapSize, setMapSize }) => {
       id="Mapa"
       className={
         mapSize
-          ? "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 relative h-[50rem] max-sm:h-[40rem] "
-          : "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 max-w-5xl relative h-[40rem] max-sm:h-[24rem]"
+          ? "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 max-lg:mt-0 relative h-[50rem] max-sm:h-[40rem] "
+          : "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 max-lg:mt-0 max-w-5xl relative h-[40rem] max-sm:h-[24rem]"
       }
     >
       {!mapActive && (

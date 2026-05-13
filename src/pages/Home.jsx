@@ -49,7 +49,7 @@ const Home = () => {
           {/* <div className="max-xl:block grid grid-cols-2 "> */}
           <div
             className={
-              "flex max-lg:flex-col max-lg:gap-0 gap-8  " +
+              "flex flex-col max-lg:flex-col max-lg:gap-0 gap-0  " +
               (mapSize && " flex-col gap-0")
             }
           >
