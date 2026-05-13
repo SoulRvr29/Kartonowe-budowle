@@ -10,7 +10,8 @@ const map = ({ mapSize, setMapSize }) => {
   const [mapActive, setMapActive] = useState(false);
 
   return (
-    <div
+    <section
+      id="Mapa"
       className={
         mapSize
           ? "w-full border-2 rounded-xl border-accent overflow-hidden mx-auto my-4 relative h-[50rem] max-sm:h-[40rem] "
@@ -107,7 +108,7 @@ const map = ({ mapSize, setMapSize }) => {
             ),
         )}
       </MapContainer>
-    </div>
+    </section>
   );
 };
 

@@ -40,36 +40,47 @@ const Article = () => {
             Witaj na stronie.
           </h2>
           <p>
-            Znajdziesz tu galerie sklejonych przeze mnie modeli kartonowych.
-            Większość modeli to budowle, takie jak zamki, ratusze, czy latarnie
-            morskie, ale jest też kilka rakiet, samolotów, czy figurek.
-            Modelarstwem zajmuję się od około 1998 roku. Pierwsze modele
-            wykonywałem w standardzie bez żadnych dodatków, w kolejnych modelach
-            dodawałem retusz krawędzi, elementy z drutu (np. barierki, anteny)
-            oraz roślinność i oświetlenie. Dwa razy podjąłem się też wykonania
-            pomieszczeń w modelach zamku w{" "}
-            <NavLink to="/Bedzin">
+            Modelarstwem zacząłem interesować się od około 1998 roku. Sklejam
+            głównie budowle takie jak zamki, ratusze, czy latarnie morskie, ale
+            czasem wykonuję także inne modele - rakiety, samoloty czy
+            figurki.{" "}
+          </p>
+          <p>
+            Interesuję się również elektroniką oraz programowaniem i staram się
+            wykorzystywać to w moich projektach. Na stronie znajdziesz wiele
+            galerii nocnych zdjęć modeli, w których wykonałem oświetlenie.
+          </p>
+          <p>
+            {" "}
+            Z czasem kolejne modele wykonywałem coraz dokładniej, dodając własne
+            elementy oraz wykorzystując inne materiały, takie jak styrodur czy
+            balsa. Dwukrotnie podjąłem się wykonania wnętrz w modelach zamków w{" "}
+            <NavLink to="/Bedzin" target="_blank">
               {" "}
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
                 Będzinie
               </span>
             </NavLink>{" "}
             i{" "}
-            <NavLink to="/Oporow">
+            <NavLink to="/Oporow" target="_blank">
               {" "}
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
                 Oporowie
               </span>
             </NavLink>
-            . W ostatnich modelach wprowadzałem sporo modyfikacji i zmieniałem
-            niektóre tekstury (np. dachu, podstawy), dorabiałem również swoje
-            części. Świątynia{" "}
-            <NavLink to="/Wang">
+            .
+          </p>
+          <p>
+            {" "}
+            Jedynym jak dotąd modelem w całości wykonanym przeze mnie od podstaw
+            jest{" "}
+            <NavLink to="/Wang" target="_blank">
               <span className="text-accent-4 dark:text-accent-2 hover:underline">
-                Wang
+                {" "}
+                Świątynia Wang
               </span>
             </NavLink>
-            , została już w całości zbudowana przeze mnie od podstaw.
+            .
           </p>
           <PhotoView src={photosSrc[0]}>
             <LazyLoadImage
@@ -79,7 +90,8 @@ const Article = () => {
               title={photosTitle[0]}
             />
           </PhotoView>
-          <hr className="mt-8 mb-6" />
+          {/* <hr className="mt-8 mb-6" /> */}
+          <h4>Informacje o stronie</h4>
           <h5 className="font-semibold text-left max-sm:text-base max-sm:leading-5">
             Frontend strony został wykonany przy użyciu frameworka{" "}
             <a

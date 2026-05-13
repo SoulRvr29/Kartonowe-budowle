@@ -54,9 +54,8 @@ const Home = () => {
             }
           >
             <InfoCard mapSize={mapSize} />
-            <section id="Mapa">
-              <MapAll mapSize={mapSize} setMapSize={setMapSize} />
-            </section>
+
+            <MapAll mapSize={mapSize} setMapSize={setMapSize} />
           </div>
           <section id="Aktualizacje">
             <UpdatesList />
