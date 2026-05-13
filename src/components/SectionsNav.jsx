@@ -21,7 +21,7 @@ const SectionsNav = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
   const location = useLocation();
-  const pagesWithoutSectionsNav = ["/", "/About", "/Oswietlenie"];
+  const pagesWithoutSectionsNav = ["/About", "/Oswietlenie"];
 
   const sectionsList = [...document.querySelectorAll("section")].map(
     (section) => section.id,
