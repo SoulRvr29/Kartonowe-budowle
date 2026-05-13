@@ -35,30 +35,40 @@ const UpdatesList = () => {
           />
         ))}
       {updates.length > 3 && visibleUpdates !== updates.length && (
-        <button
-          onClick={() => {
-            if (updates.length - visibleUpdates > 2)
-              setVisibleUpdates(visibleUpdates + 3);
-            else setVisibleUpdates(updates.length);
-          }}
-          className="w-full max-sm:scale-75 max-sm:-mb-4 text-center flex justify-center items-center gap-4 "
-        >
-          <FaCaretDown size={30} />
-          Pokaż więcej
-          <FaCaretDown size={30} />
-        </button>
+        <div className="w-full px-2 text-sm py-2 max-sm:-mb-4 text-center flex justify-center items-center gap-4 max-sm:gap-2 ">
+          {" "}
+          <button
+            onClick={() => {
+              if (updates.length - visibleUpdates > 2)
+                setVisibleUpdates(visibleUpdates + 3);
+              else setVisibleUpdates(updates.length);
+            }}
+            className="bg-white/10 max-sm:w-full  px-2 py-1 rounded-lg hover:bg-white/20 transition-colors  gap-2"
+          >
+            Pokaż więcej
+          </button>
+          <button
+            onClick={() => {
+              setVisibleUpdates(updates.length);
+            }}
+            className="bg-white/10 max-sm:w-full  px-2 py-1 rounded-lg hover:bg-white/20 transition-colors gap-2"
+          >
+            Pokaż wszystko
+          </button>
+        </div>
       )}
       {updates.length > 3 && visibleUpdates == updates.length && (
-        <button
-          onClick={() => {
-            setVisibleUpdates(3);
-          }}
-          className="w-full text-center max-sm:scale-75 max-sm:-mb-4 flex justify-center items-center gap-4"
-        >
-          <FaCaretUp size={30} />
-          Zwiń
-          <FaCaretUp size={30} />
-        </button>
+        <div className="w-full px-2  text-sm py-2 max-sm:-mb-4 text-center flex justify-center items-center gap-2 ">
+          {" "}
+          <button
+            onClick={() => {
+              setVisibleUpdates(3);
+            }}
+            className="bg-white/10 max-sm:w-full px-2 py-1 rounded-lg hover:bg-white/20 transition-colors gap-2"
+          >
+            Zwiń listę
+          </button>
+        </div>
       )}
     </div>
   );

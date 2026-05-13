@@ -10,7 +10,7 @@ const OporowReport = () => {
     JSON.parse(localStorage.getItem("sections")),
   );
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 2;
+  const totalPages = 3;
 
   return (
     <section id="relacja">
@@ -33,10 +33,10 @@ const OporowReport = () => {
                 <>
                   <p>Witam w mojej pierwszej relacji.</p>
                   <p>
-                    Model zamku w Oporowie jest dosyć uproszczony więc postaram
-                    się dodać od siebie jak najwięcej detali. Wykonam pełne
-                    oświetlenie zarówno na zewnątrz, jak i wewnątrz. Postaram
-                    się też zrobić roślinność.
+                    Model zamku w Oporowie z wydawnictwa GPM jest dosyć
+                    uproszczony, więc postaram się dodać od siebie jak najwięcej
+                    detali. Wykonam pełne oświetlenie zarówno na zewnątrz, jak i
+                    wewnątrz. Postaram się też zrobić roślinność.
                   </p>
                   <p>
                     Model zacząłem składać już rok wcześniej, ale zaraz
@@ -815,7 +815,7 @@ const OporowReport = () => {
                       />
                     </PhotoView>
                   </div>
-                  <p>Zrobiłęm wnętrze kaplicy.</p>
+                  <p>Zrobiłem segment z wnętrzem kaplicy.</p>
                   <div className="report-photo-group">
                     <PhotoView src="models/oporow/budowa/full-res/oporow-b91.webp">
                       <LazyLoadImage
@@ -835,7 +835,628 @@ const OporowReport = () => {
                       />
                     </PhotoView>
                   </div>
-                  <p>Ciąg dalszy relacji wkrótce.</p>
+                  <p>
+                    Następnie wkleiłem ten segment do reszty zamykając kaplicę.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b92.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b92.webp"
+                        alt="Wieża z kaplicą zrobiona 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b93.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b93.webp"
+                        alt="Wieża z kaplicą zrobiona 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b97.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b97.webp"
+                        alt="Wieża z kaplicą zrobiona 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b102.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b102.webp"
+                        alt="Wieża z kaplicą zrobiona 4"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Dokleiłem kilka poziomych pasków na ścianach zamku.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b96.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b96.webp"
+                        alt="Dokleiłem kilka pasków na ścianach zamku"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I tak samo z drugiej strony.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b100.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b100.webp"
+                        alt="Paski po drugiej stronie"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem ostatnie pomieszczenie w zamku. Nie udało mi się
+                    znaleźć żadnych jego zdjęć, więc sam wykombinowałem, jak
+                    mogłoby to wyglądać.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b95.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b95.webp"
+                        alt="Ostatnie pomieszczenie 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b94.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b94.webp"
+                        alt="Ostatnie pomieszczenie 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Przy wieży od strony dziedzińca dokleiłem daszek.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b101.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b101.webp"
+                        alt="Przy wieży dokleiłem brakujący daszek"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Na ten moment tak prezentuje się całość.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b99.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b99.webp"
+                        alt="Całość wygląda tak 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b98.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b98.webp"
+                        alt="Całość wygląda tak 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zabrałem się za składanie dachów. W okienkach pod szarym
+                    dachem po prawej stronie odpuściłem już robienie oświetlenia
+                    i zamalowałem je od wewnątrz na czarno. Reszta okienek
+                    będzie podświetlona.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b103.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b103.webp"
+                        alt="Składanie dachów 1"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak dach wygląda od środka.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b104.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b104.webp"
+                        alt="Dach od środka"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>W środku wkleiłem pasek z diodą.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b105.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b105.webp"
+                        alt="Dodałem jeszcze diodę 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b106.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b106.webp"
+                        alt="Dodałem jeszcze diodę 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I zakleiłem spód.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b107.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b107.webp"
+                        alt="Zakleiłem spód"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Na krawędziach dachów dokleiłem jeszcze paski.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b108.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b108.webp"
+                        alt="Dokleiłem jeszcze kilka pasków 1"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Przylutowałem przewody do reszty.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b110.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b110.webp"
+                        alt="Dolutowałem do reszty"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I tak prezentuje się gotowy dach.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b111.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b111.webp"
+                        alt="no i jest 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b112.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b112.webp"
+                        alt="no i jest 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b113.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b113.webp"
+                        alt="no i jest 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b116.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b116.webp"
+                        alt="no i jest 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b115.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b115.webp"
+                        alt="no i jest 5"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b114.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b114.webp"
+                        alt="no i jest 6"
+                      />
+                    </PhotoView>
+                  </div>
+                </>
+              )}
+              {currentPage === 3 && (
+                <>
+                  <p>
+                    Zdecydowałem, że jednak zrobię regulację oświetlenia w inny
+                    sposób, bo kręcenie małymi potencjometrami od spodu byłoby
+                    niewygodne. Kupiłem duże potencjometry i gałki, a następnie
+                    zamontowałem wszystko z przodu. Gałki będą wystawać mniej
+                    więcej do połowy, bo całą podstawę obkleję jeszcze dookoła
+                    tekturą.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b131.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b131.webp"
+                        alt="Regulacja oświetlenia 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b133.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b133.webp"
+                        alt="Regulacja oświetlenia 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b132.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b132.webp"
+                        alt="Regulacja oświetlenia 3"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Każdy potencjometr podłączyłem pod ten układ.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b118.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b118.webp"
+                        alt="Układ potencjometru"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zmiana potencjometrów niestety zmusiła mnie do rozgrzebania
+                    całego spodu modelu, żeby dostać się do kabli. Narobiłem tam
+                    już takiego bałaganu, że ledwo dałem radę się w tym połapać.
+                    Dodatkowo musiałem wyciąć kolejną dziurę w podstawie, bo
+                    jedna z diod na dziedzińcu nie była dobrze przylutowana -
+                    raz świeciła, a raz nie - i trzeba było to poprawić.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b119.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b119.webp"
+                        alt="Spód z kablami 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b136.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b136.webp"
+                        alt="Spód z kablami 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Zrobiłem taki balkon.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b125.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b125.webp"
+                        alt="Balkon i detale 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b124.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b124.webp"
+                        alt="Balkon i detale 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b127.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b127.webp"
+                        alt="Balkon i detale 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b130.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b130.webp"
+                        alt="Balkon i detale 4"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Dodałem rynny.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b129.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b129.webp"
+                        alt="Balkon i detale 5"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b128.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b128.webp"
+                        alt="Balkon i detale 6"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b126.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b126.webp"
+                        alt="Balkon i detale 7"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b117.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b117.webp"
+                        alt="Balkon i detale 8"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Postanowiłem zrobić dwie latarnie stojące przed zamkiem.
+                    Kupiłem do nich jak najmniejsze diody – mają około 1 mm na 2
+                    mm, licząc z nóżkami. Do każdej latarni dałem po dwie
+                    zlutowane ze sobą diody. Klosze wykonałem z przezroczystej
+                    folii, a następnie pomalowałem ich krawędzie na czarno
+                    markerem.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b122.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b122.webp"
+                        alt="Latarnie przed zamkiem 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b121.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b121.webp"
+                        alt="Latarnie przed zamkiem 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b120.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b120.webp"
+                        alt="Latarnie przed zamkiem 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b134.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b134.webp"
+                        alt="Latarnie przed zamkiem 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b135.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b135.webp"
+                        alt="Latarnie przed zamkiem 5"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b123.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b123.webp"
+                        alt="Latarnie przed zamkiem 6"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem resztę oświetlenia wokół zamku. W sumie wyszło
+                    równo 40 diod led. 17 wewnątrz, 6 na dziedzińcu, 13 wokół
+                    zamku i 4 w latarniach.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b138.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b138.webp"
+                        alt="Oświetlenie wokół zamku 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b137.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b137.webp"
+                        alt="Oświetlenie wokół zamku 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b141.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b141.webp"
+                        alt="Oświetlenie wokół zamku 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b139.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b139.webp"
+                        alt="Oświetlenie wokół zamku 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b140.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b140.webp"
+                        alt="Oświetlenie wokół zamku 5"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Dodałem imitację wody w fosie wokół zamku. Nakleiłem
+                    trawniki wycięte z maty trawiastej. Przykleiłem dach na
+                    wieży, kominy i kilka kolejnych rynien.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b142.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b142.webp"
+                        alt="Woda i trawniki 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b144.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b144.webp"
+                        alt="Woda i trawniki 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b143.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b143.webp"
+                        alt="Woda i trawniki 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b146.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b146.webp"
+                        alt="Woda i trawniki 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b145.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b145.webp"
+                        alt="Woda i trawniki 5"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Wodę robiłem w taki sposób: najpierw pomalowałem dno na
+                    ciemny brąz, a potem nakładałem pędzelkiem lekko
+                    rozcieńczony klej Wikol, od razu formując fale. Gdy wszystko
+                    wyschło, nałożyłem jeszcze jedną warstwę.
+                  </p>
+                  <p>
+                    Nie każdy Wikol się do tego nadaje - ja używałem takiego:
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b147.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b147.webp"
+                        alt="Klej Wikol"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem most. Wykonałem go inaczej niż w wycinance,
+                    wzorując się na aktualnych zdjęciach.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b156.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b156.webp"
+                        alt="Most 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b155.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b155.webp"
+                        alt="Most 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b154.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b154.webp"
+                        alt="Most 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b153.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b153.webp"
+                        alt="Most 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b152.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b152.webp"
+                        alt="Most 5"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b148.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b148.webp"
+                        alt="Most 6"
+                      />
+                    </PhotoView>
+                  </div>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b149.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b149.webp"
+                        alt="Most 7"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b151.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b151.webp"
+                        alt="Most 8"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b150.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b150.webp"
+                        alt="Most 9"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem barierki wokół placu przed zamkiem i dodałem
+                    drzewka.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b160.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b160.webp"
+                        alt="Barierki i drzewka 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b159.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b159.webp"
+                        alt="Barierki i drzewka 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b157.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b157.webp"
+                        alt="Barierki i drzewka 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b158.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b158.webp"
+                        alt="Barierki i drzewka 4"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Model jest już gotowy. Na koniec dodałem jeszcze kilka
+                    krzaczków i pocieniowałem trawę różnymi odcieniami zieleni i
+                    brązu.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="models/oporow/budowa/full-res/oporow-b161.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="models/oporow/budowa/thumb/oporow-thumb-b161.webp"
+                        alt="Barierki i drzewka 1"
+                      />
+                    </PhotoView>
+                  </div>
                 </>
               )}
             </article>
