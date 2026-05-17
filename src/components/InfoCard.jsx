@@ -48,7 +48,7 @@ const InfoCard = ({ mapSize }) => {
   return (
     <div
       className={
-        "info relative text-center w-full border-2 border-transparent  max-w-xl mx-auto rounded-xl  p-8 max-sm:px-0 py-6 max-sm:my-4 drop-shadow-[3px_3px_1px_rgba(0,0,0,0.05)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
+        "info relative text-center w-full border-2 border-transparent  max-w-xl mx-auto rounded-xl  p-8 max-sm:px-0 py-6 mb-4 max-sm:my-4 drop-shadow-[3px_3px_1px_rgba(0,0,0,0.05)] dark:drop-shadow-[0px_0px_20px_rgba(0,122,204,0.2)] " +
         (user?.email === adminEmail && " hover:border-accent ") +
         (mapSize && " order-1 max-lg:order-first") +
         (markdown === "" && user?.email !== adminEmail && " hidden")

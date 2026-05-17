@@ -1717,6 +1717,18 @@
     },
     "name": "Rakieta Space Launch System (SLS)",
     "Galeria": {
+      "dzienna": {
+        "quantity": 65,
+        "format": ".webp",
+        "full": "./models/sls/day/full-res/sls-d",
+        "thumb": "./models/sls/day/thumb/sls-thumb-d"
+      },
+      "nocna": {
+        "quantity": 6,
+        "format": ".webp",
+        "full": "./models/sls/night/full-res/sls-n",
+        "thumb": "./models/sls/night/thumb/sls-thumb-n"
+      },
       "z budowy": {
         "quantity": 64,
         "format": ".webp",
