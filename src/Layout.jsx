@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Nav from "./components/MainNav";
 import BackToTop from "./components/BackToTop";
-import TechNav from "./components/TechNav";
+
 import Footer from "./components/Footer";
 
 const Layout = () => {
@@ -45,7 +45,7 @@ const Layout = () => {
           setOverlap={setOverlap}
           headerSticky={headerSticky}
         />
-        <TechNav />
+
         <BackToTop />
         <Outlet />
         <Footer />

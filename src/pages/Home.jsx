@@ -5,6 +5,7 @@ import MapAll from "../components/MapAll";
 import { useEffect, useState } from "react";
 import InfoCard from "../components/InfoCard";
 import UpdatesList from "../components/UpdatesList";
+import TechNav from "../components/TechNav";
 
 const Home = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const Home = () => {
 
   return (
     <>
+      <TechNav />
       <PhotoProvider
         overlayRender={({ index }) => {
           return (

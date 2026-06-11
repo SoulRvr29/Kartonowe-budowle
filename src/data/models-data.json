@@ -1770,5 +1770,35 @@
     },
     "photo": "models/p-51b_mustang/p-51b_mustang-photo",
     "description": "Amerykański myśliwiec dalekiego zasięgu z czasów II wojny światowej."
+  },
+  {
+    "id": 41,
+    "new": false,
+    "component": "Apollo13",
+    "typ": "kosmos",
+    "oświetlenie": false,
+    "rok ukończenia": 9999,
+    "link": "/Apollo13",
+    "cover": "models/apollo13/apollo13-cover.jpg",
+    "publisher": "model darmowy",
+    "report": true,
+    "info": {
+      "Projekt": "uhu02",
+      "Skala": "1:33 (przeskalowany z 1:48)",
+      "Wysokość": "21cm",
+      "Szerokość": "28cm",
+      "Link do pobrania": "https://uhu02.way-nifty.com/die_eule_der_minerva/041.html"
+    },
+    "name": "Lądownik księżycowy LM-7 Aquarius",
+    "Galeria": {
+      "z budowy": {
+        "quantity": 13,
+        "format": ".webp",
+        "full": "./models/apollo13/build/full-res/apollo13-b",
+        "thumb": "./models/apollo13/build/thumb/apollo13-thumb-b"
+      }
+    },
+    "photo": "models/apollo13/apollo13-photo",
+    "description": "Dwuczłonowy statek kosmiczny zaprojektowany w ramach programu Apollo do operacji kosmicznych w pobliżu Księżyca i na jego powierzchni, składający się z członu zniżania i członu wznoszenia."
   }
 ]
