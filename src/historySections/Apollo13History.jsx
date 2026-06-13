@@ -9,8 +9,16 @@ const Apollo13History = ({ id }) => {
   );
 
   ///////////////////////// PHOTOS DATA /////////////////////////
-  const photosSrc = ["models/sls/sls-photo1.webp"];
-  const photosTitle = ["Lądownik misji Apollo 11 na powierzchni Księżyca"];
+  const photosSrc = [""];
+  const photosTitle = [
+    "Załoga misji Apollo 13. Od lewej: dowódca James A. Lovell, pilot modułu dowodzenia Thomas K. Mattingly oraz pilot modułu księżycowego Fred W. Haise.",
+    "Uszkodzony moduł serwisowy misji Apollo 13, sfotografowany po jego odłączeniu od modułu dowodzenia.",
+    'Astronauci misji Apollo 13 konstruujący awaryjny filtr dwutlenku węgla, potocznie nazywany "mailbox".',
+    "Improwizowany adapter filrów CO2, podłączony do układu podtrzymywania życia modułu księżycowego.",
+    "Moduł księżycowy Aquarius po jego odrzuceniu nad Ziemią.",
+    "Wodowanie modułu dowodzenia Apollo 13 w Pacyfiku.",
+    "Astronauci misji Apollo 13 na pokładzie okrętu ratowniczego USS Iwo Jima, po bezpiecznym powrocie na Ziemię.",
+  ];
   /////////////////////////////////////////////////////////////////
   return (
     <section id="apollo13">
@@ -40,17 +48,18 @@ const Apollo13History = ({ id }) => {
         >
           <article className="px-8">
             <p>
-              Misja Apollo 13 – trzecia misja programu Apollo z planowanym
-              lądowaniem ludzi na powierzchni Księżyca. Eksplozja zbiornika z
-              ciekłym tlenem w module serwisowym uniemożliwiła lądowanie na
-              Księżycu i spowodowała rozpoczęcie walki o życie załogi. Lot
-              dowodzony był przez Jamesa A. Lovella; pilotem modułu dowodzenia
-              był John L. „Jack” Swigert; pilotem modułu księżycowego był Fred
-              W. Haise. Swigert zastępował pierwotnego pilota modułu dowodzenia
-              Thomasa K. „Kena” Mattingly, którego wyeliminował lekarz misji z
-              obawy o to, że Mattingly nabawił się różyczki. Mattingly jednak
-              nie zachorował na różyczkę i wniósł znaczną pomoc naziemnym
-              kontrolerom, podczas walki o sprowadzenie załogi Apollo na Ziemię.
+              <span className="first-letter font-playfair">T</span>trzecia misja
+              programu Apollo z planowanym lądowaniem ludzi na powierzchni
+              Księżyca. Eksplozja zbiornika z ciekłym tlenem w module serwisowym
+              uniemożliwiła lądowanie na Księżycu i spowodowała rozpoczęcie
+              walki o życie załogi. Lot dowodzony był przez Jamesa A. Lovella;
+              pilotem modułu dowodzenia był John L. „Jack” Swigert; pilotem
+              modułu księżycowego był Fred W. Haise. Swigert zastępował
+              pierwotnego pilota modułu dowodzenia Thomasa K. „Kena” Mattingly,
+              którego wyeliminował lekarz misji z obawy o to, że Mattingly
+              nabawił się różyczki. Mattingly jednak nie zachorował na różyczkę
+              i wniósł znaczną pomoc naziemnym kontrolerom, podczas walki o
+              sprowadzenie załogi Apollo na Ziemię.
             </p>
             <p>
               Start misji nastąpił 11 kwietnia 1970 roku o godzinie 19:13 UTC.
@@ -86,6 +95,7 @@ const Apollo13History = ({ id }) => {
               związanych z usuwaniem dwutlenku węgla i braku wody pitnej, 17
               kwietnia 1970 roku załoga szczęśliwie powróciła na Ziemię.
             </p>
+
             <h5>Podstawowe dane</h5>
             <ul>
               <li>Statek kosmiczny: CSM-109 „Odyssey”, LM-7 „Aquarius”</li>
@@ -123,6 +133,16 @@ const Apollo13History = ({ id }) => {
                 pilot)
               </li>
             </ul>
+            <div className="w-full flex">
+              <PhotoView src="models/apollo13/apollo_13-photo1.webp">
+                <LazyLoadImage
+                  className="mx-auto"
+                  src="models/apollo13/apollo_13-photo1.webp"
+                  alt={photosTitle[0]}
+                  title={photosTitle[0]}
+                />
+              </PhotoView>
+            </div>
             <h4>Nazwy</h4>
             <p>
               W przeciwieństwie do nazw misji Apollo 9 Lovell wolał nazwy
@@ -152,11 +172,11 @@ const Apollo13History = ({ id }) => {
               trzeciego stopnia, które umieściło statek na trajektorii lotu w
               kierunku Księżyca (TLI), przebiegło zgodnie z planem. Również
               manewr kierujący S-IVB/IU na kurs kolizyjny z Księżycem został
-              wykonany prawidłowo[4]. Planowane miejsce upadku znajdowało się w
+              wykonany prawidłowo. Planowane miejsce upadku znajdowało się w
               odległości około 200 kilometrów od sejsmometru pozostawionego
               przez astronautów Apollo 12. Rzeczywiste miejsce upadku znajdowało
               się 65,6 km od zakładanego i 135 km od sejsmometru. Systemy statku
-              funkcjonowały prawidłowo do 55 godz. 53 min. i 20 sekundy lotu[4].
+              funkcjonowały prawidłowo do 55 godz. 53 min. i 20 sekundy lotu.
             </p>
             <p>
               Przedwczesne wyłączenie centralnego silnika drugiego członu
@@ -204,14 +224,24 @@ const Apollo13History = ({ id }) => {
               Ponieważ działały tylko niektóre dysze, zadanie było niewykonalne.
               Gdy Lovell przeszedł na ręczne sterowanie, również nie
               ustabilizował statku. Po dwóch godzinach statek bezwładnie
-              dryfował w przestrzeni kosmicznej[5]. Z wnęki nr 4 została
-              odrzucona pokrywa. Zapasy tlenu z modułu serwisowego ulotniły się
-              w przestrzeń kosmiczną. Eksplozja miała miejsce 25 godzin po
+              dryfował w przestrzeni kosmicznej. Z wnęki nr 4 została odrzucona
+              pokrywa. Zapasy tlenu z modułu serwisowego ulotniły się w
+              przestrzeń kosmiczną. Eksplozja miała miejsce 25 godzin po
               wprowadzeniu Apollo 13 na trajektorię hybrydową. Statek znajdował
               się w połowie drogi do Księżyca. Nie można go było po prostu
               zawrócić. Należało jak najszybciej ponownie wprowadzić Apollo 13
               na trajektorię swobodnego powrotu.
             </p>
+            <div className="w-full flex">
+              <PhotoView src="models/apollo13/apollo_13-photo2.webp">
+                <LazyLoadImage
+                  className="mx-auto"
+                  src="models/apollo13/apollo_13-photo2.webp"
+                  alt={photosTitle[1]}
+                  title={photosTitle[1]}
+                />
+              </PhotoView>
+            </div>
             <h4>Przerwanie misji</h4>
             <p>
               Uszkodzenie modułu serwisowego spowodowało, że lądowanie na
@@ -269,9 +299,9 @@ const Apollo13History = ({ id }) => {
               sekundzie lotu, (Ground Elapsed Time, GET), uderzył w
               powierzchnię, wywołując efekt porównywalny z wybuchem 11,5 tony
               trotylu. Uderzenie zostało zarejestrowane przez sejsmometr
-              ustawiony przez astronautów z misji Apollo 12[4]. Był on 20–30
-              razy mocniejszy i czterokrotnie dłuższy niż spowodowany uderzeniem
-              w powierzchnię Księżyca stopnia startowego LM Apolla 12[4]. Był to
+              ustawiony przez astronautów z misji Apollo 12. Był on 20–30 razy
+              mocniejszy i czterokrotnie dłuższy niż spowodowany uderzeniem w
+              powierzchnię Księżyca stopnia startowego LM Apolla 12. Był to
               jedyny zrealizowany eksperyment naukowy. Moduł księżycowy był
               przeznaczony do utrzymania dwóch astronautów przez dwa dni, a nie
               trzech przez cztery dni. Zapas tlenu w module księżycowym był
@@ -291,12 +321,30 @@ const Apollo13History = ({ id }) => {
               dwutlenku węgla, stała się poważnym problemem. Wewnętrzne zapasy
               LiOH modułu księżycowego były niewystarczające, a zewnętrzne
               zapasy dla modułu księżycowego znajdowały się w członie opadania,
-              wtedy niedostępnego[6]. Moduł dowodzenia miał wystarczający zapas
+              wtedy niedostępnego. Moduł dowodzenia miał wystarczający zapas
               kanistrów z wodorotlenkiem litu, ale były one niekompatybilne z
               armaturą modułu księżycowego. Inżynierowie na Ziemi zaplanowali
               sposób połączenia kanistrów z modułu dowodzenia z gniazdami w
               module księżycowym, a astronauci ten plan zrealizowali w kosmosie.
             </p>
+            <div className="flex flex-wrap justify-center gap-x-8">
+              <PhotoView src="models/apollo13/apollo_13-photo3.webp">
+                <LazyLoadImage
+                  className="mx-auto"
+                  src="models/apollo13/apollo_13-photo3.webp"
+                  alt={photosTitle[2]}
+                  title={photosTitle[2]}
+                />
+              </PhotoView>
+              <PhotoView src="models/apollo13/apollo_13-photo4.webp">
+                <LazyLoadImage
+                  className="mx-auto"
+                  src="models/apollo13/apollo_13-photo4.webp"
+                  alt={photosTitle[3]}
+                  title={photosTitle[3]}
+                />
+              </PhotoView>
+            </div>
             <p>
               16 kwietnia 1970 roku o godz. 04:32 UTC, na 15 sekund z 10% mocą,
               został włączony silnik członu opadania w celu zmniejszenia
@@ -313,20 +361,40 @@ const Apollo13History = ({ id }) => {
               go. Wtedy po raz pierwszy zobaczyła uszkodzenia spowodowane
               eksplozją zbiornika z tlenem. Zasilanie elektryczne modułu
               dowodzenia włączono o godz. 16:43:02 UTC, odrzucono wtedy moduł
-              księżycowy. Wszystkie elementy modułu księżycowego, które
-              przetrwały wejście w atmosferę, a szczególnie generator SNAP-27,
-              planowo mający służyć do zasilania aparatury ALSEP[8] na
-              powierzchni Księżyca i zawierający 3,9 kg plutonu, wpadły do
-              Oceanu Spokojnego na północny wschód od Nowej Zelandii. Zasilacz
-              izotopowy zatonął w Rowie Tonga. Zatopiony pluton będzie
-              radioaktywny przez 2000 lat; nic nie wskazuje na to, że wystąpiło
-              jakiekolwiek skażenie. Apollo 13 wodował na Pacyfiku 17 kwietnia
-              1970 roku o godz. 18:17:41 UTC, po misji trwającej 142 godziny, 54
-              minuty i 41 sekund. Wodowanie nastąpiło na współrzędnych 21°38′S,
-              165°22′W na południowy zachód od Amerykańskiego Samoa i 6,5 km od
-              okrętu ratowniczego dla tej misji, którym był USS Iwo Jima
-              (LPH-2).
+              księżycowy.{" "}
+              <div className="w-full flex">
+                <PhotoView src="models/apollo13/apollo_13-photo7.webp">
+                  <LazyLoadImage
+                    className="mx-auto"
+                    src="models/apollo13/apollo_13-photo7.webp"
+                    alt={photosTitle[4]}
+                    title={photosTitle[4]}
+                  />
+                </PhotoView>
+              </div>
+              Wszystkie elementy modułu księżycowego, które przetrwały wejście w
+              atmosferę, a szczególnie generator SNAP-27, planowo mający służyć
+              do zasilania aparatury ALSEP na powierzchni Księżyca i zawierający
+              3,9 kg plutonu, wpadły do Oceanu Spokojnego na północny wschód od
+              Nowej Zelandii. Zasilacz izotopowy zatonął w Rowie Tonga.
+              Zatopiony pluton będzie radioaktywny przez 2000 lat; nic nie
+              wskazuje na to, że wystąpiło jakiekolwiek skażenie. Apollo 13
+              wodował na Pacyfiku 17 kwietnia 1970 roku o godz. 18:17:41 UTC, po
+              misji trwającej 142 godziny, 54 minuty i 41 sekund. Wodowanie
+              nastąpiło na współrzędnych 21°38′S, 165°22′W na południowy zachód
+              od Amerykańskiego Samoa i 6,5 km od okrętu ratowniczego dla tej
+              misji, którym był USS Iwo Jima (LPH-2).
             </p>
+            <div className="w-full flex">
+              <PhotoView src="models/apollo13/apollo_13-photo6.webp">
+                <LazyLoadImage
+                  className="mx-auto"
+                  src="models/apollo13/apollo_13-photo6.webp"
+                  alt={photosTitle[5]}
+                  title={photosTitle[5]}
+                />
+              </PhotoView>
+            </div>
             <h4>Przyczyny eksplozji zbiornika z ciekłym tlenem</h4>
             <p>
               Przyczyną rozerwania zbiornika z ciekłym tlenem, jak wykazało
@@ -345,20 +413,20 @@ const Apollo13History = ({ id }) => {
               oto one:
               <ul>
                 <li>
-                  przetwornik ilościowej zawartości zbiornika z ciekłym tlenem;
+                  przetwornik ilościowej zawartości zbiornika z ciekłym tlenem
                 </li>
                 <li>
                   turbinka we wnętrzu zbiornika do mieszania ciekłego tlenu, aby
                   uzyskać jednakową gęstość w całym zbiorniku w celu dokładnego
-                  pomiaru stanu ilościowego;
+                  pomiaru stanu ilościowego
                 </li>
                 <li>
                   grzejnik do odparowywania ciekłego tlenu (zamiany ciekłego
-                  tlenu na lotny);
+                  tlenu na lotny)
                 </li>
-                <li>termostat współpracujący z grzejnikiem;</li>
-                <li>czujnik temperatury;</li>
-                <li>zawory i instalacja rurowa.</li>
+                <li>termostat współpracujący z grzejnikiem</li>
+                <li>czujnik temperatury</li>
+                <li>zawory i instalacja rurowa</li>
               </ul>
             </p>
             <p>
@@ -366,7 +434,7 @@ const Apollo13History = ({ id }) => {
               zaprojektowane dla szyny zasilania 28 V DC modułu dowodzenia.
               Dokumentacja grzejnika i termostatu była później zmieniona, aby
               umożliwić zastosowanie 65 V do szybszego opróżnienia zbiornika na
-              Ziemi[9]. Analizując możliwość zastosowania 65 V DC do zasilania
+              Ziemi. Analizując możliwość zastosowania 65 V DC do zasilania
               grzejnika, producent zbiornika nie uwzględnił elektrycznych styków
               termostatu. Stało się to na skutek przeoczenia. Na domiar złego
               czujnik temperatury wnętrza zbiornika nie odczytywał wyższych
@@ -423,17 +491,16 @@ const Apollo13History = ({ id }) => {
               mieszanki do oddychania, stracił możliwość użycia silnika
               napędowego i RCS, przez co stał się bezużyteczny.
             </p>
-            {/* <div className="w-full flex">
-              <PhotoView src="models/apollo13/apollo13-photo1.jpg">
+            <div className="w-full flex">
+              <PhotoView src="models/apollo13/apollo_13-photo5.webp">
                 <LazyLoadImage
                   className="mx-auto"
-                  src="models/apollo13/apollo13-photo1.jpg"
-                  alt={photosTitle[0]}
-                  title={photosTitle[0]}
+                  src="models/apollo13/apollo_13-photo5.webp"
+                  alt={photosTitle[6]}
+                  title={photosTitle[6]}
                 />
               </PhotoView>
-            </div> */}
-
+            </div>
             <p className="opacity-75 m-0 mt-4">
               Źródło:{" "}
               <a href="https://pl.wikipedia.org/wiki/Apollo_13" target="_blank">

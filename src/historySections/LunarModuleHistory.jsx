@@ -21,9 +21,9 @@ const LunarModuleHistory = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <section id="historia">
+    <section id="lądownik">
       <SectionHeader
-        sectionName="Historia"
+        sectionName="Lądownik"
         sectionState={historyState}
         setSectionState={setHistoryState}
       />

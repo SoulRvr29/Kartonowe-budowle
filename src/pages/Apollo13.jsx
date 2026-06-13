@@ -20,7 +20,7 @@ const Article = ({ id }) => {
       <Comments id={id} />
       {/* <Apollo13Report id={id} /> */}
       <LunarModuleHistory id={id} />
-      {/* <Apollo13History id={id} /> */}
+      <Apollo13History id={id} />
     </>
   );
 };
