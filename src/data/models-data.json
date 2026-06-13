@@ -1782,6 +1782,7 @@
     "cover": "models/apollo13/apollo13-cover.jpg",
     "publisher": "model darmowy",
     "report": true,
+    "card": "./cards/apollo13-card.webp",
     "info": {
       "Projekt": "uhu02",
       "Skala": "1:33 (przeskalowany z 1:48)",

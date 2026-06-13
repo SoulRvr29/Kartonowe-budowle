@@ -1,5 +1,10 @@
 [
   {
+    "id": 0,
+    "date": "12-10-2023",
+    "description": "Uruchomienie strony"
+  },
+  {
     "id": 1,
     "date": "24-08-2024",
     "description": "Nowe zdjęcia latarni morskiej Czołpino, oraz filmiki (gify) z oświetleniem."

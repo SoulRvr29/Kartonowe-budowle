@@ -21,7 +21,7 @@ const Apollo13History = ({ id }) => {
   ];
   /////////////////////////////////////////////////////////////////
   return (
-    <section id="apollo13">
+    <section id="apollo 13">
       <SectionHeader
         sectionName="Apollo 13"
         sectionState={historyState}
