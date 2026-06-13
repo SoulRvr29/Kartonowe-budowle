@@ -8,8 +8,8 @@ const SectionsNavLi = ({ sectionName, activeSection }) => {
       href={`#${sectionName}`}
       className={
         activeSection === sectionName
-          ? "hover:underline hover:cursor-pointer text-accent-4 dark:text-accent-2"
-          : "hover:underline hover:cursor-pointer"
+          ? "hover:underline hover:cursor-pointer text-accent-2 dark:text-accent-2 drop-shadow-[1px_1px_1px_rgba(0,0,0,0.5)]"
+          : "hover:underline hover:cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.5)]"
       }
     >
       {sectionName}
@@ -75,12 +75,9 @@ const SectionsNav = () => {
   if (pagesWithoutSectionsNav.includes(location.pathname)) return null;
   if (isVisible)
     return (
-      <div className="flex flex-wrap justify-center sectionsNav z-10 absolute left-0 w-full gap-x-4 px-4 text-sm font-semibold dark:bg-bkg bg-bkg-light bg-opacity-60 dark:bg-opacity-60 py-1 border-b-2 border-white dark:border-accent dark:border-opacity-50 border-opacity-50 backdrop-blur-[2px] capitalize">
+      <div className="flex flex-wrap justify-center sectionsNav z-10 absolute left-0 w-full gap-x-4 px-4 text-sm font-semibold dark:bg-accent bg-black bg-opacity-50 dark:bg-opacity-60 py-1 border-b-2 border-white dark:border-black dark:border-opacity-60 border-opacity-70 backdrop-blur-[2px] capitalize text-white">
         <a href="#" className="max-sm:hidden">
-          <FaCaretUp
-            size={20}
-            className="hover:text-white dark:hover:text-accent"
-          />
+          <FaCaretUp size={20} />
         </a>
         {sectionsList.map((section) => (
           <SectionsNavLi

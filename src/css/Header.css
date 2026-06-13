@@ -26,7 +26,12 @@ h1 {
 h1 div {
   display: block;
   transform: rotateY(90deg);
-  background-image: linear-gradient(150deg, white 20%, #eee 60%, #555 120%);
+  background-image: linear-gradient(
+    150deg,
+    rgb(32, 137, 207) 20%,
+    rgb(0, 88, 146) 50%,
+    black 150%
+  );
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
   background-clip: text;
   -webkit-background-clip: text;

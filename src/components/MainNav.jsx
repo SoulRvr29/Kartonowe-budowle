@@ -15,7 +15,7 @@ const Nav_li = ({ name, activeList, setActiveList, completeData, setData }) => {
       }
       onClick={(e) => {
         setActiveList(e.target.outerText);
-        if (name == "wszystkie modele") setData(completeData);
+        if (name == "wszystko") setData(completeData);
         else if (name == "z oświetleniem")
           setData(
             completeData.filter((item) => {
@@ -67,12 +67,12 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
   });
   const [navState, setNavState] = useState(true);
   const [data, setData] = useState(completeData);
-  const [activeList, setActiveList] = useState("wszystkie modele");
+  const [activeList, setActiveList] = useState("wszystko");
 
   const navWidth = useRef(null);
 
   return (
-    <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent ">
+    <div className="relative grid select-none z-10 bg-gradient-to-b from-transparent via-[rgba(255,255,255,0.4)] dark:via-text-dark to-transparent  border-b-2 dark:border-accent dark:border-opacity-50 border-white border-opacity-50">
       {navState && (
         <div
           title="ilość modeli"
@@ -105,7 +105,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
       <div className={navState ? "relative mx-8 max-sm:mx-0" : "hidden"}>
         <ul className="flex mt-1 max-sm:text-sm flex-wrap gap-x-[0.4rem]  max-[700px]:gap-[0.2rem] w-full text-center justify-center nav-clamp tracking-wide dark:text-text-light text-bkg bg-opacity-30 font-semibold px-6 max-sm:px-4 text-lg max-sm:gap-1 max-sm:mt-2 ">
           <Nav_li
-            name="wszystkie modele"
+            name="wszystko"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
@@ -137,7 +137,7 @@ const Nav = ({ overlap, setOverlap, headerSticky }) => {
           />{" "}
           <span className=" max-sm:hidden ">-</span>
           <Nav_li
-            name="kosmos"
+            name="astronautyka"
             activeList={activeList}
             setActiveList={setActiveList}
             completeData={completeData}
