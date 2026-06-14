@@ -1574,19 +1574,19 @@
       "Skala": "1:1800",
       "Wysokość": "25.5cm"
     },
-    "name": "Wieżowce NY 1909-1933",
+    "name": "Wieżowce",
     "card": "./cards/wiezowce-card.webp",
     "icon": "./models-icons/wiezowce-icon.png",
     "Galeria": {
       "dzienna": {
-        "quantity": 32,
+        "quantity": 59,
         "format": ".webp",
         "full": "./models/wiezowce/day/full-res/wiezowce-d",
         "thumb": "./models/wiezowce/day/thumb/wiezowce-thumb-d"
       }
     },
     "photo": "models/wiezowce/wiezowce-photo",
-    "description": "Dziesięć najwyższych budynków w Nowym Jorku do końca lat 30. XX wieku."
+    "description": "Znane wieżowce z Nowego Jorku, Chicago i innych miast Stanów Zjednoczonych."
   },
   {
     "id": 36,

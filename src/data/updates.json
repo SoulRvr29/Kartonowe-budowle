@@ -85,8 +85,13 @@
     "description": "Zdjęcia gotowego modelu - Rakieta SLS"
   },
   {
-    "id": 7,
+    "id": 17,
     "date": "13-06-2026",
     "description": "Nowy model w budowie - Lądownik księżycowy LM-7 Aquarius"
+  },
+  {
+    "id": 18,
+    "date": "13-06-2026",
+    "description": "Nowe zdjęcia w sekcji - Wieżowce"
   }
 ]
