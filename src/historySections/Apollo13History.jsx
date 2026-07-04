@@ -48,7 +48,7 @@ const Apollo13History = ({ id }) => {
         >
           <article className="px-8">
             <p>
-              <span className="first-letter font-playfair">T</span>trzecia misja
+              <span className="first-letter font-playfair">T</span>rzecia misja
               programu Apollo z planowanym lądowaniem ludzi na powierzchni
               Księżyca. Eksplozja zbiornika z ciekłym tlenem w module serwisowym
               uniemożliwiła lądowanie na Księżycu i spowodowała rozpoczęcie
