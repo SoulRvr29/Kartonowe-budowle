@@ -1579,7 +1579,7 @@
     "icon": "./models-icons/wiezowce-icon.png",
     "Galeria": {
       "dzienna": {
-        "quantity": 144,
+        "quantity": 177,
         "format": ".webp",
         "full": "./models/wiezowce/day/full-res/wiezowce-d",
         "thumb": "./models/wiezowce/day/thumb/wiezowce-thumb-d"
