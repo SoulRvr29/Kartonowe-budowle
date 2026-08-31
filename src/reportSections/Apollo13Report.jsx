@@ -20,7 +20,7 @@ const Apollo13Report = () => {
       />
 
       {reportState === true && (
-        <div className="pt-2 pb-6">
+        <div className="pt-2 pb-6 max-lg:py-0 max-lg:-my-2 ">
           <PhotoProvider loadingElement={<div className="loader"></div>}>
             {/* <PaginationNav
               currentPage={currentPage}
