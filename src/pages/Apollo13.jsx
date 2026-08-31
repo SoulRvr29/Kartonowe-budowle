@@ -18,7 +18,7 @@ const Article = ({ id }) => {
       <ModelInfo id={id} />
       <Gallery id={id} />
       <Comments id={id} />
-      {/* <Apollo13Report id={id} /> */}
+      <Apollo13Report id={id} />
       <LunarModuleHistory id={id} />
       <Apollo13History id={id} />
     </>
