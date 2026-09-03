@@ -31,41 +31,13 @@ const Apollo13Report = () => {
               {currentPage === 1 && (
                 <>
                   <p>
-                    Witam w nowej relacji. Pozostaję dalej w temacie
-                    astronautyki i tym razem zabrałem się za budowę lądownika
-                    księżycowego z misji Apollo 13.
-                  </p>
-
-                  <p>
-                    Misja Apollo 13 rozpoczęła się 11 kwietnia 1970 roku i miała
-                    zakończyć się trzecim w historii lądowaniem ludzi na
-                    Księżycu. Dwa dni po starcie eksplodował zbiornik tlenu w
-                    module serwisowym, powodując utratę części energii
-                    elektrycznej, tlenu i wody, dlatego lądowanie zostało
-                    odwołane. Trzej astronauci - James Lovell, Fred Haise i John
-                    Swigert - wykorzystali moduł księżycowy Aquarius jako "łódź
-                    ratunkową", okrążyli Księżyc i wrócili na Ziemię. W czasie
-                    lotu musieli oszczędzać energię i wodę oraz skonstruować
-                    prowizoryczny adapter do pochłaniaczy dwutlenku węgla. 17
-                    kwietnia 1970 roku załoga bezpiecznie wodowała na Oceanie
-                    Spokojnym.
-                  </p>
-
-                  <p>
-                    Model który wykonam można pobrać z{" "}
-                    <a
-                      href="https://uhu02.way-nifty.com/die_eule_der_minerva/041.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      tej strony
-                    </a>
-                    . Projekt jest bardzo szczegółowy, zawiera całe wnętrze i
-                    wiele drobnych detali. Długo zastanawiałem się, czy w ogóle
-                    podjąć się tej budowy, bo skomplikowanie modelu i ilość
-                    drobnicy trochę odstrasza. Model postanowiłem powiększyć,
-                    przeskalowując go z 1:48 na 1:33. Po powiększeniu całość
-                    będzie liczyć około 40 stron z częściami.
+                    Witam w nowej relacji. Model lądownika, który wykonam jest
+                    bardzo szczegółowy, zawiera całe wnętrze i wiele drobnych
+                    detali. Długo zastanawiałem się, czy w ogóle podjąć się tej
+                    budowy, bo skomplikowanie modelu i ilość drobnicy trochę
+                    odstrasza. Model postanowiłem powiększyć, przeskalowując go
+                    z 1:48 na 1:33. Po powiększeniu całość będzie liczyć około
+                    40 stron z częściami.
                   </p>
 
                   <p>

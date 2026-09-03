@@ -1793,7 +1793,7 @@
     "name": "Lądownik księżycowy LM-7 Aquarius",
     "Galeria": {
       "z budowy": {
-        "quantity": 16,
+        "quantity": 25,
         "format": ".webp",
         "full": "./models/apollo13/build/full-res/apollo13-b",
         "thumb": "./models/apollo13/build/thumb/apollo13-thumb-b"
