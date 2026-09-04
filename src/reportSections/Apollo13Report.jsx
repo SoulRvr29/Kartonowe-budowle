@@ -39,7 +39,6 @@ const Apollo13Report = () => {
                     z 1:48 na 1:33. Po powiększeniu całość będzie liczyć około
                     40 stron z częściami.
                   </p>
-
                   <p>
                     Prawdopodobnie będę musiał zrobić dwie wersje modelu - jedną
                     "gołą", bez obudowy, z widocznymi wszystkimi elementami,
@@ -64,7 +63,6 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     Arkusze drukuję na drukarce atramentowej Epson L355.
                     Drukarka ma już swoje lata i coraz częściej pojawiają się
@@ -96,7 +94,6 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     Skleiłem pierwszą ściankę lądownika. Na jej przykładzie
                     dobrze widać, jak dużo dają te szczegółowe tekstury. Mimo że
@@ -127,7 +124,6 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     Ten element stanowi pierwszą połowę kabiny, którą później
                     połączę z drugą.
@@ -155,7 +151,6 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>Przymierzyłem tylną ściankę, na razie na sucho.</p>
                   <div className="report-photo-group">
                     <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b10.webp">
@@ -166,7 +161,6 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     To urządzenie jest jedną z ważniejszych części lądownika -
                     ECS (Environmental Control System), czyli system
@@ -182,7 +176,6 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <p>
                     Kolejne elementy, które znajdą się w tej części kabiny. Ten
                     prostokątny element na środku to przenośny system
@@ -207,13 +200,93 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
-
                   <div className="report-photo-group">
                     <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b13.webp">
                       <LazyLoadImage
                         className="report-photo"
                         src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b13.webp"
                         alt="elementy kabiny - widok 3"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Wkleiłem większość elementów we wnętrzu kabiny.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b17.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b17.webp"
+                        alt="wnętrze kabiny - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b22.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b22.webp"
+                        alt="wnętrze kabiny - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b23.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b23.webp"
+                        alt="wnętrze kabiny - widok 3"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zrobiłem otwierany właz, w który wkleiłem w wystający koniec
+                    małą blaszkę. W górnej części, po drugiej stronie,
+                    umieściłem magnes, który przytrzymuje właz w pozycji
+                    zamkniętej. Niestety, po pierwszym podejściu, gdy
+                    przykleiłem właz, okazało się, że zahacza on o krawędź ECS
+                    (po lewej) i nie ma go jak otwierać. Próbowałem tę krawędź
+                    trochę spiłować, ale niewiele to dało. Oderwałem więc cały
+                    ten element i wykonałem go od nowa, poprawiając jego
+                    kształt. Właz również zrobiłem nowy, pomniejszając wcześniej
+                    odrobinę jego średnicę. Teraz właz otwiera się bez problemu,
+                    chociaż nadal jest na styk.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b18.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b18.webp"
+                        alt="otwierany właz - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b19.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b19.webp"
+                        alt="otwierany właz - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b20.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b20.webp"
+                        alt="otwierany właz - widok 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b21.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b21.webp"
+                        alt="otwierany właz - widok 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b24.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b24.webp"
+                        alt="otwierany właz - widok 5"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b25.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b25.webp"
+                        alt="wnętrze kabiny z tylną ścianką"
                       />
                     </PhotoView>
                   </div>
