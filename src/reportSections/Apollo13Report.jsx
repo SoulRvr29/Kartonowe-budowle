@@ -290,6 +290,72 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Wkleiłem w kabinie siatkę wykonaną z kawałka białego tiulu,
+                    która osłania część urządzeń. Nie jestem do końca zadowolony
+                    z efektu, bo niewiele przez nią widać. Powinna też być
+                    drobniejsza. Oczka mają około 1mm.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b26.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b26.webp"
+                        alt="siatka we wnętrzu kabiny - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b27.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b27.webp"
+                        alt="siatka we wnętrzu kabiny - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak siatki wyglądały w rzeczywistości.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b32.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b32.webp"
+                        alt="siatki w rzeczywistości"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Teraz mogłem już przykleić tylną ściankę.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b30.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b30.webp"
+                        alt="tylna ścianka kabiny"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I tak prezentuje się całość:</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b31.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b31.webp"
+                        alt="całość - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b28.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b28.webp"
+                        alt="całość - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b29.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b29.webp"
+                        alt="całość - widok 3"
+                      />
+                    </PhotoView>
+                  </div>
                   <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
