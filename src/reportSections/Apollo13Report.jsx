@@ -356,6 +356,185 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Dodałem w kabinie przewody z białego kabelka. Nie jestem do
+                    końca pewien, czy dobrze wszystkie umiejscowiłem, ponieważ
+                    na zdjęciach różnie wyglądają, lub nie są w ogóle
+                    podłączone.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b33.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b33.webp"
+                        alt="przewody w kabinie"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Jeden z przewodów łączy się z kwadratowym elementem,
+                    potocznie nazywanym "mailbox". Był to prowizoryczny adapter
+                    do pochłaniacza CO₂. Gdy pojawił się problem z rosnącym
+                    poziomem CO₂, astronauci musieli skonstruować go w kosmosie
+                    z dostępnych materiałów, takich jak plastikowe torebki,
+                    okładki z instrukcji lotu czy szarej taśmy klejącej.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b34.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b34.webp"
+                        alt="adapter mailbox"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b35.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b35.webp"
+                        alt="adapter mailbox - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Skleiłem silnik jaki będzie pod kabiną. Jego prostokątną
+                    część musiałem trochę pomniejszyć bo okazało się, że nie dam
+                    rady go zmieścić. Silnik wsuwa się w ten element w kształcie
+                    walca w środku kabiny.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b36.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b36.webp"
+                        alt="silnik pod kabiną"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b37.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b37.webp"
+                        alt="silnik pod kabiną - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b38.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b38.webp"
+                        alt="silnik pod kabiną - widok 3"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Przykleiłem uchwyty na zbiorniki, które będą wokół kabiny.
+                    Wokół włazu wkleiłem takie "żebra", których i tak nie będzie
+                    za bardzo widać, bo będą zabudowane.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b39.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b39.webp"
+                        alt="uchwyty na zbiorniki i żebra wokół włazu"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zbiorniki, które miałem teraz wykonać, posiadały bardzo
+                    grube obrysy. Źle to wyglądało i ciężko byłoby je
+                    wyretuszować. Postanowiłem więc przerobić te elementy w
+                    Photoshopie, usuwając z nich obrysy.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b40.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b40.webp"
+                        alt="zbiorniki bez obrysów"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b41.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b41.webp"
+                        alt="zbiorniki bez obrysów - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Po sklejeniu tak się teraz prezentują.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b42.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b42.webp"
+                        alt="sklejone zbiorniki"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie wkleiłem je na swoje miejsce. Te podłużne, krótsze
+                    zbiorniki okazały się jednak za długie i musiałem je rozciąć
+                    i skrócić środkowy segment o około 3mm.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b46.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b46.webp"
+                        alt="zbiorniki na swoim miejscu"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b47.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b47.webp"
+                        alt="zbiorniki na swoim miejscu - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zabudowałem tunel prowadzący do włazu. Można z niego wysunąć
+                    środkową część i wtedy widać te "żebra" we wnętrzu.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b49.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b49.webp"
+                        alt="tunel prowadzący do włazu"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b48.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b48.webp"
+                        alt="tunel prowadzący do włazu - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Skleiłem też kilka kolejnych, większych zbiorników.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b43.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b43.webp"
+                        alt="większe zbiorniki"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b44.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b44.webp"
+                        alt="większe zbiorniki - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b45.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b45.webp"
+                        alt="większe zbiorniki - widok 3"
+                      />
+                    </PhotoView>
+                  </div>
                   <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
