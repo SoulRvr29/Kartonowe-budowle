@@ -535,6 +535,122 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Następnie wkleiłem te duże zbiorniki i kilka innych
+                    elementów konstrukcyjnych.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b56.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b56.webp"
+                        alt="duże zbiorniki i elementy konstrukcyjne"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Do nich będzie przymocowany tak zwany Aft Equipment Bay,
+                    który zawierał wiele różnego rodzaju urządzeń, takich jak
+                    systemy łączności, telemetrii czy sterowania zasilaniem.
+                    Urządzenia miały formę prostokątnych modułów.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b51.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b51.webp"
+                        alt="prostokątne moduły Aft Equipment Bay"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b52.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b52.webp"
+                        alt="prostokątne moduły Aft Equipment Bay - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Tak ten element prezentuje się po sklejeniu.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b53.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b53.webp"
+                        alt="sklejony Aft Equipment Bay"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b54.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b54.webp"
+                        alt="sklejony Aft Equipment Bay - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b55.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b55.webp"
+                        alt="sklejony Aft Equipment Bay - widok 3"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie połączyłem wszystko w całość. Myślałem, że będzie
+                    z tym więcej problemów, ale części są dobrze zaprojektowane
+                    i poza lekkim zeszlifowaniem kilku miejsc udało się je bez
+                    większych problemów spasować.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b58.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b58.webp"
+                        alt="połączone elementy konstrukcji"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b59.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b59.webp"
+                        alt="połączone elementy konstrukcji - widok 2"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b60.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b60.webp"
+                        alt="połączone elementy konstrukcji - widok 3"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b61.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b61.webp"
+                        alt="połączone elementy konstrukcji - widok 4"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b63.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b63.webp"
+                        alt="połączone elementy konstrukcji - widok 5"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b64.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b64.webp"
+                        alt="połączone elementy konstrukcji - widok 6"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b65.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b65.webp"
+                        alt="połączone elementy konstrukcji - widok 7"
+                      />
+                    </PhotoView>
+                  </div>
                   <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
