@@ -9,7 +9,7 @@ const Apollo13Report = () => {
     JSON.parse(localStorage.getItem("sections")),
   );
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 1;
+  const totalPages = 2;
 
   return (
     <section id="relacja">
@@ -22,11 +22,11 @@ const Apollo13Report = () => {
       {reportState === true && (
         <div className="pt-2 pb-6 max-lg:py-0 max-lg:-my-2 ">
           <PhotoProvider loadingElement={<div className="loader"></div>}>
-            {/* <PaginationNav
+            <PaginationNav
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
               totalPages={totalPages}
-            /> */}
+            />
             <article>
               {currentPage === 1 && (
                 <>
@@ -651,15 +651,267 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
+                </>
+              )}
+              {currentPage === 2 && (
+                <>
+                  <p>
+                    Zabrałem się za budowę drugiej połowy kabiny. Wpadłem na
+                    pomysł, żeby zrobić podświetlany kokpit. Plan jest taki, aby
+                    podświetlić główny panel sterowania i kilka paneli bocznych
+                    (zaznaczonych na żółto). Oprócz tego na górze znajdą się
+                    dwie lampki oświetlające całą kabinę. Pomarańczowe linie
+                    oznaczają miejsca, w których poprowadzę przewody. W podłodze
+                    umieszczę płaski akumulator (zaznaczony na niebiesko) i
+                    prawdopodobnie również włącznik. Podłoga będzie zdejmowana.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b71.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b71.webp"
+                        alt="plan podświetlenia kokpitu i rozmieszczenie elementów"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Podświetlenie wykonam w podobny sposób jak w przypadku
+                    podświetlanego napisu w modelu świątyni Wang. Diody
+                    umieszczę za wydrukowanym elementem, który będzie
+                    odpowiednio maskował i przepuszczał światło.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/wang/build/full-res/wang-b210.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/wang/build/thumb/wang-thumb-b210.webp"
+                        alt="podświetlany napis w modelu świątyni Wang"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Główny panel sterowania jest niesamowicie szczegółowo
+                    zaprojektowany. Po powiększeniu widać dokładnie wszystkie
+                    przełączniki i napisy. W modelu oczywiście nie będzie widać
+                    tych detali, ponieważ cały element ma zaledwie 3 cm
+                    szerokości.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b68.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b68.webp"
+                        alt="szczegółowy projekt głównego panelu sterowania"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Na tej podstawie wykonałem element maskujący światło, z
+                    odpowiednio zamalowanymi miejscami.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b69.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b69.webp"
+                        alt="element maskujący światło z zamalowanymi miejscami"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Wygląd i kolorystykę oświetlenia wzorowałem na ujęciach z
+                    filmu "Apollo 13" i serialu "From the Earth to the Moon".
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b66.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b66.webp"
+                        alt="inspiracja kolorystyką oświetlenia kokpitu - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b67.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b67.webp"
+                        alt="inspiracja kolorystyką oświetlenia kokpitu - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Po podświetleniu widać, że czarny tusz skutecznie blokuje
+                    światło.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b70.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b70.webp"
+                        alt="próba podświetlenia elementu maskującego światło"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Oczywiście efekt nie będzie taki mocny, bo na to nakleję
+                    jeszcze drugą warstwę, z właściwym panelem sterowania. Po
+                    wielu testach doszedłem do wniosku, że do maskowania światła
+                    najlepiej nadaje się błyszczący papier fotograficzny.
+                    Najlepiej sprawdza się droższy, wodoodporny, ponieważ ma
+                    inną strukturę. Tańsze odpowiedniki z papierowym tyłem
+                    gorzej przepuszczają światło. Wierzchnią warstwę
+                    wydrukowałem na matowym papierze fotograficznym. Ten papier
+                    daje trochę lepszą ostrość, ale średnio nadaje się do
+                    modelarstwa, bo nadruk można łatwo zdrapać. Zabezpieczyłem
+                    go, zamalowując cienką warstwą wikolu.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b72.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b72.webp"
+                        alt="wydrukowany panel sterowania zabezpieczony wikolem"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Główny panel podświetlę pięcioma diodami SMD 3528, które
+                    połączyłem równolegle cienkim drutem nawojowym 0,2 mm.
+                    Dodałem między nie folię aluminiową dla lepszego odbijania
+                    światła, ale w sumie nie wiem czy to coś daje.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b73.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b73.webp"
+                        alt="pięć diod SMD przygotowanych do podświetlenia panelu"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b74.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b74.webp"
+                        alt="diody połączone równolegle z folią aluminiową"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie zamknąłem całość w szczelnym pudełku. Diody
+                    znajdują się w odległości około 5 mm od podświetlanego
+                    kartonu.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b76.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b76.webp"
+                        alt="diody zamknięte w pudełku około 5 mm od kartonu"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Oczywiście światło i tak przebija się każdą najmniejszą
+                    szczeliną, więc zamalowałem tył kilkoma warstwami czarnej
+                    farby.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b77.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b77.webp"
+                        alt="tył obudowy podświetlenia pokryty czarną farbą"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>I tak prezentuje się gotowe podświetlenie.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b78.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b78.webp"
+                        alt="gotowe podświetlenie głównego panelu sterowania"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>Następnie wkleiłem panel sterowania na swoje miejsce.</p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b79.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b79.webp"
+                        alt="panel sterowania wklejony na swoje miejsce - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b80.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b80.webp"
+                        alt="panel sterowania wklejony na swoje miejsce - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    W podobny sposób wykonałem dwa mniejsze panele, umieszczając
+                    w każdym po jednej diodzie SMD.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b81.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b81.webp"
+                        alt="wykonanie mniejszych paneli z diodami SMD - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b82.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b82.webp"
+                        alt="wykonanie mniejszych paneli z diodami SMD - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Dodałem do nich pozostałe detale. Żółte uchwyty wykonałem z
+                    drutu cynowego 1 mm.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b83.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b83.webp"
+                        alt="mniejsze panele z dodanymi detalami - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b84.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b84.webp"
+                        alt="mniejsze panele z dodanymi detalami - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Wkleiłem je na swoje miejsce i tak na ten moment prezentuje
+                    się całość.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b85.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b85.webp"
+                        alt="kokpit z wklejonymi panelami sterowania"
+                      />
+                    </PhotoView>
+                  </div>
                   <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
             </article>
-            {/* <PaginationNav
+            <PaginationNav
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
               totalPages={totalPages}
-            /> */}
+            />
           </PhotoProvider>
         </div>
       )}
