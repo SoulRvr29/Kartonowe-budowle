@@ -903,6 +903,122 @@ const Apollo13Report = () => {
                       />
                     </PhotoView>
                   </div>
+                  <p>
+                    Pod panelem sterowania zamontowałem otwierany właz. Trzyma
+                    się na zawiasach wykonanych z dwóch pasków folii. Dodałem do
+                    niego trochę wypukłych detali, żeby nie był całkowicie
+                    płaski, jak w projekcie.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b86.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b86.webp"
+                        alt="otwierany właz z dodanymi wypukłymi detalami - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b87.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b87.webp"
+                        alt="otwierany właz z dodanymi wypukłymi detalami - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Przez ten właz astronauci wychodzili na powierzchnię
+                    Księżyca. Nie było to zbyt wygodne, ponieważ astronauta
+                    musiał przejść na czworakach tyłem, by następnie móc zejść
+                    po drabince.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b89.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b89.webp"
+                        alt="właz, przez który astronauci wychodzili na powierzchnię Księżyca"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Wkleiłem okienka z folii 0.2 mm i przygotowałem kilka
+                    kolejnych detali. Drążki do sterowania wykonałem z balsy.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b88.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b88.webp"
+                        alt="okienka i detale kokpitu - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b90.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b90.webp"
+                        alt="okienka i detale kokpitu - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Następnie wkleiłem wszystko na swoje miejsce i tak
+                    prezentuje się całość.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b91.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b91.webp"
+                        alt="gotowy kokpit z wklejonymi detalami - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b93.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b93.webp"
+                        alt="gotowy kokpit z wklejonymi detalami - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Co ciekawe, astronauci nie mieli w kabinie foteli i
+                    sterowali lądownikiem na stojąco. Aby zachować stabilność,
+                    byli przypięci na wysokości bioder elastycznymi linkami,
+                    które dociskały ich do podłogi. Dodatkowo korzystali z
+                    rzepów umieszczonych na podłodze i podeszwach butów oraz
+                    podłokietników, które mogli odpowiednio pod siebie ustawić
+                    (te jasnobeżowe kostki).
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b92.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b92.webp"
+                        alt="wnętrze lądownika z podłokietnikami dla stojących astronautów"
+                      />
+                    </PhotoView>
+                  </div>
+                  <p>
+                    Zabrałem się za wykonanie bocznych ścianek. Dobudowałem
+                    wnękę pod podłogą, w której ukryję przełączniki i
+                    akumulator.
+                  </p>
+                  <div className="report-photo-group">
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b94.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b94.webp"
+                        alt="boczne ścianki i wnęka pod podłogą - widok 1"
+                      />
+                    </PhotoView>
+                    <PhotoView src="https://www.modelcraft.pl/models/apollo13/build/full-res/apollo13-b95.webp">
+                      <LazyLoadImage
+                        className="report-photo"
+                        src="https://www.modelcraft.pl/models/apollo13/build/thumb/apollo13-thumb-b95.webp"
+                        alt="boczne ścianki i wnęka pod podłogą - widok 2"
+                      />
+                    </PhotoView>
+                  </div>
                   <p>Ciąg dalszy relacji wkrótce...</p>
                 </>
               )}
